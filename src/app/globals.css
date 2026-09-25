@@ -1849,25 +1849,6 @@ html[data-header='hidden'] {
   .map-credit:hover {
     color: var(--ink);
   }
-
-}
-
-/* Featured stack: prints resting on each other; the pile fans out on hover */
-@layer components {
-  .stack .stack-card {
-    transform: translate3d(calc(var(--i) * 14px), calc(var(--i) * -16px), 0) rotate(calc(var(--i) * -2.5deg))
-      scale(calc(1 - var(--i) * 0.04));
-    transition: transform 0.9s var(--ease-out);
-  }
-  .stack:hover .stack-card,
-  .stack:focus-within .stack-card {
-    transform: translate3d(calc((var(--i) - 1.5) * 22%), calc(var(--i) * -10px + 30px), 0) rotate(calc((var(--i) - 1.5) * 5deg)) scale(0.78);
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .stack .stack-card {
-      transition: none;
-    }
-  }
 }
 
 @layer components {
@@ -2008,6 +1989,90 @@ html[data-header='hidden'] {
   }
   .journey-card.is-at .journey-year {
     color: var(--teal-ink);
+  }
+}
+
+/* Portfolio: the work as a tilted wall drifting past (alternate columns run the other way),
+   the case studies' shots, and the bento of all work */
+@layer components {
+  .pf-wall-inner {
+    transform: perspective(1600px) rotateX(10deg) rotateY(-8deg) rotateZ(3deg);
+    transform-origin: 60% 40%;
+  }
+  @media (min-width: 1024px) {
+    .pf-wall-inner {
+      transform: perspective(1800px) rotateX(16deg) rotateY(-20deg) rotateZ(6deg);
+    }
+  }
+  .pf-col {
+    animation: pf-drift var(--dur, 60s) linear infinite;
+    will-change: transform;
+  }
+  .pf-col.is-down {
+    animation-direction: reverse;
+  }
+  .pf-wall:hover .pf-col {
+    animation-play-state: paused;
+  }
+  @keyframes pf-drift {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(0, -50%, 0);
+    }
+  }
+  .pf-card img {
+    transition: transform 1.2s var(--ease-out);
+  }
+  .pf-card:hover img {
+    transform: scale(1.05);
+  }
+  .case-shot {
+    transition:
+      opacity 0.7s var(--ease-out),
+      transform 0.9s var(--ease-out),
+      box-shadow 0.9s var(--ease-out);
+  }
+  @media (min-width: 1024px) {
+    .case-shot:not([data-active]) {
+      opacity: 0.45;
+      transform: scale(0.97);
+    }
+    .case-shot[data-active] {
+      box-shadow: 0 40px 90px -50px rgb(11 15 21 / 0.55);
+    }
+  }
+  .work-card img {
+    transition: transform 1.2s var(--ease-out);
+  }
+  .work-card:hover img,
+  .work-card:focus-visible img {
+    transform: scale(1.05);
+  }
+  .work-reveal {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition:
+      grid-template-rows 0.6s var(--ease-out),
+      opacity 0.5s var(--ease-out);
+  }
+  .work-card:hover .work-reveal,
+  .work-card:focus-visible .work-reveal {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+  @media (hover: none) {
+    .work-reveal {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-col {
+    animation: none;
   }
 }
 
