@@ -1,0 +1,691 @@
+{
+  "privacy-policy": {
+    "eyebrow": "Legal",
+    "h1": "Privacy Policy",
+    "intro": "Your privacy matters to us. Learn how we collect, use, and protect your information.",
+    "updated": "Last updated: July 16, 2025",
+    "sections": [
+      {
+        "n": "01",
+        "title": "Introduction",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Insta Biz Web (“we,” “our,” or “us”) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit [https://www.instabizweb.com](/) or use our digital services. Please read this policy carefully. If you disagree with its terms, please discontinue use of our website."
+          }
+        ]
+      },
+      {
+        "n": "02",
+        "title": "Information We Collect",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Personal Information"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Contact Information: Name, email address, phone number, business address",
+              "Business Information: Company name, industry, project requirements",
+              "Payment Information: Billing address, payment method details (processed securely via authorised gateways)",
+              "Communication Records: Messages, emails, and call logs related to our services"
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Technical Information"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Website Usage: IP address, browser type, device information, pages visited",
+              "Cookies: Preferences, session data, analytics information",
+              "Performance Data: Website speed, user interactions, error logs"
+            ]
+          }
+        ]
+      },
+      {
+        "n": "03",
+        "title": "How We Use Your Information",
+        "blocks": [
+          {
+            "type": "numbered",
+            "items": [
+              {
+                "n": "1",
+                "title": "Service Delivery",
+                "body": "To provide, maintain, and improve our digital solutions and services"
+              },
+              {
+                "n": "2",
+                "title": "Communication",
+                "body": "To respond to enquiries, provide support, and send project updates"
+              },
+              {
+                "n": "3",
+                "title": "Payment Processing",
+                "body": "To process payments and maintain billing records securely"
+              },
+              {
+                "n": "4",
+                "title": "Website Improvement",
+                "body": "To analyse usage patterns and improve overall user experience"
+              },
+              {
+                "n": "5",
+                "title": "Legal Compliance",
+                "body": "To comply with applicable laws, regulations, and court orders"
+              },
+              {
+                "n": "6",
+                "title": "Marketing (opt-in)",
+                "body": "To send relevant updates if you have opted in to communications"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "04",
+        "title": "Information Sharing & Disclosure",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Service Providers: Trusted partners who assist in service delivery (hosting, payment processing, analytics) under data protection agreements",
+              "Legal Requirements: When required by law, court order, or government regulations",
+              "Business Protection: To protect our rights, property, or safety, or that of our users",
+              "Business Transfers: In connection with any merger, sale, or acquisition of our business"
+            ]
+          }
+        ]
+      },
+      {
+        "n": "05",
+        "title": "Data Security",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We implement industry-standard security measures to protect your personal information:"
+          },
+          {
+            "type": "checks",
+            "items": [
+              "SSL / TLS encryption for all data transmissions",
+              "Secure payment processing through authorised gateways only",
+              "Regular security audits and vulnerability assessments",
+              "Role-based access controls and authentication protocols",
+              "Automated data backup and disaster recovery procedures"
+            ]
+          }
+        ]
+      },
+      {
+        "n": "06",
+        "title": "Cookies & Tracking Technologies",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We use cookies and similar technologies to enhance your browsing experience. You can control cookie settings through your browser preferences at any time."
+          },
+          {
+            "type": "terms",
+            "items": [
+              {
+                "term": "Essential Cookies",
+                "def": "Required for website functionality, authentication, and security. Cannot be disabled."
+              },
+              {
+                "term": "Analytics Cookies",
+                "def": "Help us understand website usage patterns to improve performance (e.g. Google Analytics)."
+              },
+              {
+                "term": "Preference Cookies",
+                "def": "Remember your settings and personalisation choices across sessions."
+              },
+              {
+                "term": "Marketing Cookies",
+                "def": "Used only with your consent to deliver relevant content and measure campaign effectiveness."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "07",
+        "title": "Your Privacy Rights",
+        "blocks": [
+          {
+            "type": "terms",
+            "items": [
+              {
+                "term": "Access",
+                "def": "Request a copy of the personal information we hold about you"
+              },
+              {
+                "term": "Correction",
+                "def": "Request correction of inaccurate or incomplete information"
+              },
+              {
+                "term": "Deletion",
+                "def": "Request deletion of your personal information (subject to legal obligations)"
+              },
+              {
+                "term": "Portability",
+                "def": "Request transfer of your data to another service provider"
+              },
+              {
+                "term": "Objection",
+                "def": "Object to processing of your data for marketing purposes at any time"
+              },
+              {
+                "term": "Restriction",
+                "def": "Request restriction of processing while a complaint is being resolved"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "08",
+        "title": "Data Retention",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We retain your personal information for as long as necessary to provide our services and comply with legal obligations:"
+          },
+          {
+            "type": "terms",
+            "items": [
+              {
+                "term": "Project Data",
+                "def": "Duration of project + 3 years for support"
+              },
+              {
+                "term": "Payment Records",
+                "def": "7 years (tax & accounting regulations)"
+              },
+              {
+                "term": "Communication Records",
+                "def": "2 years for customer service"
+              },
+              {
+                "term": "Website Analytics",
+                "def": "2 years (anonymised data only)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "09",
+        "title": "International Data Transfers",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Your information may be transferred to and processed in countries other than India where our service providers operate. We ensure appropriate safeguards — including standard contractual clauses — are in place to protect your personal information in accordance with the Information Technology Act, 2000 (India) and international standards such as GDPR where applicable."
+          }
+        ]
+      },
+      {
+        "n": "10",
+        "title": "Contact Us",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "If you have questions about this Privacy Policy or wish to exercise your privacy rights, please reach us:"
+          },
+          {
+            "type": "kv",
+            "items": [
+              {
+                "term": "Email",
+                "def": "[info@instabizweb.com](mailto:info@instabizweb.com)"
+              },
+              {
+                "term": "Subject",
+                "def": "Privacy Policy Inquiry"
+              },
+              {
+                "term": "Data Controller",
+                "def": "Insta Biz Web, Ahmedabad, Gujarat, India"
+              }
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Compliance Commitment"
+          },
+          {
+            "type": "p",
+            "text": "Insta Biz Web is committed to complying with applicable data protection laws including the Information Technology Act, 2000 (India) and international standards such as GDPR where applicable. We regularly review and update our privacy practices to ensure continued compliance. For policy updates, this page will reflect the latest version with a revised “Last updated” date."
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms-and-conditions"
+      },
+      {
+        "label": "Refund Policy",
+        "href": "/refund-policy"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      }
+    ]
+  },
+  "terms-and-conditions": {
+    "eyebrow": "Legal",
+    "h1": "Terms & Conditions",
+    "intro": "Please read these terms carefully before using our services.",
+    "updated": "Last updated: July 16, 2025",
+    "sections": [
+      {
+        "n": "01",
+        "title": "Introduction",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "These Terms and Conditions (“Terms”) govern your use of Insta Biz Web’s (“IBW,” “we,” “our,” or “us”) website and services. By accessing or using our services, you agree to be bound by these Terms. If you disagree with any part of these terms, please do not use our services."
+          }
+        ]
+      },
+      {
+        "n": "02",
+        "title": "Our Services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Insta Biz Web provides digital solutions including, but not limited to:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Custom website design & development (Next.js, React, WordPress)",
+              "Mobile application development (iOS & Android)",
+              "AI-powered automation & chatbot solutions",
+              "CRM & ERP system implementation (Odoo)",
+              "Digital marketing — SEO, PPC, social media",
+              "Business process automation & integrations"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Specific deliverables, timelines, and scope are defined in individual project agreements and statements of work."
+          }
+        ]
+      },
+      {
+        "n": "03",
+        "title": "Payment Terms",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Payment terms are specified in individual service agreements. General terms apply as follows:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Payments are due as per the agreed schedule outlined in the project contract or invoice",
+              "A non-refundable advance (typically 30–50%) is required before project commencement",
+              "Late payments may incur interest at 1.5% per month after a 7-day grace period",
+              "All payments are processed securely through authorised payment gateways",
+              "Invoices are issued in INR (Indian Rupees) unless otherwise agreed in writing",
+              "Refunds are governed by our separate Refund Policy"
+            ]
+          }
+        ]
+      },
+      {
+        "n": "04",
+        "title": "Intellectual Property",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Upon receipt of full payment, clients receive ownership rights to the custom-developed deliverables (code, design assets, content) as specified in the project agreement."
+          },
+          {
+            "type": "p",
+            "text": "Insta Biz Web retains ownership of:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "General methodologies, frameworks, and development processes",
+              "Pre-existing proprietary libraries, tools, and boilerplate code",
+              "Any open-source components used, subject to their respective licences",
+              "Portfolio rights — we may display completed work in our portfolio unless a written NDA restricts this"
+            ]
+          }
+        ]
+      },
+      {
+        "n": "05",
+        "title": "Limitation of Liability",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Insta Biz Web’s total liability is limited to the amount paid for the specific service giving rise to the claim. We are not liable for indirect, incidental, special, or consequential damages arising from the use of our services."
+          },
+          {
+            "type": "p",
+            "text": "We are not responsible for:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Third-party service outages (hosting, payment processors, APIs)",
+              "Business losses arising from website downtime or bugs beyond our control",
+              "Content accuracy for client-supplied materials",
+              "Search engine ranking changes following any update"
+            ]
+          }
+        ]
+      },
+      {
+        "n": "06",
+        "title": "Privacy",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Your privacy is important to us. Please review our [Privacy Policy](/privacy-policy) to understand how we collect, use, and protect your information. By using our services, you consent to data practices described in our Privacy Policy."
+          }
+        ]
+      },
+      {
+        "n": "07",
+        "title": "Termination",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Either party may terminate services with written notice as specified in the service agreement. The following apply upon termination:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "All outstanding payments for work completed to date remain due and payable",
+              "Client data and deliverables completed up to termination date will be transferred within 14 days",
+              "IBW retains the right to retain copies solely for legal/compliance purposes",
+              "NDA obligations survive termination indefinitely"
+            ]
+          }
+        ]
+      },
+      {
+        "n": "08",
+        "title": "Changes to Terms",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We reserve the right to modify these Terms at any time. Updated terms will be posted on this page with a revised “Last updated” date. For ongoing service contracts, material changes will be communicated via email at least 14 days before they take effect. Continued use of our services after notice constitutes acceptance of the modified terms."
+          }
+        ]
+      },
+      {
+        "n": "09",
+        "title": "Governing Law & Disputes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "These Terms are governed by the laws of India. Any disputes arising from these Terms or our services will first be attempted to be resolved through good-faith negotiation. If unresolved within 30 days, disputes will be subject to the exclusive jurisdiction of the courts in Ahmedabad, Gujarat, India."
+          }
+        ]
+      },
+      {
+        "n": "10",
+        "title": "Contact Information",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "For questions about these Terms & Conditions, please contact us:"
+          },
+          {
+            "type": "kv",
+            "items": [
+              {
+                "term": "Email",
+                "def": "[info@instabizweb.com](mailto:info@instabizweb.com)"
+              },
+              {
+                "term": "Company",
+                "def": "Insta Biz Web"
+              },
+              {
+                "term": "Address",
+                "def": "Ahmedabad, Gujarat, India"
+              }
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Acceptance of Terms"
+          },
+          {
+            "type": "p",
+            "text": "By using Insta Biz Web’s services, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions. These terms form the entire agreement between you and Insta Biz Web regarding your use of our services."
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy-policy"
+      },
+      {
+        "label": "Refund Policy",
+        "href": "/refund-policy"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      }
+    ]
+  },
+  "refund-policy": {
+    "eyebrow": "Legal",
+    "h1": "Refund Policy",
+    "intro": "Our refund process, eligibility criteria, and timelines — clearly explained.",
+    "sections": [
+      {
+        "n": "01",
+        "title": "Overview",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "At Insta Biz Web, we are committed to delivering high-quality digital solutions. This refund policy outlines the conditions under which refunds may be requested and processed for our services. All refund requests are subject to review and approval — this policy does not guarantee refunds but describes the circumstances under which they may be considered."
+          }
+        ]
+      },
+      {
+        "n": "02",
+        "title": "Eligibility by Service Type",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Custom Development Services"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Website / App Development: Refund available within 5 days if project requirements are provably not met as agreed in writing",
+              "Business Automation / CRM: 30-day satisfaction guarantee after implementation and handover",
+              "Project initiation advance (30–50%): Non-refundable once discovery / planning work has commenced"
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Digital Marketing Services"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Campaign Setup: Full refund if campaign is not launched within the agreed timeframe",
+              "Monthly Retainer Packages: Pro-rated refunds available with 15-day written notice",
+              "Initial Consulting / Strategy Session: Refund available within 48 hours if unsatisfied"
+            ]
+          }
+        ]
+      },
+      {
+        "n": "03",
+        "title": "Non-Refundable Items",
+        "blocks": [
+          {
+            "type": "list",
+            "items": [
+              "Completed and delivered projects that meet agreed specifications",
+              "Third-party licences and subscriptions purchased on behalf of clients",
+              "Services where work has been completed and accepted by the client in writing",
+              "Custom development work that has been deployed to a production environment",
+              "Training and consultation services after the session has been completed",
+              "Domain registration, hosting, and third-party API fees"
+            ]
+          }
+        ]
+      },
+      {
+        "n": "04",
+        "title": "Refund Timelines",
+        "blocks": [
+          {
+            "type": "terms",
+            "items": [
+              {
+                "term": "Request Review",
+                "def": "2–3 business days after submission"
+              },
+              {
+                "term": "Approval Decision",
+                "def": "Within 5 business days of review"
+              },
+              {
+                "term": "Processing",
+                "def": "5–7 business days after approval"
+              },
+              {
+                "term": "Bank Credit",
+                "def": "7–14 days (depends on your bank)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "05",
+        "title": "How to Request a Refund",
+        "blocks": [
+          {
+            "type": "numbered",
+            "items": [
+              {
+                "n": "1",
+                "title": "Contact Us",
+                "body": "Email [[email protected]](mailto:info@instabizweb.com) with subject \"Refund Request - [Project Name / Invoice Number]\""
+              },
+              {
+                "n": "2",
+                "title": "Provide Details",
+                "body": "Include project details, invoice number, payment reference, and reason for the refund request"
+              },
+              {
+                "n": "3",
+                "title": "Review",
+                "body": "Our team will review your request and respond within 2–3 business days with a decision"
+              },
+              {
+                "n": "4",
+                "title": "Refund Processing",
+                "body": "Approved refunds are credited to your original payment method within the stated timelines above"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "06",
+        "title": "Partial Refunds",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Partial refunds may be issued in the following circumstances:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Project scope changes resulting in a reduction of agreed deliverables",
+              "Early termination of ongoing service retainer contracts",
+              "Unused portions of prepaid service packages (calculated pro-rata)",
+              "By mutual written agreement between Insta Biz Web and the client"
+            ]
+          }
+        ]
+      },
+      {
+        "n": "07",
+        "title": "Dispute Resolution",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "If you disagree with a refund decision, you may request an escalated review by our management team by emailing [info@instabizweb.com](mailto:info@instabizweb.com) with “Refund Dispute” in the subject line. We are committed to resolving all disputes fairly and will respond within 3 business days."
+          }
+        ]
+      },
+      {
+        "n": "08",
+        "title": "Contact for Refund Requests",
+        "blocks": [
+          {
+            "type": "kv",
+            "items": [
+              {
+                "term": "Email",
+                "def": "[info@instabizweb.com](mailto:info@instabizweb.com)"
+              },
+              {
+                "term": "Subject Format",
+                "def": "Refund Request - [Project Name / Invoice #]"
+              },
+              {
+                "term": "Response Time",
+                "def": "Within 24–48 business hours"
+              }
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Important Notice"
+          },
+          {
+            "type": "p",
+            "text": "All refund requests are subject to individual review and management approval. This policy outlines the circumstances under which refunds may be considered — it does not constitute an automatic entitlement. For specific questions about your project or refund eligibility, please contact our team directly before raising a formal request."
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy-policy"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms-and-conditions"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      }
+    ]
+  }
+}

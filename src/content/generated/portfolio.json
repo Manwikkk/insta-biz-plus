@@ -1,0 +1,216 @@
+{
+  "projects": [
+    {
+      "name": "Instant Dukaan",
+      "category": "Ecommerce Platform",
+      "image": "/portfolio/instantdukaan.png",
+      "tag": "No-code store builder",
+      "tagline": "No-code ecommerce for Bharat’s next million shop owners.",
+      "description": "Ecommerce website builder that helps local shops and entrepreneurs launch their own online store in minutes - no code, no friction.",
+      "ctaLabel": "Visit project",
+      "href": "https://www.instantdukaan.com/"
+    },
+    {
+      "name": "Chennai Cabs",
+      "category": "Mobile Application",
+      "image": "/portfolio/chennai-cabs.jpg",
+      "tag": "10K+ downloads",
+      "tagline": "A homegrown ride-hailing app loved by 10K+ riders.",
+      "description": "Ride-sharing application similar to Uber and Ola. 10K+ downloads, 4-5K active users and drivers across Chennai.",
+      "ctaLabel": "Visit project",
+      "href": "https://play.google.com/store/apps/details?id=com.cabs.chennaicabs&hl=en"
+    },
+    {
+      "name": "Blutec Ping",
+      "category": "Automation Tool",
+      "image": "/portfolio/blutec-ping.png",
+      "tag": "AI messaging",
+      "tagline": "WhatsApp at the speed of business.",
+      "description": "WhatsApp automation platform with broadcasting, AI chatbots, and complete messaging workflows for sales and support teams.",
+      "ctaLabel": "Visit project",
+      "href": "https://ping.blutec.ai/"
+    },
+    {
+      "name": "BluTec Connect",
+      "category": "Dialer Platform",
+      "image": "/portfolio/blutec-connect.png",
+      "tag": "Smart routing",
+      "tagline": "Inbound & outbound calling, finally under one roof.",
+      "description": "Inbound and outbound campaign dialer for sales, support, and BPO teams - smart routing, live monitoring, compliance, analytics.",
+      "ctaLabel": "Visit project",
+      "href": "https://connect.blutec.ai/"
+    },
+    {
+      "name": "Blutec Echo",
+      "category": "AI Calling Agent",
+      "image": "/portfolio/blutec-echo.png",
+      "tag": "AI Voice agent",
+      "tagline": "An AI agent that calls - and actually closes.",
+      "description": "AI-powered calling agent that automates customer interactions, qualifies leads, and lifts response efficiency for sales and support.",
+      "ctaLabel": "Visit project",
+      "href": "https://echo.blutec.ai/"
+    },
+    {
+      "name": "ConvrsAI",
+      "category": "AI Platform",
+      "image": "/portfolio/convrsai.png",
+      "tag": "Multi channel",
+      "tagline": "Conversational AI for modern customer journeys.",
+      "description": "Conversational AI product for intelligent customer communication, automation flows, and faster engagement across digital channels.",
+      "ctaLabel": "Visit project",
+      "href": "https://convrsai.com/"
+    },
+    {
+      "name": "Property Milan",
+      "category": "Real Estate Platform",
+      "image": "/portfolio/property-milan.png",
+      "tag": "Verified listings",
+      "tagline": "Where verified properties meet serious buyers.",
+      "description": "Real estate platform for buying, selling, and renting verified properties - built around trust, transparency, and clean discovery.",
+      "ctaLabel": "Visit project",
+      "href": "https://www.propertymilan.com/"
+    },
+    {
+      "name": "Estate Rent",
+      "category": "Property Marketplace",
+      "image": "/portfolio/estaterent.png",
+      "tag": "320% lead growth",
+      "tagline": "A property marketplace built for real renters.",
+      "description": "Real estate listing platform for residential, rental, and commercial property discovery - verified listings, fast filters, smooth UX.",
+      "ctaLabel": "Visit project",
+      "href": "https://www.estatrent.com/"
+    },
+    {
+      "name": "Tender Source",
+      "category": "Tender Platform",
+      "image": "/portfolio/tendorsource.png",
+      "tag": "Live bids",
+      "tagline": "Government tenders, demystified for SMEs.",
+      "description": "Tender consultancy platform that helps businesses discover live tenders, manage bid workflows, and access expert support for procurement.",
+      "ctaLabel": "Visit project",
+      "href": "https://www.tendersource.co.in/"
+    },
+    {
+      "name": "Best Sports Bars",
+      "category": "Directory Platform",
+      "image": "/portfolio/bestsportsbar.png",
+      "tag": "Geo discovery",
+      "tagline": "Game day. Mapped.",
+      "description": "Sports bar discovery platform helping fans find the best game-day venues by city, sport, and local bar listings.",
+      "ctaLabel": "Visit project",
+      "href": "https://bestsportsbars.net/"
+    },
+    {
+      "name": "Acolyte Living",
+      "category": "Web Application",
+      "image": "/portfolio/acolyte-living.jpg",
+      "tag": "UK wide",
+      "tagline": "Student housing, made simple - across the UK.",
+      "description": "UK-based student accommodation platform connecting thousands of international students with verified, comfortable homes near campus.",
+      "ctaLabel": "Visit project",
+      "href": "https://acolyteliving.com/"
+    },
+    {
+      "name": "Sarvam Art",
+      "category": "Web Application",
+      "image": "/portfolio/sarvam-art.jpg",
+      "tag": "All-in-1 dashboard",
+      "tagline": "A student management OS for coaching centres.",
+      "description": "Student management system for coaching centres and classes - manage students, courses, schedules, and outcomes from one dashboard.",
+      "ctaLabel": "Visit project",
+      "href": "https://sarvam-art.instabizweb.com/"
+    },
+    {
+      "name": "Odoo CRM",
+      "category": "CRM Solution",
+      "image": "/portfolio/odoo-crm.jpg",
+      "tag": "4× faster ops",
+      "tagline": "Custom CRMs that fit your business - not the other way around.",
+      "description": "Complete CRM solution built on Odoo, customised for sales pipelines, ops workflows, and finance integrations across industries.",
+      "ctaLabel": "Learn more",
+      "href": "/services#crm"
+    },
+    {
+      "name": "Rental Management",
+      "category": "Desktop Application",
+      "image": "/portfolio/rental-management.jpg",
+      "tag": "Offline first",
+      "tagline": "An offline-first rental ERP for wedding-wear shops.",
+      "description": "Desktop application for wedding clothing rental shops with offline functionality - bookings, returns, deposits, and reports.",
+      "ctaLabel": null,
+      "href": null
+    },
+    {
+      "name": "Blutec Scout",
+      "category": "Browser Extension",
+      "image": "/portfolio/blutec-scout.jpg",
+      "tag": "Verified leads",
+      "tagline": "Lead scraping that respects your inbox.",
+      "description": "Browser extension for scraping Google data and extracting verified emails for lead generation - fast, focused, and accurate.",
+      "ctaLabel": "Visit project",
+      "href": "https://scout.blutec.ai/"
+    },
+    {
+      "name": "Social Media Marketing",
+      "category": "Marketing Service",
+      "image": "/portfolio/social-media-marketing.jpg",
+      "tag": "20+ brands",
+      "tagline": "20+ brands, one growth team.",
+      "description": "End-to-end social media management, paid ads, and lead generation services for 20+ clients across multiple industries and geographies.",
+      "ctaLabel": "Learn more",
+      "href": "/services#marketing"
+    }
+  ],
+  "filters": [
+    {
+      "label": "All Work",
+      "count": 16
+    },
+    {
+      "label": "Web",
+      "count": 7
+    },
+    {
+      "label": "Mobile",
+      "count": 1
+    },
+    {
+      "label": "AI & Automation",
+      "count": 4
+    },
+    {
+      "label": "CRM & ERP",
+      "count": 2
+    },
+    {
+      "label": "Marketing",
+      "count": 1
+    },
+    {
+      "label": "Extensions",
+      "count": 1
+    }
+  ],
+  "featured": [
+    {
+      "name": "Instant Dukaan",
+      "category": "Ecommerce Platform",
+      "note": "No-code · store builder"
+    },
+    {
+      "name": "Chennai Cabs",
+      "category": "Mobile Application",
+      "note": "10K+ · downloads"
+    },
+    {
+      "name": "Blutec Ping",
+      "category": "Automation Tool",
+      "note": "AI · messaging"
+    },
+    {
+      "name": "Estate Rent",
+      "category": "Property Marketplace",
+      "note": "320% · lead growth"
+    }
+  ]
+}

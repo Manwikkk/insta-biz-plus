@@ -1,0 +1,548 @@
+[
+  {
+    "url": "https://www.instabizweb.com/",
+    "status": 200,
+    "final": "https://www.instabizweb.com/",
+    "bytes": 292231,
+    "file": ".firecrawl\\html\\index.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/services",
+    "status": 200,
+    "final": "https://www.instabizweb.com/services",
+    "bytes": 218064,
+    "file": ".firecrawl\\html\\services.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/services/ai-agent-development",
+    "status": 200,
+    "final": "https://www.instabizweb.com/services/ai-agent-development",
+    "bytes": 278167,
+    "file": ".firecrawl\\html\\services\\ai-agent-development.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/web-development-company-in-ahmedabad",
+    "status": 200,
+    "final": "https://www.instabizweb.com/web-development-company-in-ahmedabad",
+    "bytes": 277621,
+    "file": ".firecrawl\\html\\web-development-company-in-ahmedabad.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions",
+    "bytes": 133327,
+    "file": ".firecrawl\\html\\solutions.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/portfolio",
+    "status": 200,
+    "final": "https://www.instabizweb.com/portfolio",
+    "bytes": 177993,
+    "file": ".firecrawl\\html\\portfolio.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/about-us",
+    "status": 200,
+    "final": "https://www.instabizweb.com/about-us",
+    "bytes": 160867,
+    "file": ".firecrawl\\html\\about-us.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/contact-us",
+    "status": 200,
+    "final": "https://www.instabizweb.com/contact-us",
+    "bytes": 124906,
+    "file": ".firecrawl\\html\\contact-us.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs",
+    "bytes": 579308,
+    "file": ".firecrawl\\html\\blogs.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/audit",
+    "status": 200,
+    "final": "https://www.instabizweb.com/audit",
+    "bytes": 110243,
+    "file": ".firecrawl\\html\\audit.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/privacy-policy",
+    "status": 200,
+    "final": "https://www.instabizweb.com/privacy-policy",
+    "bytes": 111967,
+    "file": ".firecrawl\\html\\privacy-policy.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/terms-and-conditions",
+    "status": 200,
+    "final": "https://www.instabizweb.com/terms-and-conditions",
+    "bytes": 103715,
+    "file": ".firecrawl\\html\\terms-and-conditions.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/refund-policy",
+    "status": 200,
+    "final": "https://www.instabizweb.com/refund-policy",
+    "bytes": 99157,
+    "file": ".firecrawl\\html\\refund-policy.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/software-development-company-in-ahmedabad",
+    "status": 200,
+    "final": "https://www.instabizweb.com/software-development-company-in-ahmedabad",
+    "bytes": 222078,
+    "file": ".firecrawl\\html\\software-development-company-in-ahmedabad.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/mobile-app-development-company-in-ahmedabad",
+    "status": 200,
+    "final": "https://www.instabizweb.com/mobile-app-development-company-in-ahmedabad",
+    "bytes": 220925,
+    "file": ".firecrawl\\html\\mobile-app-development-company-in-ahmedabad.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/odoo-implementation-company-in-ahmedabad",
+    "status": 200,
+    "final": "https://www.instabizweb.com/odoo-implementation-company-in-ahmedabad",
+    "bytes": 222231,
+    "file": ".firecrawl\\html\\odoo-implementation-company-in-ahmedabad.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/digital-marketing-agency-in-ahmedabad",
+    "status": 200,
+    "final": "https://www.instabizweb.com/digital-marketing-agency-in-ahmedabad",
+    "bytes": 220569,
+    "file": ".firecrawl\\html\\digital-marketing-agency-in-ahmedabad.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/seo-company-in-ahmedabad",
+    "status": 200,
+    "final": "https://www.instabizweb.com/seo-company-in-ahmedabad",
+    "bytes": 220956,
+    "file": ".firecrawl\\html\\seo-company-in-ahmedabad.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/manufacturing-crm-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/manufacturing-crm-software",
+    "bytes": 210076,
+    "file": ".firecrawl\\html\\solutions\\manufacturing-crm-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/ca-crm-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/ca-crm-software",
+    "bytes": 208107,
+    "file": ".firecrawl\\html\\solutions\\ca-crm-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/visa-immigration-crm-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/visa-immigration-crm-software",
+    "bytes": 208121,
+    "file": ".firecrawl\\html\\solutions\\visa-immigration-crm-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/erp-software-development",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/erp-software-development",
+    "bytes": 208693,
+    "file": ".firecrawl\\html\\solutions\\erp-software-development.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/real-estate-crm-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/real-estate-crm-software",
+    "bytes": 207805,
+    "file": ".firecrawl\\html\\solutions\\real-estate-crm-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/education-crm-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/education-crm-software",
+    "bytes": 206485,
+    "file": ".firecrawl\\html\\solutions\\education-crm-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/hospital-management-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/hospital-management-software",
+    "bytes": 206516,
+    "file": ".firecrawl\\html\\solutions\\hospital-management-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/insurance-crm-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/insurance-crm-software",
+    "bytes": 205422,
+    "file": ".firecrawl\\html\\solutions\\insurance-crm-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/travel-agency-crm-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/travel-agency-crm-software",
+    "bytes": 206125,
+    "file": ".firecrawl\\html\\solutions\\travel-agency-crm-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/loan-management-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/loan-management-software",
+    "bytes": 205951,
+    "file": ".firecrawl\\html\\solutions\\loan-management-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/hrms-payroll-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/hrms-payroll-software",
+    "bytes": 206855,
+    "file": ".firecrawl\\html\\solutions\\hrms-payroll-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/solutions/inventory-management-software",
+    "status": 200,
+    "final": "https://www.instabizweb.com/solutions/inventory-management-software",
+    "bytes": 207562,
+    "file": ".firecrawl\\html\\solutions\\inventory-management-software.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers",
+    "bytes": 176744,
+    "file": ".firecrawl\\html\\blogs\\ai-agents-2026-from-chatbots-to-digital-coworkers.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/vibe-coding-the-honest-guide-for-founders",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/vibe-coding-the-honest-guide-for-founders",
+    "bytes": 169279,
+    "file": ".firecrawl\\html\\blogs\\vibe-coding-the-honest-guide-for-founders.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
+    "bytes": 175009,
+    "file": ".firecrawl\\html\\blogs\\aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/whatsapp-business-api-2026-india-smb-playbook",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/whatsapp-business-api-2026-india-smb-playbook",
+    "bytes": 170572,
+    "file": ".firecrawl\\html\\blogs\\whatsapp-business-api-2026-india-smb-playbook.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/comprehensive-guide-odoo-crm-implementation",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/comprehensive-guide-odoo-crm-implementation",
+    "bytes": 178398,
+    "file": ".firecrawl\\html\\blogs\\comprehensive-guide-odoo-crm-implementation.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/ai-automation-transforming-business-operations",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/ai-automation-transforming-business-operations",
+    "bytes": 158236,
+    "file": ".firecrawl\\html\\blogs\\ai-automation-transforming-business-operations.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/nextjs-16-what-changed-and-why-it-matters",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/nextjs-16-what-changed-and-why-it-matters",
+    "bytes": 163742,
+    "file": ".firecrawl\\html\\blogs\\nextjs-16-what-changed-and-why-it-matters.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep",
+    "bytes": 179054,
+    "file": ".firecrawl\\html\\blogs\\designing-mobile-apps-people-actually-keep.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition",
+    "bytes": 159539,
+    "file": ".firecrawl\\html\\blogs\\seo-fundamentals-for-founders-2026-edition.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/founder-lessons-from-five-years-of-shipping",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/founder-lessons-from-five-years-of-shipping",
+    "bytes": 146497,
+    "file": ".firecrawl\\html\\blogs\\founder-lessons-from-five-years-of-shipping.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/odoo-implementation-cost-india-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/odoo-implementation-cost-india-2026",
+    "bytes": 180807,
+    "file": ".firecrawl\\html\\blogs\\odoo-implementation-cost-india-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/odoo-vs-zoho-crm-2026-comparison",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/odoo-vs-zoho-crm-2026-comparison",
+    "bytes": 178505,
+    "file": ".firecrawl\\html\\blogs\\odoo-vs-zoho-crm-2026-comparison.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/odoo-community-vs-enterprise-edition",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/odoo-community-vs-enterprise-edition",
+    "bytes": 171535,
+    "file": ".firecrawl\\html\\blogs\\odoo-community-vs-enterprise-edition.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/odoo-crm-for-real-estate-india",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/odoo-crm-for-real-estate-india",
+    "bytes": 166169,
+    "file": ".firecrawl\\html\\blogs\\odoo-crm-for-real-estate-india.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/odoo-migration-checklist",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/odoo-migration-checklist",
+    "bytes": 165794,
+    "file": ".firecrawl\\html\\blogs\\odoo-migration-checklist.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/best-odoo-implementation-partners-india-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/best-odoo-implementation-partners-india-2026",
+    "bytes": 172531,
+    "file": ".firecrawl\\html\\blogs\\best-odoo-implementation-partners-india-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/odoo-vs-salesforce-crm-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/odoo-vs-salesforce-crm-2026",
+    "bytes": 180222,
+    "file": ".firecrawl\\html\\blogs\\odoo-vs-salesforce-crm-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/zapier-vs-make-vs-n8n-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/zapier-vs-make-vs-n8n-2026",
+    "bytes": 180153,
+    "file": ".firecrawl\\html\\blogs\\zapier-vs-make-vs-n8n-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/salesforce-alternatives-india-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/salesforce-alternatives-india-2026",
+    "bytes": 185884,
+    "file": ".firecrawl\\html\\blogs\\salesforce-alternatives-india-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/webflow-vs-nextjs-vs-wordpress-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/webflow-vs-nextjs-vs-wordpress-2026",
+    "bytes": 183171,
+    "file": ".firecrawl\\html\\blogs\\webflow-vs-nextjs-vs-wordpress-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/zoho-crm-alternatives-india-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/zoho-crm-alternatives-india-2026",
+    "bytes": 176760,
+    "file": ".firecrawl\\html\\blogs\\zoho-crm-alternatives-india-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/bubble-alternatives-for-mvp-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/bubble-alternatives-for-mvp-2026",
+    "bytes": 175989,
+    "file": ".firecrawl\\html\\blogs\\bubble-alternatives-for-mvp-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/best-ai-calling-agents-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/best-ai-calling-agents-2026",
+    "bytes": 179192,
+    "file": ".firecrawl\\html\\blogs\\best-ai-calling-agents-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/mobile-app-development-cost-india-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/mobile-app-development-cost-india-2026",
+    "bytes": 197455,
+    "file": ".firecrawl\\html\\blogs\\mobile-app-development-cost-india-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/flutter-vs-react-native-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/flutter-vs-react-native-2026",
+    "bytes": 190404,
+    "file": ".firecrawl\\html\\blogs\\flutter-vs-react-native-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/flutter-vs-react-native-vs-native-swift-kotlin",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/flutter-vs-react-native-vs-native-swift-kotlin",
+    "bytes": 184119,
+    "file": ".firecrawl\\html\\blogs\\flutter-vs-react-native-vs-native-swift-kotlin.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026",
+    "bytes": 185517,
+    "file": ".firecrawl\\html\\blogs\\how-long-to-build-mobile-app-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/app-store-rejection-reasons-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/app-store-rejection-reasons-2026",
+    "bytes": 190314,
+    "file": ".firecrawl\\html\\blogs\\app-store-rejection-reasons-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026",
+    "bytes": 187591,
+    "file": ".firecrawl\\html\\blogs\\aso-app-store-optimization-2026.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blogs/how-to-choose-mobile-app-development-company-india",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs/how-to-choose-mobile-app-development-company-india",
+    "bytes": 188181,
+    "file": ".firecrawl\\html\\blogs\\how-to-choose-mobile-app-development-company-india.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/faq",
+    "status": 404,
+    "final": "https://www.instabizweb.com/faq",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\faq.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/faqs",
+    "status": 404,
+    "final": "https://www.instabizweb.com/faqs",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\faqs.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/pricing",
+    "status": 404,
+    "final": "https://www.instabizweb.com/pricing",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\pricing.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/careers",
+    "status": 404,
+    "final": "https://www.instabizweb.com/careers",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\careers.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/jobs",
+    "status": 404,
+    "final": "https://www.instabizweb.com/jobs",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\jobs.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/team",
+    "status": 200,
+    "final": "https://www.instabizweb.com/about-us",
+    "bytes": 160867,
+    "file": ".firecrawl\\html\\team.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/blog",
+    "status": 200,
+    "final": "https://www.instabizweb.com/blogs",
+    "bytes": 579308,
+    "file": ".firecrawl\\html\\blog.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/case-studies",
+    "status": 404,
+    "final": "https://www.instabizweb.com/case-studies",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\case-studies.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/case-study",
+    "status": 404,
+    "final": "https://www.instabizweb.com/case-study",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\case-study.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/resources",
+    "status": 404,
+    "final": "https://www.instabizweb.com/resources",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\resources.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/downloads",
+    "status": 404,
+    "final": "https://www.instabizweb.com/downloads",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\downloads.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/llms.txt",
+    "status": 200,
+    "final": "https://www.instabizweb.com/llms.txt",
+    "bytes": 13929,
+    "file": ".firecrawl\\html\\llms.txt.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/feed",
+    "status": 404,
+    "final": "https://www.instabizweb.com/feed",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\feed.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/rss.xml",
+    "status": 404,
+    "final": "https://www.instabizweb.com/rss.xml",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\rss.xml.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/sitemap",
+    "status": 404,
+    "final": "https://www.instabizweb.com/sitemap",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\sitemap.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/thank-you",
+    "status": 404,
+    "final": "https://www.instabizweb.com/thank-you",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\thank-you.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/cookies",
+    "status": 404,
+    "final": "https://www.instabizweb.com/cookies",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\cookies.html"
+  },
+  {
+    "url": "https://www.instabizweb.com/cookie-policy",
+    "status": 404,
+    "final": "https://www.instabizweb.com/cookie-policy",
+    "bytes": 27954,
+    "file": ".firecrawl\\html\\cookie-policy.html"
+  }
+]

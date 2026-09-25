@@ -1,0 +1,2952 @@
+{
+  "index": {
+    "eyebrow": "12 industry specialisations",
+    "h1": "Industry CRM & ERP software built for your business",
+    "intro": "Every industry sells, serves and operates differently. We build CRM, ERP and management software around the real workflows of your industry, with the integrations Indian businesses rely on: Tally, GST, WhatsApp and payment gateways.",
+    "cta": "Book a free consultation",
+    "groups": [
+      {
+        "title": "Industry CRM Software",
+        "intro": "Lead-to-revenue CRMs designed around how your industry actually sells, follows up and serves clients.",
+        "items": [
+          {
+            "label": "Manufacturing CRM",
+            "summary": "Enquiries, quotations, dealer networks, orders and dispatch tracking in one system.",
+            "slug": "manufacturing-crm-software"
+          },
+          {
+            "label": "CA Practice CRM",
+            "summary": "GST, ITR, TDS and audit compliance tracking, client documents, tasks and billing.",
+            "slug": "ca-crm-software"
+          },
+          {
+            "label": "Visa & Immigration CRM",
+            "summary": "Student, PR, work and tourist visa leads, document checklists and application tracking.",
+            "slug": "visa-immigration-crm-software"
+          },
+          {
+            "label": "Real Estate CRM",
+            "summary": "Property leads, site visits, unit inventory, bookings and payment milestones.",
+            "slug": "real-estate-crm-software"
+          },
+          {
+            "label": "Education & Coaching CRM",
+            "summary": "Enquiries, admissions, fee instalments, batches, attendance and parent updates.",
+            "slug": "education-crm-software"
+          },
+          {
+            "label": "Travel Agency CRM",
+            "summary": "Travel enquiries, itinerary builder, quotations, bookings and supplier payments.",
+            "slug": "travel-agency-crm-software"
+          },
+          {
+            "label": "Insurance Agency CRM",
+            "summary": "Leads, multi-insurer policies, renewals, claims and commission tracking.",
+            "slug": "insurance-crm-software"
+          },
+          {
+            "label": "Loan & DSA CRM",
+            "summary": "Loan leads, documents, bank logins, sanction and disbursement, EMIs and payouts.",
+            "slug": "loan-management-software"
+          }
+        ]
+      },
+      {
+        "title": "ERP & Business Software",
+        "intro": "Operations software that connects inventory, people, finance and compliance in one system.",
+        "items": [
+          {
+            "label": "Custom ERP Software",
+            "summary": "Custom and Odoo ERP connecting sales, purchase, inventory, production, accounts and HR.",
+            "slug": "erp-software-development"
+          },
+          {
+            "label": "Hospital & Clinic Software",
+            "summary": "Appointments, OPD/IPD, patient records, billing, pharmacy and lab reports.",
+            "slug": "hospital-management-software"
+          },
+          {
+            "label": "HRMS & Payroll",
+            "summary": "Attendance, leave, shifts, payroll with PF/ESI/PT/TDS, expenses and appraisals.",
+            "slug": "hrms-payroll-software"
+          },
+          {
+            "label": "Inventory & Distribution",
+            "summary": "Multi-warehouse stock, barcode, orders, salesman app, delivery and GST billing.",
+            "slug": "inventory-management-software"
+          }
+        ]
+      }
+    ]
+  },
+  "solutions": [
+    {
+      "slug": "manufacturing-crm-software",
+      "crumb": "Manufacturing CRM",
+      "eyebrow": "CRM for Manufacturers",
+      "h1": "Manufacturing CRM Software Built for How Factories Sell",
+      "productName": "Manufacturing CRM Software",
+      "promise": "Built for How Factories Sell",
+      "intro": "Track every enquiry from first call to dispatch. Our manufacturing CRM brings leads, quotations, dealers, orders and after-sales service into one system, so your sales team closes faster and management sees the full pipeline in real time.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20Manufacturing%20CRM%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "Manufacturing CRM",
+      "summary": "Enquiries, quotations, dealer networks, orders and dispatch tracking in one system.",
+      "group": "Industry CRM Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our Manufacturing CRM solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Enquiries lost across channels",
+            "body": "Leads from IndiaMART, website, calls and exhibitions sit in different inboxes and many are never followed up."
+          },
+          {
+            "title": "Slow, error-prone quotations",
+            "body": "Salespeople build quotations manually in Excel, with outdated price lists and inconsistent discounts."
+          },
+          {
+            "title": "No visibility on dealers",
+            "body": "You cannot see dealer-wise sales, pending payments, targets or which dealers are going quiet."
+          },
+          {
+            "title": "Order status by phone call",
+            "body": "Customers call repeatedly to ask about production and dispatch because sales has no live status."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "Manufacturing CRM Software that fits your business",
+        "paragraphs": [
+          "Most manufacturers still run sales on spreadsheets, WhatsApp groups and the memory of a few senior salespeople. Enquiries from IndiaMART, TradeIndia, exhibitions and dealers arrive through different channels, quotations are revised five times over email, and nobody knows which order is stuck in production or waiting for dispatch.",
+          "Insta Biz Web builds manufacturing CRM software that fits your actual sales cycle, whether you sell machines, components, chemicals, packaging, textiles or engineering products. We capture enquiries automatically, generate branded quotations with your price lists and taxes, track follow-ups for every salesperson and dealer, and connect confirmed orders with production and dispatch status.",
+          "Because the CRM is built for you, it speaks your language: product variants, MOQ, custom specifications, dealer schemes, credit limits and GST invoicing. It can integrate with Tally, your existing ERP, WhatsApp Business and IndiaMART lead APIs, so your team works in one place instead of five."
+        ],
+        "whoFor": [
+          "Machine & equipment manufacturers",
+          "Engineering & auto components",
+          "Chemicals & pharmaceuticals",
+          "Textiles & garments",
+          "Packaging & plastics",
+          "Food processing units"
+        ],
+        "integrations": [
+          "Tally",
+          "IndiaMART",
+          "TradeIndia",
+          "WhatsApp Business",
+          "Google Workspace",
+          "Razorpay"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our Manufacturing CRM software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Multi-channel lead capture",
+            "body": "Auto-import leads from IndiaMART, TradeIndia, website forms, email and WhatsApp with source tracking."
+          },
+          {
+            "n": "02",
+            "title": "Quotation builder",
+            "body": "Create branded quotations in minutes using product catalogues, price lists, taxes and approval rules."
+          },
+          {
+            "n": "03",
+            "title": "Dealer & distributor portal",
+            "body": "Give dealers their own login to place orders, view schemes, track dispatch and download invoices."
+          },
+          {
+            "n": "04",
+            "title": "Sales pipeline & follow-ups",
+            "body": "Stage-wise pipeline with automatic follow-up reminders so no enquiry goes cold."
+          },
+          {
+            "n": "05",
+            "title": "Order-to-dispatch tracking",
+            "body": "Link confirmed orders with production and dispatch stages, visible to sales and customers."
+          },
+          {
+            "n": "06",
+            "title": "Field sales app",
+            "body": "Mobile app with GPS check-in, visit reports, expense claims and offline order booking."
+          },
+          {
+            "n": "07",
+            "title": "Service & AMC management",
+            "body": "Log complaints, schedule service engineers, track warranties and renew AMC contracts."
+          },
+          {
+            "n": "08",
+            "title": "Management dashboards",
+            "body": "Real-time reports on enquiries, conversion, product-wise sales, dealer performance and collections."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Lead Management",
+          "Quotation & Proforma",
+          "Sales Orders",
+          "Dealer Portal",
+          "Product Catalogue",
+          "Price Lists & Schemes",
+          "Field Sales App",
+          "Dispatch Tracking",
+          "Service & AMC",
+          "Payment Follow-up",
+          "Reports & Analytics",
+          "Tally Integration"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Respond to enquiries faster",
+            "body": "Every lead is assigned and followed up automatically, so first responses happen in minutes, not days."
+          },
+          {
+            "title": "Consistent pricing",
+            "body": "Central price lists and discount approvals stop margin leakage from ad-hoc quotations."
+          },
+          {
+            "title": "Stronger dealer network",
+            "body": "Dealers order, track and pay through a portal, reducing calls and increasing repeat orders."
+          },
+          {
+            "title": "Decisions from data",
+            "body": "Owners see pipeline, collections and product demand live instead of waiting for month-end reports."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your Manufacturing CRM partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "Manufacturing CRM software: your questions answered",
+        "items": [
+          {
+            "q": "What is manufacturing CRM software?",
+            "a": "Manufacturing CRM software manages the complete sales cycle of a manufacturer: capturing enquiries, sending quotations, following up, managing dealers and distributors, converting orders and tracking dispatch and after-sales service in one system."
+          },
+          {
+            "q": "Can the CRM import leads from IndiaMART and TradeIndia automatically?",
+            "a": "Yes. We integrate with the IndiaMART and TradeIndia lead APIs so new enquiries are created in the CRM automatically, assigned to the right salesperson and tracked until closure."
+          },
+          {
+            "q": "Does it integrate with Tally or our existing ERP?",
+            "a": "Yes. We regularly integrate CRMs with Tally Prime and ERP systems such as Odoo so customers, orders and invoices stay in sync without double entry."
+          },
+          {
+            "q": "Can our dealers and distributors use the CRM?",
+            "a": "Yes. We can include a dealer portal and mobile app where dealers place orders, check schemes, view outstanding payments and track dispatch."
+          },
+          {
+            "q": "How long does it take to build a manufacturing CRM?",
+            "a": "A focused first version is usually ready in 4 to 8 weeks depending on modules and integrations. We release in phases so your team can start using core features early."
+          },
+          {
+            "q": "Is the CRM available on mobile for field sales?",
+            "a": "Yes. Field sales teams get a mobile app with visit check-in, order booking, expense claims and offline support for low-network areas."
+          }
+        ]
+      },
+      "related": [
+        "erp-software-development",
+        "inventory-management-software",
+        "hrms-payroll-software"
+      ]
+    },
+    {
+      "slug": "ca-crm-software",
+      "crumb": "CA Practice CRM",
+      "eyebrow": "CRM for CA Firms",
+      "h1": "CA CRM & Practice Management Software Never Miss a Due Date Again",
+      "productName": "CA CRM & Practice Management Software",
+      "promise": "Never Miss a Due Date Again",
+      "intro": "Run your CA firm from one dashboard. Track GST, ITR, TDS, ROC and audit work for every client, collect documents securely, assign tasks to your team and raise fee invoices automatically.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20CA%20Practice%20CRM%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "CA Practice CRM",
+      "summary": "GST, ITR, TDS and audit compliance tracking, client documents, tasks and billing.",
+      "group": "Industry CRM Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our CA Practice CRM solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Deadlines tracked in Excel",
+            "body": "Compliance calendars live in spreadsheets that nobody updates, so due dates slip through."
+          },
+          {
+            "title": "Chasing clients for documents",
+            "body": "Staff spend hours on calls and WhatsApp collecting bank statements, invoices and forms."
+          },
+          {
+            "title": "No view of team workload",
+            "body": "Partners cannot see who is overloaded, what is pending review or where work is stuck."
+          },
+          {
+            "title": "Unbilled work and late fees",
+            "body": "Completed work is not invoiced on time and outstanding fees are hard to follow up."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "CA CRM & Practice Management Software that fits your business",
+        "paragraphs": [
+          "A growing CA firm handles hundreds of clients and thousands of recurring compliance tasks every year. GST returns, TDS filings, income tax returns, ROC filings and audits all have hard deadlines, and one missed date means penalties and an unhappy client. Tracking all of it in Excel and WhatsApp simply does not scale.",
+          "Our CA CRM and practice management software is built around the Indian compliance calendar. Recurring tasks are generated automatically for each client based on the services they use. Articles and staff see exactly what is due, what is pending from the client and what is ready for partner review.",
+          "Clients get a secure portal to upload documents and see filing status, which cuts down on follow-up calls. Partners get a clear view of workload, turnaround time, pending fees and profitability per client, so the firm can grow without chaos."
+        ],
+        "whoFor": [
+          "Chartered accountant firms",
+          "Tax consultants & GST practitioners",
+          "Company secretary firms",
+          "Bookkeeping & accounting outsourcing",
+          "Audit firms",
+          "Payroll & compliance consultants"
+        ],
+        "integrations": [
+          "WhatsApp Business",
+          "Gmail & Outlook",
+          "Tally",
+          "Google Drive",
+          "Razorpay",
+          "SMS Gateway"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our CA Practice CRM software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Compliance calendar",
+            "body": "Auto-generate recurring GST, TDS, ITR, ROC and audit tasks per client with due-date alerts."
+          },
+          {
+            "n": "02",
+            "title": "Client document portal",
+            "body": "Clients upload documents securely and see filing status without calling your office."
+          },
+          {
+            "n": "03",
+            "title": "Task & workflow management",
+            "body": "Assign work to staff and articles, set checklists and route files for partner review."
+          },
+          {
+            "n": "04",
+            "title": "Automated reminders",
+            "body": "WhatsApp, SMS and email reminders to clients for pending documents and payments."
+          },
+          {
+            "n": "05",
+            "title": "Fee billing & receipts",
+            "body": "Generate GST-compliant fee invoices, track receipts and follow up on outstanding fees."
+          },
+          {
+            "n": "06",
+            "title": "Client master & credentials",
+            "body": "Store PAN, GSTIN, DSC expiry and portal credentials securely with role-based access."
+          },
+          {
+            "n": "07",
+            "title": "Time & productivity tracking",
+            "body": "Track time spent per client and task to understand effort and profitability."
+          },
+          {
+            "n": "08",
+            "title": "Partner dashboards",
+            "body": "See pending filings, overdue tasks, team workload and revenue at a glance."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Client Master",
+          "Compliance Calendar",
+          "GST & TDS Tracker",
+          "ITR Tracker",
+          "ROC & Audit Tasks",
+          "Document Management",
+          "Client Portal",
+          "Staff Tasks",
+          "DSC Expiry Alerts",
+          "Fee Billing",
+          "Receipts & Outstanding",
+          "Reports"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Zero missed deadlines",
+            "body": "Every recurring filing is generated and tracked automatically with escalation alerts."
+          },
+          {
+            "title": "Fewer client follow-ups",
+            "body": "Automated reminders and a client portal reduce time spent chasing documents."
+          },
+          {
+            "title": "Scalable team operations",
+            "body": "Standard workflows let you add clients and staff without losing control."
+          },
+          {
+            "title": "Faster collections",
+            "body": "Fees are billed when work is done and reminders go out until payment is received."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your CA Practice CRM partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "CA Practice CRM software: your questions answered",
+        "items": [
+          {
+            "q": "What is CA practice management software?",
+            "a": "CA practice management software helps chartered accountant firms manage clients, recurring compliance tasks, documents, staff workload and fee billing in one system instead of Excel sheets and WhatsApp."
+          },
+          {
+            "q": "Can it automatically create GST, TDS and ITR tasks for each client?",
+            "a": "Yes. You map services to each client once, and the system generates recurring tasks with due dates every month, quarter or year based on the Indian compliance calendar."
+          },
+          {
+            "q": "Is client data and credential storage secure?",
+            "a": "Yes. We use encrypted storage, role-based access, activity logs and secure hosting. Staff only see the clients and data they are permitted to access."
+          },
+          {
+            "q": "Can clients upload documents themselves?",
+            "a": "Yes. Clients get a portal or mobile-friendly link to upload documents and check the status of their filings, which reduces calls to your office."
+          },
+          {
+            "q": "Does the software file returns on government portals?",
+            "a": "The CRM manages the workflow, documents and status around filings. Actual filing is done on government portals or your existing tax software, and the status is updated in the CRM."
+          },
+          {
+            "q": "Can the software be customised for our firm's processes?",
+            "a": "Yes. Because we build it for you, checklists, approval steps, service types and reports follow your firm's way of working."
+          }
+        ]
+      },
+      "related": [
+        "hrms-payroll-software",
+        "insurance-crm-software",
+        "loan-management-software"
+      ]
+    },
+    {
+      "slug": "visa-immigration-crm-software",
+      "crumb": "Visa & Immigration CRM",
+      "eyebrow": "CRM for Visa Consultants",
+      "h1": "Visa & Immigration CRM Software From Enquiry to Visa Approval",
+      "productName": "Visa & Immigration CRM Software",
+      "promise": "From Enquiry to Visa Approval",
+      "intro": "Manage student visa, PR, work permit and tourist visa files in one place. Capture leads from ads and walk-ins, run country-wise document checklists, track application stages and keep applicants updated automatically.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20Visa%20%26%20Immigration%20CRM%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "Visa & Immigration CRM",
+      "summary": "Student, PR, work and tourist visa leads, document checklists and application tracking.",
+      "group": "Industry CRM Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our Visa & Immigration CRM solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Leads leaking from ads",
+            "body": "Facebook and Google leads are not called quickly, and many are never followed up at all."
+          },
+          {
+            "title": "Document chaos",
+            "body": "Passports, transcripts and financials arrive over WhatsApp and email with no checklist."
+          },
+          {
+            "title": "Applicants keep calling",
+            "body": "Without status updates, applicants call counsellors repeatedly for progress."
+          },
+          {
+            "title": "Branch & agent blind spots",
+            "body": "Owners cannot compare branch performance, sub-agent referrals or counsellor conversions."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "Visa & Immigration CRM Software that fits your business",
+        "paragraphs": [
+          "Visa and immigration consultancies live on volume and trust. Leads pour in from Facebook ads, Google, seminars and walk-ins, and each applicant then moves through counselling, documentation, IELTS or PTE, university or employer applications, fee payments and embassy submission. Managing that in registers and spreadsheets leads to lost leads and anxious clients.",
+          "Our visa and immigration CRM is designed around this journey. Every enquiry is captured with source tracking and assigned to a counsellor. Country and visa-type specific checklists tell your team exactly what documents are pending, and each file moves through clear stages so managers can see bottlenecks instantly.",
+          "Applicants receive automated WhatsApp and email updates at every stage, and can upload documents through their own portal. Branch-wise and counsellor-wise reports show conversions, revenue and agent commissions, so you can scale across branches with confidence."
+        ],
+        "whoFor": [
+          "Study abroad consultants",
+          "PR & immigration consultants",
+          "Work permit agencies",
+          "Tourist visa agents",
+          "IELTS & PTE coaching centres",
+          "Multi-branch consultancies"
+        ],
+        "integrations": [
+          "Meta Lead Ads",
+          "Google Ads",
+          "WhatsApp Business API",
+          "Razorpay",
+          "Google Calendar",
+          "Email"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our Visa & Immigration CRM software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Lead capture & auto-assign",
+            "body": "Pull leads from Meta ads, Google, website and walk-ins, then auto-assign by country or branch."
+          },
+          {
+            "n": "02",
+            "title": "Country-wise checklists",
+            "body": "Pre-built document checklists for each country and visa type, with pending items highlighted."
+          },
+          {
+            "n": "03",
+            "title": "Application stage tracking",
+            "body": "Track counselling, test prep, offer letter, fees, visa lodgement and decision stages."
+          },
+          {
+            "n": "04",
+            "title": "Applicant portal",
+            "body": "Applicants upload documents, sign forms and see their file status from their phone."
+          },
+          {
+            "n": "05",
+            "title": "WhatsApp automation",
+            "body": "Automatic updates, reminders and appointment confirmations via WhatsApp Business API."
+          },
+          {
+            "n": "06",
+            "title": "University & course database",
+            "body": "Maintain institutions, intakes, fees and eligibility to shortlist options quickly."
+          },
+          {
+            "n": "07",
+            "title": "Payments & commissions",
+            "body": "Record service fees and instalments, and track commissions from institutions and sub-agents."
+          },
+          {
+            "n": "08",
+            "title": "Multi-branch reports",
+            "body": "Branch, counsellor and source-wise conversion reports for data-driven growth."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Lead Management",
+          "Counselling Notes",
+          "Document Checklists",
+          "Application Tracker",
+          "Applicant Portal",
+          "University Database",
+          "Test Prep Batches",
+          "Appointments",
+          "Payments & Invoices",
+          "Agent Commissions",
+          "WhatsApp Automation",
+          "Branch Reports"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "More leads converted",
+            "body": "Instant assignment and follow-up reminders mean every ad enquiry gets a timely call."
+          },
+          {
+            "title": "Complete files, fewer rejections",
+            "body": "Structured checklists reduce missing documents before lodgement."
+          },
+          {
+            "title": "Happier applicants",
+            "body": "Proactive status updates build trust and generate referrals."
+          },
+          {
+            "title": "Ready to scale branches",
+            "body": "Standard processes and central reporting make new branches easier to run."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your Visa & Immigration CRM partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "Visa & Immigration CRM software: your questions answered",
+        "items": [
+          {
+            "q": "What is a visa CRM?",
+            "a": "A visa CRM is software that helps visa and immigration consultants manage leads, applicant documents, application stages, payments and communication in one place, from the first enquiry to the final visa decision."
+          },
+          {
+            "q": "Can the CRM capture leads from Facebook and Google ads?",
+            "a": "Yes. We integrate Meta Lead Ads, Google Ads lead forms and your website so every enquiry lands in the CRM instantly and is assigned to a counsellor."
+          },
+          {
+            "q": "Does it support different checklists for each country?",
+            "a": "Yes. You can configure document checklists and stages per country and visa type, such as Canada study permit, UK student visa, Australia PR or USA tourist visa."
+          },
+          {
+            "q": "Can applicants track their own application status?",
+            "a": "Yes. Applicants get a secure portal and automatic WhatsApp or email updates whenever their file moves to a new stage."
+          },
+          {
+            "q": "Can it manage multiple branches and sub-agents?",
+            "a": "Yes. The CRM supports multiple branches, role-based access and sub-agent tracking with commission reports."
+          },
+          {
+            "q": "Is applicant data kept secure?",
+            "a": "Yes. Passport and personal documents are stored with encryption, access controls and audit logs on secure cloud hosting."
+          }
+        ]
+      },
+      "related": [
+        "travel-agency-crm-software",
+        "education-crm-software",
+        "ca-crm-software"
+      ]
+    },
+    {
+      "slug": "erp-software-development",
+      "crumb": "Custom ERP Software",
+      "eyebrow": "ERP Development",
+      "h1": "Custom ERP Software Development One System for Your Entire Business",
+      "productName": "Custom ERP Software Development",
+      "promise": "One System for Your Entire Business",
+      "intro": "Replace disconnected spreadsheets and software with one ERP that fits your business. We build custom ERP systems and implement Odoo ERP to connect sales, purchase, inventory, production, accounts and HR, with real-time reports for decision makers.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20Custom%20ERP%20Software%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "Custom ERP Software",
+      "summary": "Custom and Odoo ERP connecting sales, purchase, inventory, production, accounts and HR.",
+      "group": "ERP & Business Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our Custom ERP Software solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Data entered multiple times",
+            "body": "The same order is typed into Excel, Tally and emails, creating errors and wasted hours."
+          },
+          {
+            "title": "Stock never matches",
+            "body": "Physical and book stock differ because inventory is not updated in real time."
+          },
+          {
+            "title": "Reports take days",
+            "body": "Owners wait for month-end to know sales, margins and cash position."
+          },
+          {
+            "title": "Off-the-shelf does not fit",
+            "body": "Generic software forces workarounds for your unique processes."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "Custom ERP Software Development that fits your business",
+        "paragraphs": [
+          "As a business grows, every department picks its own tool. Sales uses Excel, accounts uses Tally, the warehouse keeps a register and production plans on a whiteboard. Data is entered three times, reports take days, and nobody trusts the numbers. An ERP fixes this by making every department work on one shared database.",
+          "Insta Biz Web offers two routes. For businesses with standard processes, we implement and customise Odoo ERP, a proven open-source platform with modules for almost every function. For businesses with unique workflows, we build a fully custom ERP from scratch so the software follows your process, not the other way around.",
+          "Either way, you get GST-ready invoicing, multi-location inventory, purchase and production planning, role-based access and dashboards that show profitability, stock and cash flow in real time. We handle data migration, training and ongoing support, so your ERP keeps pace as your business grows."
+        ],
+        "whoFor": [
+          "Manufacturers & job workers",
+          "Traders & distributors",
+          "Retail chains",
+          "Service companies",
+          "Multi-company groups",
+          "Growing SMEs"
+        ],
+        "integrations": [
+          "Odoo",
+          "Tally",
+          "E-invoice & E-way Bill",
+          "Razorpay",
+          "WhatsApp Business",
+          "Shopify & WooCommerce"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our Custom ERP Software software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Sales & CRM",
+            "body": "Leads, quotations, sales orders, delivery and invoicing connected end to end."
+          },
+          {
+            "n": "02",
+            "title": "Purchase management",
+            "body": "Purchase requests, RFQs, vendor comparison, purchase orders and GRN."
+          },
+          {
+            "n": "03",
+            "title": "Inventory & warehouse",
+            "body": "Multi-location stock, batch and serial tracking, reorder levels and barcode scanning."
+          },
+          {
+            "n": "04",
+            "title": "Manufacturing & MRP",
+            "body": "Bill of materials, work orders, production planning, job work and costing."
+          },
+          {
+            "n": "05",
+            "title": "Accounting & GST",
+            "body": "GST-compliant invoicing, e-invoice and e-way bill, ledgers and financial reports."
+          },
+          {
+            "n": "06",
+            "title": "HR & payroll",
+            "body": "Employee records, attendance, leave, payroll with PF, ESI and professional tax."
+          },
+          {
+            "n": "07",
+            "title": "Role-based access",
+            "body": "Granular permissions and approval workflows for every department and location."
+          },
+          {
+            "n": "08",
+            "title": "Real-time dashboards",
+            "body": "Live KPIs for sales, stock, production, receivables and profitability."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Sales",
+          "CRM",
+          "Purchase",
+          "Inventory",
+          "Manufacturing (MRP)",
+          "Quality Control",
+          "Accounting",
+          "GST & E-invoice",
+          "HR & Payroll",
+          "Projects",
+          "Point of Sale",
+          "Business Intelligence"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Single source of truth",
+            "body": "Every department works on the same live data, removing duplicate entry and errors."
+          },
+          {
+            "title": "Lower operating cost",
+            "body": "Automation of routine work frees your team for higher-value tasks."
+          },
+          {
+            "title": "Better inventory control",
+            "body": "Accurate stock and reorder planning reduce both stock-outs and excess inventory."
+          },
+          {
+            "title": "Built to scale",
+            "body": "Add users, locations, companies and modules as your business grows."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your Custom ERP Software partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "Custom ERP Software software: your questions answered",
+        "items": [
+          {
+            "q": "What is ERP software?",
+            "a": "ERP (Enterprise Resource Planning) software connects all core business functions such as sales, purchase, inventory, production, accounting and HR into one system with a shared database, so information flows automatically between departments."
+          },
+          {
+            "q": "Should we choose Odoo or a fully custom ERP?",
+            "a": "Odoo is ideal when your processes are close to standard and you want a faster, cost-effective rollout. A fully custom ERP is better when you have unique workflows that off-the-shelf software cannot handle. We recommend the right route after a free discovery session."
+          },
+          {
+            "q": "How long does ERP implementation take?",
+            "a": "A typical SME implementation takes 2 to 4 months, depending on modules, data migration and customisation. We go live in phases so critical modules start delivering value early."
+          },
+          {
+            "q": "Is the ERP GST compliant?",
+            "a": "Yes. We configure GST invoicing, HSN/SAC codes, e-invoice and e-way bill generation and GST return reports as per Indian regulations."
+          },
+          {
+            "q": "Can we migrate our data from Tally and Excel?",
+            "a": "Yes. We migrate masters and opening balances such as customers, vendors, products, stock and ledgers from Tally, Excel or your existing software."
+          },
+          {
+            "q": "Is the ERP cloud-based or on-premise?",
+            "a": "Both options are available. Most clients choose secure cloud hosting for anywhere access, but we also deploy on your own servers when required."
+          }
+        ]
+      },
+      "related": [
+        "manufacturing-crm-software",
+        "inventory-management-software",
+        "hrms-payroll-software"
+      ]
+    },
+    {
+      "slug": "real-estate-crm-software",
+      "crumb": "Real Estate CRM",
+      "eyebrow": "CRM for Real Estate",
+      "h1": "Real Estate CRM Software Turn Site Visits into Bookings",
+      "productName": "Real Estate CRM Software",
+      "promise": "Turn Site Visits into Bookings",
+      "intro": "Capture every property lead from portals and ads, schedule site visits, show live unit availability, manage bookings and track payment milestones, all from one CRM built for builders, developers and brokers.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20Real%20Estate%20CRM%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "Real Estate CRM",
+      "summary": "Property leads, site visits, unit inventory, bookings and payment milestones.",
+      "group": "Industry CRM Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our Real Estate CRM solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Slow response to portal leads",
+            "body": "Leads from property portals wait hours for a call and go to competitors."
+          },
+          {
+            "title": "Inventory confusion",
+            "body": "Unit availability lives in Excel, causing double holds and outdated pricing."
+          },
+          {
+            "title": "Payment follow-up gaps",
+            "body": "Construction-linked demands and receipts are tracked manually, delaying collections."
+          },
+          {
+            "title": "Broker disputes",
+            "body": "Unclear lead ownership and commission tracking create friction with channel partners."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "Real Estate CRM Software that fits your business",
+        "paragraphs": [
+          "Real estate sales run on speed. A lead from 99acres, MagicBricks, Housing.com or a Facebook campaign cools within hours if nobody calls. Once a buyer is interested, your team needs to schedule site visits, share floor plans and pricing, hold units, and then manage agreements and payment schedules for months.",
+          "Our real estate CRM connects this entire journey. Leads from portals and ads flow in automatically and are routed to the right sales executive. Site visits are scheduled and tracked, and sales teams see live unit availability with pricing across towers and projects, so double booking never happens.",
+          "After booking, the CRM manages demand letters, construction-linked payment schedules, receipts and customer documentation. Channel partners get their own login to register leads and track commissions. Management sees project-wise sales velocity, collections and marketing ROI at a glance."
+        ],
+        "whoFor": [
+          "Builders & developers",
+          "Real estate brokers",
+          "Channel partner firms",
+          "Commercial property leasing",
+          "Plotting & township projects",
+          "Property management companies"
+        ],
+        "integrations": [
+          "99acres",
+          "MagicBricks",
+          "Housing.com",
+          "Meta Lead Ads",
+          "WhatsApp Business",
+          "Tally"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our Real Estate CRM software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Portal & ad lead capture",
+            "body": "Auto-import leads from 99acres, MagicBricks, Housing.com, Meta and Google ads."
+          },
+          {
+            "n": "02",
+            "title": "Site visit scheduling",
+            "body": "Book, confirm and track site visits with reminders and feedback capture."
+          },
+          {
+            "n": "03",
+            "title": "Live unit inventory",
+            "body": "Tower and floor-wise availability, pricing, hold and booking status in real time."
+          },
+          {
+            "n": "04",
+            "title": "Booking & documentation",
+            "body": "Booking forms, KYC, allotment letters and agreements generated from templates."
+          },
+          {
+            "n": "05",
+            "title": "Payment schedules",
+            "body": "Construction-linked demand letters, receipts, interest and outstanding tracking."
+          },
+          {
+            "n": "06",
+            "title": "Channel partner portal",
+            "body": "Brokers register leads, check availability and track commissions transparently."
+          },
+          {
+            "n": "07",
+            "title": "Marketing ROI",
+            "body": "Source-wise cost per lead, site visit and booking to optimise ad spend."
+          },
+          {
+            "n": "08",
+            "title": "Customer portal",
+            "body": "Buyers view payment status, construction updates and documents online."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Lead Management",
+          "Site Visits",
+          "Project & Unit Inventory",
+          "Cost Sheets",
+          "Bookings",
+          "Agreements",
+          "Payment Schedules",
+          "Demand Letters",
+          "Channel Partners",
+          "Customer Portal",
+          "Possession & Handover",
+          "Sales Reports"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Faster lead response",
+            "body": "Instant routing and reminders mean hot leads get called while they are still hot."
+          },
+          {
+            "title": "No double bookings",
+            "body": "One live inventory view for every salesperson and partner."
+          },
+          {
+            "title": "Better collections",
+            "body": "Automated demand letters and reminders keep payment schedules on track."
+          },
+          {
+            "title": "Smarter marketing spend",
+            "body": "Know which portals and campaigns actually produce bookings."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your Real Estate CRM partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "Real Estate CRM software: your questions answered",
+        "items": [
+          {
+            "q": "What does a real estate CRM do?",
+            "a": "A real estate CRM manages property leads, site visits, unit inventory, bookings, payment schedules and channel partners in one system, helping builders and brokers convert more enquiries into sales."
+          },
+          {
+            "q": "Can it pull leads from 99acres, MagicBricks and Housing.com?",
+            "a": "Yes. We integrate with major property portals and ad platforms so leads are created in the CRM automatically and assigned to sales executives."
+          },
+          {
+            "q": "Can we manage multiple projects and towers?",
+            "a": "Yes. The CRM supports multiple projects, towers, floors and unit types with separate pricing, availability and reports."
+          },
+          {
+            "q": "Does it handle construction-linked payment plans?",
+            "a": "Yes. You can define payment milestones per project, generate demand letters automatically and track receipts and outstanding amounts per unit."
+          },
+          {
+            "q": "Can brokers and channel partners access the CRM?",
+            "a": "Yes. Channel partners get a separate portal to register leads, avoid ownership disputes and track commissions."
+          },
+          {
+            "q": "Is there a mobile app for the sales team?",
+            "a": "Yes. Sales executives can manage leads, log calls, schedule site visits and check inventory from a mobile app."
+          }
+        ]
+      },
+      "related": [
+        "loan-management-software",
+        "insurance-crm-software",
+        "erp-software-development"
+      ]
+    },
+    {
+      "slug": "education-crm-software",
+      "crumb": "Education & Coaching CRM",
+      "eyebrow": "CRM for Education",
+      "h1": "Education CRM & Institute Management Software More Admissions, Less Admin",
+      "productName": "Education CRM & Institute Management Software",
+      "promise": "More Admissions, Less Admin",
+      "intro": "Convert more student enquiries into admissions and run your institute smoothly. Manage enquiries, counselling, admissions, fee instalments, batches, attendance and parent communication from one platform.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20Education%20%26%20Coaching%20CRM%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "Education & Coaching CRM",
+      "summary": "Enquiries, admissions, fee instalments, batches, attendance and parent updates.",
+      "group": "Industry CRM Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our Education & Coaching CRM solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Enquiries forgotten after season",
+            "body": "Counsellors cannot keep up with follow-ups and interested students slip away."
+          },
+          {
+            "title": "Fee instalment tracking",
+            "body": "Pending instalments are tracked manually, leading to missed collections."
+          },
+          {
+            "title": "Batch & attendance registers",
+            "body": "Paper registers make it hard to monitor attendance and batch capacity."
+          },
+          {
+            "title": "Poor parent communication",
+            "body": "Parents learn about low attendance or dues too late."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "Education CRM & Institute Management Software that fits your business",
+        "paragraphs": [
+          "Coaching institutes, schools and colleges receive hundreds of enquiries every admission season from ads, walk-ins, seminars and referrals. Without a system, counsellors lose track of follow-ups, demo classes are not scheduled, and interested students join a competitor.",
+          "Our education CRM captures every enquiry, schedules counselling and demo sessions, and nudges counsellors to follow up at the right time. Once a student enrols, the same system manages admission forms, fee structures and instalments, batch allocation, attendance and test results.",
+          "Parents and students stay informed through automated WhatsApp and SMS updates about fees, attendance and results. Management gets clear reports on enquiry sources, counsellor conversions, fee collections and batch occupancy, so every admission season is better than the last."
+        ],
+        "whoFor": [
+          "Coaching institutes (JEE, NEET, UPSC)",
+          "Schools",
+          "Colleges & universities",
+          "Skill & training centres",
+          "Language & IELTS institutes",
+          "Online course providers"
+        ],
+        "integrations": [
+          "Meta Lead Ads",
+          "Google Ads",
+          "WhatsApp Business",
+          "Razorpay",
+          "Zoom & Google Meet",
+          "Biometric devices"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our Education & Coaching CRM software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Enquiry management",
+            "body": "Capture enquiries from ads, website, walk-ins and seminars with source tracking."
+          },
+          {
+            "n": "02",
+            "title": "Counselling & demo classes",
+            "body": "Schedule counselling and demo sessions with automated reminders."
+          },
+          {
+            "n": "03",
+            "title": "Online admissions",
+            "body": "Digital admission forms, document upload and online fee payment."
+          },
+          {
+            "n": "04",
+            "title": "Fee management",
+            "body": "Fee structures, instalments, discounts, receipts and automatic due reminders."
+          },
+          {
+            "n": "05",
+            "title": "Batches & timetable",
+            "body": "Create batches, assign faculty and manage timetables and capacity."
+          },
+          {
+            "n": "06",
+            "title": "Attendance & results",
+            "body": "Mark attendance by app or biometric and publish test results to parents."
+          },
+          {
+            "n": "07",
+            "title": "Parent & student app",
+            "body": "Notices, homework, attendance, results and fee status on mobile."
+          },
+          {
+            "n": "08",
+            "title": "Admission analytics",
+            "body": "Source, counsellor and course-wise conversion and revenue reports."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Enquiry Management",
+          "Counselling",
+          "Demo Classes",
+          "Admissions",
+          "Fee Management",
+          "Batches & Timetable",
+          "Attendance",
+          "Exams & Results",
+          "Faculty Management",
+          "Parent App",
+          "WhatsApp & SMS",
+          "Reports"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Higher enquiry conversion",
+            "body": "Structured follow-ups ensure every interested student is contacted on time."
+          },
+          {
+            "title": "On-time fee collection",
+            "body": "Automatic reminders and online payment reduce outstanding fees."
+          },
+          {
+            "title": "Less paperwork",
+            "body": "Digital admissions, attendance and results free staff from manual registers."
+          },
+          {
+            "title": "Engaged parents",
+            "body": "Regular updates build trust and improve retention and referrals."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your Education & Coaching CRM partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "Education & Coaching CRM software: your questions answered",
+        "items": [
+          {
+            "q": "What is an education CRM?",
+            "a": "An education CRM helps schools, colleges and coaching institutes manage student enquiries, counselling, admissions and communication, so more enquiries convert into enrolled students."
+          },
+          {
+            "q": "Can it manage fee instalments and reminders?",
+            "a": "Yes. You can set fee structures with instalments and discounts, accept online payments and send automatic reminders to students and parents before and after due dates."
+          },
+          {
+            "q": "Is there an app for parents and students?",
+            "a": "Yes. Parents and students can view attendance, results, notices, homework and fee status on a mobile app or web portal."
+          },
+          {
+            "q": "Can it handle multiple branches or centres?",
+            "a": "Yes. The system supports multiple branches with centralised reporting and branch-level access control."
+          },
+          {
+            "q": "Does it integrate with biometric attendance devices?",
+            "a": "Yes. We can integrate supported biometric and RFID devices so attendance is recorded automatically."
+          },
+          {
+            "q": "Can we run online classes through it?",
+            "a": "We can integrate Zoom or Google Meet for scheduling and joining live classes, and add a basic learning module for notes and recorded content if needed."
+          }
+        ]
+      },
+      "related": [
+        "visa-immigration-crm-software",
+        "hrms-payroll-software",
+        "hospital-management-software"
+      ]
+    },
+    {
+      "slug": "hospital-management-software",
+      "crumb": "Hospital & Clinic Software",
+      "eyebrow": "Healthcare Software",
+      "h1": "Hospital & Clinic Management Software Better Care, Smoother Operations",
+      "productName": "Hospital & Clinic Management Software",
+      "promise": "Better Care, Smoother Operations",
+      "intro": "Run your hospital or clinic digitally. Manage appointments, OPD and IPD, electronic patient records, billing, pharmacy, lab reports and patient follow-ups in one secure, easy-to-use system.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20Hospital%20%26%20Clinic%20Software%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "Hospital & Clinic Software",
+      "summary": "Appointments, OPD/IPD, patient records, billing, pharmacy and lab reports.",
+      "group": "ERP & Business Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our Hospital & Clinic Software solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Long patient waiting times",
+            "body": "Manual registration and appointment queues frustrate patients and staff."
+          },
+          {
+            "title": "Paper records get lost",
+            "body": "Doctors cannot quickly see past history, prescriptions or lab results."
+          },
+          {
+            "title": "Billing leakage",
+            "body": "Services, consumables and IPD charges are missed during manual billing."
+          },
+          {
+            "title": "Pharmacy stock issues",
+            "body": "Expiry, batch and stock levels are not tracked accurately."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "Hospital & Clinic Management Software that fits your business",
+        "paragraphs": [
+          "Clinics and hospitals juggle appointments, walk-ins, consultations, lab tests, pharmacy and billing, often on disconnected software or paper files. Patients wait longer, records get lost, and revenue leaks through unbilled services and pharmacy stock that is not tracked properly.",
+          "Our hospital and clinic management software brings every department onto one platform. Patients book appointments online or by WhatsApp, reception registers them in seconds, and doctors see complete history, prescriptions and reports on screen. Lab and pharmacy are connected, so orders and results flow automatically.",
+          "Billing covers OPD, IPD, packages, TPA and insurance claims, with detailed reports on revenue by department and doctor. Automated follow-up reminders and digital reports improve patient experience and repeat visits. The system is built with role-based access and secure hosting to protect sensitive health data."
+        ],
+        "whoFor": [
+          "Multi-speciality hospitals",
+          "Clinics & polyclinics",
+          "Nursing homes",
+          "Diagnostic labs",
+          "Dental & eye clinics",
+          "Physiotherapy & wellness centres"
+        ],
+        "integrations": [
+          "WhatsApp Business",
+          "SMS Gateway",
+          "Razorpay",
+          "Lab analysers",
+          "Tally",
+          "ABDM-ready APIs"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our Hospital & Clinic Software software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Online appointments",
+            "body": "Patients book via website or WhatsApp; staff manage doctor-wise slots and queues."
+          },
+          {
+            "n": "02",
+            "title": "Electronic medical records",
+            "body": "Complete patient history, vitals, diagnoses, prescriptions and attachments."
+          },
+          {
+            "n": "03",
+            "title": "OPD & IPD management",
+            "body": "Consultations, admissions, bed management, nursing notes and discharge summaries."
+          },
+          {
+            "n": "04",
+            "title": "Integrated billing",
+            "body": "OPD, IPD, packages, TPA and insurance billing with GST where applicable."
+          },
+          {
+            "n": "05",
+            "title": "Pharmacy management",
+            "body": "Batch and expiry tracking, purchase, stock alerts and prescription-linked sales."
+          },
+          {
+            "n": "06",
+            "title": "Lab & radiology",
+            "body": "Test orders, sample tracking and digital reports delivered to patients."
+          },
+          {
+            "n": "07",
+            "title": "Patient follow-ups",
+            "body": "Automated WhatsApp and SMS reminders for follow-up visits and reports."
+          },
+          {
+            "n": "08",
+            "title": "Management reports",
+            "body": "Revenue by department and doctor, occupancy, collections and stock reports."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Appointments",
+          "Patient Registration",
+          "EMR",
+          "OPD",
+          "IPD & Bed Management",
+          "Billing & TPA",
+          "Pharmacy",
+          "Laboratory",
+          "Radiology",
+          "Doctor App",
+          "Patient Portal",
+          "MIS Reports"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Shorter waiting times",
+            "body": "Online booking and fast registration keep queues moving."
+          },
+          {
+            "title": "Better clinical decisions",
+            "body": "Doctors see complete patient history at the point of care."
+          },
+          {
+            "title": "Plugged revenue leaks",
+            "body": "Every service and consumable is captured and billed accurately."
+          },
+          {
+            "title": "Improved patient loyalty",
+            "body": "Digital reports and follow-up reminders bring patients back."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your Hospital & Clinic Software partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "Hospital & Clinic Software software: your questions answered",
+        "items": [
+          {
+            "q": "What is hospital management software?",
+            "a": "Hospital management software (HMS) digitises hospital and clinic operations including appointments, patient records, OPD, IPD, billing, pharmacy and lab, so staff work faster and patients get better care."
+          },
+          {
+            "q": "Is the software suitable for small clinics?",
+            "a": "Yes. We build lighter versions for single-doctor and small clinics with appointments, EMR, prescriptions and billing, and scale up as you grow."
+          },
+          {
+            "q": "Can patients book appointments online?",
+            "a": "Yes. Patients can book through your website, a patient app or WhatsApp, and receive confirmations and reminders automatically."
+          },
+          {
+            "q": "Does it support insurance and TPA billing?",
+            "a": "Yes. The billing module supports TPA and insurance workflows, pre-authorisation tracking and claim documentation."
+          },
+          {
+            "q": "How is patient data protected?",
+            "a": "We use encrypted storage, role-based access, audit logs, regular backups and secure hosting to protect health records."
+          },
+          {
+            "q": "Can it integrate with lab machines?",
+            "a": "Yes. We can integrate supported lab analysers so results are recorded directly into patient reports without manual entry."
+          }
+        ]
+      },
+      "related": [
+        "education-crm-software",
+        "inventory-management-software",
+        "hrms-payroll-software"
+      ]
+    },
+    {
+      "slug": "travel-agency-crm-software",
+      "crumb": "Travel Agency CRM",
+      "eyebrow": "CRM for Travel Businesses",
+      "h1": "Travel Agency CRM Software Quote Faster, Book More Trips",
+      "productName": "Travel Agency CRM Software",
+      "promise": "Quote Faster, Book More Trips",
+      "intro": "Manage travel enquiries, create beautiful itineraries and quotations in minutes, track bookings and supplier payments, and keep travellers updated before and during their trip.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20Travel%20Agency%20CRM%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "Travel Agency CRM",
+      "summary": "Travel enquiries, itinerary builder, quotations, bookings and supplier payments.",
+      "group": "Industry CRM Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our Travel Agency CRM solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Quotes take hours",
+            "body": "Itineraries are rebuilt manually for every enquiry, slowing response times."
+          },
+          {
+            "title": "Margin errors",
+            "body": "Supplier costs and markups are calculated by hand, leading to losses."
+          },
+          {
+            "title": "Scattered booking details",
+            "body": "Vouchers, tickets and traveller documents are spread across email and WhatsApp."
+          },
+          {
+            "title": "Supplier payment tracking",
+            "body": "Payables to hotels and transporters are hard to reconcile with customer receipts."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "Travel Agency CRM Software that fits your business",
+        "paragraphs": [
+          "Travel agencies compete on speed and personalisation. When a family asks for a Kerala or Dubai package, the agency that sends a clear, attractive itinerary first usually wins. Yet most agents still build quotes by copying old Word files and calculating costs manually across hotels, transport and activities.",
+          "Our travel agency CRM captures enquiries from ads, website, WhatsApp and walk-ins, then lets your team build day-wise itineraries with hotels, transfers and sightseeing from a reusable library. Costs and margins are calculated automatically, and a branded PDF or web quote is sent to the traveller in minutes.",
+          "Once confirmed, the CRM tracks bookings, vouchers, traveller documents, customer payments and supplier payables. Automated reminders go out for pending payments and travel dates, and management sees destination-wise sales, margins and team performance."
+        ],
+        "whoFor": [
+          "Tour operators",
+          "Travel agents",
+          "Destination management companies",
+          "Corporate travel agencies",
+          "Pilgrimage & group tour organisers",
+          "Holiday package companies"
+        ],
+        "integrations": [
+          "WhatsApp Business",
+          "Meta Lead Ads",
+          "Razorpay",
+          "Google Workspace",
+          "Tally",
+          "Email"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our Travel Agency CRM software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Enquiry management",
+            "body": "Capture enquiries from ads, website and WhatsApp with destination and budget details."
+          },
+          {
+            "n": "02",
+            "title": "Itinerary builder",
+            "body": "Drag-and-drop day-wise itineraries from a library of hotels, transfers and activities."
+          },
+          {
+            "n": "03",
+            "title": "Instant quotations",
+            "body": "Auto-calculate costs, taxes and margins, then send branded PDF or web quotes."
+          },
+          {
+            "n": "04",
+            "title": "Booking management",
+            "body": "Track confirmations, vouchers, tickets and traveller documents per trip."
+          },
+          {
+            "n": "05",
+            "title": "Payments & invoicing",
+            "body": "Customer receipts, GST and TCS invoicing, and pending payment reminders."
+          },
+          {
+            "n": "06",
+            "title": "Supplier management",
+            "body": "Supplier rates, payables and reconciliation for hotels, DMCs and transporters."
+          },
+          {
+            "n": "07",
+            "title": "Traveller communication",
+            "body": "Automated pre-trip checklists, reminders and feedback via WhatsApp."
+          },
+          {
+            "n": "08",
+            "title": "Sales & margin reports",
+            "body": "Destination, agent and source-wise bookings, revenue and profit."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Lead Management",
+          "Itinerary Builder",
+          "Quotations",
+          "Package Library",
+          "Bookings",
+          "Vouchers",
+          "Customer Payments",
+          "Supplier Payables",
+          "Visa Assistance",
+          "Traveller Portal",
+          "WhatsApp Automation",
+          "Reports"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Faster response to enquiries",
+            "body": "Send professional quotes in minutes and win more bookings."
+          },
+          {
+            "title": "Protected margins",
+            "body": "Automatic costing stops pricing mistakes."
+          },
+          {
+            "title": "Organised operations",
+            "body": "Every trip's bookings, documents and payments are in one place."
+          },
+          {
+            "title": "Repeat travellers",
+            "body": "Great communication and follow-ups turn customers into loyal repeat clients."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your Travel Agency CRM partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "Travel Agency CRM software: your questions answered",
+        "items": [
+          {
+            "q": "What is a travel agency CRM?",
+            "a": "A travel agency CRM helps travel agents and tour operators manage enquiries, build itineraries and quotations, track bookings and payments, and communicate with travellers from one system."
+          },
+          {
+            "q": "Can we create itineraries and quotes quickly?",
+            "a": "Yes. The itinerary builder uses a reusable library of hotels, transfers and activities, and calculates costs and margins automatically so you can send a branded quote in minutes."
+          },
+          {
+            "q": "Does it handle GST and TCS on tour packages?",
+            "a": "Yes. Invoicing can be configured for applicable GST and TCS rules on domestic and international packages."
+          },
+          {
+            "q": "Can we track payments to hotels and suppliers?",
+            "a": "Yes. Supplier payables are tracked per booking so you can reconcile what you owe with what customers have paid."
+          },
+          {
+            "q": "Can the CRM send WhatsApp updates to travellers?",
+            "a": "Yes. We integrate WhatsApp Business API for quotes, payment reminders, pre-trip checklists and post-trip feedback."
+          },
+          {
+            "q": "Is it suitable for small travel agencies?",
+            "a": "Yes. We start with the modules you need and add more as your agency grows."
+          }
+        ]
+      },
+      "related": [
+        "visa-immigration-crm-software",
+        "insurance-crm-software",
+        "real-estate-crm-software"
+      ]
+    },
+    {
+      "slug": "insurance-crm-software",
+      "crumb": "Insurance Agency CRM",
+      "eyebrow": "CRM for Insurance",
+      "h1": "Insurance CRM Software Never Miss a Renewal",
+      "productName": "Insurance CRM Software",
+      "promise": "Never Miss a Renewal",
+      "intro": "Manage life, health, motor and general insurance business in one CRM. Track leads, policies across insurers, renewals, claims and commissions, and keep customers engaged with automated reminders.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20Insurance%20Agency%20CRM%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "Insurance Agency CRM",
+      "summary": "Leads, multi-insurer policies, renewals, claims and commission tracking.",
+      "group": "Industry CRM Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our Insurance Agency CRM solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Missed renewals",
+            "body": "Renewal dates are tracked manually and customers lapse or move to competitors."
+          },
+          {
+            "title": "Policies across many insurers",
+            "body": "No single view of all policies a customer or family holds."
+          },
+          {
+            "title": "Commission reconciliation",
+            "body": "Matching insurer commission statements with policies takes days."
+          },
+          {
+            "title": "Claims follow-up",
+            "body": "Claim status is tracked on calls, frustrating customers at critical moments."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "Insurance CRM Software that fits your business",
+        "paragraphs": [
+          "Insurance agencies grow on renewals and referrals. But when policies from multiple insurers are tracked in spreadsheets, renewal dates are missed, customers switch to another agent, and commission reconciliation becomes a monthly headache.",
+          "Our insurance CRM keeps every customer, family member and policy in one place, across life, health, motor and general insurance. Renewal reminders go out automatically to customers and your team, and lapsed or upcoming policies are highlighted on the dashboard.",
+          "The CRM also tracks new leads, quotes, claims assistance and commission payouts by insurer and product. For agencies with sub-agents or POSPs, it provides hierarchy-wise performance and payout reports, making your insurance business easier to scale."
+        ],
+        "whoFor": [
+          "Insurance agents & advisors",
+          "POSP networks",
+          "Insurance brokers",
+          "Corporate agents",
+          "Motor insurance dealers",
+          "Wealth & financial advisors"
+        ],
+        "integrations": [
+          "WhatsApp Business",
+          "SMS Gateway",
+          "Razorpay",
+          "Google Workspace",
+          "Email",
+          "Excel import"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our Insurance Agency CRM software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Lead & quote management",
+            "body": "Capture leads, compare quotes and track conversions by product and source."
+          },
+          {
+            "n": "02",
+            "title": "Policy management",
+            "body": "Store policies from all insurers with documents, nominees and premium details."
+          },
+          {
+            "n": "03",
+            "title": "Renewal automation",
+            "body": "Automatic WhatsApp, SMS and email renewal reminders with payment links."
+          },
+          {
+            "n": "04",
+            "title": "Family & group view",
+            "body": "See all policies across a family or corporate group for cross-selling."
+          },
+          {
+            "n": "05",
+            "title": "Claims tracking",
+            "body": "Log claims, track documents and status, and keep customers informed."
+          },
+          {
+            "n": "06",
+            "title": "Commission management",
+            "body": "Track expected versus received commissions by insurer, product and agent."
+          },
+          {
+            "n": "07",
+            "title": "Sub-agent & POSP hierarchy",
+            "body": "Manage agent hierarchies with performance and payout reports."
+          },
+          {
+            "n": "08",
+            "title": "Business analytics",
+            "body": "Premium, renewal ratio, product mix and agent performance dashboards."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Lead Management",
+          "Quotes",
+          "Customer & Family",
+          "Policy Management",
+          "Renewals",
+          "Claims",
+          "Commissions",
+          "Agent Hierarchy",
+          "Document Vault",
+          "Customer Portal",
+          "WhatsApp Reminders",
+          "Reports"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Higher renewal retention",
+            "body": "Automated reminders keep customers renewing with you."
+          },
+          {
+            "title": "More cross-selling",
+            "body": "Family views reveal gaps in health, life and motor cover."
+          },
+          {
+            "title": "Accurate commissions",
+            "body": "Reconciliation that takes minutes, not days."
+          },
+          {
+            "title": "Trusted service",
+            "body": "Organised claims support builds long-term loyalty."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your Insurance Agency CRM partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "Insurance Agency CRM software: your questions answered",
+        "items": [
+          {
+            "q": "What is insurance CRM software?",
+            "a": "Insurance CRM software helps agents and brokers manage leads, customers, policies from multiple insurers, renewals, claims and commissions in one system."
+          },
+          {
+            "q": "Can it send automatic renewal reminders?",
+            "a": "Yes. The CRM sends renewal reminders by WhatsApp, SMS and email before due dates, and alerts your team about upcoming and lapsed policies."
+          },
+          {
+            "q": "Does it support policies from multiple insurance companies?",
+            "a": "Yes. You can manage life, health, motor and general policies from any insurer in one place."
+          },
+          {
+            "q": "Can we track commissions from insurers?",
+            "a": "Yes. The commission module tracks expected and received commissions and helps reconcile insurer statements."
+          },
+          {
+            "q": "Can we import our existing policy data?",
+            "a": "Yes. We import customers and policies from Excel or your current software during setup."
+          },
+          {
+            "q": "Does it support sub-agents and POSPs?",
+            "a": "Yes. You can manage multi-level agent hierarchies with role-based access and payout reports."
+          }
+        ]
+      },
+      "related": [
+        "loan-management-software",
+        "ca-crm-software",
+        "real-estate-crm-software"
+      ]
+    },
+    {
+      "slug": "loan-management-software",
+      "crumb": "Loan & DSA CRM",
+      "eyebrow": "CRM for Lending",
+      "h1": "Loan CRM & Loan Management Software From Lead to Disbursement",
+      "productName": "Loan CRM & Loan Management Software",
+      "promise": "From Lead to Disbursement",
+      "intro": "Manage home, personal, business and vehicle loan leads, collect documents, track bank logins, sanction and disbursement, and calculate payouts, with complete visibility for DSAs, connectors and NBFCs.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20Loan%20%26%20DSA%20CRM%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "Loan & DSA CRM",
+      "summary": "Loan leads, documents, bank logins, sanction and disbursement, EMIs and payouts.",
+      "group": "Industry CRM Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our Loan & DSA CRM solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Incomplete loan files",
+            "body": "Missing documents are discovered late, delaying bank logins and approvals."
+          },
+          {
+            "title": "Status across many banks",
+            "body": "Tracking login, query, sanction and disbursement across lenders is manual."
+          },
+          {
+            "title": "Connector payout disputes",
+            "body": "Payout calculations are done in Excel, causing errors and friction."
+          },
+          {
+            "title": "EMI and overdue tracking",
+            "body": "Lenders struggle to monitor collections and overdues in real time."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "Loan CRM & Loan Management Software that fits your business",
+        "paragraphs": [
+          "Loan distribution is a document-heavy, multi-party process. A single case moves between the customer, the DSA, connectors and multiple banks or NBFCs, each with its own checklist and status. Tracking this on WhatsApp and Excel means lost files, slow turnaround and payout disputes.",
+          "Our loan CRM gives every case a clear trail from lead to disbursement. Product-specific document checklists, eligibility notes and bank-wise login tracking make sure files are complete and nothing waits unnoticed. Connectors can submit leads through their own portal and track status transparently.",
+          "For NBFCs and lenders, we extend the system into loan management with EMI schedules, collections, overdue tracking and reports. Payout calculations for DSAs and connectors are automated, and management dashboards show volumes, conversion and revenue by product, bank and team."
+        ],
+        "whoFor": [
+          "Loan DSAs",
+          "Loan agents & connectors",
+          "NBFCs",
+          "Microfinance institutions",
+          "Credit co-operative societies",
+          "Vehicle finance companies"
+        ],
+        "integrations": [
+          "WhatsApp Business",
+          "SMS Gateway",
+          "Razorpay",
+          "eKYC APIs",
+          "Google Workspace",
+          "Tally"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our Loan & DSA CRM software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Loan lead management",
+            "body": "Capture leads by product with eligibility details and source tracking."
+          },
+          {
+            "n": "02",
+            "title": "Document checklists",
+            "body": "Product-wise KYC, income and property document lists with upload status."
+          },
+          {
+            "n": "03",
+            "title": "Bank login tracking",
+            "body": "Track each case across banks and NBFCs from login to disbursement."
+          },
+          {
+            "n": "04",
+            "title": "Connector portal",
+            "body": "Connectors and sub-DSAs submit leads and view status and payouts."
+          },
+          {
+            "n": "05",
+            "title": "Payout automation",
+            "body": "Automatic calculation of payouts by lender, product and slab."
+          },
+          {
+            "n": "06",
+            "title": "EMI & collections",
+            "body": "EMI schedules, repayments, overdue alerts and collection follow-ups for lenders."
+          },
+          {
+            "n": "07",
+            "title": "Customer communication",
+            "body": "WhatsApp and SMS updates for documents, status and EMI reminders."
+          },
+          {
+            "n": "08",
+            "title": "MIS dashboards",
+            "body": "Volume, conversion and revenue by product, lender and team."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Lead Management",
+          "Eligibility Notes",
+          "Document Collection",
+          "Bank Logins",
+          "Sanction & Disbursement",
+          "Connector Portal",
+          "Payouts",
+          "EMI Schedules",
+          "Collections",
+          "Customer Portal",
+          "WhatsApp & SMS",
+          "MIS Reports"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Faster turnaround",
+            "body": "Complete files and clear status tracking move cases to disbursement sooner."
+          },
+          {
+            "title": "Transparent partner network",
+            "body": "Connectors see status and payouts, reducing disputes."
+          },
+          {
+            "title": "Accurate payouts",
+            "body": "Automated slab calculations remove Excel errors."
+          },
+          {
+            "title": "Healthier collections",
+            "body": "EMI reminders and overdue alerts improve repayment discipline."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your Loan & DSA CRM partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "Loan & DSA CRM software: your questions answered",
+        "items": [
+          {
+            "q": "What is loan CRM software?",
+            "a": "Loan CRM software helps DSAs, loan agents and lenders manage loan leads, documents, bank logins, sanction and disbursement tracking, and payouts in one system."
+          },
+          {
+            "q": "Can it track a case across multiple banks?",
+            "a": "Yes. Each case can be logged with multiple banks or NBFCs, with separate status, queries and outcomes tracked for each."
+          },
+          {
+            "q": "Can connectors submit leads?",
+            "a": "Yes. Connectors and sub-DSAs get their own portal or app to submit leads, upload documents and view status and payouts."
+          },
+          {
+            "q": "Does it include EMI and collections management?",
+            "a": "Yes. For NBFCs and lenders, we include EMI schedules, repayments, overdue tracking and collection follow-ups."
+          },
+          {
+            "q": "Is customer financial data secure?",
+            "a": "Yes. We use encryption, role-based access, audit logs and secure hosting to protect KYC and financial documents."
+          },
+          {
+            "q": "Can payouts be calculated automatically?",
+            "a": "Yes. Payout rules by lender, product and volume slab are configured once and calculated automatically for every disbursed case."
+          }
+        ]
+      },
+      "related": [
+        "insurance-crm-software",
+        "real-estate-crm-software",
+        "ca-crm-software"
+      ]
+    },
+    {
+      "slug": "hrms-payroll-software",
+      "crumb": "HRMS & Payroll",
+      "eyebrow": "HR & Payroll Software",
+      "h1": "HRMS & Payroll Software Accurate Payroll, Happier Teams",
+      "productName": "HRMS & Payroll Software",
+      "promise": "Accurate Payroll, Happier Teams",
+      "intro": "Automate HR from hiring to exit. Manage employee records, attendance, shifts, leave, payroll with statutory compliance, expense claims and performance reviews in one easy system with a mobile app for employees.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20HRMS%20%26%20Payroll%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "HRMS & Payroll",
+      "summary": "Attendance, leave, shifts, payroll with PF/ESI/PT/TDS, expenses and appraisals.",
+      "group": "ERP & Business Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our HRMS & Payroll solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Month-end payroll crunch",
+            "body": "Attendance, leave and overtime are compiled manually before every payroll."
+          },
+          {
+            "title": "Compliance errors",
+            "body": "PF, ESI, PT and TDS calculations in Excel lead to mistakes and penalties."
+          },
+          {
+            "title": "Field staff attendance",
+            "body": "No reliable way to track attendance of employees working on-site or in the field."
+          },
+          {
+            "title": "Endless HR queries",
+            "body": "Employees ask HR for leave balances, payslips and policies repeatedly."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "HRMS & Payroll Software that fits your business",
+        "paragraphs": [
+          "HR teams in growing companies spend the last week of every month compiling attendance from biometric devices, reconciling leave, calculating overtime and building payroll in Excel. One wrong formula leads to incorrect salaries, compliance issues and unhappy employees.",
+          "Our HRMS and payroll software automates this cycle. Attendance flows in from biometric devices or the mobile app with GPS, leave and shifts are applied automatically, and payroll is processed with PF, ESI, professional tax and TDS calculated correctly. Payslips are generated and shared in a click.",
+          "Employees get a self-service app to mark attendance, apply for leave, claim expenses and download payslips, which cuts HR queries dramatically. Management gets reports on headcount, attrition, attendance trends and salary costs across departments and locations."
+        ],
+        "whoFor": [
+          "Manufacturing units",
+          "IT & service companies",
+          "Retail chains",
+          "Security & facility services",
+          "Hospitals & schools",
+          "Multi-location businesses"
+        ],
+        "integrations": [
+          "Biometric devices",
+          "Tally",
+          "Bank salary upload",
+          "WhatsApp Business",
+          "Google Workspace",
+          "Email"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our HRMS & Payroll software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Employee database",
+            "body": "Complete employee records, documents, assets and lifecycle history."
+          },
+          {
+            "n": "02",
+            "title": "Attendance & shifts",
+            "body": "Biometric integration, mobile attendance with GPS and geo-fencing, and shift rosters."
+          },
+          {
+            "n": "03",
+            "title": "Leave management",
+            "body": "Custom leave policies, approvals, balances and holiday calendars."
+          },
+          {
+            "n": "04",
+            "title": "Payroll processing",
+            "body": "Salary structures, overtime, arrears and one-click payroll runs."
+          },
+          {
+            "n": "05",
+            "title": "Statutory compliance",
+            "body": "PF, ESI, professional tax, LWF and TDS calculations with challan reports."
+          },
+          {
+            "n": "06",
+            "title": "Expense claims",
+            "body": "Employees submit expenses with receipts for approval and reimbursement."
+          },
+          {
+            "n": "07",
+            "title": "Performance management",
+            "body": "Goals, KRAs, appraisals and feedback cycles."
+          },
+          {
+            "n": "08",
+            "title": "Employee self-service app",
+            "body": "Attendance, leave, payslips, claims and announcements on mobile."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Employee Master",
+          "Recruitment",
+          "Onboarding",
+          "Attendance",
+          "Shift Management",
+          "Leave",
+          "Payroll",
+          "PF / ESI / PT / TDS",
+          "Expense Claims",
+          "Performance",
+          "Employee App",
+          "HR Reports"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Payroll in hours, not days",
+            "body": "Automated attendance and calculations shorten the payroll cycle dramatically."
+          },
+          {
+            "title": "Compliance confidence",
+            "body": "Statutory deductions and reports are calculated accurately every month."
+          },
+          {
+            "title": "Reliable field attendance",
+            "body": "GPS and geo-fenced attendance for on-site and field staff."
+          },
+          {
+            "title": "Empowered employees",
+            "body": "Self-service reduces HR queries and improves transparency."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your HRMS & Payroll partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "HRMS & Payroll software: your questions answered",
+        "items": [
+          {
+            "q": "What is HRMS software?",
+            "a": "HRMS (Human Resource Management System) software manages employee data, attendance, leave, payroll, compliance and performance in one system, reducing manual HR work."
+          },
+          {
+            "q": "Does the payroll handle PF, ESI, PT and TDS?",
+            "a": "Yes. Payroll includes Indian statutory deductions such as PF, ESI, professional tax, LWF and TDS, with the reports and challans you need for filing."
+          },
+          {
+            "q": "Can it integrate with our biometric machines?",
+            "a": "Yes. We integrate with commonly used biometric and face recognition devices so attendance flows into the HRMS automatically."
+          },
+          {
+            "q": "How do field employees mark attendance?",
+            "a": "Field staff can mark attendance from the mobile app with GPS location and optional geo-fencing and selfie verification."
+          },
+          {
+            "q": "Can employees download payslips themselves?",
+            "a": "Yes. The employee self-service app lets staff download payslips, check leave balances, apply for leave and submit expense claims."
+          },
+          {
+            "q": "Can the HRMS integrate with our accounting software?",
+            "a": "Yes. Payroll journal entries can be exported or synced to Tally or your ERP."
+          }
+        ]
+      },
+      "related": [
+        "erp-software-development",
+        "manufacturing-crm-software",
+        "inventory-management-software"
+      ]
+    },
+    {
+      "slug": "inventory-management-software",
+      "crumb": "Inventory & Distribution",
+      "eyebrow": "Inventory & Distribution",
+      "h1": "Inventory & Distribution Management Software Right Stock, Right Place, Right Time",
+      "productName": "Inventory & Distribution Management Software",
+      "promise": "Right Stock, Right Place, Right Time",
+      "intro": "Know exactly what stock you have, where it is and what to reorder. Manage multi-warehouse inventory, barcodes, purchase, sales orders, salesman app, deliveries and GST billing in one connected system.",
+      "whatsapp": "https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27m%20interested%20in%20your%20Inventory%20%26%20Distribution%20software.%20Please%20share%20details.",
+      "heroBullets": [
+        "100% custom-built",
+        "Cloud + mobile app",
+        "Training & support"
+      ],
+      "label": "Inventory & Distribution",
+      "summary": "Multi-warehouse stock, barcode, orders, salesman app, delivery and GST billing.",
+      "group": "ERP & Business Software",
+      "challenges": {
+        "eyebrow": "The problem",
+        "title": "Challenges our Inventory & Distribution solves",
+        "intro": "If these sound familiar, your business has outgrown spreadsheets and generic tools.",
+        "items": [
+          {
+            "title": "Stock mismatch",
+            "body": "Physical stock never matches the books, and nobody knows why."
+          },
+          {
+            "title": "Blocked working capital",
+            "body": "Slow-moving items pile up while fast movers go out of stock."
+          },
+          {
+            "title": "Manual order booking",
+            "body": "Salesmen write orders on paper or WhatsApp, causing errors and delays."
+          },
+          {
+            "title": "Delivery and collection gaps",
+            "body": "No visibility on deliveries in progress or retailer outstanding."
+          }
+        ]
+      },
+      "overview": {
+        "eyebrow": "Overview",
+        "title": "Inventory & Distribution Management Software that fits your business",
+        "paragraphs": [
+          "For traders, wholesalers and distributors, inventory is cash. Too much stock blocks working capital, too little loses sales, and stock that does not match the books leads to losses nobody can explain. Most of these problems start with manual stock registers and disconnected billing software.",
+          "Our inventory and distribution software tracks stock in real time across warehouses, godowns and vans, with barcode and batch or serial tracking where you need it. Reorder levels and demand trends tell you what to buy and when, and every inward and outward movement is recorded with a clear audit trail.",
+          "On the sales side, salesmen book orders on a mobile app with live stock and scheme details, deliveries are planned and tracked, and GST invoices with e-way bills are generated automatically. Outstanding payments by retailer are visible to salesmen in the field, helping you collect faster."
+        ],
+        "whoFor": [
+          "Distributors & stockists",
+          "Wholesalers & traders",
+          "FMCG distribution",
+          "Pharma distribution",
+          "Electrical & hardware traders",
+          "E-commerce sellers"
+        ],
+        "integrations": [
+          "Tally",
+          "E-invoice & E-way Bill",
+          "Barcode scanners",
+          "Shopify & WooCommerce",
+          "WhatsApp Business",
+          "Razorpay"
+        ]
+      },
+      "features": {
+        "eyebrow": "Features",
+        "title": "Key features of our Inventory & Distribution software",
+        "intro": "Everything your team needs, configured around your workflow.",
+        "items": [
+          {
+            "n": "01",
+            "title": "Multi-warehouse inventory",
+            "body": "Real-time stock across warehouses, godowns and vans with transfers."
+          },
+          {
+            "n": "02",
+            "title": "Barcode & batch tracking",
+            "body": "Barcode scanning, batch, expiry and serial number tracking."
+          },
+          {
+            "n": "03",
+            "title": "Smart reordering",
+            "body": "Reorder levels, demand trends and purchase suggestions."
+          },
+          {
+            "n": "04",
+            "title": "Purchase & GRN",
+            "body": "Purchase orders, goods receipt and vendor bill matching."
+          },
+          {
+            "n": "05",
+            "title": "Salesman order app",
+            "body": "Mobile order booking with live stock, schemes and retailer outstanding."
+          },
+          {
+            "n": "06",
+            "title": "Delivery management",
+            "body": "Route planning, delivery challans, proof of delivery and returns."
+          },
+          {
+            "n": "07",
+            "title": "GST billing & e-way bill",
+            "body": "GST invoices, credit notes, e-invoice and e-way bill generation."
+          },
+          {
+            "n": "08",
+            "title": "Stock & sales analytics",
+            "body": "Ageing, fast and slow movers, margins and retailer-wise sales."
+          }
+        ]
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Pick the modules you need today, add more tomorrow",
+        "intro": "Start with the modules that solve your biggest problems first. The system is modular, so new features plug in without disrupting what your team already uses.",
+        "items": [
+          "Item Master",
+          "Multi-warehouse Stock",
+          "Barcode & Batch",
+          "Purchase",
+          "GRN",
+          "Sales Orders",
+          "Salesman App",
+          "Schemes & Discounts",
+          "Delivery & Returns",
+          "GST Billing",
+          "Outstanding & Collections",
+          "Stock Reports"
+        ]
+      },
+      "benefits": {
+        "eyebrow": "Benefits",
+        "title": "What changes after you switch",
+        "items": [
+          {
+            "title": "Accurate stock",
+            "body": "Real-time inventory eliminates guesswork and unexplained losses."
+          },
+          {
+            "title": "Freed working capital",
+            "body": "Buy what sells and reduce dead stock."
+          },
+          {
+            "title": "Faster order-to-delivery",
+            "body": "Digital orders flow straight to the warehouse for dispatch."
+          },
+          {
+            "title": "Quicker collections",
+            "body": "Salesmen see outstanding at every retailer visit."
+          }
+        ]
+      },
+      "why": {
+        "eyebrow": "Why Insta Biz Web",
+        "title": "Your Inventory & Distribution partner in India",
+        "intro": "A software and digital growth company based in Naranpura, Ahmedabad, building business software for clients across India.",
+        "items": [
+          {
+            "title": "Built around your process",
+            "body": "Software that fits how you work, not a generic template."
+          },
+          {
+            "title": "Integrates with your tools",
+            "body": "Tally, WhatsApp, payment gateways, portals and more."
+          },
+          {
+            "title": "Web + mobile ready",
+            "body": "Responsive web app with mobile access for field teams."
+          },
+          {
+            "title": "Local team in Ahmedabad",
+            "body": "Meet us in Naranpura and get support in English, Hindi and Gujarati."
+          }
+        ],
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery",
+            "body": "A free consultation to map your workflow, pain points and goals."
+          },
+          {
+            "step": 2,
+            "title": "Design",
+            "body": "Clickable screens and a module plan you approve before any code is written."
+          },
+          {
+            "step": 3,
+            "title": "Build",
+            "body": "Agile sprints with weekly demos, so you see progress every week."
+          },
+          {
+            "step": 4,
+            "title": "Launch & train",
+            "body": "Data migration, go-live support and hands-on training for your team."
+          },
+          {
+            "step": 5,
+            "title": "Support & grow",
+            "body": "Ongoing support, updates and new modules as your business grows."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQs",
+        "title": "Inventory & Distribution software: your questions answered",
+        "items": [
+          {
+            "q": "What is inventory management software?",
+            "a": "Inventory management software tracks stock levels, movements and valuation across locations in real time, helping businesses avoid stock-outs, reduce excess inventory and prevent losses."
+          },
+          {
+            "q": "Does it support multiple warehouses?",
+            "a": "Yes. You can manage stock across any number of warehouses, godowns, shops and delivery vans with inter-location transfers."
+          },
+          {
+            "q": "Can salesmen book orders from a mobile app?",
+            "a": "Yes. Salesmen get an app to book orders with live stock, schemes and retailer outstanding, even in low-network areas."
+          },
+          {
+            "q": "Does it generate GST invoices and e-way bills?",
+            "a": "Yes. The system creates GST-compliant invoices, e-invoices and e-way bills directly from sales orders."
+          },
+          {
+            "q": "Can it integrate with Tally?",
+            "a": "Yes. Sales, purchases and receipts can sync with Tally so your accountant continues working in familiar software."
+          },
+          {
+            "q": "Does it support barcode and batch tracking?",
+            "a": "Yes. We support barcode printing and scanning, batch and expiry tracking and serial numbers based on your products."
+          }
+        ]
+      },
+      "related": [
+        "erp-software-development",
+        "manufacturing-crm-software",
+        "hospital-management-software"
+      ]
+    }
+  ]
+}

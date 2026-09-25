@@ -1,0 +1,4 @@
+{
+  "formats": ["markdown", "links", "images"],
+  "onlyMainContent": false
+}

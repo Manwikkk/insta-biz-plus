@@ -1,0 +1,362 @@
+[
+  {
+    "route": "/",
+    "lastModified": null,
+    "changeFrequency": "weekly",
+    "priority": 1
+  },
+  {
+    "route": "/services",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/services/ai-agent-development",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.95
+  },
+  {
+    "route": "/web-development-company-in-ahmedabad",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.95
+  },
+  {
+    "route": "/solutions",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.95
+  },
+  {
+    "route": "/portfolio",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/about-us",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.7
+  },
+  {
+    "route": "/contact-us",
+    "lastModified": null,
+    "changeFrequency": "yearly",
+    "priority": 0.7
+  },
+  {
+    "route": "/blogs",
+    "lastModified": null,
+    "changeFrequency": "weekly",
+    "priority": 0.8
+  },
+  {
+    "route": "/audit",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/privacy-policy",
+    "lastModified": null,
+    "changeFrequency": "yearly",
+    "priority": 0.3
+  },
+  {
+    "route": "/terms-and-conditions",
+    "lastModified": null,
+    "changeFrequency": "yearly",
+    "priority": 0.3
+  },
+  {
+    "route": "/refund-policy",
+    "lastModified": null,
+    "changeFrequency": "yearly",
+    "priority": 0.3
+  },
+  {
+    "route": "/software-development-company-in-ahmedabad",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.95
+  },
+  {
+    "route": "/mobile-app-development-company-in-ahmedabad",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.95
+  },
+  {
+    "route": "/odoo-implementation-company-in-ahmedabad",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.95
+  },
+  {
+    "route": "/digital-marketing-agency-in-ahmedabad",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.95
+  },
+  {
+    "route": "/seo-company-in-ahmedabad",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.95
+  },
+  {
+    "route": "/solutions/manufacturing-crm-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/ca-crm-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/visa-immigration-crm-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/erp-software-development",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/real-estate-crm-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/education-crm-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/hospital-management-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/travel-agency-crm-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/insurance-crm-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/loan-management-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/hrms-payroll-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/solutions/inventory-management-software",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
+  },
+  {
+    "route": "/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers",
+    "lastModified": "2026-05-06T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/vibe-coding-the-honest-guide-for-founders",
+    "lastModified": "2026-04-22T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
+    "lastModified": "2026-04-08T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/whatsapp-business-api-2026-india-smb-playbook",
+    "lastModified": "2026-03-30T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/ai-automation-transforming-business-operations",
+    "lastModified": "2026-04-12T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/comprehensive-guide-odoo-crm-implementation",
+    "lastModified": "2026-03-22T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/nextjs-16-what-changed-and-why-it-matters",
+    "lastModified": "2026-02-28T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/designing-mobile-apps-people-actually-keep",
+    "lastModified": "2026-02-08T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/seo-fundamentals-for-founders-2026-edition",
+    "lastModified": "2026-01-18T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/founder-lessons-from-five-years-of-shipping",
+    "lastModified": "2026-01-05T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/odoo-vs-zoho-crm-2026-comparison",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/odoo-implementation-cost-india-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/odoo-community-vs-enterprise-edition",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/odoo-crm-for-real-estate-india",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/odoo-migration-checklist",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/best-odoo-implementation-partners-india-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/odoo-vs-salesforce-crm-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/zapier-vs-make-vs-n8n-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/webflow-vs-nextjs-vs-wordpress-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/salesforce-alternatives-india-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/zoho-crm-alternatives-india-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/bubble-alternatives-for-mvp-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/best-ai-calling-agents-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/mobile-app-development-cost-india-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/flutter-vs-react-native-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/flutter-vs-react-native-vs-native-swift-kotlin",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/how-long-to-build-mobile-app-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/app-store-rejection-reasons-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/aso-app-store-optimization-2026",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  {
+    "route": "/blogs/how-to-choose-mobile-app-development-company-india",
+    "lastModified": "2026-05-11T00:00:00.000Z",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  }
+]

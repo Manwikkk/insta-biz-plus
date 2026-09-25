@@ -1,0 +1,65 @@
+{
+  "BluTec": {
+    "src": "/logos/blutec.png",
+    "width": 272,
+    "height": 83,
+    "ink": 0.283,
+    "plate": null,
+    "colour": true,
+    "source": "blutec.ai"
+  },
+  "Carefix": {
+    "src": "/logos/carefix.png",
+    "width": 560,
+    "height": 140,
+    "ink": 0.258,
+    "plate": null,
+    "colour": false,
+    "source": "site content, in the black of its Google Play app icon"
+  },
+  "Cashflex": {
+    "src": "/logos/cashflex.png",
+    "width": 348,
+    "height": 208,
+    "ink": 0.405,
+    "plate": "#164e63",
+    "colour": true,
+    "source": "cashflex.in (plate: its theme colour)"
+  },
+  "Chennai Cabs": {
+    "src": "/logos/chennai-cabs.png",
+    "width": 218,
+    "height": 152,
+    "ink": 0.395,
+    "plate": null,
+    "colour": true,
+    "source": "Google Play app icon"
+  },
+  "Estate Rent": {
+    "src": "/logos/estate-rent.png",
+    "width": 295,
+    "height": 118,
+    "ink": 0.217,
+    "plate": null,
+    "colour": true,
+    "source": "blutec.ai"
+  },
+  "Kabadi King": {
+    "src": "/logos/kabadi-king.png",
+    "width": 345,
+    "height": 240,
+    "ink": 0.222,
+    "plate": null,
+    "colour": false,
+    "source": "site content (colour original not reachable)"
+  },
+  "Sarvam Art": {
+    "src": "/logos/sarvam-art.png",
+    "width": 271,
+    "height": 65,
+    "ink": 0.537,
+    "plate": "#02163c",
+    "colour": true,
+    "source": "blutec.ai"
+  }
+}
