@@ -6,7 +6,7 @@ import { PageHero } from '@/components/sections/PageHero'
 import { KeyButton, ArrowLink } from '@/components/ui/KeyButton'
 import { SectionHead, Eyebrow } from '@/components/ui/SectionHead'
 import { SplitReveal } from '@/components/motion/SplitReveal'
-import { ServiceArea } from '@/components/locations/OfficeMap'
+import { LocationVisual } from '@/components/heroes/LocationVisual'
 import { Steps } from '@/components/sections/Steps'
 import { Faq } from '@/components/sections/Faq'
 import { ConsultCTA } from '@/components/sections/ConsultCTA'
@@ -51,7 +51,8 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
             </KeyButton>
           </>
         }
-        figure={<ServiceArea coverage={l.industries.coverage} />}
+        figure={<LocationVisual slug={l.slug} />}
+        wide
         stats={l.stats}
       />
 

@@ -6,7 +6,7 @@ import { KeyButton } from '@/components/ui/KeyButton'
 import { SectionHead } from '@/components/ui/SectionHead'
 import { ServiceIndexNav } from '@/components/services/ServiceIndexNav'
 import { ServiceSpec } from '@/components/services/ServiceSpec'
-import { BillOfMaterials } from '@/components/services/BillOfMaterials'
+import { ServiceShowcase } from '@/components/heroes/ServiceShowcase'
 import { TechTabs } from '@/components/sections/TechTabs'
 import { Steps } from '@/components/sections/Steps'
 import { PriceCards } from '@/components/sections/PriceCards'
@@ -40,7 +40,8 @@ export default function ServicesPage() {
             </KeyButton>
           </>
         }
-        figure={<BillOfMaterials />}
+        figure={<ServiceShowcase />}
+        wide
       />
 
       <ServiceIndexNav />

@@ -5,7 +5,7 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { PageHero } from '@/components/sections/PageHero'
 import { KeyButton, ArrowLink } from '@/components/ui/KeyButton'
 import { SectionHead, Eyebrow } from '@/components/ui/SectionHead'
-import { AgentConsole } from '@/components/services/AgentConsole'
+import { AgentStage } from '@/components/heroes/AgentStage'
 import { PriceCards } from '@/components/sections/PriceCards'
 import { Steps } from '@/components/sections/Steps'
 import { Faq } from '@/components/sections/Faq'
@@ -44,7 +44,8 @@ export default function AIAgentsPage() {
             </KeyButton>
           </>
         }
-        figure={<AgentConsole />}
+        figure={<AgentStage />}
+        wide
         stats={a.stats}
       />
 

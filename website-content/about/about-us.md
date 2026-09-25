@@ -5,7 +5,7 @@
 - URL: https://www.instabizweb.com/about-us
 - Page Type: About
 - Meta Title: About Us - Founders, story & values · Insta Biz Web
-- Meta Description: Insta Biz Web is a founder-led digital studio in Ahmedabad, India. Meet the team, our values, and the journey behind 60+ shipped products across the world.
+- Meta Description: Insta Biz Web is a founder-led digital studio in Ahmedabad, India. Our story, our values, and the journey behind 60+ shipped products across the world.
 - Canonical URL: https://www.instabizweb.com/about-us
 - Robots: index, follow
 - Author meta: Insta Biz Web
@@ -488,7 +488,7 @@ Resources
 ## Additional Metadata
 
 - Open Graph title: About · Insta Biz Web
-- Open Graph description: Founder-led digital studio building websites, apps, AI agents, CRMs and business automation for founders worldwide. Meet the team behind the work.
+- Open Graph description: Founder-led digital studio building websites, apps, AI agents, CRMs and business automation for founders worldwide. Get to know the studio behind the work.
 - Open Graph URL: https://www.instabizweb.com/about-us
 - Open Graph type: website
 - Open Graph image: https://www.instabizweb.com/logo.png

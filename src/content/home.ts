@@ -90,7 +90,7 @@ export const why = {
   title: 'Not another agency. A growth partner.',
   intro:
     "We don't just hand off code. We sit with you, understand your business, and build digital products that actually move the needle.",
-  team: { label: 'Meet your team', note: 'Senior devs · Designers · Strategists' },
+  team: { label: 'Get to know us', note: 'Senior devs · Designers · Strategists' },
   pillars: [
     {
       value: '4×',

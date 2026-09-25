@@ -10,6 +10,7 @@ import { KeyButton } from '@/components/ui/KeyButton'
 import { primaryNav, site } from '@/content/site'
 import { services } from '@/content/services'
 import { solutions } from '@/content/data'
+import { socialIcon } from '@/content/nav'
 import { cn } from '@/lib/cn'
 
 const ease = [0.16, 1, 0.3, 1] as const
@@ -46,9 +47,9 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
     >
       {/* the same glass bar as the header, so opening the menu keeps the bar in place */}
       <div className="px-2.5 pt-2.5 sm:px-4 sm:pt-3">
-        <div className="nav-glass" data-scrolled="true">
-          <div className="flex h-14 items-center gap-2 pl-5 pr-2">
-            <Logo height={30} />
+        <div className="nav-glass nav-bar" data-scrolled="true">
+          <div className="flex h-14 items-center gap-2 pl-4 pr-2">
+            <Logo height={28} />
             <div className="ml-auto flex items-center gap-1.5">
               <ThemeToggle />
               <button type="button" aria-label="Close menu" onClick={onClose} className="nav-icon-btn">
@@ -131,9 +132,18 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.55, duration: 0.6 }}
         >
-          <KeyButton href="/contact-us" className="w-full justify-between">
-            Start Your Project
+          <KeyButton href="/contact-us#contact-form" className="w-full justify-between" icon="calendar">
+            Book a demo
           </KeyButton>
+          <ul className="-ml-2 flex items-center gap-1" aria-label="Insta Biz Web on social media">
+            {site.social.map((s) => (
+              <li key={s.label}>
+                <a href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="nav-social">
+                  <Icon name={socialIcon[s.label] ?? 'external'} size={17} />
+                </a>
+              </li>
+            ))}
+          </ul>
           <div className="grid gap-2 text-sm text-ink-2">
             <a href={`mailto:${site.email}`} className="flex items-center gap-2">
               <Icon name="mail" size={16} /> {site.email}

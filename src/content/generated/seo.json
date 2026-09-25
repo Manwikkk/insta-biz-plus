@@ -1240,7 +1240,7 @@
   },
   "/about-us": {
     "title": "About Us - Founders, story & values · Insta Biz Web",
-    "description": "Insta Biz Web is a founder-led digital studio in Ahmedabad, India. Meet the team, our values, and the journey behind 60+ shipped products across the world.",
+    "description": "Insta Biz Web is a founder-led digital studio in Ahmedabad, India. Our story, our values, and the journey behind 60+ shipped products across the world.",
     "applicationName": "Insta Biz Web",
     "author": "Insta Biz Web",
     "authorUrl": "https://www.instabizweb.com",
@@ -1259,7 +1259,7 @@
     },
     "og": {
       "title": "About · Insta Biz Web",
-      "description": "Founder-led digital studio building websites, apps, AI agents, CRMs and business automation for founders worldwide. Meet the team behind the work.",
+      "description": "Founder-led digital studio building websites, apps, AI agents, CRMs and business automation for founders worldwide. Get to know the studio behind the work.",
       "url": "https://www.instabizweb.com/about-us",
       "siteName": "Insta Biz Web",
       "locale": "en_IN",
