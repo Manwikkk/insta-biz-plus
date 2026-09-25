@@ -156,7 +156,7 @@ Google Play has a much higher first-pass acceptance rate (~85-90%) but also reje
 - ✅ Push notification permission asked at appropriate moment
 - ✅ Build version + version number correct in App Store Connect
 
-Use this checklist on every submission. It’s why our rejection rate is now under 8% vs the 40-60% industry average. [Need help getting an app approved?](https://www.instabizweb.com/contact-us) We’ve un-stuck dozens of apps from rejection cycles. Related: [how long to build an app](https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026), [App Store optimization](https://www.instabizweb.com/blogs/aso-app-store-optimization-2026).
+Use this checklist on every submission. It’s why our rejection rate is now under 8% vs the 40-60% industry average. [Need help getting an app approved?](https://www.instabizweb.com/contact-us) We’ve un-stuck dozens of apps from rejection cycles. Related: [how long to build an app](https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026).
 
 FAQs
 
@@ -463,7 +463,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",
@@ -606,16 +606,6 @@ Resources
         "@type": "Thing",
         "name": "Mobile app development cost India 2026",
         "url": "https://www.instabizweb.com/blogs/mobile-app-development-cost-india-2026"
-      },
-      {
-        "@type": "Thing",
-        "name": "ASO: App Store Optimization 2026",
-        "url": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026"
-      },
-      {
-        "@type": "Thing",
-        "name": "Designing mobile apps people keep",
-        "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
       },
       {
         "@type": "Thing",

@@ -5,7 +5,7 @@
 - URL: https://www.instabizweb.com/
 - Page Type: Homepage
 - Meta Title: Insta Biz Web - AI-Powered Web, App & Digital Solutions
-- Meta Description: Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.
+- Meta Description: Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.
 - Canonical URL: https://www.instabizweb.com/
 - Robots: index, follow
 - Author meta: Insta Biz Web
@@ -870,7 +870,7 @@ Resources
 ## Additional Metadata
 
 - Open Graph title: Insta Biz Web - Digital Solutions for Growth
-- Open Graph description: Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.
+- Open Graph description: Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.
 - Open Graph URL: https://www.instabizweb.com
 - Open Graph type: website
 - Open Graph image: https://www.instabizweb.com/logo.png
@@ -879,7 +879,7 @@ Resources
 - Open Graph locale: en_IN
 - Twitter card: summary_large_image
 - Twitter title: Insta Biz Web - Digital Solutions for Growth
-- Twitter description: Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.
+- Twitter description: Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.
 - Twitter image: https://www.instabizweb.com/logo.png
 - Twitter site: @instabizweb
 - Twitter creator: @instabizweb
@@ -903,7 +903,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",

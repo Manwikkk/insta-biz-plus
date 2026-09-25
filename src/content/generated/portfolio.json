@@ -149,22 +149,12 @@
       "description": "Browser extension for scraping Google data and extracting verified emails for lead generation - fast, focused, and accurate.",
       "ctaLabel": "Visit project",
       "href": "https://scout.blutec.ai/"
-    },
-    {
-      "name": "Social Media Marketing",
-      "category": "Marketing Service",
-      "image": "/portfolio/social-media-marketing.jpg",
-      "tag": "20+ brands",
-      "tagline": "20+ brands, one growth team.",
-      "description": "End-to-end social media management, paid ads, and lead generation services for 20+ clients across multiple industries and geographies.",
-      "ctaLabel": "Learn more",
-      "href": "/services#marketing"
     }
   ],
   "filters": [
     {
       "label": "All Work",
-      "count": 16
+      "count": 15
     },
     {
       "label": "Web",
@@ -181,10 +171,6 @@
     {
       "label": "CRM & ERP",
       "count": 2
-    },
-    {
-      "label": "Marketing",
-      "count": 1
     },
     {
       "label": "Extensions",

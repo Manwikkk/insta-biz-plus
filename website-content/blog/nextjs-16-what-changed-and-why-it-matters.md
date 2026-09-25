@@ -58,7 +58,7 @@ We just rebuilt instabizweb.com on Next.js 16. After 4 years on the App Router, 
 
 ## Speed & SEO wins
 
-On our own site, Lighthouse scores went from 91 to 99 across mobile and desktop after the upgrade. The biggest improvements came from streaming server components and the new image-optimisation defaults. SEO benefits are immediate - Google rewards real-world performance, and Next.js 16 ships it by default. For the broader picture on AI-era SEO, see our [AEO & GEO playbook](https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt).
+On our own site, Lighthouse scores went from 91 to 99 across mobile and desktop after the upgrade. The biggest improvements came from streaming server components and the new image-optimisation defaults. SEO benefits are immediate - Google rewards real-world performance, and Next.js 16 ships it by default.
 
 ## Upgrading without pain
 
@@ -362,7 +362,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",
@@ -505,11 +505,6 @@ Resources
         "@type": "Thing",
         "name": "Vibe coding for production",
         "url": "https://www.instabizweb.com/blogs/vibe-coding-the-honest-guide-for-founders"
-      },
-      {
-        "@type": "Thing",
-        "name": "AEO & GEO ranking playbook",
-        "url": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
       }
     ]
   },

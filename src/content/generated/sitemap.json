@@ -54,12 +54,6 @@
     "priority": 0.8
   },
   {
-    "route": "/audit",
-    "lastModified": null,
-    "changeFrequency": "monthly",
-    "priority": 0.9
-  },
-  {
     "route": "/privacy-policy",
     "lastModified": null,
     "changeFrequency": "yearly",
@@ -91,18 +85,6 @@
   },
   {
     "route": "/odoo-implementation-company-in-ahmedabad",
-    "lastModified": null,
-    "changeFrequency": "monthly",
-    "priority": 0.95
-  },
-  {
-    "route": "/digital-marketing-agency-in-ahmedabad",
-    "lastModified": null,
-    "changeFrequency": "monthly",
-    "priority": 0.95
-  },
-  {
-    "route": "/seo-company-in-ahmedabad",
     "lastModified": null,
     "changeFrequency": "monthly",
     "priority": 0.95
@@ -192,12 +174,6 @@
     "priority": 0.6
   },
   {
-    "route": "/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
-    "lastModified": "2026-04-08T00:00:00.000Z",
-    "changeFrequency": "monthly",
-    "priority": 0.6
-  },
-  {
     "route": "/blogs/whatsapp-business-api-2026-india-smb-playbook",
     "lastModified": "2026-03-30T00:00:00.000Z",
     "changeFrequency": "monthly",
@@ -218,18 +194,6 @@
   {
     "route": "/blogs/nextjs-16-what-changed-and-why-it-matters",
     "lastModified": "2026-02-28T00:00:00.000Z",
-    "changeFrequency": "monthly",
-    "priority": 0.6
-  },
-  {
-    "route": "/blogs/designing-mobile-apps-people-actually-keep",
-    "lastModified": "2026-02-08T00:00:00.000Z",
-    "changeFrequency": "monthly",
-    "priority": 0.6
-  },
-  {
-    "route": "/blogs/seo-fundamentals-for-founders-2026-edition",
-    "lastModified": "2026-01-18T00:00:00.000Z",
     "changeFrequency": "monthly",
     "priority": 0.6
   },
@@ -343,12 +307,6 @@
   },
   {
     "route": "/blogs/app-store-rejection-reasons-2026",
-    "lastModified": "2026-05-11T00:00:00.000Z",
-    "changeFrequency": "monthly",
-    "priority": 0.6
-  },
-  {
-    "route": "/blogs/aso-app-store-optimization-2026",
     "lastModified": "2026-05-11T00:00:00.000Z",
     "changeFrequency": "monthly",
     "priority": 0.6

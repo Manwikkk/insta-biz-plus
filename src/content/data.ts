@@ -64,7 +64,6 @@ export const BLOG_FILTERS: { label: string; categories: string[] }[] = [
   { label: 'Web Dev', categories: ['Web Development'] },
   { label: 'Mobile', categories: ['Mobile Apps', 'Mobile'] },
   { label: 'CRM & ERP', categories: ['CRM & ERP'] },
-  { label: 'Marketing', categories: ['Digital Marketing'] },
   { label: 'Founder Notes', categories: ['Founder Notes'] },
   { label: 'Compare & Alternatives', categories: ['Compare & Alternatives'] },
 ]
@@ -139,10 +138,8 @@ const prose = (s: string | null | undefined) => (s && !/^(\||- |\d+\. )/.test(s.
 
 /** Story eyebrows (the short line above each page's story heading, verbatim). */
 const STORY_EYEBROW: Record<string, string> = {
-  'digital-marketing-agency-in-ahmedabad': 'Built in Ahmedabad. Growing brands across Gujarat.',
   'mobile-app-development-company-in-ahmedabad': 'Built in Ahmedabad. Shipped worldwide.',
   'odoo-implementation-company-in-ahmedabad': 'Built in Ahmedabad. Trusted across Gujarat.',
-  'seo-company-in-ahmedabad': 'Built in Ahmedabad. Ranking brands across Gujarat.',
   'software-development-company-in-ahmedabad': 'Built in Ahmedabad. Trusted across Gujarat.',
   'web-development-company-in-ahmedabad': 'Built in Ahmedabad. Trusted across Gujarat.',
 }

@@ -6,7 +6,7 @@ export const about = {
   tagNote: 'The story behind Insta Biz Web',
   h1: 'A team of makers, builders & doers.',
   intro:
-    "We're a tight-knit team of senior engineers, designers and marketers based in Ahmedabad, India - building digital products with founders across India, the US, UK and Singapore. Five years in, and still obsessed with the craft.",
+    "We're a tight-knit team of senior engineers and designers based in Ahmedabad, India - building digital products with founders across India, the US, UK and Singapore. Five years in, and still obsessed with the craft.",
   primary: 'Work with us',
   secondary: 'See our work',
   /** Counters on the live page animate client-side; values stated elsewhere on the page/site. */
@@ -19,7 +19,7 @@ export const about = {
   story: {
     eyebrow: 'Our story',
     title: 'Five years. One mission.',
-    body: 'Insta Biz Web started in 2020 with one belief: small businesses deserve big-tech quality. What began as a two-person studio in Ahmedabad has grown into a full-stack digital partner - engineering websites, mobile apps, AI agents, CRM systems and growth marketing for 60+ founders across India, the US, UK and Singapore. We’re still founder-led, still obsessed with the craft, and still treat every project like it’s our own.',
+    body: 'Insta Biz Web started in 2020 with one belief: small businesses deserve big-tech quality. What began as a two-person studio in Ahmedabad has grown into a full-stack digital partner - engineering websites, mobile apps, AI agents, CRM systems and business automation for 60+ founders across India, the US, UK and Singapore. We’re still founder-led, still obsessed with the craft, and still treat every project like it’s our own.',
     cta: "See what we've built",
   },
   drives: {
@@ -65,7 +65,7 @@ export const about = {
         year: '2022',
         tag: 'Team scaled',
         title: 'Founding team formed',
-        body: 'Six co-founders join the journey. Capabilities grow to cover web, mobile, CRM, AI and marketing - under one roof.',
+        body: 'Six co-founders join the journey. Capabilities grow to cover web, mobile, CRM, AI and business automation - under one roof.',
       },
       {
         year: '2023',

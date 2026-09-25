@@ -24,8 +24,6 @@ const SPOTS: Array<{ l?: number; r?: number; t: number }> = [
   { r: 5, t: 64 },
   { l: 56, t: 83 },
   { l: 17, t: 83 },
-  { l: 38, t: 11 },
-  { r: 2, t: 84 },
   { l: 2, t: 81 },
 ]
 

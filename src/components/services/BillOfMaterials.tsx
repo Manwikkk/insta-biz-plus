@@ -33,7 +33,7 @@ export function BillOfMaterials() {
         </div>
       </div>
       <div className="flex items-center justify-between border-t border-line px-5 py-3">
-        <span className="t-label text-ink-3">6 parts · 1 accountable team</span>
+        <span className="t-label text-ink-3">5 parts · 1 accountable team</span>
         <span className="t-label text-ink-3">Avg. results</span>
       </div>
     </div>

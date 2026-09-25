@@ -17,8 +17,8 @@ gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 const EngineCanvas = dynamic(() => import('@/components/three/EngineCanvas'), { ssr: false })
 
-/** Order of MARK_PIECES: bar-top(marketing) · bar-mid(web) · frame-left(ai) · core(crm) · bar-low(mobile) · outline(design) */
-export const FOCUS_INDEX: Record<string, number> = { marketing: 0, web: 1, ai: 2, crm: 3, mobile: 4, design: 5 }
+/** Order of MARK_PIECES: bar-top(web) · bar-mid(automation) · frame-left(ai) · core(crm) · bar-low(mobile) */
+export const FOCUS_INDEX: Record<string, number> = { web: 0, automation: 1, ai: 2, crm: 3, mobile: 4 }
 
 function webglAvailable() {
   try {
@@ -86,7 +86,6 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
         labels: 0,
         callouts: 0,
         focus: -1,
-        outline: 0,
         rev: 1,
         opacity: 1,
       }
@@ -154,7 +153,7 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
           // Leaving the stage.
           gsap
             .timeline({ scrollTrigger: { trigger: capEl, start: 'bottom bottom', end: 'bottom 35%', scrub: true } })
-            .to(engine, { explode: 0.1, labels: 0, outline: 0, opacity: 0, ease: 'none' })
+            .to(engine, { explode: 0.1, labels: 0, opacity: 0, ease: 'none' })
         },
       )
 
@@ -199,7 +198,7 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
   )
 }
 
-/** The five parts in the order of their numbers (01 Web … 05 Marketing). */
+/** The five parts in the order of their numbers (01 Automation … 05 Web). */
 const PARTS = MARK_PIECES.map((p) => services.find((s) => s.part === p.id))
   .filter((s): s is (typeof services)[number] => !!s)
   .sort((a, b) => a.n.localeCompare(b.n))

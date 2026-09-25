@@ -261,7 +261,7 @@ function ServicesPanel() {
   return (
     <div className="grid grid-cols-12 gap-4 p-3">
       <div className="col-span-8">
-        <p className="t-label mb-2 px-3 pt-2 text-ink-3">Six services · one growth partner</p>
+        <p className="t-label mb-2 px-3 pt-2 text-ink-3">Five services · one growth partner</p>
         <ul className="grid grid-cols-2 gap-1">
           {services.map((s, i) => (
             <motion.li

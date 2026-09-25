@@ -370,6 +370,7 @@ function sitemapEntries() {
   let m
   while ((m = re.exec(s))) {
     const route = localHref(m[1])
+    if (!served(route)) continue
     const isBlogPost = route.startsWith('/blogs/')
     out.push({
       route,
@@ -394,7 +395,6 @@ const FILES = {
   '/about-us': 'about/about-us.md',
   '/contact-us': 'contact/contact-us.md',
   '/blogs': 'blog/index.md',
-  '/audit': 'other/free-website-audit.md',
   '/privacy-policy': 'legal/privacy-policy.md',
   '/terms-and-conditions': 'legal/terms-and-conditions.md',
   '/refund-policy': 'legal/refund-policy.md',
@@ -413,6 +413,13 @@ for (const f of fs.readdirSync(path.join(CONTENT, 'blog'))) {
 
 const anatomyCache = {}
 const docFor = (route) => (anatomyCache[route] ??= anatomy(read(FILES[route])))
+
+/**
+ * Whether an internal link still leads to a page. Pages for services that are no longer
+ * offered (Digital Marketing, UI/UX Design) were removed and redirect (next.config.ts);
+ * link lists drop them rather than point visitors at a redirect.
+ */
+const served = (href) => !href || !href.startsWith('/') || (href.split(/[?#]/)[0] || '/') in FILES
 
 /* ------------------------------------------------------------------ */
 /* 1. SEO map                                                          */
@@ -579,7 +586,9 @@ function parsePost(route) {
     const rest = fr.slice(i + label.length + 2)
     const stop = rest.search(/\n(From the IBW journal|Authoritative sources|Mentioned in)\n/)
     const chunk = stop >= 0 ? rest.slice(0, stop) : rest
-    return linkList(chunk).map((l) => ({ ...l, label: l.label.replace(/^↩\s*/, '') }))
+    return linkList(chunk)
+      .filter((l) => served(l.href))
+      .map((l) => ({ ...l, label: l.label.replace(/^↩\s*/, '') }))
   }
   const journal = grab('From the IBW journal')
   const sources = grab('Authoritative sources').map((l) => {
@@ -594,7 +603,9 @@ function parsePost(route) {
   const tags = tagLine ? tagLine.replace(/^# /, '').split(/\s*#\s*/).map((t) => t.trim()).filter(Boolean) : []
 
   // Related "Read article" cards from internal links.
-  const related = [...(doc['Internal Links'] || '').matchAll(/Read article: https:\/\/www\.instabizweb\.com\/blogs\/([a-z0-9-]+)/g)].map((m) => m[1])
+  const related = [...(doc['Internal Links'] || '').matchAll(/Read article: https:\/\/www\.instabizweb\.com\/blogs\/([a-z0-9-]+)/g)]
+    .map((m) => m[1])
+    .filter((s) => served(`/blogs/${s}`))
 
   const posting = ld.find((x) => x['@type'] === 'BlogPosting') || {}
   const [y, mo, d] = (info['Published'] || '').split('-').map(Number)
@@ -636,7 +647,9 @@ const blogIndex = (() => {
   const main = doc['Main Content']
   const featured = (main.match(/Featured this month[\s\S]*?\]\(https:\/\/www\.instabizweb\.com\/blogs\/([a-z0-9-]+)\)/) || [])[1]
   const listPart = main.slice(main.indexOf('Showing '))
-  const order = [...listPart.matchAll(/\]\(https:\/\/www\.instabizweb\.com\/blogs\/([a-z0-9-]+)\)/g)].map((m) => m[1])
+  const order = [...listPart.matchAll(/\]\(https:\/\/www\.instabizweb\.com\/blogs\/([a-z0-9-]+)\)/g)]
+    .map((m) => m[1])
+    .filter((s) => served(`/blogs/${s}`))
   const filterLine = main.split('\n').find((l) => l.startsWith('All posts '))
   const filters = []
   if (filterLine) {
@@ -924,8 +937,10 @@ function parseLocation(route) {
       items: faqItems,
       still: stillMatch ? { title: stillMatch[1], body: stillMatch[2], cta: stillMatch[3] } : null,
     },
-    more: { eyebrow: more.eyebrow, title: more.title, links: linkList(more.body) },
-    resources: resources ? { eyebrow: resources.eyebrow, title: resources.title, links: linkList(resources.body) } : null,
+    more: { eyebrow: more.eyebrow, title: more.title, links: linkList(more.body).filter((l) => served(l.href)) },
+    resources: resources
+      ? { eyebrow: resources.eyebrow, title: resources.title, links: linkList(resources.body).filter((l) => served(l.href)) }
+      : null,
   }
 }
 const locations = Object.keys(FILES)
@@ -1105,7 +1120,7 @@ const portfolio = (() => {
   const filters = [...filterLine.matchAll(/([A-Za-z&][A-Za-z& ]*?)\s(\d+)(?=\s|$)/g)].map((x) => ({ label: x[1].trim(), count: Number(x[2]) }))
   const spot = main.slice(main.indexOf('Featured spotlight'), allIdx)
   const featured = [...spot.matchAll(/^- \[Image: ([^\]]+)\]\([^)]+\) (.+?) \1 (.+)$/gm)].map((x) => ({ name: x[1], category: x[2], note: x[3] }))
-  if (projects.length !== 16) warn(`Portfolio: parsed ${projects.length} projects (expected 16)`)
+  if (projects.length !== 15) warn(`Portfolio: parsed ${projects.length} projects (expected 15)`)
   return { projects, filters, featured }
 })()
 write('portfolio.json', portfolio)
@@ -1114,7 +1129,7 @@ write('portfolio.json', portfolio)
 /* 7. Generic page sections for one-off pages (used by typed selectors) */
 /* ------------------------------------------------------------------ */
 const pages = {}
-for (const route of ['/', '/services', '/services/ai-agent-development', '/about-us', '/contact-us', '/audit', '/portfolio']) {
+for (const route of ['/', '/services', '/services/ai-agent-development', '/about-us', '/contact-us', '/portfolio']) {
   const doc = docFor(route)
   const main = doc['Main Content']
   pages[route] = {
@@ -1131,16 +1146,11 @@ function qaPairsFromAppendix(text) {
 write('pages.json', pages)
 
 /* ------------------------------------------------------------------ */
-/* 8. llms.txt (served verbatim)                                       */
+/* 8. llms.txt                                                         */
 /* ------------------------------------------------------------------ */
-const llmsRaw = path.join(RAW, 'llms.txt.html')
-if (fs.existsSync(llmsRaw)) {
-  fs.writeFileSync(path.join(OUT, 'llms.txt'), fs.readFileSync(llmsRaw, 'utf8'))
-} else {
-  const doc = read('other/llms.md')
-  fs.writeFileSync(path.join(OUT, 'llms.txt'), doc.split('## Main Content')[1].trim() + '\n')
-  warn('llms.txt rebuilt from markdown (recorded raw file missing)')
-}
+// The audited copy in other/llms.md was byte-identical to the recorded live file; it is the
+// source now so that the site's own edits (retired services) reach llms.txt too.
+fs.writeFileSync(path.join(OUT, 'llms.txt'), read('other/llms.md').split('## Main Content')[1].trim() + '\n')
 
 /* ------------------------------------------------------------------ */
 console.log(`content: ${Object.keys(seo).length} routes · ${posts.length} posts · ${solutions.length} solutions · ${locations.length} locations · ${portfolio.projects.length} projects`)

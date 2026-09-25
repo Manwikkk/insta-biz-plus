@@ -41,7 +41,7 @@ export default function PortfolioPage() {
           { value: '100+', label: 'projects' },
           { value: '4.9★', label: 'avg rating' },
           { value: '5', label: 'countries' },
-          { value: '16', label: 'product lines' },
+          { value: String(projects.length), label: 'product lines' },
         ]}
       />
 

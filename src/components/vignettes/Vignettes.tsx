@@ -3,7 +3,7 @@ import type { ServiceId } from '@/content/services'
 import { cn } from '@/lib/cn'
 
 /**
- * Six small, self-running product scenes — one per service. Every label is taken
+ * Five small, self-running product scenes — one per service. Every label is taken
  * from that service's published deliverables and average result; nothing here is a
  * client claim. Animations are CSS keyframes that only run while `data-live` is on.
  */
@@ -33,6 +33,35 @@ function Meter({ label, value, pct }: { label: string; value: string; pct: numbe
         <div className="vg-bar h-full rounded-full bg-teal" style={{ ['--w' as string]: `${pct}%` }} />
       </div>
     </div>
+  )
+}
+
+function AutomationScene() {
+  const flow = [
+    { step: 'Trigger', item: 'New order' },
+    { step: 'Approve', item: 'Auto-routed' },
+    { step: 'Invoice', item: 'Generated' },
+    { step: 'Notify', item: 'WhatsApp + email' },
+  ]
+  return (
+    <Chrome title="workflow · order to invoice">
+      <ol className="grid grid-cols-2 gap-2">
+        {flow.map((f, i) => (
+          <li
+            key={f.step}
+            className="vg-card relative rounded-[8px] border border-line bg-sink/60 px-2 py-1.5"
+            style={{ ['--k' as string]: i }}
+          >
+            <p className="t-label text-[0.52rem] text-ink-3">
+              {String(i + 1).padStart(2, '0')} · {f.step}
+            </p>
+            <p className="mt-0.5 text-[0.66rem] leading-tight text-ink">{f.item}</p>
+            <span className="vg-done absolute right-2 top-1.5 text-[0.6rem] text-teal-ink">✓</span>
+          </li>
+        ))}
+      </ol>
+      <Meter label="Hours saved weekly · avg. result" value="30+" pct={75} />
+    </Chrome>
   )
 }
 
@@ -156,75 +185,12 @@ function CRMScene() {
   )
 }
 
-function MarketingScene() {
-  return (
-    <Chrome title="growth · weekly report">
-      <div className="flex gap-1.5">
-        {['CAC', 'LTV', 'ROAS'].map((k, i) => (
-          <span key={k} className="vg-pop tag h-6 text-[0.58rem]" style={{ ['--k' as string]: i }}>
-            {k}
-          </span>
-        ))}
-      </div>
-      <svg viewBox="0 0 200 70" className="mt-3 h-[76px] w-full overflow-visible">
-        <path d="M0 62 H200" stroke="var(--line)" />
-        <path
-          className="vg-line"
-          d="M0 58 C30 56 45 50 70 46 S110 40 130 30 S170 12 200 6"
-          fill="none"
-          stroke="var(--teal)"
-          strokeWidth="2.2"
-          pathLength={1}
-        />
-        <circle className="vg-dot" cx="200" cy="6" r="3.5" fill="var(--teal)" />
-      </svg>
-      <div className="mt-1 flex items-end justify-between">
-        <p className="t-label text-[0.6rem] text-ink-3">Lead growth · avg. result</p>
-        <p className="t-numeral text-[1.5rem]">320%</p>
-      </div>
-    </Chrome>
-  )
-}
-
-function DesignScene() {
-  return (
-    <Chrome title="design system · tokens">
-      <div className="grid grid-cols-[1fr_auto] gap-3">
-        <div className="relative h-[92px] rounded-[8px] border border-dashed border-line-2 p-2">
-          <div className="vg-hifi absolute inset-2 grid content-start gap-1.5 rounded-[6px] bg-bg p-2">
-            <div className="h-2.5 w-2/3 rounded bg-ink" />
-            <div className="h-1.5 w-full rounded bg-line-2" />
-            <div className="h-1.5 w-4/5 rounded bg-line-2" />
-            <div className="mt-1 h-4 w-16 rounded-[4px] bg-teal" />
-          </div>
-          <div className="grid gap-1.5">
-            <div className="h-2.5 w-2/3 rounded border border-line-2" />
-            <div className="h-1.5 w-full rounded border border-line-2" />
-            <div className="h-1.5 w-4/5 rounded border border-line-2" />
-          </div>
-        </div>
-        <div className="grid grid-cols-2 gap-1">
-          {['var(--ink)', 'var(--teal)', 'var(--navy)', 'var(--bg)', 'var(--sink)', 'var(--ember)'].map((c, i) => (
-            <span key={i} className="vg-pop size-5 rounded-[5px] border border-line" style={{ background: c, ['--k' as string]: i }} />
-          ))}
-        </div>
-      </div>
-      <p className="t-label mt-3 text-[0.6rem] text-ink-3">Wireframes → high-fidelity mockups</p>
-      <div className="mt-1 flex items-end justify-between">
-        <p className="t-label text-[0.6rem] text-ink-3">Design rating · avg. result</p>
-        <p className="t-numeral text-[1.5rem]">4.9★</p>
-      </div>
-    </Chrome>
-  )
-}
-
 const SCENES: Record<ServiceId, () => React.JSX.Element> = {
-  web: WebScene,
+  automation: AutomationScene,
   mobile: MobileScene,
   ai: AIScene,
   crm: CRMScene,
-  marketing: MarketingScene,
-  design: DesignScene,
+  web: WebScene,
 }
 
 export function Vignette({ id, live = true, className }: { id: ServiceId; live?: boolean; className?: string }) {

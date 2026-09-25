@@ -44,13 +44,9 @@ export function Hero() {
             </span>
           </h1>
 
-          <p className="enter-fade t-lede mt-[clamp(1rem,3.4vh,2rem)] max-w-[34rem]" style={{ ['--d' as string]: '520ms' }}>
-            {hero.intro}
-          </p>
-
           <div
-            className="enter-fade mt-[clamp(1.25rem,3.8vh,2.25rem)] flex flex-wrap items-center gap-3"
-            style={{ ['--d' as string]: '640ms' }}
+            className="enter-fade mt-[clamp(1.25rem,3.8vh,2.25rem)] flex flex-wrap items-center gap-3 lg:mt-[clamp(1.75rem,min(3.4vw,6vh),3.5rem)]"
+            style={{ ['--d' as string]: '520ms' }}
           >
             <KeyButton href="/contact-us">{hero.primary}</KeyButton>
             <KeyButton href="/portfolio" variant="ghost" icon={null}>
@@ -64,7 +60,7 @@ export function Hero() {
         {/* instrument cluster */}
         <dl
           className="enter-fade mt-8 grid grid-cols-2 gap-y-6 border-t border-line pt-6 sm:grid-cols-4 lg:mt-auto lg:max-w-[64%] lg:pt-[clamp(14px,2.6vh,24px)]"
-          style={{ ['--d' as string]: '760ms' }}
+          style={{ ['--d' as string]: '640ms' }}
         >
           {hero.facts.map((f, i) => (
             <div

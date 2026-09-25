@@ -234,15 +234,15 @@ Yes. All our quotes include GST and we provide a tax invoice with every payment.
 
 **Will my website rank on Google?**
 
-Every site we build is SEO-ready from day one: fast loading (Lighthouse 95+), schema markup, semantic HTML, sitemap, robots.txt, OG images, and Core Web Vitals optimised. We also offer ongoing SEO retainers to push your site to page 1 for your target keywords.
+Every site we build is SEO-ready from day one: fast loading (Lighthouse 95+), schema markup, semantic HTML, sitemap, robots.txt, OG images, and Core Web Vitals optimised.
 
 **Can I meet your team in person at your Ahmedabad office?**
 
 Absolutely. Our headquarters is at 219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura, Ahmedabad. Walk-ins are welcome on weekdays between 10 AM and 7 PM, but a quick call ahead helps us prepare.
 
-**Do you also offer mobile app development and digital marketing?**
+**Do you also offer mobile app development and business automation?**
 
-Yes. We are a full-stack digital partner: web development, mobile apps (iOS/Android), AI agents, CRM/ERP systems and digital marketing (SEO, Google Ads, Meta Ads). One team, one point of contact, one accountable partner.
+Yes. We are a full-stack digital partner: web development, mobile apps (iOS/Android), AI agents, CRM/ERP systems and business automation. One team, one point of contact, one accountable partner.
 
 **Will I get the source code of my website?**
 
@@ -281,7 +281,7 @@ Explore Insta Biz Web
 - [All web, mobile, AI and CRM services](https://www.instabizweb.com/services)
 - [AI Agent Development services in India](https://www.instabizweb.com/services/ai-agent-development)
 - [Portfolio: 50+ projects we have shipped](https://www.instabizweb.com/portfolio)
-- [Blog: SEO, AI and web development insights](https://www.instabizweb.com/blogs)
+- [Blog: AI and web development insights](https://www.instabizweb.com/blogs)
 - [About: Founders, team and our story](https://www.instabizweb.com/about-us)
 - [Contact our Naranpura, Ahmedabad office](https://www.instabizweb.com/contact-us)
 - [Home: Insta Biz Web digital studio](https://www.instabizweb.com/)
@@ -341,15 +341,15 @@ Yes. All our quotes include GST and we provide a tax invoice with every payment.
 
 ### Will my website rank on Google?
 
-Every site we build is SEO-ready from day one: fast loading (Lighthouse 95+), schema markup, semantic HTML, sitemap, robots.txt, OG images, and Core Web Vitals optimised. We also offer ongoing SEO retainers to push your site to page 1 for your target keywords.
+Every site we build is SEO-ready from day one: fast loading (Lighthouse 95+), schema markup, semantic HTML, sitemap, robots.txt, OG images, and Core Web Vitals optimised.
 
 ### Can I meet your team in person at your Ahmedabad office?
 
 Absolutely. Our headquarters is at 219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura, Ahmedabad. Walk-ins are welcome on weekdays between 10 AM and 7 PM, but a quick call ahead helps us prepare.
 
-### Do you also offer mobile app development and digital marketing?
+### Do you also offer mobile app development and business automation?
 
-Yes. We are a full-stack digital partner: web development, mobile apps (iOS/Android), AI agents, CRM/ERP systems and digital marketing (SEO, Google Ads, Meta Ads). One team, one point of contact, one accountable partner.
+Yes. We are a full-stack digital partner: web development, mobile apps (iOS/Android), AI agents, CRM/ERP systems and business automation. One team, one point of contact, one accountable partner.
 
 ### Will I get the source code of my website?
 
@@ -610,7 +610,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",
@@ -955,7 +955,7 @@ Resources
         "name": "Will my website rank on Google?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Every site we build is SEO-ready from day one: fast loading (Lighthouse 95+), schema markup, semantic HTML, sitemap, robots.txt, OG images, and Core Web Vitals optimised. We also offer ongoing SEO retainers to push your site to page 1 for your target keywords."
+          "text": "Every site we build is SEO-ready from day one: fast loading (Lighthouse 95+), schema markup, semantic HTML, sitemap, robots.txt, OG images, and Core Web Vitals optimised."
         }
       },
       {
@@ -968,10 +968,10 @@ Resources
       },
       {
         "@type": "Question",
-        "name": "Do you also offer mobile app development and digital marketing?",
+        "name": "Do you also offer mobile app development and business automation?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. We are a full-stack digital partner: web development, mobile apps (iOS/Android), AI agents, CRM/ERP systems and digital marketing (SEO, Google Ads, Meta Ads). One team, one point of contact, one accountable partner."
+          "text": "Yes. We are a full-stack digital partner: web development, mobile apps (iOS/Android), AI agents, CRM/ERP systems and business automation. One team, one point of contact, one accountable partner."
         }
       },
       {

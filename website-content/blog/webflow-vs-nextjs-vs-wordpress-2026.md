@@ -437,7 +437,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",
@@ -585,11 +585,6 @@ Resources
         "@type": "Thing",
         "name": "Vibe coding for founders",
         "url": "https://www.instabizweb.com/blogs/vibe-coding-the-honest-guide-for-founders"
-      },
-      {
-        "@type": "Thing",
-        "name": "SEO fundamentals for founders",
-        "url": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition"
       },
       {
         "@type": "Thing",

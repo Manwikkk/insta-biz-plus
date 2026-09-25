@@ -94,7 +94,7 @@ export function Capabilities() {
   const s = services[chapter]
 
   return (
-    <section ref={root} id="capabilities" data-stage="capabilities" className="relative lg:h-[780vh] motion-reduce:lg:h-auto">
+    <section ref={root} id="capabilities" data-stage="capabilities" className="relative lg:h-[667vh] motion-reduce:lg:h-auto">
       {/* ---------- desktop: sticky exploded view ---------- */}
       <div className="relative z-[2] hidden lg:sticky lg:top-0 lg:block lg:h-[100svh] motion-reduce:lg:hidden">
         <div className="shell grid h-full grid-cols-12 gap-8 pb-[clamp(16px,3vh,32px)] pt-[clamp(80px,12.5vh,108px)]">
@@ -137,7 +137,7 @@ export function Capabilities() {
               ))}
             </ol>
 
-            {/* All six chapters share one grid cell: the cell is as tall as the longest, so
+            {/* All the chapters share one grid cell: the cell is as tall as the longest, so
                 nothing below it jumps, and the outgoing copy lifts away as the next rises in. */}
             <div className="mt-[clamp(18px,4vh,40px)] grid">
               {services.map((svc, i) => (

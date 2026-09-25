@@ -6,8 +6,10 @@ import seoData from '@/content/generated/seo.json'
  *
  * Every value below comes from the audited site: seo.json is generated from the
  * recorded <head> of each live page and cross-checked against
- * website-content/seo-content-inventory.md. Pages call buildMetadata(route) and
- * never hand-write titles, descriptions, canonicals, robots, OG or Twitter tags.
+ * website-content/seo-content-inventory.md, whose wording wins (it carries the site's
+ * own edits, e.g. the retired Digital Marketing and UI/UX services). Pages call
+ * buildMetadata(route) and never hand-write titles, descriptions, canonicals, robots,
+ * OG or Twitter tags.
  */
 
 export const SITE_URL = 'https://www.instabizweb.com'

@@ -12,13 +12,10 @@
     "featured": "ai-agents-2026-from-chatbots-to-digital-coworkers",
     "order": [
       "vibe-coding-the-honest-guide-for-founders",
-      "aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
       "whatsapp-business-api-2026-india-smb-playbook",
       "ai-automation-transforming-business-operations",
       "comprehensive-guide-odoo-crm-implementation",
       "nextjs-16-what-changed-and-why-it-matters",
-      "designing-mobile-apps-people-actually-keep",
-      "seo-fundamentals-for-founders-2026-edition",
       "founder-lessons-from-five-years-of-shipping",
       "odoo-vs-zoho-crm-2026-comparison",
       "odoo-implementation-cost-india-2026",
@@ -38,13 +35,12 @@
       "flutter-vs-react-native-vs-native-swift-kotlin",
       "how-long-to-build-mobile-app-2026",
       "app-store-rejection-reasons-2026",
-      "aso-app-store-optimization-2026",
       "how-to-choose-mobile-app-development-company-india"
     ],
     "filters": [
       {
         "label": "All posts",
-        "count": 29
+        "count": 25
       },
       {
         "label": "AI & Automation",
@@ -56,15 +52,11 @@
       },
       {
         "label": "Mobile",
-        "count": 8
+        "count": 6
       },
       {
         "label": "CRM & ERP",
         "count": 7
-      },
-      {
-        "label": "Marketing",
-        "count": 2
       },
       {
         "label": "Founder Notes",
@@ -77,13 +69,10 @@
     ],
     "listReadTimes": {
       "vibe-coding-the-honest-guide-for-founders": 8,
-      "aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt": 9,
       "whatsapp-business-api-2026-india-smb-playbook": 8,
       "ai-automation-transforming-business-operations": 6,
       "comprehensive-guide-odoo-crm-implementation": 8,
       "nextjs-16-what-changed-and-why-it-matters": 7,
-      "designing-mobile-apps-people-actually-keep": 5,
-      "seo-fundamentals-for-founders-2026-edition": 7,
       "founder-lessons-from-five-years-of-shipping": 6,
       "odoo-vs-zoho-crm-2026-comparison": 9,
       "odoo-implementation-cost-india-2026": 8,
@@ -103,7 +92,6 @@
       "flutter-vs-react-native-vs-native-swift-kotlin": 11,
       "how-long-to-build-mobile-app-2026": 9,
       "app-store-rejection-reasons-2026": 10,
-      "aso-app-store-optimization-2026": 11,
       "how-to-choose-mobile-app-development-company-india": 9,
       "ai-agents-2026-from-chatbots-to-digital-coworkers": 9
     },
@@ -460,181 +448,7 @@
       },
       "related": [
         "nextjs-16-what-changed-and-why-it-matters",
-        "ai-agents-2026-from-chatbots-to-digital-coworkers",
-        "aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
-      ]
-    },
-    {
-      "slug": "aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
-      "title": "AEO & GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026",
-      "description": "Google AI Overviews now hit 1.5B users monthly. 58.5% of US Google searches end without a click. Ranking #1 no longer guarantees AI Overview inclusion. Here’s the founder-friendly playbook for the new world of Answer Engine Optimisation.",
-      "dek": "Google AI Overviews now hit 1.5B users monthly. 58.5% of US Google searches end without a click. Ranking #1 no longer guarantees AI Overview inclusion. Here’s the founder-friendly playbook for the new world of Answer Engine Optimisation.",
-      "category": "Digital Marketing",
-      "tags": [
-        "SEO",
-        "AEO",
-        "GEO",
-        "AI Search",
-        "Google AI Overviews",
-        "Content"
-      ],
-      "published": "2026-04-08",
-      "updated": "2026-04-08",
-      "displayDate": "April 8, 2026",
-      "author": "IBW Team",
-      "readTime": 9,
-      "wordCount": 444,
-      "cover": {
-        "alt": "Modern search engine results with AI overview cards and analytics",
-        "src": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80"
-      },
-      "toc": [
-        {
-          "id": "what-changed",
-          "label": "What changed in 2026"
-        },
-        {
-          "id": "stats",
-          "label": "The numbers driving the shift"
-        },
-        {
-          "id": "aeo-vs-seo",
-          "label": "AEO & GEO vs. classic SEO"
-        },
-        {
-          "id": "playbook",
-          "label": "Our 7-step ranking playbook"
-        },
-        {
-          "id": "schema",
-          "label": "Schema that actually moves the needle"
-        },
-        {
-          "id": "tracking",
-          "label": "How we measure visibility now"
-        },
-        {
-          "id": "faq",
-          "label": "FAQs"
-        },
-        {
-          "id": "further-reading",
-          "label": "Further reading"
-        }
-      ],
-      "lede": "Search just got rewritten. [Google AI Overviews](https://heroicrankings.com/seo/managed/google-ai-overview-statistics-2026/) hit 1.5 billion monthly users. 58.5% of US Google searches end without a click. AI Overviews reduce organic clicks on the top result by an average of 34.5%. Ranking #1 no longer guarantees AI Overview inclusion. The game changed - here’s the new rulebook.",
-      "sections": [
-        {
-          "id": "what-changed",
-          "heading": "What changed in 2026",
-          "markdown": "Two new disciplines emerged: AEO (Answer Engine Optimisation) for being cited in AI summaries, and GEO (Generative Engine Optimisation) for ranking in tools like ChatGPT, Perplexity and Google’s AI Mode. Citation overlap with the organic top-10 has dropped from ~76% in mid-2025 to between 17% and 54% in early 2026 - meaning being #1 doesn’t even mean you’re in the AI answer."
-        },
-        {
-          "id": "stats",
-          "heading": "The numbers driving the shift",
-          "markdown": "- 1.5B monthly users on Google AI Overviews.\n- 58.5% of searches end without a click.\n- 13.34 average sources cited per AI Overview.\n- 34.5% average click drop on the top organic result.\n- 17-54% overlap between AIO citations and the top-10 organic results."
-        },
-        {
-          "id": "aeo-vs-seo",
-          "heading": "AEO & GEO vs. classic SEO",
-          "markdown": "Classic SEO optimised for position. AEO/GEO optimise for citation. They’re cousins, not replacements. You still need clean technical SEO, page speed, and authority - those are table stakes. On top of that, AI engines reward:\n\n- Clear, scannable structure - headings, lists, tables, summary boxes.\n- Direct, quotable answers in the opening 2 sentences of every section.\n- Schema markup ([Article](https://schema.org/Article), [FAQPage](https://schema.org/FAQPage), [HowTo](https://schema.org/HowTo), BreadcrumbList).\n- Off-site authority - citations on real, authoritative sites still matter.\n- Author E-E-A-T - clear authorship, credentials, and consistent expertise."
-        },
-        {
-          "id": "playbook",
-          "heading": "Our 7-step ranking playbook for 2026",
-          "markdown": "1. Lead with the answer. The first 2 sentences after every H2 should directly answer the heading. AI engines lift these.\n2. Use FAQPage schema on every cornerstone post. Each Q&A is a potential citation.\n3. Add HowTo schema to step-by-step guides - they’re heavily favoured in AI Overviews.\n4. Link out generously. AI engines reward sources that source. Don’t hoard outbound links.\n5. Build topical clusters. One pillar page + 5-10 supporting posts beats one mega-article every time.\n6. Earn brand mentions on authority sites. The single highest GEO signal in 2026.\n7. Track AIO appearances separately from organic positions - they’re different funnels."
-        },
-        {
-          "id": "schema",
-          "heading": "Schema that actually moves the needle",
-          "markdown": "On every post we ship, we emit at minimum: BlogPosting, BreadcrumbList, and where relevant FAQPage + HowTo. We use [Google’s Rich Results Test](https://search.google.com/test/rich-results) after every deploy. [Schema.org](https://schema.org/) is your friend - read the actual specs, don’t copy-paste from random blogs."
-        },
-        {
-          "id": "tracking",
-          "heading": "How we measure visibility now",
-          "markdown": "Position tracking alone is dead. We track 4 layers in 2026: classic ranks (Google Search Console), zero-click impressions, AIO citations (manual SERP audits), and chat-engine mentions in [Perplexity](https://www.perplexity.ai/) + [ChatGPT](https://chat.openai.com/). Tools like [Semrush](https://www.semrush.com/) and [Ahrefs](https://ahrefs.com/) shipped AIO trackers in early 2026."
-        }
-      ],
-      "faqHeading": "Frequently asked questions",
-      "faqs": [
-        {
-          "q": "Whats the difference between AEO and GEO?",
-          "a": "AEO (Answer Engine Optimisation) targets being cited inside Google AI Overviews and similar AI-generated answer panels. GEO (Generative Engine Optimisation) targets being mentioned in chat tools like ChatGPT, Perplexity, and Claude. They overlap heavily but use different signals."
-        },
-        {
-          "q": "Does ranking #1 in Google still matter in 2026?",
-          "a": "Yes, but less. Citation overlap with the top-10 organic results is now 17-54% (down from ~76% in 2025). Being #1 helps you appear in AI Overviews, but doesn’t guarantee it. You need both classic SEO and AEO/GEO discipline."
-        },
-        {
-          "q": "Is FAQ schema still worth adding in 2026?",
-          "a": "Absolutely. Every Q&A pair is a potential AI citation. We’ve seen direct lifts from FAQPage schema into AI Overview answer panels - it’s one of the highest-ROI structural changes you can make."
-        },
-        {
-          "q": "How do I track if Im being cited in ChatGPT or Perplexity?",
-          "a": "Manual SERP audits work. Tools like Semrush and Ahrefs shipped AIO citation trackers in early 2026. Perplexity exposes its sources directly - search your target queries weekly and log citations."
-        },
-        {
-          "q": "How long until SEO changes show up in AI Overviews?",
-          "a": "Faster than classic SEO - typically 2-6 weeks for well-optimised pages, vs. 3-6 months for traditional ranking. AI engines re-crawl popular topics aggressively."
-        }
-      ],
-      "furtherHeading": "Keep going deeper",
-      "furtherReading": {
-        "journal": [
-          {
-            "label": "Our Digital Marketing services",
-            "href": "/services#marketing"
-          },
-          {
-            "label": "SEO fundamentals - 2026 edition",
-            "href": "/blogs/seo-fundamentals-for-founders-2026-edition"
-          },
-          {
-            "label": "Free SEO audit (contact form)",
-            "href": "/contact-us"
-          }
-        ],
-        "sources": [
-          {
-            "label": "Heroic Rankings - AI Overview statistics 2026",
-            "domain": "heroicrankings.com",
-            "href": "https://heroicrankings.com/seo/managed/google-ai-overview-statistics-2026/"
-          },
-          {
-            "label": "Search Engine Land - AI search predictions",
-            "domain": "searchengineland.com",
-            "href": "https://searchengineland.com/ai-search-visibility-seo-predictions-2026-468042"
-          },
-          {
-            "label": "Semrush - AI SEO statistics",
-            "domain": "semrush.com",
-            "href": "https://www.semrush.com/blog/ai-seo-statistics/"
-          },
-          {
-            "label": "Schema.org",
-            "domain": "schema.org",
-            "href": "https://schema.org/"
-          }
-        ],
-        "mentionedIn": [
-          {
-            "label": "Next.js 16 Is Here: What Changed and Why It Matters for Your Business Site",
-            "href": "/blogs/nextjs-16-what-changed-and-why-it-matters"
-          },
-          {
-            "label": "SEO Fundamentals for Founders: The 2026 Edition",
-            "href": "/blogs/seo-fundamentals-for-founders-2026-edition"
-          },
-          {
-            "label": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-            "href": "/blogs/aso-app-store-optimization-2026"
-          }
-        ]
-      },
-      "related": [
-        "seo-fundamentals-for-founders-2026-edition",
-        "ai-agents-2026-from-chatbots-to-digital-coworkers",
-        "vibe-coding-the-honest-guide-for-founders"
+        "ai-agents-2026-from-chatbots-to-digital-coworkers"
       ]
     },
     {
@@ -1181,7 +995,7 @@
         {
           "id": "speed",
           "heading": "Speed & SEO wins",
-          "markdown": "On our own site, Lighthouse scores went from 91 to 99 across mobile and desktop after the upgrade. The biggest improvements came from streaming server components and the new image-optimisation defaults. SEO benefits are immediate - Google rewards real-world performance, and Next.js 16 ships it by default. For the broader picture on AI-era SEO, see our [AEO & GEO playbook](/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt)."
+          "markdown": "On our own site, Lighthouse scores went from 91 to 99 across mobile and desktop after the upgrade. The biggest improvements came from streaming server components and the new image-optimisation defaults. SEO benefits are immediate - Google rewards real-world performance, and Next.js 16 ships it by default."
         },
         {
           "id": "upgrade",
@@ -1227,10 +1041,6 @@
           {
             "label": "Vibe coding for production",
             "href": "/blogs/vibe-coding-the-honest-guide-for-founders"
-          },
-          {
-            "label": "AEO & GEO ranking playbook",
-            "href": "/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
           }
         ],
         "sources": [
@@ -1267,314 +1077,7 @@
       },
       "related": [
         "vibe-coding-the-honest-guide-for-founders",
-        "ai-agents-2026-from-chatbots-to-digital-coworkers",
-        "aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
-      ]
-    },
-    {
-      "slug": "designing-mobile-apps-people-actually-keep",
-      "title": "Designing Mobile Apps People Actually Keep on Their Phone",
-      "description": "Most apps are uninstalled within 30 days. The 5 apps we’ve built that crossed 10K+ downloads all share the same 6 design principles - here they are.",
-      "dek": "Most apps are uninstalled within 30 days. The 5 apps we’ve built that crossed 10K+ downloads all share the same 6 design principles - here they are.",
-      "category": "Mobile Apps",
-      "tags": [
-        "Mobile",
-        "UX",
-        "Design",
-        "Retention"
-      ],
-      "published": "2026-02-08",
-      "updated": "2026-02-08",
-      "displayDate": "February 8, 2026",
-      "author": "IBW Team",
-      "readTime": 5,
-      "wordCount": 208,
-      "cover": {
-        "alt": "Smartphone with mobile app interface on a wooden desk",
-        "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600&q=80"
-      },
-      "toc": [
-        {
-          "id": "first-30",
-          "label": "The first 30 seconds"
-        },
-        {
-          "id": "principles",
-          "label": "The 6 principles"
-        },
-        {
-          "id": "metrics",
-          "label": "What we measure"
-        },
-        {
-          "id": "faq",
-          "label": "FAQs"
-        },
-        {
-          "id": "further-reading",
-          "label": "Further reading"
-        }
-      ],
-      "lede": "Average mobile app retention after 30 days is 5.7% ([Statista, 2025](https://www.statista.com/statistics/259329/ios-and-android-app-user-retention-rate/)). That means 94 out of 100 people who download your app forget about it within a month. The good news: it’s rarely the technology that fails. It’s the experience.",
-      "sections": [
-        {
-          "id": "first-30",
-          "heading": "The first 30 seconds",
-          "markdown": "We have hard data from our [Chennai Cabs launch](/portfolio#mobile) - users who completed onboarding in under 30 seconds were 4× more likely to complete a booking that week. Speed of first-value beats every other metric on day one."
-        },
-        {
-          "id": "principles",
-          "heading": "The 6 principles we follow",
-          "markdown": "1. One job per screen. If a screen has two CTAs of equal weight, you’ve already lost.\n2. Skip the sign-up wall. Let people do something before you ask for an account.\n3. Optimistic UI. Fake the success state instantly, reconcile with the server. Native-feeling speed without backend gymnastics.\n4. Native gestures, native motion. Custom transitions on Android ≠ iOS. Use platform conventions.\n5. Notifications you’d send your own friend. Personal, useful, never spammy.\n6. Offline-first when it matters. Especially for India - connectivity is a luxury, not a guarantee."
-        },
-        {
-          "id": "metrics",
-          "heading": "What we measure",
-          "markdown": "D1, D7, D30 retention. Time-to-first-action. Crash-free sessions percentage. Anything < 99% is a bug, not a feature. Want to see how this translates into real product? [Our mobile services](/services#mobile) dig into the full process."
-        }
-      ],
-      "faqHeading": "Frequently asked questions",
-      "faqs": [
-        {
-          "q": "Whats a good D30 retention rate for a new app?",
-          "a": "Industry average is 5.7%. Anything above 15% is excellent for consumer apps. B2B apps typically run higher - 25-40% D30 is achievable with a clear onboarding and recurring use-case."
-        },
-        {
-          "q": "Should I build native or cross-platform?",
-          "a": "Cross-platform (Flutter, React Native) for 90% of apps. Native (Swift, Kotlin) when you need bleeding-edge OS features, complex camera/AR work, or the absolute best performance."
-        },
-        {
-          "q": "How long does it take to build a mobile app MVP?",
-          "a": "6-10 weeks for a clean MVP with auth, core flows, and analytics. Add 4-6 weeks for payments, push, and offline-first. Anything faster than 6 weeks is usually a prototype, not an MVP."
-        }
-      ],
-      "furtherHeading": "Keep going deeper",
-      "furtherReading": {
-        "journal": [
-          {
-            "label": "Mobile app development cost India 2026",
-            "href": "/blogs/mobile-app-development-cost-india-2026"
-          },
-          {
-            "label": "Flutter vs React Native 2026",
-            "href": "/blogs/flutter-vs-react-native-2026"
-          },
-          {
-            "label": "Flutter vs React Native vs Native (Swift/Kotlin)",
-            "href": "/blogs/flutter-vs-react-native-vs-native-swift-kotlin"
-          },
-          {
-            "label": "How long to build a mobile app",
-            "href": "/blogs/how-long-to-build-mobile-app-2026"
-          },
-          {
-            "label": "App Store rejection reasons 2026",
-            "href": "/blogs/app-store-rejection-reasons-2026"
-          },
-          {
-            "label": "ASO: App Store Optimization 2026",
-            "href": "/blogs/aso-app-store-optimization-2026"
-          },
-          {
-            "label": "How to choose a mobile app dev company",
-            "href": "/blogs/how-to-choose-mobile-app-development-company-india"
-          },
-          {
-            "label": "Mobile Apps services",
-            "href": "/services#mobile"
-          },
-          {
-            "label": "Chennai Cabs case study",
-            "href": "/portfolio#mobile"
-          }
-        ],
-        "sources": [
-          {
-            "label": "Statista - App retention statistics",
-            "domain": "statista.com",
-            "href": "https://www.statista.com/statistics/259329/ios-and-android-app-user-retention-rate/"
-          },
-          {
-            "label": "Apple Human Interface Guidelines",
-            "domain": "developer.apple.com",
-            "href": "https://developer.apple.com/design/human-interface-guidelines/"
-          },
-          {
-            "label": "Material Design - Android guidelines",
-            "domain": "m3.material.io",
-            "href": "https://m3.material.io/"
-          }
-        ],
-        "mentionedIn": [
-          {
-            "label": "7 Bubble Alternatives for Building Your MVP in 2026 (Tested by Devs)",
-            "href": "/blogs/bubble-alternatives-for-mvp-2026"
-          },
-          {
-            "label": "Mobile App Development Cost in India (2026): Real Numbers from 22 Projects",
-            "href": "/blogs/mobile-app-development-cost-india-2026"
-          },
-          {
-            "label": "Flutter vs React Native (2026): The Honest Comparison from 30+ Production Apps",
-            "href": "/blogs/flutter-vs-react-native-2026"
-          },
-          {
-            "label": "Flutter vs React Native vs Native (Swift/Kotlin): Which Stack in 2026?",
-            "href": "/blogs/flutter-vs-react-native-vs-native-swift-kotlin"
-          },
-          {
-            "label": "How Long Does It Take to Build a Mobile App in 2026? (Real Timelines from 22 Projects)",
-            "href": "/blogs/how-long-to-build-mobile-app-2026"
-          },
-          {
-            "label": "Top 12 App Store Rejection Reasons in 2026 (and How to Avoid Each)",
-            "href": "/blogs/app-store-rejection-reasons-2026"
-          },
-          {
-            "label": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-            "href": "/blogs/aso-app-store-optimization-2026"
-          },
-          {
-            "label": "How to Choose a Mobile App Development Company in India (2026): The Founder’s 11-Question Filter",
-            "href": "/blogs/how-to-choose-mobile-app-development-company-india"
-          }
-        ]
-      },
-      "related": [
-        "mobile-app-development-cost-india-2026",
-        "flutter-vs-react-native-2026",
-        "flutter-vs-react-native-vs-native-swift-kotlin"
-      ]
-    },
-    {
-      "slug": "seo-fundamentals-for-founders-2026-edition",
-      "title": "SEO Fundamentals for Founders: The 2026 Edition",
-      "description": "AI search is changing SEO faster than any algorithm update ever did. Here’s the founder-friendly playbook that still works in the age of ChatGPT, Perplexity, and Google AI Overviews.",
-      "dek": "AI search is changing SEO faster than any algorithm update ever did. Here’s the founder-friendly playbook that still works in the age of ChatGPT, Perplexity, and Google AI Overviews.",
-      "category": "Digital Marketing",
-      "tags": [
-        "SEO",
-        "Content",
-        "AI Search",
-        "Growth"
-      ],
-      "published": "2026-01-18",
-      "updated": "2026-01-18",
-      "displayDate": "January 18, 2026",
-      "author": "IBW Team",
-      "readTime": 7,
-      "wordCount": 221,
-      "cover": {
-        "alt": "Analytics dashboard with SEO metrics and traffic graphs",
-        "src": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80"
-      },
-      "toc": [
-        {
-          "id": "ai-search",
-          "label": "How AI search changed everything"
-        },
-        {
-          "id": "fundamentals",
-          "label": "What still works"
-        },
-        {
-          "id": "checklist",
-          "label": "Founder-friendly checklist"
-        },
-        {
-          "id": "faq",
-          "label": "FAQs"
-        },
-        {
-          "id": "further-reading",
-          "label": "Further reading"
-        }
-      ],
-      "lede": "SEO isn’t dead - it just got more interesting. With AI Overviews and chat-first search, the rules changed. But the foundations didn’t. Get the basics right and you’ll outrank teams 5× your size. For a deeper take on the 2026 era, read our [AEO & GEO playbook](/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt).",
-      "sections": [
-        {
-          "id": "ai-search",
-          "heading": "How AI search changed everything",
-          "markdown": "Google’s AI Overviews now answer ~30% of search queries directly. ChatGPT and Perplexity sit on top of the funnel for a growing share of B2B research. The implication: you don’t just need to rank - you need to be quotable. AI summarisers cite specific, structured, well-linked sources."
-        },
-        {
-          "id": "fundamentals",
-          "heading": "What still works (and always will)",
-          "markdown": "- Page speed. Lighthouse 95+ is non-negotiable in 2026.\n- Schema markup. [Article](https://schema.org/Article), [Product](https://schema.org/Product), [FAQ](https://schema.org/FAQPage), BreadcrumbList - they’re table stakes.\n- Topical depth. One deep page beats ten shallow ones. Always.\n- Internal links with intent. Help readers and crawlers find related content.\n- Real backlinks from real sites. Earned, never bought."
-        },
-        {
-          "id": "checklist",
-          "heading": "Founder-friendly checklist",
-          "markdown": "1. Set up [Google Search Console](https://search.google.com/search-console) + [Bing Webmaster Tools](https://www.bing.com/webmasters) (yes, both)\n2. Create one cornerstone article per service\n3. Add Article + FAQ schema to every blog post\n4. Internal-link new posts to 2 existing ones\n5. Audit [Core Web Vitals](https://web.dev/explore/learn-core-web-vitals) every quarter\n6. Track branded vs. non-branded queries separately\n\nSEO compounds. The work you do today shows up in 3-6 months. Start now, stay consistent, and the channel pays you forever."
-        }
-      ],
-      "faqHeading": "Frequently asked questions",
-      "faqs": [
-        {
-          "q": "How long does SEO take to show results?",
-          "a": "Typically 3-6 months for traditional rankings, 2-6 weeks for AI Overview citations on well-optimised pages. SEO compounds - the work you do today keeps paying forward for years."
-        },
-        {
-          "q": "Should I use AI to write SEO content?",
-          "a": "Yes, with heavy human editing. AI is great for outlines, fact-checks, and first drafts. Pure AI content (no editing) tends to rank poorly because it lacks specificity, original data, and clear authorship - exactly what AI engines reward."
-        },
-        {
-          "q": "Is FAQ schema worth adding to every page?",
-          "a": "Add it wherever you have genuine, relevant Q&A content. Don’t shoehorn it everywhere - Google penalises spammy schema. Done well, FAQPage schema is one of the highest-ROI structural changes in 2026."
-        }
-      ],
-      "furtherHeading": "Keep going deeper",
-      "furtherReading": {
-        "journal": [
-          {
-            "label": "AEO & GEO ranking playbook",
-            "href": "/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
-          },
-          {
-            "label": "Our Digital Marketing services",
-            "href": "/services#marketing"
-          },
-          {
-            "label": "Free SEO audit",
-            "href": "/contact-us"
-          }
-        ],
-        "sources": [
-          {
-            "label": "Google Search Central",
-            "domain": "developers.google.com",
-            "href": "https://developers.google.com/search"
-          },
-          {
-            "label": "Web.dev - Core Web Vitals",
-            "domain": "web.dev",
-            "href": "https://web.dev/explore/learn-core-web-vitals"
-          },
-          {
-            "label": "Schema.org",
-            "domain": "schema.org",
-            "href": "https://schema.org/"
-          }
-        ],
-        "mentionedIn": [
-          {
-            "label": "AEO & GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026",
-            "href": "/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
-          },
-          {
-            "label": "Webflow vs Next.js vs WordPress (2026): Honest Stack Comparison for Founders",
-            "href": "/blogs/webflow-vs-nextjs-vs-wordpress-2026"
-          },
-          {
-            "label": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-            "href": "/blogs/aso-app-store-optimization-2026"
-          }
-        ]
-      },
-      "related": [
-        "aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
-        "ai-agents-2026-from-chatbots-to-digital-coworkers",
-        "vibe-coding-the-honest-guide-for-founders"
+        "ai-agents-2026-from-chatbots-to-digital-coworkers"
       ]
     },
     {
@@ -1673,8 +1176,7 @@
       },
       "related": [
         "ai-agents-2026-from-chatbots-to-digital-coworkers",
-        "vibe-coding-the-honest-guide-for-founders",
-        "aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
+        "vibe-coding-the-honest-guide-for-founders"
       ]
     },
     {
@@ -3182,10 +2684,6 @@
             "href": "/blogs/vibe-coding-the-honest-guide-for-founders"
           },
           {
-            "label": "SEO fundamentals for founders",
-            "href": "/blogs/seo-fundamentals-for-founders-2026-edition"
-          },
-          {
             "label": "Our web development services",
             "href": "/services#web"
           }
@@ -3659,7 +3157,7 @@
         {
           "id": "scale",
           "heading": "Scaling beyond MVP",
-          "markdown": "The hardest truth about no-code: most platforms become a ceiling. Bubble, Adalo, Glide all max out at moderate scale. Next.js + Supabase is the only stack on this list that scales from MVP to enterprise without a rewrite. If you’re betting on the company growing past Series A, start on a real code stack - even if it’s 30% slower at MVP stage.\n\nWe’ve built MVPs on every platform in this list. If you want our pick for your specific situation, [drop us a line](/contact-us). Also read: [vibe coding for founders](/blogs/vibe-coding-the-honest-guide-for-founders), [designing mobile apps people keep](/blogs/designing-mobile-apps-people-actually-keep)."
+          "markdown": "The hardest truth about no-code: most platforms become a ceiling. Bubble, Adalo, Glide all max out at moderate scale. Next.js + Supabase is the only stack on this list that scales from MVP to enterprise without a rewrite. If you’re betting on the company growing past Series A, start on a real code stack - even if it’s 30% slower at MVP stage.\n\nWe’ve built MVPs on every platform in this list. If you want our pick for your specific situation, [drop us a line](/contact-us). Also read: [vibe coding for founders](/blogs/vibe-coding-the-honest-guide-for-founders)."
         }
       ],
       "faqHeading": "Frequently asked questions",
@@ -3695,10 +3193,6 @@
           {
             "label": "Next.js 16 deep-dive",
             "href": "/blogs/nextjs-16-what-changed-and-why-it-matters"
-          },
-          {
-            "label": "Mobile app retention design",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
           },
           {
             "label": "Our web development services",
@@ -4023,7 +3517,7 @@
         {
           "id": "save",
           "heading": "How to save 30-40% legitimately",
-          "markdown": "1. Ship MVP first. Validate the core flow with 5-8 screens before building the dream feature list.\n2. Pick cross-platform (Flutter) by default. Native is rarely worth the 60-90% cost premium.\n3. Use BaaS for the backend. Supabase or Firebase saves 15-25% of total cost vs custom backend.\n4. Re-use design systems. Pre-built kits (Tailwind UI for web, ShadCN, Material You) cut design hours.\n5. Use third-party SDKs aggressively. Don’t build chat - integrate Stream or Sendbird. Don’t build video - use 100ms.\n6. Skip the admin panel initially. Use Retool or Supabase Studio until you outgrow them.\n7. Pick a partner not a freelancer. Freelancers cost less hourly but produce 30-40% more rework on average.\n\nWant a no-pressure quote for your specific scope? [Drop us a line](/contact-us) with a one-line app idea and we’ll send a one-pager budget. Related reads: [how long does it take to build an app](/blogs/how-long-to-build-mobile-app-2026), [designing apps people actually keep](/blogs/designing-mobile-apps-people-actually-keep), [how to choose a mobile app development company](/blogs/how-to-choose-mobile-app-development-company-india)."
+          "markdown": "1. Ship MVP first. Validate the core flow with 5-8 screens before building the dream feature list.\n2. Pick cross-platform (Flutter) by default. Native is rarely worth the 60-90% cost premium.\n3. Use BaaS for the backend. Supabase or Firebase saves 15-25% of total cost vs custom backend.\n4. Re-use design systems. Pre-built kits (Tailwind UI for web, ShadCN, Material You) cut design hours.\n5. Use third-party SDKs aggressively. Don’t build chat - integrate Stream or Sendbird. Don’t build video - use 100ms.\n6. Skip the admin panel initially. Use Retool or Supabase Studio until you outgrow them.\n7. Pick a partner not a freelancer. Freelancers cost less hourly but produce 30-40% more rework on average.\n\nWant a no-pressure quote for your specific scope? [Drop us a line](/contact-us) with a one-line app idea and we’ll send a one-pager budget. Related reads: [how long does it take to build an app](/blogs/how-long-to-build-mobile-app-2026), [how to choose a mobile app development company](/blogs/how-to-choose-mobile-app-development-company-india)."
         }
       ],
       "faqHeading": "Frequently asked questions",
@@ -4059,10 +3553,6 @@
           {
             "label": "How long does it take to build a mobile app",
             "href": "/blogs/how-long-to-build-mobile-app-2026"
-          },
-          {
-            "label": "Designing mobile apps people actually keep",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
           },
           {
             "label": "How to choose a mobile app development company",
@@ -4102,10 +3592,6 @@
         ],
         "mentionedIn": [
           {
-            "label": "Designing Mobile Apps People Actually Keep on Their Phone",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
             "label": "Flutter vs React Native (2026): The Honest Comparison from 30+ Production Apps",
             "href": "/blogs/flutter-vs-react-native-2026"
           },
@@ -4122,17 +3608,12 @@
             "href": "/blogs/app-store-rejection-reasons-2026"
           },
           {
-            "label": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-            "href": "/blogs/aso-app-store-optimization-2026"
-          },
-          {
             "label": "How to Choose a Mobile App Development Company in India (2026): The Founder’s 11-Question Filter",
             "href": "/blogs/how-to-choose-mobile-app-development-company-india"
           }
         ]
       },
       "related": [
-        "designing-mobile-apps-people-actually-keep",
         "flutter-vs-react-native-2026",
         "flutter-vs-react-native-vs-native-swift-kotlin"
       ]
@@ -4274,10 +3755,6 @@
             "href": "/blogs/how-to-choose-mobile-app-development-company-india"
           },
           {
-            "label": "Designing mobile apps people keep",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
             "label": "Our mobile app development services",
             "href": "/services#mobile"
           }
@@ -4311,10 +3788,6 @@
         ],
         "mentionedIn": [
           {
-            "label": "Designing Mobile Apps People Actually Keep on Their Phone",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
             "label": "Mobile App Development Cost in India (2026): Real Numbers from 22 Projects",
             "href": "/blogs/mobile-app-development-cost-india-2026"
           },
@@ -4337,7 +3810,6 @@
         ]
       },
       "related": [
-        "designing-mobile-apps-people-actually-keep",
         "mobile-app-development-cost-india-2026",
         "flutter-vs-react-native-vs-native-swift-kotlin"
       ]
@@ -4467,10 +3939,6 @@
             "href": "/blogs/how-long-to-build-mobile-app-2026"
           },
           {
-            "label": "Designing mobile apps people keep",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
             "label": "Webflow vs Next.js vs WordPress",
             "href": "/blogs/webflow-vs-nextjs-vs-wordpress-2026"
           },
@@ -4508,10 +3976,6 @@
         ],
         "mentionedIn": [
           {
-            "label": "Designing Mobile Apps People Actually Keep on Their Phone",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
             "label": "Mobile App Development Cost in India (2026): Real Numbers from 22 Projects",
             "href": "/blogs/mobile-app-development-cost-india-2026"
           },
@@ -4522,7 +3986,6 @@
         ]
       },
       "related": [
-        "designing-mobile-apps-people-actually-keep",
         "mobile-app-development-cost-india-2026",
         "flutter-vs-react-native-2026"
       ]
@@ -4651,14 +4114,6 @@
             "href": "/blogs/app-store-rejection-reasons-2026"
           },
           {
-            "label": "ASO: App Store Optimization 2026",
-            "href": "/blogs/aso-app-store-optimization-2026"
-          },
-          {
-            "label": "Designing mobile apps people keep",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
             "label": "Our mobile app development services",
             "href": "/services#mobile"
           }
@@ -4687,10 +4142,6 @@
         ],
         "mentionedIn": [
           {
-            "label": "Designing Mobile Apps People Actually Keep on Their Phone",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
             "label": "Mobile App Development Cost in India (2026): Real Numbers from 22 Projects",
             "href": "/blogs/mobile-app-development-cost-india-2026"
           },
@@ -4713,7 +4164,6 @@
         ]
       },
       "related": [
-        "designing-mobile-apps-people-actually-keep",
         "mobile-app-development-cost-india-2026",
         "flutter-vs-react-native-2026"
       ]
@@ -4796,7 +4246,7 @@
         {
           "id": "checklist",
           "heading": "Pre-submission checklist (the 30 points we run)",
-          "markdown": "- ✅ Test account credentials provided AND tested today\n- ✅ Demo mode / restricted flow accessible to reviewer\n- ✅ All permission strings (NS*UsageDescription) present and specific\n- ✅ Sign in with Apple if third-party sign-in offered\n- ✅ ATT prompt implemented if tracking\n- ✅ Privacy policy URL live and matches App Privacy details\n- ✅ App Privacy details (data collection, types, purposes) accurate\n- ✅ IAP used for all digital purchases\n- ✅ No mentions of payment alternatives in app or screenshots\n- ✅ Screenshots all real, no mocked features\n- ✅ Description matches actual functionality\n- ✅ Background modes declared match actual use\n- ✅ Tested on iPhone SE 2nd gen + iPad 9th gen (old but supported)\n- ✅ Production build (Release config), not Debug\n- ✅ No crashes in first 5 minutes of usage\n- ✅ Keyboard handling works in all forms\n- ✅ Status bar style appropriate per screen\n- ✅ Loading states implemented (no blank screens > 2s)\n- ✅ Empty states implemented\n- ✅ Error states implemented\n- ✅ Offline behaviour graceful (or explicit message)\n- ✅ Universal links / deep links work\n- ✅ External browser links use Safari View Controller, not embedded WebView\n- ✅ App icon meets all required sizes\n- ✅ Launch screen exists, doesn’t feel like an ad\n- ✅ Login + signup flow works without errors\n- ✅ Forgot password flow works\n- ✅ Logout works and clears state\n- ✅ Push notification permission asked at appropriate moment\n- ✅ Build version + version number correct in App Store Connect\n\nUse this checklist on every submission. It’s why our rejection rate is now under 8% vs the 40-60% industry average. [Need help getting an app approved?](/contact-us) We’ve un-stuck dozens of apps from rejection cycles. Related: [how long to build an app](/blogs/how-long-to-build-mobile-app-2026), [App Store optimization](/blogs/aso-app-store-optimization-2026)."
+          "markdown": "- ✅ Test account credentials provided AND tested today\n- ✅ Demo mode / restricted flow accessible to reviewer\n- ✅ All permission strings (NS*UsageDescription) present and specific\n- ✅ Sign in with Apple if third-party sign-in offered\n- ✅ ATT prompt implemented if tracking\n- ✅ Privacy policy URL live and matches App Privacy details\n- ✅ App Privacy details (data collection, types, purposes) accurate\n- ✅ IAP used for all digital purchases\n- ✅ No mentions of payment alternatives in app or screenshots\n- ✅ Screenshots all real, no mocked features\n- ✅ Description matches actual functionality\n- ✅ Background modes declared match actual use\n- ✅ Tested on iPhone SE 2nd gen + iPad 9th gen (old but supported)\n- ✅ Production build (Release config), not Debug\n- ✅ No crashes in first 5 minutes of usage\n- ✅ Keyboard handling works in all forms\n- ✅ Status bar style appropriate per screen\n- ✅ Loading states implemented (no blank screens > 2s)\n- ✅ Empty states implemented\n- ✅ Error states implemented\n- ✅ Offline behaviour graceful (or explicit message)\n- ✅ Universal links / deep links work\n- ✅ External browser links use Safari View Controller, not embedded WebView\n- ✅ App icon meets all required sizes\n- ✅ Launch screen exists, doesn’t feel like an ad\n- ✅ Login + signup flow works without errors\n- ✅ Forgot password flow works\n- ✅ Logout works and clears state\n- ✅ Push notification permission asked at appropriate moment\n- ✅ Build version + version number correct in App Store Connect\n\nUse this checklist on every submission. It’s why our rejection rate is now under 8% vs the 40-60% industry average. [Need help getting an app approved?](/contact-us) We’ve un-stuck dozens of apps from rejection cycles. Related: [how long to build an app](/blogs/how-long-to-build-mobile-app-2026)."
         }
       ],
       "faqHeading": "Frequently asked questions",
@@ -4828,14 +4278,6 @@
           {
             "label": "Mobile app development cost India 2026",
             "href": "/blogs/mobile-app-development-cost-india-2026"
-          },
-          {
-            "label": "ASO: App Store Optimization 2026",
-            "href": "/blogs/aso-app-store-optimization-2026"
-          },
-          {
-            "label": "Designing mobile apps people keep",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
           },
           {
             "label": "Flutter vs React Native 2026",
@@ -4875,16 +4317,8 @@
         ],
         "mentionedIn": [
           {
-            "label": "Designing Mobile Apps People Actually Keep on Their Phone",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
             "label": "How Long Does It Take to Build a Mobile App in 2026? (Real Timelines from 22 Projects)",
             "href": "/blogs/how-long-to-build-mobile-app-2026"
-          },
-          {
-            "label": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-            "href": "/blogs/aso-app-store-optimization-2026"
           },
           {
             "label": "How to Choose a Mobile App Development Company in India (2026): The Founder’s 11-Question Filter",
@@ -4893,200 +4327,6 @@
         ]
       },
       "related": [
-        "designing-mobile-apps-people-actually-keep",
-        "mobile-app-development-cost-india-2026",
-        "flutter-vs-react-native-2026"
-      ]
-    },
-    {
-      "slug": "aso-app-store-optimization-2026",
-      "title": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-      "description": "Most apps die because nobody finds them. ASO is the cheapest growth channel - and most teams do it wrong. Here’s the playbook we use to rank our clients’ apps in the top 10 of their category.",
-      "dek": "Most apps die because nobody finds them. ASO is the cheapest growth channel - and most teams do it wrong. Here’s the playbook we use to rank our clients’ apps in the top 10 of their category.",
-      "category": "Mobile",
-      "tags": [
-        "ASO",
-        "App Store Optimization",
-        "Mobile Marketing",
-        "Growth"
-      ],
-      "published": "2026-05-11",
-      "updated": "2026-05-11",
-      "displayDate": "May 11, 2026",
-      "author": "IBW Team",
-      "readTime": 11,
-      "wordCount": 773,
-      "cover": {
-        "alt": "App Store search results on mobile phone",
-        "src": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1600&q=80"
-      },
-      "toc": [
-        {
-          "id": "what",
-          "label": "What ASO actually is"
-        },
-        {
-          "id": "elements",
-          "label": "The 9 ASO elements that matter"
-        },
-        {
-          "id": "keywords",
-          "label": "Keyword research for apps"
-        },
-        {
-          "id": "visuals",
-          "label": "Screenshots & preview videos"
-        },
-        {
-          "id": "reviews",
-          "label": "Ratings & reviews strategy"
-        },
-        {
-          "id": "ai-search",
-          "label": "AI app discovery in 2026"
-        },
-        {
-          "id": "iterate",
-          "label": "How to iterate after launch"
-        },
-        {
-          "id": "faq",
-          "label": "FAQs"
-        },
-        {
-          "id": "further-reading",
-          "label": "Further reading"
-        }
-      ],
-      "lede": "ASO (App Store Optimization) is the practice of ranking your app higher in App Store and Play Store searches. Done well, it drives 30-60% of an app’s organic installs. Done badly, it leaves your app invisible no matter how good the product is. Here’s the 2026 playbook we use to push client apps into the top 10 of their category.",
-      "sections": [
-        {
-          "id": "what",
-          "heading": "What ASO actually is in 2026",
-          "markdown": "ASO is split into two layers: keyword discovery (helping the right people find your app via search) and conversion optimization (turning store-page views into installs). Most teams obsess over keywords and ignore conversion - which is backwards. Conversion improvements drive 2-3x more installs than keyword tweaks for the same effort."
-        },
-        {
-          "id": "elements",
-          "heading": "The 9 ASO elements that actually matter",
-          "markdown": "| # | Element | iOS field | Play Store field | Impact |\n| --- | --- | --- | --- | --- |\n| 1 | App name | 30 chars | 30 chars | Highest |\n| 2 | Subtitle / short description | 30 chars (subtitle) | 80 chars (short) | High |\n| 3 | Keywords field | 100 chars (iOS only) | N/A (uses description) | High |\n| 4 | Long description | 4,000 chars (low signal) | 4,000 chars (HIGH signal) | Medium iOS / High Play |\n| 5 | Icon | 1024x1024 | 512x512 | Highest for conversion |\n| 6 | Screenshots (1-10) | Per device size | Per device size | Highest for conversion |\n| 7 | Preview video (1) | Up to 30s | Up to 2 min | High for conversion |\n| 8 | Ratings & reviews | Star rating + count | Star rating + count | Highest for trust |\n| 9 | Category | Primary + secondary | Primary + tags | Medium |"
-        },
-        {
-          "id": "keywords",
-          "heading": "Keyword research for apps (it’s different from web SEO)",
-          "markdown": "Web SEO targets long-tail keywords (“best CRM for real estate India”). ASO targets short, high-intent terms (“real estate CRM”, “property crm”). Why: users type short, intent-driven queries on phones.\n\n1. Start with category competitors. Look at the top 10 apps in your category. What keywords are in their name and subtitle?\n2. Use App Store Connect Search Ads. The Search Match keyword suggestions are gold - that’s actual search data.\n3. Use tools. Sensor Tower, AppTweak, Mobile Action, Apptopia. Free tier on most.\n4. Mine review text of competitors. What pain points and feature names do users actually type?\n5. Localize. India-only apps should include Hindi/regional terms transliterated (e.g. “kirana”, “dukaan”).\n\n### iOS keyword field hacks\n\n- 100 chars only. Don’t waste any.\n- No spaces between keywords - use commas: real,estate,crm,property\n- Don’t repeat words. The algorithm already combines (so “real,estate” covers “real estate”).\n- Singular form wins. iOS auto-pluralizes.\n- Don’t include your app name (it’s already indexed).\n- Don’t include “app” (Apple ignores it)."
-        },
-        {
-          "id": "visuals",
-          "heading": "Screenshots & preview videos (your biggest conversion lever)",
-          "markdown": "Screenshots are responsible for 60-80% of install conversion. Most apps get them embarrassingly wrong.\n\n- Screenshot 1 = your hero ad. Big text overlay with the key benefit. Not a raw UI screenshot.\n- Screenshots 2-3 = the 2-3 most differentiating features. Each with its own headline.\n- Screenshot 4-5 = trust signals (“Trusted by 145+ businesses”, “Featured in TechCrunch”, reviews).\n- Screenshots 6+ = additional features. Most users never see these.\n- Preview video = under 20s. Show core flow. No voice-over needed.\n- A/B test ruthlessly. Apple offers Product Page Optimization (test 3 variants). Use it.\n\nIndian apps: include a clearly-visible Hindi or regional element in at least one screenshot if your audience is mixed-language. Builds trust fast."
-        },
-        {
-          "id": "reviews",
-          "heading": "Ratings & reviews strategy",
-          "markdown": "- 4.5+ stars is the threshold. Apps below 4.0 see 50%+ drop in install conversion vs 4.5+ apps.\n- Ask at the right moment. After a successful action (order placed, message sent, milestone reached). Never on cold boot.\n- Use native prompts. iOS SKStoreReviewController and Play’s ReviewManager. Don’t build custom modals.\n- Respond to every review. Especially negative ones. Both Apple and Google rank reviewer-engagement.\n- Never fake reviews. Both platforms detect this in 2026 and ban developer accounts.\n- Don’t prompt obsessively. Apple caps at 3 prompts per user per year regardless. Track it."
-        },
-        {
-          "id": "ai-search",
-          "heading": "AI app discovery in 2026 (new!)",
-          "markdown": "ChatGPT, Perplexity, and Apple Intelligence are starting to recommend apps directly. Optimize for this:\n\n- Have a great landing page with structured data (SoftwareApplication schema). AI engines cite the web, not the App Store.\n- Get listed on Product Hunt - heavily cited by AI engines.\n- Reddit mentions matter. Authentic discussion in relevant subreddits often gets cited by ChatGPT.\n- Tech blog reviews - cite-able sources for AI recommendations.\n- See our [AEO/GEO playbook](/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt) for the broader AI search strategy."
-        },
-        {
-          "id": "iterate",
-          "heading": "How to iterate after launch",
-          "markdown": "1. Week 1-2: Track keyword rankings daily. Identify which keywords you’re actually ranking for.\n2. Week 3-4: Rewrite app name and subtitle to target the keywords that show real-world rank potential.\n3. Month 2: A/B test screenshots. Apple PPO supports 3 variants. Run for 14-21 days minimum.\n4. Month 3: Refresh icon if conversion is below category average. Icon changes are high-risk, high-reward.\n5. Quarterly: Review category trends, competitor moves, seasonal patterns. Update.\n\nWe do ASO as a retainer for client apps - typically ₹35-60K/month gets results most teams couldn’t buy with ₹3-5L in paid ads. [Talk to us](/contact-us) if your app is shipped but not getting installs. Related: [designing apps people keep](/blogs/designing-mobile-apps-people-actually-keep), [SEO fundamentals for founders](/blogs/seo-fundamentals-for-founders-2026-edition)."
-        }
-      ],
-      "faqHeading": "Frequently asked questions",
-      "faqs": [
-        {
-          "q": "How long does ASO take to show results?",
-          "a": "Keyword rankings shift within 1-3 weeks of a name/subtitle/keywords field update. Screenshot or icon A/B tests need 14-21 days for statistical significance. Full ASO impact - measurable lift in organic installs - typically takes 6-12 weeks of iterative work. ASO compounds over time."
-        },
-        {
-          "q": "Is ASO worth doing for a small app?",
-          "a": "Yes, especially for small apps. ASO is free compared to paid acquisition (₹50-300 per install on Indian Apple Search Ads, ₹15-80 on Play Store). For an app with even 1,000 organic installs/month, 30% lift from ASO = 300 extra installs/month at zero cost."
-        },
-        {
-          "q": "What is the difference between ASO and mobile SEO?",
-          "a": "ASO targets the App Store and Play Store algorithms - keywords, screenshots, conversion. Mobile SEO is regular web SEO optimised for mobile devices, targeting Google search rather than the app stores. Both matter: your landing page does SEO, your store page does ASO."
-        },
-        {
-          "q": "Can I do ASO myself or do I need an agency?",
-          "a": "You can absolutely DIY the basics: keyword research, name/subtitle optimization, decent screenshots. That gets you 60-70% of the value. Agencies justify their fees on: data tools, A/B testing methodology, regular iteration discipline, and competitor monitoring. For apps under 10K MAU, DIY is fine. Beyond that, an agency typically pays for itself."
-        }
-      ],
-      "furtherHeading": "Keep going deeper",
-      "furtherReading": {
-        "journal": [
-          {
-            "label": "Designing mobile apps people keep",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
-            "label": "App Store rejection reasons 2026",
-            "href": "/blogs/app-store-rejection-reasons-2026"
-          },
-          {
-            "label": "Mobile app development cost India 2026",
-            "href": "/blogs/mobile-app-development-cost-india-2026"
-          },
-          {
-            "label": "AEO & GEO ranking playbook",
-            "href": "/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
-          },
-          {
-            "label": "SEO fundamentals for founders 2026",
-            "href": "/blogs/seo-fundamentals-for-founders-2026-edition"
-          },
-          {
-            "label": "Our mobile app development services",
-            "href": "/services#mobile"
-          }
-        ],
-        "sources": [
-          {
-            "label": "Apple App Store Connect",
-            "domain": "appstoreconnect.apple.com",
-            "href": "https://appstoreconnect.apple.com/"
-          },
-          {
-            "label": "Apple Search Ads",
-            "domain": "searchads.apple.com",
-            "href": "https://searchads.apple.com/"
-          },
-          {
-            "label": "Sensor Tower",
-            "domain": "sensortower.com",
-            "href": "https://sensortower.com/"
-          },
-          {
-            "label": "AppTweak",
-            "domain": "apptweak.com",
-            "href": "https://www.apptweak.com/"
-          },
-          {
-            "label": "Apple Product Page Optimization",
-            "domain": "developer.apple.com",
-            "href": "https://developer.apple.com/app-store/product-page-optimization/"
-          }
-        ],
-        "mentionedIn": [
-          {
-            "label": "Designing Mobile Apps People Actually Keep on Their Phone",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
-            "label": "How Long Does It Take to Build a Mobile App in 2026? (Real Timelines from 22 Projects)",
-            "href": "/blogs/how-long-to-build-mobile-app-2026"
-          },
-          {
-            "label": "Top 12 App Store Rejection Reasons in 2026 (and How to Avoid Each)",
-            "href": "/blogs/app-store-rejection-reasons-2026"
-          }
-        ]
-      },
-      "related": [
-        "designing-mobile-apps-people-actually-keep",
         "mobile-app-development-cost-india-2026",
         "flutter-vs-react-native-2026"
       ]
@@ -5219,10 +4459,6 @@
             "href": "/blogs/app-store-rejection-reasons-2026"
           },
           {
-            "label": "Designing mobile apps people keep",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
             "label": "How to choose an Odoo implementation partner",
             "href": "/blogs/best-odoo-implementation-partners-india-2026"
           },
@@ -5255,10 +4491,6 @@
         ],
         "mentionedIn": [
           {
-            "label": "Designing Mobile Apps People Actually Keep on Their Phone",
-            "href": "/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
             "label": "Mobile App Development Cost in India (2026): Real Numbers from 22 Projects",
             "href": "/blogs/mobile-app-development-cost-india-2026"
           },
@@ -5273,7 +4505,6 @@
         ]
       },
       "related": [
-        "designing-mobile-apps-people-actually-keep",
         "mobile-app-development-cost-india-2026",
         "flutter-vs-react-native-2026"
       ]

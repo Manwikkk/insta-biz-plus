@@ -240,7 +240,7 @@ Explore Insta Biz Web
 - [AI Agent Development services](https://www.instabizweb.com/services/ai-agent-development)
 - [All our services](https://www.instabizweb.com/services)
 - [Portfolio: 50+ projects we have shipped](https://www.instabizweb.com/portfolio)
-- [Blog: engineering & SEO insights](https://www.instabizweb.com/blogs)
+- [Blog: engineering insights](https://www.instabizweb.com/blogs)
 
 Free consultation
 
@@ -504,7 +504,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",

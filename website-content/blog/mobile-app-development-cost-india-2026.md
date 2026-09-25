@@ -139,7 +139,7 @@ Plan for 15-25% of Year-1 cost as annual ongoing maintenance. Most clients we wo
 6. Skip the admin panel initially. Use Retool or Supabase Studio until you outgrow them.
 7. Pick a partner not a freelancer. Freelancers cost less hourly but produce 30-40% more rework on average.
 
-Want a no-pressure quote for your specific scope? [Drop us a line](https://www.instabizweb.com/contact-us) with a one-line app idea and we’ll send a one-pager budget. Related reads: [how long does it take to build an app](https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026), [designing apps people actually keep](https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep), [how to choose a mobile app development company](https://www.instabizweb.com/blogs/how-to-choose-mobile-app-development-company-india).
+Want a no-pressure quote for your specific scope? [Drop us a line](https://www.instabizweb.com/contact-us) with a one-line app idea and we’ll send a one-pager budget. Related reads: [how long does it take to build an app](https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026), [how to choose a mobile app development company](https://www.instabizweb.com/blogs/how-to-choose-mobile-app-development-company-india).
 
 FAQs
 
@@ -456,7 +456,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",
@@ -604,11 +604,6 @@ Resources
         "@type": "Thing",
         "name": "How long does it take to build a mobile app",
         "url": "https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026"
-      },
-      {
-        "@type": "Thing",
-        "name": "Designing mobile apps people actually keep",
-        "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
       },
       {
         "@type": "Thing",

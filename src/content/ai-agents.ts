@@ -315,10 +315,6 @@ export const aiAgents = {
         label: 'Blog: AI Agents 2026 - from chatbots to digital coworkers',
         href: '/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers',
       },
-      {
-        label: 'Blog: AEO and GEO - rank in Google AI Overviews and ChatGPT',
-        href: '/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt',
-      },
       { label: 'Portfolio: AI projects we have shipped', href: '/portfolio' },
       { label: 'Contact: Book a free AI strategy call', href: '/contact-us' },
     ],

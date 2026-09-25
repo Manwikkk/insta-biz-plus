@@ -1,7 +1,7 @@
 {
   "/": {
     "title": "Insta Biz Web - AI-Powered Web, App & Digital Solutions",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "applicationName": "Insta Biz Web",
     "author": "Insta Biz Web",
     "authorUrl": "https://www.instabizweb.com",
@@ -20,7 +20,7 @@
     },
     "og": {
       "title": "Insta Biz Web - Digital Solutions for Growth",
-      "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+      "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
       "url": "https://www.instabizweb.com",
       "siteName": "Insta Biz Web",
       "locale": "en_IN",
@@ -43,7 +43,7 @@
       "site": "@instabizweb",
       "creator": "@instabizweb",
       "title": "Insta Biz Web - Digital Solutions for Growth",
-      "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+      "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
       "images": [
         {
           "url": "https://www.instabizweb.com/logo.png"
@@ -66,7 +66,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -146,8 +146,8 @@
     ]
   },
   "/services": {
-    "title": "Services - Web, Mobile, AI, CRM & Marketing · Insta Biz Web",
-    "description": "Insta Biz Web designs and engineers websites, mobile apps, AI agents, CRM/ERP systems and growth marketing campaigns - all under one accountable team.",
+    "title": "Services - Web, Mobile, AI, CRM & Automation · Insta Biz Web",
+    "description": "Insta Biz Web designs and engineers websites, mobile apps, AI agents, CRM/ERP systems and business automation - all under one accountable team.",
     "applicationName": "Insta Biz Web",
     "author": "Insta Biz Web",
     "authorUrl": "https://www.instabizweb.com",
@@ -166,7 +166,7 @@
     },
     "og": {
       "title": "Services · Insta Biz Web",
-      "description": "Web, mobile, AI, CRM and marketing services from one full-stack growth partner. Fixed pricing, transparent timelines, real outcomes.",
+      "description": "Web, mobile, AI, CRM and business automation services from one full-stack growth partner. Fixed pricing, transparent timelines, real outcomes.",
       "url": "https://www.instabizweb.com/services",
       "siteName": "Insta Biz Web",
       "locale": "en_IN",
@@ -189,7 +189,7 @@
       "site": "@instabizweb",
       "creator": null,
       "title": "Services · Insta Biz Web",
-      "description": "Web, mobile, AI, CRM and marketing services from one full-stack growth partner.",
+      "description": "Web, mobile, AI, CRM and business automation services from one full-stack growth partner.",
       "images": [
         {
           "url": "https://www.instabizweb.com/logo.png"
@@ -212,7 +212,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -313,8 +313,8 @@
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Web Development",
-                "description": "Lightning-fast Next.js & React websites and SaaS dashboards."
+                "name": "Business Automation",
+                "description": "Workflows and integrations that connect your tools and take repetitive work off your team."
               }
             },
             {
@@ -345,16 +345,8 @@
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Digital Marketing",
-                "description": "SEO, paid ads and content campaigns built for qualified leads."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "UI/UX Design",
-                "description": "Brand-led design systems and pixel-perfect interfaces."
+                "name": "Web Development",
+                "description": "Lightning-fast Next.js & React websites and SaaS dashboards."
               }
             }
           ]
@@ -447,7 +439,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -774,7 +766,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -1022,7 +1014,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -1223,14 +1215,6 @@
             "description": "Browser extension for scraping Google data and extracting verified emails for lead generation - fast, focused, and accurate.",
             "url": "https://scout.blutec.ai/",
             "image": "https://www.instabizweb.com/portfolio/blutec-scout.jpg"
-          },
-          {
-            "@type": "ListItem",
-            "position": 16,
-            "name": "Social Media Marketing",
-            "description": "End-to-end social media management, paid ads, and lead generation services for 20+ clients across multiple industries and geographies.",
-            "url": "https://www.instabizweb.com/services#marketing",
-            "image": "https://www.instabizweb.com/portfolio/social-media-marketing.jpg"
           }
         ]
       },
@@ -1275,7 +1259,7 @@
     },
     "og": {
       "title": "About · Insta Biz Web",
-      "description": "Founder-led digital studio building websites, apps, AI agents, CRMs and marketing for founders worldwide. Meet the team behind the work.",
+      "description": "Founder-led digital studio building websites, apps, AI agents, CRMs and business automation for founders worldwide. Meet the team behind the work.",
       "url": "https://www.instabizweb.com/about-us",
       "siteName": "Insta Biz Web",
       "locale": "en_IN",
@@ -1298,7 +1282,7 @@
       "site": "@instabizweb",
       "creator": null,
       "title": "About · Insta Biz Web",
-      "description": "Founder-led digital studio building websites, apps, AI agents, CRMs and marketing for founders worldwide.",
+      "description": "Founder-led digital studio building websites, apps, AI agents, CRMs and business automation for founders worldwide.",
       "images": [
         {
           "url": "https://www.instabizweb.com/logo.png"
@@ -1321,7 +1305,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -1403,7 +1387,7 @@
         "@type": "AboutPage",
         "name": "About Insta Biz Web",
         "url": "https://www.instabizweb.com/about-us",
-        "description": "Founder-led digital studio in Ahmedabad, India - engineering websites, apps, AI agents, CRMs and marketing for 60+ founders worldwide.",
+        "description": "Founder-led digital studio in Ahmedabad, India - engineering websites, apps, AI agents, CRMs and business automation for 60+ founders worldwide.",
         "mainEntity": {
           "@type": "Organization",
           "name": "Insta Biz Web",
@@ -1548,7 +1532,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -1814,7 +1798,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -1927,18 +1911,6 @@
           },
           {
             "@type": "BlogPosting",
-            "headline": "AEO &amp; GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026",
-            "url": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
-            "datePublished": "2026-04-08",
-            "author": {
-              "@type": "Organization",
-              "name": "IBW Team"
-            },
-            "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80",
-            "articleSection": "Digital Marketing"
-          },
-          {
-            "@type": "BlogPosting",
             "headline": "The 2026 WhatsApp Business API Playbook for Indian SMBs (With Real Pricing &amp; Setup Times)",
             "url": "https://www.instabizweb.com/blogs/whatsapp-business-api-2026-india-smb-playbook",
             "datePublished": "2026-03-30",
@@ -1984,30 +1956,6 @@
             },
             "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&q=80",
             "articleSection": "Web Development"
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "Designing Mobile Apps People Actually Keep on Their Phone",
-            "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep",
-            "datePublished": "2026-02-08",
-            "author": {
-              "@type": "Organization",
-              "name": "IBW Team"
-            },
-            "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600&q=80",
-            "articleSection": "Mobile Apps"
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "SEO Fundamentals for Founders: The 2026 Edition",
-            "url": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition",
-            "datePublished": "2026-01-18",
-            "author": {
-              "@type": "Organization",
-              "name": "IBW Team"
-            },
-            "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80",
-            "articleSection": "Digital Marketing"
           },
           {
             "@type": "BlogPosting",
@@ -2239,18 +2187,6 @@
           },
           {
             "@type": "BlogPosting",
-            "headline": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-            "url": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026",
-            "datePublished": "2026-05-11",
-            "author": {
-              "@type": "Organization",
-              "name": "IBW Team"
-            },
-            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1600&q=80",
-            "articleSection": "Mobile"
-          },
-          {
-            "@type": "BlogPosting",
             "headline": "How to Choose a Mobile App Development Company in India (2026): The Founder&rsquo;s 11-Question Filter",
             "url": "https://www.instabizweb.com/blogs/how-to-choose-mobile-app-development-company-india",
             "datePublished": "2026-05-11",
@@ -2280,152 +2216,6 @@
             "item": "https://www.instabizweb.com/blogs"
           }
         ]
-      }
-    ]
-  },
-  "/audit": {
-    "title": "Free Website Audit 2026 | AI SEO, Core Web Vitals & Conversion Report · Insta Biz Web",
-    "description": "Get a free 12-point website audit by senior engineers. Covers Core Web Vitals (INP, LCP, CLS), AI search visibility (GEO), on-page SEO, mobile UX, accessibility, security and conversion gaps. Personalised PDF delivered in 24 hours. No credit card.",
-    "applicationName": "Insta Biz Web",
-    "author": "Insta Biz Web",
-    "authorUrl": "https://www.instabizweb.com",
-    "keywords": null,
-    "creator": "Insta Biz Web",
-    "publisher": "Insta Biz Web",
-    "robots": "index, follow",
-    "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
-    "category": "technology",
-    "themeColor": "#182234",
-    "canonical": "https://www.instabizweb.com/audit",
-    "icon": {
-      "href": "/favicon.ico",
-      "sizes": "256x256",
-      "type": "image/x-icon"
-    },
-    "og": {
-      "title": "Free Website Audit 2026 - AI SEO & Performance Report | Insta Biz Web",
-      "description": "12-point manual website audit by senior engineers. Core Web Vitals, AI search visibility, technical SEO, conversion gaps. Free personalised report in 24 hours.",
-      "url": "https://www.instabizweb.com/audit",
-      "siteName": "Insta Biz Web",
-      "locale": "en_IN",
-      "type": "website",
-      "images": [
-        {
-          "url": "https://www.instabizweb.com/logo.png",
-          "width": 1200,
-          "height": 630,
-          "alt": "Free Website Audit - Insta Biz Web"
-        }
-      ],
-      "publishedTime": null,
-      "modifiedTime": null,
-      "authors": [],
-      "tags": []
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@instabizweb",
-      "creator": null,
-      "title": "Free Website Audit 2026 - AI SEO & Performance | Insta Biz Web",
-      "description": "12-point manual website audit by senior engineers. Free personalised report within 24 hours. No credit card required.",
-      "images": [
-        {
-          "url": "https://www.instabizweb.com/logo.png"
-        }
-      ]
-    },
-    "h1": "Free Website Audit: Find out why your site isn’t converting.",
-    "jsonLd": [
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://www.instabizweb.com/#organization",
-        "name": "Insta Biz Web",
-        "alternateName": "IBW",
-        "url": "https://www.instabizweb.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.instabizweb.com/logo.png",
-          "width": 512,
-          "height": 512
-        },
-        "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
-        "email": "info@instabizweb.com",
-        "telephone": "+91 98981 24987",
-        "priceRange": "₹₹",
-        "foundingDate": "2020",
-        "areaServed": [
-          "IN",
-          "US",
-          "GB",
-          "AE",
-          "SG"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-          "addressLocality": "Naranpura",
-          "addressRegion": "Gujarat",
-          "postalCode": "380013",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 23.0626,
-          "longitude": 72.5575
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "10:00",
-            "closes": "16:00"
-          }
-        ],
-        "location": [
-          {
-            "@type": "Place",
-            "name": "Insta Biz Web - Headquarters (Naranpura)",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-              "addressLocality": "Naranpura",
-              "addressRegion": "Gujarat",
-              "postalCode": "380013",
-              "addressCountry": "IN"
-            }
-          }
-        ],
-        "sameAs": [
-          "https://www.linkedin.com/company/insta-biz-web/",
-          "https://www.facebook.com/profile.php?id=61578562181866",
-          "https://www.instagram.com/insta_biz_web/",
-          "https://x.com/instabizweb"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://www.instabizweb.com/#website",
-        "url": "https://www.instabizweb.com",
-        "name": "Insta Biz Web",
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "inLanguage": "en-IN"
       }
     ]
   },
@@ -2465,7 +2255,7 @@
       "site": "@instabizweb",
       "creator": "@instabizweb",
       "title": "Insta Biz Web - Digital Solutions for Growth",
-      "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+      "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
       "images": [
         {
           "url": "https://www.instabizweb.com/logo.png"
@@ -2488,7 +2278,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -2621,7 +2411,7 @@
       "site": "@instabizweb",
       "creator": "@instabizweb",
       "title": "Insta Biz Web - Digital Solutions for Growth",
-      "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+      "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
       "images": [
         {
           "url": "https://www.instabizweb.com/logo.png"
@@ -2644,7 +2434,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -2743,7 +2533,7 @@
   },
   "/refund-policy": {
     "title": "Refund Policy — Eligibility, process & timelines · Insta Biz Web",
-    "description": "Insta Biz Web's refund policy explains when and how refunds are issued for custom development, digital marketing, and consulting services.",
+    "description": "Insta Biz Web's refund policy explains when and how refunds are issued for custom development, business automation, and consulting services.",
     "applicationName": "Insta Biz Web",
     "author": "Insta Biz Web",
     "authorUrl": "https://www.instabizweb.com",
@@ -2777,7 +2567,7 @@
       "site": "@instabizweb",
       "creator": "@instabizweb",
       "title": "Insta Biz Web - Digital Solutions for Growth",
-      "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+      "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
       "images": [
         {
           "url": "https://www.instabizweb.com/logo.png"
@@ -2800,7 +2590,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -2897,449 +2687,6 @@
       }
     ]
   },
-  "/digital-marketing-agency-in-ahmedabad": {
-    "title": "Digital Marketing Agency in Ahmedabad - Insta Biz Web (4.9★, 145+ Clients) · Insta Biz Web",
-    "description": "Top-rated digital marketing agency in Ahmedabad. Insta Biz Web delivers SEO, Google Ads, Meta Ads, social media & content marketing. 145+ clients, 4.9★. Free strategy call in 24 hours.",
-    "applicationName": "Insta Biz Web",
-    "author": "Insta Biz Web",
-    "authorUrl": "https://www.instabizweb.com",
-    "keywords": null,
-    "creator": "Insta Biz Web",
-    "publisher": "Insta Biz Web",
-    "robots": "index, follow",
-    "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
-    "category": "technology",
-    "themeColor": "#182234",
-    "canonical": "https://www.instabizweb.com/digital-marketing-agency-in-ahmedabad",
-    "icon": {
-      "href": "/favicon.ico",
-      "sizes": "256x256",
-      "type": "image/x-icon"
-    },
-    "og": {
-      "title": "Digital Marketing Agency in Ahmedabad - Insta Biz Web",
-      "description": "Digital marketing agency in Ahmedabad. SEO, Google Ads, Meta Ads, social media & content. 145+ clients, 4.9/5 rating, ROI-focused, transparent INR pricing.",
-      "url": "https://www.instabizweb.com/digital-marketing-agency-in-ahmedabad",
-      "siteName": "Insta Biz Web",
-      "locale": "en_IN",
-      "type": "website",
-      "images": [
-        {
-          "url": "https://www.instabizweb.com/logo.png",
-          "width": 1200,
-          "height": 630,
-          "alt": "Digital Marketing Agency in Ahmedabad - Insta Biz Web"
-        }
-      ],
-      "publishedTime": null,
-      "modifiedTime": null,
-      "authors": [],
-      "tags": []
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@instabizweb",
-      "creator": null,
-      "title": "Digital Marketing Agency in Ahmedabad - Insta Biz Web",
-      "description": "Digital marketing agency in Ahmedabad. SEO, Google Ads, Meta Ads, social media & content. 145+ clients, 4.9/5 rating, ROI-focused, transparent INR pricing.",
-      "images": [
-        {
-          "url": "https://www.instabizweb.com/logo.png"
-        }
-      ]
-    },
-    "h1": "Digital Marketing Agency in Ahmedabad",
-    "jsonLd": [
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://www.instabizweb.com/#organization",
-        "name": "Insta Biz Web",
-        "alternateName": "IBW",
-        "url": "https://www.instabizweb.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.instabizweb.com/logo.png",
-          "width": 512,
-          "height": 512
-        },
-        "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
-        "email": "info@instabizweb.com",
-        "telephone": "+91 98981 24987",
-        "priceRange": "₹₹",
-        "foundingDate": "2020",
-        "areaServed": [
-          "IN",
-          "US",
-          "GB",
-          "AE",
-          "SG"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-          "addressLocality": "Naranpura",
-          "addressRegion": "Gujarat",
-          "postalCode": "380013",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 23.0626,
-          "longitude": 72.5575
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "10:00",
-            "closes": "16:00"
-          }
-        ],
-        "location": [
-          {
-            "@type": "Place",
-            "name": "Insta Biz Web - Headquarters (Naranpura)",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-              "addressLocality": "Naranpura",
-              "addressRegion": "Gujarat",
-              "postalCode": "380013",
-              "addressCountry": "IN"
-            }
-          }
-        ],
-        "sameAs": [
-          "https://www.linkedin.com/company/insta-biz-web/",
-          "https://www.facebook.com/profile.php?id=61578562181866",
-          "https://www.instagram.com/insta_biz_web/",
-          "https://x.com/instabizweb"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://www.instabizweb.com/#website",
-        "url": "https://www.instabizweb.com",
-        "name": "Insta Biz Web",
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "inLanguage": "en-IN"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://www.instabizweb.com/digital-marketing-agency-in-ahmedabad#localbusiness",
-        "name": "Insta Biz Web - Digital Marketing Agency in Ahmedabad",
-        "image": "https://www.instabizweb.com/logo.png",
-        "url": "https://www.instabizweb.com/digital-marketing-agency-in-ahmedabad",
-        "telephone": "+91 98981 24987",
-        "email": "info@instabizweb.com",
-        "priceRange": "₹₹",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-          "addressLocality": "Naranpura",
-          "addressRegion": "Gujarat",
-          "postalCode": "380013",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 23.0626,
-          "longitude": 72.5575
-        },
-        "areaServed": [
-          {
-            "@type": "City",
-            "name": "Ahmedabad"
-          },
-          {
-            "@type": "City",
-            "name": "Gandhinagar"
-          },
-          {
-            "@type": "City",
-            "name": "Surat"
-          },
-          {
-            "@type": "City",
-            "name": "Vadodara"
-          },
-          {
-            "@type": "City",
-            "name": "Rajkot"
-          },
-          {
-            "@type": "AdministrativeArea",
-            "name": "Gujarat"
-          }
-        ],
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "10:00",
-            "closes": "19:00"
-          }
-        ],
-        "sameAs": [
-          "https://www.facebook.com/profile.php?id=61578562181866",
-          "https://www.instagram.com/insta_biz_web/",
-          "https://x.com/instabizweb",
-          "https://www.linkedin.com/company/insta-biz-web/"
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "16",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Aswathi Elamadathil"
-            },
-            "reviewBody": "It's really great to work with your team. I think I have chosen the best marketing team for my company. And your young team is the great inspiration. Keep rocking!"
-          },
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Dhrupesh Patel"
-            },
-            "reviewBody": "Absolutely fantastic experience! Exceeded all expectations. Highly recommend!"
-          },
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Priyam Patel"
-            },
-            "reviewBody": "Experience is very good and also the good work and fast services of products and projects."
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Digital Marketing",
-        "name": "Digital Marketing in Ahmedabad",
-        "url": "https://www.instabizweb.com/digital-marketing-agency-in-ahmedabad",
-        "provider": {
-          "@id": "https://www.instabizweb.com/digital-marketing-agency-in-ahmedabad#localbusiness"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Ahmedabad",
-          "containedInPlace": {
-            "@type": "AdministrativeArea",
-            "name": "Gujarat, India"
-          }
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Digital Marketing in Ahmedabad",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Search Engine Optimization (SEO)",
-                "description": "On-page, technical and content SEO to rank your business on Google India for the keywords that bring customers."
-              },
-              "priceCurrency": "INR",
-              "price": "20000"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Google Ads Management",
-                "description": "Profitable Search, Display and Shopping campaigns - tightly managed for low cost per lead and real ROI."
-              },
-              "priceCurrency": "INR",
-              "price": "15000"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Meta Ads (Facebook & Instagram)",
-                "description": "Targeted Facebook and Instagram ad campaigns that drive leads, sales and brand awareness."
-              },
-              "priceCurrency": "INR",
-              "price": "15000"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Social Media Marketing",
-                "description": "Content, design and management for Instagram, Facebook, LinkedIn and X - building an audience that converts."
-              },
-              "priceCurrency": "INR",
-              "price": "18000"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Content Marketing",
-                "description": "Blog posts, landing pages and SEO content that ranks, builds authority and compounds traffic over time."
-              },
-              "priceCurrency": "INR",
-              "price": "20000"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Local SEO & Google Business Profile",
-                "description": "Get into the Google Map Pack, win local searches and turn 'near me' queries into walk-ins and calls."
-              },
-              "priceCurrency": "INR",
-              "price": "15000"
-            }
-          ]
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.instabizweb.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Services",
-            "item": "https://www.instabizweb.com/services"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Digital Marketing Agency in Ahmedabad",
-            "item": "https://www.instabizweb.com/digital-marketing-agency-in-ahmedabad"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does digital marketing cost in Ahmedabad?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Digital marketing in Ahmedabad typically runs as a monthly retainer - SEO from around ₹20,000/month, Google or Meta Ads management from ₹15,000/month (plus ad spend), and social media from ₹18,000/month. We share a transparent INR proposal after understanding your goals."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Which is the best digital marketing agency in Ahmedabad?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Insta Biz Web is among the results-driven digital marketing agencies in Ahmedabad, with 145+ clients and a 4.9/5 rating. We focus on leads and revenue rather than vanity metrics, and we are based in Naranpura, Ahmedabad."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does SEO take to show results?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "SEO typically shows meaningful results in 3-6 months, with AI Overview citations possible in 2-6 weeks for well-optimised pages. SEO compounds - the work done today keeps paying forward. Paid ads (Google/Meta) can drive leads within days."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you provide GST invoice for marketing services?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. All retainers and quotes include GST and we provide a tax invoice every month. Payment via UPI, NEFT/RTGS, net banking or card."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you manage both SEO and paid ads?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We run SEO, Google Ads, Meta Ads, social media and content under one accountable team - so your organic and paid channels reinforce each other instead of competing."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help my business rank in the Google Map Pack?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Local SEO and Google Business Profile optimisation is a core service - profile optimisation, reviews strategy, citations and local content to get you into the top-3 map results for 'near me' searches."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you optimise for AI search like ChatGPT and Google AI Overviews?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We do AEO and GEO - optimising your content to be cited by Google AI Overviews, ChatGPT and Perplexity, not just classic search rankings. This is increasingly where buyers research."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you provide digital marketing services near me in Ahmedabad?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Our office is in Naranpura, Ahmedabad, and we serve clients across all Ahmedabad neighbourhoods plus Gandhinagar, Surat, Vadodara and Rajkot - in person or fully remote."
-            }
-          }
-        ]
-      }
-    ]
-  },
   "/mobile-app-development-company-in-ahmedabad": {
     "title": "Mobile App Development Company in Ahmedabad - Insta Biz Web (4.9★, 145+ Clients) · Insta Biz Web",
     "description": "Top-rated mobile app development company in Ahmedabad. Insta Biz Web builds iOS, Android & cross-platform apps with Flutter and React Native. 145+ clients, 4.9★. Free quote in 24 hours.",
@@ -3407,7 +2754,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -3850,7 +3197,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -4226,449 +3573,6 @@
       }
     ]
   },
-  "/seo-company-in-ahmedabad": {
-    "title": "SEO Company in Ahmedabad - Insta Biz Web (4.9★, 145+ Clients) · Insta Biz Web",
-    "description": "Top-rated SEO company in Ahmedabad. Insta Biz Web delivers technical SEO, local SEO, content & AI search optimisation that ranks you on Google. 145+ clients, 4.9★. Free SEO audit.",
-    "applicationName": "Insta Biz Web",
-    "author": "Insta Biz Web",
-    "authorUrl": "https://www.instabizweb.com",
-    "keywords": null,
-    "creator": "Insta Biz Web",
-    "publisher": "Insta Biz Web",
-    "robots": "index, follow",
-    "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
-    "category": "technology",
-    "themeColor": "#182234",
-    "canonical": "https://www.instabizweb.com/seo-company-in-ahmedabad",
-    "icon": {
-      "href": "/favicon.ico",
-      "sizes": "256x256",
-      "type": "image/x-icon"
-    },
-    "og": {
-      "title": "SEO Company in Ahmedabad - Insta Biz Web",
-      "description": "SEO company in Ahmedabad. Technical SEO, local SEO, content & AEO/GEO. 145+ clients, 4.9/5 rating, transparent INR pricing, free SEO audit.",
-      "url": "https://www.instabizweb.com/seo-company-in-ahmedabad",
-      "siteName": "Insta Biz Web",
-      "locale": "en_IN",
-      "type": "website",
-      "images": [
-        {
-          "url": "https://www.instabizweb.com/logo.png",
-          "width": 1200,
-          "height": 630,
-          "alt": "SEO Company in Ahmedabad - Insta Biz Web"
-        }
-      ],
-      "publishedTime": null,
-      "modifiedTime": null,
-      "authors": [],
-      "tags": []
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@instabizweb",
-      "creator": null,
-      "title": "SEO Company in Ahmedabad - Insta Biz Web",
-      "description": "SEO company in Ahmedabad. Technical SEO, local SEO, content & AEO/GEO. 145+ clients, 4.9/5 rating, transparent INR pricing, free SEO audit.",
-      "images": [
-        {
-          "url": "https://www.instabizweb.com/logo.png"
-        }
-      ]
-    },
-    "h1": "SEO Company in Ahmedabad",
-    "jsonLd": [
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://www.instabizweb.com/#organization",
-        "name": "Insta Biz Web",
-        "alternateName": "IBW",
-        "url": "https://www.instabizweb.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.instabizweb.com/logo.png",
-          "width": 512,
-          "height": 512
-        },
-        "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
-        "email": "info@instabizweb.com",
-        "telephone": "+91 98981 24987",
-        "priceRange": "₹₹",
-        "foundingDate": "2020",
-        "areaServed": [
-          "IN",
-          "US",
-          "GB",
-          "AE",
-          "SG"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-          "addressLocality": "Naranpura",
-          "addressRegion": "Gujarat",
-          "postalCode": "380013",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 23.0626,
-          "longitude": 72.5575
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "10:00",
-            "closes": "16:00"
-          }
-        ],
-        "location": [
-          {
-            "@type": "Place",
-            "name": "Insta Biz Web - Headquarters (Naranpura)",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-              "addressLocality": "Naranpura",
-              "addressRegion": "Gujarat",
-              "postalCode": "380013",
-              "addressCountry": "IN"
-            }
-          }
-        ],
-        "sameAs": [
-          "https://www.linkedin.com/company/insta-biz-web/",
-          "https://www.facebook.com/profile.php?id=61578562181866",
-          "https://www.instagram.com/insta_biz_web/",
-          "https://x.com/instabizweb"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://www.instabizweb.com/#website",
-        "url": "https://www.instabizweb.com",
-        "name": "Insta Biz Web",
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "inLanguage": "en-IN"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://www.instabizweb.com/seo-company-in-ahmedabad#localbusiness",
-        "name": "Insta Biz Web - SEO Company in Ahmedabad",
-        "image": "https://www.instabizweb.com/logo.png",
-        "url": "https://www.instabizweb.com/seo-company-in-ahmedabad",
-        "telephone": "+91 98981 24987",
-        "email": "info@instabizweb.com",
-        "priceRange": "₹₹",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-          "addressLocality": "Naranpura",
-          "addressRegion": "Gujarat",
-          "postalCode": "380013",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 23.0626,
-          "longitude": 72.5575
-        },
-        "areaServed": [
-          {
-            "@type": "City",
-            "name": "Ahmedabad"
-          },
-          {
-            "@type": "City",
-            "name": "Gandhinagar"
-          },
-          {
-            "@type": "City",
-            "name": "Surat"
-          },
-          {
-            "@type": "City",
-            "name": "Vadodara"
-          },
-          {
-            "@type": "City",
-            "name": "Rajkot"
-          },
-          {
-            "@type": "AdministrativeArea",
-            "name": "Gujarat"
-          }
-        ],
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "10:00",
-            "closes": "19:00"
-          }
-        ],
-        "sameAs": [
-          "https://www.facebook.com/profile.php?id=61578562181866",
-          "https://www.instagram.com/insta_biz_web/",
-          "https://x.com/instabizweb",
-          "https://www.linkedin.com/company/insta-biz-web/"
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "16",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Aswathi Elamadathil"
-            },
-            "reviewBody": "It's really great to work with your team. I think I have chosen the best marketing team for my company. And your young team is the great inspiration. Keep rocking!"
-          },
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Sheel Shah"
-            },
-            "reviewBody": "This company reflects a strong reputation for delivering reliable and high-quality services. The team appears highly professional, well-structured, and attentive to client requirements."
-          },
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Priyam Patel"
-            },
-            "reviewBody": "Experience is very good and also the good work and fast services of products and projects."
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Search Engine Optimization",
-        "name": "Search Engine Optimization in Ahmedabad",
-        "url": "https://www.instabizweb.com/seo-company-in-ahmedabad",
-        "provider": {
-          "@id": "https://www.instabizweb.com/seo-company-in-ahmedabad#localbusiness"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Ahmedabad",
-          "containedInPlace": {
-            "@type": "AdministrativeArea",
-            "name": "Gujarat, India"
-          }
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Search Engine Optimization in Ahmedabad",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Technical SEO Audit & Fixes",
-                "description": "Find and fix crawlability, indexation, Core Web Vitals, schema and site-architecture issues holding your rankings back."
-              },
-              "priceCurrency": "INR",
-              "price": "25000"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Local SEO (Ahmedabad)",
-                "description": "Google Business Profile optimisation, reviews, citations and local content to win the Map Pack and 'near me' searches."
-              },
-              "priceCurrency": "INR",
-              "price": "15000"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "On-Page & Content SEO",
-                "description": "Keyword strategy, content optimisation and SEO content that ranks, builds authority and compounds traffic."
-              },
-              "priceCurrency": "INR",
-              "price": "20000"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "E-commerce SEO",
-                "description": "Category, product and technical SEO for online stores - more organic traffic to the pages that drive sales."
-              },
-              "priceCurrency": "INR",
-              "price": "25000"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "AEO & GEO (AI Search SEO)",
-                "description": "Optimise content to be cited by Google AI Overviews, ChatGPT and Perplexity - the new frontier of search visibility."
-              },
-              "priceCurrency": "INR",
-              "price": "20000"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Link Building & Digital PR",
-                "description": "Earned backlinks from real, relevant sites - the authority signal that genuinely moves competitive rankings."
-              },
-              "priceCurrency": "INR",
-              "price": "25000"
-            }
-          ]
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.instabizweb.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Services",
-            "item": "https://www.instabizweb.com/services"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "SEO Company in Ahmedabad",
-            "item": "https://www.instabizweb.com/seo-company-in-ahmedabad"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does SEO cost in Ahmedabad?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "SEO in Ahmedabad typically runs as a monthly retainer from around ₹15,000-₹25,000/month depending on competition and scope, with one-time technical audits from ₹25,000. We share a transparent INR proposal after a free SEO audit of your site."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Which is the best SEO company in Ahmedabad?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Insta Biz Web is among the results-driven SEO companies in Ahmedabad, with 145+ clients and a 4.9/5 rating. We do honest, technical, compounding SEO - and we are based in Naranpura, Ahmedabad."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does SEO take to show results?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "SEO typically shows meaningful results in 3-6 months for competitive keywords, faster for long-tail and local terms. AI Overview citations are possible in 2-6 weeks for well-optimised pages. SEO compounds - the work done today keeps paying forward for years."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you guarantee #1 rankings on Google?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No - and neither can anyone else, honestly. Google's algorithm is not controllable. Any SEO company guaranteeing #1 is lying or using risky tactics. What we guarantee is real, transparent work on the factors that genuinely move rankings, with honest reporting."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you do local SEO and Google Map Pack optimisation?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Local SEO is a core service - Google Business Profile optimisation, reviews strategy, NAP citations and local content to get your business into the top-3 Map Pack results for searches in Ahmedabad."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you optimise for AI search like ChatGPT and Google AI Overviews?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We do AEO (Answer Engine Optimisation) and GEO (Generative Engine Optimisation) - structuring content so it gets cited by Google AI Overviews, ChatGPT and Perplexity, where a growing share of research now happens."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you provide a free SEO audit?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We provide a free initial SEO audit covering technical issues, on-page gaps, Core Web Vitals and quick wins - so you can see exactly what is holding your site back before committing to anything."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you provide SEO services near me in Ahmedabad?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Our office is in Naranpura, Ahmedabad, and we serve clients across all Ahmedabad neighbourhoods plus Gandhinagar, Surat, Vadodara and Rajkot - in person or fully remote."
-            }
-          }
-        ]
-      }
-    ]
-  },
   "/software-development-company-in-ahmedabad": {
     "title": "Software Development Company in Ahmedabad - Insta Biz Web (4.9★, 145+ Clients) · Insta Biz Web",
     "description": "Top-rated software development company in Ahmedabad. Insta Biz Web builds custom software, web apps, SaaS platforms & enterprise systems. 145+ clients, 4.9★. Free quote in 24 hours.",
@@ -4736,7 +3640,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -5179,7 +4083,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -5524,7 +4428,7 @@
             "name": "Will my website rank on Google?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Every site we build is SEO-ready from day one: fast loading (Lighthouse 95+), schema markup, semantic HTML, sitemap, robots.txt, OG images, and Core Web Vitals optimised. We also offer ongoing SEO retainers to push your site to page 1 for your target keywords."
+              "text": "Every site we build is SEO-ready from day one: fast loading (Lighthouse 95+), schema markup, semantic HTML, sitemap, robots.txt, OG images, and Core Web Vitals optimised."
             }
           },
           {
@@ -5537,10 +4441,10 @@
           },
           {
             "@type": "Question",
-            "name": "Do you also offer mobile app development and digital marketing?",
+            "name": "Do you also offer mobile app development and business automation?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. We are a full-stack digital partner: web development, mobile apps (iOS/Android), AI agents, CRM/ERP systems and digital marketing (SEO, Google Ads, Meta Ads). One team, one point of contact, one accountable partner."
+              "text": "Yes. We are a full-stack digital partner: web development, mobile apps (iOS/Android), AI agents, CRM/ERP systems and business automation. One team, one point of contact, one accountable partner."
             }
           },
           {
@@ -5667,7 +4571,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -6018,7 +4922,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -6369,7 +5273,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -6720,7 +5624,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -7071,7 +5975,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -7422,7 +6326,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -7773,7 +6677,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -8124,7 +7028,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -8475,7 +7379,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -8826,7 +7730,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -9177,7 +8081,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -9528,7 +8432,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -9807,300 +8711,6 @@
       }
     ]
   },
-  "/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt": {
-    "title": "AEO & GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026",
-    "description": "Google AI Overviews now hit 1.5B users monthly. 58.5% of US Google searches end without a click. Ranking #1 no longer guarantees AI Overview inclusion. Here’s the founder-friendly playbook for the new world of Answer Engine Optimisation.",
-    "applicationName": "Insta Biz Web",
-    "author": "IBW Team",
-    "authorUrl": null,
-    "keywords": null,
-    "creator": "Insta Biz Web",
-    "publisher": "Insta Biz Web",
-    "robots": "index, follow",
-    "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
-    "category": "technology",
-    "themeColor": "#182234",
-    "canonical": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
-    "icon": {
-      "href": "/favicon.ico",
-      "sizes": "256x256",
-      "type": "image/x-icon"
-    },
-    "og": {
-      "title": "AEO & GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026",
-      "description": "Google AI Overviews now hit 1.5B users monthly. 58.5% of US Google searches end without a click. Ranking #1 no longer guarantees AI Overview inclusion. Here’s the founder-friendly playbook for the new world of Answer Engine Optimisation.",
-      "url": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
-      "siteName": "Insta Biz Web",
-      "locale": "en_IN",
-      "type": "article",
-      "images": [
-        {
-          "url": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80",
-          "width": 1600,
-          "height": 900,
-          "alt": "Modern search engine results with AI overview cards and analytics"
-        }
-      ],
-      "publishedTime": "2026-04-08",
-      "modifiedTime": "2026-04-08",
-      "authors": [
-        "IBW Team"
-      ],
-      "tags": [
-        "SEO",
-        "AEO",
-        "GEO",
-        "AI Search",
-        "Google AI Overviews",
-        "Content"
-      ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@instabizweb",
-      "creator": "@instabizweb",
-      "title": "AEO & GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026",
-      "description": "Google AI Overviews now hit 1.5B users monthly. 58.5% of US Google searches end without a click. Ranking #1 no longer guarantees AI Overview inclusion. Here’s the founder-friendly playbook for the new world of Answer Engine Optimisation.",
-      "images": [
-        {
-          "url": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80"
-        }
-      ]
-    },
-    "h1": "AEO & GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026",
-    "jsonLd": [
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://www.instabizweb.com/#organization",
-        "name": "Insta Biz Web",
-        "alternateName": "IBW",
-        "url": "https://www.instabizweb.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.instabizweb.com/logo.png",
-          "width": 512,
-          "height": 512
-        },
-        "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
-        "email": "info@instabizweb.com",
-        "telephone": "+91 98981 24987",
-        "priceRange": "₹₹",
-        "foundingDate": "2020",
-        "areaServed": [
-          "IN",
-          "US",
-          "GB",
-          "AE",
-          "SG"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-          "addressLocality": "Naranpura",
-          "addressRegion": "Gujarat",
-          "postalCode": "380013",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 23.0626,
-          "longitude": 72.5575
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "10:00",
-            "closes": "16:00"
-          }
-        ],
-        "location": [
-          {
-            "@type": "Place",
-            "name": "Insta Biz Web - Headquarters (Naranpura)",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-              "addressLocality": "Naranpura",
-              "addressRegion": "Gujarat",
-              "postalCode": "380013",
-              "addressCountry": "IN"
-            }
-          }
-        ],
-        "sameAs": [
-          "https://www.linkedin.com/company/insta-biz-web/",
-          "https://www.facebook.com/profile.php?id=61578562181866",
-          "https://www.instagram.com/insta_biz_web/",
-          "https://x.com/instabizweb"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://www.instabizweb.com/#website",
-        "url": "https://www.instabizweb.com",
-        "name": "Insta Biz Web",
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "inLanguage": "en-IN"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "@id": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt#article",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
-        },
-        "headline": "AEO &amp; GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026",
-        "description": "Google AI Overviews now hit 1.5B users monthly. 58.5% of US Google searches end without a click. Ranking #1 no longer guarantees AI Overview inclusion. Here&rsquo;s the founder-friendly playbook for the new world of Answer Engine Optimisation.",
-        "image": [
-          "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80"
-        ],
-        "datePublished": "2026-04-08",
-        "dateModified": "2026-04-08",
-        "author": {
-          "@type": "Organization",
-          "name": "IBW Team",
-          "url": "https://www.instabizweb.com"
-        },
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "keywords": "SEO, AEO, GEO, AI Search, Google AI Overviews, Content",
-        "articleSection": "Digital Marketing",
-        "inLanguage": "en-IN",
-        "wordCount": 444,
-        "timeRequired": "PT9M",
-        "isAccessibleForFree": true,
-        "citation": [
-          {
-            "@type": "CreativeWork",
-            "name": "Heroic Rankings - AI Overview statistics 2026",
-            "url": "https://heroicrankings.com/seo/managed/google-ai-overview-statistics-2026/"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Search Engine Land - AI search predictions",
-            "url": "https://searchengineland.com/ai-search-visibility-seo-predictions-2026-468042"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Semrush - AI SEO statistics",
-            "url": "https://www.semrush.com/blog/ai-seo-statistics/"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Schema.org",
-            "url": "https://schema.org/"
-          }
-        ],
-        "mentions": [
-          {
-            "@type": "Thing",
-            "name": "Our Digital Marketing services",
-            "url": "https://www.instabizweb.com/services#marketing"
-          },
-          {
-            "@type": "Thing",
-            "name": "SEO fundamentals - 2026 edition",
-            "url": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition"
-          },
-          {
-            "@type": "Thing",
-            "name": "Free SEO audit (contact form)",
-            "url": "https://www.instabizweb.com/contact-us"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.instabizweb.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog",
-            "item": "https://www.instabizweb.com/blogs"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "AEO &amp; GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026",
-            "item": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Whats the difference between AEO and GEO?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "AEO (Answer Engine Optimisation) targets being cited inside Google AI Overviews and similar AI-generated answer panels. GEO (Generative Engine Optimisation) targets being mentioned in chat tools like ChatGPT, Perplexity, and Claude. They overlap heavily but use different signals."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does ranking #1 in Google still matter in 2026?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, but less. Citation overlap with the top-10 organic results is now 17-54% (down from ~76% in 2025). Being #1 helps you appear in AI Overviews, but doesn&rsquo;t guarantee it. You need both classic SEO and AEO/GEO discipline."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is FAQ schema still worth adding in 2026?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Absolutely. Every Q&amp;A pair is a potential AI citation. We&rsquo;ve seen direct lifts from FAQPage schema into AI Overview answer panels - it&rsquo;s one of the highest-ROI structural changes you can make."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I track if Im being cited in ChatGPT or Perplexity?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Manual SERP audits work. Tools like Semrush and Ahrefs shipped AIO citation trackers in early 2026. Perplexity exposes its sources directly - search your target queries weekly and log citations."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long until SEO changes show up in AI Overviews?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Faster than classic SEO - typically 2-6 weeks for well-optimised pages, vs. 3-6 months for traditional ranking. AI engines re-crawl popular topics aggressively."
-            }
-          }
-        ]
-      }
-    ]
-  },
   "/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers": {
     "title": "AI Agents in 2026: From Chatbots to Digital Coworkers (and What That Means for Your Business)",
     "description": "Gartner predicts 40% of enterprise apps will embed AI agents by 2026. Here's what's actually shipping in production right now - and the playbook small businesses are using to deploy agents without burning a quarter on R&D.",
@@ -10177,7 +8787,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -10464,7 +9074,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -10731,7 +9341,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -10877,16 +9487,6 @@
           },
           {
             "@type": "Thing",
-            "name": "ASO: App Store Optimization 2026",
-            "url": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "Designing mobile apps people keep",
-            "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
-            "@type": "Thing",
             "name": "Flutter vs React Native 2026",
             "url": "https://www.instabizweb.com/blogs/flutter-vs-react-native-2026"
           },
@@ -10955,310 +9555,6 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Two reasons. (1) Apple Review is partly human - different reviewers interpret edge cases differently. (2) Established apps often get grandfathered into policies that block new apps. The fix isn&rsquo;t to argue &ldquo;but App X does this&rdquo; - it&rsquo;s to comply with the current guideline."
-            }
-          }
-        ]
-      }
-    ]
-  },
-  "/blogs/aso-app-store-optimization-2026": {
-    "title": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-    "description": "Most apps die because nobody finds them. ASO is the cheapest growth channel - and most teams do it wrong. Here’s the playbook we use to rank our clients’ apps in the top 10 of their category.",
-    "applicationName": "Insta Biz Web",
-    "author": "IBW Team",
-    "authorUrl": null,
-    "keywords": null,
-    "creator": "Insta Biz Web",
-    "publisher": "Insta Biz Web",
-    "robots": "index, follow",
-    "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
-    "category": "technology",
-    "themeColor": "#182234",
-    "canonical": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026",
-    "icon": {
-      "href": "/favicon.ico",
-      "sizes": "256x256",
-      "type": "image/x-icon"
-    },
-    "og": {
-      "title": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-      "description": "Most apps die because nobody finds them. ASO is the cheapest growth channel - and most teams do it wrong. Here’s the playbook we use to rank our clients’ apps in the top 10 of their category.",
-      "url": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026",
-      "siteName": "Insta Biz Web",
-      "locale": "en_IN",
-      "type": "article",
-      "images": [
-        {
-          "url": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1600&q=80",
-          "width": 1600,
-          "height": 900,
-          "alt": "App Store search results on mobile phone"
-        }
-      ],
-      "publishedTime": "2026-05-11",
-      "modifiedTime": "2026-05-11",
-      "authors": [
-        "IBW Team"
-      ],
-      "tags": [
-        "ASO",
-        "App Store Optimization",
-        "Mobile Marketing",
-        "Growth"
-      ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@instabizweb",
-      "creator": "@instabizweb",
-      "title": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-      "description": "Most apps die because nobody finds them. ASO is the cheapest growth channel - and most teams do it wrong. Here’s the playbook we use to rank our clients’ apps in the top 10 of their category.",
-      "images": [
-        {
-          "url": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1600&q=80"
-        }
-      ]
-    },
-    "h1": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-    "jsonLd": [
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://www.instabizweb.com/#organization",
-        "name": "Insta Biz Web",
-        "alternateName": "IBW",
-        "url": "https://www.instabizweb.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.instabizweb.com/logo.png",
-          "width": 512,
-          "height": 512
-        },
-        "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
-        "email": "info@instabizweb.com",
-        "telephone": "+91 98981 24987",
-        "priceRange": "₹₹",
-        "foundingDate": "2020",
-        "areaServed": [
-          "IN",
-          "US",
-          "GB",
-          "AE",
-          "SG"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-          "addressLocality": "Naranpura",
-          "addressRegion": "Gujarat",
-          "postalCode": "380013",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 23.0626,
-          "longitude": 72.5575
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "10:00",
-            "closes": "16:00"
-          }
-        ],
-        "location": [
-          {
-            "@type": "Place",
-            "name": "Insta Biz Web - Headquarters (Naranpura)",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-              "addressLocality": "Naranpura",
-              "addressRegion": "Gujarat",
-              "postalCode": "380013",
-              "addressCountry": "IN"
-            }
-          }
-        ],
-        "sameAs": [
-          "https://www.linkedin.com/company/insta-biz-web/",
-          "https://www.facebook.com/profile.php?id=61578562181866",
-          "https://www.instagram.com/insta_biz_web/",
-          "https://x.com/instabizweb"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://www.instabizweb.com/#website",
-        "url": "https://www.instabizweb.com",
-        "name": "Insta Biz Web",
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "inLanguage": "en-IN"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "@id": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026#article",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026"
-        },
-        "headline": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-        "description": "Most apps die because nobody finds them. ASO is the cheapest growth channel - and most teams do it wrong. Here&rsquo;s the playbook we use to rank our clients&rsquo; apps in the top 10 of their category.",
-        "image": [
-          "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1600&q=80"
-        ],
-        "datePublished": "2026-05-11",
-        "dateModified": "2026-05-11",
-        "author": {
-          "@type": "Organization",
-          "name": "IBW Team",
-          "url": "https://www.instabizweb.com"
-        },
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "keywords": "ASO, App Store Optimization, Mobile Marketing, Growth",
-        "articleSection": "Mobile",
-        "inLanguage": "en-IN",
-        "wordCount": 773,
-        "timeRequired": "PT11M",
-        "isAccessibleForFree": true,
-        "citation": [
-          {
-            "@type": "CreativeWork",
-            "name": "Apple App Store Connect",
-            "url": "https://appstoreconnect.apple.com/"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Apple Search Ads",
-            "url": "https://searchads.apple.com/"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Sensor Tower",
-            "url": "https://sensortower.com/"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "AppTweak",
-            "url": "https://www.apptweak.com/"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Apple Product Page Optimization",
-            "url": "https://developer.apple.com/app-store/product-page-optimization/"
-          }
-        ],
-        "mentions": [
-          {
-            "@type": "Thing",
-            "name": "Designing mobile apps people keep",
-            "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
-            "@type": "Thing",
-            "name": "App Store rejection reasons 2026",
-            "url": "https://www.instabizweb.com/blogs/app-store-rejection-reasons-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "Mobile app development cost India 2026",
-            "url": "https://www.instabizweb.com/blogs/mobile-app-development-cost-india-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "AEO & GEO ranking playbook",
-            "url": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
-          },
-          {
-            "@type": "Thing",
-            "name": "SEO fundamentals for founders 2026",
-            "url": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition"
-          },
-          {
-            "@type": "Thing",
-            "name": "Our mobile app development services",
-            "url": "https://www.instabizweb.com/services#mobile"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.instabizweb.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog",
-            "item": "https://www.instabizweb.com/blogs"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-            "item": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How long does ASO take to show results?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Keyword rankings shift within 1-3 weeks of a name/subtitle/keywords field update. Screenshot or icon A/B tests need 14-21 days for statistical significance. Full ASO impact - measurable lift in organic installs - typically takes 6-12 weeks of iterative work. ASO compounds over time."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is ASO worth doing for a small app?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, especially for small apps. ASO is free compared to paid acquisition (₹50-300 per install on Indian Apple Search Ads, ₹15-80 on Play Store). For an app with even 1,000 organic installs/month, 30% lift from ASO = 300 extra installs/month at zero cost."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between ASO and mobile SEO?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "ASO targets the App Store and Play Store algorithms - keywords, screenshots, conversion. Mobile SEO is regular web SEO optimised for mobile devices, targeting Google search rather than the app stores. Both matter: your landing page does SEO, your store page does ASO."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I do ASO myself or do I need an agency?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can absolutely DIY the basics: keyword research, name/subtitle optimization, decent screenshots. That gets you 60-70% of the value. Agencies justify their fees on: data tools, A/B testing methodology, regular iteration discipline, and competitor monitoring. For apps under 10K MAU, DIY is fine. Beyond that, an agency typically pays for itself."
             }
           }
         ]
@@ -11339,7 +9635,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -11649,7 +9945,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -11933,7 +10229,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -12094,11 +10390,6 @@
           },
           {
             "@type": "Thing",
-            "name": "Mobile app retention design",
-            "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
-            "@type": "Thing",
             "name": "Our web development services",
             "url": "https://www.instabizweb.com/services#web"
           }
@@ -12242,7 +10533,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -12459,307 +10750,6 @@
       }
     ]
   },
-  "/blogs/designing-mobile-apps-people-actually-keep": {
-    "title": "Designing Mobile Apps People Actually Keep on Their Phone",
-    "description": "Most apps are uninstalled within 30 days. The 5 apps we’ve built that crossed 10K+ downloads all share the same 6 design principles - here they are.",
-    "applicationName": "Insta Biz Web",
-    "author": "IBW Team",
-    "authorUrl": null,
-    "keywords": null,
-    "creator": "Insta Biz Web",
-    "publisher": "Insta Biz Web",
-    "robots": "index, follow",
-    "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
-    "category": "technology",
-    "themeColor": "#182234",
-    "canonical": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep",
-    "icon": {
-      "href": "/favicon.ico",
-      "sizes": "256x256",
-      "type": "image/x-icon"
-    },
-    "og": {
-      "title": "Designing Mobile Apps People Actually Keep on Their Phone",
-      "description": "Most apps are uninstalled within 30 days. The 5 apps we’ve built that crossed 10K+ downloads all share the same 6 design principles - here they are.",
-      "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep",
-      "siteName": "Insta Biz Web",
-      "locale": "en_IN",
-      "type": "article",
-      "images": [
-        {
-          "url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600&q=80",
-          "width": 1600,
-          "height": 900,
-          "alt": "Smartphone with mobile app interface on a wooden desk"
-        }
-      ],
-      "publishedTime": "2026-02-08",
-      "modifiedTime": "2026-02-08",
-      "authors": [
-        "IBW Team"
-      ],
-      "tags": [
-        "Mobile",
-        "UX",
-        "Design",
-        "Retention"
-      ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@instabizweb",
-      "creator": "@instabizweb",
-      "title": "Designing Mobile Apps People Actually Keep on Their Phone",
-      "description": "Most apps are uninstalled within 30 days. The 5 apps we’ve built that crossed 10K+ downloads all share the same 6 design principles - here they are.",
-      "images": [
-        {
-          "url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600&q=80"
-        }
-      ]
-    },
-    "h1": "Designing Mobile Apps People Actually Keep on Their Phone",
-    "jsonLd": [
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://www.instabizweb.com/#organization",
-        "name": "Insta Biz Web",
-        "alternateName": "IBW",
-        "url": "https://www.instabizweb.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.instabizweb.com/logo.png",
-          "width": 512,
-          "height": 512
-        },
-        "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
-        "email": "info@instabizweb.com",
-        "telephone": "+91 98981 24987",
-        "priceRange": "₹₹",
-        "foundingDate": "2020",
-        "areaServed": [
-          "IN",
-          "US",
-          "GB",
-          "AE",
-          "SG"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-          "addressLocality": "Naranpura",
-          "addressRegion": "Gujarat",
-          "postalCode": "380013",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 23.0626,
-          "longitude": 72.5575
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "10:00",
-            "closes": "16:00"
-          }
-        ],
-        "location": [
-          {
-            "@type": "Place",
-            "name": "Insta Biz Web - Headquarters (Naranpura)",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-              "addressLocality": "Naranpura",
-              "addressRegion": "Gujarat",
-              "postalCode": "380013",
-              "addressCountry": "IN"
-            }
-          }
-        ],
-        "sameAs": [
-          "https://www.linkedin.com/company/insta-biz-web/",
-          "https://www.facebook.com/profile.php?id=61578562181866",
-          "https://www.instagram.com/insta_biz_web/",
-          "https://x.com/instabizweb"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://www.instabizweb.com/#website",
-        "url": "https://www.instabizweb.com",
-        "name": "Insta Biz Web",
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "inLanguage": "en-IN"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "@id": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep#article",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
-        },
-        "headline": "Designing Mobile Apps People Actually Keep on Their Phone",
-        "description": "Most apps are uninstalled within 30 days. The 5 apps we&rsquo;ve built that crossed 10K+ downloads all share the same 6 design principles - here they are.",
-        "image": [
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600&q=80"
-        ],
-        "datePublished": "2026-02-08",
-        "dateModified": "2026-02-08",
-        "author": {
-          "@type": "Organization",
-          "name": "IBW Team",
-          "url": "https://www.instabizweb.com"
-        },
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "keywords": "Mobile, UX, Design, Retention",
-        "articleSection": "Mobile Apps",
-        "inLanguage": "en-IN",
-        "wordCount": 208,
-        "timeRequired": "PT5M",
-        "isAccessibleForFree": true,
-        "citation": [
-          {
-            "@type": "CreativeWork",
-            "name": "Statista - App retention statistics",
-            "url": "https://www.statista.com/statistics/259329/ios-and-android-app-user-retention-rate/"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Apple Human Interface Guidelines",
-            "url": "https://developer.apple.com/design/human-interface-guidelines/"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Material Design - Android guidelines",
-            "url": "https://m3.material.io/"
-          }
-        ],
-        "mentions": [
-          {
-            "@type": "Thing",
-            "name": "Mobile app development cost India 2026",
-            "url": "https://www.instabizweb.com/blogs/mobile-app-development-cost-india-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "Flutter vs React Native 2026",
-            "url": "https://www.instabizweb.com/blogs/flutter-vs-react-native-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "Flutter vs React Native vs Native (Swift/Kotlin)",
-            "url": "https://www.instabizweb.com/blogs/flutter-vs-react-native-vs-native-swift-kotlin"
-          },
-          {
-            "@type": "Thing",
-            "name": "How long to build a mobile app",
-            "url": "https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "App Store rejection reasons 2026",
-            "url": "https://www.instabizweb.com/blogs/app-store-rejection-reasons-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "ASO: App Store Optimization 2026",
-            "url": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "How to choose a mobile app dev company",
-            "url": "https://www.instabizweb.com/blogs/how-to-choose-mobile-app-development-company-india"
-          },
-          {
-            "@type": "Thing",
-            "name": "Mobile Apps services",
-            "url": "https://www.instabizweb.com/services#mobile"
-          },
-          {
-            "@type": "Thing",
-            "name": "Chennai Cabs case study",
-            "url": "https://www.instabizweb.com/portfolio#mobile"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.instabizweb.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog",
-            "item": "https://www.instabizweb.com/blogs"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Designing Mobile Apps People Actually Keep on Their Phone",
-            "item": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Whats a good D30 retention rate for a new app?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Industry average is 5.7%. Anything above 15% is excellent for consumer apps. B2B apps typically run higher - 25-40% D30 is achievable with a clear onboarding and recurring use-case."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Should I build native or cross-platform?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Cross-platform (Flutter, React Native) for 90% of apps. Native (Swift, Kotlin) when you need bleeding-edge OS features, complex camera/AR work, or the absolute best performance."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take to build a mobile app MVP?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "6-10 weeks for a clean MVP with auth, core flows, and analytics. Add 4-6 weeks for payments, push, and offline-first. Anything faster than 6 weeks is usually a prototype, not an MVP."
-            }
-          }
-        ]
-      }
-    ]
-  },
   "/blogs/flutter-vs-react-native-2026": {
     "title": "Flutter vs React Native (2026): The Honest Comparison from 30+ Production Apps",
     "description": "Both ship cross-platform apps from one codebase. Both have great tooling in 2026. Here’s the unbiased comparison on performance, cost, hiring, and which to pick when - from a studio that ships both.",
@@ -12834,7 +10824,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -12990,11 +10980,6 @@
           },
           {
             "@type": "Thing",
-            "name": "Designing mobile apps people keep",
-            "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
-          },
-          {
-            "@type": "Thing",
             "name": "Our mobile app development services",
             "url": "https://www.instabizweb.com/services#mobile"
           }
@@ -13139,7 +11124,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -13287,11 +11272,6 @@
             "@type": "Thing",
             "name": "How long to build a mobile app",
             "url": "https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "Designing mobile apps people keep",
-            "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
           },
           {
             "@type": "Thing",
@@ -13443,7 +11423,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -13701,7 +11681,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -13844,16 +11824,6 @@
             "@type": "Thing",
             "name": "App Store rejection reasons (2026)",
             "url": "https://www.instabizweb.com/blogs/app-store-rejection-reasons-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "ASO: App Store Optimization 2026",
-            "url": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "Designing mobile apps people keep",
-            "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
           },
           {
             "@type": "Thing",
@@ -14000,7 +11970,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -14148,11 +12118,6 @@
             "@type": "Thing",
             "name": "App Store rejection reasons 2026",
             "url": "https://www.instabizweb.com/blogs/app-store-rejection-reasons-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "Designing mobile apps people keep",
-            "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
           },
           {
             "@type": "Thing",
@@ -14305,7 +12270,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -14453,11 +12418,6 @@
             "@type": "Thing",
             "name": "How long does it take to build a mobile app",
             "url": "https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026"
-          },
-          {
-            "@type": "Thing",
-            "name": "Designing mobile apps people actually keep",
-            "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
           },
           {
             "@type": "Thing",
@@ -14609,7 +12569,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -14752,11 +12712,6 @@
             "@type": "Thing",
             "name": "Vibe coding for production",
             "url": "https://www.instabizweb.com/blogs/vibe-coding-the-honest-guide-for-founders"
-          },
-          {
-            "@type": "Thing",
-            "name": "AEO & GEO ranking playbook",
-            "url": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
           }
         ]
       },
@@ -14891,7 +12846,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -15171,7 +13126,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -15451,7 +13406,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -15731,7 +13686,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -16010,7 +13965,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -16310,7 +14265,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -16594,7 +14549,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -16834,277 +14789,6 @@
       }
     ]
   },
-  "/blogs/seo-fundamentals-for-founders-2026-edition": {
-    "title": "SEO Fundamentals for Founders: The 2026 Edition",
-    "description": "AI search is changing SEO faster than any algorithm update ever did. Here’s the founder-friendly playbook that still works in the age of ChatGPT, Perplexity, and Google AI Overviews.",
-    "applicationName": "Insta Biz Web",
-    "author": "IBW Team",
-    "authorUrl": null,
-    "keywords": null,
-    "creator": "Insta Biz Web",
-    "publisher": "Insta Biz Web",
-    "robots": "index, follow",
-    "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
-    "category": "technology",
-    "themeColor": "#182234",
-    "canonical": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition",
-    "icon": {
-      "href": "/favicon.ico",
-      "sizes": "256x256",
-      "type": "image/x-icon"
-    },
-    "og": {
-      "title": "SEO Fundamentals for Founders: The 2026 Edition",
-      "description": "AI search is changing SEO faster than any algorithm update ever did. Here’s the founder-friendly playbook that still works in the age of ChatGPT, Perplexity, and Google AI Overviews.",
-      "url": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition",
-      "siteName": "Insta Biz Web",
-      "locale": "en_IN",
-      "type": "article",
-      "images": [
-        {
-          "url": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80",
-          "width": 1600,
-          "height": 900,
-          "alt": "Analytics dashboard with SEO metrics and traffic graphs"
-        }
-      ],
-      "publishedTime": "2026-01-18",
-      "modifiedTime": "2026-01-18",
-      "authors": [
-        "IBW Team"
-      ],
-      "tags": [
-        "SEO",
-        "Content",
-        "AI Search",
-        "Growth"
-      ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@instabizweb",
-      "creator": "@instabizweb",
-      "title": "SEO Fundamentals for Founders: The 2026 Edition",
-      "description": "AI search is changing SEO faster than any algorithm update ever did. Here’s the founder-friendly playbook that still works in the age of ChatGPT, Perplexity, and Google AI Overviews.",
-      "images": [
-        {
-          "url": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80"
-        }
-      ]
-    },
-    "h1": "SEO Fundamentals for Founders: The 2026 Edition",
-    "jsonLd": [
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://www.instabizweb.com/#organization",
-        "name": "Insta Biz Web",
-        "alternateName": "IBW",
-        "url": "https://www.instabizweb.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.instabizweb.com/logo.png",
-          "width": 512,
-          "height": 512
-        },
-        "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
-        "email": "info@instabizweb.com",
-        "telephone": "+91 98981 24987",
-        "priceRange": "₹₹",
-        "foundingDate": "2020",
-        "areaServed": [
-          "IN",
-          "US",
-          "GB",
-          "AE",
-          "SG"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-          "addressLocality": "Naranpura",
-          "addressRegion": "Gujarat",
-          "postalCode": "380013",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 23.0626,
-          "longitude": 72.5575
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "10:00",
-            "closes": "16:00"
-          }
-        ],
-        "location": [
-          {
-            "@type": "Place",
-            "name": "Insta Biz Web - Headquarters (Naranpura)",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura",
-              "addressLocality": "Naranpura",
-              "addressRegion": "Gujarat",
-              "postalCode": "380013",
-              "addressCountry": "IN"
-            }
-          }
-        ],
-        "sameAs": [
-          "https://www.linkedin.com/company/insta-biz-web/",
-          "https://www.facebook.com/profile.php?id=61578562181866",
-          "https://www.instagram.com/insta_biz_web/",
-          "https://x.com/instabizweb"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://www.instabizweb.com/#website",
-        "url": "https://www.instabizweb.com",
-        "name": "Insta Biz Web",
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "inLanguage": "en-IN"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "@id": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition#article",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition"
-        },
-        "headline": "SEO Fundamentals for Founders: The 2026 Edition",
-        "description": "AI search is changing SEO faster than any algorithm update ever did. Here&rsquo;s the founder-friendly playbook that still works in the age of ChatGPT, Perplexity, and Google AI Overviews.",
-        "image": [
-          "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80"
-        ],
-        "datePublished": "2026-01-18",
-        "dateModified": "2026-01-18",
-        "author": {
-          "@type": "Organization",
-          "name": "IBW Team",
-          "url": "https://www.instabizweb.com"
-        },
-        "publisher": {
-          "@id": "https://www.instabizweb.com/#organization"
-        },
-        "keywords": "SEO, Content, AI Search, Growth",
-        "articleSection": "Digital Marketing",
-        "inLanguage": "en-IN",
-        "wordCount": 221,
-        "timeRequired": "PT7M",
-        "isAccessibleForFree": true,
-        "citation": [
-          {
-            "@type": "CreativeWork",
-            "name": "Google Search Central",
-            "url": "https://developers.google.com/search"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Web.dev - Core Web Vitals",
-            "url": "https://web.dev/explore/learn-core-web-vitals"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Schema.org",
-            "url": "https://schema.org/"
-          }
-        ],
-        "mentions": [
-          {
-            "@type": "Thing",
-            "name": "AEO & GEO ranking playbook",
-            "url": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt"
-          },
-          {
-            "@type": "Thing",
-            "name": "Our Digital Marketing services",
-            "url": "https://www.instabizweb.com/services#marketing"
-          },
-          {
-            "@type": "Thing",
-            "name": "Free SEO audit",
-            "url": "https://www.instabizweb.com/contact-us"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.instabizweb.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog",
-            "item": "https://www.instabizweb.com/blogs"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "SEO Fundamentals for Founders: The 2026 Edition",
-            "item": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How long does SEO take to show results?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Typically 3-6 months for traditional rankings, 2-6 weeks for AI Overview citations on well-optimised pages. SEO compounds - the work you do today keeps paying forward for years."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Should I use AI to write SEO content?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, with heavy human editing. AI is great for outlines, fact-checks, and first drafts. Pure AI content (no editing) tends to rank poorly because it lacks specificity, original data, and clear authorship - exactly what AI engines reward."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is FAQ schema worth adding to every page?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Add it wherever you have genuine, relevant Q&amp;A content. Don&rsquo;t shoehorn it everywhere - Google penalises spammy schema. Done well, FAQPage schema is one of the highest-ROI structural changes in 2026."
-            }
-          }
-        ]
-      }
-    ]
-  },
   "/blogs/vibe-coding-the-honest-guide-for-founders": {
     "title": "Vibe Coding: The Honest Guide for Founders (and the 5 Mistakes We See Every Week)",
     "description": "Vibe coding - describing software in plain English and letting AI write it - is real, fast, and full of traps. We ship production code with AI every day. Here's what actually works, what silently breaks, and how non-technical founders can use it without bricking their app.",
@@ -17180,7 +14864,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -17460,7 +15144,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -17611,11 +15295,6 @@
           },
           {
             "@type": "Thing",
-            "name": "SEO fundamentals for founders",
-            "url": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition"
-          },
-          {
-            "@type": "Thing",
             "name": "Our web development services",
             "url": "https://www.instabizweb.com/services#web"
           }
@@ -17760,7 +15439,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -18048,7 +15727,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
@@ -18347,7 +16026,7 @@
           "height": 512
         },
         "image": "https://www.instabizweb.com/logo.png",
-        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+        "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
         "email": "info@instabizweb.com",
         "telephone": "+91 98981 24987",
         "priceRange": "₹₹",
