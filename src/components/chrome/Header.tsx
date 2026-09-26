@@ -152,7 +152,7 @@ export function Header() {
       <header
         ref={headerRef}
         className={cn(
-          'fixed inset-x-0 top-0 z-50 px-2.5 pt-2.5 transition-transform duration-500 ease-[var(--ease-out)] sm:px-4 sm:pt-3 lg:px-8',
+          'fixed inset-x-0 top-0 z-50 px-2.5 pt-2.5 transition-transform duration-500 ease-[var(--ease-out)] sm:px-4 sm:pt-3 lg:px-0',
           concealed ? '-translate-y-[140%]' : 'translate-y-0',
         )}
         onMouseLeave={scheduleClose}
@@ -161,16 +161,21 @@ export function Header() {
           if (menu && !headerRef.current?.contains(e.relatedTarget as Node | null)) setMenu(null)
         }}
       >
-        <div className="relative mx-auto max-w-[1200px]" data-theme={overDark ? 'dark' : undefined}>
+        {/* on desktop the bar stretches to the page's side rules (24px outside the content column),
+            so every section's content sits inside its width */}
+        <div
+          className="relative mx-auto max-w-[1200px] lg:w-[calc(min(100%_-_2*var(--gutter),var(--shell-max))_+_48px)] lg:max-w-none"
+          data-theme={overDark ? 'dark' : undefined}
+        >
           <div className="nav-glass nav-bar" data-scrolled={scrolled || !!menu}>
-            <div className="flex h-14 items-center gap-2 pl-4 pr-2 lg:grid lg:h-[58px] lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:gap-4 lg:px-3">
+            <div className="flex h-14 items-center gap-2 pl-4 pr-2 lg:grid lg:h-[72px] lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:gap-4 lg:px-4">
               {/* left: the pages */}
               <nav aria-label="Primary" className="hidden min-w-0 items-center lg:flex" onMouseLeave={() => setLens(null)}>
                 {LINKS.map((item) => {
                   const active = isActive(item.href)
                   const expanded = !!item.menu && menu === item.menu
                   const cls = cn(
-                    'nav-link relative z-[1] flex h-9 items-center gap-1 whitespace-nowrap rounded-full px-2 text-[0.875rem] font-medium tracking-[-0.01em] transition-colors duration-300 xl:px-3.5',
+                    'nav-link relative z-[1] flex h-9 items-center gap-1 whitespace-nowrap rounded-full px-2 text-[0.875rem] font-medium tracking-[-0.01em] transition-colors duration-300 lg:h-10 lg:text-[0.92rem] xl:px-4 xl:text-[0.98rem]',
                     active || expanded || lensOn === item.href ? 'text-ink' : 'text-ink-2',
                   )
                   return (
@@ -212,7 +217,7 @@ export function Header() {
                           {item.label}
                           <Icon
                             name="chevron"
-                            size={13}
+                            size={14}
                             strokeWidth={2}
                             className={cn(
                               'text-ink-3 transition-transform duration-500 ease-[var(--ease-out)]',
@@ -238,7 +243,7 @@ export function Header() {
 
               {/* centre: the logo */}
               <div className="shrink-0 lg:justify-self-center">
-                <Logo height={28} preload />
+                <Logo height={34} preload />
               </div>
 
               {/* right: socials, theme, the call to action */}
@@ -247,15 +252,15 @@ export function Header() {
                   {site.social.map((s) => (
                     <li key={s.label}>
                       <a href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="nav-social">
-                        <Icon name={socialIcon[s.label] ?? 'external'} size={16} />
+                        <Icon name={socialIcon[s.label] ?? 'external'} size={17} />
                       </a>
                     </li>
                   ))}
                 </ul>
-                <span className="mx-1 hidden h-5 w-px bg-line-2 lg:block" aria-hidden />
+                <span className="mx-1 hidden h-6 w-px bg-line-2 lg:block" aria-hidden />
                 <ThemeToggle />
                 <Link href="/contact-us#contact-form" className="nav-cta ml-1 hidden sm:inline-flex">
-                  <Icon name="calendar" size={16} strokeWidth={1.8} />
+                  <Icon name="calendar" size={17} strokeWidth={1.8} />
                   <span>Book a demo</span>
                 </Link>
                 <button

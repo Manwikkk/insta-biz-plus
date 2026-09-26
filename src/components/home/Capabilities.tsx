@@ -105,7 +105,7 @@ export function Capabilities() {
   const s = services[chapter]
 
   return (
-    <section ref={root} id="capabilities" data-stage="capabilities" className="relative h-[520vh] lg:h-[667vh] motion-reduce:h-auto">
+    <section ref={root} id="capabilities" data-stage="capabilities" className="relative h-[360vh] lg:h-[420vh] motion-reduce:h-auto">
       {/* ---------- desktop: sticky exploded view ---------- */}
       <div className="relative z-[2] hidden lg:sticky lg:top-0 lg:block lg:h-[100svh] motion-reduce:lg:hidden">
         <div className="shell grid h-full grid-cols-12 gap-8 pb-[clamp(16px,3vh,32px)] pt-[clamp(80px,12.5vh,108px)]">

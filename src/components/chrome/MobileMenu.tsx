@@ -62,7 +62,7 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
       <div className="px-2.5 pt-2.5 sm:px-4 sm:pt-3">
         <div className="nav-glass nav-bar" data-scrolled="true">
           <div className="flex h-14 items-center gap-2 pl-4 pr-2">
-            <Logo height={28} />
+            <Logo height={34} />
             <div className="ml-auto flex items-center gap-1.5">
               <ThemeToggle />
               <button type="button" aria-label="Close menu" onClick={onClose} className="nav-icon-btn">

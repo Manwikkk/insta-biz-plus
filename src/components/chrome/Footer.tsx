@@ -5,6 +5,7 @@ import { Icon } from '@/components/ui/Icon'
 import { footerGroups, locationLinks, site } from '@/content/site'
 import { solutions } from '@/content/data'
 import { BackToTop } from './BackToTop'
+import { FooterWordmark } from './FooterWordmark'
 
 export function Footer() {
   return (
@@ -94,9 +95,9 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Blueprint of the mark, drawn as the footer enters */}
+      {/* Blueprint of the mark, drawn as the footer enters, with the name in glass beside it */}
       <div
-        className="pointer-events-none relative z-0 mt-10 h-[200px] overflow-hidden sm:h-[260px] lg:mt-10 lg:h-[clamp(200px,40vh,340px)]"
+        className="pointer-events-none relative z-0 mt-10 h-[210px] overflow-hidden sm:h-[280px] lg:mt-10 lg:h-[clamp(240px,50vh,470px)]"
         aria-hidden
       >
         <MarkBlueprint
@@ -104,6 +105,9 @@ export function Footer() {
           exploded={0.35}
           strokeWidth={0.8}
         />
+        <div className="shell relative h-full">
+          <FooterWordmark className="absolute bottom-3 left-0 text-[min(20vw,5rem)] sm:text-[min(14vw,6.4rem)] lg:bottom-4 lg:text-[min(11vw,17vh,10.5rem)]" />
+        </div>
       </div>
 
       <div className="relative z-10 border-t border-line">

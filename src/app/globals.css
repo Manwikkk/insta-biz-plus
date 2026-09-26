@@ -53,6 +53,14 @@
   --ease-machine: cubic-bezier(0.2, 0.9, 0.1, 1);
 }
 
+/* the desktop bar is taller: sticky sub-navs and anchors clear it */
+@media (min-width: 1024px) {
+  :root {
+    --header-offset: 94px;
+    --header-h: 90px;
+  }
+}
+
 html[data-header='hidden'] {
   --header-offset: 0px;
 }
@@ -1535,6 +1543,25 @@ html[data-header='hidden'] {
       inset 0 1px 0 rgb(255 255 255 / 0.9),
       0 8px 20px -12px rgb(0 0 0 / 0.8);
   }
+  /* desktop: a larger bar, with its controls scaled to match */
+  @media (min-width: 1024px) {
+    .nav-bar {
+      border-radius: 18px;
+    }
+    .nav-social {
+      width: 38px;
+      height: 38px;
+    }
+    .nav-bar .nav-icon-btn {
+      width: 42px;
+      height: 42px;
+    }
+    .nav-cta {
+      height: 44px;
+      padding: 0 19px 0 16px;
+      font-size: 0.95rem;
+    }
+  }
 
   /* links inside the dropdown panels: an icon tile and the title, nothing else */
   .menu-item {
@@ -2348,6 +2375,29 @@ html[data-header='hidden'] {
   }
   .sv-ecg {
     stroke-dasharray: none;
+  }
+}
+
+/* Footer: the name, big and quiet, in two soft tints of the brand colours */
+@layer components {
+  .footer-mark {
+    --fm-a: #cbdaf2;
+    --fm-b: #c3e5ea;
+    font-family: var(--font-display);
+    font-weight: 720;
+    letter-spacing: -0.05em;
+    line-height: 0.88;
+    user-select: none;
+  }
+  [data-theme='dark'] .footer-mark {
+    --fm-a: #1a2942;
+    --fm-b: #11343a;
+  }
+  .footer-mark-a {
+    color: var(--fm-a);
+  }
+  .footer-mark-b {
+    color: var(--fm-b);
   }
 }
 
