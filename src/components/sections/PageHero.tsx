@@ -48,6 +48,7 @@ export function PageHero({
   chips,
   className,
   size = 'display',
+  wide = false,
 }: {
   crumbs?: Crumb[]
   tag?: string
@@ -60,6 +61,8 @@ export function PageHero({
   chips?: string[]
   className?: string
   size?: 'display' | 'h2'
+  /** Give the figure half the width (for figures that show the page's subject working). */
+  wide?: boolean
 }) {
   const lines = title.split(/(?<=[.:]) (?=[A-Z])/)
   return (
@@ -68,7 +71,7 @@ export function PageHero({
         <div className="iso-grid" />
       </div>
       <div className="shell relative grid gap-12 pb-16 pt-[120px] lg:grid-cols-12 lg:items-center lg:gap-10 lg:pb-[clamp(36px,7vh,80px)] lg:pt-[clamp(100px,17vh,152px)]">
-        <div className={cn('min-w-0', figure ? 'lg:col-span-7' : 'lg:col-span-10')}>
+        <div className={cn('min-w-0', figure ? (wide ? 'lg:col-span-6' : 'lg:col-span-7') : 'lg:col-span-10')}>
           {crumbs ? <Breadcrumbs items={crumbs} className="enter-fade mb-[clamp(16px,3.4vh,32px)]" /> : null}
           {tag ? (
             <p className="enter-fade flex flex-wrap items-center gap-3" style={{ ['--d' as string]: '60ms' }}>
@@ -82,7 +85,10 @@ export function PageHero({
             className={cn(
               'mt-[clamp(14px,2.6vh,24px)]',
               size === 'display'
-                ? 'font-display text-[clamp(2.3rem,min(5.4vw,9vh),5.4rem)] font-[760] leading-[0.95] tracking-[-0.042em] [font-stretch:108%]'
+                ? cn(
+                    'font-display font-[760] leading-[0.95] tracking-[-0.042em] [font-stretch:108%]',
+                    wide ? 'text-[clamp(2.2rem,min(4.6vw,8.4vh),4.6rem)]' : 'text-[clamp(2.3rem,min(5.4vw,9vh),5.4rem)]',
+                  )
                 : 't-h2',
             )}
           >
@@ -113,7 +119,7 @@ export function PageHero({
           ) : null}
         </div>
         {figure ? (
-          <div className="enter-fade relative min-w-0 lg:col-span-5" style={{ ['--d' as string]: '300ms' }}>
+          <div className={cn('enter-fade relative min-w-0', wide ? 'lg:col-span-6' : 'lg:col-span-5')} style={{ ['--d' as string]: '300ms' }}>
             {figure}
           </div>
         ) : null}

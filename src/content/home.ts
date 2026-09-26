@@ -9,12 +9,10 @@ export const hero = {
   h1: 'We Build Digital Engines for Growth.',
   /** Rotating last word of the h1 (client brief). The first entry completes the h1 as written on the site. */
   rotating: ['Growth.', 'Real Results.', 'Revenue.', 'AI-First Brands.', 'Bold Brands.'],
-  intro:
-    'We craft fast websites, powerful apps, and AI-driven automation that turn ideas into revenue. From Ahmedabad to the world - built to scale, designed to delight.',
   primary: 'Start Your Project',
   secondary: 'See Our Work',
   facts: [
-    { value: '5', label: 'projects live today' },
+    { value: '150+', label: 'projects live' }, // client brief
     { value: '145+', label: 'happy clients' },
     { value: '4.9/5', label: 'Google rating', star: true },
     { value: '4+', label: 'years experience' },
@@ -39,7 +37,7 @@ export const results = {
 export const problem = {
   eyebrow: 'The problem', // narrative
   title: 'Five projects. Five vendors. Five hand-offs.', // narrative
-  body: 'Your website, app, AI workflows, CRM, and marketing usually get built by different people who never talk to each other.', // narrative (lists the five from homepage "What we do")
+  body: 'Your website, app, AI workflows, CRM, and business automation usually get built by different people who never talk to each other.', // narrative (lists the five services)
   fragments: [
     { text: 'Enquiries lost across channels', source: 'Manufacturing CRM' },
     { text: 'Slow, error-prone quotations', source: 'Manufacturing CRM' },
@@ -50,18 +48,16 @@ export const problem = {
     { text: 'Code locked / undocumented', source: 'Freelancer' },
     { text: 'Disappears after payment', source: 'Freelancer' },
     { text: 'Layers of account managers', source: 'Big agency' },
-    { text: 'Traffic, not qualified leads', source: 'Marketing' },
-    { text: 'Vanity metrics', source: 'Marketing' },
     { text: 'Outgrown spreadsheets', source: 'Solutions' },
   ],
   turn: 'No silos. No hand-offs. Just outcomes.', // services page
-  resolve: 'One team, one accountable partner - for your website, app, AI workflows, CRM, and marketing.',
+  resolve: 'One team, one accountable partner - for your website, app, AI workflows, CRM, and business automation.',
 }
 
 export const engineIntro = {
   eyebrow: 'What we do',
   title: 'Everything you need to grow online',
-  kicker: 'Six services. One growth partner.', // services page
+  kicker: 'Five services. One growth partner.', // services page
   intro: 'From your first landing page to a full AI-powered product suite - we engineer every layer of your digital stack.', // services page
 }
 
@@ -94,7 +90,7 @@ export const why = {
   title: 'Not another agency. A growth partner.',
   intro:
     "We don't just hand off code. We sit with you, understand your business, and build digital products that actually move the needle.",
-  team: { label: 'Meet your team', note: 'Senior devs · Designers · Strategists' },
+  team: { label: 'Get to know us', note: 'Senior devs · Designers · Strategists' },
   pillars: [
     {
       value: '4×',
@@ -168,7 +164,7 @@ export const process = {
       n: '04',
       when: 'Ongoing',
       title: 'Grow & Support',
-      body: "Post-launch SEO, analytics, A/B tests & optimizations. We don't disappear - we help you scale.",
+      body: "Post-launch analytics, A/B tests & optimizations. We don't disappear - we help you scale.",
     },
   ],
 }
@@ -192,25 +188,11 @@ export const testimonials = {
       proof: 'Lead conversion +320%',
     },
     {
-      quote: 'From CRM to mobile app to marketing - one team, zero excuses. Best decision we made this year.',
-      name: 'Anand M.',
-      role: 'Director, Cashflex',
-      initials: 'AM',
-      proof: 'CRM · app · marketing',
-    },
-    {
       quote: 'The AI automation they built saves our ops team ~30 hours every week. Insane ROI.',
       name: 'Rahul P.',
       role: 'COO, Carefix',
       initials: 'RP',
       proof: '~30 hours saved weekly',
-    },
-    {
-      quote: 'Honest, fast, and genuinely cares about quality. Our website now ranks #1 in Ahmedabad for our keywords.',
-      name: 'Mehul J.',
-      role: 'Owner, Local D2C Brand',
-      initials: 'MJ',
-      proof: '#1 in Ahmedabad',
     },
     {
       quote: "We've tried 3 agencies before. IBW is the only one that delivered on time AND on budget.",

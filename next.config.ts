@@ -14,10 +14,18 @@ const nextConfig: NextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
   async redirects() {
-    // Preserved from the live site: both answered with 301.
     return [
+      // Preserved from the live site: both answered with 301.
       { source: '/team', destination: '/about-us', statusCode: 301 },
       { source: '/blog', destination: '/blogs', statusCode: 301 },
+      // Pages for services no longer offered (Digital Marketing, UI/UX Design): sent to the nearest page.
+      { source: '/digital-marketing-agency-in-ahmedabad', destination: '/services', statusCode: 301 },
+      { source: '/seo-company-in-ahmedabad', destination: '/services', statusCode: 301 },
+      { source: '/audit', destination: '/contact-us', statusCode: 301 },
+      { source: '/blogs/seo-fundamentals-for-founders-2026-edition', destination: '/blogs', statusCode: 301 },
+      { source: '/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt', destination: '/blogs', statusCode: 301 },
+      { source: '/blogs/aso-app-store-optimization-2026', destination: '/blogs', statusCode: 301 },
+      { source: '/blogs/designing-mobile-apps-people-actually-keep', destination: '/blogs', statusCode: 301 },
     ]
   },
 }

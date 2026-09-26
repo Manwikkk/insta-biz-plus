@@ -288,7 +288,7 @@
     "eyebrow": "Legal",
     "h1": "Terms & Conditions",
     "intro": "Please read these terms carefully before using our services.",
-    "updated": "Last updated: July 16, 2025",
+    "updated": "Last updated: September 25, 2026",
     "sections": [
       {
         "n": "01",
@@ -315,7 +315,6 @@
               "Mobile application development (iOS & Android)",
               "AI-powered automation & chatbot solutions",
               "CRM & ERP system implementation (Odoo)",
-              "Digital marketing — SEO, PPC, social media",
               "Business process automation & integrations"
             ]
           },
@@ -521,18 +520,6 @@
               "Website / App Development: Refund available within 5 days if project requirements are provably not met as agreed in writing",
               "Business Automation / CRM: 30-day satisfaction guarantee after implementation and handover",
               "Project initiation advance (30–50%): Non-refundable once discovery / planning work has commenced"
-            ]
-          },
-          {
-            "type": "h3",
-            "text": "Digital Marketing Services"
-          },
-          {
-            "type": "list",
-            "items": [
-              "Campaign Setup: Full refund if campaign is not launched within the agreed timeframe",
-              "Monthly Retainer Packages: Pro-rated refunds available with 15-day written notice",
-              "Initial Consulting / Strategy Session: Refund available within 48 hours if unsatisfied"
             ]
           }
         ]

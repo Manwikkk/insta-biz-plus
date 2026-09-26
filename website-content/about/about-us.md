@@ -5,7 +5,7 @@
 - URL: https://www.instabizweb.com/about-us
 - Page Type: About
 - Meta Title: About Us - Founders, story & values · Insta Biz Web
-- Meta Description: Insta Biz Web is a founder-led digital studio in Ahmedabad, India. Meet the team, our values, and the journey behind 60+ shipped products across the world.
+- Meta Description: Insta Biz Web is a founder-led digital studio in Ahmedabad, India. Our story, our values, and the journey behind 60+ shipped products across the world.
 - Canonical URL: https://www.instabizweb.com/about-us
 - Robots: index, follow
 - Author meta: Insta Biz Web
@@ -488,7 +488,7 @@ Resources
 ## Additional Metadata
 
 - Open Graph title: About · Insta Biz Web
-- Open Graph description: Founder-led digital studio building websites, apps, AI agents, CRMs and marketing for founders worldwide. Meet the team behind the work.
+- Open Graph description: Founder-led digital studio building websites, apps, AI agents, CRMs and business automation for founders worldwide. Get to know the studio behind the work.
 - Open Graph URL: https://www.instabizweb.com/about-us
 - Open Graph type: website
 - Open Graph image: https://www.instabizweb.com/logo.png
@@ -497,7 +497,7 @@ Resources
 - Open Graph locale: en_IN
 - Twitter card: summary_large_image
 - Twitter title: About · Insta Biz Web
-- Twitter description: Founder-led digital studio building websites, apps, AI agents, CRMs and marketing for founders worldwide.
+- Twitter description: Founder-led digital studio building websites, apps, AI agents, CRMs and business automation for founders worldwide.
 - Twitter image: https://www.instabizweb.com/logo.png
 - Twitter site: @instabizweb
 - Googlebot: index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1
@@ -520,7 +520,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",
@@ -602,7 +602,7 @@ Resources
     "@type": "AboutPage",
     "name": "About Insta Biz Web",
     "url": "https://www.instabizweb.com/about-us",
-    "description": "Founder-led digital studio in Ahmedabad, India - engineering websites, apps, AI agents, CRMs and marketing for 60+ founders worldwide.",
+    "description": "Founder-led digital studio in Ahmedabad, India - engineering websites, apps, AI agents, CRMs and business automation for 60+ founders worldwide.",
     "mainEntity": {
       "@type": "Organization",
       "name": "Insta Biz Web",

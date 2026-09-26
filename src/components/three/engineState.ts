@@ -15,10 +15,8 @@ export type EngineTargets = {
   explode: number
   /** 0 → 1 chaotic scatter: "disconnected parts". */
   scatter: number
-  /** Index into MARK_PIECES of the highlighted part, -1 for none, 5 for the outline. */
+  /** Index into MARK_PIECES of the highlighted part, -1 for none. */
   focus: number
-  /** 0..1 blueprint hexagon outline. */
-  outline: number
   /** 0..1 dims and desaturates the parts (problem state). */
   dim: number
   /** Idle rotation speed multiplier ("revs"). */
@@ -46,7 +44,6 @@ export const engine: EngineTargets & {
   explode: 0.06,
   scatter: 0,
   focus: -1,
-  outline: 0,
   dim: 0,
   rev: 1,
   labels: 0,

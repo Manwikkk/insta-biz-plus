@@ -19,7 +19,7 @@ Legal
 
 Please read these terms carefully before using our services.
 
-Last updated: July 16, 2025
+Last updated: September 25, 2026
 
 [Home](https://www.instabizweb.com/)/Terms & Conditions
 
@@ -42,8 +42,6 @@ Mobile application development (iOS & Android)
 AI-powered automation & chatbot solutions
 
 CRM & ERP system implementation (Odoo)
-
-Digital marketing — SEO, PPC, social media
 
 Business process automation & integrations
 
@@ -267,7 +265,7 @@ Resources
 - Open Graph locale: en_IN
 - Twitter card: summary_large_image
 - Twitter title: Insta Biz Web - Digital Solutions for Growth
-- Twitter description: Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.
+- Twitter description: Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.
 - Twitter image: https://www.instabizweb.com/logo.png
 - Twitter site: @instabizweb
 - Twitter creator: @instabizweb
@@ -290,7 +288,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",

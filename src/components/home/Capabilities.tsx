@@ -41,15 +41,20 @@ function PartLabel({ n, label }: { n: string; label: string }) {
 export function Capabilities() {
   const root = useRef<HTMLElement>(null)
   const [chapter, setChapter] = useState(0)
+  const [intro, setIntro] = useState(true)
   const fills = useRef<(HTMLSpanElement | null)[]>([])
+  const fillsM = useRef<(HTMLSpanElement | null)[]>([])
   const lenis = useLenis()
 
   useGSAP(
     () => {
       const el = root.current!
       const mm = gsap.matchMedia()
-      mm.add('(min-width: 1024px) and (prefers-reduced-motion: no-preference)', () => {
+      // Desktop and phones share one reading of the scroll: which part is in focus, and how far
+      // through it we are (each layout has its own rail).
+      mm.add('(prefers-reduced-motion: no-preference)', () => {
         let current = -1
+        let wasIntro = true
         ScrollTrigger.create({
           trigger: el,
           start: 'top top',
@@ -59,13 +64,19 @@ export function Capabilities() {
             const i = Math.max(0, Math.min(services.length - 1, Math.floor((p - INTRO) / SPAN)))
             const within = Math.max(0, Math.min(1, (p - INTRO - i * SPAN) / SPAN))
             const fill = `${Math.max(4, (p < INTRO ? 0 : within) * 100)}%`
-            fills.current.forEach((f, k) => {
-              if (f) f.style.width = k < i ? '100%' : k === i ? fill : '0%'
-            })
+            for (const rail of [fills.current, fillsM.current])
+              rail.forEach((f, k) => {
+                if (f) f.style.width = k < i ? '100%' : k === i ? fill : '0%'
+              })
             engine.focus = p < INTRO * 0.6 ? -1 : FOCUS_INDEX[services[i].id]
             if (i !== current) {
               current = i
               setChapter(i)
+            }
+            const isIntro = p < INTRO
+            if (isIntro !== wasIntro) {
+              wasIntro = isIntro
+              setIntro(isIntro)
             }
           },
           onLeaveBack: () => {
@@ -94,7 +105,7 @@ export function Capabilities() {
   const s = services[chapter]
 
   return (
-    <section ref={root} id="capabilities" data-stage="capabilities" className="relative lg:h-[780vh] motion-reduce:lg:h-auto">
+    <section ref={root} id="capabilities" data-stage="capabilities" className="relative h-[360vh] lg:h-[420vh] motion-reduce:h-auto">
       {/* ---------- desktop: sticky exploded view ---------- */}
       <div className="relative z-[2] hidden lg:sticky lg:top-0 lg:block lg:h-[100svh] motion-reduce:lg:hidden">
         <div className="shell grid h-full grid-cols-12 gap-8 pb-[clamp(16px,3vh,32px)] pt-[clamp(80px,12.5vh,108px)]">
@@ -137,7 +148,7 @@ export function Capabilities() {
               ))}
             </ol>
 
-            {/* All six chapters share one grid cell: the cell is as tall as the longest, so
+            {/* All the chapters share one grid cell: the cell is as tall as the longest, so
                 nothing below it jumps, and the outgoing copy lifts away as the next rises in. */}
             <div className="mt-[clamp(18px,4vh,40px)] grid">
               {services.map((svc, i) => (
@@ -200,8 +211,86 @@ export function Capabilities() {
         </div>
       </div>
 
-      {/* ---------- mobile / reduced motion: spec cards ---------- */}
-      <div className="relative z-[2] py-24 lg:hidden motion-reduce:lg:block">
+      {/* ---------- phones & tablets: the engine above, one part at a time on a card below ---------- */}
+      <div className="sticky top-0 z-[2] flex h-[100svh] flex-col justify-end lg:hidden motion-reduce:hidden">
+        <div className="shell pb-[max(14px,env(safe-area-inset-bottom))]">
+          <div data-cap-card className="rounded-[20px] border border-line bg-raise/85 p-5 shadow-[var(--shadow-float)] backdrop-blur-xl">
+            <div className="flex items-center justify-between gap-3">
+              <Eyebrow index="02">{engineIntro.eyebrow}</Eyebrow>
+              <span className="t-label tabular-nums text-ink-3">
+                {intro ? `${services.length} parts` : `${services[chapter].n} / ${String(services.length).padStart(2, '0')}`}
+              </span>
+            </div>
+            <ol className="mt-3 flex gap-1.5" aria-label="Services">
+              {services.map((svc, i) => (
+                <li key={svc.id} className="flex-1">
+                  <button
+                    type="button"
+                    onClick={() => goTo(i)}
+                    aria-current={!intro && i === chapter ? 'step' : undefined}
+                    aria-label={`${svc.n} ${svc.label}`}
+                    className="block w-full py-2"
+                  >
+                    <span className="block h-[3px] overflow-hidden rounded-full bg-line-2">
+                      <span
+                        ref={(el) => {
+                          fillsM.current[i] = el
+                        }}
+                        className="block h-full w-0 rounded-full bg-teal"
+                      />
+                    </span>
+                  </button>
+                </li>
+              ))}
+            </ol>
+            <div className="mt-2 grid">
+              <article className={cn('cap-chapter col-start-1 row-start-1', intro ? 'is-on' : 'is-past')} aria-hidden={!intro} inert={!intro}>
+                <h2 className="font-display text-[clamp(1.7rem,7.4vw,2.4rem)] font-[720] leading-none tracking-[-0.035em] [font-stretch:104%]">
+                  {engineIntro.title}
+                </h2>
+                <p className="t-small mt-3 text-ink-2">{engineIntro.intro}</p>
+                <p className="t-label mt-4 flex items-center gap-2 text-teal-ink">
+                  <Icon name="arrow-down" size={13} />
+                  Five parts, one engine
+                </p>
+              </article>
+              {services.map((svc, i) => {
+                const on = !intro && i === chapter
+                return (
+                  <article
+                    key={svc.id}
+                    className={cn('cap-chapter col-start-1 row-start-1', on ? 'is-on' : !intro && i < chapter ? 'is-past' : 'is-next')}
+                    aria-hidden={!on}
+                    inert={!on}
+                  >
+                    <PartLabel n={svc.n} label={svc.label} />
+                    <h3 className="mt-2.5 font-display text-[clamp(1.45rem,6.2vw,2.1rem)] font-[720] leading-[1.02] tracking-[-0.03em] [font-stretch:104%]">
+                      {svc.headline}
+                    </h3>
+                    <p className="t-small mt-2.5 line-clamp-3 text-ink-2">{svc.body}</p>
+                    <div className="mt-4 flex items-end justify-between gap-4 border-t border-line pt-3.5">
+                      <div>
+                        <p className="t-num text-[1.9rem]">{svc.avg.value}</p>
+                        <p className="t-label mt-1.5 text-ink-3">{svc.avg.label}</p>
+                      </div>
+                      <Link
+                        href={`/services#${svc.id}`}
+                        aria-label={`Explore ${svc.label}`}
+                        className="grid size-11 shrink-0 place-items-center rounded-full border border-line-2 transition-colors hover:bg-ink hover:text-bg"
+                      >
+                        <Icon name="arrow" size={18} />
+                      </Link>
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ---------- reduced motion: spec cards ---------- */}
+      <div className="relative z-[2] hidden py-24 motion-reduce:block">
         <div className="shell">
           <Eyebrow index="02">{engineIntro.eyebrow}</Eyebrow>
           <h2 className="t-h2 mt-5">{engineIntro.title}</h2>

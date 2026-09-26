@@ -5,7 +5,7 @@
 - URL: https://www.instabizweb.com/refund-policy
 - Page Type: Legal
 - Meta Title: Refund Policy — Eligibility, process & timelines · Insta Biz Web
-- Meta Description: Insta Biz Web's refund policy explains when and how refunds are issued for custom development, digital marketing, and consulting services.
+- Meta Description: Insta Biz Web's refund policy explains when and how refunds are issued for custom development, business automation, and consulting services.
 - Canonical URL: https://www.instabizweb.com/refund-policy
 - Robots: index, follow
 - Author meta: Insta Biz Web
@@ -36,12 +36,6 @@ At Insta Biz Web, we are committed to delivering high-quality digital solutions.
 - Website / App Development: Refund available within 5 days if project requirements are provably not met as agreed in writing
 - Business Automation / CRM: 30-day satisfaction guarantee after implementation and handover
 - Project initiation advance (30–50%): Non-refundable once discovery / planning work has commenced
-
-### Digital Marketing Services
-
-- Campaign Setup: Full refund if campaign is not launched within the agreed timeframe
-- Monthly Retainer Packages: Pro-rated refunds available with 15-day written notice
-- Initial Consulting / Strategy Session: Refund available within 48 hours if unsatisfied
 
 03
 
@@ -273,7 +267,7 @@ Resources
 - Open Graph locale: en_IN
 - Twitter card: summary_large_image
 - Twitter title: Insta Biz Web - Digital Solutions for Growth
-- Twitter description: Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.
+- Twitter description: Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.
 - Twitter image: https://www.instabizweb.com/logo.png
 - Twitter site: @instabizweb
 - Twitter creator: @instabizweb
@@ -296,7 +290,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",

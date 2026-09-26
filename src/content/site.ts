@@ -9,9 +9,9 @@ export const site = {
   legalName: 'GISSION AI TECHNOLOGIES LLP',
   founded: 2020,
   description:
-    'Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.',
+    'Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.',
   footerBlurb:
-    'Your AI-powered growth partner. We design, build, and market digital products that turn ideas into revenue - from Ahmedabad to the world.',
+    'Your AI-powered growth partner. We design and build digital products that turn ideas into revenue - from Ahmedabad to the world.',
   email: 'info@instabizweb.com',
   phone: '+91 98981 24987',
   phoneHref: 'tel:+919898124987',
@@ -57,11 +57,11 @@ export const footerGroups = [
   {
     title: 'Services',
     links: [
-      { label: 'Web Development', href: '/services#web' },
+      { label: 'Business Automation', href: '/services#automation' },
       { label: 'Mobile Apps', href: '/services#mobile' },
       { label: 'AI & Automation', href: '/services#ai' },
       { label: 'CRM & ERP Solutions', href: '/solutions' },
-      { label: 'Digital Marketing', href: '/services#marketing' },
+      { label: 'Web Development', href: '/services#web' },
     ],
   },
   {
@@ -85,7 +85,7 @@ export const footerGroups = [
   },
 ]
 
-/** Ahmedabad landing pages (linked from service and marketing content). */
+/** Ahmedabad landing pages (linked from service content). */
 export const locationLinks = [
   { label: 'Web Development Company in Ahmedabad', short: 'Web development', href: '/web-development-company-in-ahmedabad' },
   { label: 'Software Development Company in Ahmedabad', short: 'Software development', href: '/software-development-company-in-ahmedabad' },
@@ -95,12 +95,10 @@ export const locationLinks = [
     href: '/mobile-app-development-company-in-ahmedabad',
   },
   { label: 'Odoo Implementation Company in Ahmedabad', short: 'Odoo implementation', href: '/odoo-implementation-company-in-ahmedabad' },
-  { label: 'Digital Marketing Agency in Ahmedabad', short: 'Digital marketing', href: '/digital-marketing-agency-in-ahmedabad' },
-  { label: 'SEO Company in Ahmedabad', short: 'SEO', href: '/seo-company-in-ahmedabad' },
 ]
 
-/** Lead form options, identical to the live forms. */
-export const needOptions = ['Website', 'Mobile App', 'AI / Automation', 'CRM / ERP', 'Marketing', 'Other'] as const
+/** Lead form options, in the order of the services (01–05). */
+export const needOptions = ['Business Automation', 'Mobile App', 'AI / Automation', 'CRM / ERP', 'Website', 'Other'] as const
 export const budgetOptions = ['< ₹50K', '₹50K - 1L', '₹1L - 3L', '₹3L - 10L', '10L+'] as const
 
 /** Repeated consultation block ("Free consultation"). */

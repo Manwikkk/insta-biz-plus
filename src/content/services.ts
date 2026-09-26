@@ -1,12 +1,14 @@
 /**
- * The six services — verbatim from website-content/services/index.md (detail) and
- * homepage.md (one-liners). `part` maps each service onto a piece of the IBW mark,
- * which the site uses as its "growth engine" illustration.
+ * The five services, numbered 01–05 in the order the site lists them. Mobile, AI, CRM and
+ * Web are verbatim from website-content/services/index.md (detail) and homepage.md
+ * (one-liners); Business Automation was written for the redesign (client brief) and has no
+ * audited source. Digital Marketing and UI/UX Design are no longer offered. `part` maps each
+ * service onto a piece of the IBW mark, which the site uses as its "growth engine" illustration.
  */
 
-export type ServiceId = 'web' | 'mobile' | 'ai' | 'crm' | 'marketing' | 'design'
-/** Pieces of the hexagon mark: three teal "flow" bars, two navy "structure" pieces, and the blueprint outline. */
-export type PartId = 'bar-top' | 'bar-mid' | 'bar-low' | 'frame-left' | 'core' | 'outline'
+export type ServiceId = 'automation' | 'mobile' | 'ai' | 'crm' | 'web'
+/** Pieces of the hexagon mark: three teal "flow" bars and two navy "structure" pieces. */
+export type PartId = 'bar-top' | 'bar-mid' | 'bar-low' | 'frame-left' | 'core'
 
 export type Service = {
   id: ServiceId
@@ -27,25 +29,25 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    id: 'web',
+    id: 'automation',
     n: '01',
     part: 'bar-mid',
-    label: 'Web Development',
-    short: 'Web',
-    line: 'Lightning-fast Next.js sites with conversion-focused UX. Built for SEO, speed, and scale.',
-    lineTech: ['Next.js', 'React', 'Tailwind'],
-    headline: 'Lightning-fast websites that convert',
-    body: 'Marketing sites, SaaS dashboards, and storefronts built with modern stacks. Lighthouse 95+, SEO-ready, and hand-crafted UX.',
+    label: 'Business Automation',
+    short: 'Automation',
+    line: 'Workflows and integrations that connect your tools and take repetitive work off your team.',
+    lineTech: ['n8n', 'Make', 'Zapier'],
+    headline: 'Business workflows that run themselves',
+    body: 'Approvals, follow-ups, invoices and reports - automated across the tools you already use, so work moves without copy-paste.',
     deliverables: [
-      'Next.js 16 / React 19 / Tailwind',
-      'Server components & edge rendering',
-      'Headless CMS (Sanity, Strapi, Contentful)',
-      'Conversion-tuned UX with A/B tests',
-      'Lighthouse 95+ on first deploy',
+      'Process audit & automation roadmap',
+      'Approvals, reminders & follow-ups on autopilot',
+      'CRM, ERP, accounting & WhatsApp integrations',
+      'Auto-generated invoices, documents & reports',
+      'Live dashboards with alerts',
     ],
-    tech: ['Next.js', 'React', 'Tailwind', 'TypeScript', 'Vercel'],
-    cta: 'Start a web development project',
-    avg: { value: '95+', label: 'Lighthouse score' },
+    tech: ['n8n', 'Make', 'Zapier', 'WhatsApp API', 'Webhooks'],
+    cta: 'Start a business automation project',
+    avg: { value: '30+', label: 'Hours saved weekly' },
   },
   {
     id: 'mobile',
@@ -111,46 +113,25 @@ export const services: Service[] = [
     avg: { value: '4×', label: 'Faster ops' },
   },
   {
-    id: 'marketing',
+    id: 'web',
     n: '05',
     part: 'bar-top',
-    label: 'Digital Marketing',
-    short: 'Marketing',
-    line: 'SEO, paid ads & social campaigns that bring qualified leads - not just traffic.',
-    lineTech: ['SEO', 'Meta Ads', 'Google Ads'],
-    headline: 'Qualified leads - not just traffic',
-    body: 'SEO, paid ads, and social campaigns built around your funnel. We measure CAC, LTV, and ROAS - not vanity metrics.',
+    label: 'Web Development',
+    short: 'Web',
+    line: 'Lightning-fast Next.js sites with conversion-focused UX. Built for SEO, speed, and scale.',
+    lineTech: ['Next.js', 'React', 'Tailwind'],
+    headline: 'Lightning-fast websites that convert',
+    body: 'Marketing sites, SaaS dashboards, and storefronts built with modern stacks. Lighthouse 95+, SEO-ready, and hand-crafted UX.',
     deliverables: [
-      'Technical SEO + content strategy',
-      'Google, Meta & LinkedIn paid ads',
-      'Landing pages built for conversion',
-      'Marketing automation & email flows',
-      'Weekly reporting with clear KPIs',
+      'Next.js 16 / React 19 / Tailwind',
+      'Server components & edge rendering',
+      'Headless CMS (Sanity, Strapi, Contentful)',
+      'Conversion-tuned UX with A/B tests',
+      'Lighthouse 95+ on first deploy',
     ],
-    tech: ['SEO', 'Google Ads', 'Meta Ads', 'GA4', 'HubSpot'],
-    cta: 'Start a digital marketing project',
-    avg: { value: '320%', label: 'Lead growth' },
-  },
-  {
-    id: 'design',
-    n: '06',
-    part: 'outline',
-    label: 'UI/UX Design',
-    short: 'UI/UX',
-    line: 'Brand-led design systems and pixel-perfect interfaces that turn visitors into customers.',
-    lineTech: ['Figma', 'Prototyping', 'Design Systems'],
-    headline: 'Brand-led design that turns visitors into fans',
-    body: 'Design systems, brand identity, and pixel-perfect interfaces. We design in Figma, prototype in code, and ship without surprises.',
-    deliverables: [
-      'Brand identity & visual systems',
-      'Wireframes → high-fidelity mockups',
-      'Interactive prototypes in Figma',
-      'Design tokens & component libraries',
-      'Usability testing & iteration',
-    ],
-    tech: ['Figma', 'Framer', 'Adobe XD', 'Lottie', 'Design Systems'],
-    cta: 'Start a UI/UX design project',
-    avg: { value: '4.9★', label: 'Design rating' },
+    tech: ['Next.js', 'React', 'Tailwind', 'TypeScript', 'Vercel'],
+    cta: 'Start a web development project',
+    avg: { value: '95+', label: 'Lighthouse score' },
   },
 ]
 
@@ -162,9 +143,9 @@ export const servicesPage = {
   tagNote: 'Full-stack digital partner',
   h1: 'Services that ship. Outcomes that scale.',
   intro:
-    'Websites, mobile apps, AI agents, CRM/ERP, and growth marketing - designed and engineered by one accountable team. No silos. No hand-offs. Just outcomes.',
+    'Websites, mobile apps, AI agents, CRM/ERP, and business automation - designed and engineered by one accountable team. No silos. No hand-offs. Just outcomes.',
   gridEyebrow: 'What we build',
-  gridTitle: 'Six services. One growth partner.',
+  gridTitle: 'Five services. One growth partner.',
   gridIntro: 'From your first landing page to a full AI-powered product suite - we engineer every layer of your digital stack.',
   stackEyebrow: 'Built on the modern stack',
   stackTitle: 'Tech we love & ship daily',
@@ -225,8 +206,8 @@ export const fiveSteps = {
       n: '05',
       when: 'Ongoing',
       title: 'Grow & optimize',
-      body: 'Post-launch we don’t disappear. SEO tuning, A/B tests, analytics, and feature iterations keep the product compounding.',
-      outputs: ['SEO + analytics', 'A/B testing', 'Monthly reports', 'Feature sprints'],
+      body: 'Post-launch we don’t disappear. A/B tests, analytics, and feature iterations keep the product compounding.',
+      outputs: ['Analytics', 'A/B testing', 'Monthly reports', 'Feature sprints'],
     },
   ],
 }
@@ -257,7 +238,7 @@ export const engagement = {
     {
       name: 'Retainer',
       tagline: 'Dedicated growth team',
-      bestFor: 'Best for: ongoing product, marketing & ops support.',
+      bestFor: 'Best for: ongoing product & ops support.',
       price: 'From ₹85,000',
       unit: 'per month, cancel anytime',
       points: [

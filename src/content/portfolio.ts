@@ -2,7 +2,7 @@ import generated from './generated/portfolio.json'
 
 /** Portfolio — verbatim from website-content/portfolio/portfolio.md (projects parsed into generated/portfolio.json). */
 
-export type Filter = 'Web' | 'Mobile' | 'AI & Automation' | 'CRM & ERP' | 'Marketing' | 'Extensions'
+export type Filter = 'Web' | 'Mobile' | 'AI & Automation' | 'CRM & ERP' | 'Extensions'
 
 export type Project = {
   name: string
@@ -19,7 +19,7 @@ export type Project = {
 
 /**
  * Filter membership. The live filter counts (Web 7, Mobile 1, AI & Automation 4,
- * CRM & ERP 2, Marketing 1, Extensions 1) follow each project's published category.
+ * CRM & ERP 2, Extensions 1) follow each project's published category.
  */
 const FILTER_BY_CATEGORY: Record<string, Filter> = {
   'Ecommerce Platform': 'Web',
@@ -36,7 +36,6 @@ const FILTER_BY_CATEGORY: Record<string, Filter> = {
   'CRM Solution': 'CRM & ERP',
   'Desktop Application': 'CRM & ERP',
   'Browser Extension': 'Extensions',
-  'Marketing Service': 'Marketing',
 }
 
 const slugify = (s: string) =>
@@ -57,7 +56,7 @@ export const filters: { label: 'All Work' | Filter; count: number }[] = generate
 export const featured = generated.featured as { name: string; category: string; note: string }[]
 
 export const portfolioPage = {
-  chips: ['100+ projects', '4.9★ avg rating', '5 countries', '16 product lines'],
+  chips: ['100+ projects', '4.9★ avg rating', '5 countries', `${projects.length} product lines`],
   tag: 'Portfolio',
   tagNote: 'Real products. Real founders. Real outcomes.',
   h1: 'Work we’re proud to show. Results that speak.',

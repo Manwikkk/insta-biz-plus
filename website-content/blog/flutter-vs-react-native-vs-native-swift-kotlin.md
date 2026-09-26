@@ -425,7 +425,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",
@@ -573,11 +573,6 @@ Resources
         "@type": "Thing",
         "name": "How long to build a mobile app",
         "url": "https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026"
-      },
-      {
-        "@type": "Thing",
-        "name": "Designing mobile apps people keep",
-        "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
       },
       {
         "@type": "Thing",

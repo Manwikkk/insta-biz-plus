@@ -10,14 +10,14 @@
 
 # Insta Biz Web
 
-> Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.
+> Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.
 
-Founded 2020 in Ahmedabad, India. Insta Biz Web (IBW) is a founder-led digital studio that builds AI-powered websites, mobile apps, CRM/ERP systems, AI agents and growth marketing for 145+ clients across India, the US, the UK, Singapore and the UAE.
+Founded 2020 in Ahmedabad, India. Insta Biz Web (IBW) is a founder-led digital studio that builds AI-powered websites, mobile apps, CRM/ERP systems, AI agents and business automation for 145+ clients across India, the US, the UK, Singapore and the UAE.
 
 ## Core pages
 
 - [Home](https://www.instabizweb.com/): What we do, who we serve, recent client wins
-- [Services](https://www.instabizweb.com/services): Web development, mobile apps, AI & automation, CRM/ERP, digital marketing, UI/UX design
+- [Services](https://www.instabizweb.com/services): Business automation, mobile apps, AI & automation, CRM/ERP, web development
 - [About](https://www.instabizweb.com/about-us): Founding team, values, milestones, offices
 - [Portfolio](https://www.instabizweb.com/portfolio): Shipped products with outcomes and case studies
 - [Contact](https://www.instabizweb.com/contact-us): Email, phone, WhatsApp, free 30-min strategy call
@@ -58,17 +58,13 @@ Founded 2020 in Ahmedabad, India. Insta Biz Web (IBW) is a founder-led digital s
 - [Flutter vs React Native vs Native (Swift/Kotlin): Which Stack in 2026?](https://www.instabizweb.com/blogs/flutter-vs-react-native-vs-native-swift-kotlin): Three ways to build a mobile app. Cross-platform won the SMB market - but native still wins specific use cases. Here&rsquo;s the unbiased 3-way comparison.
 - [How Long Does It Take to Build a Mobile App in 2026? (Real Timelines from 22 Projects)](https://www.instabizweb.com/blogs/how-long-to-build-mobile-app-2026): From kickoff to App Store launch, here&rsquo;s how long a real mobile app takes in 2026 - broken down by phase, complexity, and team size. Plus the 6 things that always make it slower.
 - [Top 12 App Store Rejection Reasons in 2026 (and How to Avoid Each)](https://www.instabizweb.com/blogs/app-store-rejection-reasons-2026): 40-60% of first-time iOS submissions get rejected. Here are the 12 reasons we see most often, the exact policy clauses they cite, and how to fix each one before re-submission.
-- [ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)](https://www.instabizweb.com/blogs/aso-app-store-optimization-2026): Most apps die because nobody finds them. ASO is the cheapest growth channel - and most teams do it wrong. Here&rsquo;s the playbook we use to rank our clients&rsquo; apps in the top 10 of their category.
 - [How to Choose a Mobile App Development Company in India (2026): The Founder&rsquo;s 11-Question Filter](https://www.instabizweb.com/blogs/how-to-choose-mobile-app-development-company-india): India has 10,000+ mobile app dev companies. Most will quote what you want to hear. Here&rsquo;s the exact 11-question vetting framework we&rsquo;d use if we were picking a partner today.
 - [AI Agents in 2026: From Chatbots to Digital Coworkers (and What That Means for Your Business)](https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers): Gartner predicts 40% of enterprise apps will embed AI agents by 2026. Here's what's actually shipping in production right now - and the playbook small businesses are using to deploy agents without burning a quarter on R&D.
 - [Vibe Coding: The Honest Guide for Founders (and the 5 Mistakes We See Every Week)](https://www.instabizweb.com/blogs/vibe-coding-the-honest-guide-for-founders): Vibe coding - describing software in plain English and letting AI write it - is real, fast, and full of traps. We ship production code with AI every day. Here's what actually works, what silently breaks, and how non-technical founders can use it without bricking their app.
 - [AI Automation: Transforming Business Operations in 2026](https://www.instabizweb.com/blogs/ai-automation-transforming-business-operations): AI automation is no longer a luxury - it&rsquo;s a necessity. Here&rsquo;s how SMBs are using AI agents, RPA, and intelligent workflows to ship faster, save costs, and scale without burning out.
-- [AEO &amp; GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026](https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt): Google AI Overviews now hit 1.5B users monthly. 58.5% of US Google searches end without a click. Ranking #1 no longer guarantees AI Overview inclusion. Here&rsquo;s the founder-friendly playbook for the new world of Answer Engine Optimisation.
 - [The 2026 WhatsApp Business API Playbook for Indian SMBs (With Real Pricing &amp; Setup Times)](https://www.instabizweb.com/blogs/whatsapp-business-api-2026-india-smb-playbook): India has 500M+ active WhatsApp users and 50M+ businesses already on it. In 2026, WhatsApp is your customer&rsquo;s default support channel - whether you&rsquo;re ready or not. Here&rsquo;s the actual cost, setup time, and automation playbook for Indian SMBs.
 - [A Comprehensive Guide to Odoo CRM Implementation for Small Businesses](https://www.instabizweb.com/blogs/comprehensive-guide-odoo-crm-implementation): Odoo can transform your sales pipeline, customer support, and finance ops - but only if you implement it right. Our 5-phase playbook from the trenches.
 - [Next.js 16 Is Here: What Changed and Why It Matters for Your Business Site](https://www.instabizweb.com/blogs/nextjs-16-what-changed-and-why-it-matters): Next.js 16 is the biggest leap since the App Router. We rebuilt our own site on it - here&rsquo;s what&rsquo;s genuinely useful, what&rsquo;s overhyped, and how to upgrade without pain.
-- [Designing Mobile Apps People Actually Keep on Their Phone](https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep): Most apps are uninstalled within 30 days. The 5 apps we&rsquo;ve built that crossed 10K+ downloads all share the same 6 design principles - here they are.
-- [SEO Fundamentals for Founders: The 2026 Edition](https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition): AI search is changing SEO faster than any algorithm update ever did. Here&rsquo;s the founder-friendly playbook that still works in the age of ChatGPT, Perplexity, and Google AI Overviews.
 - [5 Years In: The Lessons We Wish We Knew Before Starting IBW](https://www.instabizweb.com/blogs/founder-lessons-from-five-years-of-shipping): From bootstrapping in 2020 to shipping for 60+ founders globally - the unglamorous truths nobody tells you about running a digital studio.
 
 ## Contact

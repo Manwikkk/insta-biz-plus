@@ -7,7 +7,7 @@ import { KeyAction } from '@/components/ui/KeyButton'
 import { Icon } from '@/components/ui/Icon'
 import { cn } from '@/lib/cn'
 
-type Variant = 'proposal' | 'contact' | 'audit'
+type Variant = 'proposal' | 'contact'
 
 const ASK_EVENT = 'ibw:ask'
 /** Other components can prefill the message field (e.g. "Ask us this" FAQ prompts). */
@@ -133,8 +133,6 @@ export function LeadForm({
   needLabel = 'I need help with',
   budgetLabel = 'Approx. budget',
   extraBudget,
-  goalLabel,
-  goals,
 }: {
   variant?: Variant
   tone?: 'light' | 'stage'
@@ -144,13 +142,10 @@ export function LeadForm({
   needLabel?: string
   budgetLabel?: string
   extraBudget?: string
-  goalLabel?: string
-  goals?: string[]
 }) {
   const [needs, setNeeds] = useState<string[]>([])
   const [budget, setBudget] = useState('')
-  const [goal, setGoal] = useState('')
-  const [f, setF] = useState({ name: '', email: '', phone: '', subject: '', website: '', message: '' })
+  const [f, setF] = useState({ name: '', email: '', phone: '', subject: '', message: '' })
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [state, setState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
   const [serverError, setServerError] = useState('')
@@ -177,7 +172,6 @@ export function LeadForm({
     if (!f.name.trim()) errs.name = 'Please tell us your name.'
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.trim())) errs.email = 'Please enter a valid email address.'
     if (variant === 'contact' && !f.subject.trim()) errs.subject = 'A short subject helps us route your message.'
-    if (variant === 'audit' && !f.website.trim()) errs.website = 'Which site should we audit?'
     setErrors(errs)
     if (Object.keys(errs).length) return
     setState('sending')
@@ -186,7 +180,7 @@ export function LeadForm({
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ form: variant, ...f, needs, budget, goal, page: window.location.pathname }),
+        body: JSON.stringify({ form: variant, ...f, needs, budget, page: window.location.pathname }),
       })
       const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string }
       if (!res.ok || !data.ok) throw new Error(data.error || 'Something went wrong.')
@@ -244,46 +238,31 @@ export function LeadForm({
             exit={{ opacity: 0 }}
             className="grid gap-[clamp(14px,2.6vh,24px)]"
           >
-            {variant === 'audit' && goals ? (
-              <fieldset>
-                <legend className={labelCls}>{goalLabel}</legend>
-                <div className="flex flex-wrap gap-2">
-                  {goals.map((g) => (
-                    <Chip key={g} tone={tone} on={goal === g} onClick={() => setGoal(goal === g ? '' : g)}>
-                      {g}
-                    </Chip>
-                  ))}
-                </div>
-              </fieldset>
-            ) : (
-              <>
-                <fieldset>
-                  <legend className={labelCls}>{needLabel}</legend>
-                  <div className="flex flex-wrap gap-2">
-                    {needOptions.map((n) => (
-                      <Chip
-                        key={n}
-                        tone={tone}
-                        on={needs.includes(n)}
-                        onClick={() => setNeeds((v) => (v.includes(n) ? v.filter((x) => x !== n) : [...v, n]))}
-                      >
-                        {n}
-                      </Chip>
-                    ))}
-                  </div>
-                </fieldset>
-                <fieldset>
-                  <legend className={labelCls}>{budgetLabel}</legend>
-                  <div className="flex flex-wrap gap-2">
-                    {budgets.map((b) => (
-                      <Chip key={b} tone={tone} on={budget === b} onClick={() => setBudget(budget === b ? '' : b)}>
-                        {b}
-                      </Chip>
-                    ))}
-                  </div>
-                </fieldset>
-              </>
-            )}
+            <fieldset>
+              <legend className={labelCls}>{needLabel}</legend>
+              <div className="flex flex-wrap gap-2">
+                {needOptions.map((n) => (
+                  <Chip
+                    key={n}
+                    tone={tone}
+                    on={needs.includes(n)}
+                    onClick={() => setNeeds((v) => (v.includes(n) ? v.filter((x) => x !== n) : [...v, n]))}
+                  >
+                    {n}
+                  </Chip>
+                ))}
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend className={labelCls}>{budgetLabel}</legend>
+              <div className="flex flex-wrap gap-2">
+                {budgets.map((b) => (
+                  <Chip key={b} tone={tone} on={budget === b} onClick={() => setBudget(budget === b ? '' : b)}>
+                    {b}
+                  </Chip>
+                ))}
+              </div>
+            </fieldset>
 
             <div className={cn('grid gap-3 sm:grid-cols-2', variant === 'proposal' && 'xl:grid-cols-3')}>
               <Field
@@ -326,18 +305,6 @@ export function LeadForm({
                   onChange={set('subject')}
                   error={errors.subject}
                 />
-              ) : variant === 'audit' ? (
-                <Field
-                  tone={tone}
-                  label="Website URL"
-                  name="website"
-                  type="url"
-                  required
-                  value={f.website}
-                  onChange={set('website')}
-                  error={errors.website}
-                  autoComplete="url"
-                />
               ) : null}
             </div>
             <Field
@@ -346,9 +313,7 @@ export function LeadForm({
               label={
                 variant === 'contact'
                   ? "Tell us about your project - goals, deadlines, examples you like, or anything you're stuck on…"
-                  : variant === 'audit'
-                    ? 'A couple of pages you care about, or anything you want us to look at…'
-                    : 'Tell us a bit about your project (goals, deadline, anything)…'
+                  : 'Tell us a bit about your project (goals, deadline, anything)…'
               }
               name="message"
               value={f.message}

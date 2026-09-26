@@ -5,7 +5,7 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { PageHero } from '@/components/sections/PageHero'
 import { KeyButton } from '@/components/ui/KeyButton'
 import { SectionHead } from '@/components/ui/SectionHead'
-import { IntegrationHub } from '@/components/solutions/IntegrationHub'
+import { IndustrySwitcher } from '@/components/heroes/IndustrySwitcher'
 import { ConsultCTA } from '@/components/sections/ConsultCTA'
 import { Icon } from '@/components/ui/Icon'
 import { solutions, solutionsIndex } from '@/content/data'
@@ -24,7 +24,8 @@ export default function SolutionsPage() {
         title={solutionsIndex.h1}
         intro={solutionsIndex.intro}
         actions={<KeyButton href="#contact-form">{solutionsIndex.cta}</KeyButton>}
-        figure={<IntegrationHub />}
+        figure={<IndustrySwitcher />}
+        wide
       />
 
       {solutionsIndex.groups.map((g, gi) => (

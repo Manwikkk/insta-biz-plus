@@ -10,7 +10,7 @@ import type { PartId } from '@/content/services'
 export type Vec2 = [number, number]
 
 export type MarkPiece = {
-  id: Exclude<PartId, 'outline'>
+  id: PartId
   /** Base colour sampled from the logo. */
   color: string
   /** Secondary colour for the in-piece gradient (logo bars shade teal → blue). */
@@ -18,6 +18,8 @@ export type MarkPiece = {
   pts: Vec2[]
   /** Direction the piece travels when the engine is exploded (unit-ish, y-up). */
   explode: [number, number, number]
+  /** Where callouts point, when the centroid falls outside the piece (concave shapes). Defaults to the centroid. */
+  anchor?: Vec2
 }
 
 export const HEX: Vec2[] = [
@@ -84,6 +86,8 @@ export const MARK_PIECES: MarkPiece[] = [
       [-0.121, -0.065],
     ],
     explode: [0.55, -0.55, -0.35],
+    // The hook's centroid lies in its hollow; this is the same direction from the centre, mid-way across the lower band.
+    anchor: [0.558, -0.506],
   },
   {
     id: 'bar-low',

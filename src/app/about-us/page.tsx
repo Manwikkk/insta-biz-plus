@@ -7,7 +7,6 @@ import { AboutHero } from '@/components/about/AboutHero'
 import { StoryHighlight } from '@/components/about/StoryHighlight'
 import { Manifesto } from '@/components/about/Manifesto'
 import { Journey } from '@/components/about/Journey'
-import { TeamList } from '@/components/about/TeamList'
 import { OfficeTime } from '@/components/about/OfficeTime'
 import { OfficeMap } from '@/components/locations/OfficeMap'
 import { Brands } from '@/components/home/Voices'
@@ -29,16 +28,6 @@ export default function AboutPage() {
       <Manifesto eyebrow={a.drives.eyebrow} title={a.drives.title} items={a.drives.items} principles={a.drives.principles} />
 
       <Journey />
-
-      <TeamList
-        eyebrow={a.team.eyebrow}
-        title={a.team.title}
-        intro={a.team.intro}
-        founder={a.team.founder}
-        groupLabel={a.team.groupLabel}
-        members={a.team.members}
-        join={a.team.join}
-      />
 
       {/* the IBW way: six promises on the dark stage */}
       <section className="relative overflow-hidden bg-stage text-stage-ink" id="way" data-nav-tone="dark">

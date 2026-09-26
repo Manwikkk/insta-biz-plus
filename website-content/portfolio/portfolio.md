@@ -56,7 +56,7 @@ All work
 
 Click through anything below - each project links to the live product or store listing.
 
-All Work 16 Web 7 Mobile 1 AI & Automation 4 CRM & ERP 2 Marketing 1 Extensions 1
+All Work 15 Web 7 Mobile 1 AI & Automation 4 CRM & ERP 2 Extensions 1
 
 [[Image: Instant Dukaan - Ecommerce Platform](https://www.instabizweb.com/portfolio/instantdukaan.png) Ecommerce Platform No-code store builder ### Instant Dukaan No-code ecommerce for Bharat’s next million shop owners. Ecommerce website builder that helps local shops and entrepreneurs launch their own online store in minutes - no code, no friction. Visit project](https://www.instantdukaan.com/)
 
@@ -94,8 +94,6 @@ Desktop application for wedding clothing rental shops with offline functionality
 
 [[Image: Blutec Scout - Browser Extension](https://www.instabizweb.com/portfolio/blutec-scout.jpg) Browser Extension Verified leads ### Blutec Scout Lead scraping that respects your inbox. Browser extension for scraping Google data and extracting verified emails for lead generation - fast, focused, and accurate. Visit project](https://scout.blutec.ai/)
 
-[[Image: Social Media Marketing - Marketing Service](https://www.instabizweb.com/portfolio/social-media-marketing.jpg) Marketing Service 20+ brands ### Social Media Marketing 20+ brands, one growth team. End-to-end social media management, paid ads, and lead generation services for 20+ clients across multiple industries and geographies. Learn more](https://www.instabizweb.com/services#marketing)
-
 Currently taking 2 new projects this month
 
 ## Your project, next on this page.
@@ -111,12 +109,11 @@ Free strategy call 30 minutes · zero pitch [info@instabizweb.com Reply within 2
 
 - Start your project
 - [Image: Blutec Ping](https://www.instabizweb.com/portfolio/blutec-ping.png) Automation Tool Blutec Ping AI · messaging
-- All Work 16
+- All Work 15
 - Web 7
 - Mobile 1
 - AI & Automation 4
 - CRM & ERP 2
-- Marketing 1
 - Extensions 1
 - Free strategy call 30 minutes · zero pitch
 - Services
@@ -355,7 +352,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",
@@ -556,14 +553,6 @@ Resources
         "description": "Browser extension for scraping Google data and extracting verified emails for lead generation - fast, focused, and accurate.",
         "url": "https://scout.blutec.ai/",
         "image": "https://www.instabizweb.com/portfolio/blutec-scout.jpg"
-      },
-      {
-        "@type": "ListItem",
-        "position": 16,
-        "name": "Social Media Marketing",
-        "description": "End-to-end social media management, paid ads, and lead generation services for 20+ clients across multiple industries and geographies.",
-        "url": "https://www.instabizweb.com/services#marketing",
-        "image": "https://www.instabizweb.com/portfolio/social-media-marketing.jpg"
       }
     ]
   },

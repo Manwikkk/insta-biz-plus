@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { solutions, solutionsIndex } from '@/content/data'
 import { specialisations } from '@/content/home'
+import { solutionIcon } from '@/content/nav'
 import { SectionHead } from '@/components/ui/SectionHead'
 import { Icon } from '@/components/ui/Icon'
 import { KeyButton } from '@/components/ui/KeyButton'
@@ -108,21 +109,49 @@ export function Industries() {
               </div>
             </div>
 
-            {/* mobile list */}
-            <ul className="grid gap-px overflow-hidden rounded-[14px] border border-line bg-line lg:hidden">
-              {order.map((s, idx) => (
-                <li key={s.slug} className="bg-raise">
-                  <Link href={`/solutions/${s.slug}`} className="flex items-center gap-4 px-4 py-4">
-                    <span className="t-label w-6 text-teal-ink">{String(idx + 1).padStart(2, '0')}</span>
-                    <span className="flex-1">
-                      <span className="block font-semibold">{s.label}</span>
-                      <span className="t-small block line-clamp-1">{s.summary}</span>
-                    </span>
-                    <Icon name="arrow" size={16} className="text-ink-3" />
-                  </Link>
-                </li>
-              ))}
+            {/* phones & tablets: the twelve as tiles, two by two */}
+            <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:hidden" aria-label="Industry solutions">
+              {order.map((s, idx) => {
+                const isErp = s.group !== 'Industry CRM Software'
+                return (
+                  <li key={s.slug} data-reveal="rise" style={{ ['--d' as string]: `${(idx % 2) * 70 + Math.floor(idx / 2) * 35}ms` }}>
+                    <Link
+                      href={`/solutions/${s.slug}`}
+                      className="group flex h-full min-h-[104px] flex-col justify-between rounded-[14px] border border-line bg-raise p-3.5 transition-[border-color,background-color] duration-300 active:border-ink hover:border-line-2"
+                    >
+                      <span className="flex items-center justify-between">
+                        <span
+                          className={cn('grid size-9 place-items-center', isErp ? 'bg-navy/15 text-navy dark:text-[#7ea8e6]' : 'bg-teal-soft text-teal-ink')}
+                          style={{ clipPath: HEX }}
+                        >
+                          <Icon name={solutionIcon[s.slug] ?? 'layers'} size={16} />
+                        </span>
+                        <span className="t-label text-[0.56rem] text-ink-3">{String(idx + 1).padStart(2, '0')}</span>
+                      </span>
+                      <span className="mt-3 flex items-end justify-between gap-2">
+                        <span className="text-[0.9rem] font-semibold leading-[1.15] tracking-[-0.01em]">{s.label}</span>
+                        <Icon name="arrow" size={14} className="mb-0.5 shrink-0 text-ink-3 transition-transform duration-300 group-hover:translate-x-0.5" />
+                      </span>
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-x-5 gap-y-4 lg:hidden">
+              <div className="flex flex-wrap gap-x-4 gap-y-1.5">
+                <span className="t-label flex items-center gap-2 text-ink-3">
+                  <span className="size-2.5 bg-teal-soft ring-1 ring-teal/40 [clip-path:polygon(50%_0,100%_25%,100%_75%,50%_100%,0_75%,0_25%)]" />
+                  {solutionsIndex.groups[0].title}
+                </span>
+                <span className="t-label flex items-center gap-2 text-ink-3">
+                  <span className="size-2.5 bg-navy/60 [clip-path:polygon(50%_0,100%_25%,100%_75%,50%_100%,0_75%,0_25%)]" />
+                  {solutionsIndex.groups[1].title}
+                </span>
+              </div>
+              <KeyButton href="/solutions" variant="ghost" icon="arrow">
+                {specialisations.cta}
+              </KeyButton>
+            </div>
           </div>
 
           {/* brief */}

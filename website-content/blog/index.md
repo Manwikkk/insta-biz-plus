@@ -37,13 +37,11 @@ All articles
 
 ## Find the post that fits your stage
 
-All posts 29 AI & Automation 2 Web Dev 2 Mobile 8 CRM & ERP 7 Marketing 2 Founder Notes 1 Compare & Alternatives 7
+All posts 25 AI & Automation 2 Web Dev 2 Mobile 6 CRM & ERP 7 Founder Notes 1 Compare & Alternatives 7
 
-Showing 29 of 29 posts
+Showing 25 of 25 posts
 
 [[Image: Developer pair-programming with an AI coding assistant on screen](https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1600&q=80) Web Development 8 min ### Vibe Coding: The Honest Guide for Founders (and the 5 Mistakes We See Every Week) Vibe coding - describing software in plain English and letting AI write it - is real, fast, and full of traps. We ship production code with AI every day. Here's what actually works, what silently breaks, and how non-technical founders can use it without bricking their app. IB IBW Team April 22, 2026](https://www.instabizweb.com/blogs/vibe-coding-the-honest-guide-for-founders)
-
-[[Image: Modern search engine results with AI overview cards and analytics](https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80) Digital Marketing 9 min ### AEO & GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026 Google AI Overviews now hit 1.5B users monthly. 58.5% of US Google searches end without a click. Ranking #1 no longer guarantees AI Overview inclusion. Here’s the founder-friendly playbook for the new world of Answer Engine Optimisation. IB IBW Team April 8, 2026](https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt)
 
 [[Image: Smartphone screen showing WhatsApp business chat interface with notifications](https://images.unsplash.com/photo-1611605698335-8b1569810432?w=1600&q=80) AI & Automation 8 min ### The 2026 WhatsApp Business API Playbook for Indian SMBs (With Real Pricing & Setup Times) India has 500M+ active WhatsApp users and 50M+ businesses already on it. In 2026, WhatsApp is your customer’s default support channel - whether you’re ready or not. Here’s the actual cost, setup time, and automation playbook for Indian SMBs. IB IBW Team March 30, 2026](https://www.instabizweb.com/blogs/whatsapp-business-api-2026-india-smb-playbook)
 
@@ -52,10 +50,6 @@ Showing 29 of 29 posts
 [[Image: Modern dashboard interface showing CRM analytics on a screen](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80) CRM & ERP 8 min ### A Comprehensive Guide to Odoo CRM Implementation for Small Businesses Odoo can transform your sales pipeline, customer support, and finance ops - but only if you implement it right. Our 5-phase playbook from the trenches. IB IBW Team March 22, 2026](https://www.instabizweb.com/blogs/comprehensive-guide-odoo-crm-implementation)
 
 [[Image: Code editor with React/Next.js source code on a dark theme](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&q=80) Web Development 7 min ### Next.js 16 Is Here: What Changed and Why It Matters for Your Business Site Next.js 16 is the biggest leap since the App Router. We rebuilt our own site on it - here’s what’s genuinely useful, what’s overhyped, and how to upgrade without pain. IB IBW Team February 28, 2026](https://www.instabizweb.com/blogs/nextjs-16-what-changed-and-why-it-matters)
-
-[[Image: Smartphone with mobile app interface on a wooden desk](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600&q=80) Mobile Apps 5 min ### Designing Mobile Apps People Actually Keep on Their Phone Most apps are uninstalled within 30 days. The 5 apps we’ve built that crossed 10K+ downloads all share the same 6 design principles - here they are. IB IBW Team February 8, 2026](https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep)
-
-[[Image: Analytics dashboard with SEO metrics and traffic graphs](https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80) Digital Marketing 7 min ### SEO Fundamentals for Founders: The 2026 Edition AI search is changing SEO faster than any algorithm update ever did. Here’s the founder-friendly playbook that still works in the age of ChatGPT, Perplexity, and Google AI Overviews. IB IBW Team January 18, 2026](https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition)
 
 [[Image: Team brainstorming around a whiteboard in a startup office](https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80) Founder Notes 6 min ### 5 Years In: The Lessons We Wish We Knew Before Starting IBW From bootstrapping in 2020 to shipping for 60+ founders globally - the unglamorous truths nobody tells you about running a digital studio. IB IBW Team January 5, 2026](https://www.instabizweb.com/blogs/founder-lessons-from-five-years-of-shipping)
 
@@ -95,8 +89,6 @@ Showing 29 of 29 posts
 
 [[Image: Phone showing App Store with rejection notification](https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1600&q=80) Mobile 10 min ### Top 12 App Store Rejection Reasons in 2026 (and How to Avoid Each) 40-60% of first-time iOS submissions get rejected. Here are the 12 reasons we see most often, the exact policy clauses they cite, and how to fix each one before re-submission. IB IBW Team May 11, 2026](https://www.instabizweb.com/blogs/app-store-rejection-reasons-2026)
 
-[[Image: App Store search results on mobile phone](https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1600&q=80) Mobile 11 min ### ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store) Most apps die because nobody finds them. ASO is the cheapest growth channel - and most teams do it wrong. Here’s the playbook we use to rank our clients’ apps in the top 10 of their category. IB IBW Team May 11, 2026](https://www.instabizweb.com/blogs/aso-app-store-optimization-2026)
-
 [[Image: Founder interviewing development team in office](https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80) Mobile 9 min ### How to Choose a Mobile App Development Company in India (2026): The Founder’s 11-Question Filter India has 10,000+ mobile app dev companies. Most will quote what you want to hear. Here’s the exact 11-question vetting framework we’d use if we were picking a partner today. IB IBW Team May 11, 2026](https://www.instabizweb.com/blogs/how-to-choose-mobile-app-development-company-india)
 
 Monthly digest
@@ -116,12 +108,11 @@ We’ll never share your email. One-click unsubscribe.
 
 ## Calls to Action
 
-- All posts 29
+- All posts 25
 - AI & Automation 2
 - Web Dev 2
-- Mobile 8
+- Mobile 6
 - CRM & ERP 7
-- Marketing 2
 - Founder Notes 1
 - Compare & Alternatives 7
 - Subscribe
@@ -410,7 +401,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",
@@ -523,18 +514,6 @@ Resources
       },
       {
         "@type": "BlogPosting",
-        "headline": "AEO &amp; GEO: How to Rank in Google AI Overviews and ChatGPT Citations in 2026",
-        "url": "https://www.instabizweb.com/blogs/aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt",
-        "datePublished": "2026-04-08",
-        "author": {
-          "@type": "Organization",
-          "name": "IBW Team"
-        },
-        "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80",
-        "articleSection": "Digital Marketing"
-      },
-      {
-        "@type": "BlogPosting",
         "headline": "The 2026 WhatsApp Business API Playbook for Indian SMBs (With Real Pricing &amp; Setup Times)",
         "url": "https://www.instabizweb.com/blogs/whatsapp-business-api-2026-india-smb-playbook",
         "datePublished": "2026-03-30",
@@ -580,30 +559,6 @@ Resources
         },
         "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&q=80",
         "articleSection": "Web Development"
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "Designing Mobile Apps People Actually Keep on Their Phone",
-        "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep",
-        "datePublished": "2026-02-08",
-        "author": {
-          "@type": "Organization",
-          "name": "IBW Team"
-        },
-        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600&q=80",
-        "articleSection": "Mobile Apps"
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "SEO Fundamentals for Founders: The 2026 Edition",
-        "url": "https://www.instabizweb.com/blogs/seo-fundamentals-for-founders-2026-edition",
-        "datePublished": "2026-01-18",
-        "author": {
-          "@type": "Organization",
-          "name": "IBW Team"
-        },
-        "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80",
-        "articleSection": "Digital Marketing"
       },
       {
         "@type": "BlogPosting",
@@ -831,18 +786,6 @@ Resources
           "name": "IBW Team"
         },
         "image": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1600&q=80",
-        "articleSection": "Mobile"
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "ASO in 2026: The Complete App Store Optimization Playbook (iOS + Play Store)",
-        "url": "https://www.instabizweb.com/blogs/aso-app-store-optimization-2026",
-        "datePublished": "2026-05-11",
-        "author": {
-          "@type": "Organization",
-          "name": "IBW Team"
-        },
-        "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1600&q=80",
         "articleSection": "Mobile"
       },
       {

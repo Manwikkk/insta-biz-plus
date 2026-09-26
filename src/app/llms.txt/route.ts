@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 
-// Served verbatim from the audited copy of https://www.instabizweb.com/llms.txt.
+// The audited copy of https://www.instabizweb.com/llms.txt (website-content/other/llms.md), with the site's own edits.
 export const dynamic = 'force-static'
 
 export async function GET() {

@@ -19,12 +19,14 @@ type Built = {
   /** Largest distance from the centroid to a corner (local units). */
   radius: number
   scatterRot: THREE.Euler
+  /** Where the hero callout points, relative to the centroid (local units). */
+  anchor: [number, number]
 }
 
 /**
  * Where each part drifts during "the problem", in view units (-1…1), around the
  * headline rather than behind it. Order follows MARK_PIECES:
- * bar-top (marketing) · bar-mid (web) · frame-left (AI) · core (CRM) · bar-low (mobile).
+ * bar-top (web) · bar-mid (automation) · frame-left (AI) · core (CRM) · bar-low (mobile).
  */
 const SCATTER: Array<[number, number, number]> = [
   [-0.72, 0.56, -0.5],
@@ -32,6 +34,15 @@ const SCATTER: Array<[number, number, number]> = [
   [-0.84, -0.1, -0.2],
   [0.8, -0.34, -0.6],
   [-0.56, -0.66, -0.4],
+]
+
+/** The same drift on a tall (phone) screen: parts keep to the bands above and below the copy. */
+const SCATTER_TALL: Array<[number, number, number]> = [
+  [-0.58, 0.76, -0.5],
+  [0.62, 0.68, -0.3],
+  [-0.72, -0.34, -0.2],
+  [0.7, -0.6, -0.6],
+  [-0.24, -0.84, -0.4],
 ]
 
 /** Deterministic pseudo-random so the scatter is identical on every visit. */
@@ -74,7 +85,8 @@ function build(piece: MarkPiece, i: number): Built {
     r2 = rand(i + 7),
     r3 = rand(i + 13)
   const scatterRot = new THREE.Euler((r2 - 0.5) * 2.2, (r3 - 0.5) * 2.8, (r1 - 0.5) * 1.4)
-  return { piece, geo, c: [cx, cy], radius, scatterRot }
+  const [ax, ay] = piece.anchor ?? [cx, cy]
+  return { piece, geo, c: [cx, cy], radius, scatterRot, anchor: [ax - cx, ay - cy] }
 }
 
 /** DOM overlay nodes, positioned each frame by projecting their 3D anchors (no extra React roots). */
@@ -85,6 +97,7 @@ const dotNodes: (SVGCircleElement | null)[] = []
 const _v = new THREE.Vector3()
 const _c = new THREE.Vector3()
 const _t = new THREE.Vector3()
+const _a = new THREE.Vector3()
 
 const KEYS = [
   'x',
@@ -95,7 +108,6 @@ const KEYS = [
   'rotZ',
   'explode',
   'scatter',
-  'outline',
   'dim',
   'rev',
   'labels',
@@ -107,10 +119,9 @@ function Engine({ theme }: { theme: Theme }) {
   const group = useRef<THREE.Group>(null)
   const meshes = useRef<(THREE.Mesh | null)[]>([])
   const pulseRef = useRef<THREE.Group>(null)
-  const outlineRef = useRef<THREE.Group>(null)
   const built = useMemo(() => MARK_PIECES.map(build), [])
   const cur = useRef(Object.fromEntries(KEYS.map((k) => [k, engine[k]])) as Record<(typeof KEYS)[number], number>)
-  const focusW = useRef(new Float32Array(6))
+  const focusW = useRef(new Float32Array(MARK_PIECES.length))
   const { viewport, camera, size } = useThree()
 
   const dark = theme === 'dark'
@@ -177,10 +188,11 @@ function Engine({ theme }: { theme: Theme }) {
 
     // Focus weights
     const fw = focusW.current
-    for (let i = 0; i < 6; i++) fw[i] += ((Math.round(engine.focus) === i ? 1 : 0) - fw[i]) * k
     let anyFocus = 0
-    for (let i = 0; i < 5; i++) anyFocus = Math.max(anyFocus, fw[i])
-    anyFocus = Math.max(anyFocus, fw[5] * 0.6)
+    for (let i = 0; i < fw.length; i++) {
+      fw[i] += ((Math.round(engine.focus) === i ? 1 : 0) - fw[i]) * k
+      anyFocus = Math.max(anyFocus, fw[i])
+    }
 
     const explode = c.explode + engine.hover * 0.12
     const sc = c.scatter
@@ -198,7 +210,7 @@ function Engine({ theme }: { theme: Theme }) {
       if (sc > 0.001) {
         // Scatter target lives in screen space and is clamped so the whole part stays in view.
         const r = b.radius * g.scale.x * pieceScale * 1.08
-        const [nx, ny, nz] = SCATTER[i]
+        const [nx, ny, nz] = (vh > vw * 1.15 ? SCATTER_TALL : SCATTER)[i]
         const tx = THREE.MathUtils.clamp(nx * halfW, -(halfW * 0.95 - r), halfW * 0.95 - r)
         const ty = THREE.MathUtils.clamp(ny * halfH, -(halfH * 0.9 - r), halfH * 0.9 - r)
         _t.set(tx + Math.sin(t * 0.4 + i) * 0.05, ty + Math.cos(t * 0.35 + i * 2) * 0.04, nz)
@@ -242,7 +254,7 @@ function Engine({ theme }: { theme: Theme }) {
       const [cx, cy] = toPx(_c)
       const ppu = size.height / vh
       const rim = g.scale.x * ppu * 1.02 + 30
-      built.forEach((_, i) => {
+      built.forEach((b, i) => {
         const label = calloutNodes[i]
         const leader = leaderNodes[i]
         const dot = dotNodes[i]
@@ -253,11 +265,17 @@ function Engine({ theme }: { theme: Theme }) {
         if (cv < 0.01) return
         const m = meshes.current[i]
         if (!m) return
-        m.getWorldPosition(_v)
+        m.updateWorldMatrix(true, false)
+        // The name sits out along the line from the engine's centre through the part (its mid-plane)…
+        m.localToWorld(_v.set(b.anchor[0], b.anchor[1], 0))
         _v.project(camera)
-        const [ax, ay] = toPx(_v)
-        const dx = ax - cx
-        const dy = ay - cy
+        const [rx, ry] = toPx(_v)
+        // …and the leader starts on the part's front face, where the eye reads it.
+        m.localToWorld(_a.set(b.anchor[0], b.anchor[1], DEPTH / 2 + BEVEL))
+        _a.project(camera)
+        const [ax, ay] = toPx(_a)
+        const dx = rx - cx
+        const dy = ry - cy
         const len = Math.hypot(dx, dy) || 1
         const ux = dx / len
         const uy = dy / len
@@ -272,33 +290,6 @@ function Engine({ theme }: { theme: Theme }) {
         dot.setAttribute('cx', ax.toFixed(1))
         dot.setAttribute('cy', ay.toFixed(1))
         label.style.transform = `translate3d(${(tx + side * 8).toFixed(1)}px, ${eyy.toFixed(1)}px, 0) translate(${side > 0 ? '0' : '-100%'}, -50%)`
-      })
-    }
-
-    // Blueprint outline (UI/UX Design is the drawing the parts are cut from)
-    const outlineVis = Math.max(c.outline, fw[5])
-    const designLabel = labelNodes[5]
-    if (designLabel) {
-      designLabel.style.opacity = String(outlineVis * c.opacity)
-      designLabel.dataset.active = fw[5] > 0.5 ? 'true' : 'false'
-      if (outlineVis > 0.01) {
-        _v.set(HEX[5][0] * 1.22, HEX[5][1] * 1.22, 0)
-        g.localToWorld(_v)
-        _v.project(camera)
-        const [sx, sy] = toPx(_v)
-        designLabel.style.transform = `translate3d(${sx.toFixed(1)}px, ${sy.toFixed(1)}px, 0) translate(-50%, -50%)`
-      }
-    }
-    if (outlineRef.current) {
-      const o = outlineVis
-      outlineRef.current.visible = o > 0.01
-      outlineRef.current.scale.setScalar(1 + (1 - o) * 0.08)
-      outlineRef.current.traverse((obj) => {
-        const mat = (obj as THREE.Mesh).material as THREE.Material & { opacity?: number; dashOffset?: number }
-        if (mat && 'opacity' in mat) {
-          mat.opacity = o * c.opacity
-          if ('dashOffset' in mat) (mat as unknown as { dashOffset: number }).dashOffset = -t * 0.08
-        }
       })
     }
 
@@ -332,18 +323,6 @@ function Engine({ theme }: { theme: Theme }) {
         />
       ))}
 
-      <group ref={outlineRef} visible={false}>
-        <Line
-          points={hexPts}
-          color={dark ? '#22c7d8' : '#0a8fa0'}
-          lineWidth={1.2}
-          dashed
-          dashSize={0.06}
-          gapSize={0.05}
-          transparent
-          opacity={0}
-        />
-      </group>
       <group ref={pulseRef} visible={false}>
         <Line
           points={hexPts.map((v) => v.clone().multiplyScalar(0.86))}
@@ -399,9 +378,9 @@ function Lights({ theme }: { theme: Theme }) {
 
 const partService = (id: string) => services.find((s) => s.part === id)
 
-/** Part tags (01 · Web …) for the capabilities chapter: plain DOM positioned by the frame loop. */
+/** Part tags (01 · Automation …) for the capabilities chapter: plain DOM positioned by the frame loop. */
 function EngineLabels() {
-  const labeled = [...MARK_PIECES.map((p) => partService(p.id)), partService('outline')]
+  const labeled = MARK_PIECES.map((p) => partService(p.id))
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
       {labeled.map((svc, i) =>

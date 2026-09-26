@@ -117,7 +117,7 @@ Drag-drop mobile app builder. Real iOS & Android binaries. Lighter than FlutterF
 
 The hardest truth about no-code: most platforms become a ceiling. Bubble, Adalo, Glide all max out at moderate scale. Next.js + Supabase is the only stack on this list that scales from MVP to enterprise without a rewrite. If you’re betting on the company growing past Series A, start on a real code stack - even if it’s 30% slower at MVP stage.
 
-We’ve built MVPs on every platform in this list. If you want our pick for your specific situation, [drop us a line](https://www.instabizweb.com/contact-us). Also read: [vibe coding for founders](https://www.instabizweb.com/blogs/vibe-coding-the-honest-guide-for-founders), [designing mobile apps people keep](https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep).
+We’ve built MVPs on every platform in this list. If you want our pick for your specific situation, [drop us a line](https://www.instabizweb.com/contact-us). Also read: [vibe coding for founders](https://www.instabizweb.com/blogs/vibe-coding-the-honest-guide-for-founders).
 
 FAQs
 
@@ -414,7 +414,7 @@ Resources
       "height": 512
     },
     "image": "https://www.instabizweb.com/logo.png",
-    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart digital marketing.",
+    "description": "Insta Biz Web builds AI-powered websites, mobile apps, CRM systems and digital automation solutions. We help startups and businesses grow through modern design, fast development, and smart business automation.",
     "email": "info@instabizweb.com",
     "telephone": "+91 98981 24987",
     "priceRange": "₹₹",
@@ -572,11 +572,6 @@ Resources
         "@type": "Thing",
         "name": "Next.js 16 deep-dive",
         "url": "https://www.instabizweb.com/blogs/nextjs-16-what-changed-and-why-it-matters"
-      },
-      {
-        "@type": "Thing",
-        "name": "Mobile app retention design",
-        "url": "https://www.instabizweb.com/blogs/designing-mobile-apps-people-actually-keep"
       },
       {
         "@type": "Thing",

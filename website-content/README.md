@@ -12,6 +12,14 @@ Source of discovery:
 
 This repository stores wording, facts, metadata, forms, media references, and links. It does not store or describe the current visual design.
 
+## Changes made for the site since the crawl
+
+Digital Marketing and UI/UX Design are no longer offered, and Business Automation joins as service 01 (client brief, 25 September 2026). Business Automation has no page on the live site; its copy lives in `src/content/services.ts`.
+
+- Removed: `locations/digital-marketing-agency-in-ahmedabad.md`, `locations/seo-company-in-ahmedabad.md`, `other/free-website-audit.md` and the posts `seo-fundamentals-for-founders-2026-edition`, `aeo-geo-how-to-rank-in-google-ai-overviews-and-chatgpt`, `aso-app-store-optimization-2026` and `designing-mobile-apps-people-actually-keep`. Their URLs redirect (`next.config.ts`).
+- Edited: the organisation description on every page, the services, about and refund-policy titles and descriptions (here and in `seo-content-inventory.md`), the services catalog, two Web Development FAQs, the refund policy and terms, the blog and portfolio listings, links to the removed posts, and `other/llms.md`.
+- `global-content.md`, `site-structure.md` and `site-inventory.md` still describe the site as crawled.
+
 ## Files
 
 - `site-inventory.md` — every discovered URL, status, and output file

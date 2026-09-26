@@ -1,7 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { useEffect, useState, type MouseEvent } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import { Logo } from './Logo'
 import { ThemeToggle } from './ThemeToggle'
@@ -10,6 +11,7 @@ import { KeyButton } from '@/components/ui/KeyButton'
 import { primaryNav, site } from '@/content/site'
 import { services } from '@/content/services'
 import { solutions } from '@/content/data'
+import { socialIcon } from '@/content/nav'
 import { cn } from '@/lib/cn'
 
 const ease = [0.16, 1, 0.3, 1] as const
@@ -32,6 +34,18 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
   }, [onClose])
 
   const items = [{ label: 'Home', href: '/' }, ...primaryNav]
+  const pathname = usePathname()
+  // A link to the page you are already on closes the menu onto the top of that page.
+  const go = (e: MouseEvent, href: string) => {
+    if (href === pathname) {
+      e.preventDefault()
+      if (window.location.hash) history.replaceState(null, '', href)
+      const lenis = (window as unknown as { __lenis?: { scrollTo(y: number, o?: object): void } }).__lenis
+      if (lenis) lenis.scrollTo(0, { immediate: true, force: true })
+      else window.scrollTo(0, 0)
+    }
+    onClose()
+  }
 
   return (
     <motion.div
@@ -46,9 +60,9 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
     >
       {/* the same glass bar as the header, so opening the menu keeps the bar in place */}
       <div className="px-2.5 pt-2.5 sm:px-4 sm:pt-3">
-        <div className="nav-glass" data-scrolled="true">
-          <div className="flex h-14 items-center gap-2 pl-5 pr-2">
-            <Logo height={30} />
+        <div className="nav-glass nav-bar" data-scrolled="true">
+          <div className="flex h-14 items-center gap-2 pl-4 pr-2">
+            <Logo height={34} />
             <div className="ml-auto flex items-center gap-1.5">
               <ThemeToggle />
               <button type="button" aria-label="Close menu" onClick={onClose} className="nav-icon-btn">
@@ -73,7 +87,7 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
                 transition={{ delay: 0.18 + i * 0.05, duration: 0.7, ease }}
               >
                 <div className="flex items-center">
-                  <Link href={item.href} onClick={onClose} className="flex flex-1 items-baseline gap-4 py-4">
+                  <Link href={item.href} onClick={(e) => go(e, item.href)} className="flex flex-1 items-baseline gap-4 py-4">
                     <span className="t-label text-teal-ink">{String(i + 1).padStart(2, '0')}</span>
                     <span className="font-display text-[2rem] font-bold leading-none tracking-[-0.035em] [font-stretch:108%]">
                       {item.label}
@@ -131,9 +145,18 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.55, duration: 0.6 }}
         >
-          <KeyButton href="/contact-us" className="w-full justify-between">
-            Start Your Project
+          <KeyButton href="/contact-us#contact-form" className="w-full justify-between" icon="calendar">
+            Book a demo
           </KeyButton>
+          <ul className="-ml-2 flex items-center gap-1" aria-label="Insta Biz Web on social media">
+            {site.social.map((s) => (
+              <li key={s.label}>
+                <a href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="nav-social">
+                  <Icon name={socialIcon[s.label] ?? 'external'} size={17} />
+                </a>
+              </li>
+            ))}
+          </ul>
           <div className="grid gap-2 text-sm text-ink-2">
             <a href={`mailto:${site.email}`} className="flex items-center gap-2">
               <Icon name="mail" size={16} /> {site.email}

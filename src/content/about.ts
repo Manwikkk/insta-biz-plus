@@ -1,25 +1,24 @@
 /** About page — verbatim from website-content/about/about-us.md. */
 
 export const about = {
-  chips: ['Est. 2020', 'Ahmedabad, India', 'Founder-led'],
   tag: 'About',
   tagNote: 'The story behind Insta Biz Web',
   h1: 'A team of makers, builders & doers.',
   intro:
-    "We're a tight-knit team of senior engineers, designers and marketers based in Ahmedabad, India - building digital products with founders across India, the US, UK and Singapore. Five years in, and still obsessed with the craft.",
+    "We're a tight-knit team of senior engineers and designers based in Ahmedabad, India - building digital products with founders across India, the US, UK and Singapore. Five years in, and still obsessed with the craft.",
   primary: 'Work with us',
   secondary: 'See our work',
-  /** Counters on the live page animate client-side; values stated elsewhere on the page/site. */
-  stats: [
-    { value: '145+', label: 'Global clients' },
-    { value: '98%', label: 'Positive rating' },
-    { value: '5', label: 'Years experience' },
-    { value: '100+', label: 'Projects shipped' },
-  ],
+  /** The hero's "at a glance" board; every figure is stated elsewhere on the site. */
+  glance: {
+    studio: { label: 'Est. 2020 · Ahmedabad', title: 'Founder-led studio', body: 'Bootstrapped, senior-led and obsessed with the craft.' },
+    clients: { value: '145+', label: 'Global clients' },
+    rating: { value: '98%', label: 'Positive rating', note: '4.9★ on Google' },
+    reach: { label: 'From Ahmedabad to the world', note: '5 countries · 100+ projects shipped' },
+  },
   story: {
     eyebrow: 'Our story',
     title: 'Five years. One mission.',
-    body: 'Insta Biz Web started in 2020 with one belief: small businesses deserve big-tech quality. What began as a two-person studio in Ahmedabad has grown into a full-stack digital partner - engineering websites, mobile apps, AI agents, CRM systems and growth marketing for 60+ founders across India, the US, UK and Singapore. We’re still founder-led, still obsessed with the craft, and still treat every project like it’s our own.',
+    body: 'Founded in Ahmedabad in 2020 on one belief: small businesses deserve big-tech quality. Today we are a founder-led, full-stack digital partner for 60+ founders across India, the US, UK and Singapore.',
     cta: "See what we've built",
   },
   drives: {
@@ -65,7 +64,7 @@ export const about = {
         year: '2022',
         tag: 'Team scaled',
         title: 'Founding team formed',
-        body: 'Six co-founders join the journey. Capabilities grow to cover web, mobile, CRM, AI and marketing - under one roof.',
+        body: 'Six co-founders join the journey. Capabilities grow to cover web, mobile, CRM, AI and business automation - under one roof.',
       },
       {
         year: '2023',
@@ -92,58 +91,6 @@ export const about = {
         body: 'Doubling down on AI agents, vertical SaaS for SMBs, and our first international office. The best is yet to come.',
       },
     ],
-  },
-  team: {
-    eyebrow: 'Meet the team',
-    title: 'One founder. Six co-builders.',
-    intro:
-      'Senior people on every project - no juniors swapped in once you sign. The people you meet on the call are the people who build your product.',
-    founder: {
-      name: 'Mukund Pasi',
-      role: 'Founder',
-      photo: '/team/mukund.png',
-      bio: 'Started with one laptop and a stubborn belief - that small businesses deserve world-class tech. Five years later, that belief still drives every decision we make.',
-    },
-    groupLabel: 'Co-founders & Founding team',
-    members: [
-      {
-        name: 'Harshil Sarariya',
-        role: 'Co-Founder',
-        photo: '/team/harshil.png',
-        bio: 'Believes great work is invisible - it just works. Shows up early, ships quietly, and never lets a problem outlive a workday.',
-      },
-      {
-        name: 'Miraj Soliya',
-        role: 'Co-Founder',
-        photo: '/team/miraj.png',
-        bio: 'Treats every screen like a first impression. Detail-obsessed, deadline-obsessed, and proud of it - because shortcuts always show up later.',
-      },
-      {
-        name: 'Sujal Patel',
-        role: 'Co-Founder',
-        photo: '/team/sujal.png',
-        bio: 'Believes a brand earns trust in the first three seconds. Spends every hour making sure those three seconds are unforgettable.',
-      },
-      {
-        name: 'Neel Soni',
-        role: 'Co-Founder',
-        photo: '/team/neel.png',
-        bio: 'Convinced that any task done twice should never be done by a human again. Quietly automates the busywork so the team can do the real work.',
-      },
-      {
-        name: 'Gaurav Teli',
-        role: 'Co-Founder',
-        photo: '/team/gaurav.png',
-        bio: 'Walks into operational chaos and walks out with clarity. Believes every messy spreadsheet hides a beautiful system waiting to be built.',
-      },
-      {
-        name: 'Dhaval Chavda',
-        role: 'Co-Founder',
-        photo: '/team/dhaval.png',
-        bio: 'Lives for the numbers that actually move the business - and ignores the ones that just look pretty in a deck. Honest growth, not vanity wins.',
-      },
-    ],
-    join: 'Want to join the team?',
   },
   office: {
     eyebrow: 'Where to find us',

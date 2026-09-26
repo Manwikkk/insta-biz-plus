@@ -105,26 +105,3 @@ export function CityTime({ c, now, compact = false }: { c: ClockCity; now: Date 
     </div>
   )
 }
-
-/** The hero's panel: local time wherever our founders are, live. */
-export function WorldClock({ className }: { className?: string }) {
-  const now = useNow(1000)
-  return (
-    <div className={cn('world-clock overflow-hidden rounded-[22px] border border-line bg-raise/80 backdrop-blur-xl', className)}>
-      <div className="flex items-center justify-between gap-4 border-b border-line px-5 py-3">
-        <span className="t-label text-ink-2">India · UK · US · Singapore</span>
-        <span className="t-label flex items-center gap-2 text-ink-3">
-          <span className="live-dot" aria-hidden />
-          Local time
-        </span>
-      </div>
-      <ul className="divide-y divide-line">
-        {FOUNDER_CITIES.map((c) => (
-          <li key={c.city} className="px-5 py-[clamp(10px,1.9vh,16px)]">
-            <CityTime c={c} now={now} />
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}

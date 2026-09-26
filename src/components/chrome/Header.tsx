@@ -2,40 +2,53 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
-import { AnimatePresence, motion } from 'motion/react'
+import { useEffect, useLayoutEffect, useRef, useState, type MouseEvent, type ReactNode } from 'react'
+import { AnimatePresence, LayoutGroup, MotionConfig, motion } from 'motion/react'
 import { Logo } from './Logo'
 import { ThemeToggle } from './ThemeToggle'
-import { Icon } from '@/components/ui/Icon'
+import { Icon, type IconName } from '@/components/ui/Icon'
 import { MobileMenu } from './MobileMenu'
-import { primaryNav, locationLinks } from '@/content/site'
+import { useLenis } from '@/components/motion/SmoothScroll'
+import { primaryNav, locationLinks, site } from '@/content/site'
 import { services } from '@/content/services'
 import { solutionsIndex, solutions } from '@/content/data'
+import { locationIcon, serviceIcon, socialIcon, solutionIcon } from '@/content/nav'
 import { cn } from '@/lib/cn'
 
 type MenuId = 'services' | 'solutions'
 
 const ease = [0.16, 1, 0.3, 1] as const
+const easeIn = [0.55, 0, 0.75, 0.2] as const
 const lensSpring = { type: 'spring', stiffness: 520, damping: 42, mass: 0.7 } as const
 /** Vertical middle of the bar, where the section underneath is sampled. */
 const PROBE_Y = 40
+/** The menus open in this order; switching slides the content the way the pointer travelled. */
+const ORDER: MenuId[] = ['services', 'solutions']
+
+/** On the bar: everything but Contact, which the "Book a demo" button already is. */
+const LINKS = primaryNav.filter((n) => n.href !== '/contact-us')
+const AHMEDABAD = new Set(locationLinks.map((l) => l.href))
 
 /**
- * A floating bar of frosted glass. A soft lens rests behind the current page and slides
- * to whichever link is under the pointer, returning when the pointer leaves. Services and
- * Solutions open as a second glass panel. Over dark sections the bar (and its panel)
- * switch to the dark palette so the glass always reads as glass rather than a grey film.
+ * A floating bar of frosted glass: the pages on the left, the logo at the centre, the
+ * socials, theme switch and "Book a demo" on the right. Services and Solutions open a
+ * second glass panel with titles only, and the page behind softens while it is open.
+ * Over dark sections the bar (and its panel) take the dark palette so the glass always
+ * reads as glass.
  */
 export function Header() {
   const pathname = usePathname()
+  const lenis = useLenis()
   const [scrolled, setScrolled] = useState(false)
   const [hidden, setHidden] = useState(false)
   const [menu, setMenu] = useState<MenuId | null>(null)
+  const [dir, setDir] = useState(1)
   const [lens, setLens] = useState<string | null>(null)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [overDark, setOverDark] = useState(false)
   const closeTimer = useRef<number | null>(null)
   const lastY = useRef(0)
+  const headerRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     const onScroll = () => {
@@ -91,45 +104,78 @@ export function Header() {
 
   const open = (id: MenuId) => {
     if (closeTimer.current) window.clearTimeout(closeTimer.current)
-    setMenu(id)
+    setMenu((m) => {
+      if (m && m !== id) setDir(ORDER.indexOf(id) > ORDER.indexOf(m) ? 1 : -1)
+      return id
+    })
   }
   const scheduleClose = () => {
     if (closeTimer.current) window.clearTimeout(closeTimer.current)
     closeTimer.current = window.setTimeout(() => setMenu(null), 160)
   }
 
-  const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href))
-  const items = [{ label: 'Home', href: '/' as string, menu: undefined as MenuId | undefined }, ...primaryNav]
+  /** A bar link to the page you are already on glides back to its top instead of doing nothing. */
+  const toTop = (e: MouseEvent, href: string) => {
+    if (pathname !== href) return
+    e.preventDefault()
+    if (window.location.hash) history.replaceState(null, '', href)
+    if (lenis) lenis.scrollTo(0, { duration: 1.2 })
+    else window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const isActive = (href: string) => {
+    if (href === '/services') return pathname.startsWith('/services') || AHMEDABAD.has(pathname)
+    return pathname.startsWith(href)
+  }
   // The lens follows the pointer; with a panel open it rests on the item that opened it,
   // otherwise on the current page.
-  const lensOn = lens ?? (menu ? items.find((i) => i.menu === menu)?.href : items.find((i) => isActive(i.href))?.href) ?? null
+  const lensOn = lens ?? (menu ? LINKS.find((i) => i.menu === menu)?.href : LINKS.find((i) => isActive(i.href))?.href) ?? null
 
   return (
-    <>
+    <MotionConfig reducedMotion="user">
+      {/* the page softens behind an open menu */}
+      <AnimatePresence>
+        {menu ? (
+          <motion.div
+            key="scrim"
+            aria-hidden
+            className="nav-scrim fixed inset-0 z-40 hidden lg:block"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, transition: { duration: 0.3 } }}
+            transition={{ duration: 0.45, ease }}
+            onClick={() => setMenu(null)}
+          />
+        ) : null}
+      </AnimatePresence>
+
       <header
+        ref={headerRef}
         className={cn(
-          'fixed inset-x-0 top-0 z-50 px-2.5 pt-2.5 transition-transform duration-500 ease-[var(--ease-out)] sm:px-4 sm:pt-3',
+          'fixed inset-x-0 top-0 z-50 px-2.5 pt-2.5 transition-transform duration-500 ease-[var(--ease-out)] sm:px-4 sm:pt-3 lg:px-0',
           concealed ? '-translate-y-[140%]' : 'translate-y-0',
         )}
         onMouseLeave={scheduleClose}
+        onBlur={(e) => {
+          // keyboard: leaving the header (bar and panel) closes the menu
+          if (menu && !headerRef.current?.contains(e.relatedTarget as Node | null)) setMenu(null)
+        }}
       >
+        {/* on desktop the bar stretches to the page's side rules (24px outside the content column),
+            so every section's content sits inside its width */}
         <div
-          className={cn(
-            'relative mx-auto transition-[max-width] duration-700 ease-[var(--ease-out)]',
-            scrolled ? 'max-w-[1180px]' : 'max-w-[var(--shell-max)]',
-          )}
+          className="relative mx-auto max-w-[1200px] lg:w-[calc(min(100%_-_2*var(--gutter),var(--shell-max))_+_48px)] lg:max-w-none"
           data-theme={overDark ? 'dark' : undefined}
         >
-          <div className="nav-glass" data-scrolled={scrolled || !!menu}>
-            <div className="flex h-14 items-center gap-2 pl-5 pr-2 lg:h-[60px] lg:gap-4 lg:pl-6 lg:pr-2.5">
-              <Logo height={30} preload />
-
-              <nav aria-label="Primary" className="mx-auto hidden items-center lg:flex" onMouseLeave={() => setLens(null)}>
-                {items.map((item) => {
+          <div className="nav-glass nav-bar" data-scrolled={scrolled || !!menu}>
+            <div className="flex h-14 items-center gap-2 pl-4 pr-2 lg:grid lg:h-[72px] lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:gap-4 lg:px-4">
+              {/* left: the pages */}
+              <nav aria-label="Primary" className="hidden min-w-0 items-center lg:flex" onMouseLeave={() => setLens(null)}>
+                {LINKS.map((item) => {
                   const active = isActive(item.href)
                   const expanded = !!item.menu && menu === item.menu
                   const cls = cn(
-                    'nav-link relative z-[1] flex h-9 items-center gap-1 whitespace-nowrap rounded-full px-3 text-[0.9rem] font-medium tracking-[-0.005em] transition-colors duration-300 xl:px-4',
+                    'nav-link relative z-[1] flex h-9 items-center gap-1 whitespace-nowrap rounded-full px-2 text-[0.875rem] font-medium tracking-[-0.01em] transition-colors duration-300 lg:h-10 lg:text-[0.92rem] xl:px-4 xl:text-[0.98rem]',
                     active || expanded || lensOn === item.href ? 'text-ink' : 'text-ink-2',
                   )
                   return (
@@ -144,29 +190,46 @@ export function Header() {
                     >
                       {lensOn === item.href ? <motion.span layoutId="nav-lens" className="nav-lens" transition={lensSpring} /> : null}
                       {item.menu ? (
-                        <button
-                          type="button"
+                        // The label is the page itself: hovering (or focusing) opens its menu, clicking goes there.
+                        <Link
+                          href={item.href}
+                          aria-haspopup="true"
                           aria-expanded={expanded}
                           aria-controls="nav-panel"
-                          onClick={() => setMenu((m) => (m === item.menu ? null : item.menu!))}
-                          onFocus={() => setLens(item.href)}
+                          aria-current={pathname === item.href ? 'page' : undefined}
+                          onFocus={() => {
+                            setLens(item.href)
+                            open(item.menu!)
+                          }}
+                          onKeyDown={(e) => {
+                            // arrow down steps into the open panel
+                            if (e.key !== 'ArrowDown') return
+                            e.preventDefault()
+                            open(item.menu!)
+                            requestAnimationFrame(() => document.querySelector<HTMLElement>('#nav-panel a')?.focus())
+                          }}
+                          onClick={(e) => {
+                            setMenu(null)
+                            toTop(e, item.href)
+                          }}
                           className={cls}
                         >
                           {item.label}
                           <Icon
                             name="chevron"
-                            size={13}
+                            size={14}
                             strokeWidth={2}
                             className={cn(
                               'text-ink-3 transition-transform duration-500 ease-[var(--ease-out)]',
                               expanded && 'rotate-180 text-ink',
                             )}
                           />
-                        </button>
+                        </Link>
                       ) : (
                         <Link
                           href={item.href}
                           onFocus={() => setLens(item.href)}
+                          onClick={(e) => toTop(e, item.href)}
                           className={cls}
                           aria-current={active ? 'page' : undefined}
                         >
@@ -178,13 +241,27 @@ export function Header() {
                 })}
               </nav>
 
-              <div className="ml-auto flex items-center gap-1.5 lg:ml-0">
+              {/* centre: the logo */}
+              <div className="shrink-0 lg:justify-self-center">
+                <Logo height={34} preload />
+              </div>
+
+              {/* right: socials, theme, the call to action */}
+              <div className="ml-auto flex items-center gap-1 lg:ml-0 lg:justify-self-end">
+                <ul className="hidden items-center lg:flex" aria-label="Insta Biz Web on social media">
+                  {site.social.map((s) => (
+                    <li key={s.label}>
+                      <a href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="nav-social">
+                        <Icon name={socialIcon[s.label] ?? 'external'} size={17} />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <span className="mx-1 hidden h-6 w-px bg-line-2 lg:block" aria-hidden />
                 <ThemeToggle />
-                <Link href="/contact-us" className="nav-cta group ml-1 hidden sm:inline-flex">
-                  <span>Contact Us</span>
-                  <span className="nav-cta-arrow" aria-hidden>
-                    <Icon name="arrow" size={15} strokeWidth={2} />
-                  </span>
+                <Link href="/contact-us#contact-form" className="nav-cta ml-1 hidden sm:inline-flex">
+                  <Icon name="calendar" size={17} strokeWidth={1.8} />
+                  <span>Book a demo</span>
                 </Link>
                 <button
                   type="button"
@@ -206,22 +283,28 @@ export function Header() {
             {menu ? (
               <motion.div
                 key="panel"
-                initial={{ opacity: 0, y: -8, scale: 0.985 }}
+                initial={{ opacity: 0, y: -10, scale: 0.985 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: -6, scale: 0.99, transition: { duration: 0.22 } }}
-                transition={{ duration: 0.45, ease }}
+                exit={{ opacity: 0, y: -8, scale: 0.99, transition: { duration: 0.24, ease: easeIn } }}
+                transition={{ duration: 0.55, ease }}
                 className="absolute inset-x-0 top-full hidden origin-top pt-2 lg:block"
                 onMouseEnter={() => open(menu)}
               >
                 <div id="nav-panel" className="nav-glass nav-panel">
                   <AutoHeight>
-                    <AnimatePresence mode="wait" initial={false}>
+                    <AnimatePresence mode="popLayout" initial={false} custom={dir}>
                       <motion.div
                         key={menu}
-                        initial={{ opacity: 0, y: 6 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -4 }}
-                        transition={{ duration: 0.22, ease }}
+                        custom={dir}
+                        variants={{
+                          enter: (d: number) => ({ opacity: 0, x: d * 28 }),
+                          center: { opacity: 1, x: 0 },
+                          exit: (d: number) => ({ opacity: 0, x: d * -28 }),
+                        }}
+                        initial="enter"
+                        animate="center"
+                        exit="exit"
+                        transition={{ duration: 0.42, ease }}
                       >
                         {menu === 'services' ? <ServicesPanel /> : <SolutionsPanel />}
                       </motion.div>
@@ -235,7 +318,7 @@ export function Header() {
       </header>
 
       <AnimatePresence>{mobileOpen ? <MobileMenu onClose={() => setMobileOpen(false)} /> : null}</AnimatePresence>
-    </>
+    </MotionConfig>
   )
 }
 
@@ -252,98 +335,89 @@ function AutoHeight({ children }: { children: ReactNode }) {
   }, [])
   return (
     <div className="overflow-hidden transition-[height] duration-500 ease-[var(--ease-out)]" style={{ height: h ?? 'auto' }}>
-      <div ref={inner}>{children}</div>
+      <div ref={inner} className="relative">
+        {children}
+      </div>
+    </div>
+  )
+}
+
+type Entry = { href: string; label: string; icon: IconName }
+
+/** A titled group of menu links; a soft highlight glides to whichever one is under the pointer. */
+function MenuGroup({ id, title, entries, cols, className }: { id: string; title: string; entries: Entry[]; cols: 1 | 2; className?: string }) {
+  const [hover, setHover] = useState<string | null>(null)
+  return (
+    <div className={className}>
+      <p className="t-label px-3 text-ink-3">{title}</p>
+      <LayoutGroup id={id}>
+        <ul className={cn('mt-3 grid gap-x-3 gap-y-0.5', cols === 2 ? 'grid-cols-2' : 'grid-cols-1')} onMouseLeave={() => setHover(null)}>
+          {entries.map((e, i) => (
+            <motion.li
+              key={e.href}
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.06 + i * 0.022, duration: 0.45, ease }}
+              className="relative"
+              onMouseEnter={() => setHover(e.href)}
+            >
+              {hover === e.href ? <motion.span layoutId="menu-hover" className="menu-hover" transition={lensSpring} /> : null}
+              <Link href={e.href} className="menu-item group" onFocus={() => setHover(e.href)}>
+                <span className="menu-icon">
+                  <Icon name={e.icon} size={17} />
+                </span>
+                <span className="min-w-0 truncate">{e.label}</span>
+                <Icon name="arrow" size={14} className="menu-arrow" />
+              </Link>
+            </motion.li>
+          ))}
+        </ul>
+      </LayoutGroup>
+    </div>
+  )
+}
+
+function PanelFoot({ href, label }: { href: string; label: string }) {
+  return (
+    <div className="col-span-12 mt-5 flex items-center justify-between border-t border-line px-3 pt-4">
+      <Link href={href} className="group inline-flex items-center gap-2 text-[0.875rem] font-medium text-ink">
+        <span className="link-draw">{label}</span>
+        <Icon name="arrow" size={14} className="transition-transform duration-500 ease-[var(--ease-out)] group-hover:translate-x-1" />
+      </Link>
+      <Link href="/contact-us#contact-form" className="t-label text-ink-3 transition-colors hover:text-ink">
+        Free 30-min strategy call
+      </Link>
     </div>
   )
 }
 
 function ServicesPanel() {
+  const what: Entry[] = [
+    ...services.map((s) => ({ href: `/services#${s.id}`, label: s.label, icon: serviceIcon[s.id] })),
+    { href: '/services/ai-agent-development', label: 'AI Agent Development', icon: 'bot' },
+  ]
+  const local: Entry[] = locationLinks.map((l) => ({ href: l.href, label: l.short, icon: locationIcon[l.href] ?? 'pin' }))
   return (
-    <div className="grid grid-cols-12 gap-4 p-3">
-      <div className="col-span-8">
-        <p className="t-label mb-2 px-3 pt-2 text-ink-3">Six services · one growth partner</p>
-        <ul className="grid grid-cols-2 gap-1">
-          {services.map((s, i) => (
-            <motion.li
-              key={s.id}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.035 * i, duration: 0.5, ease }}
-            >
-              <Link href={`/services#${s.id}`} className="nav-item group flex gap-4 rounded-[16px] p-3">
-                <span className="t-label mt-1 text-teal-ink">{s.n}</span>
-                <span>
-                  <span className="t-h4 block text-ink">{s.label}</span>
-                  <span className="t-small mt-0.5 block">{s.line}</span>
-                </span>
-              </Link>
-            </motion.li>
-          ))}
-        </ul>
-      </div>
-      <div className="col-span-4 flex flex-col gap-2">
-        <Link href="/services/ai-agent-development" className="group relative overflow-hidden rounded-[16px] bg-stage p-5 text-stage-ink">
-          <span className="iso-grid opacity-60 [--grid:var(--stage-line)]" />
-          <span className="relative">
-            <span className="t-label text-teal">Agentic AI</span>
-            <span className="t-h3 mt-3 block">AI Agent Development</span>
-            <span className="mt-2 block text-sm text-stage-ink-2">
-              RAG chatbots, voice agents and multi-agent systems. From prototype in 7 days.
-            </span>
-            <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium">
-              Explore <Icon name="arrow" size={15} className="transition-transform group-hover:translate-x-1" />
-            </span>
-          </span>
-        </Link>
-        <div className="rounded-[16px] border border-line p-4">
-          <p className="t-label mb-2 text-ink-3">In Ahmedabad</p>
-          <ul className="grid gap-1">
-            {locationLinks.map((l) => (
-              <li key={l.href}>
-                <Link href={l.href} className="link-draw text-sm text-ink-2 hover:text-ink">
-                  {l.short}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+    <div className="grid grid-cols-12 gap-x-8 p-6 xl:gap-x-10">
+      <MenuGroup id="menu-services" title="Services" entries={what} cols={2} className="col-span-7" />
+      <MenuGroup id="menu-local" title="In Ahmedabad" entries={local} cols={1} className="col-span-5 border-l border-line pl-8 xl:pl-10" />
+      <PanelFoot href="/services" label="View all services" />
     </div>
   )
 }
 
 function SolutionsPanel() {
-  const groups = solutionsIndex.groups
+  const [crm, erp] = solutionsIndex.groups
+  const toEntries = (g: typeof crm): Entry[] =>
+    g.items.flatMap((it) => {
+      const sol = solutions.find((s) => s.label === it.label)
+      return sol ? [{ href: `/solutions/${sol.slug}`, label: it.label, icon: solutionIcon[sol.slug] ?? 'layers' }] : []
+    })
   return (
-    <div className="grid grid-cols-12 gap-4 p-3">
-      {groups.map((g, gi) => (
-        <div key={g.title} className={gi === 0 ? 'col-span-8' : 'col-span-4'}>
-          <p className="t-label mb-2 px-3 pt-2 text-ink-3">{g.title}</p>
-          <ul className={cn('grid gap-1', gi === 0 ? 'grid-cols-2' : 'grid-cols-1')}>
-            {g.items.map((it, i) => {
-              const sol = solutions.find((s) => s.label === it.label)
-              return (
-                <motion.li
-                  key={it.label}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.03 * i, duration: 0.5, ease }}
-                >
-                  <Link href={`/solutions/${sol?.slug ?? ''}`} className="nav-item block rounded-[16px] px-3 py-2.5">
-                    <span className="block text-[0.95rem] font-semibold text-ink">{it.label}</span>
-                    <span className="t-small block line-clamp-1">{it.summary}</span>
-                  </Link>
-                </motion.li>
-              )
-            })}
-          </ul>
-          {gi === 1 ? (
-            <Link href="/solutions" className="mt-2 inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-teal-ink">
-              Explore all solutions <Icon name="arrow" size={15} />
-            </Link>
-          ) : null}
-        </div>
-      ))}
+    <div className="grid grid-cols-12 gap-x-8 p-6 xl:gap-x-10">
+      <MenuGroup id="menu-crm" title={crm.title} entries={toEntries(crm)} cols={2} className="col-span-8" />
+      <MenuGroup id="menu-erp" title={erp.title} entries={toEntries(erp)} cols={1} className="col-span-4 border-l border-line pl-8 xl:pl-10" />
+      <PanelFoot href="/solutions" label="Explore all solutions" />
     </div>
   )
 }

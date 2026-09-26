@@ -11,7 +11,7 @@ export function ServiceSpec({ s, flip = false }: { s: Service; flip?: boolean })
   return (
     <section id={s.id} className="rails relative scroll-mt-[140px] border-b border-line">
       <div className="shell grid gap-12 py-[clamp(72px,9vw,128px)] lg:grid-cols-12 lg:gap-10">
-        <div className={cn('lg:col-span-6', flip && 'lg:order-2 lg:col-start-7')}>
+        <div className={cn('min-w-0 lg:col-span-6', flip && 'lg:order-2 lg:col-start-7')}>
           <p className="t-label flex items-center gap-3 text-ink-3">
             <span className="text-teal-ink">Part {s.n}</span>
             <span className="h-px w-8 bg-line-2" />
@@ -39,16 +39,20 @@ export function ServiceSpec({ s, flip = false }: { s: Service; flip?: boolean })
             ))}
           </ul>
           <div className="mt-9 flex flex-wrap items-center gap-3">
-            <KeyButton href="#contact-form">{s.cta}</KeyButton>
+            <KeyButton href="#contact-form">
+              {/* the full label needs about 340px; the smallest phones get the short one */}
+              <span className="min-[380px]:hidden">Start a project</span>
+              <span className="hidden min-[380px]:inline">{s.cta}</span>
+            </KeyButton>
             <Link href="/portfolio" className="link-draw px-2 text-[0.95rem] font-medium">
               See case studies
             </Link>
           </div>
         </div>
 
-        <div className={cn('lg:col-span-5', flip ? 'lg:order-1 lg:col-start-1' : 'lg:col-start-8')}>
+        <div className={cn('min-w-0 lg:col-span-5', flip ? 'lg:order-1 lg:col-start-1' : 'lg:col-start-8')}>
           <div
-            className="relative overflow-hidden rounded-[18px] border border-line bg-raise p-6 sm:p-8"
+            className="relative overflow-hidden rounded-[18px] border border-line bg-raise p-4 min-[360px]:p-6 sm:p-8"
             data-reveal="rise"
             style={{ ['--d' as string]: '120ms' }}
           >
