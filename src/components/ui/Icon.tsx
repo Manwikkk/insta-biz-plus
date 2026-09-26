@@ -41,6 +41,15 @@ type IconName =
   | 'medical'
   | 'users'
   | 'package'
+  // hero figures
+  | 'truck'
+  | 'file'
+  | 'bell'
+  | 'send'
+  | 'lock'
+  | 'scan'
+  | 'pulse'
+  | 'bed'
   // social
   | 'linkedin'
   | 'instagram'
@@ -188,6 +197,30 @@ const paths: Record<IconName, React.ReactNode> = {
     </>
   ),
   package: <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9ZM4 7.5l8 4.5 8-4.5M12 12v9" />,
+  truck: (
+    <>
+      <path d="M2.5 16.5v-10h11v10M13.5 9.5h4l3 3.5v3.5h-1.3M9 16.5h6.8M2.5 16.5h2.3" />
+      <circle cx="7" cy="17" r="2" />
+      <circle cx="17.6" cy="17" r="2" />
+    </>
+  ),
+  file: <path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.5ZM14 3.5v5h5M9 13h6M9 16.5h4" />,
+  bell: <path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15ZM10 20.5a2.2 2.2 0 0 0 4 0" />,
+  send: <path d="M20.5 3.5 10 14M20.5 3.5l-6.5 17-4-6.5-6.5-4Z" />,
+  lock: (
+    <>
+      <rect x="5" y="10.5" width="14" height="10" rx="2" />
+      <path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" />
+    </>
+  ),
+  scan: <path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M8 8.5v7M11 8.5v7M13.5 8.5v7M16 8.5v7" />,
+  pulse: <path d="M3 12h4l2-5 4 10 2.5-5H21" />,
+  bed: (
+    <>
+      <path d="M3 18.5v-12M3 14.5h18v4M21 14.5V12a2.5 2.5 0 0 0-2.5-2.5H11v5" />
+      <circle cx="7" cy="11.5" r="1.8" />
+    </>
+  ),
   linkedin: (
     <>
       <rect x="3.5" y="3.5" width="17" height="17" rx="3.5" />

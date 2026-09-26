@@ -70,16 +70,17 @@ export function Process() {
               <li
                 key={s.n}
                 data-step
+                data-reveal="rise"
                 className="process-step relative lg:border-r lg:border-line lg:px-7 lg:pt-[clamp(20px,4vh,40px)] lg:last:border-r-0 lg:first:pl-0"
               >
                 <span className="process-node absolute -left-[41px] top-1 grid size-[19px] place-items-center rounded-[5px] border border-line-2 bg-bg lg:-top-[8px] lg:left-auto lg:right-auto" />
                 <div className="lg:mt-2">
                   <Dimension label={s.when} />
                 </div>
-                <p className="process-num t-numeral mt-8 text-[clamp(3.4rem,min(5vw,9vh),5rem)] lg:mt-[clamp(16px,3.4vh,32px)]">
+                <p className="process-num t-numeral mt-5 text-[2.9rem] lg:mt-[clamp(16px,3.4vh,32px)] lg:text-[clamp(3.4rem,min(5vw,9vh),5rem)]">
                   {s.n}
                 </p>
-                <h3 className="t-h3 mt-6 lg:mt-[clamp(12px,2.6vh,24px)]">{s.title}</h3>
+                <h3 className="t-h3 mt-3 lg:mt-[clamp(12px,2.6vh,24px)]">{s.title}</h3>
                 <p className="t-body mt-3">{s.body}</p>
               </li>
             ))}

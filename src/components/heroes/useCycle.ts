@@ -4,13 +4,19 @@ import { useEffect, useRef, useState } from 'react'
 
 /**
  * Steps through `count` states every `ms` while the element is on screen and not held
- * (pointer over it, or a choice just made). Stays on the first state for reduced motion.
+ * (pointer over it, or a choice just made). For reduced motion it stays put, on `rest`
+ * when given (the most telling state) and otherwise on the first.
  */
-export function useCycle<T extends HTMLElement = HTMLDivElement>(count: number, ms: number) {
+export function useCycle<T extends HTMLElement = HTMLDivElement>(count: number, ms: number, rest?: number) {
   const ref = useRef<T>(null)
   const [i, setI] = useState(0)
   const [held, setHeld] = useState(false)
   const [visible, setVisible] = useState(false)
+
+  // settle on the resting state once, on mount
+  useEffect(() => {
+    if (rest != null && matchMedia('(prefers-reduced-motion: reduce)').matches) setI(rest)
+  }, [rest])
 
   useEffect(() => {
     const el = ref.current

@@ -36,6 +36,15 @@ const SCATTER: Array<[number, number, number]> = [
   [-0.56, -0.66, -0.4],
 ]
 
+/** The same drift on a tall (phone) screen: parts keep to the bands above and below the copy. */
+const SCATTER_TALL: Array<[number, number, number]> = [
+  [-0.58, 0.76, -0.5],
+  [0.62, 0.68, -0.3],
+  [-0.72, -0.34, -0.2],
+  [0.7, -0.6, -0.6],
+  [-0.24, -0.84, -0.4],
+]
+
 /** Deterministic pseudo-random so the scatter is identical on every visit. */
 function rand(seed: number) {
   const x = Math.sin(seed * 127.1 + 311.7) * 43758.5453
@@ -201,7 +210,7 @@ function Engine({ theme }: { theme: Theme }) {
       if (sc > 0.001) {
         // Scatter target lives in screen space and is clamped so the whole part stays in view.
         const r = b.radius * g.scale.x * pieceScale * 1.08
-        const [nx, ny, nz] = SCATTER[i]
+        const [nx, ny, nz] = (vh > vw * 1.15 ? SCATTER_TALL : SCATTER)[i]
         const tx = THREE.MathUtils.clamp(nx * halfW, -(halfW * 0.95 - r), halfW * 0.95 - r)
         const ty = THREE.MathUtils.clamp(ny * halfH, -(halfH * 0.9 - r), halfH * 0.9 - r)
         _t.set(tx + Math.sin(t * 0.4 + i) * 0.05, ty + Math.cos(t * 0.35 + i * 2) * 0.04, nz)

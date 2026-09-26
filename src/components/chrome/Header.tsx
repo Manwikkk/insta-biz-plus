@@ -2,12 +2,13 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState, type MouseEvent, type ReactNode } from 'react'
 import { AnimatePresence, LayoutGroup, MotionConfig, motion } from 'motion/react'
 import { Logo } from './Logo'
 import { ThemeToggle } from './ThemeToggle'
 import { Icon, type IconName } from '@/components/ui/Icon'
 import { MobileMenu } from './MobileMenu'
+import { useLenis } from '@/components/motion/SmoothScroll'
 import { primaryNav, locationLinks, site } from '@/content/site'
 import { services } from '@/content/services'
 import { solutionsIndex, solutions } from '@/content/data'
@@ -37,6 +38,7 @@ const AHMEDABAD = new Set(locationLinks.map((l) => l.href))
  */
 export function Header() {
   const pathname = usePathname()
+  const lenis = useLenis()
   const [scrolled, setScrolled] = useState(false)
   const [hidden, setHidden] = useState(false)
   const [menu, setMenu] = useState<MenuId | null>(null)
@@ -112,6 +114,15 @@ export function Header() {
     closeTimer.current = window.setTimeout(() => setMenu(null), 160)
   }
 
+  /** A bar link to the page you are already on glides back to its top instead of doing nothing. */
+  const toTop = (e: MouseEvent, href: string) => {
+    if (pathname !== href) return
+    e.preventDefault()
+    if (window.location.hash) history.replaceState(null, '', href)
+    if (lenis) lenis.scrollTo(0, { duration: 1.2 })
+    else window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   const isActive = (href: string) => {
     if (href === '/services') return pathname.startsWith('/services') || AHMEDABAD.has(pathname)
     return pathname.startsWith(href)
@@ -174,12 +185,28 @@ export function Header() {
                     >
                       {lensOn === item.href ? <motion.span layoutId="nav-lens" className="nav-lens" transition={lensSpring} /> : null}
                       {item.menu ? (
-                        <button
-                          type="button"
+                        // The label is the page itself: hovering (or focusing) opens its menu, clicking goes there.
+                        <Link
+                          href={item.href}
+                          aria-haspopup="true"
                           aria-expanded={expanded}
                           aria-controls="nav-panel"
-                          onClick={() => (expanded ? setMenu(null) : open(item.menu!))}
-                          onFocus={() => setLens(item.href)}
+                          aria-current={pathname === item.href ? 'page' : undefined}
+                          onFocus={() => {
+                            setLens(item.href)
+                            open(item.menu!)
+                          }}
+                          onKeyDown={(e) => {
+                            // arrow down steps into the open panel
+                            if (e.key !== 'ArrowDown') return
+                            e.preventDefault()
+                            open(item.menu!)
+                            requestAnimationFrame(() => document.querySelector<HTMLElement>('#nav-panel a')?.focus())
+                          }}
+                          onClick={(e) => {
+                            setMenu(null)
+                            toTop(e, item.href)
+                          }}
                           className={cls}
                         >
                           {item.label}
@@ -192,11 +219,12 @@ export function Header() {
                               expanded && 'rotate-180 text-ink',
                             )}
                           />
-                        </button>
+                        </Link>
                       ) : (
                         <Link
                           href={item.href}
                           onFocus={() => setLens(item.href)}
+                          onClick={(e) => toTop(e, item.href)}
                           className={cls}
                           aria-current={active ? 'page' : undefined}
                         >

@@ -468,6 +468,15 @@ html[data-header='hidden'] {
     -webkit-tap-highlight-color: transparent;
     user-select: none;
   }
+  /* never wider than its column: a long label ends in an ellipsis on the smallest phones */
+  .btn {
+    max-width: 100%;
+  }
+  .btn > span:first-child {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .btn:hover {
     transform: translateY(-1px);
     --b-lift: 5px;
@@ -1250,15 +1259,17 @@ html[data-header='hidden'] {
     animation: none !important;
   }
 }
-@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   /* Scroll-scrubbed chapters are driven by GSAP; CSS reveal transitions would double-smooth them. */
   [data-p][data-reveal] {
     transition: none !important;
   }
-  /* The problem chapter's second statement shares the screen with the first. It stays hidden
-     until the scroll timeline reveals it (inline styles win), so the two can never stack. */
+  /* The problem chapter's second statement shares the screen with the first, and on phones the
+     symptoms share one column. They stay hidden until the scroll timeline reveals them (inline
+     styles win), so nothing can stack. */
   .js #problem [data-p='turn'] .ln,
-  .js #problem [data-p='resolve'] {
+  .js #problem [data-p='resolve'],
+  .js #problem [data-frag] {
     opacity: 0;
     visibility: hidden;
   }
@@ -2165,6 +2176,178 @@ html[data-header='hidden'] {
   .code-line {
     clip-path: none;
     transition: none;
+  }
+}
+
+/* Solution-page hero figures: each industry's software doing its most telling job */
+@layer components {
+  /* manufacturing: the belt that carries an order between stations */
+  .sv-belt {
+    background-color: var(--sink);
+    background-image: repeating-linear-gradient(90deg, var(--line-2) 0 2px, transparent 2px 12px);
+    animation: sv-belt 1.1s linear infinite;
+  }
+  @keyframes sv-belt {
+    to {
+      background-position: 12px 0;
+    }
+  }
+  /* a truck crossing its route */
+  .sv-drive {
+    left: calc(100% - 24px);
+    animation: sv-drive 2.8s var(--ease-in-out) 0.2s both;
+  }
+  @keyframes sv-drive {
+    from {
+      left: 0;
+    }
+  }
+  /* a bar or rail segment filling from the left */
+  .sv-grow {
+    animation: sv-grow 0.7s var(--ease-out) both;
+    animation-delay: var(--d, 0ms);
+  }
+  @keyframes sv-grow {
+    from {
+      transform: scaleX(0);
+    }
+  }
+  /* something arriving in its moment */
+  .sv-in {
+    animation: sv-in 0.5s var(--ease-out) both;
+    animation-delay: var(--d, 0ms);
+  }
+  @keyframes sv-in {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+  }
+  /* a checklist tick */
+  .sv-pop {
+    animation: sv-pop 0.45s cubic-bezier(0.2, 1.4, 0.4, 1) both;
+    animation-delay: var(--d, 0ms);
+  }
+  @keyframes sv-pop {
+    from {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+  }
+  /* the visa stamp lands */
+  .sv-stamp {
+    transform: rotate(-8deg);
+    animation: sv-stamp 0.55s cubic-bezier(0.2, 1.3, 0.4, 1) both;
+    animation-delay: var(--d, 0ms);
+  }
+  @keyframes sv-stamp {
+    from {
+      opacity: 0;
+      transform: rotate(-16deg) scale(1.8);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(-8deg) scale(1);
+    }
+  }
+  /* a route drawing itself (paths use pathLength="100") */
+  .sv-draw {
+    stroke-dasharray: 100;
+    animation: sv-draw var(--dur, 2s) var(--ease-out) both;
+  }
+  @keyframes sv-draw {
+    from {
+      stroke-dashoffset: 100;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  /* itinerary days dropping into the plan */
+  .sv-drop {
+    animation: sv-drop 0.55s var(--ease-out) both;
+    animation-delay: var(--d, 0ms);
+  }
+  @keyframes sv-drop {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  /* insurance: the radar sweep */
+  .sv-sweep {
+    transform-box: view-box;
+    transform-origin: 100px 100px;
+    animation: sv-spin 5s linear infinite;
+  }
+  @keyframes sv-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /* hospital: a heartbeat travelling the trace */
+  .sv-ecg {
+    stroke-dasharray: 22 100;
+    animation: sv-ecg 2.4s linear infinite;
+  }
+  @keyframes sv-ecg {
+    from {
+      stroke-dashoffset: 22;
+    }
+    to {
+      stroke-dashoffset: -100;
+    }
+  }
+  /* inventory: the scanner's laser */
+  .sv-laser {
+    top: 12%;
+    animation: sv-laser 1.6s var(--ease-in-out) infinite alternate;
+  }
+  @keyframes sv-laser {
+    from {
+      top: 8%;
+    }
+    to {
+      top: 88%;
+    }
+  }
+  /* education: light running down the funnel */
+  .sv-shine::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.4), transparent);
+    transform: translateX(-100%);
+    animation: sv-shine 3s var(--ease-in-out) infinite;
+    animation-delay: var(--d, 0ms);
+  }
+  @keyframes sv-shine {
+    0% {
+      transform: translateX(-100%);
+    }
+    55%,
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sv-belt,
+  .sv-drive,
+  .sv-grow,
+  .sv-in,
+  .sv-pop,
+  .sv-stamp,
+  .sv-draw,
+  .sv-drop,
+  .sv-sweep,
+  .sv-ecg,
+  .sv-laser,
+  .sv-shine::after {
+    animation: none;
+  }
+  .sv-ecg {
+    stroke-dasharray: none;
   }
 }
 

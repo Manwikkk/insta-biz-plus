@@ -1,7 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { useEffect, useState, type MouseEvent } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import { Logo } from './Logo'
 import { ThemeToggle } from './ThemeToggle'
@@ -33,6 +34,18 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
   }, [onClose])
 
   const items = [{ label: 'Home', href: '/' }, ...primaryNav]
+  const pathname = usePathname()
+  // A link to the page you are already on closes the menu onto the top of that page.
+  const go = (e: MouseEvent, href: string) => {
+    if (href === pathname) {
+      e.preventDefault()
+      if (window.location.hash) history.replaceState(null, '', href)
+      const lenis = (window as unknown as { __lenis?: { scrollTo(y: number, o?: object): void } }).__lenis
+      if (lenis) lenis.scrollTo(0, { immediate: true, force: true })
+      else window.scrollTo(0, 0)
+    }
+    onClose()
+  }
 
   return (
     <motion.div
@@ -74,7 +87,7 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
                 transition={{ delay: 0.18 + i * 0.05, duration: 0.7, ease }}
               >
                 <div className="flex items-center">
-                  <Link href={item.href} onClick={onClose} className="flex flex-1 items-baseline gap-4 py-4">
+                  <Link href={item.href} onClick={(e) => go(e, item.href)} className="flex flex-1 items-baseline gap-4 py-4">
                     <span className="t-label text-teal-ink">{String(i + 1).padStart(2, '0')}</span>
                     <span className="font-display text-[2rem] font-bold leading-none tracking-[-0.035em] [font-stretch:108%]">
                       {item.label}

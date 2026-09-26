@@ -7,7 +7,7 @@ import { PageHero } from '@/components/sections/PageHero'
 import { KeyButton } from '@/components/ui/KeyButton'
 import { SectionHead, Eyebrow } from '@/components/ui/SectionHead'
 import { SplitReveal } from '@/components/motion/SplitReveal'
-import { SolutionFlow } from '@/components/heroes/SolutionFlow'
+import { SolutionVisual } from '@/components/heroes/SolutionVisual'
 import { ModuleBoard } from '@/components/solutions/ModuleBoard'
 import { Steps } from '@/components/sections/Steps'
 import { Faq } from '@/components/sections/Faq'
@@ -50,7 +50,7 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
             </KeyButton>
           </>
         }
-        figure={<SolutionFlow s={s} />}
+        figure={<SolutionVisual s={s} />}
         wide
         size="h2"
       />
