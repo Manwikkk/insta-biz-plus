@@ -316,5 +316,11 @@
     "lastModified": "2026-05-11T00:00:00.000Z",
     "changeFrequency": "monthly",
     "priority": 0.6
+  },
+  {
+    "route": "/products",
+    "lastModified": null,
+    "changeFrequency": "monthly",
+    "priority": 0.9
   }
 ]

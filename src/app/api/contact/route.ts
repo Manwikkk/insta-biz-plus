@@ -27,7 +27,7 @@ export async function POST(req: Request) {
     website: str('website', 500),
     message: str('message'),
     needs: Array.isArray(body.needs) ? (body.needs as unknown[]).map(String).slice(0, 10) : [],
-    budget: str('budget', 40),
+    timeline: str('timeline', 40),
     goal: str('goal', 60),
     page: str('page', 300),
     receivedAt: new Date().toISOString(),

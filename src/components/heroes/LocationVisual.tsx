@@ -134,7 +134,7 @@ function CodePipeline() {
           {CODE.map((line, k) => (
             <div key={k} className="contents">
               <span className="select-none text-right text-ink-3">{k + 1}</span>
-              <span className={cn('code-line whitespace-pre', k < typed && 'is-typed')}>
+              <span className={cn('code-line whitespace-pre-wrap [overflow-wrap:anywhere]', k < typed && 'is-typed')}>
                 {line.map(([text, t], j) => (
                   <span key={j} className={tone(t)}>
                     {text}
@@ -286,7 +286,7 @@ function OdooModules() {
               <span className={cn('grid size-9 place-items-center rounded-[10px] transition-colors duration-500', k < done ? 'bg-ink text-bg' : 'bg-raise text-ink-3')}>
                 <Icon name={icon} size={17} />
               </span>
-              <span className="w-full truncate text-[0.7rem] font-medium">{name}</span>
+              <span lang="en" className="w-full hyphens-auto break-words text-[0.7rem] font-medium leading-tight">{name}</span>
               <span className={cn('t-label text-[0.5rem]', k < done ? 'text-teal-ink' : 'text-ink-3')}>{k < done ? 'Ready' : k === done ? 'Setting up' : 'Planned'}</span>
             </div>
           ))}

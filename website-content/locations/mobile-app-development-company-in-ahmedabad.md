@@ -195,7 +195,7 @@ FAQs
 
 **How much does mobile app development cost in Ahmedabad?**
 
-A mobile app in Ahmedabad starts at around ₹2,50,000 for an MVP, ₹5,00,000+ for a standard app on both platforms, and ₹8,00,000+ for a marketplace app with payments and chat. We share a fixed INR quote with GST invoice within 24 hours.
+The cost depends on scope: an MVP, a standard app on both platforms and a marketplace app with payments and chat are very different builds. We share a fixed INR quote with GST invoice within 24 hours.
 
 **Which is the best mobile app development company in Ahmedabad?**
 
@@ -270,7 +270,7 @@ By submitting, you agree to be contacted by Insta Biz Web. We never share your d
 
 ### How much does mobile app development cost in Ahmedabad?
 
-A mobile app in Ahmedabad starts at around ₹2,50,000 for an MVP, ₹5,00,000+ for a standard app on both platforms, and ₹8,00,000+ for a marketplace app with payments and chat. We share a fixed INR quote with GST invoice within 24 hours.
+The cost depends on scope: an MVP, a standard app on both platforms and a marketplace app with payments and chat are very different builds. We share a fixed INR quote with GST invoice within 24 hours.
 
 ### Which is the best mobile app development company in Ahmedabad?
 
@@ -817,7 +817,7 @@ Resources
         "name": "How much does mobile app development cost in Ahmedabad?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A mobile app in Ahmedabad starts at around ₹2,50,000 for an MVP, ₹5,00,000+ for a standard app on both platforms, and ₹8,00,000+ for a marketplace app with payments and chat. We share a fixed INR quote with GST invoice within 24 hours."
+          "text": "The cost depends on scope: an MVP, a standard app on both platforms and a marketplace app with payments and chat are very different builds. We share a fixed INR quote with GST invoice within 24 hours."
         }
       },
       {

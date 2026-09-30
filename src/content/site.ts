@@ -40,15 +40,12 @@ export const site = {
   ],
 } as const
 
-/** Audited media URLs (website-content media references). */
-export const MEDIA = 'https://www.instabizweb.com'
-export const media = (p: string) => (/^https?:\/\//.test(p) ? p : `${MEDIA}${p.startsWith('/') ? p : `/${p}`}`)
-
 export const primaryNav = [
   { label: 'Services', href: '/services', menu: 'services' as const },
   { label: 'Solutions', href: '/solutions', menu: 'solutions' as const },
-  { label: 'About Us', href: '/about-us' },
+  { label: 'Products', href: '/products', menu: 'products' as const },
   { label: 'Portfolio', href: '/portfolio' },
+  { label: 'About Us', href: '/about-us' },
   { label: 'Blogs', href: '/blogs' },
   { label: 'Contact', href: '/contact-us' },
 ]
@@ -99,13 +96,13 @@ export const locationLinks = [
 
 /** Lead form options, in the order of the services (01–05). */
 export const needOptions = ['Business Automation', 'Mobile App', 'AI / Automation', 'CRM / ERP', 'Website', 'Other'] as const
-export const budgetOptions = ['< ₹50K', '₹50K - 1L', '₹1L - 3L', '₹3L - 10L', '10L+'] as const
+export const timelineOptions = ['Right away', 'Within a month', 'In 1-3 months', 'Just exploring'] as const
 
 /** Repeated consultation block ("Free consultation"). */
 export const consultation = {
   eyebrow: 'Free consultation',
   title: "Let's build something people love.",
-  body: "Tell us about your project. We'll get back within 2 hours with a custom proposal, timeline, and exact pricing - no fluff.",
+  body: "Tell us about your project. We'll get back within 2 hours with a custom proposal, timeline, and a clear quote - no fluff.",
   points: ['Reply within 2 hours', 'Free 30-min strategy call', 'No spam · NDA on request'],
   disclaimer: 'By submitting, you agree to be contacted by Insta Biz Web. We never share your data.',
   submit: 'Get my free proposal',

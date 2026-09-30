@@ -28,7 +28,7 @@ export function HeroWindow({
         <span className={cn('size-2.5 rounded-full', dark ? 'bg-stage-line' : 'bg-line-2')} />
         <span className={cn('size-2.5 rounded-full', dark ? 'bg-stage-line' : 'bg-line-2')} />
         <span className={cn('size-2.5 rounded-full', dark ? 'bg-stage-line' : 'bg-line-2')} />
-        <span className={cn('t-label ml-3 min-w-0 truncate text-[0.62rem]', dark ? 'text-stage-ink-2' : 'text-ink-3')}>{title}</span>
+        <span className={cn('t-label ml-3 min-w-0 text-[0.62rem] leading-tight', dark ? 'text-stage-ink-2' : 'text-ink-3')}>{title}</span>
         {right ? <span className="ml-auto flex shrink-0 items-center gap-2">{right}</span> : null}
       </div>
       {children}

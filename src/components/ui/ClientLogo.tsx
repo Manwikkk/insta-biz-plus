@@ -23,9 +23,9 @@ function fit(l: LogoFile, plateRatio: number, area: number) {
 }
 
 /**
- * A client's logo on its plate. It rests in greyscale and turns to its own colours when
- * a `.logo-hover` ancestor (or the plate itself) is hovered or focused. Logos drawn for a
- * dark ground bring their own plate colour. `ratio` is the plate's width / height.
+ * A client's logo on its plate, in its own colours (in the brand marquee it rests in
+ * greyscale until a `.logo-hover` tile is hovered or focused). Logos drawn for a dark ground
+ * bring their own plate colour. `ratio` is the plate's width / height.
  */
 export function ClientLogo({
   name,

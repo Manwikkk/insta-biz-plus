@@ -134,10 +134,15 @@ report.push(`  ${reworded} routes with reworded titles/descriptions; JSON-LD rew
   // Live URLs the site still serves (retired pages redirect instead).
   const served = (row) => Object.hasOwn(seo, row.split('|')[0].replace('https://www.instabizweb.com', '') || '/')
   const a = rows(live).filter(served)
-  const b = rows(mine)
+  // Pages added since the audit (e.g. /products) are listed too; the live URLs keep their order and values.
+  const liveUrls = new Set(rows(live).map((r) => r.split('|')[0]))
+  const b = rows(mine).filter((r) => liveUrls.has(r.split('|')[0]))
+  const added = rows(mine).length - b.length
   const ok = JSON.stringify(a) === JSON.stringify(b)
   if (!ok) failures++
-  report.push(`${ok ? '✓' : '✗'} sitemap.xml (${b.length} urls, same order/changefreq/priority as live minus ${rows(live).length - a.length} retired: ${ok})`)
+  report.push(
+    `${ok ? '✓' : '✗'} sitemap.xml (${b.length} urls, same order/changefreq/priority as live minus ${rows(live).length - a.length} retired: ${ok}; ${added} added)`,
+  )
   const blogDates = [...live.matchAll(/<loc>(https:\/\/www\.instabizweb\.com\/blogs\/[^<]+)<\/loc>\s*<lastmod>([^<]+)</g)]
     .map((m) => `${m[1]}|${m[2]}`)
     .filter(served)

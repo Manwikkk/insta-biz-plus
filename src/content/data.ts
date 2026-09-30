@@ -123,7 +123,7 @@ export type LocationPage = {
   reasons: { eyebrow: string; title: string; items: { title: string; body: string }[] }
   reviews: { eyebrow: string; title: string; items: { quote: string; name: string; localGuide: boolean }[] }
   comparison: { eyebrow: string; title: string; intro: string | null; table: { head: string[]; rows: string[][] } | null }
-  services: { eyebrow: string; title: string; intro: string | null; items: { title: string; body: string; price: string }[] }
+  services: { eyebrow: string; title: string; intro: string | null; items: { title: string; body: string }[] }
   industries: { eyebrow: string; title: string; intro: string | null; items: string[]; coverage: string }
   process: { eyebrow: string; title: string; intro: string | null; steps: { n: string; title: string; body: string }[] }
   stack: { eyebrow: string; title: string; items: { label: string; href: string | null }[] } | null

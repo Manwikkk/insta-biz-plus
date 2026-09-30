@@ -45,7 +45,7 @@ const FILES = [
   },
 ] as const
 type Id = (typeof FILES)[number]['id']
-const STAGES = ['Enquiry', 'Counselling', 'Documents', 'Filed', 'Approved']
+const STAGES = ['Enquiry', 'Consult', 'Docs', 'Filed', 'Approved']
 /** When each part of a file completes, in ms from the moment it opens. */
 const TICK = (k: number) => 350 + k * 360
 const FILED = TICK(5) + 150
@@ -112,7 +112,7 @@ export function VisaJourney({ ints }: { ints: string[] }) {
 
             {/* lodged, then the stamp lands */}
             <div className="mt-3 flex items-center justify-between gap-3 border-t border-line pt-3">
-              <span className="sv-in t-label min-w-0 truncate text-[0.56rem] text-ink-3" style={{ ['--d' as string]: `${FILED}ms` }}>
+              <span className="sv-in t-label min-w-0 text-[0.56rem] leading-snug text-ink-3" style={{ ['--d' as string]: `${FILED}ms` }}>
                 File lodged · applicant updated on WhatsApp
               </span>
               <span

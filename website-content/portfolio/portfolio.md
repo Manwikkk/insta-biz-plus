@@ -5,7 +5,7 @@
 - URL: https://www.instabizweb.com/portfolio
 - Page Type: Portfolio
 - Meta Title: Portfolio - Real products, real founders, real outcomes · Insta Biz Web
-- Meta Description: 16+ products engineered end-to-end by Insta Biz Web - from ride-hailing apps to AI calling agents, ecommerce platforms to bespoke CRMs. Browse our work.
+- Meta Description: 40+ products engineered end-to-end by Insta Biz Web - from ride-hailing apps to AI calling agents, marketplaces to bespoke CRMs. Browse our work.
 - Canonical URL: https://www.instabizweb.com/portfolio
 - Robots: index, follow
 - Author meta: Insta Biz Web
@@ -320,7 +320,7 @@ Resources
 ## Additional Metadata
 
 - Open Graph title: Portfolio · Insta Biz Web
-- Open Graph description: 16+ products engineered end-to-end - ride-hailing apps, AI agents, ecommerce platforms, custom CRMs and more. See our work.
+- Open Graph description: 40+ products engineered end-to-end - ride-hailing apps, AI agents, marketplaces, custom CRMs and more. See our work.
 - Open Graph URL: https://www.instabizweb.com/portfolio
 - Open Graph type: website
 - Open Graph image: https://www.instabizweb.com/logo.png
@@ -329,7 +329,7 @@ Resources
 - Open Graph locale: en_IN
 - Twitter card: summary_large_image
 - Twitter title: Portfolio · Insta Biz Web
-- Twitter description: 16+ products engineered end-to-end - ride-hailing apps, AI agents, ecommerce platforms, custom CRMs and more.
+- Twitter description: 40+ products engineered end-to-end - ride-hailing apps, AI agents, marketplaces, custom CRMs and more.
 - Twitter image: https://www.instabizweb.com/logo.png
 - Twitter site: @instabizweb
 - Googlebot: index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1
@@ -437,122 +437,338 @@ Resources
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Instant Dukaan",
-        "description": "Ecommerce website builder that helps local shops and entrepreneurs launch their own online store in minutes - no code, no friction.",
-        "url": "https://www.instantdukaan.com/",
-        "image": "https://www.instabizweb.com/portfolio/instantdukaan.png"
+        "name": "BluTec Scout",
+        "description": "AI-powered lead extraction from Google Maps and websites — emails, phones, social links, and validated business data for outbound teams.",
+        "url": "https://scout.blutec.ai/",
+        "image": "https://www.instabizweb.com/products/scout-1.webp"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Chennai Cabs",
-        "description": "Ride-sharing application similar to Uber and Ola. 10K+ downloads, 4-5K active users and drivers across Chennai.",
-        "url": "https://play.google.com/store/apps/details?id=com.cabs.chennaicabs&hl=en",
-        "image": "https://www.instabizweb.com/portfolio/chennai-cabs.jpg"
+        "name": "BluTec Ping",
+        "description": "WhatsApp automation at scale — bulk broadcasts, Meta-approved templates, AI chatbot flows, live chats, and agent management.",
+        "url": "https://ping.blutec.ai/",
+        "image": "https://www.instabizweb.com/products/ping-1.webp"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Blutec Ping",
-        "description": "WhatsApp automation platform with broadcasting, AI chatbots, and complete messaging workflows for sales and support teams.",
-        "url": "https://ping.blutec.ai/",
-        "image": "https://www.instabizweb.com/portfolio/blutec-ping.png"
+        "name": "BluTec Echo",
+        "description": "AI voice agents for qualification, support, reception, and dispatch — with transcripts, analytics, and multi-provider voices.",
+        "url": "https://echo.blutec.ai/",
+        "image": "https://www.instabizweb.com/products/echo-1.webp"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "BluTec Connect",
-        "description": "Inbound and outbound campaign dialer for sales, support, and BPO teams - smart routing, live monitoring, compliance, analytics.",
-        "url": "https://connect.blutec.ai/",
-        "image": "https://www.instabizweb.com/portfolio/blutec-connect.png"
+        "description": "Inbound & outbound dialer for BPO and sales — campaigns, live monitoring, whisper/barge, AI call audit, IVR, and analytics.",
+        "url": "https://dialer.blutec.ai/login",
+        "image": "https://www.instabizweb.com/products/dialer-1.webp"
       },
       {
         "@type": "ListItem",
         "position": 5,
-        "name": "Blutec Echo",
-        "description": "AI-powered calling agent that automates customer interactions, qualifies leads, and lifts response efficiency for sales and support.",
-        "url": "https://echo.blutec.ai/",
-        "image": "https://www.instabizweb.com/portfolio/blutec-echo.png"
+        "name": "Chennai Cabs",
+        "description": "Ride-hailing app widely used in Chennai — similar to Rapido, Ola, and Uber with separate rider and user apps.",
+        "url": "https://play.google.com/store/apps/details?id=com.cabs.chennaicabs&hl=en",
+        "image": "https://www.instabizweb.com/portfolio/chennai-cabs.webp"
       },
       {
         "@type": "ListItem",
         "position": 6,
-        "name": "ConvrsAI",
-        "description": "Conversational AI product for intelligent customer communication, automation flows, and faster engagement across digital channels.",
-        "url": "https://convrsai.com/",
-        "image": "https://www.instabizweb.com/portfolio/convrsai.png"
+        "name": "DHN",
+        "description": "Digital health news app backed by the Government of UP — latest HealthTech news, trends, and policy updates.",
+        "url": "https://play.google.com/store/apps/details?id=com.dhn&hl=en",
+        "image": "https://www.instabizweb.com/portfolio/dhn.webp"
       },
       {
         "@type": "ListItem",
         "position": 7,
-        "name": "Property Milan",
-        "description": "Real estate platform for buying, selling, and renting verified properties - built around trust, transparency, and clean discovery.",
-        "url": "https://www.propertymilan.com/",
-        "image": "https://www.instabizweb.com/portfolio/property-milan.png"
+        "name": "CashFlex",
+        "description": "Marketplace to buy and sell used electronics — mobiles, laptops, tablets, and accessories with verified listings.",
+        "url": "https://play.google.com/store/apps/details?id=com.cashflex_user&hl=en",
+        "image": "https://www.instabizweb.com/portfolio/cashflex.webp"
       },
       {
         "@type": "ListItem",
         "position": 8,
-        "name": "Estate Rent",
-        "description": "Real estate listing platform for residential, rental, and commercial property discovery - verified listings, fast filters, smooth UX.",
-        "url": "https://www.estatrent.com/",
-        "image": "https://www.instabizweb.com/portfolio/estaterent.png"
+        "name": "Carefix",
+        "description": "On-demand home services app — book technicians for AC, appliance repair, plumbing, and more, similar to Urban Company.",
+        "url": "https://play.google.com/store/apps/details?id=com.carefix_technician&hl=en",
+        "image": "https://www.instabizweb.com/portfolio/carefix.webp"
       },
       {
         "@type": "ListItem",
         "position": 9,
-        "name": "Tender Source",
-        "description": "Tender consultancy platform that helps businesses discover live tenders, manage bid workflows, and access expert support for procurement.",
-        "url": "https://www.tendersource.co.in/",
-        "image": "https://www.instabizweb.com/portfolio/tendorsource.png"
+        "name": "Egniol",
+        "description": "MSME consultancy app — browse government schemes, apply, track status, and access business development services.",
+        "url": "https://play.google.com/store/apps/details?id=com.egniolapp&hl=en",
+        "image": "https://www.instabizweb.com/portfolio/egniol.webp"
       },
       {
         "@type": "ListItem",
         "position": 10,
-        "name": "Best Sports Bars",
-        "description": "Sports bar discovery platform helping fans find the best game-day venues by city, sport, and local bar listings.",
-        "url": "https://bestsportsbars.net/",
-        "image": "https://www.instabizweb.com/portfolio/bestsportsbar.png"
+        "name": "LinkedIn Lead Automation",
+        "description": "Automated LinkedIn outreach and lead capture workflows — profile visits, connection requests, and CRM sync.",
+        "url": "https://www.instabizweb.com/services#automation",
+        "image": "https://www.instabizweb.com/portfolio/linkedin-lead-automation.webp"
       },
       {
         "@type": "ListItem",
         "position": 11,
-        "name": "Acolyte Living",
-        "description": "UK-based student accommodation platform connecting thousands of international students with verified, comfortable homes near campus.",
-        "url": "https://acolyteliving.com/",
-        "image": "https://www.instabizweb.com/portfolio/acolyte-living.jpg"
+        "name": "IndiaMART Automation",
+        "description": "Capture and respond to IndiaMART inquiries automatically — route leads to CRM, WhatsApp, or sales dialer in real time.",
+        "url": "https://www.instabizweb.com/services#automation",
+        "image": "https://www.instabizweb.com/portfolio/indiamart-automation.webp"
       },
       {
         "@type": "ListItem",
         "position": 12,
-        "name": "Sarvam Art",
-        "description": "Student management system for coaching centres and classes - manage students, courses, schedules, and outcomes from one dashboard.",
-        "url": "https://sarvam-art.instabizweb.com/",
-        "image": "https://www.instabizweb.com/portfolio/sarvam-art.jpg"
+        "name": "WhatsApp Automation (Ping)",
+        "description": "Bulk broadcasts, AI chatbot flows, template campaigns, and live inbox — our Ping platform powers WhatsApp automation end to end.",
+        "url": "https://www.instabizweb.com/products#ping",
+        "image": "https://www.instabizweb.com/portfolio/whatsapp-automation.webp"
       },
       {
         "@type": "ListItem",
         "position": 13,
-        "name": "Odoo CRM",
-        "description": "Complete CRM solution built on Odoo, customised for sales pipelines, ops workflows, and finance integrations across industries.",
-        "url": "https://www.instabizweb.com/services#crm",
-        "image": "https://www.instabizweb.com/portfolio/odoo-crm.jpg"
+        "name": "Custom Workflow Automation",
+        "description": "Automate approvals, data sync, notifications, and internal ops across spreadsheets, CRMs, ERPs, and SaaS tools.",
+        "url": "https://www.instabizweb.com/services#automation",
+        "image": "https://www.instabizweb.com/portfolio/custom-workflow-automation.webp"
       },
       {
         "@type": "ListItem",
         "position": 14,
-        "name": "Rental Management",
-        "description": "Desktop application for wedding clothing rental shops with offline functionality - bookings, returns, deposits, and reports.",
-        "url": "https://www.instabizweb.com/portfolio",
-        "image": "https://www.instabizweb.com/portfolio/rental-management.jpg"
+        "name": "Cottons By Ridheera",
+        "description": "Garment CRM for lead management, Meta ad sync, DTC order tracking, and WhatsApp broadcast — zero manual lead entry from campaigns.",
+        "url": "https://www.instabizweb.com/services#crm",
+        "image": "https://www.instabizweb.com/portfolio/cottons-by-ridheera.webp"
       },
       {
         "@type": "ListItem",
         "position": 15,
-        "name": "Blutec Scout",
-        "description": "Browser extension for scraping Google data and extracting verified emails for lead generation - fast, focused, and accurate.",
-        "url": "https://scout.blutec.ai/",
-        "image": "https://www.instabizweb.com/portfolio/blutec-scout.jpg"
+        "name": "Best Sports Bar",
+        "description": "UK & Canada sports bar web panel with CRM — seat booking, venue management, and fan-favorite bar discovery.",
+        "url": "https://bestsportsbars.net/",
+        "image": "https://www.instabizweb.com/portfolio/best-sports-bar.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 16,
+        "name": "ConvrsAI",
+        "description": "CRM + automation for lead qualification — validates business, buyer, and purchase intent before sales engages.",
+        "url": "https://convrsai.com/",
+        "image": "https://www.instabizweb.com/portfolio/convrsai.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 17,
+        "name": "Doclinks CRM",
+        "description": "Healthcare CRM for hospitals, clinics, labs, doctors, and patients — appointments, records, and operations in one stack.",
+        "url": "https://doclinks.in/",
+        "image": "https://www.instabizweb.com/portfolio/doclinks-crm.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 18,
+        "name": "Grand Sud",
+        "description": "Full university management system for France and India — student pipelines, interviews, mail, meetings, and multi-language support.",
+        "url": "https://grand-sud.fr/",
+        "image": "https://www.instabizweb.com/portfolio/grand-sud.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 19,
+        "name": "Krishna Clinic CRM",
+        "description": "Pediatric rehabilitation clinic CRM — patient management, attendance mapping, billing, invoicing, and therapy plans.",
+        "url": "https://krishnaclinic.blutec.ai",
+        "image": "https://www.instabizweb.com/portfolio/krishna-clinic-crm.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 20,
+        "name": "Mudra Yoga",
+        "description": "Yoga studio CRM — leads, members, packages, attendance, and auto WhatsApp follow-ups and renewal reminders.",
+        "url": "https://yoga.blutec.ai/",
+        "image": "https://www.instabizweb.com/portfolio/mudra-yoga.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 21,
+        "name": "PropertyMilan",
+        "description": "Gujarat real estate platform with CRM — sellers list properties, buyers browse verified listings, and teams manage leads and inventory.",
+        "url": "https://www.propertymilan.com/",
+        "image": "https://www.instabizweb.com/portfolio/propertymilan.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 22,
+        "name": "Wedding Rental Management",
+        "description": "Wedding clothing rental system with inventory management, order tracking, and AI-assisted operations.",
+        "url": "https://www.instabizweb.com/services#crm",
+        "image": "https://www.instabizweb.com/portfolio/wedding-rental-management.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 23,
+        "name": "Sarvam Art",
+        "description": "Class management system — students, teachers, attendance, inventory, and scheduling in one admin panel.",
+        "url": "https://sarvam-art.instabizweb.com/login",
+        "image": "https://www.instabizweb.com/portfolio/sarvam-art.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 24,
+        "name": "Tender Source India",
+        "description": "Tender discovery and application panel — browse government and private tenders and apply from one dashboard.",
+        "url": "https://www.tendersource.co.in/l",
+        "image": "https://www.instabizweb.com/portfolio/tender-source-india.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 25,
+        "name": "Orkay Tiles",
+        "description": "Manufacturing company CRM — inventory, orders, production tracking, and sales operations for tile manufacturing.",
+        "url": "https://live.orkaytiles.com/",
+        "image": "https://www.instabizweb.com/portfolio/orkay-tiles.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 26,
+        "name": "Odoo CRM & ERP",
+        "description": "We’re an Odoo partner — we implement and customize Odoo CRM, ERP, inventory, accounting, and HR modules for growing businesses.",
+        "url": "https://www.instabizweb.com/odoo-implementation-company-in-ahmedabad",
+        "image": "https://www.instabizweb.com/portfolio/odoo-crm-erp.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 27,
+        "name": "Acolyte Living",
+        "description": "Student accommodation platform widely used in the UK — find PGs, flats, and verified homes near universities.",
+        "url": "https://acolyteliving.com/",
+        "image": "https://www.instabizweb.com/portfolio/acolyte-living.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 28,
+        "name": "AGI Money",
+        "description": "India’s first free HRMS with geo-tagged attendance and salary on demand — attendance, payroll, and employee requests in one app.",
+        "url": "https://www.agimoneey.com/",
+        "image": "https://www.instabizweb.com/portfolio/agi-money.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 29,
+        "name": "AKP Ventures",
+        "description": "Solar EPC and clean energy website — rooftop solar, ground-mounted plants, O&M, and project consultation.",
+        "url": "https://akpventures.com/",
+        "image": "https://www.instabizweb.com/portfolio/akp-ventures.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 30,
+        "name": "Build With Chintan",
+        "description": "Premium renovation and construction website for the GTA — commercial, hospitality, and residential projects in Canada.",
+        "url": "https://buildwithchintan.ca/",
+        "image": "https://www.instabizweb.com/portfolio/build-with-chintan.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 31,
+        "name": "ConvrsAI Website",
+        "description": "Marketing site for a revenue validation platform — lead trust scoring, AI qualification, and pipeline certainty.",
+        "url": "https://convrsai.com/",
+        "image": "https://www.instabizweb.com/portfolio/convrsai.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 32,
+        "name": "Doclinks Website",
+        "description": "Healthcare discovery platform — find doctors, hospitals, clinics, and lab tests with verified listings across India.",
+        "url": "https://doclinks.in/",
+        "image": "https://www.instabizweb.com/portfolio/doclinks-website.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 33,
+        "name": "EstatRent",
+        "description": "Real estate marketplace to buy, sell, and rent properties with verified listings and zero brokerage positioning.",
+        "url": "https://www.estatrent.com/",
+        "image": "https://www.instabizweb.com/portfolio/estatrent.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 34,
+        "name": "Grand Sud Website",
+        "description": "Management & tourism school website since 1991 — programs, campus life, international courses, and admissions.",
+        "url": "https://grand-sud.fr/",
+        "image": "https://www.instabizweb.com/portfolio/grand-sud-website.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 35,
+        "name": "Hindland Infrastructure",
+        "description": "EPC and industrial infrastructure website — CHP systems, fabrication, piping, solar EPC, and O&M services across India.",
+        "url": "https://hindland.in/",
+        "image": "https://www.instabizweb.com/portfolio/hindland-infrastructure.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 36,
+        "name": "PropertyMilan Website",
+        "description": "Gujarat-focused real estate platform — verified listings across Gandhinagar, Mehsana, Himatnagar, Modasa, and Palanpur.",
+        "url": "https://www.propertymilan.com/",
+        "image": "https://www.instabizweb.com/portfolio/propertymilan.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 37,
+        "name": "Saarthium",
+        "description": "MSME consultancy website — business funding, loan eligibility, and pan-India advisor support for growing companies.",
+        "url": "https://www.saarthium.com/",
+        "image": "https://www.instabizweb.com/portfolio/saarthium.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 38,
+        "name": "Setu Bridge Solutions",
+        "description": "MSME funding guidance website — free consultancy, success stories, and loan scheme navigation for Indian businesses.",
+        "url": "https://www.setubridgesolutions.co.in/",
+        "image": "https://www.instabizweb.com/portfolio/setu-bridge-solutions.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 39,
+        "name": "Splendid Tech",
+        "description": "Career support for international students in the U.S. — end-to-end job search from role clarity to signed offer.",
+        "url": "https://splendid.blutec.ai/",
+        "image": "https://www.instabizweb.com/portfolio/splendid-tech.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 40,
+        "name": "StartupStambh",
+        "description": "MSME & startup consultancy website — registrations, DPIIT, GST, funding schemes, and digital services for Indian businesses.",
+        "url": "https://startupstambh.com/",
+        "image": "https://www.instabizweb.com/portfolio/startupstambh.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 41,
+        "name": "7 Planets",
+        "description": "Telegram mining game bot — coin mining, wallet, leaderboard, invites, and real-time game slots with a space theme.",
+        "url": "https://t.me/Planets_7_Bot",
+        "image": "https://www.instabizweb.com/portfolio/7-planets.webp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 42,
+        "name": "Scout Chrome Extension",
+        "description": "BluTec Scout browser extension — extract business leads, emails, phones, and social profiles directly from Google Maps and websites.",
+        "url": "https://www.instabizweb.com/products#scout",
+        "image": "https://www.instabizweb.com/portfolio/scout-chrome-extension.webp"
       }
     ]
   },

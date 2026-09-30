@@ -216,16 +216,16 @@ export const fiveSteps = {
 export const engagement = {
   eyebrow: 'Engagement models',
   title: 'Pick the way we work together',
-  intro: "Whether it's a one-time launch or a long-term partnership - we have a model that fits. Transparent pricing, no surprises.",
-  footnote: 'All prices in INR · GST extra · Custom enterprise plans available.',
-  footnoteCta: 'Talk to us →',
+  intro: "Whether it's a one-time launch or a long-term partnership - we have a model that fits. A clear quote up front, no surprises.",
+  footnote: 'Every engagement is quoted to your scope · Custom enterprise plans available.',
+  footnoteCta: 'Get a quote →',
   models: [
     {
       name: 'Project',
       tagline: 'Fixed-scope build',
       bestFor: 'Best for: a single website, app, or product launch.',
-      price: 'From ₹49,000',
-      unit: 'one-time, fixed price',
+      figure: 'Fixed scope',
+      unit: 'one-time, quoted before kickoff',
       points: [
         'Defined scope & timeline',
         'Senior dev + designer',
@@ -239,8 +239,8 @@ export const engagement = {
       name: 'Retainer',
       tagline: 'Dedicated growth team',
       bestFor: 'Best for: ongoing product & ops support.',
-      price: 'From ₹85,000',
-      unit: 'per month, cancel anytime',
+      figure: 'Monthly',
+      unit: 'sprint-based, cancel anytime',
       points: [
         'Dedicated PM, devs & designer',
         'Sprint-based delivery',
@@ -255,8 +255,8 @@ export const engagement = {
       name: 'Staff Aug',
       tagline: 'Embed our experts',
       bestFor: 'Best for: scaling your existing in-house team fast.',
-      price: 'From ₹1,80,000',
-      unit: 'per developer / month',
+      figure: 'Per engineer',
+      unit: 'billed monthly, no lock-in',
       points: [
         'Senior engineers, vetted',
         'Full-time or part-time',
@@ -290,7 +290,7 @@ export const servicesFaq = {
     'Can you work with our existing team and tools?',
     'What if we need changes after launch?',
     'Do you handle hosting, domains and DevOps?',
-    'How do you price AI / automation projects?',
+    'How do you quote AI / automation projects?',
     'Where are you based, and do you work globally?',
     'What makes you different from other agencies?',
   ],

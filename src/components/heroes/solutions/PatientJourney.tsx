@@ -38,7 +38,7 @@ export function PatientJourney({ ints }: { ints: string[] }) {
             <span className="grid size-10 shrink-0 place-items-center rounded-full bg-ink text-[0.7rem] font-bold text-bg">KR</span>
             <div className="min-w-0 flex-1">
               <p className="truncate text-[0.95rem] font-semibold tracking-[-0.01em]">Kiran Rao, 46</p>
-              <p className="t-label truncate text-[0.56rem] text-ink-3">UHID 20417 · follow-up visit</p>
+              <p className="t-label text-[0.56rem] leading-snug text-ink-3">UHID 20417 · follow-up visit</p>
             </div>
             <svg viewBox="0 0 120 32" className="h-8 w-[104px] shrink-0 sm:w-[132px]" aria-hidden>
               <path d="M0 16h30l6-10 7 20 6-26 7 26 5-10h59" fill="none" stroke="var(--line-2)" strokeWidth="1.5" strokeLinejoin="round" />
@@ -86,7 +86,7 @@ export function PatientJourney({ ints }: { ints: string[] }) {
                   <Icon name={st.icon} size={17} />
                 </span>
                 <span className="min-w-0">
-                  <span className="block truncate text-[0.86rem] font-semibold">{st.detail}</span>
+                  <span className="block text-[0.86rem] font-semibold leading-tight">{st.detail}</span>
                   <span className="t-small block truncate text-[0.76rem]">{st.note}</span>
                 </span>
               </motion.div>

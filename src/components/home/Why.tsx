@@ -11,21 +11,15 @@ export function Why() {
       <div className="shell">
         <SectionHead eyebrow={why.eyebrow} index="07" title={why.title} intro={why.intro} align="split">
           <Link
-            href="/about-us"
-            className="group mt-[clamp(16px,3.4vh,32px)] inline-flex items-center gap-4 rounded-[12px] border border-line bg-raise py-3 pl-3 pr-5"
+            href={why.call.href}
+            className="group mt-[clamp(16px,3.4vh,32px)] inline-flex items-center gap-4 rounded-[12px] border border-line bg-raise py-3 pl-3 pr-5 transition-[border-color,box-shadow] duration-500 hover:border-line-2 hover:shadow-[var(--shadow-soft)]"
           >
-            <span className="flex -space-x-2">
-              {['#0aa2b5', '#1b4480', '#0b0f15'].map((c, i) => (
-                <span
-                  key={i}
-                  className="size-8 border-2 border-raise [clip-path:polygon(50%_0,100%_25%,100%_75%,50%_100%,0_75%,0_25%)]"
-                  style={{ background: c }}
-                />
-              ))}
+            <span className="grid size-10 place-items-center bg-ink text-bg transition-colors duration-500 [clip-path:polygon(50%_0,100%_25%,100%_75%,50%_100%,0_75%,0_25%)] group-hover:bg-teal group-hover:text-[#04161a]">
+              <Icon name="calendar" size={17} />
             </span>
             <span>
-              <span className="block text-[0.95rem] font-semibold">{why.team.label}</span>
-              <span className="t-small block">{why.team.note}</span>
+              <span className="block text-[0.95rem] font-semibold">{why.call.label}</span>
+              <span className="t-small block">{why.call.note}</span>
             </span>
             <Icon name="arrow" size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
           </Link>
@@ -50,7 +44,7 @@ export function Why() {
                 <h3 className="t-h4 sm:mt-8 lg:mt-[clamp(14px,3.4vh,32px)]">{p.title}</h3>
                 <p className="t-small mt-1.5 text-ink-2 sm:mt-2">{p.body}</p>
               </div>
-              <span className="absolute inset-x-0 top-0 h-[2px] origin-left scale-x-0 bg-teal transition-transform duration-700 ease-[var(--ease-out)] group-hover:scale-x-100" />
+              <span className="absolute inset-x-0 top-0 h-[2px] origin-left scale-x-0 bg-teal transition-transform duration-700 ease-[var(--ease-out)] group-hover:scale-x-100 pointer-coarse:delay-300 pointer-coarse:group-[.is-in]:scale-x-100" />
             </li>
           ))}
         </ul>

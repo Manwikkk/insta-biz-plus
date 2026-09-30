@@ -36,7 +36,7 @@ export const results = {
  */
 export const problem = {
   eyebrow: 'The problem', // narrative
-  title: 'Five projects. Five vendors. Five hand-offs.', // narrative
+  title: 'You want growth. Not more vendors. Not more delays.', // narrative
   body: 'Your website, app, AI workflows, CRM, and business automation usually get built by different people who never talk to each other.', // narrative (lists the five services)
   fragments: [
     { text: 'Enquiries lost across channels', source: 'Manufacturing CRM' },
@@ -50,7 +50,7 @@ export const problem = {
     { text: 'Layers of account managers', source: 'Big agency' },
     { text: 'Outgrown spreadsheets', source: 'Solutions' },
   ],
-  turn: 'No silos. No hand-offs. Just outcomes.', // services page
+  turn: 'One team. One plan. Real results.', // narrative
   resolve: 'One team, one accountable partner - for your website, app, AI workflows, CRM, and business automation.',
 }
 
@@ -90,7 +90,7 @@ export const why = {
   title: 'Not another agency. A growth partner.',
   intro:
     "We don't just hand off code. We sit with you, understand your business, and build digital products that actually move the needle.",
-  team: { label: 'Get to know us', note: 'Senior devs · Designers · Strategists' },
+  call: { label: 'Free 30-min strategy call', note: 'Zero pitch · reply within 2 hours', href: '/contact-us#contact-form' }, // contact page
   pillars: [
     {
       value: '4×',

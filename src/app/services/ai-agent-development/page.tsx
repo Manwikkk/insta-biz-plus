@@ -81,7 +81,7 @@ export default function AIAgentsPage() {
               </Link>{' '}
               or jump to{' '}
               <a href="#pricing" className="link-under text-ink">
-                transparent INR pricing
+                the engagement tiers
               </a>
               .
             </p>
@@ -112,7 +112,7 @@ export default function AIAgentsPage() {
                   ))}
                 </ul>
                 <div className="mt-auto flex items-center justify-between border-t border-line pt-5">
-                  <span className="t-numeral text-[1.25rem]">{t.price}</span>
+                  <span className="t-label text-ink-3">Fixed quote in 24 hours</span>
                   <Link href="#contact-form" className="group/q inline-flex items-center gap-1.5 text-[0.9rem] font-medium text-teal-ink">
                     Get quote <Icon name="arrow" size={14} className="transition-transform group-hover/q:translate-x-1" />
                   </Link>
@@ -175,7 +175,7 @@ export default function AIAgentsPage() {
         </div>
       </section>
 
-      {/* pricing */}
+      {/* engagement tiers */}
       <section className="rails section border-b border-line" id="pricing">
         <div className="shell">
           <SectionHead eyebrow={a.pricing.eyebrow} title={a.pricing.title} intro={a.pricing.intro} align="split" />
@@ -187,8 +187,8 @@ export default function AIAgentsPage() {
             <Link href="/services" className="link-under text-ink">
               bundled engagements
             </Link>{' '}
-            with web development, mobile apps and CRM integration. All prices exclude GST and OpenAI / Anthropic API token costs, which are
-            billed at-cost with full token dashboards.
+            with web development, mobile apps and CRM integration. OpenAI / Anthropic API token costs are billed at-cost with full token
+            dashboards.
           </p>
         </div>
       </section>

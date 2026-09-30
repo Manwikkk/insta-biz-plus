@@ -23,14 +23,16 @@ export function Logo({
   const dims = variant === 'lockup' ? { w: 798, h: 164 } : { w: 950, h: 298 }
   const width = Math.round((dims.w / dims.h) * height)
   const src = variant === 'lockup' ? 'lockup' : 'logo-full'
+  // the pictures never take the pointer: the whole mark is one link (a hand, never a text cursor, never dragged)
   const img = (
-    <span className={cn('relative block', className)} style={{ width, height }}>
+    <span className={cn('pointer-events-none relative block select-none', className)} style={{ width, height }}>
       <Image
         src={`/brand/${src}-light.png`}
         alt="Insta Biz Web logo"
         width={width}
         height={height}
         preload={preload}
+        draggable={false}
         className="block dark:hidden"
         sizes={`${width}px`}
         quality={90}
@@ -40,6 +42,7 @@ export function Logo({
         alt="Insta Biz Web logo"
         width={width}
         height={height}
+        draggable={false}
         className="hidden dark:block"
         sizes={`${width}px`}
         quality={90}
@@ -48,7 +51,12 @@ export function Logo({
   )
   if (!href) return img
   return (
-    <Link href={href} aria-label="Insta Biz Web, home" className="inline-flex shrink-0">
+    <Link
+      href={href}
+      aria-label="Insta Biz Web, home"
+      draggable={false}
+      className="-my-2 inline-flex shrink-0 cursor-pointer select-none items-center py-2 [-webkit-touch-callout:none] [-webkit-user-drag:none]"
+    >
       {img}
     </Link>
   )

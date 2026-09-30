@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { solutions, solutionsIndex } from '@/content/data'
 import { specialisations } from '@/content/home'
@@ -23,12 +23,21 @@ const ROWS = [
 
 /**
  * Chapter 3 — how the engine meets an industry. Twelve specialisations as a
- * honeycomb (the mark's hexagon, repeated); hovering a cell loads its brief.
+ * honeycomb (the mark's hexagon, repeated); hovering a cell loads its brief. Phones get
+ * the same brief from a rail of industries you tap.
  */
 export function Industries() {
   const order = solutionsIndex.groups.flatMap((g) => g.items.map((it) => solutions.find((s) => s.label === it.label)!).filter(Boolean))
   const [active, setActive] = useState(0)
+  const rail = useRef<HTMLUListElement>(null)
   const sol = order[active]
+  // the picked chip slides to the middle of the rail (the rail scrolls, never the page)
+  const pick = (idx: number, chip: HTMLElement) => {
+    setActive(idx)
+    const r = rail.current
+    const li = chip.parentElement
+    if (r && li) r.scrollTo({ left: li.offsetLeft - (r.clientWidth - li.offsetWidth) / 2, behavior: 'smooth' })
+  }
 
   return (
     <section className="rails section-tight relative overflow-hidden" id="industries">
@@ -41,7 +50,7 @@ export function Industries() {
           align="split"
         />
 
-        <div className="mt-12 grid gap-12 lg:mt-[clamp(24px,6vh,80px)] lg:grid-cols-12 lg:items-center">
+        <div className="mt-12 grid grid-cols-1 gap-12 lg:mt-[clamp(24px,6vh,80px)] lg:grid-cols-12 lg:items-center">
           {/* honeycomb */}
           <div className="lg:col-span-7" data-reveal="rise">
             <div
@@ -109,34 +118,44 @@ export function Industries() {
               </div>
             </div>
 
-            {/* phones & tablets: the twelve as tiles, two by two */}
-            <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:hidden" aria-label="Industry solutions">
-              {order.map((s, idx) => {
-                const isErp = s.group !== 'Industry CRM Software'
-                return (
-                  <li key={s.slug} data-reveal="rise" style={{ ['--d' as string]: `${(idx % 2) * 70 + Math.floor(idx / 2) * 35}ms` }}>
-                    <Link
-                      href={`/solutions/${s.slug}`}
-                      className="group flex h-full min-h-[104px] flex-col justify-between rounded-[14px] border border-line bg-raise p-3.5 transition-[border-color,background-color] duration-300 active:border-ink hover:border-line-2"
-                    >
-                      <span className="flex items-center justify-between">
+            {/* phones & tablets: tap an industry to read its brief (the honeycomb's hover, by touch) */}
+            <div className="lg:hidden">
+              <ul
+                ref={rail}
+                className="relative -mx-[var(--gutter)] flex gap-2 overflow-x-auto px-[var(--gutter)] pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                aria-label="Industry solutions"
+              >
+                {order.map((s, idx) => {
+                  const on = idx === active
+                  const isErp = s.group !== 'Industry CRM Software'
+                  return (
+                    <li key={s.slug} className="shrink-0">
+                      <button
+                        type="button"
+                        aria-pressed={on}
+                        onClick={(e) => pick(idx, e.currentTarget)}
+                        className={cn(
+                          'flex h-11 items-center gap-2 whitespace-nowrap rounded-full border py-1 pl-1 pr-4 text-[0.88rem] font-medium tracking-[-0.01em] transition-[background-color,border-color,color] duration-300',
+                          on ? 'border-ink bg-ink text-bg' : 'border-line-2 bg-raise text-ink-2',
+                        )}
+                      >
                         <span
-                          className={cn('grid size-9 place-items-center', isErp ? 'bg-navy/15 text-navy dark:text-[#7ea8e6]' : 'bg-teal-soft text-teal-ink')}
+                          className={cn(
+                            'grid size-8 place-items-center transition-colors duration-300',
+                            on ? 'bg-teal text-[#04161a]' : isErp ? 'bg-navy/15 text-navy dark:text-[#7ea8e6]' : 'bg-teal-soft text-teal-ink',
+                          )}
                           style={{ clipPath: HEX }}
                         >
-                          <Icon name={solutionIcon[s.slug] ?? 'layers'} size={16} />
+                          <Icon name={solutionIcon[s.slug] ?? 'layers'} size={15} />
                         </span>
-                        <span className="t-label text-[0.56rem] text-ink-3">{String(idx + 1).padStart(2, '0')}</span>
-                      </span>
-                      <span className="mt-3 flex items-end justify-between gap-2">
-                        <span className="text-[0.9rem] font-semibold leading-[1.15] tracking-[-0.01em]">{s.label}</span>
-                        <Icon name="arrow" size={14} className="mb-0.5 shrink-0 text-ink-3 transition-transform duration-300 group-hover:translate-x-0.5" />
-                      </span>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
+                        {s.label}
+                      </button>
+                    </li>
+                  )
+                })}
+              </ul>
+              <Brief sol={sol} n={active + 1} className="mt-4" />
+            </div>
             <div className="mt-6 flex flex-wrap items-center justify-between gap-x-5 gap-y-4 lg:hidden">
               <div className="flex flex-wrap gap-x-4 gap-y-1.5">
                 <span className="t-label flex items-center gap-2 text-ink-3">
@@ -156,39 +175,7 @@ export function Industries() {
 
           {/* brief */}
           <div className="hidden lg:col-span-5 lg:block">
-            <div className="relative min-h-[clamp(270px,46vh,360px)] rounded-[16px] border border-line bg-raise p-8">
-              <span className="dot-grid opacity-50 [mask-image:linear-gradient(to_bottom,#000,transparent_70%)]" />
-              <AnimatePresence initial={false}>
-                <motion.div
-                  key={sol.slug}
-                  initial={{ opacity: 0, y: 14 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.45, ease }}
-                  className="absolute inset-8 flex flex-col"
-                >
-                  <p className="t-label text-teal-ink">{sol.group}</p>
-                  <h3 className="t-h3 mt-4">{sol.label}</h3>
-                  <p className="t-body mt-3">{sol.summary}</p>
-                  <ul className="mt-6 flex flex-wrap gap-1.5">
-                    {sol.overview.integrations.slice(0, 5).map((i) => (
-                      <li key={i} className="tag">
-                        {i}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-auto flex items-center justify-between border-t border-line pt-5">
-                    <span className="t-label text-ink-3">
-                      {sol.features.items.length} key features · {sol.modules.items.length} modules
-                    </span>
-                    <Link href={`/solutions/${sol.slug}`} className="group inline-flex items-center gap-2 font-medium">
-                      <span className="link-draw">View {sol.crumb}</span>
-                      <Icon name="arrow" size={16} className="transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-            </div>
+            <Brief sol={sol} n={active + 1} className="min-h-[clamp(270px,46vh,360px)] lg:p-8" />
             <div className="mt-[clamp(14px,3vh,24px)]">
               <KeyButton href="/solutions" variant="ghost" icon="arrow">
                 {specialisations.cta}
@@ -198,5 +185,47 @@ export function Industries() {
         </div>
       </div>
     </section>
+  )
+}
+
+/** An industry's brief. The old one and the new one cross-fade in the same cell. */
+function Brief({ sol, n, className }: { sol: (typeof solutions)[number]; n: number; className?: string }) {
+  return (
+    <div className={cn('relative grid overflow-hidden rounded-[16px] border border-line bg-raise p-5 sm:p-7', className)}>
+      <span className="dot-grid opacity-50 [mask-image:linear-gradient(to_bottom,#000,transparent_70%)]" />
+      <AnimatePresence initial={false}>
+        <motion.div
+          key={sol.slug}
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.45, ease }}
+          className="relative col-start-1 row-start-1 flex flex-col"
+        >
+          <p className="t-label text-teal-ink">
+            <span className="lg:hidden">{String(n).padStart(2, '0')} · </span>
+            {sol.group}
+          </p>
+          <h3 className="t-h3 mt-3 lg:mt-4">{sol.label}</h3>
+          <p className="t-body mt-3 max-lg:line-clamp-4">{sol.summary}</p>
+          <ul className="mt-5 flex flex-wrap gap-1.5 lg:mt-6">
+            {sol.overview.integrations.slice(0, 5).map((i, k) => (
+              <li key={i} className={cn('tag', k > 2 && 'max-sm:hidden')}>
+                {i}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-auto flex items-center justify-between gap-4 border-t border-line pt-4 max-lg:mt-5 lg:pt-5">
+            <span className="t-label text-ink-3">
+              {sol.features.items.length} key features · {sol.modules.items.length} modules
+            </span>
+            <Link href={`/solutions/${sol.slug}`} className="group inline-flex shrink-0 items-center gap-2 font-medium">
+              <span className="link-draw">View {sol.crumb}</span>
+              <Icon name="arrow" size={16} className="transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+        </motion.div>
+      </AnimatePresence>
+    </div>
   )
 }

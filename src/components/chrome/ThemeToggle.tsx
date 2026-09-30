@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react'
 import { setTheme, useTheme } from '@/lib/theme'
 import { cn } from '@/lib/cn'
 
@@ -11,6 +12,11 @@ import { cn } from '@/lib/cn'
 export function ThemeToggle({ className }: { className?: string }) {
   const theme = useTheme()
   const dark = theme === 'dark'
+
+  // The browser chrome (address bar, status bar) follows the chosen theme.
+  useEffect(() => {
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#07090d' : '#f2f0ea')
+  }, [dark])
 
   return (
     <button

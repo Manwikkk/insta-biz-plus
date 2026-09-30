@@ -267,7 +267,7 @@ export function Capabilities() {
                     <h3 className="mt-2.5 font-display text-[clamp(1.45rem,6.2vw,2.1rem)] font-[720] leading-[1.02] tracking-[-0.03em] [font-stretch:104%]">
                       {svc.headline}
                     </h3>
-                    <p className="t-small mt-2.5 line-clamp-3 text-ink-2">{svc.body}</p>
+                    <p className="t-small mt-2.5 text-ink-2">{svc.body}</p>
                     <div className="mt-4 flex items-end justify-between gap-4 border-t border-line pt-3.5">
                       <div>
                         <p className="t-num text-[1.9rem]">{svc.avg.value}</p>

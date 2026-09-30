@@ -22,7 +22,7 @@ export function ServiceShowcase() {
   return (
     <div
       ref={ref}
-      className="grid gap-3 sm:grid-cols-[minmax(0,210px)_minmax(0,1fr)]"
+      className="grid gap-3 sm:grid-cols-[minmax(0,224px)_minmax(0,1fr)]"
       onMouseEnter={() => hold(true)}
       onMouseLeave={() => hold(false)}
       data-running={running || undefined}
@@ -47,7 +47,7 @@ export function ServiceShowcase() {
             >
               <span className={cn('t-label w-5 shrink-0', k === i ? 'text-teal' : 'text-ink-3')}>{svc.n}</span>
               <Icon name={serviceIcon[svc.id]} size={16} className="shrink-0" />
-              <span className="min-w-0 truncate text-[0.88rem] font-medium tracking-[-0.01em]">{svc.label}</span>
+              <span className="min-w-0 text-[0.88rem] font-medium leading-snug tracking-[-0.01em]">{svc.label}</span>
               {k === i ? (
                 <span
                   key={`${k}-${running}`}

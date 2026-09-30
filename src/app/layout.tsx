@@ -17,20 +17,18 @@ export const metadata: Metadata = {
   ...buildMetadata('/'),
 }
 
+/** The site opens in light; ThemeToggle keeps the browser chrome in step when a visitor picks dark. */
 export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f2f0ea' },
-    { media: '(prefers-color-scheme: dark)', color: '#07090d' },
-  ],
-  colorScheme: 'light dark',
+  themeColor: '#f2f0ea',
+  colorScheme: 'light',
 }
 
 /**
- * Runs before first paint: resolves the theme (saved choice → system preference),
- * flags JS for reveal states, and switches reveals off for reduced motion or if the
- * observer never starts.
+ * Runs before first paint: resolves the theme (a saved choice, otherwise light), flags JS
+ * for reveal states, and switches reveals off for reduced motion or if the observer never
+ * starts.
  */
-const BOOT = `(function(){try{var d=document.documentElement;d.classList.add('js');var t=null;try{t=localStorage.getItem('ibw-theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t);if(matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('reveal-off')}setTimeout(function(){if(!d.classList.contains('io-ready')){d.classList.add('reveal-off')}},4000)}catch(e){}})();`
+const BOOT = `(function(){try{var d=document.documentElement;d.classList.add('js');var t=null;try{t=localStorage.getItem('ibw-theme')}catch(e){}if(t!=='dark'){t='light'}d.setAttribute('data-theme',t);if(matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('reveal-off')}setTimeout(function(){if(!d.classList.contains('io-ready')){d.classList.add('reveal-off')}},4000)}catch(e){}})();`
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

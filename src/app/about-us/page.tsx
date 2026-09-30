@@ -7,12 +7,10 @@ import { AboutHero } from '@/components/about/AboutHero'
 import { StoryHighlight } from '@/components/about/StoryHighlight'
 import { Manifesto } from '@/components/about/Manifesto'
 import { Journey } from '@/components/about/Journey'
-import { OfficeTime } from '@/components/about/OfficeTime'
-import { OfficeMap } from '@/components/locations/OfficeMap'
+import { OfficeCard } from '@/components/about/OfficeCard'
 import { Brands } from '@/components/home/Voices'
 import { ConsultCTA } from '@/components/sections/ConsultCTA'
 import { about as a } from '@/content/about'
-import { site } from '@/content/site'
 
 export const metadata: Metadata = buildMetadata('/about-us')
 
@@ -72,7 +70,7 @@ export default function AboutPage() {
 
       <Brands eyebrow={a.networks.eyebrow} title={a.networks.title} intro={a.networks.intro} id="networks" />
 
-      {/* the office: where we are on the map, the address and the time there, and the ways to come by */}
+      {/* the office: the address, the time there right now, and the ways to come by */}
       <section className="rails relative border-b border-line py-[clamp(40px,7.4vh,110px)]" id="office">
         <div className="shell">
           <div className="grid gap-4 lg:grid-cols-12 lg:items-end">
@@ -83,32 +81,8 @@ export default function AboutPage() {
             <p className="t-lede lg:col-span-4 lg:col-start-9">{a.office.intro}</p>
           </div>
 
-          <div className="mt-[clamp(20px,4vh,44px)] grid overflow-hidden rounded-[22px] border border-line bg-raise lg:grid-cols-12">
-            <OfficeMap className="h-[clamp(240px,42vh,400px)] lg:col-span-8 lg:h-auto lg:min-h-[clamp(260px,44vh,420px)]" />
-            <div className="flex flex-col gap-5 border-t border-line p-[clamp(18px,3vh,28px)] lg:col-span-4 lg:border-l lg:border-t-0">
-              <div>
-                <p className="t-label text-ink-3">{a.office.label}</p>
-                <p className="mt-1.5 font-display text-[clamp(1.5rem,min(2.2vw,4.2vh),2rem)] font-[700] leading-none tracking-[-0.03em]">
-                  {a.office.name}
-                </p>
-                <address className="t-small mt-3 not-italic text-ink-2">
-                  {site.address.lines.map((l) => (
-                    <span key={l} className="block">
-                      {l}
-                    </span>
-                  ))}
-                </address>
-              </div>
-              <OfficeTime />
-              <div className="mt-auto flex flex-wrap gap-2.5">
-                <KeyButton href={site.mapUrl} size="sm" icon="arrow-up-right">
-                  {a.office.directions}
-                </KeyButton>
-                <KeyButton href="/contact-us#contact-form" size="sm" variant="ghost" icon={null}>
-                  {a.office.visit}
-                </KeyButton>
-              </div>
-            </div>
+          <div className="mt-[clamp(20px,4vh,44px)]">
+            <OfficeCard />
           </div>
         </div>
       </section>

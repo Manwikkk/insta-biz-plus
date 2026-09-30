@@ -72,7 +72,7 @@ export function StockScan({ ints }: { ints: string[] }) {
               <span className={cn('sv-laser absolute inset-x-1 h-[2px] rounded-full bg-ember shadow-[0_0_10px_2px_var(--ember)]', i !== 0 && 'opacity-40')} />
             </div>
             <div className="min-w-0 flex-1">
-              <p className="truncate text-[0.9rem] font-semibold tracking-[-0.01em]">LED panel 18W · warm white</p>
+              <p className="text-[0.9rem] font-semibold leading-tight tracking-[-0.01em]">LED panel 18W · warm white</p>
               <p className="t-label mt-0.5 truncate text-[0.54rem] text-ink-3">SKU LP-18-WW · batch B-0925</p>
               <p className="mt-1.5 text-[0.76rem] text-ink-2">
                 On hand <span className="t-numeral tabular-nums text-ink">{num(total)}</span> across 3 warehouses

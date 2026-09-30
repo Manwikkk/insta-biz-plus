@@ -277,7 +277,7 @@ AI agent development is the process of building autonomous software systems that
 
 **How much does it cost to build an AI agent in India?**
 
-AI agent development cost in India ranges from ₹40,000 for a single-task chatbot, ₹1,80,000 to ₹6,00,000 for a production-grade integrated agent, and ₹8,00,000+ for enterprise multi-agent systems. Final pricing depends on integrations, model choice, expected traffic, and accuracy requirements. We provide fixed INR quotes with GST invoice within 24 hours of your enquiry.
+The cost depends on scope: a single-task chatbot, a production-grade integrated agent and an enterprise multi-agent system are very different builds. Integrations, model choice, expected traffic and accuracy requirements all shape the quote. We provide fixed INR quotes with GST invoice within 24 hours of your enquiry.
 
 **How long does it take to develop an AI agent?**
 
@@ -305,7 +305,7 @@ We build evaluation datasets specific to your use case, run automated evals befo
 
 **Do you offer ongoing support and improvements?**
 
-Yes. After launch, we offer monthly retainers starting at ₹35,000 per month for prompt tuning, eval improvements, new tool integration, edge-case handling and model upgrades. Most clients stay on retainer because AI agents need continuous improvement as your business and the underlying models evolve.
+Yes. After launch, we offer monthly retainers for prompt tuning, eval improvements, new tool integration, edge-case handling and model upgrades. Most clients stay on retainer because AI agents need continuous improvement as your business and the underlying models evolve.
 
 **Can the AI agent be deployed on our own cloud or on-premise?**
 
@@ -392,7 +392,7 @@ AI agent development is the process of building autonomous software systems that
 
 ### How much does it cost to build an AI agent in India?
 
-AI agent development cost in India ranges from ₹40,000 for a single-task chatbot, ₹1,80,000 to ₹6,00,000 for a production-grade integrated agent, and ₹8,00,000+ for enterprise multi-agent systems. Final pricing depends on integrations, model choice, expected traffic, and accuracy requirements. We provide fixed INR quotes with GST invoice within 24 hours of your enquiry.
+The cost depends on scope: a single-task chatbot, a production-grade integrated agent and an enterprise multi-agent system are very different builds. Integrations, model choice, expected traffic and accuracy requirements all shape the quote. We provide fixed INR quotes with GST invoice within 24 hours of your enquiry.
 
 ### How long does it take to develop an AI agent?
 
@@ -420,7 +420,7 @@ We build evaluation datasets specific to your use case, run automated evals befo
 
 ### Do you offer ongoing support and improvements?
 
-Yes. After launch, we offer monthly retainers starting at ₹35,000 per month for prompt tuning, eval improvements, new tool integration, edge-case handling and model upgrades. Most clients stay on retainer because AI agents need continuous improvement as your business and the underlying models evolve.
+Yes. After launch, we offer monthly retainers for prompt tuning, eval improvements, new tool integration, edge-case handling and model upgrades. Most clients stay on retainer because AI agents need continuous improvement as your business and the underlying models evolve.
 
 ### Can the AI agent be deployed on our own cloud or on-premise?
 
@@ -849,7 +849,7 @@ Resources
         "name": "How much does it cost to build an AI agent in India?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "AI agent development cost in India ranges from ₹40,000 for a single-task chatbot, ₹1,80,000 to ₹6,00,000 for a production-grade integrated agent, and ₹8,00,000+ for enterprise multi-agent systems. Final pricing depends on integrations, model choice, expected traffic, and accuracy requirements. We provide fixed INR quotes with GST invoice within 24 hours of your enquiry."
+          "text": "The cost depends on scope: a single-task chatbot, a production-grade integrated agent and an enterprise multi-agent system are very different builds. Integrations, model choice, expected traffic and accuracy requirements all shape the quote. We provide fixed INR quotes with GST invoice within 24 hours of your enquiry."
         }
       },
       {
@@ -905,7 +905,7 @@ Resources
         "name": "Do you offer ongoing support and improvements?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. After launch, we offer monthly retainers starting at ₹35,000 per month for prompt tuning, eval improvements, new tool integration, edge-case handling and model upgrades. Most clients stay on retainer because AI agents need continuous improvement as your business and the underlying models evolve."
+          "text": "Yes. After launch, we offer monthly retainers for prompt tuning, eval improvements, new tool integration, edge-case handling and model upgrades. Most clients stay on retainer because AI agents need continuous improvement as your business and the underlying models evolve."
         }
       },
       {

@@ -195,7 +195,7 @@ FAQs
 
 **How much does Odoo implementation cost in Ahmedabad?**
 
-An Odoo implementation in Ahmedabad starts at around ₹1,50,000 for a focused deployment, ₹3,00,000-₹9,00,000 for a standard multi-module SMB rollout, and more for complex or manufacturing setups. We share a fixed INR quote with GST invoice after a short discovery call.
+The cost depends on scope: a focused deployment, a standard multi-module SMB rollout and a complex manufacturing setup are very different projects. We share a fixed INR quote with GST invoice after a short discovery call.
 
 **Which is the best Odoo implementation company in Ahmedabad?**
 
@@ -270,7 +270,7 @@ By submitting, you agree to be contacted by Insta Biz Web. We never share your d
 
 ### How much does Odoo implementation cost in Ahmedabad?
 
-An Odoo implementation in Ahmedabad starts at around ₹1,50,000 for a focused deployment, ₹3,00,000-₹9,00,000 for a standard multi-module SMB rollout, and more for complex or manufacturing setups. We share a fixed INR quote with GST invoice after a short discovery call.
+The cost depends on scope: a focused deployment, a standard multi-module SMB rollout and a complex manufacturing setup are very different projects. We share a fixed INR quote with GST invoice after a short discovery call.
 
 ### Which is the best Odoo implementation company in Ahmedabad?
 
@@ -817,7 +817,7 @@ Resources
         "name": "How much does Odoo implementation cost in Ahmedabad?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "An Odoo implementation in Ahmedabad starts at around ₹1,50,000 for a focused deployment, ₹3,00,000-₹9,00,000 for a standard multi-module SMB rollout, and more for complex or manufacturing setups. We share a fixed INR quote with GST invoice after a short discovery call."
+          "text": "The cost depends on scope: a focused deployment, a standard multi-module SMB rollout and a complex manufacturing setup are very different projects. We share a fixed INR quote with GST invoice after a short discovery call."
         }
       },
       {

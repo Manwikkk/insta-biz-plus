@@ -86,8 +86,6 @@ export default function ContactPage() {
               variant="contact"
               submitLabel={c.form.submit}
               disclaimer={c.form.disclaimer}
-              budgetLabel="Approximate budget"
-              extraBudget={c.form.budgetExtra}
             />
           </div>
         </div>

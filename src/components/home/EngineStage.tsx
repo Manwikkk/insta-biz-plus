@@ -7,8 +7,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { engine, firePulse } from '@/components/three/engineState'
 import { MarkBlueprint } from '@/components/brand/MarkBlueprint'
-import { MARK_PIECES } from '@/components/brand/markGeometry'
-import { services } from '@/content/services'
 import { DragHint, EngineHandle } from './EngineHandle'
 import { StageContext, useStage, type StageMode } from './stageContext'
 import { useMedia } from '@/lib/useMedia'
@@ -32,9 +30,9 @@ function webglAvailable() {
 /**
  * Wraps the hero, problem and capabilities sections. A sticky full-viewport canvas sits
  * behind them (z-1) — section grounds at z-0, copy at z-2 — so the engine travels through
- * all three chapters as one continuous object. On phones and tablets the canvas starts
- * centred on the engine's slot in the hero and scrolls with it until it reaches the middle
- * of the screen, where it sticks and the scroll takes over.
+ * all three chapters as one continuous object. On phones and tablets the engine starts in
+ * its window in the hero; the hero is then held while its copy lifts away, the engine
+ * glides to the middle of the screen and the dark stage opens round it.
  */
 export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; problem: ReactNode; capabilities: ReactNode }) {
   const root = useRef<HTMLDivElement>(null)
@@ -42,7 +40,6 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
   const screen = useRef<HTMLDivElement>(null)
   const [mode, setMode] = useState<StageMode>(null)
   const [active, setActive] = useState(true)
-  const [trackTop, setTrackTop] = useState(0)
   const desktop = useMedia('(min-width: 1024px)', true)
 
   useEffect(() => {
@@ -57,28 +54,6 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
     io.observe(el)
     return () => io.disconnect()
     // the track element is swapped when the layout (desktop) or render mode changes
-  }, [desktop, mode])
-
-  // Phones: start the canvas so its centre sits on the hero's engine slot. It then scrolls with
-  // the slot (no lag, the browser moves it) until it reaches the top of the screen and sticks.
-  useEffect(() => {
-    if (desktop || mode !== '3d') return
-    const measure = () => {
-      const r = root.current
-      const slot = r?.querySelector<HTMLElement>('[data-engine-slot]')
-      const sc = screen.current
-      if (!r || !slot || !sc) return
-      const top = slot.getBoundingClientRect().top - r.getBoundingClientRect().top + slot.offsetHeight / 2 - sc.offsetHeight / 2
-      setTrackTop(Math.max(0, Math.round(top)))
-    }
-    measure()
-    const ro = new ResizeObserver(measure)
-    if (root.current) ro.observe(root.current)
-    window.addEventListener('resize', measure)
-    return () => {
-      ro.disconnect()
-      window.removeEventListener('resize', measure)
-    }
   }, [desktop, mode])
 
   // Cursor tracking: the engine leans toward the pointer (read each frame by the canvas).
@@ -183,8 +158,23 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
       )
 
       mm.add('(max-width: 1023px) and (prefers-reduced-motion: no-preference)', () => {
-        Object.assign(engine, base, { x: 0, y: 0, scale: 1.3 })
         const H = () => screen.current?.offsetHeight || window.innerHeight
+        const slot = heroEl.querySelector<HTMLElement>('[data-engine-slot]')
+        // A hero taller than the screen (the smallest phones) scrolls this far before it is held.
+        const over = () => Math.max(0, heroEl.offsetHeight - H())
+        // The engine in its window, with the page scrolled `s` px: placed on the window's centre and
+        // sized to fill it (the mark is 2 × min(26% of the height, 20% of the width) px at scale 1).
+        const inWindow = (s: number) => {
+          const h = H()
+          if (!slot) return { y: 0, scale: 1.3 }
+          // offsets, not the box on screen: the copy (and the window with it) lifts as it fades
+          let top = 0
+          for (let el: HTMLElement | null = slot; el && el !== heroEl; el = el.offsetParent as HTMLElement | null) top += el.offsetTop
+          const centre = top + slot.offsetHeight / 2 - s
+          const unit = 2 * Math.min(0.26 * h, 0.2 * window.innerWidth)
+          return { y: 1 - (2 * centre) / h, scale: gsap.utils.clamp(0.85, 1.45, (slot.offsetHeight * 0.8) / unit) }
+        }
+        Object.assign(engine, base, { x: 0, ...inWindow(0) })
         // Where the parts sit for "what we do": centred in the room above the part card.
         const bay = () => {
           const card = capEl.querySelector<HTMLElement>('[data-cap-card]')
@@ -198,13 +188,52 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
         // through the boundaries never jumps; none renders until its own scroll range is reached.
         const later = { immediateRender: false }
 
-        // 1 · Hero: the engine rides in its slot and sticks mid-screen; it steps back (dims) while the
-        // hero's figures pass over it, then comes forward again as the dark stage opens round it.
+        // 0 · The smallest phones only: the engine rides up with the page until the hero is held.
+        gsap.fromTo(
+          engine,
+          { y: () => inWindow(0).y },
+          {
+            y: () => inWindow(over()).y,
+            ease: 'none',
+            ...later,
+            scrollTrigger: { trigger: heroEl, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true },
+          },
+        )
+
+        // 1 · Hero: held while its copy lifts away; the engine leaves its window for the middle of the
+        // screen and turns to face you, and the dark stage of the next chapter opens round it.
+        const ground = heroEl.querySelector<HTMLElement>('[data-hero-ground]')
+        const copy = heroEl.querySelectorAll('[data-hero-copy]')
         gsap
-          .timeline({ scrollTrigger: { trigger: heroEl, start: 'top top', end: 'bottom top', scrub: true } })
-          .fromTo(engine, { explode: 0.06, rotY: 0.42, scale: 1.3 }, { explode: 0.3, rotY: 0.95, scale: 1.1, duration: 1, ease: 'none', ...later }, 0)
-          .fromTo(engine, { opacity: 1, dim: 0 }, { opacity: 0.32, dim: 0.45, duration: 0.25, ease: 'power1.out', ...later }, 0.3)
-          .to(engine, { opacity: 1, dim: 0, duration: 0.2, ease: 'power1.in' }, 0.8)
+          .timeline({
+            scrollTrigger: {
+              trigger: heroEl,
+              start: 'bottom bottom',
+              end: '+=85%',
+              pin: true,
+              scrub: true,
+              anticipatePin: 1,
+              invalidateOnRefresh: true,
+              // The problem and capabilities chapters set up their own triggers before this one (child
+              // effects run first); measuring this pin first lets theirs include the room it adds.
+              refreshPriority: 1,
+              // the bar turns dark once the stage has covered the top of the screen
+              onUpdate: () => {
+                if (!ground) return
+                const r = parseFloat(ground.style.getPropertyValue('--r')) || 0
+                if (r >= 70) ground.dataset.navTone = 'dark'
+                else delete ground.dataset.navTone
+              },
+            },
+          })
+          .fromTo(copy, { autoAlpha: 1, y: 0, filter: 'blur(0px)' }, { autoAlpha: 0, y: -32, filter: 'blur(8px)', stagger: 0.06, duration: 0.3, ease: 'power1.in' }, 0)
+          .fromTo(
+            engine,
+            { y: () => inWindow(over()).y, scale: () => inWindow(over()).scale, explode: 0.06, rotY: 0.42 },
+            { y: 0, scale: 1.1, explode: 0.3, rotY: 0.95, duration: 0.7, ease: 'power2.inOut', ...later },
+            0.08,
+          )
+          .fromTo(ground, { '--r': '0vmax' }, { '--r': '120vmax', duration: 0.62, ease: 'power2.in' }, 0.38)
 
         // 2 · Problem: the parts scatter to the edges of the screen, dim, and drift — then snap back
         // together behind "No silos…" and light up with a pulse as the paper returns.
@@ -250,7 +279,7 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
 
       return () => mm.revert()
     },
-    { scope: root, dependencies: [desktop] },
+    { scope: root, dependencies: [desktop], revertOnUpdate: true },
   )
 
   return (
@@ -267,8 +296,7 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
           <div
             ref={track}
             aria-hidden
-            className="engine-track pointer-events-none absolute inset-x-0 bottom-0 z-[1]"
-            style={{ top: desktop ? 0 : trackTop }}
+            className="engine-track pointer-events-none absolute inset-0 z-[1] select-none"
           >
             <div ref={screen} className="sticky top-0 h-[100svh] w-full overflow-hidden">
               {mode === '3d' ? <EngineCanvas active={active} callouts={desktop} /> : null}
@@ -285,36 +313,25 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
   )
 }
 
-/** The five parts in the order of their numbers (01 Automation … 05 Web). */
-const PARTS = MARK_PIECES.map((p) => services.find((s) => s.part === p.id))
-  .filter((s): s is (typeof services)[number] => !!s)
-  .sort((a, b) => a.n.localeCompare(b.n))
-
 /**
- * The engine's place in the hero on phones and tablets. The live engine is drawn by the
- * stage's canvas, which starts centred on this slot; here it can be dragged to spin.
+ * The engine's place in the hero on phones and tablets: whatever room the copy leaves. The
+ * live engine is drawn by the stage's canvas, placed on this window; here it can be dragged
+ * to spin.
  */
 export function MobileEngineWindow() {
   const { mode, desktop } = useStage()
   if (desktop) return null
   return (
-    <div className="lg:hidden">
-      <div aria-hidden data-engine-slot className="relative -mx-[var(--gutter)] mt-6 h-[min(92vw,440px)]">
+    <div className="flex flex-1 flex-col lg:hidden">
+      <div aria-hidden data-engine-slot className="relative -mx-[var(--gutter)] mt-3 min-h-[190px] flex-1">
         {mode === '3d' ? <EngineHandle /> : null}
         {mode === 'static' ? (
           <div className="absolute inset-0 grid place-items-center">
             <MarkBlueprint filled className="w-[62%] text-ink-3" exploded={0.35} />
           </div>
         ) : null}
-        {mode === '3d' ? <DragHint className="bottom-2 right-[var(--gutter)]" label="Drag to spin" /> : null}
+        {mode === '3d' ? <DragHint className="bottom-1 right-[var(--gutter)]" label="Drag to spin" /> : null}
       </div>
-      <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1.5" aria-label="What the engine is made of">
-        {PARTS.map((p) => (
-          <li key={p.id} className="t-label text-ink-3">
-            <span className="text-teal-ink">{p.n}</span> {p.short}
-          </li>
-        ))}
-      </ul>
     </div>
   )
 }

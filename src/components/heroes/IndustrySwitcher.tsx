@@ -32,12 +32,12 @@ export function IndustrySwitcher() {
               onClick={() => setI(k)}
               aria-pressed={k === i}
               className={cn(
-                'flex w-full items-center gap-2 rounded-[10px] border px-2.5 py-2 text-left text-[0.76rem] font-medium transition-[background-color,border-color,color] duration-300',
+                'flex h-full w-full items-center gap-2 rounded-[10px] border px-2.5 py-2 text-left text-[0.76rem] font-medium leading-tight transition-[background-color,border-color,color] duration-300',
                 k === i ? 'border-ink bg-ink text-bg' : 'border-line bg-raise text-ink-2 hover:border-line-2 hover:text-ink',
               )}
             >
               <Icon name={solutionIcon[x.slug] ?? 'layers'} size={14} className="shrink-0" />
-              <span className="truncate">{x.label}</span>
+              <span className="min-w-0">{x.label}</span>
             </button>
           </li>
         ))}

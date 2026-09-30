@@ -380,8 +380,10 @@ function sitemapEntries() {
       priority: Number(m[4]),
     })
   }
-  return out
+  // Pages added since the audit, after the ones the live site listed.
+  return [...out, ...ADDED]
 }
+const ADDED = [{ route: '/products', lastModified: null, changeFrequency: 'monthly', priority: 0.9 }]
 
 /* ------------------------------------------------------------------ */
 /* Pages → files                                                       */
@@ -390,6 +392,7 @@ const FILES = {
   '/': 'homepage.md',
   '/services': 'services/index.md',
   '/services/ai-agent-development': 'services/ai-agent-development.md',
+  '/products': 'products/index.md',
   '/solutions': 'solutions/index.md',
   '/portfolio': 'portfolio/portfolio.md',
   '/about-us': 'about/about-us.md',
@@ -878,15 +881,15 @@ function parseLocation(route) {
     }
   }
 
-  const serviceItems = h3Items(services.body).map((i) => {
-    const lines = i.body.split('\n').map((l) => l.trim()).filter(Boolean)
-    const priceLine = lines.find((l) => /^From ₹/.test(l)) || ''
-    return {
-      title: i.title,
-      body: lines.filter((l) => l !== priceLine).join(' '),
-      price: priceLine.replace(/\s*Get quote$/, ''),
-    }
-  })
+  // the record's "From ₹… Get quote" lines are left out: the site shows no prices, only quotes
+  const serviceItems = h3Items(services.body).map((i) => ({
+    title: i.title,
+    body: i.body
+      .split('\n')
+      .map((l) => l.trim())
+      .filter((l) => l && !/^From ₹/.test(l))
+      .join(' '),
+  }))
 
   const indParas = paras(industries.body)
   const processSteps = process.body
@@ -1070,63 +1073,7 @@ for (const r of ['/privacy-policy', '/terms-and-conditions', '/refund-policy']) 
 write('legal.json', legal)
 
 /* ------------------------------------------------------------------ */
-/* 6. Portfolio                                                        */
-/* ------------------------------------------------------------------ */
-const portfolio = (() => {
-  const doc = docFor('/portfolio')
-  const main = doc['Main Content']
-  const allIdx = main.indexOf('## Filter by what you’re building')
-  const all = main.slice(allIdx)
-  const projects = []
-  // The ItemList schema carries each project's long description; the card copy is
-  // "Name Tagline Description" flattened, so the tagline is what sits between them.
-  const itemList = (seo['/portfolio'].jsonLd.find((x) => x['@type'] === 'ItemList') || { itemListElement: [] }).itemListElement
-  const descFor = (name) => itemList.find((x) => x.name === name)?.description
-  // Linked projects on one line.
-  const re = /\[\[Image: ([^\]]+?) - ([^\]]+?)\]\((https:\/\/www\.instabizweb\.com\/portfolio\/[^)]+)\) \2 (.+?) ### (.+?) (Visit project|Learn more)\]\(([^)]+)\)/g
-  let m
-  while ((m = re.exec(all))) {
-    const name = m[1]
-    let rest = m[5].trim()
-    if (rest.startsWith(name + ' ')) rest = rest.slice(name.length + 1)
-    else warn(`Portfolio: card text for ${name} does not start with its name`)
-    const description = descFor(name)
-    let tagline = rest
-    if (description && rest.endsWith(description)) tagline = rest.slice(0, rest.length - description.length).trim()
-    else warn(`Portfolio: could not isolate tagline for ${name}`)
-    projects.push({
-      name,
-      category: m[2],
-      image: localHref(m[3]),
-      tag: m[4].trim(),
-      tagline,
-      description: description ?? rest,
-      ctaLabel: m[6],
-      href: localHref(m[7]),
-    })
-  }
-  // Unlinked project (Rental Management) spans several lines.
-  const rm = all.match(/\[Image: ([^\]]+?) - ([^\]]+?)\]\((https:\/\/www\.instabizweb\.com\/portfolio\/[^)]+)\) \2 ([^\n]+)\n\n### ([^\n]+)\n\n([^\n]+)\n\n([^\n]+)/)
-  if (rm) {
-    const insertAfter = projects.findIndex((p) => p.name === 'Odoo CRM')
-    projects.splice(insertAfter + 1, 0, {
-      name: rm[1], category: rm[2], image: localHref(rm[3]), tag: rm[4].trim(), tagline: rm[6].trim(), description: rm[7].trim(), ctaLabel: null, href: null,
-    })
-  }
-  // Keep the schema order (matches the live grid order).
-  projects.sort((a, b) => itemList.findIndex((x) => x.name === a.name) - itemList.findIndex((x) => x.name === b.name))
-  const lines = main.split('\n').map((l) => l.trim()).filter(Boolean)
-  const filterLine = lines.find((l) => l.startsWith('All Work '))
-  const filters = [...filterLine.matchAll(/([A-Za-z&][A-Za-z& ]*?)\s(\d+)(?=\s|$)/g)].map((x) => ({ label: x[1].trim(), count: Number(x[2]) }))
-  const spot = main.slice(main.indexOf('Featured spotlight'), allIdx)
-  const featured = [...spot.matchAll(/^- \[Image: ([^\]]+)\]\([^)]+\) (.+?) \1 (.+)$/gm)].map((x) => ({ name: x[1], category: x[2], note: x[3] }))
-  if (projects.length !== 15) warn(`Portfolio: parsed ${projects.length} projects (expected 15)`)
-  return { projects, filters, featured }
-})()
-write('portfolio.json', portfolio)
-
-/* ------------------------------------------------------------------ */
-/* 7. Generic page sections for one-off pages (used by typed selectors) */
+/* 6. Generic page sections for one-off pages (used by typed selectors) */
 /* ------------------------------------------------------------------ */
 const pages = {}
 for (const route of ['/', '/services', '/services/ai-agent-development', '/about-us', '/contact-us', '/portfolio']) {
@@ -1146,14 +1093,14 @@ function qaPairsFromAppendix(text) {
 write('pages.json', pages)
 
 /* ------------------------------------------------------------------ */
-/* 8. llms.txt                                                         */
+/* 7. llms.txt                                                         */
 /* ------------------------------------------------------------------ */
 // The audited copy in other/llms.md was byte-identical to the recorded live file; it is the
 // source now so that the site's own edits (retired services) reach llms.txt too.
 fs.writeFileSync(path.join(OUT, 'llms.txt'), read('other/llms.md').split('## Main Content')[1].trim() + '\n')
 
 /* ------------------------------------------------------------------ */
-console.log(`content: ${Object.keys(seo).length} routes · ${posts.length} posts · ${solutions.length} solutions · ${locations.length} locations · ${portfolio.projects.length} projects`)
+console.log(`content: ${Object.keys(seo).length} routes · ${posts.length} posts · ${solutions.length} solutions · ${locations.length} locations`)
 if (warnings.length) {
   console.log(`content: ${warnings.length} note(s)`)
   for (const w of warnings) console.log('  - ' + w)

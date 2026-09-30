@@ -179,7 +179,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
         </section>
       ) : null}
 
-      {/* services with prices */}
+      {/* services, each quoted on request */}
       <section className="rails section border-b border-line">
         <div className="shell">
           <SectionHead eyebrow={l.services.eyebrow} title={l.services.title} intro={l.services.intro ?? undefined} align="split" />
@@ -194,7 +194,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
                 <h3 className="t-h4">{s.title}</h3>
                 <p className="t-small mt-3 flex-1 text-ink-2">{s.body}</p>
                 <div className="mt-7 flex items-center justify-between border-t border-line pt-5">
-                  <span className="t-numeral text-[1.3rem]">{s.price}</span>
+                  <span className="t-label text-ink-3">Fixed quote in 24 hours</span>
                   <a href="#contact-form" className="inline-flex items-center gap-1.5 text-[0.9rem] font-medium text-teal-ink">
                     Get quote <Icon name="arrow" size={14} className="transition-transform group-hover:translate-x-1" />
                   </a>

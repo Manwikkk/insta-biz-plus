@@ -6,7 +6,7 @@ export const contact = {
   tagNote: 'Free 30-min strategy call · zero pitch',
   h1: 'Let’s build something great. Together.',
   intro:
-    'Tell us about your project below and we’ll get back within 2 hours with timeline, scope, and an honest price. Or if you’re old-school -',
+    'Tell us about your project below and we’ll get back within 2 hours with timeline, scope, and a clear quote. Or if you’re old-school -',
   introLink: 'give us a ring',
   jump: [
     { label: 'Jump to form', href: '#contact-form' },
@@ -21,7 +21,6 @@ export const contact = {
     points: ['Reply within 2 hours, 6 days a week', 'Free 30-min strategy call · zero pitch', 'NDAs on request · your data stays safe'],
     submit: 'Send my message',
     disclaimer: 'By submitting, you agree to be contacted by Insta Biz Web. We never share your data - and you’ll never get spam from us.',
-    budgetExtra: 'Not sure yet',
   },
   channels: {
     eyebrow: 'Reach us your way',
@@ -90,8 +89,8 @@ export const contact = {
       {
         n: '04',
         when: 'Day 2 - 3',
-        title: 'Custom proposal & price',
-        body: 'You get a clear scope, milestone-based timeline, and an honest fixed price. No surprises, no “starting from” nonsense.',
+        title: 'Custom proposal & quote',
+        body: 'You get a clear scope, milestone-based timeline, and a fixed quote. No surprises, no hidden extras.',
       },
       {
         n: '05',

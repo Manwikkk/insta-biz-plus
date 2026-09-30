@@ -50,6 +50,9 @@ type IconName =
   | 'scan'
   | 'pulse'
   | 'bed'
+  // products
+  | 'waveform'
+  | 'headset'
   // social
   | 'linkedin'
   | 'instagram'
@@ -221,6 +224,8 @@ const paths: Record<IconName, React.ReactNode> = {
       <circle cx="7" cy="11.5" r="1.8" />
     </>
   ),
+  waveform: <path d="M4 10.5v3M8 7v10M12 4v16M16 8.5v7M20 11v2" />,
+  headset: <path d="M4.5 15v-3a7.5 7.5 0 0 1 15 0v3M4.5 15a2 2 0 0 1 2-2h1v5.5h-1a2 2 0 0 1-2-2ZM19.5 15a2 2 0 0 0-2-2h-1v5.5h1a2 2 0 0 0 2-2ZM17.5 18.5c0 1.4-1.6 2-3.5 2h-1.5" />,
   linkedin: (
     <>
       <rect x="3.5" y="3.5" width="17" height="17" rx="3.5" />

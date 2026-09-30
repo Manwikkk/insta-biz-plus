@@ -6,7 +6,7 @@ import { SectionHead } from '@/components/ui/SectionHead'
 import { SplitReveal } from '@/components/motion/SplitReveal'
 import { Marquee } from '@/components/ui/Marquee'
 import { PortfolioHero } from '@/components/portfolio/PortfolioHero'
-import { CaseStudies } from '@/components/portfolio/CaseStudies'
+import { ProductSpotlight } from '@/components/portfolio/ProductSpotlight'
 import { WorkGrid } from '@/components/portfolio/WorkGrid'
 import { Icon } from '@/components/ui/Icon'
 import { portfolioPage as pp, projects } from '@/content/portfolio'
@@ -15,8 +15,8 @@ import { site } from '@/content/site'
 export const metadata: Metadata = buildMetadata('/portfolio')
 
 /**
- * The work, told in four beats: a wall of live products, the builds we keep talking about,
- * every product line to filter, and the invitation to be next.
+ * The work, told in four beats: a wall of live products, the four products we build and
+ * run in the spotlight, all the client work to filter, and the invitation to be next.
  */
 export default function PortfolioPage() {
   return (
@@ -24,12 +24,16 @@ export default function PortfolioPage() {
       <JsonLd data={pageJsonLd('/portfolio')} />
       <PortfolioHero />
 
-      {/* the builds we keep talking about */}
-      <section className="rails section border-b border-line" id="spotlight">
+      {/* our products, in the spotlight */}
+      <section className="rails section border-b border-line scroll-mt-24" id="products">
         <div className="shell">
-          <SectionHead eyebrow={pp.spotlight.eyebrow} title={pp.spotlight.title} intro={pp.spotlight.intro} align="split" />
+          <SectionHead eyebrow={pp.products.eyebrow} title={pp.products.title} intro={pp.products.intro} align="split">
+            <KeyButton href="/products" variant="ghost" size="sm" className="mt-6">
+              {pp.products.cta}
+            </KeyButton>
+          </SectionHead>
           <div className="mt-14">
-            <CaseStudies />
+            <ProductSpotlight />
           </div>
         </div>
       </section>
@@ -39,7 +43,7 @@ export default function PortfolioPage() {
         {projects.map((p) => (
           <span key={p.slug} className="mx-7 inline-flex items-baseline gap-3 whitespace-nowrap">
             <span className="font-display text-[clamp(1.6rem,2.8vw,2.4rem)] font-[720] tracking-[-0.03em] text-ink">{p.name}</span>
-            <span className="t-label text-teal-ink">{p.category}</span>
+            <span className="t-label text-teal-ink">{p.category.replace(' Development', '')}</span>
             <span className="ml-4 font-display text-[clamp(1.6rem,2.8vw,2.4rem)] text-teal" aria-hidden>
               /
             </span>

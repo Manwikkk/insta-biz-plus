@@ -102,7 +102,7 @@ export function Works({ ints, note }: { ints: string[]; note?: string }) {
     <div className="mt-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-1.5 px-1">
       <p className="t-label flex min-w-0 items-center gap-1.5 text-ink-2">
         <Icon name="workflow" size={13} className="shrink-0 text-teal-ink" />
-        <span className="truncate">Connects with {ints.slice(0, 3).join(' · ')}</span>
+        <span>Connects with {ints.slice(0, 3).join(' · ')}</span>
       </p>
       {note ? <p className="t-label ml-auto text-ink-3">{note}</p> : null}
     </div>

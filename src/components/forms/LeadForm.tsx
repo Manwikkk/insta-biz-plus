@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef, useState, type FormEvent } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { budgetOptions, needOptions, site } from '@/content/site'
+import { needOptions, site, timelineOptions } from '@/content/site'
 import { KeyAction } from '@/components/ui/KeyButton'
 import { Icon } from '@/components/ui/Icon'
 import { cn } from '@/lib/cn'
@@ -80,6 +80,8 @@ function Field({
       ? 'border-stage-line text-stage-ink focus:border-teal focus:shadow-[0_0_0_3px_rgb(34_199_216/0.15)]'
       : 'border-line-2 text-ink focus:border-ink focus:shadow-[0_0_0_3px_var(--teal-soft)]',
     error && 'border-ember',
+    // the label floats up on focus; a hint, when there is one, shows in its place
+    placeholder && (tone === 'stage' ? 'focus:placeholder:text-stage-ink-2/70' : 'focus:placeholder:text-ink-3/70'),
   )
   const labelCls = cn(
     'pointer-events-none absolute left-4 right-4 origin-left truncate transition-all duration-300 ease-[var(--ease-out)]',
@@ -131,8 +133,7 @@ export function LeadForm({
   submitLabel,
   disclaimer,
   needLabel = 'I need help with',
-  budgetLabel = 'Approx. budget',
-  extraBudget,
+  timelineLabel = 'When do you want to start?',
 }: {
   variant?: Variant
   tone?: 'light' | 'stage'
@@ -140,11 +141,10 @@ export function LeadForm({
   submitLabel: string
   disclaimer: string
   needLabel?: string
-  budgetLabel?: string
-  extraBudget?: string
+  timelineLabel?: string
 }) {
   const [needs, setNeeds] = useState<string[]>([])
-  const [budget, setBudget] = useState('')
+  const [timeline, setTimeline] = useState('')
   const [f, setF] = useState({ name: '', email: '', phone: '', subject: '', message: '' })
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [state, setState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
@@ -164,7 +164,6 @@ export function LeadForm({
   }, [])
 
   const set = (k: keyof typeof f) => (v: string) => setF((s) => ({ ...s, [k]: v }))
-  const budgets = [...budgetOptions, ...(extraBudget ? [extraBudget] : [])]
 
   async function submit(e: FormEvent) {
     e.preventDefault()
@@ -180,7 +179,7 @@ export function LeadForm({
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ form: variant, ...f, needs, budget, page: window.location.pathname }),
+        body: JSON.stringify({ form: variant, ...f, needs, timeline, page: window.location.pathname }),
       })
       const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string }
       if (!res.ok || !data.ok) throw new Error(data.error || 'Something went wrong.')
@@ -254,11 +253,11 @@ export function LeadForm({
               </div>
             </fieldset>
             <fieldset>
-              <legend className={labelCls}>{budgetLabel}</legend>
+              <legend className={labelCls}>{timelineLabel}</legend>
               <div className="flex flex-wrap gap-2">
-                {budgets.map((b) => (
-                  <Chip key={b} tone={tone} on={budget === b} onClick={() => setBudget(budget === b ? '' : b)}>
-                    {b}
+                {timelineOptions.map((t) => (
+                  <Chip key={t} tone={tone} on={timeline === t} onClick={() => setTimeline(timeline === t ? '' : t)}>
+                    {t}
                   </Chip>
                 ))}
               </div>
@@ -298,7 +297,8 @@ export function LeadForm({
               {variant === 'contact' ? (
                 <Field
                   tone={tone}
-                  label="Subject - e.g. New ecommerce site for my brand"
+                  label="Subject"
+                  placeholder="e.g. New ecommerce site for my brand"
                   name="subject"
                   required
                   value={f.subject}
@@ -310,10 +310,9 @@ export function LeadForm({
             <Field
               tone={tone}
               textarea
-              label={
-                variant === 'contact'
-                  ? "Tell us about your project - goals, deadlines, examples you like, or anything you're stuck on…"
-                  : 'Tell us a bit about your project (goals, deadline, anything)…'
+              label="Tell us about your project"
+              placeholder={
+                variant === 'contact' ? "Goals, deadlines, examples you like, or anything you're stuck on…" : 'Goals, deadline, anything…'
               }
               name="message"
               value={f.message}

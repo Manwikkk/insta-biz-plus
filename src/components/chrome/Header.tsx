@@ -2,20 +2,24 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect, useLayoutEffect, useRef, useState, type MouseEvent, type ReactNode } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useRef, useState, type MouseEvent, type ReactNode } from 'react'
 import { AnimatePresence, LayoutGroup, MotionConfig, motion } from 'motion/react'
 import { Logo } from './Logo'
 import { ThemeToggle } from './ThemeToggle'
 import { Icon, type IconName } from '@/components/ui/Icon'
+import { KeyButton } from '@/components/ui/KeyButton'
 import { MobileMenu } from './MobileMenu'
 import { useLenis } from '@/components/motion/SmoothScroll'
 import { primaryNav, locationLinks, site } from '@/content/site'
 import { services } from '@/content/services'
 import { solutionsIndex, solutions } from '@/content/data'
-import { locationIcon, serviceIcon, socialIcon, solutionIcon } from '@/content/nav'
+import { products } from '@/content/products'
+import { ProductScreens } from '@/components/products/ProductScreens'
+import { ServiceReel } from './ServiceReel'
+import { serviceIcon, socialIcon, solutionIcon } from '@/content/nav'
 import { cn } from '@/lib/cn'
 
-type MenuId = 'services' | 'solutions'
+type MenuId = 'services' | 'solutions' | 'products'
 
 const ease = [0.16, 1, 0.3, 1] as const
 const easeIn = [0.55, 0, 0.75, 0.2] as const
@@ -23,7 +27,7 @@ const lensSpring = { type: 'spring', stiffness: 520, damping: 42, mass: 0.7 } as
 /** Vertical middle of the bar, where the section underneath is sampled. */
 const PROBE_Y = 40
 /** The menus open in this order; switching slides the content the way the pointer travelled. */
-const ORDER: MenuId[] = ['services', 'solutions']
+const ORDER: MenuId[] = ['services', 'solutions', 'products']
 
 /** On the bar: everything but Contact, which the "Book a demo" button already is. */
 const LINKS = primaryNav.filter((n) => n.href !== '/contact-us')
@@ -31,10 +35,10 @@ const AHMEDABAD = new Set(locationLinks.map((l) => l.href))
 
 /**
  * A floating bar of frosted glass: the pages on the left, the logo at the centre, the
- * socials, theme switch and "Book a demo" on the right. Services and Solutions open a
- * second glass panel with titles only, and the page behind softens while it is open.
- * Over dark sections the bar (and its panel) take the dark palette so the glass always
- * reads as glass.
+ * socials, theme switch and "Book a demo" on the right. Services, Solutions and Products
+ * open a second glass panel, and the page behind softens while it is open. Over dark
+ * sections the bar (and its panel) take the dark palette so the glass always reads as glass.
+ * On phones the burger opens the menu beneath the bar and turns into its close button.
  */
 export function Header() {
   const pathname = usePathname()
@@ -49,6 +53,8 @@ export function Header() {
   const closeTimer = useRef<number | null>(null)
   const lastY = useRef(0)
   const headerRef = useRef<HTMLElement>(null)
+  // stable, so the open menu's scroll lock is set up once rather than on every header render
+  const closeMobile = useCallback(() => setMobileOpen(false), [])
 
   useEffect(() => {
     const onScroll = () => {
@@ -165,17 +171,17 @@ export function Header() {
             so every section's content sits inside its width */}
         <div
           className="relative mx-auto max-w-[1200px] lg:w-[calc(min(100%_-_2*var(--gutter),var(--shell-max))_+_48px)] lg:max-w-none"
-          data-theme={overDark ? 'dark' : undefined}
+          data-theme={overDark && !mobileOpen ? 'dark' : undefined}
         >
-          <div className="nav-glass nav-bar" data-scrolled={scrolled || !!menu}>
-            <div className="flex h-14 items-center gap-2 pl-4 pr-2 lg:grid lg:h-[72px] lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:gap-4 lg:px-4">
-              {/* left: the pages */}
+          <div className="nav-glass nav-bar" data-scrolled={scrolled || !!menu || mobileOpen}>
+            <div className="flex h-14 items-center gap-2 pl-4 pr-2 lg:grid lg:h-[72px] lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:gap-3 lg:px-3 xl:gap-4 xl:px-4">
+              {/* left: the pages (six labels share half the bar, so they tighten on narrower screens) */}
               <nav aria-label="Primary" className="hidden min-w-0 items-center lg:flex" onMouseLeave={() => setLens(null)}>
                 {LINKS.map((item) => {
                   const active = isActive(item.href)
                   const expanded = !!item.menu && menu === item.menu
                   const cls = cn(
-                    'nav-link relative z-[1] flex h-9 items-center gap-1 whitespace-nowrap rounded-full px-2 text-[0.875rem] font-medium tracking-[-0.01em] transition-colors duration-300 lg:h-10 lg:text-[0.92rem] xl:px-4 xl:text-[0.98rem]',
+                    'nav-link relative z-[1] flex h-9 items-center gap-1 whitespace-nowrap rounded-full px-1.5 text-[0.8125rem] font-medium tracking-[-0.01em] transition-colors duration-300 lg:h-10 xl:px-2 xl:text-[0.9rem] min-[1440px]:px-2.5 min-[1440px]:text-[0.96rem]',
                     active || expanded || lensOn === item.href ? 'text-ink' : 'text-ink-2',
                   )
                   return (
@@ -217,10 +223,10 @@ export function Header() {
                           {item.label}
                           <Icon
                             name="chevron"
-                            size={14}
+                            size={12}
                             strokeWidth={2}
                             className={cn(
-                              'text-ink-3 transition-transform duration-500 ease-[var(--ease-out)]',
+                              'hidden text-ink-3 transition-transform duration-500 ease-[var(--ease-out)] xl:block',
                               expanded && 'rotate-180 text-ink',
                             )}
                           />
@@ -265,9 +271,10 @@ export function Header() {
                 </Link>
                 <button
                   type="button"
-                  aria-label="Open menu"
+                  aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
                   aria-expanded={mobileOpen}
-                  onClick={() => setMobileOpen(true)}
+                  aria-controls="mobile-menu"
+                  onClick={() => setMobileOpen((o) => !o)}
                   className="nav-icon-btn lg:hidden"
                 >
                   <span className="nav-burger" aria-hidden>
@@ -306,7 +313,7 @@ export function Header() {
                         exit="exit"
                         transition={{ duration: 0.42, ease }}
                       >
-                        {menu === 'services' ? <ServicesPanel /> : <SolutionsPanel />}
+                        {menu === 'services' ? <ServicesPanel /> : menu === 'solutions' ? <SolutionsPanel /> : <ProductsPanel />}
                       </motion.div>
                     </AnimatePresence>
                   </AutoHeight>
@@ -317,7 +324,7 @@ export function Header() {
         </div>
       </header>
 
-      <AnimatePresence>{mobileOpen ? <MobileMenu onClose={() => setMobileOpen(false)} /> : null}</AnimatePresence>
+      <AnimatePresence>{mobileOpen ? <MobileMenu onClose={closeMobile} /> : null}</AnimatePresence>
     </MotionConfig>
   )
 }
@@ -345,13 +352,19 @@ function AutoHeight({ children }: { children: ReactNode }) {
 type Entry = { href: string; label: string; icon: IconName }
 
 /** A titled group of menu links; a soft highlight glides to whichever one is under the pointer. */
-function MenuGroup({ id, title, entries, cols, className }: { id: string; title: string; entries: Entry[]; cols: 1 | 2; className?: string }) {
+function MenuGroup({ id, title, entries, cols, className }: { id: string; title?: string; entries: Entry[]; cols: 1 | 2 | 3; className?: string }) {
   const [hover, setHover] = useState<string | null>(null)
   return (
     <div className={className}>
-      <p className="t-label px-3 text-ink-3">{title}</p>
+      {/* an untitled group keeps the title's line, so its links sit level with the neighbouring group's */}
+      <p className="t-label px-3 text-ink-3" aria-hidden={!title || undefined}>
+        {title || ' '}
+      </p>
       <LayoutGroup id={id}>
-        <ul className={cn('mt-3 grid gap-x-3 gap-y-0.5', cols === 2 ? 'grid-cols-2' : 'grid-cols-1')} onMouseLeave={() => setHover(null)}>
+        <ul
+          className={cn('mt-3 grid gap-x-3 gap-y-0.5', cols === 3 ? 'grid-cols-3' : cols === 2 ? 'grid-cols-2' : 'grid-cols-1')}
+          onMouseLeave={() => setHover(null)}
+        >
           {entries.map((e, i) => (
             <motion.li
               key={e.href}
@@ -391,17 +404,177 @@ function PanelFoot({ href, label }: { href: string; label: string }) {
   )
 }
 
+/**
+ * Services: pick one on the left, read it in the middle, and watch it on the right: a
+ * short film of the work, its three steps playing in turn.
+ */
 function ServicesPanel() {
-  const what: Entry[] = [
-    ...services.map((s) => ({ href: `/services#${s.id}`, label: s.label, icon: serviceIcon[s.id] })),
-    { href: '/services/ai-agent-development', label: 'AI Agent Development', icon: 'bot' },
-  ]
-  const local: Entry[] = locationLinks.map((l) => ({ href: l.href, label: l.short, icon: locationIcon[l.href] ?? 'pin' }))
+  const [active, setActive] = useState(0)
+  const [dir, setDir] = useState(1)
+  const s = services[active]
+  const pick = (i: number) => {
+    if (i === active) return
+    setDir(i > active ? 1 : -1)
+    setActive(i)
+  }
   return (
-    <div className="grid grid-cols-12 gap-x-8 p-6 xl:gap-x-10">
-      <MenuGroup id="menu-services" title="Services" entries={what} cols={2} className="col-span-7" />
-      <MenuGroup id="menu-local" title="In Ahmedabad" entries={local} cols={1} className="col-span-5 border-l border-line pl-8 xl:pl-10" />
+    <div className="grid grid-cols-12 gap-x-6 p-6 xl:gap-x-8">
+      <div className="col-span-3">
+        <p className="t-label px-3 text-ink-3">Services</p>
+        <LayoutGroup id="menu-services">
+          <ul className="mt-3 grid gap-1">
+            {services.map((x, i) => (
+              <motion.li
+                key={x.id}
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.06 + i * 0.03, duration: 0.45, ease }}
+                className="relative"
+                onMouseEnter={() => pick(i)}
+              >
+                {i === active ? <motion.span layoutId="service-pick" className="product-pick" transition={lensSpring} /> : null}
+                <Link href={`/services#${x.id}`} className="product-row group" onFocus={() => pick(i)} data-active={i === active || undefined}>
+                  <span className="menu-icon">
+                    <Icon name={serviceIcon[x.id]} size={17} />
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-[0.98rem] font-semibold leading-tight tracking-[-0.012em] text-ink">{x.label}</span>
+                    <span className="mt-0.5 block truncate text-[0.82rem] text-ink-3">{x.lineTech.join(' · ')}</span>
+                  </span>
+                  <Icon name="chevron" size={15} strokeWidth={2} className="product-row-arrow" />
+                </Link>
+              </motion.li>
+            ))}
+          </ul>
+        </LayoutGroup>
+      </div>
+
+      <div className="relative col-span-5 border-l border-line pl-6 xl:pl-8">
+        <AnimatePresence mode="popLayout" initial={false} custom={dir}>
+          <motion.div
+            key={s.id}
+            custom={dir}
+            variants={{
+              enter: (d: number) => ({ opacity: 0, y: d * 14, filter: 'blur(4px)' }),
+              center: { opacity: 1, y: 0, filter: 'blur(0px)' },
+              exit: (d: number) => ({ opacity: 0, y: d * -10, filter: 'blur(4px)' }),
+            }}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ duration: 0.38, ease }}
+            className="pt-1"
+          >
+            <p className="t-label text-teal-ink">
+              {s.n} / {String(services.length).padStart(2, '0')}
+            </p>
+            <p className="mt-2 font-display text-[clamp(1.7rem,2.2vw,2.15rem)] font-[740] leading-none tracking-[-0.035em] [font-stretch:104%]">
+              {s.label}
+            </p>
+            <p className="mt-2 text-[0.98rem] text-ink-2">{s.headline}</p>
+            <p className="mt-5 max-w-[34rem] text-[0.97rem] leading-relaxed text-ink-2">{s.body}</p>
+            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
+              <KeyButton href={`/services#${s.id}`} size="sm">
+                View service
+              </KeyButton>
+              <p className="flex items-baseline gap-2 text-[0.86rem] text-ink-3">
+                <span className="t-num text-[1.35rem] text-ink">{s.avg.value}</span>
+                {s.avg.label}
+              </p>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      <div className="col-span-4 border-l border-line pl-6 xl:pl-8">
+        <p className="t-label text-ink-3">How it works</p>
+        <div className="mt-3">
+          <ServiceReel id={s.id} />
+        </div>
+      </div>
       <PanelFoot href="/services" label="View all services" />
+    </div>
+  )
+}
+
+/**
+ * Products: pick one on the left, read it in the middle, see it on the right. The screens
+ * of the product under the pointer cycle in the preview.
+ */
+function ProductsPanel() {
+  const [active, setActive] = useState(0)
+  const [dir, setDir] = useState(1)
+  const p = products[active]
+  const pick = (i: number) => {
+    if (i === active) return
+    setDir(i > active ? 1 : -1)
+    setActive(i)
+  }
+  return (
+    <div className="grid grid-cols-12 gap-x-6 p-6 xl:gap-x-8">
+      <div className="col-span-3">
+        <p className="t-label px-3 text-ink-3">Products</p>
+        <LayoutGroup id="menu-products">
+          <ul className="mt-3 grid gap-1">
+            {products.map((x, i) => (
+              <motion.li
+                key={x.id}
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.06 + i * 0.03, duration: 0.45, ease }}
+                className="relative"
+                onMouseEnter={() => pick(i)}
+              >
+                {i === active ? <motion.span layoutId="product-pick" className="product-pick" transition={lensSpring} /> : null}
+                <Link href={`/products#${x.id}`} className="product-row group" onFocus={() => pick(i)} data-active={i === active || undefined}>
+                  <span className="menu-icon">
+                    <Icon name={x.icon} size={17} />
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-[0.98rem] font-semibold leading-tight tracking-[-0.012em] text-ink">{x.name}</span>
+                    <span className="mt-0.5 block truncate text-[0.82rem] text-ink-3">{x.short}</span>
+                  </span>
+                  <Icon name="chevron" size={15} strokeWidth={2} className="product-row-arrow" />
+                </Link>
+              </motion.li>
+            ))}
+          </ul>
+        </LayoutGroup>
+      </div>
+
+      <div className="relative col-span-5 border-l border-line pl-6 xl:pl-8">
+        <AnimatePresence mode="popLayout" initial={false} custom={dir}>
+          <motion.div
+            key={p.id}
+            custom={dir}
+            variants={{
+              enter: (d: number) => ({ opacity: 0, y: d * 14, filter: 'blur(4px)' }),
+              center: { opacity: 1, y: 0, filter: 'blur(0px)' },
+              exit: (d: number) => ({ opacity: 0, y: d * -10, filter: 'blur(4px)' }),
+            }}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ duration: 0.38, ease }}
+            className="pt-1"
+          >
+            <p className="font-display text-[clamp(1.7rem,2.2vw,2.15rem)] font-[740] leading-none tracking-[-0.035em] [font-stretch:104%]">
+              {p.name}
+            </p>
+            <p className="mt-2 text-[0.98rem] text-ink-2">{p.short}</p>
+            <p className="mt-5 max-w-[34rem] text-[0.97rem] leading-relaxed text-ink-2">{p.description}</p>
+            <KeyButton href={`/products#${p.id}`} size="sm" className="mt-6">
+              View details
+            </KeyButton>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      <div className="col-span-4 border-l border-line pl-6 xl:pl-8">
+        <p className="t-label text-ink-3">Preview</p>
+        <ProductScreens product={p} className="mt-3" />
+      </div>
+      <PanelFoot href="/products" label="Explore all products" />
     </div>
   )
 }

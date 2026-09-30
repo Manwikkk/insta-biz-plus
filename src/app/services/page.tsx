@@ -4,7 +4,7 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { PageHero } from '@/components/sections/PageHero'
 import { KeyButton } from '@/components/ui/KeyButton'
 import { SectionHead } from '@/components/ui/SectionHead'
-import { ServiceIndexNav } from '@/components/services/ServiceIndexNav'
+import { SectionIndexNav } from '@/components/sections/SectionIndexNav'
 import { ServiceSpec } from '@/components/services/ServiceSpec'
 import { ServiceShowcase } from '@/components/heroes/ServiceShowcase'
 import { TechTabs } from '@/components/sections/TechTabs'
@@ -44,7 +44,7 @@ export default function ServicesPage() {
         wide
       />
 
-      <ServiceIndexNav />
+      <SectionIndexNav id="services-grid" label="Services" items={services.map((s) => ({ id: s.id, n: s.n, label: s.label }))} />
 
       <div className="rails border-b border-line">
         <div className="shell py-16 lg:py-20">
@@ -128,7 +128,7 @@ export default function ServicesPage() {
         <div className="shell">
           <SectionHead eyebrow={engagement.eyebrow} title={engagement.title} intro={engagement.intro} align="split" />
           <div className="mt-14">
-            <PriceCards cards={engagement.models} cta="Discuss this option" />
+            <PriceCards cards={engagement.models} cta="Get a quote" />
           </div>
           <p className="t-small mt-8">
             {engagement.footnote}{' '}

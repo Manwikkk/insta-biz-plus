@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'motion/react'
 import { testimonials, brands } from '@/content/home'
 import { ClientLogo } from '@/components/ui/ClientLogo'
 import { useMarquee } from '@/lib/useMarquee'
+import { useMedia } from '@/lib/useMedia'
 import { Eyebrow, SectionHead } from '@/components/ui/SectionHead'
 import { ArrowLink } from '@/components/ui/KeyButton'
 import { Icon } from '@/components/ui/Icon'
@@ -23,6 +24,7 @@ export function Voices() {
   const [visible, setVisible] = useState(false)
   const root = useRef<HTMLElement>(null)
   const bar = useRef<HTMLSpanElement>(null)
+  const touch = useMedia('(pointer: coarse)', false)
   const t = items[i]
 
   const go = useCallback(
@@ -100,7 +102,20 @@ export function Voices() {
               </span>
             </div>
 
-            <div className="relative grid flex-1 px-6 pb-6 pt-4 sm:px-8 sm:pb-7" aria-live="polite">
+            {/* touch: swipe the story sideways for the next or the last one */}
+            <motion.div
+              className="relative grid flex-1 touch-pan-y px-6 pb-6 pt-4 sm:px-8 sm:pb-7"
+              aria-live="polite"
+              drag={touch ? 'x' : false}
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.22}
+              dragDirectionLock
+              onDragEnd={(_, info) => {
+                const swipe = info.offset.x + info.velocity.x * 0.2
+                if (swipe < -60) go(i + 1)
+                else if (swipe > 60) go(i - 1)
+              }}
+            >
               <AnimatePresence initial={false} custom={dir}>
                 <motion.div
                   key={t.name}
@@ -138,20 +153,26 @@ export function Voices() {
                   </figcaption>
                 </motion.div>
               </AnimatePresence>
-            </div>
+            </motion.div>
             {/* timer */}
             <span className="absolute inset-x-0 bottom-0 h-[3px] bg-line">
               <span ref={bar} className="meter-fill block h-full bg-teal" />
             </span>
           </figure>
 
-          {/* phones: a quiet position row instead of the full list */}
-          <div className="flex items-center justify-center gap-2 lg:hidden" aria-hidden>
+          {/* phones: a quiet position row instead of the full list; each dot jumps to its story */}
+          <div className="flex items-center justify-center gap-0.5 lg:hidden">
             {items.map((item, k) => (
-              <span
+              <button
                 key={item.name}
-                className={cn('h-1.5 rounded-full transition-all duration-500', k === i ? 'w-6 bg-teal' : 'w-1.5 bg-line-2')}
-              />
+                type="button"
+                onClick={() => go(k)}
+                aria-label={`Story ${k + 1}: ${item.name}`}
+                aria-current={k === i || undefined}
+                className="grid h-7 place-items-center px-1"
+              >
+                <span className={cn('block h-1.5 rounded-full transition-all duration-500', k === i ? 'w-6 bg-teal' : 'w-1.5 bg-line-2')} />
+              </button>
             ))}
           </div>
 

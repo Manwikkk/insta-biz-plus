@@ -1,13 +1,10 @@
 'use client'
 
 import { useId, useState } from 'react'
-import { AnimatePresence, motion } from 'motion/react'
 import { Icon } from '@/components/ui/Icon'
 import { askInForm } from '@/components/forms/LeadForm'
 import { cn } from '@/lib/cn'
 import { Markdownish } from '@/components/ui/Markdownish'
-
-const ease = [0.16, 1, 0.3, 1] as const
 
 function Item({ q, a, open, onToggle, n }: { q: string; a: string; open: boolean; onToggle: () => void; n: number }) {
   const id = useId()
@@ -44,22 +41,14 @@ function Item({ q, a, open, onToggle, n }: { q: string; a: string; open: boolean
           </span>
         </button>
       </h3>
-      <AnimatePresence initial={false}>
-        {open ? (
-          <motion.div
-            id={id}
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.5, ease }}
-            className="overflow-hidden"
-          >
-            <div className="pb-7 pl-12 pr-14 text-[1rem] leading-relaxed text-ink-2">
-              <Markdownish text={a} />
-            </div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
+      {/* always mounted: opening and closing are one smooth change of height */}
+      <div id={id} className="feature-body" data-open={open || undefined} aria-hidden={!open}>
+        <div className="min-h-0 overflow-hidden">
+          <div className="pb-7 pl-12 pr-14 text-[1rem] leading-relaxed text-ink-2">
+            <Markdownish text={a} />
+          </div>
+        </div>
+      </div>
     </li>
   )
 }

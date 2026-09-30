@@ -195,7 +195,7 @@ FAQs
 
 **How much does custom software development cost in Ahmedabad?**
 
-Custom software in Ahmedabad starts at around ₹1,50,000 for a focused web application, ₹3,50,000+ for a SaaS product, and ₹5,00,000+ for enterprise systems. We share a fixed INR quote with GST invoice within 24 hours of your enquiry, after a short discovery call.
+The cost depends on scope: a focused web application, a SaaS product and an enterprise system are very different builds. We share a fixed INR quote with GST invoice within 24 hours of your enquiry, after a short discovery call.
 
 **Which is the best software development company in Ahmedabad?**
 
@@ -270,7 +270,7 @@ By submitting, you agree to be contacted by Insta Biz Web. We never share your d
 
 ### How much does custom software development cost in Ahmedabad?
 
-Custom software in Ahmedabad starts at around ₹1,50,000 for a focused web application, ₹3,50,000+ for a SaaS product, and ₹5,00,000+ for enterprise systems. We share a fixed INR quote with GST invoice within 24 hours of your enquiry, after a short discovery call.
+The cost depends on scope: a focused web application, a SaaS product and an enterprise system are very different builds. We share a fixed INR quote with GST invoice within 24 hours of your enquiry, after a short discovery call.
 
 ### Which is the best software development company in Ahmedabad?
 
@@ -817,7 +817,7 @@ Resources
         "name": "How much does custom software development cost in Ahmedabad?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Custom software in Ahmedabad starts at around ₹1,50,000 for a focused web application, ₹3,50,000+ for a SaaS product, and ₹5,00,000+ for enterprise systems. We share a fixed INR quote with GST invoice within 24 hours of your enquiry, after a short discovery call."
+          "text": "The cost depends on scope: a focused web application, a SaaS product and an enterprise system are very different builds. We share a fixed INR quote with GST invoice within 24 hours of your enquiry, after a short discovery call."
         }
       },
       {

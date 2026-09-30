@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { problem } from '@/content/home'
 import { cn } from '@/lib/cn'
+import { hexClip } from '@/lib/hex'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
@@ -35,9 +36,6 @@ const GROUPS = [
 ]
 const SLOT = GROUPS.flatMap((g) => g.map((_, k) => k))
 
-const hex = (r: string) =>
-  `polygon(50% calc(50% - ${r}), calc(50% + ${r} * 0.866) calc(50% - ${r} * 0.5), calc(50% + ${r} * 0.866) calc(50% + ${r} * 0.5), 50% calc(50% + ${r}), calc(50% - ${r} * 0.866) calc(50% + ${r} * 0.5), calc(50% - ${r} * 0.866) calc(50% - ${r} * 0.5))`
-
 /**
  * Chapter 1 — the problem. The page falls into a dark stage through a hexagonal
  * aperture; the engine's parts drift apart while the symptoms of a fragmented build
@@ -54,7 +52,7 @@ export function Problem() {
       const ground = q('[data-ground]')[0] as HTMLElement
       const paper = q('[data-paper]')[0] as HTMLElement
 
-      mm.add('(prefers-reduced-motion: no-preference)', () => {
+      mm.add('(min-width: 1024px) and (prefers-reduced-motion: no-preference)', () => {
         gsap.set(ground, { '--r': '0vmax' })
         gsap.set(paper, { '--r': '0vmax' })
         // Entry: the dark stage opens from the engine's silhouette.
@@ -63,9 +61,6 @@ export function Problem() {
           ease: 'power2.in',
           scrollTrigger: { trigger: el, start: 'top 90%', end: 'top 20%', scrub: true },
         })
-      })
-
-      mm.add('(min-width: 1024px) and (prefers-reduced-motion: no-preference)', () => {
         const tl = gsap.timeline({
           defaults: { ease: 'none' },
           scrollTrigger: { trigger: el, start: 'top 35%', end: 'bottom bottom', scrub: 0.6 },
@@ -108,6 +103,9 @@ export function Problem() {
       // Phones and tablets: the same story in one column. The headline lands, then the symptoms
       // arrive three or four at a time instead of all at once, then the turn.
       mm.add('(max-width: 1023px) and (prefers-reduced-motion: no-preference)', () => {
+        // the stage is already dark: it opened round the engine while the hero was held (EngineStage)
+        gsap.set(ground, { '--r': '120vmax' })
+        gsap.set(paper, { '--r': '0vmax' })
         const frags = q('[data-frag]')
         const tl = gsap.timeline({
           defaults: { ease: 'none' },
@@ -155,14 +153,14 @@ export function Problem() {
       <div aria-hidden className="pointer-events-none absolute inset-0 z-0 motion-reduce:hidden">
         <div className="sticky top-0 h-[100svh] overflow-hidden">
           {/* dark stage: hexagonal aperture */}
-          <div data-ground aria-hidden className="absolute inset-0 bg-stage" style={{ clipPath: hex('var(--r, 120vmax)') }}>
+          <div data-ground aria-hidden className="absolute inset-0 bg-stage" style={{ clipPath: hexClip('var(--r, 120vmax)') }}>
             <div className="absolute inset-0 [mask-image:radial-gradient(60%_60%_at_50%_50%,#000,transparent)]">
               <div className="iso-grid [--grid:var(--stage-line)]" />
             </div>
             <div className="absolute inset-0 bg-[radial-gradient(40%_40%_at_50%_52%,rgb(34_199_216/0.10),transparent_70%)]" />
           </div>
           {/* paper returns: opens from the reassembled engine */}
-          <div data-paper aria-hidden className="absolute inset-0 bg-bg" style={{ clipPath: hex('var(--r, 0vmax)') }} />
+          <div data-paper aria-hidden className="absolute inset-0 bg-bg" style={{ clipPath: hexClip('var(--r, 0vmax)') }} />
         </div>
       </div>
 
@@ -175,7 +173,7 @@ export function Problem() {
             </p>
             <h2 data-p="title" className="t-display mt-6">
               {problem.title.split('. ').map((l, i, a) => (
-                <span key={i} className="block overflow-hidden pb-[0.06em]">
+                <span key={i} className="mx-auto -mb-[0.08em] block w-fit overflow-hidden pb-[0.14em]">
                   <span className="ln block">{i < a.length - 1 ? `${l}.` : l}</span>
                 </span>
               ))}
@@ -214,7 +212,7 @@ export function Problem() {
           <div className="absolute inset-x-0 top-1/2 mx-auto max-w-[1100px] -translate-y-1/2 text-center motion-reduce:relative motion-reduce:top-auto motion-reduce:mt-20 motion-reduce:translate-y-0">
             <h2 data-p="turn" className="t-display">
               {problem.turn.split('. ').map((l, i, a) => (
-                <span key={i} className="block overflow-hidden pb-[0.06em]">
+                <span key={i} className="mx-auto -mb-[0.08em] block w-fit overflow-hidden pb-[0.14em]">
                   <span className={cn('ln block', i === a.length - 1 && 'text-teal')}>{i < a.length - 1 ? `${l}.` : l}</span>
                 </span>
               ))}

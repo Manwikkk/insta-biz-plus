@@ -4,20 +4,31 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState, type MouseEvent } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
-import { Logo } from './Logo'
-import { ThemeToggle } from './ThemeToggle'
 import { Icon } from '@/components/ui/Icon'
 import { KeyButton } from '@/components/ui/KeyButton'
 import { primaryNav, site } from '@/content/site'
 import { services } from '@/content/services'
 import { solutions } from '@/content/data'
+import { products } from '@/content/products'
 import { socialIcon } from '@/content/nav'
-import { cn } from '@/lib/cn'
 
 const ease = [0.16, 1, 0.3, 1] as const
 
+type Sub = 'services' | 'solutions' | 'products'
+
+const SUBLINKS: Record<Sub, { label: string; note?: string; href: string }[]> = {
+  services: [...services.map((s) => ({ label: s.label, href: `/services#${s.id}` })), { label: 'All services', href: '/services' }],
+  solutions: [...solutions.map((s) => ({ label: s.label, href: `/solutions/${s.slug}` })), { label: 'All solutions', href: '/solutions' }],
+  products: [...products.map((p) => ({ label: p.name, note: p.short, href: `/products#${p.id}` })), { label: 'All products', href: '/products' }],
+}
+
+/**
+ * The phone menu: a sheet of frosted glass that opens beneath the header bar, so the bar
+ * (logo, theme switch, and the burger that is now its close button) never moves.
+ */
 export function MobileMenu({ onClose }: { onClose: () => void }) {
-  const [open, setOpen] = useState<string | null>(null)
+  const [open, setOpen] = useState<Sub | null>(null)
+  const pathname = usePathname()
 
   useEffect(() => {
     const lenis = (window as unknown as { __lenis?: { stop(): void; start(): void } }).__lenis
@@ -34,7 +45,6 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
   }, [onClose])
 
   const items = [{ label: 'Home', href: '/' }, ...primaryNav]
-  const pathname = usePathname()
   // A link to the page you are already on closes the menu onto the top of that page.
   const go = (e: MouseEvent, href: string) => {
     if (href === pathname) {
@@ -49,84 +59,70 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
 
   return (
     <motion.div
+      id="mobile-menu"
       role="dialog"
       aria-modal="true"
       aria-label="Menu"
-      className="mobile-sheet fixed inset-0 z-[60] flex flex-col lg:hidden"
+      className="mobile-sheet fixed inset-0 z-[45] flex flex-col lg:hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.3 } }}
-      transition={{ duration: 0.45, ease }}
+      exit={{ opacity: 0, transition: { duration: 0.28, delay: 0.05 } }}
+      transition={{ duration: 0.35, ease }}
     >
-      {/* the same glass bar as the header, so opening the menu keeps the bar in place */}
-      <div className="px-2.5 pt-2.5 sm:px-4 sm:pt-3">
-        <div className="nav-glass nav-bar" data-scrolled="true">
-          <div className="flex h-14 items-center gap-2 pl-4 pr-2">
-            <Logo height={34} />
-            <div className="ml-auto flex items-center gap-1.5">
-              <ThemeToggle />
-              <button type="button" aria-label="Close menu" onClick={onClose} className="nav-icon-btn">
-                <Icon name="close" size={18} />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <nav aria-label="Mobile" className="relative flex-1 overflow-y-auto px-[var(--gutter)] pb-8 pt-4" data-lenis-prevent>
+      <nav aria-label="Mobile" className="relative flex-1 overflow-y-auto px-[var(--gutter)] pb-10 pt-[88px]" data-lenis-prevent>
         <ul className="border-t border-line">
           {items.map((item, i) => {
             const sub = 'menu' in item && item.menu ? item.menu : null
             const expanded = sub !== null && open === sub
+            const current = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href)
             return (
               <motion.li
                 key={item.href}
                 className="border-b border-line"
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.18 + i * 0.05, duration: 0.7, ease }}
+                exit={{ opacity: 0, y: -8, transition: { duration: 0.2 } }}
+                transition={{ delay: 0.06 + i * 0.04, duration: 0.6, ease }}
               >
                 <div className="flex items-center">
-                  <Link href={item.href} onClick={(e) => go(e, item.href)} className="flex flex-1 items-baseline gap-4 py-4">
-                    <span className="t-label text-teal-ink">{String(i + 1).padStart(2, '0')}</span>
-                    <span className="font-display text-[2rem] font-bold leading-none tracking-[-0.035em] [font-stretch:108%]">
+                  <Link
+                    href={item.href}
+                    onClick={(e) => go(e, item.href)}
+                    aria-current={current ? 'page' : undefined}
+                    className="group flex flex-1 items-baseline gap-4 py-[clamp(12px,2.1vh,16px)]"
+                  >
+                    <span className="t-label w-6 text-teal-ink">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="font-display text-[clamp(1.6rem,7.4vw,2rem)] font-bold leading-none tracking-[-0.035em] [font-stretch:108%]">
                       {item.label}
                     </span>
+                    {current ? <span className="size-1.5 self-center rounded-full bg-teal" aria-hidden /> : null}
                   </Link>
                   {sub ? (
                     <button
                       type="button"
                       aria-expanded={expanded}
-                      aria-label={`Show ${item.label}`}
+                      aria-label={`${expanded ? 'Hide' : 'Show'} ${item.label}`}
                       onClick={() => setOpen(expanded ? null : sub)}
-                      className="grid size-10 place-items-center rounded-full border border-line-2 bg-raise/50 transition-colors hover:bg-raise"
+                      className="grid size-10 place-items-center rounded-full border border-line-2 bg-raise/60 transition-[background-color,transform] duration-300 active:scale-95"
                     >
-                      <Icon name={expanded ? 'minus' : 'plus'} size={16} />
+                      <Icon name="plus" size={16} className={expanded ? 'rotate-45 transition-transform duration-300' : 'transition-transform duration-300'} />
                     </button>
                   ) : null}
                 </div>
                 <AnimatePresence initial={false}>
-                  {expanded ? (
+                  {expanded && sub ? (
                     <motion.ul
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.45, ease }}
-                      className="overflow-hidden pl-9"
+                      transition={{ duration: 0.4, ease }}
+                      className="overflow-hidden pl-10"
                     >
-                      {(sub === 'services'
-                        ? [
-                            ...services.map((s) => ({ label: s.label, href: `/services#${s.id}` })),
-                            { label: 'AI Agent Development', href: '/services/ai-agent-development' },
-                          ]
-                        : [
-                            ...solutions.map((s) => ({ label: s.label, href: `/solutions/${s.slug}` })),
-                            { label: 'All solutions', href: '/solutions' },
-                          ]
-                      ).map((l) => (
+                      {SUBLINKS[sub].map((l) => (
                         <li key={l.href}>
-                          <Link href={l.href} onClick={onClose} className={cn('block py-2 text-[1.02rem] text-ink-2')}>
-                            {l.label}
+                          <Link href={l.href} onClick={onClose} className="flex items-baseline justify-between gap-3 py-2.5 text-[1.02rem] text-ink-2 active:text-ink">
+                            <span>{l.label}</span>
+                            {l.note ? <span className="t-label shrink-0 text-ink-3">{l.note}</span> : null}
                           </Link>
                         </li>
                       ))}
@@ -141,11 +137,11 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
 
         <motion.div
           className="mt-8 grid gap-5"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.55, duration: 0.6 }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.6, ease }}
         >
-          <KeyButton href="/contact-us#contact-form" className="w-full justify-between" icon="calendar">
+          <KeyButton href="/contact-us#contact-form" className="w-full justify-between" icon="calendar" onClick={onClose}>
             Book a demo
           </KeyButton>
           <ul className="-ml-2 flex items-center gap-1" aria-label="Insta Biz Web on social media">

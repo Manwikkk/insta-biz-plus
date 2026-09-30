@@ -1,9 +1,9 @@
 import { Breadcrumbs } from '@/components/sections/PageHero'
 import { KeyButton } from '@/components/ui/KeyButton'
-import { AboutGlance } from './AboutGlance'
+import { AboutBento } from './AboutBento'
 import { about as a } from '@/content/about'
 
-/** About opener: the statement on the left, the studio at a glance on the right. */
+/** About opener: the statement on the left, the studio in four tiles on the right. */
 export function AboutHero() {
   // "A team of makers, builders & doers." set on two lines at the comma
   const [first, second] = a.h1.split(/(?<=,) /)
@@ -51,8 +51,8 @@ export function AboutHero() {
             </div>
           </div>
 
-          <div className="enter-fade lg:col-span-6" style={{ ['--d' as string]: '300ms' }}>
-            <AboutGlance />
+          <div className="lg:col-span-6">
+            <AboutBento />
           </div>
         </div>
       </div>

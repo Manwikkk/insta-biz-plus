@@ -45,37 +45,31 @@ export const aiAgents = {
         title: 'RAG Chatbots',
         body: 'Retrieval-Augmented Generation chatbots that answer questions from your private knowledge base, documents, PDFs, Notion or Google Drive with citations.',
         tech: ['LangChain', 'OpenAI', 'Pinecone', 'ChromaDB'],
-        price: 'From ₹40,000',
       },
       {
         title: 'AI Voice Agents',
         body: '24/7 voice agents that handle inbound and outbound calls, qualify leads, book appointments and update your CRM. Hindi, English and regional languages.',
         tech: ['VAPI', 'Retell', 'Twilio', 'ElevenLabs'],
-        price: 'From ₹85,000',
       },
       {
         title: 'Workflow Automation Agents',
         body: 'Multi-step agents that read emails, summarize documents, fill forms, scrape data and post to Slack. Connect 5,000+ apps via n8n, Zapier or custom code.',
         tech: ['n8n', 'Zapier', 'Make.com', 'Python'],
-        price: 'From ₹60,000',
       },
       {
         title: 'Sales & Lead Qualification Agents',
         body: 'AI SDRs that engage website visitors, qualify leads, route hot prospects to your team and follow up over WhatsApp, email and SMS.',
         tech: ['GPT-4', 'Claude', 'Twilio', 'HubSpot'],
-        price: 'From ₹75,000',
       },
       {
         title: 'Multi-Agent Orchestration',
         body: 'Teams of specialized AI agents that collaborate: one researches, one writes, one reviews, one publishes. Built on CrewAI, AutoGen or OpenAI Swarm.',
         tech: ['CrewAI', 'AutoGen', 'LangGraph', 'Swarm'],
-        price: 'From ₹1,80,000',
       },
       {
         title: 'Custom AI Copilots',
         body: 'Domain-specific copilots embedded in your SaaS or internal tools. Code copilots, sales copilots, support copilots, all trained on your data.',
         tech: ['RAG', 'Fine-tuning', 'Vector DB', 'OpenAI'],
-        price: 'From ₹2,50,000',
       },
     ],
   },
@@ -162,8 +156,8 @@ export const aiAgents = {
         body: 'Full source code, prompt library, eval datasets and infrastructure handed over from day one. No vendor lock-in. No hidden API keys.',
       },
       {
-        title: 'Transparent INR pricing with GST',
-        body: 'Fixed quotes in Indian Rupees with GST invoice. Token cost monitoring built in so you never get a surprise OpenAI bill.',
+        title: 'Fixed quotes, no surprise bills',
+        body: 'A fixed quote agreed before we start, with a GST invoice. Token cost monitoring built in so you never get a surprise OpenAI bill.',
       },
       {
         title: 'Senior AI engineers, not interns',
@@ -172,15 +166,15 @@ export const aiAgents = {
     ],
   },
   pricing: {
-    eyebrow: 'Transparent pricing',
-    title: 'AI agent development cost in India.',
-    intro: 'Fixed INR pricing with GST invoice. Three tiers from MVP to enterprise. No hourly billing, no surprise costs.',
+    eyebrow: 'Engagement tiers',
+    title: 'Three ways to start with AI agents.',
+    intro: 'From a single-task MVP to an enterprise platform. Every build gets a fixed quote after a free scoping call. No hourly billing, no surprise costs.',
     tiers: [
       {
         name: 'Starter Agent',
         tagline: 'Single-task chatbot or workflow',
-        price: '₹40,000 - ₹1,50,000',
-        timeline: 'Timeline: 2 - 4 weeks',
+        figure: '2 - 4 weeks',
+        unit: 'from kickoff to launch',
         points: [
           '1 agent, 1 use case',
           'RAG over your documents',
@@ -193,8 +187,8 @@ export const aiAgents = {
       {
         name: 'Production Agent',
         tagline: 'Multi-channel, integrated agent',
-        price: '₹1,80,000 - ₹6,00,000',
-        timeline: 'Timeline: 5 - 10 weeks',
+        figure: '5 - 10 weeks',
+        unit: 'from kickoff to launch',
         points: [
           'Multi-channel deployment (web, WhatsApp, voice)',
           'CRM, helpdesk and DB integrations',
@@ -208,8 +202,8 @@ export const aiAgents = {
       {
         name: 'Enterprise Multi-Agent',
         tagline: 'Custom multi-agent platform',
-        price: '₹8,00,000+',
-        timeline: 'Timeline: 12 - 20 weeks',
+        figure: '12 - 20 weeks',
+        unit: 'from kickoff to launch',
         points: [
           'Multi-agent orchestration (CrewAI / LangGraph)',
           'Custom fine-tuning if needed',
@@ -221,8 +215,8 @@ export const aiAgents = {
         popular: false,
       },
     ],
-    cta: 'Get fixed quote',
-    note: 'Need something custom? We also offer bundled engagements with web development, mobile apps and CRM integration. All prices exclude GST and OpenAI / Anthropic API token costs, which are billed at-cost with full token dashboards.',
+    cta: 'Get a quote',
+    note: 'Need something custom? We also offer bundled engagements with web development, mobile apps and CRM integration. OpenAI / Anthropic API token costs are billed at-cost with full token dashboards.',
   },
   process: {
     eyebrow: 'How we work',
@@ -287,7 +281,7 @@ export const aiAgents = {
   faqTitle: 'AI agent development: questions answered.',
   ready: {
     title: 'Ready to build your first AI agent?',
-    body: 'Book a free 30-minute strategy call with a senior AI engineer. We will scope your use case, estimate ROI and propose a fixed INR price.',
+    body: 'Book a free 30-minute strategy call with a senior AI engineer. We will scope your use case, estimate ROI and send you a fixed quote.',
     cta: 'Book a free AI strategy call',
   },
   hq: {
@@ -340,7 +334,7 @@ export const aiAgentFaqs = [
   },
   {
     q: 'How much does it cost to build an AI agent in India?',
-    a: 'AI agent development cost in India ranges from ₹40,000 for a single-task chatbot, ₹1,80,000 to ₹6,00,000 for a production-grade integrated agent, and ₹8,00,000+ for enterprise multi-agent systems. Final pricing depends on integrations, model choice, expected traffic, and accuracy requirements. We provide fixed INR quotes with GST invoice within 24 hours of your enquiry.',
+    a: 'The cost depends on scope: a single-task chatbot, a production-grade integrated agent and an enterprise multi-agent system are very different builds. Integrations, model choice, expected traffic and accuracy requirements all shape the quote. We provide fixed INR quotes with GST invoice within 24 hours of your enquiry.',
   },
   {
     q: 'How long does it take to develop an AI agent?',
@@ -368,7 +362,7 @@ export const aiAgentFaqs = [
   },
   {
     q: 'Do you offer ongoing support and improvements?',
-    a: 'Yes. After launch, we offer monthly retainers starting at ₹35,000 per month for prompt tuning, eval improvements, new tool integration, edge-case handling and model upgrades. Most clients stay on retainer because AI agents need continuous improvement as your business and the underlying models evolve.',
+    a: 'Yes. After launch, we offer monthly retainers for prompt tuning, eval improvements, new tool integration, edge-case handling and model upgrades. Most clients stay on retainer because AI agents need continuous improvement as your business and the underlying models evolve.',
   },
   {
     q: 'Can the AI agent be deployed on our own cloud or on-premise?',

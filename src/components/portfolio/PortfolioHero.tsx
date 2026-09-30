@@ -2,23 +2,22 @@ import Image from 'next/image'
 import { Breadcrumbs } from '@/components/sections/PageHero'
 import { KeyButton } from '@/components/ui/KeyButton'
 import { Odometer } from '@/components/ui/Odometer'
-import { portfolioPage as pp, projects, type Project } from '@/content/portfolio'
-import { media } from '@/content/site'
+import { portfolioPage as pp, productLines, showcase, type Showcase } from '@/content/portfolio'
 import { cn } from '@/lib/cn'
 
 /** Three columns of the work, each drifting at its own pace (alternate columns run the other way). */
-const COLUMNS = [0, 1, 2].map((c) => projects.filter((_, i) => i % 3 === c))
+const COLUMNS = [0, 1, 2].map((c) => showcase.filter((_, i) => i % 3 === c))
 const PACE = ['64s', '78s', '58s']
 
-function Shot({ p }: { p: Project }) {
+function Shot({ p }: { p: Showcase }) {
   return (
     <figure className="pf-card mb-4 overflow-hidden rounded-[14px] border border-stage-line bg-stage-2">
       <div className="relative aspect-[16/11] overflow-hidden">
-        <Image src={media(p.image)} alt="" fill sizes="(min-width: 1024px) 300px, 45vw" quality={60} className="object-cover object-top" />
+        <Image src={p.image} alt="" fill sizes="(min-width: 1024px) 300px, 45vw" quality={60} className="object-cover object-top" />
       </div>
       <figcaption className="flex items-center justify-between gap-3 px-3 py-2.5">
         <span className="truncate text-[0.82rem] font-semibold text-stage-ink">{p.name}</span>
-        <span className="t-label shrink-0 text-[0.56rem] text-stage-ink-2">{p.tag}</span>
+        <span className="t-label shrink-0 text-[0.56rem] text-stage-ink-2">{p.label}</span>
       </figcaption>
     </figure>
   )
@@ -33,7 +32,7 @@ export function PortfolioHero() {
     { value: '100+', label: 'projects' },
     { value: '4.9★', label: 'avg rating' },
     { value: '5', label: 'countries' },
-    { value: String(projects.length), label: 'product lines' },
+    { value: String(productLines), label: 'product lines' },
   ]
   return (
     <section className="relative overflow-hidden bg-stage text-stage-ink" data-nav-tone="dark">
@@ -101,7 +100,7 @@ export function PortfolioHero() {
                 {[0, 1].map((copy) => (
                   <div key={copy}>
                     {col.map((p) => (
-                      <Shot key={`${copy}-${p.slug}`} p={p} />
+                      <Shot key={`${copy}-${p.key}`} p={p} />
                     ))}
                   </div>
                 ))}

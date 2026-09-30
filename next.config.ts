@@ -4,12 +4,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   images: {
-    // Client logos, project screenshots and team portraits are referenced at the
-    // audited media URLs recorded in website-content/; blog covers come from Unsplash.
-    remotePatterns: [
-      { protocol: 'https', hostname: 'www.instabizweb.com', pathname: '/**' },
-      { protocol: 'https', hostname: 'images.unsplash.com', pathname: '/**' },
-    ],
+    // Logos, product and project screens live in public/; blog covers come from Unsplash.
+    remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com', pathname: '/**' }],
     qualities: [60, 75, 90],
     formats: ['image/avif', 'image/webp'],
   },

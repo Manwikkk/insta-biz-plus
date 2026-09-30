@@ -6,14 +6,14 @@ export type PriceCard = {
   name: string
   tagline: string
   bestFor?: string
-  price: string
+  /** The card's headline figure: how the engagement runs, never a price. */
+  figure: string
   unit?: string
-  timeline?: string
   points: string[]
   popular?: boolean
 }
 
-/** Engagement / pricing tiers. The most popular tier is cast in ink with a teal plinth. */
+/** Engagement tiers, each quoted on request. The most popular tier is cast in ink with a teal plinth. */
 export function PriceCards({ cards, cta, href = '#contact-form' }: { cards: PriceCard[]; cta: string; href?: string }) {
   return (
     <ul className="grid gap-4 lg:grid-cols-3">
@@ -40,11 +40,8 @@ export function PriceCards({ cards, cta, href = '#contact-form' }: { cards: Pric
           </div>
           {c.bestFor ? <p className={cn('mt-5 text-[0.95rem]', c.popular ? 'text-bg/80' : 'text-ink-2')}>{c.bestFor}</p> : null}
           <div className={cn('mt-7 border-t pt-6', c.popular ? 'border-bg/15' : 'border-line')}>
-            <p className="t-numeral text-[clamp(1.8rem,2.6vw,2.4rem)]">
-              {c.price}
-            </p>
+            <p className="t-numeral text-[clamp(1.8rem,2.6vw,2.4rem)]">{c.figure}</p>
             {c.unit ? <p className={cn('t-label mt-3', c.popular ? 'text-bg/60' : 'text-ink-3')}>{c.unit}</p> : null}
-            {c.timeline ? <p className={cn('t-label mt-3', c.popular ? 'text-teal' : 'text-teal-ink')}>{c.timeline}</p> : null}
           </div>
           <ul className="mt-7 grid gap-3">
             {c.points.map((p) => (

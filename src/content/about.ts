@@ -8,12 +8,12 @@ export const about = {
     "We're a tight-knit team of senior engineers and designers based in Ahmedabad, India - building digital products with founders across India, the US, UK and Singapore. Five years in, and still obsessed with the craft.",
   primary: 'Work with us',
   secondary: 'See our work',
-  /** The hero's "at a glance" board; every figure is stated elsewhere on the site. */
+  /** The hero's board; every figure is stated elsewhere on the site. */
   glance: {
-    studio: { label: 'Est. 2020 · Ahmedabad', title: 'Founder-led studio', body: 'Bootstrapped, senior-led and obsessed with the craft.' },
+    work: { value: '100+', label: 'Projects shipped', note: 'Apps · sites · CRMs · AI', cta: 'See the work' },
     clients: { value: '145+', label: 'Global clients' },
     rating: { value: '98%', label: 'Positive rating', note: '4.9★ on Google' },
-    reach: { label: 'From Ahmedabad to the world', note: '5 countries · 100+ projects shipped' },
+    build: { label: 'What we build', cta: 'Explore services' },
   },
   story: {
     eyebrow: 'Our story',
@@ -109,7 +109,7 @@ export const about = {
   way: {
     eyebrow: 'The IBW way',
     title: 'How we work with you',
-    intro: "The principles we never compromise on - whether it's a ₹50K landing page or a multi-month enterprise build.",
+    intro: "The principles we never compromise on - whether it's a two-week landing page or a multi-month enterprise build.",
     aside: {
       title: 'Want to chat?',
       body: 'Free 30-min strategy call. No sales pitch, no obligation - just useful advice on your project.',

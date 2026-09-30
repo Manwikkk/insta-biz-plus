@@ -126,9 +126,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 </ol>
               </details>
 
-              <div className="prose-ibw max-w-[46rem]">
-                <p className="text-[1.25rem] leading-relaxed text-ink">{post.lede}</p>
-              </div>
+              <ArticleBody markdown={post.lede} className="prose-ibw max-w-[46rem] text-[1.25rem] leading-relaxed text-ink" />
               {post.sections.map((s) => (
                 <section key={s.id} id={s.id} className="max-w-[46rem] scroll-mt-28">
                   <h2 className="mt-16 font-display text-[clamp(1.6rem,2.4vw,2.2rem)] font-[720] leading-[1.08] tracking-[-0.03em] text-ink [font-stretch:104%]">

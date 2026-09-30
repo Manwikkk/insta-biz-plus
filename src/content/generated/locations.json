@@ -147,33 +147,27 @@
       "items": [
         {
           "title": "MVP App Development",
-          "body": "Lean, launchable apps to validate your idea fast - core features, single or both platforms, in 6-10 weeks.",
-          "price": "From ₹2,50,000"
+          "body": "Lean, launchable apps to validate your idea fast - core features, single or both platforms, in 6-10 weeks."
         },
         {
           "title": "iOS App Development",
-          "body": "Native and cross-platform iPhone apps built to Apple's guidelines - smooth, premium, App Store ready.",
-          "price": "From ₹3,00,000"
+          "body": "Native and cross-platform iPhone apps built to Apple's guidelines - smooth, premium, App Store ready."
         },
         {
           "title": "Android App Development",
-          "body": "Android apps optimised for the devices and networks your customers actually use across India.",
-          "price": "From ₹2,80,000"
+          "body": "Android apps optimised for the devices and networks your customers actually use across India."
         },
         {
           "title": "Cross-Platform Apps (Flutter / RN)",
-          "body": "One codebase, both stores - the cost-effective default for most SMB and startup apps.",
-          "price": "From ₹3,50,000"
+          "body": "One codebase, both stores - the cost-effective default for most SMB and startup apps."
         },
         {
           "title": "Marketplace & On-Demand Apps",
-          "body": "Two-sided apps with payments, chat, ratings, maps and notifications - delivery, services, rentals and more.",
-          "price": "From ₹8,00,000"
+          "body": "Two-sided apps with payments, chat, ratings, maps and notifications - delivery, services, rentals and more."
         },
         {
           "title": "App Maintenance & Redesign",
-          "body": "Modernise, fix or scale an existing app - including projects abandoned by previous developers.",
-          "price": "From ₹40,000"
+          "body": "Modernise, fix or scale an existing app - including projects abandoned by previous developers."
         }
       ]
     },
@@ -251,7 +245,7 @@
       "items": [
         {
           "q": "How much does mobile app development cost in Ahmedabad?",
-          "a": "A mobile app in Ahmedabad starts at around ₹2,50,000 for an MVP, ₹5,00,000+ for a standard app on both platforms, and ₹8,00,000+ for a marketplace app with payments and chat. We share a fixed INR quote with GST invoice within 24 hours."
+          "a": "The cost depends on scope: an MVP, a standard app on both platforms and a marketplace app with payments and chat are very different builds. We share a fixed INR quote with GST invoice within 24 hours."
         },
         {
           "q": "Which is the best mobile app development company in Ahmedabad?",
@@ -464,33 +458,27 @@
       "items": [
         {
           "title": "Odoo Implementation & Setup",
-          "body": "End-to-end Odoo deployment - discovery, configuration, users, pipelines and go-live - for SMBs across Gujarat.",
-          "price": "From ₹1,50,000"
+          "body": "End-to-end Odoo deployment - discovery, configuration, users, pipelines and go-live - for SMBs across Gujarat."
         },
         {
           "title": "Odoo CRM Setup",
-          "body": "Sales pipelines, lead management, automation and reporting tailored to how your team actually sells.",
-          "price": "From ₹80,000"
+          "body": "Sales pipelines, lead management, automation and reporting tailored to how your team actually sells."
         },
         {
           "title": "Odoo Customisation",
-          "body": "Custom modules, fields, reports and workflows - built only where stock Odoo genuinely does not fit.",
-          "price": "From ₹50,000"
+          "body": "Custom modules, fields, reports and workflows - built only where stock Odoo genuinely does not fit."
         },
         {
           "title": "Data Migration to Odoo",
-          "body": "Clean migration from Tally, Zoho, spreadsheets or legacy systems - with reconciliation and a parallel-run safety net.",
-          "price": "From ₹60,000"
+          "body": "Clean migration from Tally, Zoho, spreadsheets or legacy systems - with reconciliation and a parallel-run safety net."
         },
         {
           "title": "Odoo Integration",
-          "body": "Connect Odoo to payment gateways, WhatsApp, e-commerce, GST e-invoicing and your other business tools.",
-          "price": "From ₹70,000"
+          "body": "Connect Odoo to payment gateways, WhatsApp, e-commerce, GST e-invoicing and your other business tools."
         },
         {
           "title": "Odoo Support & AMC",
-          "body": "Ongoing support, maintenance, training and module updates so your Odoo keeps running smoothly.",
-          "price": "From ₹15,000/mo"
+          "body": "Ongoing support, maintenance, training and module updates so your Odoo keeps running smoothly."
         }
       ]
     },
@@ -568,7 +556,7 @@
       "items": [
         {
           "q": "How much does Odoo implementation cost in Ahmedabad?",
-          "a": "An Odoo implementation in Ahmedabad starts at around ₹1,50,000 for a focused deployment, ₹3,00,000-₹9,00,000 for a standard multi-module SMB rollout, and more for complex or manufacturing setups. We share a fixed INR quote with GST invoice after a short discovery call."
+          "a": "The cost depends on scope: a focused deployment, a standard multi-module SMB rollout and a complex manufacturing setup are very different projects. We share a fixed INR quote with GST invoice after a short discovery call."
         },
         {
           "q": "Which is the best Odoo implementation company in Ahmedabad?",
@@ -785,33 +773,27 @@
       "items": [
         {
           "title": "Custom Web Applications",
-          "body": "Tailored web apps, dashboards and internal tools built on Next.js, Node and PostgreSQL for businesses across Gujarat.",
-          "price": "From ₹1,50,000"
+          "body": "Tailored web apps, dashboards and internal tools built on Next.js, Node and PostgreSQL for businesses across Gujarat."
         },
         {
           "title": "SaaS Product Development",
-          "body": "End-to-end SaaS platforms with auth, billing, multi-tenancy and admin panels - from MVP to production.",
-          "price": "From ₹3,50,000"
+          "body": "End-to-end SaaS platforms with auth, billing, multi-tenancy and admin panels - from MVP to production."
         },
         {
           "title": "Enterprise Software",
-          "body": "ERP-style systems, workflow automation and integrations for manufacturers and mid-sized businesses.",
-          "price": "From ₹5,00,000"
+          "body": "ERP-style systems, workflow automation and integrations for manufacturers and mid-sized businesses."
         },
         {
           "title": "API & Integration Development",
-          "body": "Custom APIs, third-party integrations, payment gateways and data pipelines that connect your systems.",
-          "price": "From ₹80,000"
+          "body": "Custom APIs, third-party integrations, payment gateways and data pipelines that connect your systems."
         },
         {
           "title": "Admin Panels & Dashboards",
-          "body": "Internal operations panels, analytics dashboards and reporting tools that give your team real control.",
-          "price": "From ₹1,20,000"
+          "body": "Internal operations panels, analytics dashboards and reporting tools that give your team real control."
         },
         {
           "title": "AI-Powered Software",
-          "body": "Add AI agents, chatbots, document processing and intelligent automation to new or existing software.",
-          "price": "From ₹1,50,000"
+          "body": "Add AI agents, chatbots, document processing and intelligent automation to new or existing software."
         }
       ]
     },
@@ -889,7 +871,7 @@
       "items": [
         {
           "q": "How much does custom software development cost in Ahmedabad?",
-          "a": "Custom software in Ahmedabad starts at around ₹1,50,000 for a focused web application, ₹3,50,000+ for a SaaS product, and ₹5,00,000+ for enterprise systems. We share a fixed INR quote with GST invoice within 24 hours of your enquiry, after a short discovery call."
+          "a": "The cost depends on scope: a focused web application, a SaaS product and an enterprise system are very different builds. We share a fixed INR quote with GST invoice within 24 hours of your enquiry, after a short discovery call."
         },
         {
           "q": "Which is the best software development company in Ahmedabad?",
@@ -1106,33 +1088,27 @@
       "items": [
         {
           "title": "Business Websites",
-          "body": "Conversion-focused marketing sites for SMBs, manufacturers, and service businesses across Ahmedabad and Gujarat.",
-          "price": "From ₹35,000"
+          "body": "Conversion-focused marketing sites for SMBs, manufacturers, and service businesses across Ahmedabad and Gujarat."
         },
         {
           "title": "E-Commerce Stores",
-          "body": "Shopify, WooCommerce and custom Next.js stores with Razorpay, GST invoicing, and Indian shipping integrations.",
-          "price": "From ₹65,000"
+          "body": "Shopify, WooCommerce and custom Next.js stores with Razorpay, GST invoicing, and Indian shipping integrations."
         },
         {
           "title": "Web Applications & SaaS",
-          "body": "Custom dashboards, admin panels, internal tools and SaaS products built on Next.js, Node and Postgres.",
-          "price": "From ₹1,50,000"
+          "body": "Custom dashboards, admin panels, internal tools and SaaS products built on Next.js, Node and Postgres."
         },
         {
           "title": "WordPress Development",
-          "body": "Lightning-fast WordPress sites with custom themes, ACF, WooCommerce, multilingual setups and on-page SEO baked in.",
-          "price": "From ₹25,000"
+          "body": "Lightning-fast WordPress sites with custom themes, ACF, WooCommerce, multilingual setups and on-page SEO baked in."
         },
         {
           "title": "Progressive Web Apps",
-          "body": "Mobile-first PWAs with offline support, push notifications and app-store-quality UX, without the App Store hassle.",
-          "price": "From ₹85,000"
+          "body": "Mobile-first PWAs with offline support, push notifications and app-store-quality UX, without the App Store hassle."
         },
         {
           "title": "AI-Powered Websites",
-          "body": "Add chatbots, AI search, content generators and recommendation engines to your existing Ahmedabad business website.",
-          "price": "From ₹40,000"
+          "body": "Add chatbots, AI search, content generators and recommendation engines to your existing Ahmedabad business website."
         }
       ]
     },
@@ -1263,7 +1239,7 @@
       "items": [
         {
           "q": "How much does a website cost in Ahmedabad?",
-          "a": "A professional business website in Ahmedabad starts at ₹35,000 for a 5-page site, ₹65,000+ for an e-commerce store with payment gateway, and ₹1,50,000+ for a custom web application. We share a fixed INR quote with GST invoice within 24 hours of your enquiry."
+          "a": "The cost depends on scope: a 5-page business site, an e-commerce store with payment gateway and a custom web application are very different builds. We share a fixed INR quote with GST invoice within 24 hours of your enquiry."
         },
         {
           "q": "Which is the best web development company in Ahmedabad?",
@@ -1295,15 +1271,15 @@
         },
         {
           "q": "Do you build websites for small businesses and startups in Ahmedabad?",
-          "a": "Yes - small businesses and startups are our core clientele. We have built websites for 145+ SMBs across Ahmedabad and Gujarat: manufacturers, clinics, jewellers, coaching institutes, real-estate builders and D2C brands. We offer fixed INR pricing specifically designed for SMB budgets, starting at ₹35,000 for a business website."
+          "a": "Yes - small businesses and startups are our core clientele. We have built websites for 145+ SMBs across Ahmedabad and Gujarat: manufacturers, clinics, jewellers, coaching institutes, real-estate builders and D2C brands. Every project gets a fixed INR quote shaped around SMB budgets."
         },
         {
           "q": "Which is the cheapest web development company in Ahmedabad?",
-          "a": "The cheapest option is rarely the most economical. Very low quotes (under ₹15,000) usually mean templated work, no SEO, slow performance, and expensive rebuilds within a year. Insta Biz Web offers fair fixed pricing from ₹35,000 with senior engineers, Lighthouse 95+ performance, full code ownership and 30 days free support - genuine value, not the lowest sticker price."
+          "a": "The cheapest option is rarely the most economical. Very low quotes usually mean templated work, no SEO, slow performance, and expensive rebuilds within a year. Insta Biz Web offers a fair fixed quote with senior engineers, Lighthouse 95+ performance, full code ownership and 30 days free support - genuine value, not the lowest sticker price."
         },
         {
           "q": "Do you offer website maintenance and support after launch?",
-          "a": "Yes. Every project includes 30 days of free post-launch support for bugs and small changes. After that, we offer optional monthly maintenance retainers covering updates, security patches, backups, content changes and minor features - typically ₹5,000 to ₹25,000 per month depending on your site."
+          "a": "Yes. Every project includes 30 days of free post-launch support for bugs and small changes. After that, we offer optional monthly maintenance retainers covering updates, security patches, backups, content changes and minor features, quoted to the size of your site."
         },
         {
           "q": "Can you redesign or fix my existing slow website?",

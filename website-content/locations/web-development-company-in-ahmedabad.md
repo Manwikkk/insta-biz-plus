@@ -218,7 +218,7 @@ FAQs
 
 **How much does a website cost in Ahmedabad?**
 
-A professional business website in Ahmedabad starts at ₹35,000 for a 5-page site, ₹65,000+ for an e-commerce store with payment gateway, and ₹1,50,000+ for a custom web application. We share a fixed INR quote with GST invoice within 24 hours of your enquiry.
+The cost depends on scope: a 5-page business site, an e-commerce store with payment gateway and a custom web application are very different builds. We share a fixed INR quote with GST invoice within 24 hours of your enquiry.
 
 **Which is the best web development company in Ahmedabad?**
 
@@ -250,15 +250,15 @@ Yes, 100%. You own the source code, design files, domain, hosting and all creden
 
 **Do you build websites for small businesses and startups in Ahmedabad?**
 
-Yes - small businesses and startups are our core clientele. We have built websites for 145+ SMBs across Ahmedabad and Gujarat: manufacturers, clinics, jewellers, coaching institutes, real-estate builders and D2C brands. We offer fixed INR pricing specifically designed for SMB budgets, starting at ₹35,000 for a business website.
+Yes - small businesses and startups are our core clientele. We have built websites for 145+ SMBs across Ahmedabad and Gujarat: manufacturers, clinics, jewellers, coaching institutes, real-estate builders and D2C brands. Every project gets a fixed INR quote shaped around SMB budgets.
 
 **Which is the cheapest web development company in Ahmedabad?**
 
-The cheapest option is rarely the most economical. Very low quotes (under ₹15,000) usually mean templated work, no SEO, slow performance, and expensive rebuilds within a year. Insta Biz Web offers fair fixed pricing from ₹35,000 with senior engineers, Lighthouse 95+ performance, full code ownership and 30 days free support - genuine value, not the lowest sticker price.
+The cheapest option is rarely the most economical. Very low quotes usually mean templated work, no SEO, slow performance, and expensive rebuilds within a year. Insta Biz Web offers a fair fixed quote with senior engineers, Lighthouse 95+ performance, full code ownership and 30 days free support - genuine value, not the lowest sticker price.
 
 **Do you offer website maintenance and support after launch?**
 
-Yes. Every project includes 30 days of free post-launch support for bugs and small changes. After that, we offer optional monthly maintenance retainers covering updates, security patches, backups, content changes and minor features - typically ₹5,000 to ₹25,000 per month depending on your site.
+Yes. Every project includes 30 days of free post-launch support for bugs and small changes. After that, we offer optional monthly maintenance retainers covering updates, security patches, backups, content changes and minor features, quoted to the size of your site.
 
 **Can you redesign or fix my existing slow website?**
 
@@ -325,7 +325,7 @@ By submitting, you agree to be contacted by Insta Biz Web. We never share your d
 
 ### How much does a website cost in Ahmedabad?
 
-A professional business website in Ahmedabad starts at ₹35,000 for a 5-page site, ₹65,000+ for an e-commerce store with payment gateway, and ₹1,50,000+ for a custom web application. We share a fixed INR quote with GST invoice within 24 hours of your enquiry.
+The cost depends on scope: a 5-page business site, an e-commerce store with payment gateway and a custom web application are very different builds. We share a fixed INR quote with GST invoice within 24 hours of your enquiry.
 
 ### Which is the best web development company in Ahmedabad?
 
@@ -357,15 +357,15 @@ Yes, 100%. You own the source code, design files, domain, hosting and all creden
 
 ### Do you build websites for small businesses and startups in Ahmedabad?
 
-Yes - small businesses and startups are our core clientele. We have built websites for 145+ SMBs across Ahmedabad and Gujarat: manufacturers, clinics, jewellers, coaching institutes, real-estate builders and D2C brands. We offer fixed INR pricing specifically designed for SMB budgets, starting at ₹35,000 for a business website.
+Yes - small businesses and startups are our core clientele. We have built websites for 145+ SMBs across Ahmedabad and Gujarat: manufacturers, clinics, jewellers, coaching institutes, real-estate builders and D2C brands. Every project gets a fixed INR quote shaped around SMB budgets.
 
 ### Which is the cheapest web development company in Ahmedabad?
 
-The cheapest option is rarely the most economical. Very low quotes (under ₹15,000) usually mean templated work, no SEO, slow performance, and expensive rebuilds within a year. Insta Biz Web offers fair fixed pricing from ₹35,000 with senior engineers, Lighthouse 95+ performance, full code ownership and 30 days free support - genuine value, not the lowest sticker price.
+The cheapest option is rarely the most economical. Very low quotes usually mean templated work, no SEO, slow performance, and expensive rebuilds within a year. Insta Biz Web offers a fair fixed quote with senior engineers, Lighthouse 95+ performance, full code ownership and 30 days free support - genuine value, not the lowest sticker price.
 
 ### Do you offer website maintenance and support after launch?
 
-Yes. Every project includes 30 days of free post-launch support for bugs and small changes. After that, we offer optional monthly maintenance retainers covering updates, security patches, backups, content changes and minor features - typically ₹5,000 to ₹25,000 per month depending on your site.
+Yes. Every project includes 30 days of free post-launch support for bugs and small changes. After that, we offer optional monthly maintenance retainers covering updates, security patches, backups, content changes and minor features, quoted to the size of your site.
 
 ### Can you redesign or fix my existing slow website?
 
@@ -923,7 +923,7 @@ Resources
         "name": "How much does a website cost in Ahmedabad?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A professional business website in Ahmedabad starts at ₹35,000 for a 5-page site, ₹65,000+ for an e-commerce store with payment gateway, and ₹1,50,000+ for a custom web application. We share a fixed INR quote with GST invoice within 24 hours of your enquiry."
+          "text": "The cost depends on scope: a 5-page business site, an e-commerce store with payment gateway and a custom web application are very different builds. We share a fixed INR quote with GST invoice within 24 hours of your enquiry."
         }
       },
       {
@@ -987,7 +987,7 @@ Resources
         "name": "Do you build websites for small businesses and startups in Ahmedabad?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes - small businesses and startups are our core clientele. We have built websites for 145+ SMBs across Ahmedabad and Gujarat: manufacturers, clinics, jewellers, coaching institutes, real-estate builders and D2C brands. We offer fixed INR pricing specifically designed for SMB budgets, starting at ₹35,000 for a business website."
+          "text": "Yes - small businesses and startups are our core clientele. We have built websites for 145+ SMBs across Ahmedabad and Gujarat: manufacturers, clinics, jewellers, coaching institutes, real-estate builders and D2C brands. Every project gets a fixed INR quote shaped around SMB budgets."
         }
       },
       {
@@ -995,7 +995,7 @@ Resources
         "name": "Which is the cheapest web development company in Ahmedabad?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The cheapest option is rarely the most economical. Very low quotes (under ₹15,000) usually mean templated work, no SEO, slow performance, and expensive rebuilds within a year. Insta Biz Web offers fair fixed pricing from ₹35,000 with senior engineers, Lighthouse 95+ performance, full code ownership and 30 days free support - genuine value, not the lowest sticker price."
+          "text": "The cheapest option is rarely the most economical. Very low quotes usually mean templated work, no SEO, slow performance, and expensive rebuilds within a year. Insta Biz Web offers a fair fixed quote with senior engineers, Lighthouse 95+ performance, full code ownership and 30 days free support - genuine value, not the lowest sticker price."
         }
       },
       {
@@ -1003,7 +1003,7 @@ Resources
         "name": "Do you offer website maintenance and support after launch?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Every project includes 30 days of free post-launch support for bugs and small changes. After that, we offer optional monthly maintenance retainers covering updates, security patches, backups, content changes and minor features - typically ₹5,000 to ₹25,000 per month depending on your site."
+          "text": "Yes. Every project includes 30 days of free post-launch support for bugs and small changes. After that, we offer optional monthly maintenance retainers covering updates, security patches, backups, content changes and minor features, quoted to the size of your site."
         }
       },
       {
