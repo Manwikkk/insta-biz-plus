@@ -177,14 +177,16 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
         const LOW = -0.44
         Object.assign(engine, base, { x: 0, ...inWindow() })
         curtain?.style.setProperty('--cy', `${((1 - LOW) / 2) * 100}%`)
-        // Where the parts sit for "what we do": centred in the room above the part card.
+        // Where it sits for "what we do": centred in the room above the part card, in its hero pose and
+        // size (only made smaller if that room is short), the part being read lifting out of it.
         const bay = () => {
           const card = capEl.querySelector<HTMLElement>('[data-cap-card]')
           const h = H()
           const cardH = card?.offsetHeight ?? h * 0.45
           const free = Math.max(160, h - cardH - 96)
           const centre = 76 + free / 2
-          return { y: 1 - (2 * centre) / h, scale: Math.min(1, Math.max(0.62, free / 330)) }
+          const unit = 2 * Math.min(0.26 * h, 0.2 * window.innerWidth)
+          return { y: 1 - (2 * centre) / h, scale: Math.min(inWindow().scale, (free * 0.85) / unit) }
         }
         // Each phase states where it starts (the previous phase's end) so scrubbing back and forth
         // through the boundaries never jumps; none renders until its own scroll range is reached.
@@ -262,19 +264,19 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
           .to(engine, { dim: 0, duration: 0.1, ease: 'power2.out' }, 0.84)
           .to(engine, { duration: 0.06 }, 0.94)
 
-        // 3 · What we do: it rises above the part card and opens into its exploded view.
+        // 3 · What we do: it rises above the part card, keeping the pose it had in the hero.
         gsap
           .timeline({ scrollTrigger: { trigger: capEl, start: 'top bottom', end: 'top top', scrub: true, invalidateOnRefresh: true } })
           .fromTo(
             engine,
             { x: 0, y: -0.5, scale: () => inWindow().scale, explode: base.explode, rotX: base.rotX, rotY: base.rotY, dim: 0, scatter: 0 },
-            { x: 0, y: () => bay().y, scale: () => bay().scale, explode: 0.85, labels: 0, rotX: -0.5, rotY: 0.5, ease: 'power1.inOut', ...later },
+            { x: 0, y: () => bay().y, scale: () => bay().scale, explode: base.explode, labels: 0, rotX: base.rotX, rotY: base.rotY, ease: 'power1.inOut', ...later },
           )
 
         // Leaving the stage.
         gsap
           .timeline({ scrollTrigger: { trigger: capEl, start: 'bottom bottom', end: 'bottom 45%', scrub: true } })
-          .fromTo(engine, { explode: 0.85, opacity: 1 }, { explode: 0.1, opacity: 0, ease: 'none', ...later })
+          .fromTo(engine, { explode: base.explode, opacity: 1 }, { explode: base.explode, opacity: 0, ease: 'none', ...later })
 
         return () => {
           if (!curtain) return
