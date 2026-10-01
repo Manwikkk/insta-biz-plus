@@ -6,7 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { problem } from '@/content/home'
 import { cn } from '@/lib/cn'
-import { hexClip } from '@/lib/hex'
+import { hexClip, hexClipAt } from '@/lib/hex'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
@@ -106,7 +106,8 @@ export function Problem() {
       mm.add('(max-width: 1023px) and (prefers-reduced-motion: no-preference)', () => {
         // The stage opens round the engine as it floats down (EngineStage's curtain); this chapter's
         // own ground takes over only once it has the whole screen, so no straight edge rises first.
-        gsap.set(paper, { '--r': '0vmax' })
+        // the engine reassembles at y -0.5 (EngineStage), three-quarters of the way down the screen
+        gsap.set(paper, { '--r': '0vmax', '--cy': '75%' })
         gsap.set(ground, { '--r': '0vmax' })
         ScrollTrigger.create({
           trigger: el,
@@ -167,8 +168,8 @@ export function Problem() {
             </div>
             <div className="absolute inset-0 bg-[radial-gradient(40%_40%_at_50%_52%,rgb(34_199_216/0.10),transparent_70%)]" />
           </div>
-          {/* paper returns: opens from the reassembled engine */}
-          <div data-paper aria-hidden className="absolute inset-0 bg-bg" style={{ clipPath: hexClip('var(--r, 0vmax)') }} />
+          {/* paper returns: opens from the reassembled engine (centred on it: low on the screen on phones) */}
+          <div data-paper aria-hidden className="absolute inset-0 bg-bg" style={{ clipPath: hexClipAt('var(--r, 0vmax)', '50%', 'var(--cy, 50%)') }} />
         </div>
       </div>
 
