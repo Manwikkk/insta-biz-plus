@@ -230,8 +230,8 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
         })
 
         // 2 · Problem: the parts scatter to the edges of the screen, dim, and drift — then snap back
-        // together low on the screen, under "One team. One plan.", and light up with a pulse as the
-        // paper returns.
+        // together low on the screen, under "One team. One plan.", into the very pose and size the
+        // logo had in the hero, and light up with a pulse as the paper returns.
         let last = 0
         gsap
           .timeline({
@@ -240,6 +240,7 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
               start: 'top top',
               end: 'bottom bottom',
               scrub: true,
+              invalidateOnRefresh: true,
               onUpdate: (self) => {
                 if (last < 0.86 && self.progress >= 0.86) firePulse()
                 last = self.progress
@@ -253,7 +254,11 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
             0,
           )
           .to(engine, { rotY: 1.1, duration: 0.34, ease: 'none' }, 0.3)
-          .to(engine, { scatter: 0, dim: 0.72, explode: 0, rotY: 0.62, y: -0.5, scale: 1, duration: 0.16, ease: 'power3.inOut' }, 0.64)
+          .to(
+            engine,
+            { scatter: 0, dim: 0.72, explode: base.explode, rotX: base.rotX, rotY: base.rotY, y: -0.5, scale: () => inWindow().scale, duration: 0.16, ease: 'power3.inOut' },
+            0.64,
+          )
           .to(engine, { dim: 0, duration: 0.1, ease: 'power2.out' }, 0.84)
           .to(engine, { duration: 0.06 }, 0.94)
 
@@ -262,7 +267,7 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
           .timeline({ scrollTrigger: { trigger: capEl, start: 'top bottom', end: 'top top', scrub: true, invalidateOnRefresh: true } })
           .fromTo(
             engine,
-            { x: 0, y: -0.5, scale: 1, explode: 0, rotX: base.rotX, rotY: 0.62, dim: 0, scatter: 0 },
+            { x: 0, y: -0.5, scale: () => inWindow().scale, explode: base.explode, rotX: base.rotX, rotY: base.rotY, dim: 0, scatter: 0 },
             { x: 0, y: () => bay().y, scale: () => bay().scale, explode: 0.85, labels: 0, rotX: -0.5, rotY: 0.5, ease: 'power1.inOut', ...later },
           )
 
