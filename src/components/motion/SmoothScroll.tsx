@@ -40,14 +40,14 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
     // A heavier glide: lower lerp and a softer wheel step, so scroll-driven scenes unfold at a calmer pace.
-    // Phones and tablets: Lenis takes the touch scroll as well, 20% slower than the finger, so every
-    // scroll-driven scene there plays 20% slower; rows that scroll sideways keep their own swipe.
+    // Phones and tablets: Lenis takes the touch scroll as well, 15% slower than the finger, so every
+    // scroll-driven scene there plays 15% slower; rows that scroll sideways keep their own swipe.
     const touch = matchMedia('(pointer: coarse)').matches
     const instance = new Lenis({
       lerp: 0.07,
       wheelMultiplier: 0.8,
       syncTouch: touch,
-      touchMultiplier: touch ? 0.8 : 1,
+      touchMultiplier: touch ? 0.85 : 1,
       allowNestedScroll: true,
       smoothWheel: true,
       stopInertiaOnNavigate: true,
