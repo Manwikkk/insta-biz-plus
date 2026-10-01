@@ -2,7 +2,10 @@ import { products } from './products'
 
 /**
  * Portfolio — the client work on blutec.ai/portfolio (30 Sept 2026), verbatim apart from
- * "we" for "BluTec", with its categories. Images in public/portfolio (scripts/blutec-media.mjs).
+ * "we" for "BluTec", with its categories. Images in public/portfolio: website screens captured
+ * from the live sites at 2x or taken from the originals on instabizweb.com/portfolio (1 Oct
+ * 2026), app screens from each app's Play Store listing (public/portfolio/apps), the rest from
+ * blutec.ai (scripts/blutec-media.mjs).
  */
 
 export const categories = [
@@ -15,6 +18,39 @@ export const categories = [
 ] as const
 export type WorkCategory = (typeof categories)[number]
 
+/** Short names for the categories, for the filter and the type band on the portfolio page. */
+export const categoryLabel: Record<WorkCategory, string> = {
+  'App Development': 'Apps',
+  'Website Development': 'Websites',
+  'CRM Development': 'CRM & ERP',
+  Automation: 'Automation',
+  'Telegram Development': 'Telegram bots',
+  'Extension Development': 'Extensions',
+}
+
+/** The scenes the solution projects (CRMs, ERPs, automations) are re-built as, running (ProjectVisual). */
+export type MotionScene =
+  | 'cottons'
+  | 'doclinks'
+  | 'grand-sud'
+  | 'krishna'
+  | 'mudra'
+  | 'orkay'
+  | 'odoo'
+  | 'rental'
+  | 'linkedin'
+  | 'indiamart'
+  | 'ping'
+  | 'workflow'
+
+/**
+ * How a project shows on its plate. By default its screenshot; apps show their own Play Store
+ * screens in phones; solution projects without a public screen show it re-built and running.
+ */
+export type ProjectVisual =
+  | { kind: 'app'; screens: string[]; icon?: string; tint: string; ink: string }
+  | { kind: 'motion'; scene: MotionScene }
+
 export type Project = {
   name: string
   slug: string
@@ -24,6 +60,7 @@ export type Project = {
   image: string
   href: string
   cta: string
+  visual?: ProjectVisual
 }
 
 const p = (
@@ -37,7 +74,7 @@ const p = (
   image = slug,
 ): Project => ({ name, slug, category, summary, points, image: `/portfolio/${image}.webp`, href, cta })
 
-export const projects: Project[] = [
+const list: Project[] = [
   p(
     'Chennai Cabs',
     'chennai-cabs',
@@ -384,9 +421,41 @@ export const projects: Project[] = [
   ),
 ]
 
+/** An app's own screens (public/portfolio/apps, from its Play Store listing) and its colours. */
+const app = (slug: string, tint: string, ink: string, n = 4): ProjectVisual => ({
+  kind: 'app',
+  screens: Array.from({ length: n }, (_, i) => `/portfolio/apps/${slug}/${i + 1}.webp`),
+  icon: `/portfolio/apps/${slug}/icon.webp`,
+  tint,
+  ink,
+})
+
+const VISUALS: Record<string, ProjectVisual> = {
+  'chennai-cabs': app('chennai-cabs', '#e9f3d6', '#4c7a12'),
+  dhn: app('dhn', '#fde7dc', '#c2410c'),
+  cashflex: app('cashflex', '#dcf7ee', '#0f766e'),
+  carefix: app('carefix', '#e3ecf3', '#1f2937'),
+  egniol: app('egniol', '#e4e9fb', '#1d3fb8'),
+  '7-planets': { kind: 'app', screens: ['/portfolio/7-planets.webp'], tint: '#e8e2f7', ink: '#3b2a7a' },
+  'cottons-by-ridheera': { kind: 'motion', scene: 'cottons' },
+  'doclinks-crm': { kind: 'motion', scene: 'doclinks' },
+  'grand-sud': { kind: 'motion', scene: 'grand-sud' },
+  'krishna-clinic-crm': { kind: 'motion', scene: 'krishna' },
+  'mudra-yoga': { kind: 'motion', scene: 'mudra' },
+  'orkay-tiles': { kind: 'motion', scene: 'orkay' },
+  'odoo-crm-erp': { kind: 'motion', scene: 'odoo' },
+  'wedding-rental-management': { kind: 'motion', scene: 'rental' },
+  'linkedin-lead-automation': { kind: 'motion', scene: 'linkedin' },
+  'indiamart-automation': { kind: 'motion', scene: 'indiamart' },
+  'whatsapp-automation': { kind: 'motion', scene: 'ping' },
+  'custom-workflow-automation': { kind: 'motion', scene: 'workflow' },
+}
+
+export const projects: Project[] = list.map((x) => (VISUALS[x.slug] ? { ...x, visual: VISUALS[x.slug] } : x))
+
 export const projectBySlug = (slug: string) => projects.find((x) => x.slug === slug)!
 
-/** A screen of the work, for the moving walls (portfolio hero, homepage): the products, then high-resolution client work. */
+/** A screen of the work, for the moving walls (portfolio hero, homepage): the products, then sharp, full-size client screens. */
 export type Showcase = { key: string; name: string; label: string; summary: string; image: string; href: string; cta: string }
 
 export const showcase: Showcase[] = [
@@ -400,16 +469,16 @@ export const showcase: Showcase[] = [
     cta: `Explore ${x.name}`,
   })),
   ...[
-    'chennai-cabs',
     'propertymilan',
+    'sarvam-art',
     'tender-source-india',
     'best-sports-bar',
     'acolyte-living',
+    'akp-ventures',
     'convrsai',
+    'saarthium',
     'estatrent',
-    'sarvam-art',
-    'wedding-rental-management',
-    'linkedin-lead-automation',
+    'doclinks-website',
     'scout-chrome-extension',
   ].map((slug) => {
     const x = projectBySlug(slug)
@@ -428,6 +497,12 @@ export const portfolioPage = {
     'Six years. 100+ products shipped. From homegrown ride-hailing apps to AI calling agents - every project below was built end-to-end by our team, with the founders we still work with today.',
   primary: 'Browse all work',
   secondary: 'Start your project',
+  /** The hero's counts, rounded the way the site states its numbers. */
+  figures: [
+    { value: '40+', label: 'projects' },
+    { value: '4', label: 'products' },
+    { value: '6+', label: 'categories' },
+  ],
   products: {
     eyebrow: 'Our products',
     title: 'The work we keep talking about',
@@ -446,7 +521,7 @@ export const portfolioPage = {
     intro: 'Apps, CRMs, websites, automations, Telegram bots, and browser extensions we’ve shipped for clients across India, Europe, UK, Canada, and the U.S.',
   },
   close: {
-    status: 'Currently taking 2 new projects this month',
+    status: 'Start your project now',
     title: 'Your project, next on this page.',
     body: 'Every product you scrolled past started with a single founder and a single message. Send us yours - we’ll come back within 2 hours with timeline, scope, and a clear quote.',
     primary: 'Start your project',

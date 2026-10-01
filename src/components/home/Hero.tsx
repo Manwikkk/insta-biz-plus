@@ -2,7 +2,6 @@ import { hero } from '@/content/home'
 import { KeyButton } from '@/components/ui/KeyButton'
 import { Odometer } from '@/components/ui/Odometer'
 import { Icon } from '@/components/ui/Icon'
-import { hexClip } from '@/lib/hex'
 import { MobileEngineWindow } from './EngineStage'
 import { HeroRotator } from './HeroRotator'
 
@@ -10,8 +9,9 @@ import { HeroRotator } from './HeroRotator'
  * Chapter 0 — Ignition. The brand statement on the left; the IBW mark, built as a
  * physical engine, idles on the right with each part called out by name (desktop).
  * Every size here is capped by the viewport height so the whole hero fits one screen.
- * On phones the engine sits in a window under the copy; as you scroll the hero is held,
- * the copy lifts away and the dark stage opens round the engine (EngineStage).
+ * On phones the engine sits in a window under the copy and its figures; as you scroll, the
+ * copy goes up and away while the engine floats on down the page into the dark stage that
+ * opens round it (EngineStage).
  */
 export function Hero() {
   return (
@@ -23,17 +23,10 @@ export function Hero() {
         </div>
         <div className="absolute right-[-8%] top-1/2 hidden aspect-square w-[62vw] max-w-[980px] -translate-y-1/2 rounded-full bg-[radial-gradient(closest-side,var(--teal-soft),transparent)] opacity-70 lg:block" />
       </div>
-      {/* phones: the next chapter's dark stage, opening round the engine as the hero lets go */}
-      <div aria-hidden data-hero-ground className="absolute inset-0 z-0 bg-stage lg:hidden motion-reduce:hidden" style={{ clipPath: hexClip('var(--r, 0vmax)') }}>
-        <div className="absolute inset-0 [mask-image:radial-gradient(60%_60%_at_50%_50%,#000,transparent)]">
-          <div className="iso-grid [--grid:var(--stage-line)]" />
-        </div>
-        <div className="absolute inset-0 bg-[radial-gradient(40%_40%_at_50%_52%,rgb(34_199_216/0.10),transparent_70%)]" />
-      </div>
 
       <div className="shell relative z-[2] flex min-h-[inherit] flex-col pb-5 pt-[96px] sm:pb-10 sm:pt-[112px] lg:pb-[clamp(20px,4vh,48px)] lg:pt-[clamp(92px,15vh,140px)]">
-        {/* phones: the column fills the screen and the engine's window takes whatever room is left */}
-        <div data-hero-copy className="flex max-w-[760px] flex-1 flex-col lg:block lg:max-w-[58%] lg:flex-none">
+        {/* phones: the copy, then its figures, then the engine's window in whatever room is left */}
+        <div className="max-w-[760px] lg:max-w-[58%]">
           <p className="enter-fade inline-flex items-center gap-3" style={{ ['--d' as string]: '80ms' }}>
             <span className="inline-flex h-6 items-center rounded-[4px] bg-ember px-2 font-label text-[0.62rem] font-semibold uppercase tracking-[0.08em] text-white">
               {hero.badge.tag}
@@ -66,12 +59,10 @@ export function Hero() {
               {hero.secondary}
             </KeyButton>
           </div>
-
-          <MobileEngineWindow />
         </div>
 
         {/* instrument cluster (three figures on phones, four from there up) */}
-        <div data-hero-copy className="lg:mt-auto">
+        <div className="lg:mt-auto">
           <dl
             className="enter-fade mt-4 grid grid-cols-3 border-t border-line pt-4 sm:mt-8 sm:grid-cols-4 sm:gap-y-6 sm:pt-6 lg:mt-0 lg:max-w-[64%] lg:pt-[clamp(14px,2.6vh,24px)]"
             style={{ ['--d' as string]: '640ms' }}
@@ -90,6 +81,8 @@ export function Hero() {
             ))}
           </dl>
         </div>
+
+        <MobileEngineWindow />
       </div>
 
       <a

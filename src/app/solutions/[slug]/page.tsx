@@ -10,10 +10,12 @@ import { SplitReveal } from '@/components/motion/SplitReveal'
 import { SolutionVisual } from '@/components/heroes/SolutionVisual'
 import { ModuleBoard } from '@/components/solutions/ModuleBoard'
 import { Steps } from '@/components/sections/Steps'
+import { Workflow } from '@/components/sections/Workflow'
 import { Faq } from '@/components/sections/Faq'
 import { ConsultCTA } from '@/components/sections/ConsultCTA'
 import { Icon } from '@/components/ui/Icon'
 import { solutionBySlug, solutions } from '@/content/data'
+import { solutionWorkflows } from '@/content/workflows'
 
 export const dynamicParams = false
 
@@ -31,6 +33,7 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
   const s = solutionBySlug(slug)
   if (!s) notFound()
   const related = s.related.map((r) => solutionBySlug(r)).filter(Boolean) as NonNullable<ReturnType<typeof solutionBySlug>>[]
+  const flow = solutionWorkflows[slug]
 
   return (
     <>
@@ -195,10 +198,17 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
             ))}
           </ul>
           <h3 className="t-h3 mt-20">How we build your software</h3>
-          <Steps
-            steps={s.why.process.map((p) => ({ n: String(p.step).padStart(2, '0'), title: p.title, body: p.body }))}
-            className="mt-8"
-          />
+          {flow ? (
+            <>
+              <p className="t-body mt-3 max-w-xl">Seven steps from the first call to go-live - with the same senior team beside you at every one.</p>
+              <Workflow steps={flow} className="mt-12" />
+            </>
+          ) : (
+            <Steps
+              steps={s.why.process.map((p) => ({ n: String(p.step).padStart(2, '0'), title: p.title, body: p.body }))}
+              className="mt-8"
+            />
+          )}
         </div>
       </section>
 

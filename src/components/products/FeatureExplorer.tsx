@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { screensOf, type Product } from '@/content/products'
 import { Icon } from '@/components/ui/Icon'
+import { ScrollCue } from '@/components/ui/ScrollCue'
 import { cn } from '@/lib/cn'
 
 const ease = [0.16, 1, 0.3, 1] as const
@@ -192,9 +193,10 @@ export function FeatureExplorer({ product: p, flip = false }: { product: Product
       </div>
 
       {/* the features (phones): cards to swipe */}
+      <div className="relative lg:hidden">
       <ol
         ref={rail}
-        className="-mx-[var(--gutter)] flex snap-x snap-mandatory gap-3 overflow-x-auto px-[var(--gutter)] pb-2 [scroll-padding-inline:var(--gutter)] [scrollbar-width:none] lg:hidden"
+        className="-mx-[var(--gutter)] flex snap-x snap-mandatory gap-3 overflow-x-auto px-[var(--gutter)] pb-2 [scroll-padding-inline:var(--gutter)] [scrollbar-width:none]"
         aria-label={`${p.name} features`}
       >
         {p.features.map((x, i) => (
@@ -216,6 +218,8 @@ export function FeatureExplorer({ product: p, flip = false }: { product: Product
           </li>
         ))}
       </ol>
+      <ScrollCue target={rail} />
+      </div>
     </div>
   )
 }

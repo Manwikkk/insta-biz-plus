@@ -1,3 +1,6 @@
-/** A pointy-top hexagon of circumradius `r` (any CSS length) centred in its box, as a clip-path. */
-export const hexClip = (r: string) =>
-  `polygon(50% calc(50% - ${r}), calc(50% + ${r} * 0.866) calc(50% - ${r} * 0.5), calc(50% + ${r} * 0.866) calc(50% + ${r} * 0.5), 50% calc(50% + ${r}), calc(50% - ${r} * 0.866) calc(50% + ${r} * 0.5), calc(50% - ${r} * 0.866) calc(50% - ${r} * 0.5))`
+/** A pointy-top hexagon of circumradius `r` centred at (`cx`, `cy`) in its box (any CSS lengths or percentages), as a clip-path. */
+export const hexClipAt = (r: string, cx: string, cy: string) =>
+  `polygon(${cx} calc(${cy} - ${r}), calc(${cx} + ${r} * 0.866) calc(${cy} - ${r} * 0.5), calc(${cx} + ${r} * 0.866) calc(${cy} + ${r} * 0.5), ${cx} calc(${cy} + ${r}), calc(${cx} - ${r} * 0.866) calc(${cy} + ${r} * 0.5), calc(${cx} - ${r} * 0.866) calc(${cy} - ${r} * 0.5))`
+
+/** The same hexagon centred in its box. */
+export const hexClip = (r: string) => hexClipAt(r, '50%', '50%')

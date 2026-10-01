@@ -1,115 +1,85 @@
-import Image from 'next/image'
 import { Breadcrumbs } from '@/components/sections/PageHero'
 import { KeyButton } from '@/components/ui/KeyButton'
 import { Odometer } from '@/components/ui/Odometer'
-import { portfolioPage as pp, productLines, showcase, type Showcase } from '@/content/portfolio'
-import { cn } from '@/lib/cn'
-
-/** Three columns of the work, each drifting at its own pace (alternate columns run the other way). */
-const COLUMNS = [0, 1, 2].map((c) => showcase.filter((_, i) => i % 3 === c))
-const PACE = ['64s', '78s', '58s']
-
-function Shot({ p }: { p: Showcase }) {
-  return (
-    <figure className="pf-card mb-4 overflow-hidden rounded-[14px] border border-stage-line bg-stage-2">
-      <div className="relative aspect-[16/11] overflow-hidden">
-        <Image src={p.image} alt="" fill sizes="(min-width: 1024px) 300px, 45vw" quality={60} className="object-cover object-top" />
-      </div>
-      <figcaption className="flex items-center justify-between gap-3 px-3 py-2.5">
-        <span className="truncate text-[0.82rem] font-semibold text-stage-ink">{p.name}</span>
-        <span className="t-label shrink-0 text-[0.56rem] text-stage-ink-2">{p.label}</span>
-      </figcaption>
-    </figure>
-  )
-}
+import { WorkArc } from './WorkArc'
+import { HeroMark } from './HeroMark'
+import { portfolioPage as pp } from '@/content/portfolio'
 
 /**
- * Portfolio opener on the dark stage: the promise and the numbers on the left, and the work
- * itself as a tilted wall of live products drifting past on the right.
+ * Portfolio opener. The promise is set across the full width, one line flush left and the
+ * next flush right with a drawn rule beneath, and under it the work itself turns past on a
+ * curved wall. The counts that matter sit in the corners.
  */
 export function PortfolioHero() {
   const stats = [
-    { value: '100+', label: 'projects' },
-    { value: '4.9★', label: 'avg rating' },
-    { value: '5', label: 'countries' },
-    { value: String(productLines), label: 'product lines' },
+    { value: '100+', label: 'Projects shipped' },
+    { value: '4.9★', label: 'Average rating' },
+    { value: '5', label: 'Countries' },
   ]
   return (
-    <section className="relative overflow-hidden bg-stage text-stage-ink" data-nav-tone="dark">
-      <div aria-hidden className="absolute inset-0 [mask-image:radial-gradient(70%_80%_at_20%_30%,#000,transparent_75%)]">
-        <div className="iso-grid [--grid:var(--stage-line)]" />
+    <section className="relative overflow-hidden border-b border-line">
+      <div aria-hidden className="absolute inset-0 [mask-image:radial-gradient(90%_70%_at_50%_0%,#000,transparent_72%)]">
+        <div className="iso-grid" />
+      </div>
+      <HeroMark />
+
+      <div className="shell relative z-[2] pt-[clamp(100px,14vh,140px)]">
+        <div className="enter-fade flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
+          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Portfolio' }]} />
+          <p className="t-label text-ink-3">
+            {pp.figures.map((f, i) => (
+              <span key={f.label}>
+                {i ? ' · ' : null}
+                <span className="text-teal-ink">{f.value}</span> {f.label}
+              </span>
+            ))}
+          </p>
+        </div>
+
+        <h1 className="pf-title mt-[clamp(18px,4.5vh,44px)]">
+          <span className="enter-line">
+            <span style={{ ['--d' as string]: '80ms' }}>Work we’re</span>
+          </span>{' '}
+          <span className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
+            <span className="enter-line sm:order-last sm:ml-auto">
+              <span style={{ ['--d' as string]: '190ms' }}>proud to show.</span>
+            </span>{' '}
+            {/* the parentheses are drawn by CSS, so the heading reads as one sentence */}
+            <span className="pf-paren enter-fade" style={{ ['--d' as string]: '520ms' }}>
+              <span className="text-teal-ink">Results that speak.</span>
+            </span>
+          </span>
+        </h1>
+        <div aria-hidden className="pf-rule mt-[clamp(14px,3vh,30px)]" data-reveal style={{ ['--d' as string]: '300ms' }} />
       </div>
 
-      <div className="shell relative z-[1] pb-[clamp(40px,7vh,88px)] pt-[112px] lg:min-h-[min(100svh,860px)] lg:pt-[clamp(110px,17vh,160px)]">
-        <div className="relative max-w-[640px] lg:max-w-[46%]">
-          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Portfolio' }]} className="enter-fade text-stage-ink-2 [&_a:hover]:text-stage-ink [&_[aria-current]]:text-stage-ink" />
-          <p className="enter-fade mt-[clamp(16px,3vh,28px)] flex flex-wrap items-center gap-3" style={{ ['--d' as string]: '60ms' }}>
-            <span className="inline-flex h-6 items-center rounded-[4px] bg-teal px-2 font-label text-[0.62rem] font-semibold uppercase tracking-[0.08em] text-[#04161a]">
-              {pp.tag}
-            </span>
-            <span className="t-label text-stage-ink-2">{pp.tagNote}</span>
-          </p>
-          <h1 className="mt-[clamp(14px,2.6vh,24px)] font-display text-[clamp(2.5rem,min(5.2vw,9vh),5.4rem)] font-[760] leading-[0.95] tracking-[-0.045em] [font-stretch:108%]">
-            <span className="enter-line">
-              <span style={{ ['--d' as string]: '120ms' }}>Work we’re proud to show.</span>
-            </span>{' '}
-            <span className="enter-line">
-              <span style={{ ['--d' as string]: '220ms' }} className="text-teal">
-                Results that speak.
-              </span>
-            </span>
-          </h1>
-          <p className="enter-fade mt-[clamp(14px,3vh,28px)] max-w-[34rem] text-[1.08rem] leading-relaxed text-stage-ink-2" style={{ ['--d' as string]: '360ms' }}>
-            {pp.intro}
-          </p>
-          <div className="enter-fade mt-[clamp(18px,4vh,36px)] flex flex-wrap items-center gap-3" style={{ ['--d' as string]: '460ms' }}>
-            <KeyButton href="#all-work" variant="stage" icon="arrow-down">
+      <div className="enter-fade relative z-[1] mt-[clamp(8px,2vh,24px)]" style={{ ['--d' as string]: '360ms' }}>
+        <WorkArc />
+      </div>
+
+      <div className="shell relative z-[2] grid gap-8 pb-[clamp(28px,5vh,60px)] pt-[clamp(10px,2.4vh,28px)] lg:grid-cols-12 lg:items-end">
+        <div className="enter-fade lg:col-span-6" style={{ ['--d' as string]: '460ms' }}>
+          <p className="t-lede max-w-[36rem]">{pp.intro}</p>
+          <div className="mt-[clamp(16px,3vh,28px)] flex flex-wrap items-center gap-3">
+            <KeyButton href="#all-work" icon="arrow-down">
               {pp.primary}
             </KeyButton>
-            <KeyButton href="/contact-us" variant="stage-ghost" icon={null}>
+            <KeyButton href="/contact-us" variant="ghost" icon={null}>
               {pp.secondary}
             </KeyButton>
           </div>
-          <dl
-            className="enter-fade mt-[clamp(28px,6vh,64px)] grid grid-cols-2 gap-y-5 border-t border-stage-line pt-5 sm:grid-cols-4"
-            style={{ ['--d' as string]: '560ms' }}
-          >
-            {stats.map((s, i) => (
-              <div
-                key={s.label}
-                className="flex flex-col-reverse border-stage-line [&:nth-child(2n)]:border-l [&:nth-child(2n)]:pl-5 sm:border-l sm:pl-5 sm:first:border-l-0 sm:first:pl-0"
-              >
-                <dt className="t-label mt-2 text-stage-ink-2">{s.label}</dt>
-                <dd className="t-num text-[clamp(1.7rem,2.6vw,2.4rem)]">
-                  <Odometer value={s.value} delay={220 + i * 110} />
-                </dd>
-              </div>
-            ))}
-          </dl>
         </div>
-      </div>
-      {/* the wall */}
-      <div
-        aria-hidden
-        className="pf-wall pointer-events-auto relative mt-0 h-[440px] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,#000_14%,#000_86%,transparent)] lg:absolute lg:inset-y-0 lg:right-0 lg:h-auto lg:w-[58%] lg:[mask-image:linear-gradient(to_right,transparent,#000_22%),linear-gradient(to_bottom,transparent,#000_12%,#000_88%,transparent)] lg:[mask-composite:intersect] lg:[-webkit-mask-composite:source-in]"
-      >
-        <div className="pf-wall-inner absolute inset-x-[-6%] -top-[20%] grid h-[140%] grid-cols-2 gap-4 sm:grid-cols-3 lg:inset-x-[-4%]">
-          {COLUMNS.map((col, c) => (
-            <div key={c} className={cn('relative overflow-hidden', c === 2 && 'hidden sm:block')}>
-              <div className={cn('pf-col', c % 2 === 1 && 'is-down')} style={{ ['--dur' as string]: PACE[c] }}>
-                {[0, 1].map((copy) => (
-                  <div key={copy}>
-                    {col.map((p) => (
-                      <Shot key={`${copy}-${p.key}`} p={p} />
-                    ))}
-                  </div>
-                ))}
-              </div>
+        <dl className="enter-fade grid grid-cols-3 border-t border-line lg:col-span-5 lg:col-start-8" style={{ ['--d' as string]: '560ms' }}>
+          {stats.map((s, i) => (
+            <div key={s.label} className="flex flex-col-reverse border-line pt-4 [&:not(:first-child)]:border-l [&:not(:first-child)]:pl-4">
+              <dt className="t-label mt-2 text-ink-3">{s.label}</dt>
+              <dd className="t-num text-[clamp(1.7rem,2.8vw,2.6rem)]">
+                <Odometer value={s.value} delay={300 + i * 110} />
+              </dd>
             </div>
           ))}
-        </div>
+        </dl>
       </div>
-
     </section>
   )
 }

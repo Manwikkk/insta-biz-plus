@@ -3,7 +3,9 @@
  * Product and portfolio images, taken from blutec.ai (its product pages and its portfolio,
  * 30 Sept 2026) and saved as WebP under public/products and public/portfolio.
  * Originals narrower than 960px are enlarged with a Lanczos filter so they hold up on 2x
- * screens; wider ones are capped at 1600px.
+ * screens; wider ones are capped at 1600px. Client work with a sharper source is no longer
+ * taken from here: websites were captured from the live sites at 2x or taken from the
+ * originals on instabizweb.com/portfolio, and apps show their Play Store screens (1 Oct 2026).
  *
  *   node scripts/blutec-media.mjs
  */
@@ -46,7 +48,6 @@ const FILES = {
   'products/dialer-6': 'Connect_6.35605fad.webp',
   'products/dialer-7': 'Connect_7.37fa02ce.webp',
   // client work
-  'portfolio/chennai-cabs': 'chennai-cabs.ba9bff91.avif',
   'portfolio/dhn': 'DHN.a50c65b2.webp',
   'portfolio/cashflex': 'Cashflex_new.53b41016.webp',
   'portfolio/carefix': 'Carefix_new.54e37dca.webp',
@@ -56,32 +57,15 @@ const FILES = {
   'portfolio/whatsapp-automation': 'Automation_3.8e1ee0c7.webp',
   'portfolio/custom-workflow-automation': 'Automation_4.55d09ccb.webp',
   'portfolio/cottons-by-ridheera': 'Cottons.c083c9bb.webp',
-  'portfolio/best-sports-bar': 'bestsportsbar.5b054106.avif',
-  'portfolio/convrsai': 'convrsai.707efd72.avif',
   'portfolio/doclinks-crm': 'Doclinks_Crm.f1c339ae.webp',
   'portfolio/grand-sud': 'grandsud_CRM.1807036d.webp',
   'portfolio/krishna-clinic-crm': 'krishna.43aaed9e.webp',
   'portfolio/mudra-yoga': 'Mudra_New.d907874d.webp',
-  'portfolio/propertymilan': 'property-milan.f146a533.avif',
   'portfolio/wedding-rental-management': 'rental-management.149377e9.avif',
-  'portfolio/sarvam-art': 'sarvam-art.287eda3d.avif',
-  'portfolio/tender-source-india': 'tendorsource.cd590c8e.avif',
   'portfolio/orkay-tiles': 'Orkay.cbfcffcb.webp',
   'portfolio/odoo-crm-erp': 'odoo-crm.32d23d9f.avif',
-  'portfolio/acolyte-living': 'acolyte-living.0013dea1.avif',
-  'portfolio/agi-money': 'AGI.6ebc8862.webp',
-  'portfolio/akp-ventures': 'AKP_Ventures.7a5a09d8.webp',
-  'portfolio/build-with-chintan': 'Chintan.72ab1d44.webp',
-  'portfolio/doclinks-website': 'Doclinks_Website.10201999.webp',
-  'portfolio/estatrent': 'estaterent.1b358730.avif',
-  'portfolio/grand-sud-website': 'grandsud_website.28e82d89.webp',
   'portfolio/hindland-infrastructure': 'Hindland.6ddc031f.webp',
-  'portfolio/saarthium': 'Saarthium.fa202de6.webp',
-  'portfolio/setu-bridge-solutions': 'Setu.299f9c2c.webp',
-  'portfolio/splendid-tech': 'Splendid_new.a438a607.webp',
-  'portfolio/startupstambh': 'Startup_Stambh.2dcace1b.webp',
   'portfolio/7-planets': '7_planets.44fe51e3.webp',
-  'portfolio/scout-chrome-extension': 'Extension_1.45c5bbef.webp',
 }
 
 for (const [out, file] of Object.entries(FILES)) {

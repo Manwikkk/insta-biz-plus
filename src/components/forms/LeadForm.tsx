@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useId, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useId, useLayoutEffect, useRef, useState, type FormEvent } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { needOptions, site, timelineOptions } from '@/content/site'
 import { KeyAction } from '@/components/ui/KeyButton'
@@ -9,7 +9,7 @@ import { cn } from '@/lib/cn'
 
 type Variant = 'proposal' | 'contact'
 
-const ASK_EVENT = 'ibw:ask'
+export const ASK_EVENT = 'ibw:ask'
 /** Other components can prefill the message field (e.g. "Ask us this" FAQ prompts). */
 export function askInForm(question: string) {
   window.dispatchEvent(new CustomEvent(ASK_EVENT, { detail: question }))
@@ -74,15 +74,32 @@ function Field({
 }) {
   const id = useId()
   const rows = 3
-  const base = cn(
-    'peer w-full rounded-[10px] border bg-transparent px-4 text-[0.98rem] outline-none transition-[border-color,box-shadow] duration-300 placeholder:text-transparent',
-    tone === 'stage'
-      ? 'border-stage-line text-stage-ink focus:border-teal focus:shadow-[0_0_0_3px_rgb(34_199_216/0.15)]'
-      : 'border-line-2 text-ink focus:border-ink focus:shadow-[0_0_0_3px_var(--teal-soft)]',
-    error && 'border-ember',
+  const area = useRef<HTMLTextAreaElement>(null)
+  // The message box grows with what is written (a long prefilled brief included), up to 40% of
+  // the screen, so its text never has to scroll up behind the label.
+  useLayoutEffect(() => {
+    const el = area.current
+    if (!el) return
+    el.style.height = 'auto'
+    el.style.height = `${Math.min(el.scrollHeight, Math.round(window.innerHeight * 0.4))}px`
+  }, [value])
+  // the writing, shared by both kinds of field
+  const text = cn(
+    'peer w-full bg-transparent px-4 text-[0.98rem] outline-none placeholder:text-transparent',
+    tone === 'stage' ? 'text-stage-ink' : 'text-ink',
     // the label floats up on focus; a hint, when there is one, shows in its place
     placeholder && (tone === 'stage' ? 'focus:placeholder:text-stage-ink-2/70' : 'focus:placeholder:text-ink-3/70'),
   )
+  // the box round it: on an input itself, on the frame round the message box
+  const box = cn(
+    'rounded-[10px] border transition-[border-color,box-shadow] duration-300',
+    error ? 'border-ember' : tone === 'stage' ? 'border-stage-line' : 'border-line-2',
+  )
+  const inputFocus = tone === 'stage' ? 'focus:border-teal focus:shadow-[0_0_0_3px_rgb(34_199_216/0.15)]' : 'focus:border-ink focus:shadow-[0_0_0_3px_var(--teal-soft)]'
+  const frameFocus =
+    tone === 'stage'
+      ? 'focus-within:border-teal focus-within:shadow-[0_0_0_3px_rgb(34_199_216/0.15)]'
+      : 'focus-within:border-ink focus-within:shadow-[0_0_0_3px_var(--teal-soft)]'
   const labelCls = cn(
     'pointer-events-none absolute left-4 right-4 origin-left truncate transition-all duration-300 ease-[var(--ease-out)]',
     tone === 'stage' ? 'text-stage-ink-2' : 'text-ink-3',
@@ -91,9 +108,12 @@ function Field({
     'peer-[:not(:placeholder-shown)]:top-2.5 peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-[0.66rem] peer-[:not(:placeholder-shown)]:font-label peer-[:not(:placeholder-shown)]:uppercase peer-[:not(:placeholder-shown)]:tracking-[0.07em]',
   )
   return (
-    <div className="relative">
+    // the message box: its frame holds the label above the writing, so text scrolled inside it
+    // never passes behind the label
+    <div className={cn('relative', textarea && box, textarea && frameFocus)}>
       {textarea ? (
         <textarea
+          ref={area}
           id={id}
           name={name}
           rows={rows}
@@ -101,7 +121,7 @@ function Field({
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder ?? label}
           aria-invalid={!!error}
-          className={cn(base, 'min-h-[clamp(96px,17vh,132px)] resize-none pb-3 pt-7 leading-relaxed')}
+          className={cn(text, 'mt-7 block min-h-[clamp(68px,12vh,104px)] resize-none pb-3 leading-relaxed')}
         />
       ) : (
         <input
@@ -114,7 +134,7 @@ function Field({
           placeholder={placeholder ?? label}
           autoComplete={autoComplete}
           aria-invalid={!!error}
-          className={cn(base, 'h-[clamp(50px,8.4vh,58px)] pb-1 pt-5')}
+          className={cn(text, box, inputFocus, 'h-[clamp(50px,8.4vh,58px)] pb-1 pt-5')}
         />
       )}
       <label htmlFor={id} className={labelCls}>

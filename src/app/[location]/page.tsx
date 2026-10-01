@@ -12,6 +12,7 @@ import { Faq } from '@/components/sections/Faq'
 import { ConsultCTA } from '@/components/sections/ConsultCTA'
 import { Markdownish } from '@/components/ui/Markdownish'
 import { Icon } from '@/components/ui/Icon'
+import { ScrollRow } from '@/components/ui/ScrollCue'
 import { locationBySlug, locations } from '@/content/data'
 import { site } from '@/content/site'
 import { cn } from '@/lib/cn'
@@ -129,7 +130,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
         <section className="rails section border-b border-line">
           <div className="shell">
             <SectionHead eyebrow={l.comparison.eyebrow} title={l.comparison.title} intro={l.comparison.intro ?? undefined} align="split" />
-            <div className="mt-14 overflow-x-auto rounded-[18px] border border-line" data-reveal="rise">
+            <ScrollRow className="mt-14 overflow-x-auto rounded-[18px] border border-line" data-reveal="rise">
               <table className="w-full min-w-[720px] border-collapse text-left text-[0.95rem]">
                 <thead>
                   <tr>
@@ -174,7 +175,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
                   ))}
                 </tbody>
               </table>
-            </div>
+            </ScrollRow>
           </div>
         </section>
       ) : null}

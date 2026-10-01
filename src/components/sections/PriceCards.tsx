@@ -1,4 +1,8 @@
+'use client'
+
+import { useRef } from 'react'
 import { KeyButton } from '@/components/ui/KeyButton'
+import { ScrollCue } from '@/components/ui/ScrollCue'
 import { Icon } from '@/components/ui/Icon'
 import { cn } from '@/lib/cn'
 
@@ -15,15 +19,18 @@ export type PriceCard = {
 
 /** Engagement tiers, each quoted on request. The most popular tier is cast in ink with a teal plinth. */
 export function PriceCards({ cards, cta, href = '#contact-form' }: { cards: PriceCard[]; cta: string; href?: string }) {
+  const row = useRef<HTMLUListElement>(null)
   return (
-    <ul className="grid gap-4 lg:grid-cols-3">
+    // phones and tablets: the cards sit side by side and swipe, with a cue to say so
+    <div className="relative">
+    <ul ref={row} className="-mx-[var(--gutter)] flex snap-x snap-mandatory gap-4 overflow-x-auto px-[var(--gutter)] pb-3 pt-1 [scroll-padding-inline:var(--gutter)] [scrollbar-width:none] lg:mx-0 lg:grid lg:grid-cols-3 lg:overflow-visible lg:p-0">
       {cards.map((c, i) => (
         <li
           key={c.name}
           data-reveal="rise"
           style={{ ['--d' as string]: `${i * 90}ms` }}
           className={cn(
-            'relative flex flex-col rounded-[18px] border p-7 transition-transform duration-500 ease-[var(--ease-out)] hover:-translate-y-1 sm:p-8',
+            'relative flex w-[82vw] max-w-[400px] shrink-0 snap-center flex-col rounded-[18px] border p-7 transition-transform duration-500 ease-[var(--ease-out)] hover:-translate-y-1 sm:p-8 lg:w-auto lg:max-w-none',
             c.popular ? 'border-ink bg-ink text-bg shadow-[0_6px_0_var(--teal)]' : 'border-line bg-raise',
           )}
         >
@@ -64,5 +71,7 @@ export function PriceCards({ cards, cta, href = '#contact-form' }: { cards: Pric
         </li>
       ))}
     </ul>
+    <ScrollCue target={row} />
+    </div>
   )
 }

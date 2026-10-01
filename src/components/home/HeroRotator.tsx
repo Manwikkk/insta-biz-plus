@@ -7,8 +7,10 @@ const ease = [0.16, 1, 0.3, 1] as const
 const easeIn = [0.55, 0, 0.75, 0.2] as const
 
 /**
- * The hero's last word, cycling. Letters of the outgoing word lift away and blur out
- * while the next word rises into the same slot, one letter after another.
+ * The hero's last word, cycling. Letters of the outgoing word lift a little and blur out, and
+ * a beat later the next word rises into the same slot, one letter after another, so the two
+ * words never pile up on each other. Once it starts turning, its line stops clipping (the clip
+ * is only there for the opening rise), so no letter or blur is ever cut off.
  * The first word renders as plain text so the server-rendered h1 reads as one sentence.
  */
 export function HeroRotator({ words, interval = 2800 }: { words: string[]; interval?: number }) {
@@ -38,7 +40,12 @@ export function HeroRotator({ words, interval = 2800 }: { words: string[]; inter
 
   const word = words[i]
   return (
-    <span ref={ref} className="hero-rotator relative inline-grid align-top text-teal-ink">
+    // On the narrowest phones the longest word ("AI-First Brands.", ~7.1em) is capped to the column, never cut off.
+    <span
+      ref={ref}
+      data-cycled={cycled || undefined}
+      className="hero-rotator relative inline-grid align-top text-[length:min(1em,calc((100vw_-_2*var(--gutter))/7.2))] text-teal-ink"
+    >
       <AnimatePresence initial={false}>
         <motion.span key={word} className="col-start-1 row-start-1 inline-flex whitespace-pre" initial="enter" animate="center" exit="exit">
           {split
@@ -46,11 +53,14 @@ export function HeroRotator({ words, interval = 2800 }: { words: string[]; inter
                 <motion.span
                   key={k}
                   className="inline-block"
+                  // Each letter keeps its own layer for its whole life: no layer is dropped (and no glyph
+                  // re-snapped to the pixel grid) as its blur ends, so the word settles without a shiver.
+                  style={{ willChange: 'transform, opacity, filter' }}
                   initial={cycled ? undefined : false}
                   variants={{
-                    enter: { y: '0.85em', opacity: 0, filter: 'blur(10px)' },
-                    center: { y: 0, opacity: 1, filter: 'blur(0px)', transition: { delay: 0.12 + k * 0.03, duration: 0.8, ease } },
-                    exit: { y: '-0.7em', opacity: 0, filter: 'blur(10px)', transition: { delay: k * 0.018, duration: 0.45, ease: easeIn } },
+                    enter: { y: '0.3em', opacity: 0, filter: 'blur(8px)' },
+                    center: { y: 0, opacity: 1, filter: 'blur(0px)', transition: { delay: 0.24 + k * 0.026, duration: 0.7, ease } },
+                    exit: { y: '-0.22em', opacity: 0, filter: 'blur(8px)', transition: { delay: k * 0.014, duration: 0.32, ease: easeIn } },
                   }}
                 >
                   {ch === ' ' ? ' ' : ch}

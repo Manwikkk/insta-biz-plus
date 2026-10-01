@@ -59,7 +59,7 @@ export function Digest() {
             ))}
           </ul>
         </div>
-        <div className="lg:col-span-5 lg:col-start-8">
+        <div className="lg:col-span-6 lg:col-start-7">
           {state === 'done' ? (
             <p className="flex items-center gap-3 rounded-[14px] border border-stage-line p-5 text-[1.05rem]" role="status">
               <Icon name="check" size={20} className="text-teal" /> You’re on the list. See you next month.
@@ -69,7 +69,7 @@ export function Digest() {
               <label htmlFor="digest-email" className="t-label text-stage-ink-2">
                 Email address
               </label>
-              <div className="flex flex-col gap-3 sm:flex-row">
+              <div className="flex flex-col gap-3 xl:flex-row">
                 <input
                   id="digest-email"
                   type="email"
@@ -77,10 +77,10 @@ export function Digest() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@company.com"
-                  className="h-[52px] flex-1 rounded-[10px] border border-stage-line bg-transparent px-4 text-stage-ink outline-none placeholder:text-stage-ink-2/60 focus:border-teal"
+                  className="h-[60px] min-w-0 flex-1 rounded-[12px] border border-stage-line bg-white/[0.04] px-5 text-[1.05rem] text-stage-ink outline-none transition-[border-color,box-shadow] placeholder:text-stage-ink-2/60 focus:border-teal focus:shadow-[0_0_0_4px_rgb(34_199_216/0.15)]"
                   aria-invalid={state === 'error'}
                 />
-                <KeyAction type="submit" variant="stage" disabled={state === 'sending'}>
+                <KeyAction type="submit" variant="stage" disabled={state === 'sending'} className="h-[60px] justify-between xl:shrink-0">
                   {state === 'sending' ? 'Subscribing…' : 'Subscribe'}
                 </KeyAction>
               </div>

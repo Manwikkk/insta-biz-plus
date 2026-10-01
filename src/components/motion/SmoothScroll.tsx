@@ -12,8 +12,25 @@ const LenisContext = createContext<Lenis | null>(null)
 export const useLenis = () => useContext(LenisContext)
 
 /**
+ * Bring the element a `#hash` names to the top of the screen, clear of the header (Lenis, like
+ * the browser, allows for the page's scroll padding and the element's scroll margin). `force`
+ * so it works while a menu has the scroll paused.
+ */
+function toHash(lenis: Lenis | null, hash: string, immediate: boolean) {
+  const id = decodeURIComponent(hash.replace(/^#/, ''))
+  const el = id ? document.getElementById(id) : null
+  if (!el) return
+  if (lenis) lenis.scrollTo(el, { immediate, force: true })
+  else el.scrollIntoView({ behavior: immediate ? 'auto' : 'smooth' })
+}
+
+/**
  * Lenis drives the scroll; GSAP's ticker drives Lenis so ScrollTrigger scrubs stay
  * frame-locked with the smoothed position. Touch devices keep native inertia.
+ *
+ * Links to a section (`/products#ping`, `#contact-form`) are taken here rather than left to
+ * the browser: on this page they glide there; from another page they land on it, and land
+ * again once the new page has measured itself (pinned scenes add height above the target).
  */
 export function SmoothScroll({ children }: { children: ReactNode }) {
   const [lenis, setLenis] = useState<Lenis | null>(null)
@@ -28,7 +45,6 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
       wheelMultiplier: 0.8,
       touchMultiplier: 1.2,
       smoothWheel: true,
-      anchors: { offset: -96 },
       stopInertiaOnNavigate: true,
     })
     instance.on('scroll', ScrollTrigger.update)
@@ -44,7 +60,32 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
     }
   }, [])
 
-  // New route: start at the top (or at the hash target) and re-measure triggers.
+  // A link to a section of this page: glide to it and keep the address in step.
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+      const a = (e.target as Element | null)?.closest?.('a[href]') as HTMLAnchorElement | null
+      if (!a || (a.target && a.target !== '_self')) return
+      const url = new URL(a.href, location.href)
+      if (url.origin !== location.origin || url.pathname !== location.pathname || !url.hash) return
+      if (!document.getElementById(decodeURIComponent(url.hash.slice(1)))) return
+      e.preventDefault()
+      if (url.hash !== location.hash) history.pushState(null, '', url.hash)
+      // A menu may be closing over the page with the scroll paused; restarting the scroll would
+      // cut a glide short, so wait until it has closed (or give up waiting after ~1.5s).
+      const go = (tries: number) => {
+        if (lenis?.isStopped && tries < 30) window.setTimeout(() => go(tries + 1), 50)
+        else toHash(lenis, url.hash, false)
+      }
+      window.setTimeout(() => go(0), 40)
+    }
+    // capture: ahead of the link's own navigation
+    document.addEventListener('click', onClick, true)
+    return () => document.removeEventListener('click', onClick, true)
+  }, [lenis])
+
+  // New route: start at the top, or at the section the address names (again once the page
+  // has settled, unless the reader has started scrolling), and re-measure triggers.
   useEffect(() => {
     if (first.current) {
       first.current = false
@@ -52,8 +93,27 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
     }
     const hash = window.location.hash
     if (!hash) lenis?.scrollTo(0, { immediate: true, force: true })
-    const id = window.setTimeout(() => ScrollTrigger.refresh(), 120)
-    return () => window.clearTimeout(id)
+    let moved = false
+    const stop = () => {
+      moved = true
+    }
+    window.addEventListener('wheel', stop, { passive: true, once: true })
+    window.addEventListener('touchstart', stop, { passive: true, once: true })
+    const land = () => {
+      if (hash && !moved) toHash(lenis, hash, true)
+    }
+    land()
+    const a = window.setTimeout(() => {
+      ScrollTrigger.refresh()
+      land()
+    }, 120)
+    const b = window.setTimeout(land, 700)
+    return () => {
+      window.clearTimeout(a)
+      window.clearTimeout(b)
+      window.removeEventListener('wheel', stop)
+      window.removeEventListener('touchstart', stop)
+    }
   }, [pathname, lenis])
 
   return <LenisContext.Provider value={lenis}>{children}</LenisContext.Provider>

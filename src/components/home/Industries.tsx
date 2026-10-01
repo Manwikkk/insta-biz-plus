@@ -9,6 +9,7 @@ import { solutionIcon } from '@/content/nav'
 import { SectionHead } from '@/components/ui/SectionHead'
 import { Icon } from '@/components/ui/Icon'
 import { KeyButton } from '@/components/ui/KeyButton'
+import { ScrollCue } from '@/components/ui/ScrollCue'
 import { cn } from '@/lib/cn'
 
 const HEX = 'polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)'
@@ -119,7 +120,7 @@ export function Industries() {
             </div>
 
             {/* phones & tablets: tap an industry to read its brief (the honeycomb's hover, by touch) */}
-            <div className="lg:hidden">
+            <div className="relative lg:hidden">
               <ul
                 ref={rail}
                 className="relative -mx-[var(--gutter)] flex gap-2 overflow-x-auto px-[var(--gutter)] pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
@@ -154,6 +155,7 @@ export function Industries() {
                   )
                 })}
               </ul>
+              <ScrollCue target={rail} />
               <Brief sol={sol} n={active + 1} className="mt-4" />
             </div>
             <div className="mt-6 flex flex-wrap items-center justify-between gap-x-5 gap-y-4 lg:hidden">

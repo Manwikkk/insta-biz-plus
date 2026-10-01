@@ -2,11 +2,12 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { products } from '@/content/products'
 import { Icon } from '@/components/ui/Icon'
 import { Odometer } from '@/components/ui/Odometer'
+import { ScrollCue } from '@/components/ui/ScrollCue'
 import { cn } from '@/lib/cn'
 
 const ease = [0.16, 1, 0.3, 1] as const
@@ -21,6 +22,7 @@ export function ProductShowcase() {
   const [i, setI] = useState(0)
   const [dir, setDir] = useState(1)
   const [paused, setPaused] = useState(false)
+  const tabs = useRef<HTMLDivElement>(null)
   const p = products[i]
   const go = (k: number) => {
     setDir(k > i || (i === products.length - 1 && k === 0) ? 1 : -1)
@@ -37,13 +39,13 @@ export function ProductShowcase() {
       onBlurCapture={() => setPaused(false)}
     >
       <div className="showcase-window overflow-hidden rounded-[18px] border border-line bg-raise">
-        <div className="flex items-center gap-3 border-b border-line bg-sink/60 pl-4 pr-2">
+        <div className="relative flex items-center gap-3 border-b border-line bg-sink/60 pl-4 pr-2">
           <span className="hidden gap-1.5 sm:flex" aria-hidden>
             <span className="size-2.5 rounded-full bg-line-2" />
             <span className="size-2.5 rounded-full bg-line-2" />
             <span className="size-2.5 rounded-full bg-line-2" />
           </span>
-          <div role="tablist" aria-label="Products" className="flex min-w-0 flex-1 overflow-x-auto [scrollbar-width:none]">
+          <div ref={tabs} role="tablist" aria-label="Products" className="flex min-w-0 flex-1 overflow-x-auto [scrollbar-width:none]">
             {products.map((x, k) => (
               <button
                 key={x.id}
@@ -65,6 +67,7 @@ export function ProductShowcase() {
               </button>
             ))}
           </div>
+          <ScrollCue target={tabs} />
         </div>
         <div className="relative aspect-[1200/647] overflow-hidden bg-stage">
           <AnimatePresence initial={false} custom={dir}>

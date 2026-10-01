@@ -156,8 +156,9 @@ export function ProjectStrip({ items: projects, idle }: { items: Showcase[]; idl
       </div>
 
       {/* what's under the pointer: the old line and the new one cross-fade in place */}
-      {/* a fixed height, so naming a screen never changes the height of the section */}
-      <div className="relative mt-[clamp(8px,1.8vh,18px)] grid h-[clamp(68px,8.6vh,80px)] items-center overflow-hidden" aria-live="polite">
+      {/* a fixed height, so naming a screen never changes the height of the section (taller on phones,
+          where the line and its button stack) */}
+      <div className="relative mt-[clamp(8px,1.8vh,18px)] grid h-[132px] items-center overflow-hidden sm:h-[clamp(68px,8.6vh,80px)]" aria-live="polite">
         <AnimatePresence initial={false}>
           {p ? (
             <motion.div

@@ -137,34 +137,56 @@ export const numbers = {
   ],
 }
 
+/**
+ * "How we work": the seven-step workflow from the client brief (Understand → Launch), told as the
+ * work our team does at each step. Bodies reuse the site's own process lines where they fit.
+ */
 export const process = {
   eyebrow: 'How we work',
   title: 'From idea to live product',
-  intro: 'A proven 4-step process. Transparent, fast, and zero surprises.',
+  intro: 'Seven steps from the first call to launch - with the same senior team beside you at every one. Transparent, fast, and zero surprises.',
   steps: [
     {
       n: '01',
-      when: 'Day 1-3',
-      title: 'Discover & Strategy',
-      body: 'We start with a free 30-min call to understand your goals, audience & competition - then map a clear plan.',
+      title: 'Understand',
+      body: 'A free 30-min call to learn your goals, your customers and how you run today - then we write it all up as your brief.',
+      get: 'A written brief',
     },
     {
       n: '02',
-      when: 'Week 1-2',
-      title: 'Design & Prototype',
-      body: 'Wireframes, brand-led UI, and an interactive prototype you can click through before a single line of code.',
+      title: 'Map',
+      body: 'We map your workflows, data and hand-offs, and mark the tasks worth automating.',
+      get: 'Scope and a clear plan',
     },
     {
       n: '03',
-      when: 'Week 2-6',
-      title: 'Build & Launch',
-      body: 'Clean code, daily updates, staging environment, and a smooth go-live with full QA on every device.',
+      title: 'Design',
+      body: 'A clickable, brand-led prototype you can try and approve before a single line of code.',
+      get: 'A clickable prototype',
     },
     {
       n: '04',
-      when: 'Ongoing',
-      title: 'Grow & Support',
-      body: "Post-launch analytics, A/B tests & optimizations. We don't disappear - we help you scale.",
+      title: 'Build',
+      body: 'Clean, documented code in weekly sprints, with every line reviewed and tested by our engineers.',
+      get: 'Weekly demos on a staging link',
+    },
+    {
+      n: '05',
+      title: 'Automate',
+      body: 'Workflows take over the follow-ups, reminders, reports and data entry your team does by hand.',
+      get: 'Busywork that runs itself',
+    },
+    {
+      n: '06',
+      title: 'Integrate',
+      body: 'CRM, WhatsApp, payments and accounting connected as one system, with your data in sync.',
+      get: 'One connected system',
+    },
+    {
+      n: '07',
+      title: 'Launch',
+      body: "Go live with full QA and team training, then we keep watch and support you. We don't disappear - we help you scale.",
+      get: 'A live product and a trained team',
     },
   ],
 }

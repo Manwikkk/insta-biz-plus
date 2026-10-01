@@ -3,8 +3,9 @@
 import { AnimatePresence, motion } from 'motion/react'
 import { solutions, solutionsIndex, type Solution } from '@/content/data'
 import { solutionIcon } from '@/content/nav'
-import { SolutionFlow } from './SolutionFlow'
+import { INDUSTRY_SCENES } from './IndustryScenes'
 import { useCycle } from './useCycle'
+import { Canvas, useLive, usePhase } from '@/components/portfolio/plates/kit'
 import { Icon } from '@/components/ui/Icon'
 import { cn } from '@/lib/cn'
 
@@ -13,13 +14,17 @@ const LIST = solutionsIndex.groups
   .flatMap((g) => g.items)
   .map((it) => solutions.find((s) => s.label === it.label))
   .filter((s): s is Solution => !!s)
+/** The four beats of every scene; an industry holds the stage for all four. */
+const BEATS = [1500, 1700, 1800, 2300] as const
+const TURN = 7400
 
 /**
  * Hero figure for /solutions: one system per industry. The industries take turns, each
- * showing its own workflow running; hover one to stay on it.
+ * with its own scene, drawn big and simple, playing its four beats with a line for each;
+ * hover one to stay on it.
  */
 export function IndustrySwitcher() {
-  const { ref, i, setI, hold } = useCycle<HTMLDivElement>(LIST.length, 4600)
+  const { ref, i, setI, hold } = useCycle<HTMLDivElement>(LIST.length, TURN)
   const s = LIST[i]
   return (
     <div ref={ref} onMouseEnter={() => hold(true)} onMouseLeave={() => hold(false)}>
@@ -42,12 +47,43 @@ export function IndustrySwitcher() {
           </li>
         ))}
       </ul>
-      <div className="mt-3">
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.div key={s.slug} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.45, ease }}>
-            <SolutionFlow s={s} compact turn={1300} />
+      <div className="relative mt-3">
+        <AnimatePresence mode="popLayout" initial={false}>
+          <motion.div
+            key={s.slug}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 0.45, ease } }}
+            exit={{ opacity: 0, transition: { duration: 0.25 } }}
+          >
+            <Stage slug={s.slug} label={s.label} />
           </motion.div>
         </AnimatePresence>
+      </div>
+    </div>
+  )
+}
+
+function Stage({ slug, label }: { slug: string; label: string }) {
+  const { ref, live } = useLive<HTMLDivElement>()
+  const ph = usePhase(4, BEATS, live, 3)
+  const sc = INDUSTRY_SCENES[slug]
+  if (!sc) return null
+  return (
+    <div ref={ref} className="overflow-hidden rounded-[18px] border border-line bg-raise shadow-[var(--shadow-float)]">
+      <div className="relative aspect-[2/1] bg-[radial-gradient(90%_90%_at_50%_0%,var(--teal-soft),transparent_70%)]" role="img" aria-label={`${label}: ${sc.captions.join(', ')}`}>
+        <Canvas live={live} w={600} h={300} className="text-ink">
+          <sc.Scene ph={ph} />
+        </Canvas>
+      </div>
+      <div className="flex items-center gap-3 border-t border-line px-4 py-3">
+        <span className="flex shrink-0 gap-1" aria-hidden>
+          {[0, 1, 2, 3].map((k) => (
+            <span key={k} className={cn('h-1 w-4 rounded-full transition-colors duration-500', k <= ph ? 'bg-teal' : 'bg-line-2')} />
+          ))}
+        </span>
+        <p key={ph} className="iv-in min-w-0 truncate text-[0.86rem] font-medium">
+          {sc.captions[ph]}
+        </p>
       </div>
     </div>
   )

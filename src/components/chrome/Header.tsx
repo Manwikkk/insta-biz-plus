@@ -88,11 +88,15 @@ export function Header() {
     }
   }, [pathname])
 
-  // Publish visibility so sticky sub-navs can sit flush under (or in place of) the header.
+  // Publish visibility and tone so sticky sub-navs can hang from the bar (or take its place) in its palette.
   const concealed = hidden && !menu && !mobileOpen
+  const tone = overDark && !mobileOpen ? 'dark' : 'light'
   useEffect(() => {
     document.documentElement.dataset.header = concealed ? 'hidden' : 'shown'
   }, [concealed])
+  useEffect(() => {
+    document.documentElement.dataset.navTone = tone
+  }, [tone])
 
   // Close everything on navigation.
   useEffect(() => {
@@ -171,7 +175,7 @@ export function Header() {
             so every section's content sits inside its width */}
         <div
           className="relative mx-auto max-w-[1200px] lg:w-[calc(min(100%_-_2*var(--gutter),var(--shell-max))_+_48px)] lg:max-w-none"
-          data-theme={overDark && !mobileOpen ? 'dark' : undefined}
+          data-theme={tone === 'dark' ? 'dark' : undefined}
         >
           <div className="nav-glass nav-bar" data-scrolled={scrolled || !!menu || mobileOpen}>
             <div className="flex h-14 items-center gap-2 pl-4 pr-2 lg:grid lg:h-[72px] lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:gap-3 lg:px-3 xl:gap-4 xl:px-4">

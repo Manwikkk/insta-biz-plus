@@ -95,7 +95,7 @@ export default function ProductsPage() {
 /** One product in depth. */
 function ProductSection({ p, i }: { p: Product; i: number }) {
   return (
-    <section id={p.id} className="rails section relative scroll-mt-[120px] border-b border-line">
+    <section id={p.id} className="rails section relative scroll-mt-12 border-b border-line">
       <div className="shell">
         <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-7">

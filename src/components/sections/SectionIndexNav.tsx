@@ -2,16 +2,24 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'motion/react'
+import { ScrollCue } from '@/components/ui/ScrollCue'
 import { cn } from '@/lib/cn'
 
 export type IndexItem = { id: string; n: string; label: string }
 
 /**
- * A sticky index of a page's sections, just under the header. The section in view is
- * highlighted (the highlight glides between items) and scrolled into the row on phones.
+ * A sticky index of a page's sections, hung from the navbar. It is the bar's own width and
+ * glass; once it reaches the top it docks just under the bar, its glass reaching up behind
+ * the bar so the two read as one piece it slid out of. While the bar is away (scrolling
+ * down) it takes the bar's place, and it follows the bar's palette over dark sections.
+ * The section in view is highlighted (the highlight glides between items) and scrolled into
+ * the row on phones.
  */
 export function SectionIndexNav({ id, label, items }: { id?: string; label: string; items: IndexItem[] }) {
   const [active, setActive] = useState(items[0].id)
+  const [docked, setDocked] = useState(false)
+  const [dark, setDark] = useState(false)
+  const nav = useRef<HTMLElement>(null)
   const row = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -26,6 +34,38 @@ export function SectionIndexNav({ id, label, items }: { id?: string; label: stri
     return () => io.disconnect()
   }, [items])
 
+  // docked once it has scrolled up to its sticky place (and only then does its glass reach behind the bar)
+  useEffect(() => {
+    const el = nav.current
+    if (!el) return
+    let raf = 0
+    const check = () => {
+      raf = 0
+      setDocked(el.getBoundingClientRect().top <= parseFloat(getComputedStyle(el).top) + 1)
+    }
+    const queue = () => {
+      if (!raf) raf = requestAnimationFrame(check)
+    }
+    check()
+    window.addEventListener('scroll', queue, { passive: true })
+    window.addEventListener('resize', queue)
+    return () => {
+      cancelAnimationFrame(raf)
+      window.removeEventListener('scroll', queue)
+      window.removeEventListener('resize', queue)
+    }
+  }, [])
+
+  // the bar's palette (it turns dark over dark sections), published by the Header
+  useEffect(() => {
+    const html = document.documentElement
+    const read = () => setDark(html.dataset.navTone === 'dark')
+    read()
+    const mo = new MutationObserver(read)
+    mo.observe(html, { attributes: true, attributeFilter: ['data-nav-tone'] })
+    return () => mo.disconnect()
+  }, [])
+
   // keep the active item visible in the (sideways-scrolling) row
   useEffect(() => {
     const r = row.current
@@ -35,12 +75,9 @@ export function SectionIndexNav({ id, label, items }: { id?: string; label: stri
   }, [active])
 
   return (
-    <nav
-      aria-label={label}
-      className="sticky top-[var(--header-offset)] z-30 border-b border-line bg-bg/85 backdrop-blur-xl transition-[top] duration-500 ease-[var(--ease-out)]"
-      id={id}
-    >
-      <div ref={row} className="shell flex gap-1 overflow-x-auto py-2 [scrollbar-width:none]">
+    <nav ref={nav} aria-label={label} className="subnav" id={id} data-docked={docked || undefined} data-theme={dark ? 'dark' : undefined}>
+      <span className="subnav-glass nav-glass" data-scrolled="true" aria-hidden />
+      <div ref={row} className="relative flex gap-1 overflow-x-auto p-1.5 [scrollbar-width:none]">
         {items.map((s) => (
           <a
             key={s.id}
@@ -48,14 +85,14 @@ export function SectionIndexNav({ id, label, items }: { id?: string; label: stri
             data-id={s.id}
             aria-current={active === s.id ? 'true' : undefined}
             className={cn(
-              'relative flex shrink-0 items-center gap-2 rounded-[9px] px-3.5 py-2 text-[0.9rem] font-medium transition-colors duration-300',
-              active === s.id ? 'text-bg' : 'text-ink-2 hover:bg-raise hover:text-ink',
+              'relative flex shrink-0 items-center gap-2 rounded-[10px] px-3.5 py-2 text-[0.9rem] font-medium transition-colors duration-300 lg:rounded-[12px]',
+              active === s.id ? 'text-bg' : 'text-ink-2 hover:bg-ink/[0.055] hover:text-ink',
             )}
           >
             {active === s.id ? (
               <motion.span
                 layoutId={`${label}-index`}
-                className="absolute inset-0 rounded-[9px] bg-ink"
+                className="absolute inset-0 rounded-[inherit] bg-ink"
                 transition={{ type: 'spring', stiffness: 480, damping: 40, mass: 0.7 }}
               />
             ) : null}
@@ -64,6 +101,7 @@ export function SectionIndexNav({ id, label, items }: { id?: string; label: stri
           </a>
         ))}
       </div>
+      <ScrollCue target={row} />
     </nav>
   )
 }

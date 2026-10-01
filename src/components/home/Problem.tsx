@@ -100,23 +100,30 @@ export function Problem() {
           .to(paper, { '--r': '120vmax', duration: 0.12, ease: 'power2.in' }, 0.88)
       })
 
-      // Phones and tablets: the same story in one column. The headline lands, then the symptoms
-      // arrive three or four at a time instead of all at once, then the turn.
+      // Phones and tablets: the same story in one column, set high on the screen above the engine
+      // that has floated down beneath it. The headline lands, then the symptoms arrive three or
+      // four at a time instead of all at once, then the turn.
       mm.add('(max-width: 1023px) and (prefers-reduced-motion: no-preference)', () => {
-        // the stage is already dark: it opened round the engine while the hero was held (EngineStage)
-        gsap.set(ground, { '--r': '120vmax' })
+        // The stage opens round the engine as it floats down (EngineStage's curtain); this chapter's
+        // own ground takes over only once it has the whole screen, so no straight edge rises first.
         gsap.set(paper, { '--r': '0vmax' })
+        gsap.set(ground, { '--r': '0vmax' })
+        ScrollTrigger.create({
+          trigger: el,
+          start: 'top top',
+          onEnter: () => gsap.set(ground, { '--r': '120vmax' }),
+          onLeaveBack: () => gsap.set(ground, { '--r': '0vmax' }),
+        })
         const frags = q('[data-frag]')
         const tl = gsap.timeline({
           defaults: { ease: 'none' },
-          scrollTrigger: { trigger: el, start: 'top 35%', end: 'bottom bottom', scrub: 0.6, invalidateOnRefresh: true },
+          scrollTrigger: { trigger: el, start: 'top 30%', end: 'bottom bottom', scrub: 0.6, invalidateOnRefresh: true },
         })
         tl.fromTo(q('[data-p="eyebrow"]'), { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.05 }, 0.02)
           .fromTo(q('[data-p="title"] .ln'), { yPercent: 110, autoAlpha: 0 }, { yPercent: 0, autoAlpha: 1, stagger: 0.03, duration: 0.1 }, 0.04)
           .fromTo(q('[data-p="body"]'), { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.06 }, 0.12)
-          // the body steps aside and the headline rises to make room for the symptoms
+          // the body steps aside to make room for the symptoms
           .to(q('[data-p="body"]'), { autoAlpha: 0, y: -16, filter: 'blur(6px)', duration: 0.05 }, 0.22)
-          .fromTo(q('[data-p="head"]'), { y: 0 }, { y: () => -Math.min(110, window.innerHeight * 0.13), duration: 0.08, ease: 'power1.inOut' }, 0.22)
         GROUPS.forEach((g, gi) => {
           const items = g.map((i) => frags[i])
           const at = 0.27 + gi * 0.1
@@ -142,10 +149,11 @@ export function Problem() {
   )
 
   return (
-    <section ref={root} id="problem" data-stage="problem" className="relative h-[400vh] motion-reduce:h-auto">
+    // 480vh of scroll for the whole chapter: long enough for "One team. One plan." to be read at an easy pace.
+    <section ref={root} id="problem" data-stage="problem" className="relative h-[480vh] motion-reduce:h-auto">
       {/* Where this chapter is dark under the navbar: until the returning paper has covered the top
-          of the screen (about 1.1 screens before the end), or all of it for reduced motion. */}
-      <div aria-hidden data-nav-tone="dark" className="pointer-events-none absolute inset-x-0 top-0 bottom-[112vh] motion-reduce:bottom-0" />
+          of the screen (about 1.14 screens before the end), or all of it for reduced motion. */}
+      <div aria-hidden data-nav-tone="dark" className="pointer-events-none absolute inset-x-0 top-0 bottom-[114vh] motion-reduce:bottom-0" />
       {/* reduced-motion ground */}
       <div aria-hidden className="absolute inset-0 z-0 hidden bg-stage motion-reduce:block" />
 
@@ -165,7 +173,7 @@ export function Problem() {
       </div>
 
       <div className="sticky top-0 z-[2] h-[100svh] overflow-hidden motion-reduce:static motion-reduce:h-auto">
-        <div className="shell relative flex h-full flex-col justify-center text-stage-ink motion-reduce:py-24 motion-reduce:lg:py-32">
+        <div className="shell relative flex h-full flex-col justify-center text-stage-ink max-lg:motion-safe:justify-start max-lg:motion-safe:pt-[15svh] motion-reduce:py-24 motion-reduce:lg:py-32">
           <div data-p="head" className="relative mx-auto max-w-[980px] text-center">
             <p data-p="eyebrow" className="eyebrow t-label justify-center text-stage-ink-2" data-reveal="rise">
               <span className="eyebrow-n !text-teal">01</span>
@@ -184,7 +192,7 @@ export function Problem() {
           </div>
 
           {/* symptoms: a column under the headline on phones, scattered round the edges on desktop */}
-          <ul className="absolute inset-x-0 top-[52%] lg:static motion-reduce:static motion-reduce:mt-12 motion-reduce:flex motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:gap-2">
+          <ul className="absolute inset-x-0 top-[47%] lg:static motion-reduce:static motion-reduce:mt-12 motion-reduce:flex motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:gap-2">
             {problem.fragments.map((f, i) => (
               <li
                 key={f.text}
@@ -209,7 +217,7 @@ export function Problem() {
           </ul>
 
           {/* the turn */}
-          <div className="absolute inset-x-0 top-1/2 mx-auto max-w-[1100px] -translate-y-1/2 text-center motion-reduce:relative motion-reduce:top-auto motion-reduce:mt-20 motion-reduce:translate-y-0">
+          <div className="absolute inset-x-0 top-[38%] mx-auto max-w-[1100px] -translate-y-1/2 text-center lg:top-1/2 motion-reduce:relative motion-reduce:top-auto motion-reduce:mt-20 motion-reduce:translate-y-0">
             <h2 data-p="turn" className="t-display">
               {problem.turn.split('. ').map((l, i, a) => (
                 <span key={i} className="mx-auto -mb-[0.08em] block w-fit overflow-hidden pb-[0.14em]">

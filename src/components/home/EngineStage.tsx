@@ -7,9 +7,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { engine, firePulse } from '@/components/three/engineState'
 import { MarkBlueprint } from '@/components/brand/MarkBlueprint'
-import { DragHint, EngineHandle } from './EngineHandle'
+import { EngineHandle } from './EngineHandle'
 import { StageContext, useStage, type StageMode } from './stageContext'
 import { useMedia } from '@/lib/useMedia'
+import { hexClipAt } from '@/lib/hex'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
@@ -31,8 +32,8 @@ function webglAvailable() {
  * Wraps the hero, problem and capabilities sections. A sticky full-viewport canvas sits
  * behind them (z-1) — section grounds at z-0, copy at z-2 — so the engine travels through
  * all three chapters as one continuous object. On phones and tablets the engine starts in
- * its window in the hero; the hero is then held while its copy lifts away, the engine
- * glides to the middle of the screen and the dark stage opens round it.
+ * its window at the foot of the hero; as the page goes up it floats on down, low on the
+ * screen, and the dark stage of the next chapter opens round it as a hexagon.
  */
 export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; problem: ReactNode; capabilities: ReactNode }) {
   const root = useRef<HTMLDivElement>(null)
@@ -160,21 +161,22 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
       mm.add('(max-width: 1023px) and (prefers-reduced-motion: no-preference)', () => {
         const H = () => screen.current?.offsetHeight || window.innerHeight
         const slot = heroEl.querySelector<HTMLElement>('[data-engine-slot]')
-        // A hero taller than the screen (the smallest phones) scrolls this far before it is held.
-        const over = () => Math.max(0, heroEl.offsetHeight - H())
-        // The engine in its window, with the page scrolled `s` px: placed on the window's centre and
-        // sized to fill it (the mark is 2 × min(26% of the height, 20% of the width) px at scale 1).
-        const inWindow = (s: number) => {
+        const curtain = screen.current?.querySelector<HTMLElement>('[data-curtain]') ?? null
+        // The engine in its window at the top of the page: placed on the window's centre and sized to
+        // fill it (the mark is 2 × min(26% of the height, 20% of the width) px at scale 1).
+        const inWindow = () => {
           const h = H()
-          if (!slot) return { y: 0, scale: 1.3 }
-          // offsets, not the box on screen: the copy (and the window with it) lifts as it fades
+          if (!slot) return { y: -0.4, scale: 1.2 }
           let top = 0
           for (let el: HTMLElement | null = slot; el && el !== heroEl; el = el.offsetParent as HTMLElement | null) top += el.offsetTop
-          const centre = top + slot.offsetHeight / 2 - s
+          const centre = top + slot.offsetHeight / 2
           const unit = 2 * Math.min(0.26 * h, 0.2 * window.innerWidth)
           return { y: 1 - (2 * centre) / h, scale: gsap.utils.clamp(0.85, 1.45, (slot.offsetHeight * 0.8) / unit) }
         }
-        Object.assign(engine, base, { x: 0, ...inWindow(0) })
+        // Where it rides once it has left its window: low on the screen, under the headlines to come.
+        const LOW = -0.44
+        Object.assign(engine, base, { x: 0, ...inWindow() })
+        curtain?.style.setProperty('--cy', `${((1 - LOW) / 2) * 100}%`)
         // Where the parts sit for "what we do": centred in the room above the part card.
         const bay = () => {
           const card = capEl.querySelector<HTMLElement>('[data-cap-card]')
@@ -188,55 +190,48 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
         // through the boundaries never jumps; none renders until its own scroll range is reached.
         const later = { immediateRender: false }
 
-        // 0 · The smallest phones only: the engine rides up with the page until the hero is held.
-        gsap.fromTo(
-          engine,
-          { y: () => inWindow(0).y },
-          {
-            y: () => inWindow(over()).y,
-            ease: 'none',
-            ...later,
-            scrollTrigger: { trigger: heroEl, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true },
-          },
-        )
-
-        // 1 · Hero: held while its copy lifts away; the engine leaves its window for the middle of the
-        // screen and turns to face you, and the dark stage of the next chapter opens round it.
-        const ground = heroEl.querySelector<HTMLElement>('[data-hero-ground]')
-        const copy = heroEl.querySelectorAll('[data-hero-copy]')
-        gsap
+        // 1 · Hero: nothing is held. The copy goes up with the page while the engine leaves its window
+        // and floats on down the page, low on the screen, turning to face you; the dark stage opens
+        // round it as a hexagon, and the bar turns dark once that has the top of the screen.
+        const fall = gsap
           .timeline({
+            defaults: { ease: 'none' },
             scrollTrigger: {
               trigger: heroEl,
-              start: 'bottom bottom',
-              end: '+=85%',
-              pin: true,
+              start: 'top top',
+              end: 'bottom top',
               scrub: true,
-              anticipatePin: 1,
               invalidateOnRefresh: true,
-              // The problem and capabilities chapters set up their own triggers before this one (child
-              // effects run first); measuring this pin first lets theirs include the room it adds.
-              refreshPriority: 1,
-              // the bar turns dark once the stage has covered the top of the screen
               onUpdate: () => {
-                if (!ground) return
-                const r = parseFloat(ground.style.getPropertyValue('--r')) || 0
-                if (r >= 70) ground.dataset.navTone = 'dark'
-                else delete ground.dataset.navTone
+                if (!curtain) return
+                const r = parseFloat(curtain.style.getPropertyValue('--r')) || 0
+                if (r >= 80) curtain.dataset.navTone = 'dark'
+                else delete curtain.dataset.navTone
               },
             },
           })
-          .fromTo(copy, { autoAlpha: 1, y: 0, filter: 'blur(0px)' }, { autoAlpha: 0, y: -32, filter: 'blur(8px)', stagger: 0.06, duration: 0.3, ease: 'power1.in' }, 0)
           .fromTo(
             engine,
-            { y: () => inWindow(over()).y, scale: () => inWindow(over()).scale, explode: 0.06, rotY: 0.42 },
-            { y: 0, scale: 1.1, explode: 0.3, rotY: 0.95, duration: 0.7, ease: 'power2.inOut', ...later },
-            0.08,
+            { y: () => inWindow().y, scale: () => inWindow().scale, explode: 0.06, rotY: 0.42 },
+            { y: LOW, scale: 1.12, explode: 0.22, rotY: 0.95, duration: 1, ease: 'power1.inOut', ...later },
+            0,
           )
-          .fromTo(ground, { '--r': '0vmax' }, { '--r': '120vmax', duration: 0.62, ease: 'power2.in' }, 0.38)
+        if (curtain) fall.fromTo(curtain, { '--r': '0vmax', opacity: 0 }, { '--r': '125vmax', opacity: 1, duration: 0.9, ease: 'power2.inOut' }, 0.1)
+
+        // The problem chapter's own dark ground has the screen once it reaches the top: the curtain steps aside.
+        ScrollTrigger.create({
+          trigger: problemEl,
+          start: 'top top',
+          onToggle: (self) => {
+            if (!curtain) return
+            curtain.style.visibility = self.isActive ? 'hidden' : ''
+            if (self.isActive) delete curtain.dataset.navTone
+          },
+        })
 
         // 2 · Problem: the parts scatter to the edges of the screen, dim, and drift — then snap back
-        // together behind "No silos…" and light up with a pulse as the paper returns.
+        // together low on the screen, under "One team. One plan.", and light up with a pulse as the
+        // paper returns.
         let last = 0
         gsap
           .timeline({
@@ -253,12 +248,12 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
           })
           .fromTo(
             engine,
-            { scatter: 0, dim: 0, explode: 0.3, rotY: 0.95, scale: 1.1, opacity: 1 },
+            { y: LOW, scatter: 0, dim: 0, explode: 0.22, rotY: 0.95, scale: 1.12, opacity: 1 },
             { scatter: 1, dim: 1, explode: 0.3, rotY: 0.7, scale: 1, duration: 0.3, ease: 'power1.inOut', ...later },
             0,
           )
           .to(engine, { rotY: 1.1, duration: 0.34, ease: 'none' }, 0.3)
-          .to(engine, { scatter: 0, dim: 0.72, explode: 0, rotY: 0.62, scale: 1.2, duration: 0.16, ease: 'power3.inOut' }, 0.64)
+          .to(engine, { scatter: 0, dim: 0.72, explode: 0, rotY: 0.62, y: -0.5, scale: 1, duration: 0.16, ease: 'power3.inOut' }, 0.64)
           .to(engine, { dim: 0, duration: 0.1, ease: 'power2.out' }, 0.84)
           .to(engine, { duration: 0.06 }, 0.94)
 
@@ -267,7 +262,7 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
           .timeline({ scrollTrigger: { trigger: capEl, start: 'top bottom', end: 'top top', scrub: true, invalidateOnRefresh: true } })
           .fromTo(
             engine,
-            { x: 0, y: 0, scale: 1.2, explode: 0, rotX: base.rotX, rotY: 0.62, dim: 0, scatter: 0 },
+            { x: 0, y: -0.5, scale: 1, explode: 0, rotX: base.rotX, rotY: 0.62, dim: 0, scatter: 0 },
             { x: 0, y: () => bay().y, scale: () => bay().scale, explode: 0.85, labels: 0, rotX: -0.5, rotY: 0.5, ease: 'power1.inOut', ...later },
           )
 
@@ -275,6 +270,12 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
         gsap
           .timeline({ scrollTrigger: { trigger: capEl, start: 'bottom bottom', end: 'bottom 45%', scrub: true } })
           .fromTo(engine, { explode: 0.85, opacity: 1 }, { explode: 0.1, opacity: 0, ease: 'none', ...later })
+
+        return () => {
+          if (!curtain) return
+          curtain.style.visibility = ''
+          delete curtain.dataset.navTone
+        }
       })
 
       return () => mm.revert()
@@ -299,6 +300,14 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
             className="engine-track pointer-events-none absolute inset-0 z-[1] select-none"
           >
             <div ref={screen} className="sticky top-0 h-[100svh] w-full overflow-hidden">
+              {/* phones: the next chapter's dark stage, opening round the engine as it floats down */}
+              {!desktop ? (
+                <div aria-hidden data-curtain className="engine-curtain" style={{ clipPath: hexClipAt('var(--r, 0vmax)', '50%', 'var(--cy, 72%)') }}>
+                  <div className="absolute inset-0 [mask-image:radial-gradient(60%_60%_at_50%_70%,#000,transparent)]">
+                    <div className="iso-grid [--grid:var(--stage-line)]" />
+                  </div>
+                </div>
+              ) : null}
               {mode === '3d' ? <EngineCanvas active={active} callouts={desktop} /> : null}
             </div>
           </div>
@@ -330,7 +339,6 @@ export function MobileEngineWindow() {
             <MarkBlueprint filled className="w-[62%] text-ink-3" exploded={0.35} />
           </div>
         ) : null}
-        {mode === '3d' ? <DragHint className="bottom-1 right-[var(--gutter)]" label="Drag to spin" /> : null}
       </div>
     </div>
   )

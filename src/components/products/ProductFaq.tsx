@@ -1,20 +1,23 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { LayoutGroup, motion } from 'motion/react'
 import { products } from '@/content/products'
 import { Faq } from '@/components/sections/Faq'
 import { Icon } from '@/components/ui/Icon'
+import { ScrollCue } from '@/components/ui/ScrollCue'
 import { cn } from '@/lib/cn'
 
 /** Each product's questions, one product at a time. */
 export function ProductFaq() {
   const [i, setI] = useState(0)
   const p = products[i]
+  const tabs = useRef<HTMLDivElement>(null)
   return (
     <div>
       <LayoutGroup id="product-faq">
-        <div role="tablist" aria-label="Product" className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
+        <div className="relative">
+        <div ref={tabs} role="tablist" aria-label="Product" className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
           {products.map((x, k) => (
             <button
               key={x.id}
@@ -34,6 +37,8 @@ export function ProductFaq() {
               <span className="relative">{x.name}</span>
             </button>
           ))}
+        </div>
+        <ScrollCue target={tabs} />
         </div>
       </LayoutGroup>
       <div className="mt-8">

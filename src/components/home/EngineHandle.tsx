@@ -40,18 +40,3 @@ export function EngineHandle() {
     />
   )
 }
-
-/** Only offered when there is a live engine to spin. */
-export function DragHint({ className, label = 'Drag to spin the engine' }: { className?: string; label?: string }) {
-  const { mode } = useStage()
-  if (mode !== '3d') return null
-  return (
-    <p className={`t-label pointer-events-none absolute flex items-center gap-2 text-ink-3 ${className ?? ''}`}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
-        <path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3" strokeLinecap="round" />
-        <path d="M18 3v4h-4M6 21v-4h4" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-      {label}
-    </p>
-  )
-}

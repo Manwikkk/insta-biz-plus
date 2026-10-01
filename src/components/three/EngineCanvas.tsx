@@ -36,13 +36,13 @@ const SCATTER: Array<[number, number, number]> = [
   [-0.56, -0.66, -0.4],
 ]
 
-/** The same drift on a tall (phone) screen: parts keep to the bands above and below the copy. */
+/** The same drift on a tall (phone) screen: the copy is set high there, so the parts keep to the edges and the band below it. */
 const SCATTER_TALL: Array<[number, number, number]> = [
-  [-0.58, 0.76, -0.5],
-  [0.62, 0.68, -0.3],
-  [-0.72, -0.34, -0.2],
-  [0.7, -0.6, -0.6],
-  [-0.24, -0.84, -0.4],
+  [-0.66, -0.2, -0.5],
+  [0.68, -0.32, -0.3],
+  [-0.74, -0.62, -0.2],
+  [0.62, -0.74, -0.6],
+  [-0.06, -0.88, -0.4],
 ]
 
 /** Deterministic pseudo-random so the scatter is identical on every visit. */
@@ -459,8 +459,10 @@ function EngineCallouts() {
   )
 }
 
-export default function EngineCanvas({ active = true, callouts = false }: { active?: boolean; callouts?: boolean }) {
-  const theme = useTheme()
+/** `theme` lights the engine for a ground other than the page's own (a dark window on a light page). */
+export default function EngineCanvas({ active = true, callouts = false, theme: ground }: { active?: boolean; callouts?: boolean; theme?: Theme }) {
+  const page = useTheme()
+  const theme = ground ?? page
   return (
     <>
       <Canvas
