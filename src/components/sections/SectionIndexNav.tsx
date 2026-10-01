@@ -59,10 +59,10 @@ export function SectionIndexNav({ id, label, items }: { id?: string; label: stri
   // the bar's palette (it turns dark over dark sections), published by the Header
   useEffect(() => {
     const html = document.documentElement
-    const read = () => setDark(html.dataset.navTone === 'dark')
+    const read = () => setDark(html.dataset.barTone === 'dark')
     read()
     const mo = new MutationObserver(read)
-    mo.observe(html, { attributes: true, attributeFilter: ['data-nav-tone'] })
+    mo.observe(html, { attributes: true, attributeFilter: ['data-bar-tone'] })
     return () => mo.disconnect()
   }, [])
 

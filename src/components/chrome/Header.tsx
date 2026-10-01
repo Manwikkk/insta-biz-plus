@@ -95,7 +95,7 @@ export function Header() {
     document.documentElement.dataset.header = concealed ? 'hidden' : 'shown'
   }, [concealed])
   useEffect(() => {
-    document.documentElement.dataset.navTone = tone
+    document.documentElement.dataset.barTone = tone
   }, [tone])
 
   // Close everything on navigation.
