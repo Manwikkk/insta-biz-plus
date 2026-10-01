@@ -52,7 +52,10 @@ export function HeroRotator({ words, interval = 2800 }: { words: string[]; inter
             ? Array.from(word).map((ch, k) => (
                 <motion.span
                   key={k}
-                  className="inline-block"
+                  // Each letter is its own layer, and a layer paints nothing past its box: with the h1's
+                  // tight tracking (and tall caps on a 0.92 line) the ink overhangs the box, so the box
+                  // reaches past the ink on every side (padding, cancelled by margin) and no edge is cut.
+                  className="-mx-[0.1em] -my-[0.14em] inline-block px-[0.1em] py-[0.14em]"
                   // Each letter keeps its own layer for its whole life: no layer is dropped (and no glyph
                   // re-snapped to the pixel grid) as its blur ends, so the word settles without a shiver.
                   style={{ willChange: 'transform, opacity, filter' }}
