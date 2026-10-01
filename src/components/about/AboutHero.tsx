@@ -109,7 +109,9 @@ export function AboutHero() {
     const el = root.current!
     const io = new IntersectionObserver(([e]) => setLive(e.isIntersecting))
     io.observe(el)
+    // the logo leans to the mouse only: touch never moves it
     const onMove = (e: PointerEvent) => {
+      if (e.pointerType !== 'mouse') return
       engine.pointer.x = (e.clientX / window.innerWidth) * 2 - 1
       engine.pointer.y = (e.clientY / window.innerHeight) * 2 - 1
     }

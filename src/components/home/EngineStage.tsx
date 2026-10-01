@@ -7,7 +7,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { engine, firePulse } from '@/components/three/engineState'
 import { MarkBlueprint } from '@/components/brand/MarkBlueprint'
-import { EngineHandle } from './EngineHandle'
 import { StageContext, useStage, type StageMode } from './stageContext'
 import { useMedia } from '@/lib/useMedia'
 import { hexClipAt } from '@/lib/hex'
@@ -57,9 +56,11 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
     // the track element is swapped when the layout (desktop) or render mode changes
   }, [desktop, mode])
 
-  // Cursor tracking: the engine leans toward the pointer (read each frame by the canvas).
+  // Cursor tracking: the engine leans toward the mouse (read each frame by the canvas). Touch never
+  // moves it, so on phones the logo only ever follows the scroll.
   useEffect(() => {
     const onMove = (e: PointerEvent) => {
+      if (e.pointerType !== 'mouse') return
       engine.pointer.x = (e.clientX / window.innerWidth) * 2 - 1
       engine.pointer.y = (e.clientY / window.innerHeight) * 2 - 1
     }
@@ -331,8 +332,7 @@ export function EngineStage({ hero, problem, capabilities }: { hero: ReactNode; 
 
 /**
  * The engine's place in the hero on phones and tablets: whatever room the copy leaves. The
- * live engine is drawn by the stage's canvas, placed on this window; here it can be dragged
- * to spin.
+ * live engine is drawn by the stage's canvas, placed on this window.
  */
 export function MobileEngineWindow() {
   const { mode, desktop } = useStage()
@@ -340,7 +340,6 @@ export function MobileEngineWindow() {
   return (
     <div className="flex flex-1 flex-col lg:hidden">
       <div aria-hidden data-engine-slot className="relative -mx-[var(--gutter)] mt-3 min-h-[190px] flex-1">
-        {mode === '3d' ? <EngineHandle /> : null}
         {mode === 'static' ? (
           <div className="absolute inset-0 grid place-items-center">
             <MarkBlueprint filled className="w-[62%] text-ink-3" exploded={0.35} />
