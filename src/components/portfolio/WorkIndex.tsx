@@ -1,12 +1,12 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { AnimatePresence, LayoutGroup, motion } from 'motion/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { categories, categoryLabel, projects, type Project, type WorkCategory } from '@/content/portfolio'
 import { Icon } from '@/components/ui/Icon'
+import { Shot } from '@/components/ui/Shot'
 import { ProjectVisual } from './plates/ProjectVisual'
 import { ScrollCue } from '@/components/ui/ScrollCue'
 import { useLenis } from '@/components/motion/SmoothScroll'
@@ -107,7 +107,7 @@ function List({ list }: { list: Project[] }) {
               <span className="mt-1 block truncate text-[0.9rem] text-ink-3">{p.summary}</span>
             </span>
             <span className="wi-row-thumb" aria-hidden>
-              <Image src={p.image} alt="" fill sizes="176px" quality={60} className="object-cover object-top" />
+              <Shot src={p.image} alt="" sizes="176px" quality={75} />
             </span>
             <span className="t-label hidden w-[7.5rem] text-right text-ink-3 md:block">{categoryLabel[p.category]}</span>
             <span className="wi-row-go" aria-hidden>

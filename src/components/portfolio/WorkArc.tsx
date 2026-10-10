@@ -1,9 +1,9 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef, type ReactNode, type Ref } from 'react'
 import { showcase } from '@/content/portfolio'
+import { Shot } from '@/components/ui/Shot'
 
 const N = showcase.length
 /** Tiles per second while nothing else is going on, and the most a scroll can add. */
@@ -173,16 +173,14 @@ export function WorkArc() {
           >
             <span className="pf-tile-in">
               <span className="pf-shot">
-                {/* all fifteen load up front: a tile that turns into view is already painted */}
-                <Image
+                {/* every tile loads up front: a tile that turns into view is already painted */}
+                <Shot
                   src={s.image}
                   alt=""
-                  fill
                   sizes="(min-width: 1024px) 340px, 42vw"
-                  quality={60}
+                  quality={75}
                   loading="eager"
                   fetchPriority={i === 0 ? 'high' : undefined}
-                  className="object-cover object-top"
                 />
               </span>
               <span className="pf-cap">

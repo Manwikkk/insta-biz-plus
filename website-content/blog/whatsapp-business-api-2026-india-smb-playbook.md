@@ -89,7 +89,7 @@ Realistic timelines we see in 2026:
 
 ## Adding an AI agent on top
 
-This is where 2026 gets interesting. Once your basic flows are live, layer an AI agent that reads your knowledge base and handles complex Tier-1 queries. Our [Blutec Ping](https://www.instabizweb.com/portfolio#ai) ships exactly this - broadcasting + AI chat + agent handover, all in one stack. Combined with a smart escalation rule (anything > 2 messages without resolution → human), an AI agent typically deflects another 30-40% of conversations.
+This is where 2026 gets interesting. Once your basic flows are live, layer an AI agent that reads your knowledge base and handles complex Tier-1 queries. Our [Blutec Ping](https://www.instabizweb.com/products#ping) ships exactly this - broadcasting + AI chat + agent handover, all in one stack. Combined with a smart escalation rule (anything > 2 messages without resolution → human), an AI agent typically deflects another 30-40% of conversations.
 
 ## Compliance & opt-in rules - don’t skip this
 
@@ -114,7 +114,7 @@ Further reading
 From the IBW journal
 
 - [Our AI & Automation services](https://www.instabizweb.com/services#ai)
-- [Blutec Ping case study](https://www.instabizweb.com/portfolio#ai)
+- [Blutec Ping, our WhatsApp product](https://www.instabizweb.com/products#ping)
 - [AI Agents 2026 deep-dive](https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers)
 
 Authoritative sources
@@ -233,10 +233,10 @@ We’ll never share your email. One-click unsubscribe.
 - Compliance & opt-in rules: https://www.instabizweb.com/blogs/whatsapp-business-api-2026-india-smb-playbook#compliance
 - FAQs: https://www.instabizweb.com/blogs/whatsapp-business-api-2026-india-smb-playbook#faq
 - Further reading: https://www.instabizweb.com/blogs/whatsapp-business-api-2026-india-smb-playbook#further-reading
-- Blutec Ping: https://www.instabizweb.com/portfolio#ai
+- Blutec Ping: https://www.instabizweb.com/products#ping
 - Send us your use-case: https://www.instabizweb.com/contact-us
 - Our AI & Automation services: https://www.instabizweb.com/services#ai
-- Blutec Ping case study: https://www.instabizweb.com/portfolio#ai
+- Blutec Ping, our WhatsApp product: https://www.instabizweb.com/products#ping
 - AI Agents 2026 deep-dive: https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers
 - ↩ Odoo CRM for Real Estate in India: Setup Playbook for Brokers & Builders: https://www.instabizweb.com/blogs/odoo-crm-for-real-estate-india
 - ↩ Zapier vs Make vs n8n (2026): Which Automation Platform Should You Pick?: https://www.instabizweb.com/blogs/zapier-vs-make-vs-n8n-2026
@@ -522,8 +522,8 @@ Resources
       },
       {
         "@type": "Thing",
-        "name": "Blutec Ping case study",
-        "url": "https://www.instabizweb.com/portfolio#ai"
+        "name": "Blutec Ping, our WhatsApp product",
+        "url": "https://www.instabizweb.com/products#ping"
       },
       {
         "@type": "Thing",

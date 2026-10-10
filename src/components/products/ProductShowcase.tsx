@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { products } from '@/content/products'
+import { products, screensOf } from '@/content/products'
 import { Icon } from '@/components/ui/Icon'
 import { Odometer } from '@/components/ui/Odometer'
 import { ScrollCue } from '@/components/ui/ScrollCue'
@@ -86,11 +86,11 @@ export function ProductShowcase() {
               transition={{ duration: 0.8, ease }}
             >
               <Image
-                src={`/products/${p.id}-1.webp`}
+                src={screensOf(p)[0]}
                 alt={`${p.fullName} - ${p.short}`}
                 fill
                 sizes="(min-width: 1024px) 640px, 92vw"
-                quality={75}
+                quality={90}
                 // every tab's screen shows above the fold, so none waits for lazy loading
                 loading="eager"
                 fetchPriority={i === 0 ? 'high' : 'auto'}

@@ -1,11 +1,11 @@
 'use client'
 
-import Image from 'next/image'
 import { useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { categories, categoryLabel, projects } from '@/content/portfolio'
+import { Shot } from '@/components/ui/Shot'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
@@ -46,7 +46,7 @@ export function CategoryBand() {
             <span className="pf-band-word">{k.label}</span>
             <sup className="pf-band-count">{pad(k.count)}</sup>
             <span className="pf-band-pill">
-              <Image src={k.image} alt="" fill sizes="220px" quality={60} className="object-cover object-top" />
+              <Shot src={k.image} alt="" sizes="220px" quality={75} />
             </span>
           </span>
         ))}

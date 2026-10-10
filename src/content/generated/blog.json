@@ -185,7 +185,7 @@
         {
           "id": "use-cases",
           "heading": "Real use-cases shipping today",
-          "markdown": "Inside our portfolio, the highest-ROI agents in 2026 fall into four buckets:\n\n1. Sales qualification agents - read inbound leads, score them, and book calls only with the qualified ones.\n2. Support deflection agents - answer Tier-1 questions from your knowledge base, escalate only when needed.\n3. Ops & finance agents - invoice reconciliation, returns processing, expense categorisation. Boring, expensive, perfect for AI.\n4. Voice agents - outbound calling for follow-ups, qualification, and reminders. Our [Blutec Echo](/portfolio#ai) ships exactly this.\n\nImplementing one well-scoped agent reduced our processing time by 75% while improving accuracy. The trick was scope - we didn’t try to automate everything in week one. - A founder we work with, Q1 2026"
+          "markdown": "Inside our portfolio, the highest-ROI agents in 2026 fall into four buckets:\n\n1. Sales qualification agents - read inbound leads, score them, and book calls only with the qualified ones.\n2. Support deflection agents - answer Tier-1 questions from your knowledge base, escalate only when needed.\n3. Ops & finance agents - invoice reconciliation, returns processing, expense categorisation. Boring, expensive, perfect for AI.\n4. Voice agents - outbound calling for follow-ups, qualification, and reminders. Our [Blutec Echo](/products#echo) ships exactly this.\n\nImplementing one well-scoped agent reduced our processing time by 75% while improving accuracy. The trick was scope - we didn’t try to automate everything in week one. - A founder we work with, Q1 2026"
         },
         {
           "id": "stack",
@@ -240,7 +240,7 @@
           },
           {
             "label": "Blutec Echo - AI calling agent Live AI voice agent we built",
-            "href": "/portfolio#ai"
+            "href": "/products#echo"
           },
           {
             "label": "5-step engagement process",
@@ -533,7 +533,7 @@
         {
           "id": "ai-agent",
           "heading": "Adding an AI agent on top",
-          "markdown": "This is where 2026 gets interesting. Once your basic flows are live, layer an AI agent that reads your knowledge base and handles complex Tier-1 queries. Our [Blutec Ping](/portfolio#ai) ships exactly this - broadcasting + AI chat + agent handover, all in one stack. Combined with a smart escalation rule (anything > 2 messages without resolution → human), an AI agent typically deflects another 30-40% of conversations."
+          "markdown": "This is where 2026 gets interesting. Once your basic flows are live, layer an AI agent that reads your knowledge base and handles complex Tier-1 queries. Our [Blutec Ping](/products#ping) ships exactly this - broadcasting + AI chat + agent handover, all in one stack. Combined with a smart escalation rule (anything > 2 messages without resolution → human), an AI agent typically deflects another 30-40% of conversations."
         },
         {
           "id": "compliance",
@@ -572,8 +572,8 @@
             "href": "/services#ai"
           },
           {
-            "label": "Blutec Ping case study",
-            "href": "/portfolio#ai"
+            "label": "Blutec Ping, our WhatsApp product",
+            "href": "/products#ping"
           },
           {
             "label": "AI Agents 2026 deep-dive",
@@ -685,7 +685,7 @@
         {
           "id": "applications",
           "heading": "Real-world applications we’ve shipped",
-          "markdown": "At [Insta Biz Web](/about-us), we’ve built AI workflows for ride-hailing dispatchers, real-estate lead scoring, dialer compliance checks, and even an AI calling agent that qualifies cold leads before a human ever picks up the phone - see the [live products](/portfolio#ai).\n\nImplementing AI automation reduced our processing time by 75% while improving accuracy. It’s been a game-changer for our operations. - A founder we work with"
+          "markdown": "At [Insta Biz Web](/about-us), we’ve built AI workflows for lead validation, real-estate lead scoring, dialer compliance checks, and even an AI calling agent that qualifies cold leads before a human ever picks up the phone - see the [live products](/products).\n\nImplementing AI automation reduced our processing time by 75% while improving accuracy. It’s been a game-changer for our operations. - A founder we work with"
         },
         {
           "id": "getting-started",
@@ -726,7 +726,7 @@
           },
           {
             "label": "Live AI products in our portfolio",
-            "href": "/portfolio#ai"
+            "href": "/products"
           }
         ],
         "sources": [

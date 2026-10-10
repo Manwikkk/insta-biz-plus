@@ -20,6 +20,7 @@ const TONE: Record<ProductId, { ground: string; accent: string }> = {
   ping: { ground: '#09150b', accent: '#a6e65a' },
   echo: { ground: '#0c0d19', accent: '#8f9bff' },
   dialer: { ground: '#16120a', accent: '#f3c623' },
+  one: { ground: '#170a0b', accent: '#ff4f5e' },
 }
 
 const N = products.length
@@ -69,7 +70,7 @@ function Slide({ p, k, playing }: { p: Product; k: number; playing: boolean | nu
                 <span className="size-2.5 rounded-full bg-white/15" />
               </span>
               <span className="t-label ml-2 truncate text-[0.6rem] text-stage-ink-2">{new URL(p.href).hostname}</span>
-              <span className="product-logo ml-auto !h-7 !px-2" data-dark={p.id === 'echo' || undefined}>
+              <span className="product-logo ml-auto !h-7 !px-2">
                 <Image src={p.logo} alt={`${p.fullName} logo`} width={160} height={60} className="h-[18px] w-auto" />
               </span>
             </div>
@@ -118,11 +119,11 @@ function Slide({ p, k, playing }: { p: Product; k: number; playing: boolean | nu
 }
 
 /**
- * The four products, one screen each. The frame holds still while you scroll: the next
+ * The products, one screen each. The frame holds still while you scroll: the next
  * product's window rises over the last, which sinks back and dims; its name lifts out as
  * the next one rises into the same place, and the ground takes on the new product's tint.
  * The rail on the left marks where you are and jumps to any product. With reduced motion
- * (or before the script runs) the four simply stack.
+ * (or before the script runs) they simply stack.
  */
 export function ProductDeck() {
   const root = useRef<HTMLElement>(null)

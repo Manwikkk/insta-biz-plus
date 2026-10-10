@@ -18,7 +18,7 @@ import { site } from '@/content/site'
 export const metadata: Metadata = buildMetadata('/portfolio')
 
 /**
- * The work, told in five beats: the wall of it turning past, the four products we build and
+ * The work, told in five beats: the wall of it turning past, the products we build and
  * run (one screen each), every client project to filter, the receipts, and an empty plate
  * for whoever is next.
  */

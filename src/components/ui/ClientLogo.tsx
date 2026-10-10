@@ -2,7 +2,7 @@ import Image from 'next/image'
 import logos from '@/content/generated/logos.json'
 import { cn } from '@/lib/cn'
 
-type LogoFile = { src: string; width: number; height: number; ink: number; plate: string | null; colour: boolean }
+type LogoFile = { src: string; width: number; height: number; ink: number; plate: string | null }
 const files = logos as Record<string, LogoFile>
 
 /**

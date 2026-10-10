@@ -17,3 +17,6 @@ next-env.d.ts
 # os
 .DS_Store
 Thumbs.db
+
+# the client's source folder (processed into public/ by scripts/folder-media.mjs)
+/all data/

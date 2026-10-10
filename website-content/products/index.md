@@ -1,11 +1,11 @@
-# Four AI products. One growth engine.
+# Five products. One growth engine.
 
 ## Page Information
 
 - URL: https://www.instabizweb.com/products
 - Page Type: Products
-- Meta Title: Products - Scout, Ping, Echo & Dialer · Insta Biz Web
-- Meta Description: Scout, Ping, Echo and Dialer - our AI product stack for lead generation, WhatsApp automation, AI voice calling and high-volume dialling. Get a quote for your team.
+- Meta Title: Products - Scout, Ping, Echo, Dialer & ONE · Insta Biz Web
+- Meta Description: Scout, Ping, Echo, Dialer and ONE - our product stack for lead generation, WhatsApp automation, AI voice calling, high-volume dialling and running the business.
 - Canonical URL: https://www.instabizweb.com/products
 - Robots: index, follow
 - Author meta: Insta Biz Web
@@ -15,9 +15,9 @@
 
 Products Built and run by our team
 
-# Four AI products. One growth engine.
+# Five products. One growth engine.
 
-Scout, Ping, Echo, and Dialer — built for lead gen, WhatsApp automation, voice AI, and high-volume calling. Use one, or run them together from first lead to closed deal.
+Scout, Ping, Echo, Dialer and ONE — built for lead gen, WhatsApp automation, voice AI, high-volume calling and running the whole business. Use any one, or run them together from first lead to paid invoice.
 
 ## Scout - Business data scraping
 
@@ -222,10 +222,30 @@ Configure IVR flows with custom greetings, keypad routing, DID mapping, lead-lis
 - Assign DIDs and set blast caps
 - IVR analytics and duplicate-ready configs
 
+## ONE - All-in-one business platform
+
+Capture leads, close deals, deliver projects, send invoices, and manage your team — all in one powerful platform built for growing businesses.
+
+### One workspace for every part of your business
+
+Leads, deals, projects, invoices and your team in one powerful platform, with a complete lead-to-cash workflow and 24/7 support.
+
+- All-in-one business suite
+- Easy to use, modern interface
+- Secure, reliable and enterprise grade
+
+### Start every day from one desk
+
+Open ONE to today’s tasks, meetings, reminders and call list, and add a lead in a tap — then move on to calls, contacts, projects, tickets, quotations and invoices.
+
+- Tasks, meetings, reminders and calls
+- Leads, contacts and reports
+- Projects, tickets, quotations and invoices
+
 ## Additional Metadata
 
 - Open Graph title: Products · Insta Biz Web
-- Open Graph description: Scout finds the leads, Ping engages them on WhatsApp, Echo qualifies them with AI calls and Dialer puts your team on the calls that close.
+- Open Graph description: Scout finds the leads, Ping engages them on WhatsApp, Echo qualifies them with AI calls, Dialer puts your team on the calls that close and ONE runs the rest.
 - Open Graph URL: https://www.instabizweb.com/products
 - Open Graph type: website
 - Open Graph image: https://www.instabizweb.com/logo.png
@@ -234,7 +254,7 @@ Configure IVR flows with custom greetings, keypad routing, DID mapping, lead-lis
 - Open Graph locale: en_IN
 - Twitter card: summary_large_image
 - Twitter title: Products · Insta Biz Web
-- Twitter description: Our AI product stack: lead scraping, WhatsApp automation, AI voice calling and a BPO-grade dialer.
+- Twitter description: Our product stack: lead scraping, WhatsApp automation, AI voice calling, a BPO-grade dialer and an all-in-one business workspace.
 - Twitter image: https://www.instabizweb.com/logo.png
 - Twitter site: @instabizweb
 - Googlebot: index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1
@@ -369,7 +389,7 @@ Configure IVR flows with custom greetings, keypad routing, DID mapping, lead-lis
           "operatingSystem": "Web",
           "description": "Scout is a powerful data scraping tool that helps you find business owners, emails, phones, and social profiles in seconds — built for lead generation and outbound teams.",
           "url": "https://scout.blutec.ai/",
-          "image": "https://www.instabizweb.com/products/scout-1.webp"
+          "image": "https://www.instabizweb.com/products/scout-site.webp"
         }
       },
       {
@@ -384,7 +404,7 @@ Configure IVR flows with custom greetings, keypad routing, DID mapping, lead-lis
           "operatingSystem": "Web",
           "description": "Automate WhatsApp at scale with bulk broadcasting, AI chatbots, template campaigns, and two-way flows that boost sales and customer support around the clock.",
           "url": "https://ping.blutec.ai/",
-          "image": "https://www.instabizweb.com/products/ping-1.webp"
+          "image": "https://www.instabizweb.com/products/ping-site.webp"
         }
       },
       {
@@ -399,7 +419,7 @@ Configure IVR flows with custom greetings, keypad routing, DID mapping, lead-lis
           "operatingSystem": "Web",
           "description": "Run natural AI voice conversations at scale — follow-ups, reminders, and qualification calls that help your team convert leads faster with less manual effort.",
           "url": "https://echo.blutec.ai/",
-          "image": "https://www.instabizweb.com/products/echo-1.webp"
+          "image": "https://www.instabizweb.com/products/echo-site.webp"
         }
       },
       {
@@ -414,7 +434,22 @@ Configure IVR flows with custom greetings, keypad routing, DID mapping, lead-lis
           "operatingSystem": "Web",
           "description": "A complete calling platform for BPO and sales teams — desktop dialer, AI call audit, IVR support, ratio dialling, multi-DID options, and live monitoring in one stack.",
           "url": "https://dialer.blutec.ai/login",
-          "image": "https://www.instabizweb.com/products/dialer-1.webp"
+          "image": "https://www.instabizweb.com/products/dialer-site.webp"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "url": "https://www.instabizweb.com/products#one",
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "BluTec ONE",
+          "alternateName": "ONE",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Capture leads, close deals, deliver projects, send invoices, and manage your team — all in one powerful platform built for growing businesses.",
+          "url": "https://one.blutec.ai/",
+          "image": "https://www.instabizweb.com/products/one-site.webp"
         }
       }
     ]

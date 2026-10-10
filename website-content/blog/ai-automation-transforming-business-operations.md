@@ -65,7 +65,7 @@ For a deeper look at where this is heading, see our companion piece on [AI agent
 
 ## Real-world applications we’ve shipped
 
-At [Insta Biz Web](https://www.instabizweb.com/about-us), we’ve built AI workflows for ride-hailing dispatchers, real-estate lead scoring, dialer compliance checks, and even an AI calling agent that qualifies cold leads before a human ever picks up the phone - see the [live products](https://www.instabizweb.com/portfolio#ai).
+At [Insta Biz Web](https://www.instabizweb.com/about-us), we’ve built AI workflows for lead validation, real-estate lead scoring, dialer compliance checks, and even an AI calling agent that qualifies cold leads before a human ever picks up the phone - see the [live products](https://www.instabizweb.com/products).
 
 Implementing AI automation reduced our processing time by 75% while improving accuracy. It’s been a game-changer for our operations. - A founder we work with
 
@@ -99,7 +99,7 @@ From the IBW journal
 
 - [AI agents in 2026 - deep dive](https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers)
 - [Our AI services](https://www.instabizweb.com/services#ai)
-- [Live AI products in our portfolio](https://www.instabizweb.com/portfolio#ai)
+- [Live AI products in our portfolio](https://www.instabizweb.com/products)
 
 Authoritative sources
 
@@ -214,11 +214,11 @@ We’ll never share your email. One-click unsubscribe.
 - Further reading: https://www.instabizweb.com/blogs/ai-automation-transforming-business-operations#further-reading
 - AI agents in 2026: https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers
 - Insta Biz Web: https://www.instabizweb.com/about-us
-- live products: https://www.instabizweb.com/portfolio#ai
+- live products: https://www.instabizweb.com/products
 - free 30-minute call: https://www.instabizweb.com/contact-us
 - AI agents in 2026 - deep dive: https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers
 - Our AI services: https://www.instabizweb.com/services#ai
-- Live AI products in our portfolio: https://www.instabizweb.com/portfolio#ai
+- Live AI products in our portfolio: https://www.instabizweb.com/products
 - ↩ Zapier vs Make vs n8n (2026): Which Automation Platform Should You Pick?: https://www.instabizweb.com/blogs/zapier-vs-make-vs-n8n-2026
 - ↩ Best AI Calling Agents in 2026: 6 Voice AI Platforms Tested for Real Sales Use: https://www.instabizweb.com/blogs/best-ai-calling-agents-2026
 - (no text): https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.instabizweb.com%2Fblogs%2Fai-automation-transforming-business-operations&text=AI%20Automation%3A%20Transforming%20Business%20Operations%20in%202026
@@ -502,7 +502,7 @@ Resources
       {
         "@type": "Thing",
         "name": "Live AI products in our portfolio",
-        "url": "https://www.instabizweb.com/portfolio#ai"
+        "url": "https://www.instabizweb.com/products"
       }
     ]
   },

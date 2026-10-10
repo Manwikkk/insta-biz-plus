@@ -74,7 +74,8 @@ export function FeatureExplorer({ product: p, flip = false }: { product: Product
   const running = auto && inView && !hover
 
   return (
-    <div ref={root} className="mt-[clamp(32px,6vh,72px)] grid gap-6 lg:grid-cols-12 lg:gap-10">
+    // one column on phones, never wider than the screen (the card rail scrolls inside it)
+    <div ref={root} className="mt-[clamp(32px,6vh,72px)] grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-10">
       {/* the features (wide screens) */}
       <ol
         className={cn('hidden self-start lg:col-span-5 lg:block', flip && 'lg:order-2 lg:col-start-8')}
@@ -176,7 +177,7 @@ export function FeatureExplorer({ product: p, flip = false }: { product: Product
                     alt={`${p.fullName} - ${f.kicker}`}
                     fill
                     sizes="(min-width: 1024px) 760px, 92vw"
-                    quality={75}
+                    quality={90}
                     className="object-cover object-top"
                   />
                 </motion.div>

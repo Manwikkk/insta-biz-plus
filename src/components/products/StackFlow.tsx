@@ -2,7 +2,7 @@ import { products } from '@/content/products'
 import { Icon } from '@/components/ui/Icon'
 
 /**
- * The four products as one pipeline, from first lead to closed deal: a rail with leads
+ * The products as one pipeline, from first lead to paid invoice: a rail with leads
  * travelling along it, and a station for each product (each one jumps to its section).
  */
 export function StackFlow() {
@@ -14,7 +14,7 @@ export function StackFlow() {
           <span key={k} className="stack-lead" style={{ ['--k' as string]: k }} />
         ))}
       </div>
-      <ol className="relative grid gap-4 lg:grid-cols-4 lg:gap-5">
+      <ol className="relative grid gap-4 lg:grid-cols-5 lg:gap-5">
         {products.map((p, i) => (
           <li key={p.id} data-reveal="rise" style={{ ['--d' as string]: `${i * 110}ms` }}>
             <a href={`#${p.id}`} className="stack-station group">

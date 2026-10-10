@@ -1,65 +1,514 @@
 {
-  "BluTec": {
-    "src": "/logos/blutec.png",
-    "width": 272,
-    "height": 83,
+  "Tender Source India": {
+    "src": "/clients/tender-source-india.png",
+    "width": 560,
+    "height": 101,
+    "ink": 0.228,
+    "plate": null,
+    "source": "Instabizweb-logos/3.png"
+  },
+  "VoiceAI": {
+    "src": "/clients/voiceai.png",
+    "width": 560,
+    "height": 134,
+    "ink": 0.358,
+    "plate": null,
+    "source": "Instabizweb-logos/4ab85c95-d132-4d66-bc20-79fd0f598d15.png"
+  },
+  "IVRMaster": {
+    "src": "/clients/ivrmaster.png",
+    "width": 560,
+    "height": 151,
+    "ink": 0.429,
+    "plate": null,
+    "source": "Instabizweb-logos/5e5a9c1a-0405-4733-969a-4c4b32a883cc.png"
+  },
+  "Copper Social": {
+    "src": "/clients/copper-social.png",
+    "width": 558,
+    "height": 106,
+    "ink": 0.24,
+    "plate": null,
+    "source": "Instabizweb-logos/Copper Social Logo-PNG.avif"
+  },
+  "Hindland": {
+    "src": "/clients/hindland.png",
+    "width": 560,
+    "height": 186,
+    "ink": 0.236,
+    "plate": null,
+    "source": "Instabizweb-logos/Hindland_Logo_Transparent.webp"
+  },
+  "INTICEDE": {
+    "src": "/clients/inticede.png",
+    "width": 560,
+    "height": 217,
+    "ink": 0.086,
+    "plate": null,
+    "source": "Instabizweb-logos/INTICEDE LOGO-01(3).png"
+  },
+  "NKS Apparel": {
+    "src": "/clients/nks-apparel.png",
+    "width": 405,
+    "height": 240,
+    "ink": 0.223,
+    "plate": "#000000",
+    "source": "Instabizweb-logos/NKS Apparel Luxury Monogram.png"
+  },
+  "Novel Centre": {
+    "src": "/clients/novel-centre.png",
+    "width": 306,
+    "height": 240,
+    "ink": 0.292,
+    "plate": null,
+    "source": "Instabizweb-logos/Novel_Center_Logo.png"
+  },
+  "Best Sports Bars": {
+    "src": "/clients/best-sports-bars.png",
+    "width": 256,
+    "height": 50,
+    "ink": 0.191,
+    "plate": null,
+    "source": "Instabizweb-logos/Sports_Bar_Logo.avif"
+  },
+  "Visiolux Studio": {
+    "src": "/clients/visiolux-studio.png",
+    "width": 560,
+    "height": 160,
+    "ink": 0.262,
+    "plate": null,
+    "source": "Instabizweb-logos/VISIOLUX STUDIO LOGO-01 (1).png"
+  },
+  "Add-X Biotech": {
+    "src": "/clients/add-x-biotech.png",
+    "width": 560,
+    "height": 110,
+    "ink": 0.35,
+    "plate": null,
+    "source": "Instabizweb-logos/adx.png"
+  },
+  "Bharat Edge": {
+    "src": "/clients/bharat-edge.png",
+    "width": 560,
+    "height": 139,
     "ink": 0.283,
     "plate": null,
-    "colour": true,
-    "source": "blutec.ai"
+    "source": "Instabizweb-logos/bharatedge.png"
+  },
+  "Brothers Film": {
+    "src": "/clients/brothers-film.png",
+    "width": 560,
+    "height": 186,
+    "ink": 0.394,
+    "plate": null,
+    "source": "Instabizweb-logos/brothers-film-logo.png"
+  },
+  "Build With Chintan": {
+    "src": "/clients/build-with-chintan.png",
+    "width": 128,
+    "height": 128,
+    "ink": 1,
+    "plate": null,
+    "source": "Instabizweb-logos/build_with_chintan.webp"
+  },
+  "CashFlex": {
+    "src": "/clients/cashflex.png",
+    "width": 314,
+    "height": 187,
+    "ink": 0.384,
+    "plate": null,
+    "source": "Instabizweb-logos/cashflex.png"
+  },
+  "Enego": {
+    "src": "/clients/enego.png",
+    "width": 377,
+    "height": 162,
+    "ink": 0.248,
+    "plate": null,
+    "source": "Instabizweb-logos/enego.avif"
+  },
+  "EstatRent": {
+    "src": "/clients/estatrent.png",
+    "width": 560,
+    "height": 223,
+    "ink": 0.218,
+    "plate": null,
+    "source": "Instabizweb-logos/estate-logo.png"
   },
   "Carefix": {
-    "src": "/logos/carefix.png",
+    "src": "/clients/carefix.png",
     "width": 560,
-    "height": 140,
-    "ink": 0.258,
-    "plate": null,
-    "colour": false,
-    "source": "site content, in the black of its Google Play app icon"
+    "height": 136,
+    "ink": 0.249,
+    "plate": "#111111",
+    "source": "Instabizweb-logos/gigwell logo.png"
   },
-  "Cashflex": {
-    "src": "/logos/cashflex.png",
-    "width": 348,
-    "height": 208,
-    "ink": 0.405,
-    "plate": "#164e63",
-    "colour": true,
-    "source": "cashflex.in (plate: its theme colour)"
-  },
-  "Chennai Cabs": {
-    "src": "/logos/chennai-cabs.png",
-    "width": 218,
-    "height": 152,
-    "ink": 0.395,
-    "plate": null,
-    "colour": true,
-    "source": "Google Play app icon"
-  },
-  "Estate Rent": {
-    "src": "/logos/estate-rent.png",
-    "width": 295,
-    "height": 118,
-    "ink": 0.217,
-    "plate": null,
-    "colour": true,
-    "source": "blutec.ai"
-  },
-  "Kabadi King": {
-    "src": "/logos/kabadi-king.png",
-    "width": 345,
+  "Grow More": {
+    "src": "/clients/grow-more.png",
+    "width": 361,
     "height": 240,
-    "ink": 0.222,
+    "ink": 0.396,
     "plate": null,
-    "colour": false,
-    "source": "site content (colour original not reachable)"
+    "source": "Instabizweb-logos/growmore.png"
   },
-  "Sarvam Art": {
-    "src": "/logos/sarvam-art.png",
-    "width": 271,
-    "height": 65,
-    "ink": 0.537,
-    "plate": "#02163c",
-    "colour": true,
-    "source": "blutec.ai"
+  "MARC Group": {
+    "src": "/clients/marc-group.png",
+    "width": 308,
+    "height": 240,
+    "ink": 0.345,
+    "plate": null,
+    "source": "Instabizweb-logos/marc.png"
+  },
+  "MOS Immigration": {
+    "src": "/clients/mos-immigration.png",
+    "width": 394,
+    "height": 168,
+    "ink": 0.355,
+    "plate": null,
+    "source": "Instabizweb-logos/mos.png"
+  },
+  "On Road Immigration": {
+    "src": "/clients/on-road-immigration.png",
+    "width": 308,
+    "height": 240,
+    "ink": 0.439,
+    "plate": null,
+    "source": "Instabizweb-logos/onroad.png"
+  },
+  "Panache": {
+    "src": "/clients/panache.png",
+    "width": 444,
+    "height": 240,
+    "ink": 0.195,
+    "plate": "#08390c",
+    "source": "Instabizweb-logos/panache_logo.jpeg"
+  },
+  "PropertyMilan": {
+    "src": "/clients/propertymilan.png",
+    "width": 560,
+    "height": 151,
+    "ink": 0.204,
+    "plate": "#152b6f",
+    "source": "Instabizweb-logos/property_milan.webp"
+  },
+  "ReadyRoad": {
+    "src": "/clients/readyroad.png",
+    "width": 302,
+    "height": 158,
+    "ink": 0.277,
+    "plate": null,
+    "source": "Instabizweb-logos/readyroad.webp"
+  },
+  "Reva Blisters": {
+    "src": "/clients/reva-blisters.png",
+    "width": 547,
+    "height": 240,
+    "ink": 0.46,
+    "plate": null,
+    "source": "Instabizweb-logos/reva-logo.png"
+  },
+  "Rudra Glass": {
+    "src": "/clients/rudra-glass.png",
+    "width": 437,
+    "height": 240,
+    "ink": 0.179,
+    "plate": null,
+    "source": "Instabizweb-logos/rudra_logo.jpeg"
+  },
+  "Saarthium": {
+    "src": "/clients/saarthium.png",
+    "width": 249,
+    "height": 67,
+    "ink": 0.235,
+    "plate": null,
+    "source": "Instabizweb-logos/saarthium logo.avif"
+  },
+  "Sahjanand Engineering": {
+    "src": "/clients/sahjanand-engineering.png",
+    "width": 323,
+    "height": 240,
+    "ink": 0.255,
+    "plate": null,
+    "source": "Instabizweb-logos/sahjanand_logo.png"
+  },
+  "Satya Support": {
+    "src": "/clients/satya-support.png",
+    "width": 423,
+    "height": 197,
+    "ink": 0.305,
+    "plate": null,
+    "source": "Instabizweb-logos/satysupport.png"
+  },
+  "Sawariya": {
+    "src": "/clients/sawariya.png",
+    "width": 240,
+    "height": 240,
+    "ink": 1,
+    "plate": null,
+    "source": "Instabizweb-logos/sawariya.png"
+  },
+  "SetuBridge": {
+    "src": "/clients/setubridge.png",
+    "width": 377,
+    "height": 117,
+    "ink": 0.201,
+    "plate": null,
+    "source": "Instabizweb-logos/setu logo.webp"
+  },
+  "Sharukkhan Kureshi & Co.": {
+    "src": "/clients/sharukkhan-kureshi.png",
+    "width": 409,
+    "height": 240,
+    "ink": 0.211,
+    "plate": null,
+    "source": "Instabizweb-logos/sharukhaan logo.jpeg"
+  },
+  "Shubh Vivah": {
+    "src": "/clients/shubh-vivah.png",
+    "width": 560,
+    "height": 240,
+    "ink": 0.195,
+    "plate": "#0b2a08",
+    "source": "Instabizweb-logos/shubh vivah.jpeg"
+  },
+  "StartupStambh": {
+    "src": "/clients/startupstambh.png",
+    "width": 560,
+    "height": 237,
+    "ink": 0.186,
+    "plate": null,
+    "source": "Instabizweb-logos/startupstambh.webp"
+  },
+  "StudyBridge": {
+    "src": "/clients/studybridge.png",
+    "width": 348,
+    "height": 240,
+    "ink": 0.324,
+    "plate": "#010101",
+    "source": "Instabizweb-logos/study bridge visa.jpeg"
+  },
+  "SunPaz": {
+    "src": "/clients/sunpaz.png",
+    "width": 560,
+    "height": 204,
+    "ink": 0.27,
+    "plate": null,
+    "source": "Instabizweb-logos/sunpaz.png"
+  },
+  "SupplyRoots Exports": {
+    "src": "/clients/supplyroots-exports.png",
+    "width": 252,
+    "height": 235,
+    "ink": 0.26,
+    "plate": null,
+    "source": "Instabizweb-logos/supplyrootsexports_logo.jpg.jpeg"
+  },
+  "Sri Suryakala": {
+    "src": "/clients/sri-suryakala.png",
+    "width": 560,
+    "height": 115,
+    "ink": 0.133,
+    "plate": "#16181d",
+    "source": "Instabizweb-logos/suryakala.png"
+  },
+  "VentureLink": {
+    "src": "/clients/venturelink.png",
+    "width": 128,
+    "height": 86,
+    "ink": 0.442,
+    "plate": null,
+    "source": "Instabizweb-logos/venturelink-symbol.avif"
+  },
+  "Wood Paker": {
+    "src": "/clients/wood-paker.png",
+    "width": 560,
+    "height": 230,
+    "ink": 0.237,
+    "plate": null,
+    "source": "Instabizweb-logos/woodpacker_logo.jpeg"
+  },
+  "World Access Tours": {
+    "src": "/clients/world-access-tours.png",
+    "width": 560,
+    "height": 111,
+    "ink": 0.294,
+    "plate": "#16181d",
+    "source": "Instabizweb-logos/world tour.png"
+  },
+  "Zaverat": {
+    "src": "/clients/zaverat.png",
+    "width": 200,
+    "height": 200,
+    "ink": 1,
+    "plate": null,
+    "source": "Instabizweb-logos/zaveratthejeweller_logo.jpeg"
+  },
+  "7 Planets": {
+    "src": "/clients/7-planets.png",
+    "width": 286,
+    "height": 240,
+    "ink": 0.604,
+    "plate": null,
+    "source": "Blutec-customer/7plogo.webp"
+  },
+  "AKP ArkUrja": {
+    "src": "/clients/akp-arkurja.png",
+    "width": 244,
+    "height": 240,
+    "ink": 0.335,
+    "plate": null,
+    "source": "Blutec-customer/AKP_Ventures.webp"
+  },
+  "Cottons by Rudheera": {
+    "src": "/clients/cottons.png",
+    "width": 560,
+    "height": 214,
+    "ink": 0.151,
+    "plate": null,
+    "source": "Blutec-customer/Cottons_Logo.jpg.jpeg"
+  },
+  "Doclinks": {
+    "src": "/clients/doclinks.png",
+    "width": 560,
+    "height": 108,
+    "ink": 0.432,
+    "plate": null,
+    "source": "Blutec-customer/Dock-logo.png"
+  },
+  "Dr. Anubbha’s Homeopathy": {
+    "src": "/clients/anubbha.png",
+    "width": 295,
+    "height": 104,
+    "ink": 0.239,
+    "plate": null,
+    "source": "Blutec-customer/anubha.webp"
+  },
+  "CH Services": {
+    "src": "/clients/ch-services.png",
+    "width": 247,
+    "height": 240,
+    "ink": 0.396,
+    "plate": null,
+    "source": "Blutec-customer/app-icon-512.png"
+  },
+  "Bajaj Solaar": {
+    "src": "/clients/bajaj-solaar.png",
+    "width": 560,
+    "height": 172,
+    "ink": 0.253,
+    "plate": null,
+    "source": "Blutec-customer/bajaj-logo.jpeg"
+  },
+  "ConvrsAI": {
+    "src": "/clients/convrsai.png",
+    "width": 560,
+    "height": 111,
+    "ink": 0.717,
+    "plate": null,
+    "source": "Blutec-customer/convrsai-logo.webp"
+  },
+  "Indivaan": {
+    "src": "/clients/indivaan.png",
+    "width": 240,
+    "height": 240,
+    "ink": 1,
+    "plate": null,
+    "source": "Blutec-customer/indivaan-logo.png"
+  },
+  "KreddyKing": {
+    "src": "/clients/kreddyking.png",
+    "width": 240,
+    "height": 240,
+    "ink": 0.966,
+    "plate": null,
+    "source": "Blutec-customer/kreddy_king.jpg"
+  },
+  "Krishna Clinic": {
+    "src": "/clients/krishna-clinic.png",
+    "width": 330,
+    "height": 240,
+    "ink": 0.13,
+    "plate": null,
+    "source": "Blutec-customer/krishnalogo.png"
+  },
+  "Grand Sud": {
+    "src": "/clients/grand-sud.png",
+    "width": 310,
+    "height": 240,
+    "ink": 1,
+    "plate": "#db4a39",
+    "source": "Blutec-customer/logo.jpg"
+  },
+  "Ads Mark": {
+    "src": "/clients/ads-mark.png",
+    "width": 560,
+    "height": 85,
+    "ink": 0.316,
+    "plate": null,
+    "source": "Blutec-customer/logo.webp"
+  },
+  "MEX Engineering": {
+    "src": "/clients/mex-engineering.png",
+    "width": 560,
+    "height": 171,
+    "ink": 0.449,
+    "plate": null,
+    "source": "Blutec-customer/mex-mark.png"
+  },
+  "Mudra Yoga": {
+    "src": "/clients/mudra-yoga.png",
+    "width": 240,
+    "height": 240,
+    "ink": 0.78,
+    "plate": null,
+    "source": "Blutec-customer/mudra-logo.png"
+  },
+  "Mumbai Property": {
+    "src": "/clients/mumbai-property.png",
+    "width": 240,
+    "height": 240,
+    "ink": 0.798,
+    "plate": null,
+    "source": "Blutec-customer/mumbai poroperty.png"
+  },
+  "Saarthiom": {
+    "src": "/clients/saarthiom.png",
+    "width": 448,
+    "height": 240,
+    "ink": 0.136,
+    "plate": "#0d1b2a",
+    "source": "Blutec-customer/og-logo.png"
+  },
+  "Orkay Tiles": {
+    "src": "/clients/orkay-tiles.png",
+    "width": 139,
+    "height": 51,
+    "ink": 0.323,
+    "plate": null,
+    "source": "Blutec-customer/orkaylogo.png"
+  },
+  "PMB": {
+    "src": "/clients/pmb.png",
+    "width": 560,
+    "height": 238,
+    "ink": 0.246,
+    "plate": null,
+    "source": "Blutec-customer/pmb-logo.png"
+  },
+  "Prakash Gajra": {
+    "src": "/clients/prakash-gajra.png",
+    "width": 460,
+    "height": 240,
+    "ink": 0.532,
+    "plate": null,
+    "source": "Blutec-customer/prakashgajra-logo-png.png"
+  },
+  "Splendid Tech": {
+    "src": "/clients/splendid-tech.png",
+    "width": 560,
+    "height": 90,
+    "ink": 0.338,
+    "plate": null,
+    "source": "Blutec-customer/splendid_logo.png"
   }
 }

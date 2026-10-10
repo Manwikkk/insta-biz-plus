@@ -4,13 +4,17 @@ import { Eyebrow } from '@/components/ui/SectionHead'
 import { about } from '@/content/about'
 import { brands } from '@/content/home'
 
+/** How many of the brands the wall names (the best known come first): enough to fill it, few enough to read. */
+const WALL = 10
+
 /**
  * The brands we build with, written out in capitals as one long sentence. Under the pointer
  * a name comes forward while the rest step back, and its own logo surfaces above it.
  */
 export function BrandWall() {
   const n = about.networks
-  const last = brands.items.length - 1
+  const wall = brands.items.slice(0, WALL)
+  const last = wall.length - 1
   return (
     <section id="networks" className="rails relative border-b border-line" aria-labelledby="networks-title">
       <div className="shell py-[clamp(72px,12vh,150px)]">
@@ -25,7 +29,7 @@ export function BrandWall() {
         </div>
 
         <ul className="bw-list mt-[clamp(40px,8vh,96px)]">
-          {brands.items.map((b, i) => (
+          {wall.map((b, i) => (
             <li key={b.name} className="bw-item" data-reveal="rise" style={{ ['--d' as string]: `${i * 70}ms` }}>
               <span className="bw-name">{b.name}</span>
               <span className="bw-mark" aria-hidden>

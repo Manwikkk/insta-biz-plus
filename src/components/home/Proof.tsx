@@ -46,7 +46,8 @@ export function Proof() {
                 <p className="t-num text-[clamp(1.7rem,min(2.6vw,4.8vh),2.6rem)] text-stage-ink">
                   <Odometer value={r.value} delay={i * 120} />
                 </p>
-                <p className="mt-1.5 text-[0.84rem] leading-tight">
+                {/* two lines held for every caption, so the figures stay level when a brand name wraps */}
+                <p className="mt-1.5 min-h-[2.5em] text-[0.84rem] leading-tight">
                   <span className="text-stage-ink">{r.label}</span>
                   <span className="text-stage-ink-2"> · {r.brand}</span>
                 </p>

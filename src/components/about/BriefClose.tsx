@@ -11,8 +11,8 @@ import { products, screensOf } from '@/content/products'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
-/** Two screens from each product, alternating products. */
-const REEL = [1, 2].flatMap((k) => products.map((p) => ({ key: `${p.id}-${k}`, image: screensOf(p)[k] })))
+/** Screens from inside each product, alternating products: eight, the frames the reel's cycle is timed for. */
+const REEL = [1, 2].flatMap((k) => products.map((p) => ({ key: `${p.id}-${k}`, image: screensOf(p)[k] }))).slice(0, 8)
 
 /**
  * The hand-off to the form: one line split across the screen, the two halves sliding in from
@@ -53,7 +53,7 @@ export function BriefClose() {
                 alt=""
                 fill
                 sizes="(min-width: 768px) 30vw, 80vw"
-                quality={60}
+                quality={75}
                 className="bc-frame object-cover object-top"
                 style={{ animationDelay: `${i * 2.2}s` }}
               />

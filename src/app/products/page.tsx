@@ -18,10 +18,11 @@ import { productPage as pp, products, type Product } from '@/content/products'
 
 export const metadata: Metadata = buildMetadata('/products')
 
-const INDEX = [...products.map((p, i) => ({ id: p.id, n: String(i + 1).padStart(2, '0'), label: p.name })), { id: 'faq', n: '05', label: 'FAQs' }]
+const pad = (n: number) => String(n).padStart(2, '0')
+const INDEX = [...products.map((p, i) => ({ id: p.id, n: pad(i + 1), label: p.name })), { id: 'faq', n: pad(products.length + 1), label: 'FAQs' }]
 
 /**
- * The four products: the stack at a glance, how they hand a lead from one to the next,
+ * The products: the stack at a glance, how they hand a lead from one to the next,
  * then each product in depth (its features beside its own screens, and its numbers).
  */
 export default function ProductsPage() {
@@ -72,7 +73,7 @@ export default function ProductsPage() {
       <section className="rails section border-b border-line scroll-mt-24" id="faq">
         <div className="shell grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <SectionHead eyebrow="FAQs" title="Questions, answered." intro="Everything teams ask before they switch on Scout, Ping, Echo or Dialer." />
+            <SectionHead eyebrow="FAQs" title="Questions, answered." intro="Everything teams ask before they switch on Scout, Ping, Echo, Dialer or ONE." />
             <div className="mt-10 rounded-[16px] border border-line bg-raise p-6">
               <p className="t-h4">See them on your own data</p>
               <p className="t-small mt-2 text-ink-2">Book a free walkthrough and we’ll set a product up around your workflow.</p>
@@ -100,11 +101,11 @@ function ProductSection({ p, i }: { p: Product; i: number }) {
         <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-7">
             <div className="flex flex-wrap items-center gap-3">
-              <span className="product-logo" data-dark={p.id === 'echo' || undefined}>
+              <span className="product-logo">
                 <Image src={p.logo} alt={`${p.fullName} logo`} width={160} height={60} className="h-6 w-auto" />
               </span>
               <span className="t-label text-ink-3">
-                <span className="text-teal-ink">{String(i + 1).padStart(2, '0')}</span> / 04 · {p.short}
+                <span className="text-teal-ink">{pad(i + 1)}</span> / {pad(products.length)} · {p.short}
               </span>
             </div>
             <SplitReveal as="h2" className="t-h2 mt-6 max-w-[18ch]">

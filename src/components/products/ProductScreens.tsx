@@ -68,12 +68,13 @@ export function ProductScreens({
             exit={{ opacity: 0 }}
             transition={{ duration: 0.7, ease }}
           >
+            {/* product screens are made for this frame: they fill it edge to edge */}
             <Image
               src={frames[k]}
               alt={`${product.name} - ${product.features[k]?.kicker ?? product.short}`}
               fill
               sizes={sizes}
-              quality={75}
+              quality={90}
               preload={priority && k === 0}
               className="object-cover object-top"
             />

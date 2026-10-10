@@ -72,7 +72,7 @@ Inside our portfolio, the highest-ROI agents in 2026 fall into four buckets:
 1. Sales qualification agents - read inbound leads, score them, and book calls only with the qualified ones.
 2. Support deflection agents - answer Tier-1 questions from your knowledge base, escalate only when needed.
 3. Ops & finance agents - invoice reconciliation, returns processing, expense categorisation. Boring, expensive, perfect for AI.
-4. Voice agents - outbound calling for follow-ups, qualification, and reminders. Our [Blutec Echo](https://www.instabizweb.com/portfolio#ai) ships exactly this.
+4. Voice agents - outbound calling for follow-ups, qualification, and reminders. Our [Blutec Echo](https://www.instabizweb.com/products#echo) ships exactly this.
 
 Implementing one well-scoped agent reduced our processing time by 75% while improving accuracy. The trick was scope - we didn’t try to automate everything in week one. - A founder we work with, Q1 2026
 
@@ -116,7 +116,7 @@ Further reading
 From the IBW journal
 
 - [Our AI & Automation services](https://www.instabizweb.com/services#ai)
-- [Blutec Echo - AI calling agent Live AI voice agent we built](https://www.instabizweb.com/portfolio#ai)
+- [Blutec Echo - AI calling agent Live AI voice agent we built](https://www.instabizweb.com/products#echo)
 - [5-step engagement process](https://www.instabizweb.com/services#process)
 
 Authoritative sources
@@ -237,10 +237,10 @@ We’ll never share your email. One-click unsubscribe.
 - What’s next: https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers#next
 - FAQs: https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers#faq
 - Further reading: https://www.instabizweb.com/blogs/ai-agents-2026-from-chatbots-to-digital-coworkers#further-reading
-- Blutec Echo: https://www.instabizweb.com/portfolio#ai
+- Blutec Echo: https://www.instabizweb.com/products#echo
 - 30-min strategy call: https://www.instabizweb.com/contact-us
 - Our AI & Automation services: https://www.instabizweb.com/services#ai
-- Blutec Echo - AI calling agent Live AI voice agent we built: https://www.instabizweb.com/portfolio#ai
+- Blutec Echo - AI calling agent Live AI voice agent we built: https://www.instabizweb.com/products#echo
 - 5-step engagement process: https://www.instabizweb.com/services#process
 - ↩ The 2026 WhatsApp Business API Playbook for Indian SMBs (With Real Pricing & Setup Times): https://www.instabizweb.com/blogs/whatsapp-business-api-2026-india-smb-playbook
 - ↩ AI Automation: Transforming Business Operations in 2026: https://www.instabizweb.com/blogs/ai-automation-transforming-business-operations
@@ -536,7 +536,7 @@ Resources
       {
         "@type": "Thing",
         "name": "Blutec Echo - AI calling agent",
-        "url": "https://www.instabizweb.com/portfolio#ai"
+        "url": "https://www.instabizweb.com/products#echo"
       },
       {
         "@type": "Thing",

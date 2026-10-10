@@ -1,12 +1,15 @@
 import type { IconName } from '@/components/ui/Icon'
 
 /**
- * The four products — verbatim from blutec.ai (the products menu, each product page and its
- * FAQ, and the portfolio's product cards), 30 Sept 2026. Each feature's screen is the one
- * shown beside it on the product page (public/products, via scripts/blutec-media.mjs).
+ * The five products — verbatim from blutec.ai (the products menu, each product page and its
+ * FAQ, and the portfolio's product cards), 30 Sept 2026; BluTec ONE from its own site
+ * (one.blutec.ai), as the client's folder shows it (10 Oct 2026). Each feature's screen is the
+ * one shown beside it on the product page: the first is the product's own site and, with the
+ * logos, comes from the client's folder (scripts/folder-media.mjs); the rest are its app screens
+ * (scripts/blutec-media.mjs).
  */
 
-export type ProductId = 'scout' | 'ping' | 'echo' | 'dialer'
+export type ProductId = 'scout' | 'ping' | 'echo' | 'dialer' | 'one'
 
 export type Feature = { kicker: string; title: string; body: string; points: string[]; best?: boolean }
 
@@ -34,8 +37,6 @@ export type Product = {
   faqs: { q: string; a: string }[]
 }
 
-const shots = (id: ProductId, n: number) => Array.from({ length: n }, (_, i) => `/products/${id}-${i + 1}.webp`)
-
 export const products: Product[] = [
   {
     id: 'scout',
@@ -51,7 +52,7 @@ export const products: Product[] = [
       'Scout is a powerful data scraping tool that helps you find business owners, emails, phones, and social profiles in seconds — built for lead generation and outbound teams.',
     href: 'https://scout.blutec.ai/',
     icon: 'pin',
-    logo: '/products/scout-logo.webp',
+    logo: '/products/logos/scout.webp',
     step: { verb: 'Find', line: 'Verified business leads from Google Maps and the web' },
     features: [
       {
@@ -122,7 +123,7 @@ export const products: Product[] = [
       'Automate WhatsApp at scale with bulk broadcasting, AI chatbots, template campaigns, and two-way flows that boost sales and customer support around the clock.',
     href: 'https://ping.blutec.ai/',
     icon: 'whatsapp',
-    logo: '/products/ping-logo.webp',
+    logo: '/products/logos/ping.webp',
     step: { verb: 'Engage', line: 'Broadcasts and AI chatbots that qualify on WhatsApp' },
     features: [
       {
@@ -209,7 +210,7 @@ export const products: Product[] = [
       'Run natural AI voice conversations at scale — follow-ups, reminders, and qualification calls that help your team convert leads faster with less manual effort.',
     href: 'https://echo.blutec.ai/',
     icon: 'waveform',
-    logo: '/products/echo-logo.webp',
+    logo: '/products/logos/echo.webp',
     step: { verb: 'Qualify', line: 'AI voice agents that call, qualify and route' },
     features: [
       {
@@ -301,7 +302,7 @@ export const products: Product[] = [
       'A complete calling platform for BPO and sales teams — desktop dialer, AI call audit, IVR support, ratio dialling, multi-DID options, and live monitoring in one stack.',
     href: 'https://dialer.blutec.ai/login',
     icon: 'headset',
-    logo: '/products/dialer-logo.webp',
+    logo: '/products/logos/dialer.webp',
     step: { verb: 'Close', line: 'A dialer for the human-led calls that close' },
     features: [
       {
@@ -378,24 +379,76 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    id: 'one',
+    name: 'ONE',
+    fullName: 'BluTec ONE',
+    short: 'All-in-one business platform',
+    description:
+      'Capture leads, close deals, deliver projects, send invoices and manage your team — all in one powerful platform built for growing businesses.',
+    summary: 'An all-in-one workspace for growing businesses — leads, calls, tasks, meetings, projects, tickets, quotations and invoices, from lead to cash.',
+    highlights: ['Lead to cash in one workspace', '50+ features', '7-day free trial'],
+    headline: 'One workspace. Every part of your business.',
+    intro:
+      'Capture leads, close deals, deliver projects, send invoices, and manage your team — all in one powerful platform built for growing businesses.',
+    href: 'https://one.blutec.ai/',
+    icon: 'modules',
+    logo: '/products/logos/one.webp',
+    step: { verb: 'Run', line: 'Deals, projects and invoices in one workspace' },
+    features: [
+      {
+        kicker: 'All-in-one workspace',
+        title: 'One workspace for every part of your business',
+        body: 'Leads, deals, projects, invoices and your team in one powerful platform, with a complete lead-to-cash workflow and 24/7 support.',
+        points: ['All-in-one business suite', 'Easy to use, modern interface', 'Secure, reliable and enterprise grade'],
+      },
+      {
+        kicker: 'Your day',
+        title: 'Start every day from one desk',
+        body: 'Open ONE to today’s tasks, meetings, reminders and call list, and add a lead in a tap — then move on to calls, contacts, projects, tickets, quotations and invoices.',
+        points: ['Tasks, meetings, reminders and calls', 'Leads, contacts and reports', 'Projects, tickets, quotations and invoices'],
+      },
+    ],
+    impact: [
+      { value: '1,000+', label: 'businesses across India trust BluTec ONE' },
+      { value: '4.8/5', label: 'average rating from 500+ reviews' },
+      { value: '50+', label: 'features across powerful modules' },
+      { value: '99.9%', label: 'uptime on a reliable platform' },
+    ],
+    faqs: [
+      {
+        q: 'What is BluTec ONE?',
+        a: 'BluTec ONE is an all-in-one business platform: capture leads, close deals, deliver projects, send invoices and manage your team in one workspace, from lead to cash.',
+      },
+      {
+        q: 'Can I try BluTec ONE before I buy?',
+        a: 'Yes. BluTec ONE starts with a 7-day free trial, with support there 24/7.',
+      },
+      {
+        q: 'Who is BluTec ONE built for?',
+        a: 'Growing businesses of any size. It is made in India for Indian businesses, and it scales with you.',
+      },
+    ],
+  },
 ]
 
-/** A product's screens, in the order of its features. */
-export const screensOf = (p: Product) => shots(p.id, p.features.length)
+/** A product's screens, in the order of its features: its own site, then its app. */
+export const screensOf = (p: Product) => [`/products/${p.id}-site.webp`, ...Array.from({ length: p.features.length - 1 }, (_, i) => `/products/${p.id}-${i + 2}.webp`)]
 
 export const productPage = {
   tag: 'Products',
   tagNote: 'Built and run by our team',
-  h1: 'Four AI products. One growth engine.',
+  h1: 'Five products. One growth engine.',
   intro:
-    'Scout, Ping, Echo, and Dialer — built for lead gen, WhatsApp automation, voice AI, and high-volume calling. Use one, or run them together from first lead to closed deal.',
+    'Scout, Ping, Echo, Dialer and ONE — built for lead gen, WhatsApp automation, voice AI, high-volume calling and running the whole business. Use any one, or run them together from first lead to paid invoice.',
   flow: {
     eyebrow: 'One stack',
-    title: 'From first lead to closed deal.',
-    intro: 'Scout finds the leads, Ping engages them on WhatsApp, Echo qualifies them with AI calls, and Dialer puts your team on the calls that close.',
+    title: 'From first lead to paid invoice.',
+    intro:
+      'Scout finds the leads, Ping engages them on WhatsApp, Echo qualifies them with AI calls, Dialer puts your team on the calls that close, and ONE runs the rest — deals, projects and invoices.',
   },
   close: {
     title: 'Want to build something like these?',
-    body: 'We design, build and run products like Scout, Ping, Echo and Dialer — and we can build yours. Tell us what you need.',
+    body: 'We design, build and run products like Scout, Ping, Echo, Dialer and ONE — and we can build yours. Tell us what you need.',
   },
 }

@@ -41,7 +41,7 @@ Built in Ahmedabad. Shipped worldwide.
 
 ## The mobile app development partner Ahmedabad founders trust.
 
-Founded in 2020 and headquartered in Naranpura, Ahmedabad, Insta Biz Web has built mobile apps that have crossed 10,000+ downloads across categories - from ride-hailing and logistics to retail and services. We design apps people actually keep on their phones.
+Founded in 2020 and headquartered in Naranpura, Ahmedabad, Insta Biz Web has built mobile apps that have crossed 10,000+ downloads across categories. We design apps people actually keep on their phones.
 
 Whether you need a lean MVP to validate an idea, a full-featured marketplace app, or a native iOS and Android build, our senior team delivers on a fixed INR budget with GST invoicing. We build with Flutter and React Native for fast, cost-effective cross-platform delivery, and native Swift/Kotlin when your project genuinely needs it.
 

@@ -1,10 +1,10 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { memo, useCallback, useEffect, useRef, useState, type MouseEvent, type PointerEvent, type ReactNode } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { Icon } from '@/components/ui/Icon'
+import { Shot } from '@/components/ui/Shot'
 import type { Showcase } from '@/content/portfolio'
 import { useMarquee } from '@/lib/useMarquee'
 import { cn } from '@/lib/cn'
@@ -24,14 +24,7 @@ const Screen = memo(function Screen({ p, i, copy, active }: { p: Showcase; i: nu
   const common = { className: cn('wf-card', active && 'is-active'), 'data-i': i, 'data-copy': copy }
   const face = (
     <span className="wf-card-face">
-      <Image
-        src={p.image}
-        alt={copy ? '' : `${p.name} - ${p.label}`}
-        fill
-        sizes="(min-width: 1024px) 420px, 60vw"
-        quality={75}
-        className="object-cover object-top"
-      />
+      <Shot src={p.image} alt={copy ? '' : `${p.name} - ${p.label}`} sizes="(min-width: 1024px) 420px, 60vw" quality={75} />
     </span>
   )
   const nav = { ...common, tabIndex: copy ? -1 : undefined }

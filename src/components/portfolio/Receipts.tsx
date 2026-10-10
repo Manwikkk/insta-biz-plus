@@ -46,7 +46,7 @@ function Line({ item, amount }: { item: ReactNode; amount: ReactNode }) {
 }
 
 function Clients() {
-  const shown = brands.items.filter((b) => ['Chennai Cabs', 'Estate Rent', 'Carefix', 'Cashflex'].includes(b.name))
+  const shown = brands.items.slice(0, 4)
   return (
     <>
       <ul>
@@ -66,17 +66,13 @@ function Clients() {
 function Projects() {
   const rows = categories
     .map((c) => ({ label: categoryLabel[c], n: projects.filter((p) => p.category === c).length }))
-    .filter((r) => r.n)
     .sort((a, b) => b.n - a.n)
-  const top = rows.slice(0, 4)
-  const rest = rows.slice(4).reduce((t, r) => t + r.n, 0)
   return (
     <>
       <ul>
-        {top.map((r) => (
+        {rows.map((r) => (
           <Line key={r.label} item={r.label} amount={r.n} />
         ))}
-        {rest ? <Line item="Bots & extensions" amount={rest} /> : null}
       </ul>
       <p className="rc-total">
         <span>On this page · shipped</span>
@@ -89,7 +85,7 @@ function Projects() {
 }
 
 function Rating() {
-  const t = testimonials.items.find((x) => x.role.includes('Estate Rent')) ?? testimonials.items[0]
+  const t = testimonials.items[0]
   return (
     <>
       <blockquote className="rc-quote">“{t.quote}”</blockquote>
