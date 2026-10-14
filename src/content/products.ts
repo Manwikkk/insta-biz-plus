@@ -208,7 +208,7 @@ export const products: Product[] = [
     headline: 'AI bulk calling that closes more sales',
     intro:
       'Run natural AI voice conversations at scale — follow-ups, reminders, and qualification calls that help your team convert leads faster with less manual effort.',
-    href: 'https://echo.blutec.ai/',
+    href: 'https://echoplus.blutec.ai/',
     icon: 'waveform',
     logo: '/products/logos/echo.webp',
     step: { verb: 'Qualify', line: 'AI voice agents that call, qualify and route' },

@@ -35,7 +35,7 @@ const SCREENS = {
   // side margins trimmed so the nav stays centred, so it fills its frame with no bars
   'products/ping-site': { file: 'Blutec/product/Ping.png', extract: { left: 40, top: 0, width: 2771, height: 1494 } },
   // echo-site is not taken from here: the folder's copy is the French page, so the English one
-  // was captured from echo.blutec.ai at 1440×776, 2x (10 Oct 2026)
+  // was captured from echoplus.blutec.ai (14 Oct 2026)
   'products/dialer-site': 'Blutec/Connect.png',
   'products/one-site': 'Blutec/product/BluTecONE All-in-One Workspace.png',
   'products/one-2': 'Blutec/Blutec one.png',

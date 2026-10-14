@@ -66,7 +66,7 @@ All Work 15 Web 7 Mobile 1 AI & Automation 4 CRM & ERP 2 Extensions 1
 
 [[Image: BluTec Connect - Dialer Platform](https://www.instabizweb.com/portfolio/blutec-connect.png) Dialer Platform Smart routing ### BluTec Connect Inbound & outbound calling, finally under one roof. Inbound and outbound campaign dialer for sales, support, and BPO teams - smart routing, live monitoring, compliance, analytics. Visit project](https://connect.blutec.ai/)
 
-[[Image: Blutec Echo - AI Calling Agent](https://www.instabizweb.com/portfolio/blutec-echo.png) AI Calling Agent AI Voice agent ### Blutec Echo An AI agent that calls - and actually closes. AI-powered calling agent that automates customer interactions, qualifies leads, and lifts response efficiency for sales and support. Visit project](https://echo.blutec.ai/)
+[[Image: Blutec Echo - AI Calling Agent](https://www.instabizweb.com/portfolio/blutec-echo.png) AI Calling Agent AI Voice agent ### Blutec Echo An AI agent that calls - and actually closes. AI-powered calling agent that automates customer interactions, qualifies leads, and lifts response efficiency for sales and support. Visit project](https://echoplus.blutec.ai/)
 
 [[Image: ConvrsAI - AI Platform](https://www.instabizweb.com/portfolio/convrsai.png) AI Platform Multi channel ### ConvrsAI Conversational AI for modern customer journeys. Conversational AI product for intelligent customer communication, automation flows, and faster engagement across digital channels. Visit project](https://convrsai.com/)
 
@@ -239,7 +239,7 @@ Free strategy call 30 minutes · zero pitch [info@instabizweb.com Reply within 2
 - [Image: Chennai Cabs - Mobile Application](https://www.instabizweb.com/portfolio/chennai-cabs.jpg) Mobile Application 10K+ downloads ### Chennai Cabs A homegrown ride-hailing app loved by 10K+ riders. Ride-sharing application similar to Uber and Ola. 10K+ downloads, 4-5K active users and drivers across Chennai. Visit project: https://play.google.com/store/apps/details?id=com.cabs.chennaicabs&hl=en
 - [Image: Blutec Ping - Automation Tool](https://www.instabizweb.com/portfolio/blutec-ping.png) Automation Tool AI messaging ### Blutec Ping WhatsApp at the speed of business. WhatsApp automation platform with broadcasting, AI chatbots, and complete messaging workflows for sales and support teams. Visit project: https://ping.blutec.ai/
 - [Image: BluTec Connect - Dialer Platform](https://www.instabizweb.com/portfolio/blutec-connect.png) Dialer Platform Smart routing ### BluTec Connect Inbound & outbound calling, finally under one roof. Inbound and outbound campaign dialer for sales, support, and BPO teams - smart routing, live monitoring, compliance, analytics. Visit project: https://connect.blutec.ai/
-- [Image: Blutec Echo - AI Calling Agent](https://www.instabizweb.com/portfolio/blutec-echo.png) AI Calling Agent AI Voice agent ### Blutec Echo An AI agent that calls - and actually closes. AI-powered calling agent that automates customer interactions, qualifies leads, and lifts response efficiency for sales and support. Visit project: https://echo.blutec.ai/
+- [Image: Blutec Echo - AI Calling Agent](https://www.instabizweb.com/portfolio/blutec-echo.png) AI Calling Agent AI Voice agent ### Blutec Echo An AI agent that calls - and actually closes. AI-powered calling agent that automates customer interactions, qualifies leads, and lifts response efficiency for sales and support. Visit project: https://echoplus.blutec.ai/
 - [Image: ConvrsAI - AI Platform](https://www.instabizweb.com/portfolio/convrsai.png) AI Platform Multi channel ### ConvrsAI Conversational AI for modern customer journeys. Conversational AI product for intelligent customer communication, automation flows, and faster engagement across digital channels. Visit project: https://convrsai.com/
 - [Image: Property Milan - Real Estate Platform](https://www.instabizweb.com/portfolio/property-milan.png) Real Estate Platform Verified listings ### Property Milan Where verified properties meet serious buyers. Real estate platform for buying, selling, and renting verified properties - built around trust, transparency, and clean discovery. Visit project: https://www.propertymilan.com/
 - [Image: Estate Rent - Property Marketplace](https://www.instabizweb.com/portfolio/estaterent.png) Property Marketplace 320% lead growth ### Estate Rent A property marketplace built for real renters. Real estate listing platform for residential, rental, and commercial property discovery - verified listings, fast filters, smooth UX. Visit project: https://www.estatrent.com/
@@ -455,7 +455,7 @@ Resources
         "position": 3,
         "name": "BluTec Echo",
         "description": "AI voice agents for qualification, support, reception, and dispatch — with transcripts, analytics, and multi-provider voices.",
-        "url": "https://echo.blutec.ai/",
+        "url": "https://echoplus.blutec.ai/",
         "image": "https://www.instabizweb.com/products/echo-site.webp"
       },
       {

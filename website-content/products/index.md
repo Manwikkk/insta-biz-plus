@@ -418,7 +418,7 @@ Open ONE to today’s tasks, meetings, reminders and call list, and add a lead i
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "Web",
           "description": "Run natural AI voice conversations at scale — follow-ups, reminders, and qualification calls that help your team convert leads faster with less manual effort.",
-          "url": "https://echo.blutec.ai/",
+          "url": "https://echoplus.blutec.ai/",
           "image": "https://www.instabizweb.com/products/echo-site.webp"
         }
       },

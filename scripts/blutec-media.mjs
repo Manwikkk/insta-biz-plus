@@ -26,11 +26,7 @@ const FILES = {
   'products/ping-5': 'Ping_5.841ac7c4.webp',
   'products/ping-6': 'Ping_6.68770783.webp',
   'products/ping-7': 'Ping_7.5f0b083d.webp',
-  'products/echo-2': 'Echo_2.631231f9.webp',
-  'products/echo-3': 'Echo_3.5a62cb50.webp',
-  'products/echo-4': 'Echo_4.087c3d68.webp',
-  'products/echo-5': 'Echo_5.012cff60.webp',
-  'products/echo-6': 'Echo_6.94c6a016.webp',
+  // echo screens are the echoplus homepage shot, not these blutec.ai frames
   'products/dialer-2': 'Connect_2.d812c38f.webp',
   'products/dialer-3': 'Connect_3.236f4fd4.webp',
   'products/dialer-4': 'Connect_4.304c71cf.webp',
