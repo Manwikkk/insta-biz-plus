@@ -1,13 +1,24 @@
 import type { NextConfig } from 'next'
+import widths from './src/lib/imageWidths.json'
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   images: {
-    // Logos, product and project screens live in public/; blog covers come from Unsplash.
+    // Logos, product and project screens live in public/ and are made ahead of time at these widths
+    // (scripts/optimize-images.mjs) rather than on request; blog covers come from Unsplash's CDN.
+    loader: 'custom',
+    loaderFile: './src/lib/imageLoader.ts',
+    deviceSizes: widths.deviceSizes,
+    imageSizes: widths.imageSizes,
     remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com', pathname: '/**' }],
     qualities: [60, 75, 90],
-    formats: ['image/avif', 'image/webp'],
+  },
+  async headers() {
+    return [
+      // made-ahead pictures are named by their content: they never change, so they are kept for a year
+      { source: '/_img/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] },
+    ]
   },
   async redirects() {
     return [

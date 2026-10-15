@@ -5,9 +5,10 @@
   "description": "Insta Biz Web — redesigned site (Next.js App Router). Content sourced from ./website-content.",
   "scripts": {
     "content": "node scripts/build-content.mjs",
-    "predev": "node scripts/build-content.mjs",
+    "images": "node scripts/optimize-images.mjs",
+    "predev": "node scripts/build-content.mjs && node scripts/optimize-images.mjs",
     "dev": "next dev",
-    "prebuild": "node scripts/build-content.mjs",
+    "prebuild": "node scripts/build-content.mjs && node scripts/optimize-images.mjs",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
@@ -38,6 +39,7 @@
     "@types/react-dom": "^19.3.0",
     "@types/three": "^0.186.0",
     "postcss": "^8.5.28",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2"
   }

@@ -1,0 +1,662 @@
+{
+  "/brand/lockup-dark.png": {
+    "h": "4e8788f5a8",
+    "w": 798
+  },
+  "/brand/lockup-light.png": {
+    "h": "2610db38c3",
+    "w": 798
+  },
+  "/brand/logo-full-dark.png": {
+    "h": "6ebc555d0d",
+    "w": 950
+  },
+  "/brand/logo-full-light.png": {
+    "h": "55ab847477",
+    "w": 950
+  },
+  "/brand/logo.png": {
+    "h": "a98c28ee86",
+    "w": 979
+  },
+  "/brand/mark-dark.png": {
+    "h": "1d16139f75",
+    "w": 241
+  },
+  "/brand/mark.png": {
+    "h": "b118bcb904",
+    "w": 241
+  },
+  "/clients/7-planets.png": {
+    "h": "8c59c5e433",
+    "w": 286
+  },
+  "/clients/add-x-biotech.png": {
+    "h": "56a715857a",
+    "w": 560
+  },
+  "/clients/ads-mark.png": {
+    "h": "41baca5e0e",
+    "w": 560
+  },
+  "/clients/akp-arkurja.png": {
+    "h": "c796f5e79c",
+    "w": 244
+  },
+  "/clients/anubbha.png": {
+    "h": "a787ef36a7",
+    "w": 295
+  },
+  "/clients/bajaj-solaar.png": {
+    "h": "d3ce848ccd",
+    "w": 560
+  },
+  "/clients/best-sports-bars.png": {
+    "h": "5ced280084",
+    "w": 256
+  },
+  "/clients/bharat-edge.png": {
+    "h": "c33511010b",
+    "w": 560
+  },
+  "/clients/brothers-film.png": {
+    "h": "29c1a0df6e",
+    "w": 560
+  },
+  "/clients/build-with-chintan.png": {
+    "h": "7c0df4c26e",
+    "w": 128
+  },
+  "/clients/carefix.png": {
+    "h": "85d47c8f09",
+    "w": 560
+  },
+  "/clients/cashflex.png": {
+    "h": "dd94b66adf",
+    "w": 314
+  },
+  "/clients/ch-services.png": {
+    "h": "ad7776645f",
+    "w": 247
+  },
+  "/clients/convrsai.png": {
+    "h": "1b9360060f",
+    "w": 560
+  },
+  "/clients/copper-social.png": {
+    "h": "3f41943e4c",
+    "w": 558
+  },
+  "/clients/cottons.png": {
+    "h": "08c76d137e",
+    "w": 560
+  },
+  "/clients/doclinks.png": {
+    "h": "5ac9dec9da",
+    "w": 560
+  },
+  "/clients/enego.png": {
+    "h": "c01805f15e",
+    "w": 377
+  },
+  "/clients/estatrent.png": {
+    "h": "5b7e63a23e",
+    "w": 560
+  },
+  "/clients/grand-sud.png": {
+    "h": "05ca26ac4c",
+    "w": 310
+  },
+  "/clients/grow-more.png": {
+    "h": "ef85ab0f62",
+    "w": 361
+  },
+  "/clients/hindland.png": {
+    "h": "3f2326ce76",
+    "w": 560
+  },
+  "/clients/indivaan.png": {
+    "h": "f70881b396",
+    "w": 240
+  },
+  "/clients/inticede.png": {
+    "h": "34387a84df",
+    "w": 560
+  },
+  "/clients/ivrmaster.png": {
+    "h": "0ef30db561",
+    "w": 560
+  },
+  "/clients/kreddyking.png": {
+    "h": "6f419947ca",
+    "w": 240
+  },
+  "/clients/krishna-clinic.png": {
+    "h": "d6a0a28086",
+    "w": 330
+  },
+  "/clients/marc-group.png": {
+    "h": "067d9c1c9c",
+    "w": 308
+  },
+  "/clients/mex-engineering.png": {
+    "h": "ac26c86d68",
+    "w": 560
+  },
+  "/clients/mos-immigration.png": {
+    "h": "6d584e3257",
+    "w": 394
+  },
+  "/clients/mudra-yoga.png": {
+    "h": "09a3bf06da",
+    "w": 240
+  },
+  "/clients/mumbai-property.png": {
+    "h": "2ed250a8dd",
+    "w": 240
+  },
+  "/clients/nks-apparel.png": {
+    "h": "e34639e494",
+    "w": 405
+  },
+  "/clients/novel-centre.png": {
+    "h": "b3b2f27775",
+    "w": 306
+  },
+  "/clients/on-road-immigration.png": {
+    "h": "6acfda7875",
+    "w": 308
+  },
+  "/clients/orkay-tiles.png": {
+    "h": "41ea957bb8",
+    "w": 139
+  },
+  "/clients/panache.png": {
+    "h": "0bde0257a0",
+    "w": 444
+  },
+  "/clients/pmb.png": {
+    "h": "e6cc8f88aa",
+    "w": 560
+  },
+  "/clients/prakash-gajra.png": {
+    "h": "c43efafc37",
+    "w": 460
+  },
+  "/clients/propertymilan.png": {
+    "h": "6705da1868",
+    "w": 560
+  },
+  "/clients/readyroad.png": {
+    "h": "86f76560af",
+    "w": 302
+  },
+  "/clients/reva-blisters.png": {
+    "h": "5fe81fdb17",
+    "w": 547
+  },
+  "/clients/rudra-glass.png": {
+    "h": "01216b1ce2",
+    "w": 437
+  },
+  "/clients/saarthiom.png": {
+    "h": "3d3482ea25",
+    "w": 448
+  },
+  "/clients/saarthium.png": {
+    "h": "c388327af3",
+    "w": 249
+  },
+  "/clients/sahjanand-engineering.png": {
+    "h": "b41d8b81a8",
+    "w": 323
+  },
+  "/clients/satya-support.png": {
+    "h": "7efbcf8a70",
+    "w": 423
+  },
+  "/clients/sawariya.png": {
+    "h": "af66f1bceb",
+    "w": 240
+  },
+  "/clients/setubridge.png": {
+    "h": "e18c5ac787",
+    "w": 377
+  },
+  "/clients/sharukkhan-kureshi.png": {
+    "h": "d5938744d0",
+    "w": 409
+  },
+  "/clients/shubh-vivah.png": {
+    "h": "5e00f4d48c",
+    "w": 560
+  },
+  "/clients/splendid-tech.png": {
+    "h": "52f9302251",
+    "w": 560
+  },
+  "/clients/sri-suryakala.png": {
+    "h": "56a67fc3bb",
+    "w": 560
+  },
+  "/clients/startupstambh.png": {
+    "h": "b476b43d63",
+    "w": 560
+  },
+  "/clients/studybridge.png": {
+    "h": "45a7f14137",
+    "w": 348
+  },
+  "/clients/sunpaz.png": {
+    "h": "512e3ddfae",
+    "w": 560
+  },
+  "/clients/supplyroots-exports.png": {
+    "h": "5929bef291",
+    "w": 252
+  },
+  "/clients/tender-source-india.png": {
+    "h": "70e4a10d02",
+    "w": 560
+  },
+  "/clients/venturelink.png": {
+    "h": "167be9095a",
+    "w": 128
+  },
+  "/clients/visiolux-studio.png": {
+    "h": "94dd139579",
+    "w": 560
+  },
+  "/clients/voiceai.png": {
+    "h": "eaa56ffd22",
+    "w": 560
+  },
+  "/clients/wood-paker.png": {
+    "h": "c0881dac05",
+    "w": 560
+  },
+  "/clients/world-access-tours.png": {
+    "h": "00d4615fa9",
+    "w": 560
+  },
+  "/clients/zaverat.png": {
+    "h": "e9574c1b82",
+    "w": 200
+  },
+  "/products/dialer-2.webp": {
+    "h": "b536e7e9af",
+    "w": 1200
+  },
+  "/products/dialer-3.webp": {
+    "h": "effd0f2489",
+    "w": 1600
+  },
+  "/products/dialer-4.webp": {
+    "h": "e294d3b1ef",
+    "w": 1200
+  },
+  "/products/dialer-5.webp": {
+    "h": "ca03ea498a",
+    "w": 1200
+  },
+  "/products/dialer-6.webp": {
+    "h": "e2c0891789",
+    "w": 1200
+  },
+  "/products/dialer-7.webp": {
+    "h": "4afa205d16",
+    "w": 1200
+  },
+  "/products/dialer-site.webp": {
+    "h": "b47a0e2528",
+    "w": 2560
+  },
+  "/products/echo-2.webp": {
+    "h": "9fdb51d668",
+    "w": 2560
+  },
+  "/products/echo-3.webp": {
+    "h": "bf16ef8140",
+    "w": 2560
+  },
+  "/products/echo-4.webp": {
+    "h": "cc8e2bd773",
+    "w": 2560
+  },
+  "/products/echo-5.webp": {
+    "h": "c0bef957ba",
+    "w": 2560
+  },
+  "/products/echo-6.webp": {
+    "h": "12407d64b9",
+    "w": 2560
+  },
+  "/products/echo-site.webp": {
+    "h": "4cf5f00942",
+    "w": 2560
+  },
+  "/products/logos/dialer.webp": {
+    "h": "c358167b9f",
+    "w": 456
+  },
+  "/products/logos/echo.webp": {
+    "h": "af762ce870",
+    "w": 526
+  },
+  "/products/logos/one.webp": {
+    "h": "a6193d981b",
+    "w": 632
+  },
+  "/products/logos/ping.webp": {
+    "h": "607c9402d3",
+    "w": 695
+  },
+  "/products/logos/scout.webp": {
+    "h": "7936de786b",
+    "w": 347
+  },
+  "/products/one-2.webp": {
+    "h": "4691188cad",
+    "w": 2560
+  },
+  "/products/one-site.webp": {
+    "h": "0c59a9ec42",
+    "w": 1717
+  },
+  "/products/ping-2.webp": {
+    "h": "929bbe9085",
+    "w": 1200
+  },
+  "/products/ping-3.webp": {
+    "h": "afae2735ab",
+    "w": 1200
+  },
+  "/products/ping-4.webp": {
+    "h": "6a34a26659",
+    "w": 1200
+  },
+  "/products/ping-5.webp": {
+    "h": "d33156fa12",
+    "w": 1200
+  },
+  "/products/ping-6.webp": {
+    "h": "b31095b139",
+    "w": 1200
+  },
+  "/products/ping-7.webp": {
+    "h": "10ac7357a4",
+    "w": 1200
+  },
+  "/products/ping-site.webp": {
+    "h": "6818b13307",
+    "w": 2560
+  },
+  "/products/scout-2.webp": {
+    "h": "54ad85538c",
+    "w": 1200
+  },
+  "/products/scout-3.webp": {
+    "h": "bdd1cee459",
+    "w": 1200
+  },
+  "/products/scout-4.webp": {
+    "h": "ea988b2100",
+    "w": 1200
+  },
+  "/products/scout-site.webp": {
+    "h": "fc4a351015",
+    "w": 2560
+  },
+  "/work/achakan-rental.webp": {
+    "h": "e733298a3a",
+    "w": 2560
+  },
+  "/work/add-x-biotech.webp": {
+    "h": "ccf92f547e",
+    "w": 1600
+  },
+  "/work/ads-mark.webp": {
+    "h": "89b4fdf9ec",
+    "w": 2560
+  },
+  "/work/akp-arkurja.webp": {
+    "h": "944306f049",
+    "w": 2560
+  },
+  "/work/avn-mos.webp": {
+    "h": "f7fe9b439a",
+    "w": 2560
+  },
+  "/work/bajaj-solaar.webp": {
+    "h": "954d05fe80",
+    "w": 2560
+  },
+  "/work/best-sports-bars.webp": {
+    "h": "e00afd3651",
+    "w": 2560
+  },
+  "/work/blutec-os.webp": {
+    "h": "dc8a9682e0",
+    "w": 2560
+  },
+  "/work/brothers-film.webp": {
+    "h": "c8b7d7538d",
+    "w": 1920
+  },
+  "/work/build-with-chintan.webp": {
+    "h": "529c6851ba",
+    "w": 2560
+  },
+  "/work/cashflex.webp": {
+    "h": "5ecf5995dc",
+    "w": 1600
+  },
+  "/work/ch-services.webp": {
+    "h": "b1e02c1e6c",
+    "w": 2560
+  },
+  "/work/convrsai.webp": {
+    "h": "f3adea41f2",
+    "w": 2560
+  },
+  "/work/copper-social.webp": {
+    "h": "3b99e028f5",
+    "w": 1600
+  },
+  "/work/doclinks.webp": {
+    "h": "ea7c67da94",
+    "w": 2560
+  },
+  "/work/estatrent.webp": {
+    "h": "ae00319006",
+    "w": 2000
+  },
+  "/work/grand-sud-crm.webp": {
+    "h": "cf79995318",
+    "w": 2560
+  },
+  "/work/grand-sud.webp": {
+    "h": "4c1181b47c",
+    "w": 2560
+  },
+  "/work/hindland.webp": {
+    "h": "1eb3b3f06b",
+    "w": 2560
+  },
+  "/work/indivaan.webp": {
+    "h": "0d54713a8f",
+    "w": 2560
+  },
+  "/work/inticede.webp": {
+    "h": "effdc869ed",
+    "w": 1920
+  },
+  "/work/ivrmaster.webp": {
+    "h": "fe4613d32d",
+    "w": 1600
+  },
+  "/work/kreddyking.webp": {
+    "h": "76537ff41d",
+    "w": 2560
+  },
+  "/work/krishna-clinic.webp": {
+    "h": "ed1eaab2e5",
+    "w": 2560
+  },
+  "/work/marc-group.webp": {
+    "h": "56f996a4c7",
+    "w": 1920
+  },
+  "/work/mex-engineering.webp": {
+    "h": "7a63ebbf37",
+    "w": 2560
+  },
+  "/work/mos-immigration.webp": {
+    "h": "28bb1db60f",
+    "w": 1920
+  },
+  "/work/mudra-yoga.webp": {
+    "h": "a802efc02d",
+    "w": 1600
+  },
+  "/work/mumbai-property.webp": {
+    "h": "9fd6eb8e33",
+    "w": 2560
+  },
+  "/work/nks-apparel.webp": {
+    "h": "099ad5bcd2",
+    "w": 2560
+  },
+  "/work/nks-store.webp": {
+    "h": "7d40cb7da9",
+    "w": 2560
+  },
+  "/work/novel-centre.webp": {
+    "h": "0d4a3a64ca",
+    "w": 2560
+  },
+  "/work/odoo-import-export.webp": {
+    "h": "1a2e6981e1",
+    "w": 1920
+  },
+  "/work/odoo-logistics.webp": {
+    "h": "3bfcf29c2b",
+    "w": 1920
+  },
+  "/work/on-road-immigration.webp": {
+    "h": "48b3f86e51",
+    "w": 1600
+  },
+  "/work/orkay-tiles.webp": {
+    "h": "b99f8d4b34",
+    "w": 2560
+  },
+  "/work/panache.webp": {
+    "h": "1fe21d67c6",
+    "w": 1808
+  },
+  "/work/pmb.webp": {
+    "h": "575a7611de",
+    "w": 2560
+  },
+  "/work/prakash-gajra.webp": {
+    "h": "b54921c549",
+    "w": 2560
+  },
+  "/work/propertymilan.webp": {
+    "h": "950301dcbd",
+    "w": 2560
+  },
+  "/work/prudent-insurance.webp": {
+    "h": "1e849df565",
+    "w": 2560
+  },
+  "/work/readyroad.webp": {
+    "h": "4896c6e4df",
+    "w": 1600
+  },
+  "/work/reva-blisters.webp": {
+    "h": "ac2fd50358",
+    "w": 1920
+  },
+  "/work/rudra-glass.webp": {
+    "h": "4708530fbc",
+    "w": 2560
+  },
+  "/work/rug-theory.webp": {
+    "h": "5dce7c19c0",
+    "w": 2560
+  },
+  "/work/saarthiom.webp": {
+    "h": "b99ad874bd",
+    "w": 2560
+  },
+  "/work/saarthium.webp": {
+    "h": "b359151521",
+    "w": 2560
+  },
+  "/work/sahjanand-engineering.webp": {
+    "h": "462b4b954e",
+    "w": 1920
+  },
+  "/work/sawariya.webp": {
+    "h": "d3eb968c81",
+    "w": 1920
+  },
+  "/work/setubridge.webp": {
+    "h": "fd5d06b1ca",
+    "w": 2560
+  },
+  "/work/sharukkhan-kureshi.webp": {
+    "h": "52983d2505",
+    "w": 2560
+  },
+  "/work/splendid-tech.webp": {
+    "h": "b5b67b3dde",
+    "w": 2560
+  },
+  "/work/sri-suryakala.webp": {
+    "h": "ec5cdb1ec4",
+    "w": 2560
+  },
+  "/work/startupstambh.webp": {
+    "h": "2e615fee9f",
+    "w": 2560
+  },
+  "/work/sunpaz.webp": {
+    "h": "ebbdd90aeb",
+    "w": 1600
+  },
+  "/work/supplyroots-exports.webp": {
+    "h": "4fc365e193",
+    "w": 1920
+  },
+  "/work/tender-source-india.webp": {
+    "h": "24cf1462df",
+    "w": 2560
+  },
+  "/work/venturelink.webp": {
+    "h": "781ce9fb32",
+    "w": 2560
+  },
+  "/work/visiolux-studio.webp": {
+    "h": "d5a7e26fca",
+    "w": 2560
+  },
+  "/work/voiceai.webp": {
+    "h": "8a90aa80d7",
+    "w": 1600
+  },
+  "/work/wood-paker.webp": {
+    "h": "ac4aa47dff",
+    "w": 1920
+  },
+  "/work/world-access-tours.webp": {
+    "h": "c0cd0048f7",
+    "w": 2560
+  },
+  "/work/your-tech-buddy.webp": {
+    "h": "f5695dd987",
+    "w": 2560
+  }
+}

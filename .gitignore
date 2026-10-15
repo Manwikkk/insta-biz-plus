@@ -7,6 +7,9 @@ out/
 next-env.d.ts
 *.tsbuildinfo
 
+# pictures made at build time (scripts/optimize-images.mjs)
+/public/_img/
+
 # env
 .env*.local
 
