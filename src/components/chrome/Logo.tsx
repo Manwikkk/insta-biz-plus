@@ -5,7 +5,9 @@ import { cn } from '@/lib/cn'
 /**
  * The original Insta Biz Web logo (mark + wordmark), in its theme-appropriate
  * colourway. Both variants are rendered; CSS shows the one matching the theme so the
- * server markup never depends on client state.
+ * server markup never depends on client state. With `preload` (the bar's logo) both are
+ * fetched first thing and decoded in step, so the bar's switch to dark over a dark section,
+ * or a theme change, never waits on the other picture.
  */
 export function Logo({
   variant = 'lockup',
@@ -32,6 +34,8 @@ export function Logo({
         width={width}
         height={height}
         preload={preload}
+        fetchPriority={preload ? 'high' : undefined}
+        decoding={preload ? 'sync' : undefined}
         draggable={false}
         className="block dark:hidden"
         sizes={`${width}px`}
@@ -42,6 +46,9 @@ export function Logo({
         alt="Insta Biz Web logo"
         width={width}
         height={height}
+        preload={preload}
+        fetchPriority={preload ? 'high' : undefined}
+        decoding={preload ? 'sync' : undefined}
         draggable={false}
         className="hidden dark:block"
         sizes={`${width}px`}
