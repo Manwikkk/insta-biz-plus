@@ -2,8 +2,9 @@
 
 import { useEffect, useId, useLayoutEffect, useRef, useState, type FormEvent } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { needOptions, site, timelineOptions } from '@/content/site'
+import { needOptions, timelineOptions } from '@/content/site'
 import { KeyAction } from '@/components/ui/KeyButton'
+import { LeadFallback } from './LeadFallback'
 import { Icon } from '@/components/ui/Icon'
 import { cn } from '@/lib/cn'
 
@@ -339,22 +340,7 @@ export function LeadForm({
               onChange={set('message')}
             />
 
-            {state === 'error' ? (
-              <div className="rounded-[10px] border border-ember/50 bg-ember/10 px-4 py-3 text-[0.9rem]" role="alert">
-                <p className={stage ? 'text-stage-ink' : 'text-ink'}>{serverError}</p>
-                <p className={cn('mt-1', stage ? 'text-stage-ink-2' : 'text-ink-2')}>
-                  You can also reach us directly at{' '}
-                  <a className="underline" href={`mailto:${site.email}`}>
-                    {site.email}
-                  </a>{' '}
-                  or on{' '}
-                  <a className="underline" href={site.whatsapp} target="_blank" rel="noopener noreferrer">
-                    WhatsApp
-                  </a>
-                  .
-                </p>
-              </div>
-            ) : null}
+            {state === 'error' ? <LeadFallback error={serverError} lead={{ ...f, needs, timeline }} tone={tone} /> : null}
 
             <div className="flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className={cn('max-w-sm text-[0.8rem] leading-relaxed', stage ? 'text-stage-ink-2' : 'text-ink-3')}>{disclaimer}</p>

@@ -2,9 +2,10 @@
 
 import { useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
-import { needOptions, site, timelineOptions } from '@/content/site'
+import { needOptions, timelineOptions } from '@/content/site'
 import { ASK_EVENT } from '@/components/forms/LeadForm'
 import { KeyAction } from '@/components/ui/KeyButton'
+import { LeadFallback } from '@/components/forms/LeadFallback'
 import { Icon, type IconName } from '@/components/ui/Icon'
 import { cn } from '@/lib/cn'
 
@@ -257,19 +258,7 @@ export function ContactConsole() {
                 <Icon name="close" size={14} /> {err}
               </p>
             ) : null}
-            {state === 'error' ? (
-              <p className="mt-4 rounded-[10px] bg-ember/10 px-4 py-3 text-[0.9rem]" role="alert">
-                {serverError} You can also write to{' '}
-                <a className="underline" href={`mailto:${site.email}`}>
-                  {site.email}
-                </a>{' '}
-                or{' '}
-                <a className="underline" href={site.whatsapp} target="_blank" rel="noopener noreferrer">
-                  WhatsApp us
-                </a>
-                .
-              </p>
-            ) : null}
+            {state === 'error' ? <LeadFallback error={serverError} lead={{ ...f, needs, timeline }} className="mt-4" /> : null}
 
             <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-5">
               <p className="t-label hidden items-center gap-2 text-ink-3 sm:flex">
