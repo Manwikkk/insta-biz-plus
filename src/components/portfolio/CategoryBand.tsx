@@ -30,8 +30,8 @@ export function CategoryBand() {
       mm.add('(prefers-reduced-motion: no-preference)', () => {
         const [a, b] = gsap.utils.toArray<HTMLElement>('[data-band]', root.current)
         const st = { trigger: root.current, start: 'top bottom', end: 'bottom top', scrub: 0.6 }
-        gsap.fromTo(a, { xPercent: 0 }, { xPercent: -32, ease: 'none', scrollTrigger: st })
-        gsap.fromTo(b, { xPercent: -32 }, { xPercent: 0, ease: 'none', scrollTrigger: { ...st } })
+        gsap.fromTo(a, { xPercent: 0 }, { xPercent: -48, ease: 'none', scrollTrigger: st })
+        gsap.fromTo(b, { xPercent: -48 }, { xPercent: 0, ease: 'none', scrollTrigger: { ...st } })
       })
       return () => mm.revert()
     },

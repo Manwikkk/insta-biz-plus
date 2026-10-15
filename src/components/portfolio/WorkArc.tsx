@@ -7,8 +7,8 @@ import { Shot } from '@/components/ui/Shot'
 
 const N = showcase.length
 /** Tiles per second while nothing else is going on, and the most a scroll can add. */
-const PACE = 0.24
-const BOOST = 0.45
+const PACE = 0.4
+const BOOST = 0.7
 /** Beyond this angle a tile is never drawn, so it can never swing close to the eye. */
 const MAX_ANGLE = 1.05
 /** A little vertical drift per tile, so the wall reads as a hung collage rather than a strip. */

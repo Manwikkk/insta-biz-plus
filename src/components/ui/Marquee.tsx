@@ -10,7 +10,7 @@ import { cn } from '@/lib/cn'
  */
 export function Marquee({
   children,
-  speed = 48,
+  speed = 84,
   reverse = false,
   className,
   trackClassName,

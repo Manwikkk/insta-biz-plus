@@ -11,7 +11,7 @@ import { cn } from '@/lib/cn'
 
 const ease = [0.16, 1, 0.3, 1] as const
 /** Drift of the strip at full speed, px per second. */
-const SPEED = 64
+const SPEED = 110
 /** The screens' shear, tan(28deg), and how far a picked screen lifts (both as in .wf-card). */
 const TAN = 0.5317
 const LIFT = 12

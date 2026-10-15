@@ -104,7 +104,7 @@ export default function ServicesPage() {
             <TechTabs groups={techGroups} />
           </div>
         </div>
-        <Marquee speed={46} className="mt-16 border-y border-line py-6">
+        <Marquee speed={80} className="mt-16 border-y border-line py-6">
           {techGroups[0].items.map((t) => (
             <span
               key={t}

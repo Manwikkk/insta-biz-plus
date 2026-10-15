@@ -238,7 +238,7 @@ export function Brands({
   intro?: string
   id?: string
 } = {}) {
-  const { trackRef, hold } = useMarquee<HTMLDivElement>({ speed: 38 })
+  const { trackRef, hold } = useMarquee<HTMLDivElement>({ speed: 66 })
   const touchTimer = useRef<number | undefined>(undefined)
 
   useEffect(() => () => window.clearTimeout(touchTimer.current), [])
