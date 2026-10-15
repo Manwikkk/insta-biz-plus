@@ -53,7 +53,7 @@ export function LenderTracker({ ints }: { ints: string[] }) {
 
           <Choices className="mt-4" label="Day" items={DAYS.map((d, k) => ({ id: String(k), label: d.label }))} value={String(i)} onPick={(k) => setI(Number(k))} />
 
-          <ul className="mt-3 grid gap-1.5">
+          <ul className="mt-3 grid grid-cols-1 gap-1.5">
             {LENDERS.map((name, k) => {
               const r = day.rows[k]
               const isBest = best != null && r.roi === best && r.st >= 2

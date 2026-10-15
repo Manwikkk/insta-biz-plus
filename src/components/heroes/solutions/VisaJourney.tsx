@@ -94,7 +94,7 @@ export function VisaJourney({ ints }: { ints: string[] }) {
             </div>
 
             <p className="t-label mt-4 text-ink-3">{f.country} checklist</p>
-            <ul className="mt-2 grid gap-1.5">
+            <ul className="mt-2 grid grid-cols-1 gap-1.5">
               {f.docs.map((d, k) => (
                 <li key={d} className="flex items-center gap-2.5 text-[0.84rem]">
                   <span className="relative grid size-[18px] shrink-0 place-items-center rounded-full border border-line-2">

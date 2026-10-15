@@ -114,7 +114,7 @@ export function RenewalRadar({ ints }: { ints: string[] }) {
                 </p>
               </motion.div>
             </AnimatePresence>
-            <ol className="mt-3.5 grid gap-1.5">
+            <ol className="mt-3.5 grid grid-cols-1 gap-1.5">
               {REMINDERS.map((r, k) => {
                 const sent = s >= k
                 return (

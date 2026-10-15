@@ -118,7 +118,7 @@ export function ComplianceCalendar({ ints }: { ints: string[] }) {
               <div className="h-full rounded-full bg-teal transition-[width] duration-1000 ease-[var(--ease-out)]" style={{ width: `${pct}%` }} />
             </div>
             <AnimatePresence mode="wait" initial={false}>
-              <motion.ul key={i} className="mt-3.5 grid gap-1.5" initial="a" animate="b" exit="a">
+              <motion.ul key={i} className="mt-3.5 grid grid-cols-1 gap-1.5" initial="a" animate="b" exit="a">
                 {STATES.map((st, k) => (
                   <motion.li
                     key={st.label}

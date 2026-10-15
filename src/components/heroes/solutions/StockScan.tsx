@@ -80,7 +80,7 @@ export function StockScan({ ints }: { ints: string[] }) {
             </div>
           </div>
 
-          <ul className="mt-3 grid gap-1.5">
+          <ul className="mt-3 grid grid-cols-1 gap-1.5">
             {WAREHOUSES.map((w, k) => (
               <Level key={w} name={w} value={f.stock[k]} lit={f.hl.includes(k)} />
             ))}
