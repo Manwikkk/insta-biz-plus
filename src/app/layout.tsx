@@ -4,6 +4,7 @@ import './globals.css'
 import { Header } from '@/components/chrome/Header'
 import { Footer } from '@/components/chrome/Footer'
 import { TopButton } from '@/components/chrome/TopButton'
+import { WhatsAppButton } from '@/components/chrome/WhatsAppButton'
 import { SmoothScroll } from '@/components/motion/SmoothScroll'
 import { RevealObserver } from '@/components/motion/RevealObserver'
 import { JsonLd } from '@/components/seo/JsonLd'
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main id="main">{children}</main>
           <Footer />
           <TopButton />
+          <WhatsAppButton />
         </SmoothScroll>
         <RevealObserver />
       </body>

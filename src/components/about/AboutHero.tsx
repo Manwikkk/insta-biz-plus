@@ -323,7 +323,7 @@ export function AboutHero() {
             <p className="enter-fade t-lede max-w-[36rem] lg:col-span-6" style={{ ['--d' as string]: '700ms' }}>
               {a.intro}
             </p>
-            <div className="enter-fade flex flex-wrap items-center gap-3 lg:col-span-5 lg:col-start-8 lg:justify-end" style={{ ['--d' as string]: '820ms' }}>
+            <div className="enter-fade clear-fab flex flex-wrap items-center gap-3 lg:col-span-5 lg:col-start-8 lg:justify-end" style={{ ['--d' as string]: '820ms' }}>
               <KeyButton href="/contact-us">{a.primary}</KeyButton>
               <KeyButton href="/portfolio" variant="ghost" icon={null}>
                 {a.secondary}

@@ -7056,11 +7056,12 @@ html[data-header='hidden'] {
       0 8px 20px -10px rgb(0 0 0 / 0.8),
       inset 0 0 0 1px var(--stage-line);
   }
-  /* phones and tablets: back to the top, there only while scrolling up */
+  /* phones and tablets: back to the top, there only while scrolling up, above the WhatsApp button */
   .top-btn {
     position: fixed;
-    right: 16px;
-    bottom: calc(16px + env(safe-area-inset-bottom));
+    /* stacked just above the WhatsApp button, centred on it */
+    right: 18px;
+    bottom: calc(76px + env(safe-area-inset-bottom));
     z-index: 45;
     display: grid;
     width: 46px;
@@ -7081,6 +7082,68 @@ html[data-header='hidden'] {
     opacity: 1;
     pointer-events: auto;
     transform: none;
+  }
+
+  /* WhatsApp, on every page: a still, translucent glass button in the bottom right corner (WhatsAppButton) */
+  .wa-fab {
+    position: fixed;
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    z-index: 39;
+    display: grid;
+    width: 50px;
+    height: 50px;
+    place-items: center;
+    border-radius: 999px;
+    color: #1fb855;
+    background: color-mix(in oklab, var(--raise) 62%, transparent);
+    backdrop-filter: blur(16px) saturate(170%);
+    -webkit-backdrop-filter: blur(16px) saturate(170%);
+    box-shadow:
+      inset 0 0 0 1px var(--line-2),
+      inset 0 1px 0 rgb(255 255 255 / 0.55),
+      0 10px 28px -14px rgb(11 15 21 / 0.45);
+    -webkit-tap-highlight-color: transparent;
+  }
+  [data-theme='dark'] .wa-fab {
+    color: #25d366;
+    background: color-mix(in oklab, var(--raise) 55%, transparent);
+    box-shadow:
+      inset 0 0 0 1px var(--line-2),
+      inset 0 1px 0 rgb(255 255 255 / 0.06),
+      0 12px 30px -14px rgb(0 0 0 / 0.8);
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .wa-fab {
+      background: var(--raise);
+    }
+  }
+  @media (min-width: 1024px) {
+    .wa-fab {
+      right: 24px;
+      bottom: 24px;
+      width: 54px;
+      height: 54px;
+    }
+  }
+  .wa-fab:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 3px;
+  }
+  /* a right-aligned row at the foot of a full-screen hero stops short of the WhatsApp button */
+  @media (min-width: 1024px) {
+    .clear-fab {
+      padding-right: max(0px, 96px - max(var(--gutter), (100vw - var(--shell-max)) / 2));
+    }
+  }
+  .wa-glyph {
+    width: 26px;
+    height: 26px;
+  }
+  @media print {
+    .wa-fab {
+      display: none;
+    }
   }
 }
 
