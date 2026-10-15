@@ -14,6 +14,7 @@ import { SplitReveal } from '@/components/motion/SplitReveal'
 import { Icon } from '@/components/ui/Icon'
 import { aiAgentFaqs, aiAgents as a } from '@/content/ai-agents'
 import { site } from '@/content/site'
+import { waHref } from '@/lib/whatsapp'
 
 export const metadata: Metadata = buildMetadata('/services/ai-agent-development')
 
@@ -39,7 +40,7 @@ export default function AIAgentsPage() {
         actions={
           <>
             <KeyButton href="#contact-form">{a.primary}</KeyButton>
-            <KeyButton href={site.whatsapp} variant="ghost" icon="whatsapp">
+            <KeyButton href={waHref("Hi Insta Biz Web, I'm interested in AI agent development. Please share details.")} variant="ghost" icon="whatsapp">
               {a.secondary}
             </KeyButton>
           </>

@@ -14,7 +14,8 @@ import { Markdownish } from '@/components/ui/Markdownish'
 import { Icon } from '@/components/ui/Icon'
 import { ScrollRow } from '@/components/ui/ScrollCue'
 import { locationBySlug, locations } from '@/content/data'
-import { site } from '@/content/site'
+import { locationLinks, site } from '@/content/site'
+import { waHref } from '@/lib/whatsapp'
 import { cn } from '@/lib/cn'
 
 export const dynamicParams = false
@@ -34,6 +35,8 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
   if (!l) notFound()
   const [tag, ...noteParts] = l.eyebrow.split(/(?<=Gujarat)\s/)
   const table = l.comparison.table
+  // what the visitor came for, said in the WhatsApp chat they open
+  const service = locationLinks.find((x) => x.href === `/${l.slug}`)?.short ?? 'software development'
 
   return (
     <>
@@ -47,7 +50,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
         actions={
           <>
             <KeyButton href="#contact-form">{l.primaryCta}</KeyButton>
-            <KeyButton href={site.whatsapp} variant="ghost" icon="whatsapp">
+            <KeyButton href={waHref(`Hi Insta Biz Web, I'm interested in ${service.toLowerCase()} in Ahmedabad. Please share details.`)} variant="ghost" icon="whatsapp">
               WhatsApp Us
             </KeyButton>
           </>

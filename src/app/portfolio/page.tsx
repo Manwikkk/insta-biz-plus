@@ -14,6 +14,7 @@ import { Receipts } from '@/components/portfolio/Receipts'
 import { portfolioPage as pp } from '@/content/portfolio'
 import { numbers } from '@/content/home'
 import { site } from '@/content/site'
+import { HELLO, waHref } from '@/lib/whatsapp'
 
 export const metadata: Metadata = buildMetadata('/portfolio')
 
@@ -125,7 +126,7 @@ export default function PortfolioPage() {
                 {[
                   { t: pp.close.call.title, n: pp.close.call.note, href: '/contact-us#contact-form', icon: 'calendar' as const },
                   { t: pp.close.email.title, n: pp.close.email.note, href: `mailto:${site.email}`, icon: 'mail' as const },
-                  { t: pp.close.whatsapp.title, n: pp.close.whatsapp.note, href: site.whatsapp, icon: 'whatsapp' as const },
+                  { t: pp.close.whatsapp.title, n: pp.close.whatsapp.note, href: waHref(HELLO), icon: 'whatsapp' as const },
                 ].map((c) => (
                   <li key={c.t} className="border-b border-stage-line">
                     <a

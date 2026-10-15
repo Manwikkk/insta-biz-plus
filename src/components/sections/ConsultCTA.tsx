@@ -3,6 +3,7 @@ import { LeadForm } from '@/components/forms/LeadForm'
 import { MarkBlueprint } from '@/components/brand/MarkBlueprint'
 import { SplitReveal } from '@/components/motion/SplitReveal'
 import { Icon } from '@/components/ui/Icon'
+import { HELLO, waHref } from '@/lib/whatsapp'
 
 /**
  * The closing chapter used across the site: a dark stage, the offer, and the form.
@@ -65,7 +66,7 @@ export function ConsultCTA({ index, id = 'contact-form' }: { index?: string; id?
                 <span className="link-draw">{site.phone}</span>
               </a>
               <a
-                href={site.whatsapp}
+                href={waHref(HELLO)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2.5 whitespace-nowrap text-stage-ink"

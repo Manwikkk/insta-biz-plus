@@ -11,6 +11,7 @@ import { services } from '@/content/services'
 import { solutions } from '@/content/data'
 import { products } from '@/content/products'
 import { socialIcon } from '@/content/nav'
+import { HELLO, waHref } from '@/lib/whatsapp'
 
 const ease = [0.16, 1, 0.3, 1] as const
 
@@ -159,6 +160,9 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
             </a>
             <a href={site.phoneHref} className="flex items-center gap-2">
               <Icon name="phone" size={16} /> {site.phone}
+            </a>
+            <a href={waHref(HELLO)} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <Icon name="whatsapp" size={16} /> Chat on WhatsApp
             </a>
             <p className="t-label mt-2 text-ink-3">Ahmedabad, IN · Mon-Sat · 9-6</p>
           </div>

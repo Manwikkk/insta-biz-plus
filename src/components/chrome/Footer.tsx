@@ -6,6 +6,7 @@ import { footerGroups, locationLinks, site } from '@/content/site'
 import { solutions } from '@/content/data'
 import { BackToTop } from './BackToTop'
 import { FooterWordmark } from './FooterWordmark'
+import { HELLO, waHref } from '@/lib/whatsapp'
 
 export function Footer() {
   return (
@@ -35,6 +36,12 @@ export function Footer() {
                 <a href={site.phoneHref} className="flex items-center gap-3 text-ink-2 hover:text-ink">
                   <Icon name="phone" size={18} className="text-teal-ink" />
                   <span className="link-draw">{site.phone}</span>
+                </a>
+              </li>
+              <li>
+                <a href={waHref(HELLO)} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-ink-2 hover:text-ink">
+                  <Icon name="whatsapp" size={18} className="text-teal-ink" />
+                  <span className="link-draw">Chat on WhatsApp</span>
                 </a>
               </li>
             </ul>

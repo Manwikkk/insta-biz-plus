@@ -46,7 +46,7 @@ export const contact = {
         value: 'Chat with the team',
         body: 'Drop a quick message - voice notes, screenshots, anything.',
         cta: 'Open WhatsApp',
-        href: 'https://wa.me/919898124987',
+        href: 'https://wa.me/919898124987?text=Hi%20Insta%20Biz%20Web%2C%20I%27d%20like%20to%20discuss%20a%20project.',
       },
       {
         kind: 'Strategy Call',
