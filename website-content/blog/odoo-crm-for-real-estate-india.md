@@ -134,7 +134,7 @@ From the IBW journal
 
 Authoritative sources
 
-- [RERA - Ministry of Housing & Urban Affairs rera.gov.in](https://rera.gov.in/)
+- [RERA - Ministry of Housing & Urban Affairs mohua.gov.in](https://mohua.gov.in/cms/real-estate-regulation-and-development-act-2016.php)
 - [Odoo Real Estate community modules apps.odoo.com](https://apps.odoo.com/apps/modules/category/Real-Estate)
 
 Mentioned in
@@ -294,7 +294,7 @@ We’ll never share your email. One-click unsubscribe.
 
 ## External Links
 
-- RERA - Ministry of Housing & Urban Affairs rera.gov.in: https://rera.gov.in/
+- RERA - Ministry of Housing & Urban Affairs mohua.gov.in: https://mohua.gov.in/cms/real-estate-regulation-and-development-act-2016.php
 - Odoo Real Estate community modules apps.odoo.com: https://apps.odoo.com/apps/modules/category/Real-Estate
 - 219, Swanik Arcade, Opp. Vardan Tower, Pragati Nagar to KK Nagar Road, Naranpura, Ahmedabad, Gujarat 380013: https://www.google.com/maps/search/?api=1&query=Swanik+Arcade+Naranpura+Ahmedabad+380013
 - (no text): https://www.facebook.com/profile.php?id=61578562181866
@@ -511,7 +511,7 @@ Resources
       {
         "@type": "CreativeWork",
         "name": "RERA - Ministry of Housing & Urban Affairs",
-        "url": "https://rera.gov.in/"
+        "url": "https://mohua.gov.in/cms/real-estate-regulation-and-development-act-2016.php"
       },
       {
         "@type": "CreativeWork",

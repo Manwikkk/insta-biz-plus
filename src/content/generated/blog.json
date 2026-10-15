@@ -1837,8 +1837,8 @@
         "sources": [
           {
             "label": "RERA - Ministry of Housing & Urban Affairs",
-            "domain": "rera.gov.in",
-            "href": "https://rera.gov.in/"
+            "domain": "mohua.gov.in",
+            "href": "https://mohua.gov.in/cms/real-estate-regulation-and-development-act-2016.php"
           },
           {
             "label": "Odoo Real Estate community modules",
