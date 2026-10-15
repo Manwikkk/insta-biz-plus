@@ -5,6 +5,7 @@
 
 export const site = {
   name: 'Insta Biz Web',
+  url: 'https://www.instabizweb.com',
   shortName: 'IBW',
   legalName: 'GISSION AI TECHNOLOGIES LLP',
   founded: 2020,

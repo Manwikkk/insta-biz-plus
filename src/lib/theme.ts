@@ -49,3 +49,16 @@ export function setTheme(next: Theme, origin?: { x: number; y: number }) {
   root.style.setProperty('--vt-r', `${r}px`)
   doc.startViewTransition(apply)
 }
+
+/**
+ * Whether a dark section (one marked `data-nav-tone="dark"`) covers the screen at height `y`: the
+ * floating bar and the WhatsApp button take their dark glass over one. Read it after paint, when
+ * layout is already settled.
+ */
+export function darkAt(y: number) {
+  for (const el of document.querySelectorAll<HTMLElement>('[data-nav-tone="dark"]')) {
+    const r = el.getBoundingClientRect()
+    if (r.height > 0 && r.top <= y && r.bottom >= y) return true
+  }
+  return false
+}

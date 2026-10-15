@@ -7094,7 +7094,9 @@ html[data-header='hidden'] {
     transform: none;
   }
 
-  /* WhatsApp, on every page: a still, translucent glass button in the bottom right corner (WhatsAppButton) */
+  /* WhatsApp, on every page: a still, translucent glass button in the bottom right corner. It takes
+     dark glass over a dark section (WhatsAppButton marks data-over) and in the dark theme, and its
+     double edge, a hairline plus a soft shadow, keeps it legible over pictures and mid tones too. */
   .wa-fab {
     position: fixed;
     right: 16px;
@@ -7105,27 +7107,44 @@ html[data-header='hidden'] {
     height: 50px;
     place-items: center;
     border-radius: 999px;
-    color: #1fb855;
-    background: color-mix(in oklab, var(--raise) 62%, transparent);
+    color: #1aa64c;
+    background-color: color-mix(in oklab, var(--raise) 74%, transparent);
     backdrop-filter: blur(16px) saturate(170%);
     -webkit-backdrop-filter: blur(16px) saturate(170%);
     box-shadow:
-      inset 0 0 0 1px var(--line-2),
-      inset 0 1px 0 rgb(255 255 255 / 0.55),
-      0 10px 28px -14px rgb(11 15 21 / 0.45);
+      inset 0 0 0 1px rgb(11 15 21 / 0.13),
+      inset 0 1px 0 rgb(255 255 255 / 0.6),
+      0 10px 28px -12px rgb(11 15 21 / 0.42),
+      0 2px 6px -2px rgb(11 15 21 / 0.16);
     -webkit-tap-highlight-color: transparent;
+    transition:
+      background-color 0.3s var(--ease-out),
+      box-shadow 0.3s var(--ease-out),
+      color 0.3s var(--ease-out),
+      opacity 0.2s var(--ease-out);
   }
+  /* while a form is being filled in, it steps aside so it never sits on the form's own buttons */
+  body:has(:is(input, textarea, select):focus) .wa-fab {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .wa-fab[data-over='dark'],
   [data-theme='dark'] .wa-fab {
     color: #25d366;
-    background: color-mix(in oklab, var(--raise) 55%, transparent);
+    background-color: rgb(20 26 35 / 0.66);
     box-shadow:
-      inset 0 0 0 1px var(--line-2),
-      inset 0 1px 0 rgb(255 255 255 / 0.06),
-      0 12px 30px -14px rgb(0 0 0 / 0.8);
+      inset 0 0 0 1px rgb(255 255 255 / 0.2),
+      inset 0 1px 0 rgb(255 255 255 / 0.14),
+      0 0 0 1px rgb(37 211 102 / 0.3),
+      0 12px 30px -12px rgb(0 0 0 / 0.85);
   }
   @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
     .wa-fab {
-      background: var(--raise);
+      background-color: var(--raise);
+    }
+    .wa-fab[data-over='dark'],
+    [data-theme='dark'] .wa-fab {
+      background-color: #141a23;
     }
   }
   @media (min-width: 1024px) {

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import seoData from '@/content/generated/seo.json'
+import { site } from '@/content/site'
 
 /**
  * SEO foundation (read-only).
@@ -12,7 +13,7 @@ import seoData from '@/content/generated/seo.json'
  * OG or Twitter tags.
  */
 
-export const SITE_URL = 'https://www.instabizweb.com'
+export const SITE_URL = site.url
 
 type OgImage = { url: string; width?: number; height?: number; alt?: string; type?: string }
 export type SeoEntry = {

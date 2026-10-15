@@ -18,6 +18,7 @@ import { ProductScreens } from '@/components/products/ProductScreens'
 import { ServiceReel } from './ServiceReel'
 import { serviceIcon, socialIcon, solutionIcon } from '@/content/nav'
 import { cn } from '@/lib/cn'
+import { darkAt } from '@/lib/theme'
 
 type MenuId = 'services' | 'solutions' | 'products'
 
@@ -62,15 +63,7 @@ export function Header() {
     let queued = 0
     const probe = () => {
       queued = 0
-      let dark = false
-      for (const el of document.querySelectorAll<HTMLElement>('[data-nav-tone="dark"]')) {
-        const r = el.getBoundingClientRect()
-        if (r.height > 0 && r.top <= PROBE_Y && r.bottom >= PROBE_Y) {
-          dark = true
-          break
-        }
-      }
-      setOverDark(dark)
+      setOverDark(darkAt(PROBE_Y))
     }
     const onScroll = () => {
       const y = window.scrollY
