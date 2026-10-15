@@ -55,38 +55,46 @@ export default function ProductsPage() {
         ]}
       />
 
-      <SectionIndexNav label="Products" items={INDEX} />
+      {/* the index stays docked only while the products (and their FAQs) it lists are on screen */}
+      <div>
+        <SectionIndexNav label="Products" items={INDEX} />
 
-      <section className="rails section border-b border-line scroll-mt-24" id="stack">
-        <div className="shell">
-          <SectionHead eyebrow={pp.flow.eyebrow} title={pp.flow.title} intro={pp.flow.intro} align="split" />
-          <div className="mt-[clamp(32px,6vh,64px)]">
-            <StackFlow />
-          </div>
-        </div>
-      </section>
-
-      {products.map((p, i) => (
-        <ProductSection key={p.id} p={p} i={i} />
-      ))}
-
-      <section className="rails section border-b border-line scroll-mt-24" id="faq">
-        <div className="shell grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <SectionHead eyebrow="FAQs" title="Questions, answered." intro="Everything teams ask before they switch on Scout, Ping, Echo, Dialer or ONE." />
-            <div className="mt-10 rounded-[16px] border border-line bg-raise p-6">
-              <p className="t-h4">See them on your own data</p>
-              <p className="t-small mt-2 text-ink-2">Book a free walkthrough and we’ll set a product up around your workflow.</p>
-              <KeyButton href="#contact-form" size="sm" className="mt-5">
-                Book a demo
-              </KeyButton>
+        <section className="rails section border-b border-line scroll-mt-24" id="stack">
+          <div className="shell">
+            <SectionHead eyebrow={pp.flow.eyebrow} title={pp.flow.title} intro={pp.flow.intro} align="split" />
+            <div className="mt-[clamp(32px,6vh,64px)]">
+              <StackFlow />
             </div>
           </div>
-          <div className="lg:col-span-7 lg:col-start-6">
-            <ProductFaq />
+        </section>
+
+        {products.map((p, i) => (
+          <ProductSection key={p.id} p={p} i={i} />
+        ))}
+
+        <section className="rails section border-b border-line scroll-mt-24" id="faq">
+          <div className="shell grid gap-12 lg:grid-cols-12">
+            <div className="lg:col-span-4">
+              <SectionHead
+                eyebrow="FAQs"
+                title="Questions, answered."
+                intro="Everything teams ask before they switch on Scout, Ping, Echo, Dialer or ONE."
+              />
+              <div className="mt-10 rounded-[16px] border border-line bg-raise p-6">
+                <p className="t-h4">See them on your own data</p>
+                <p className="t-small mt-2 text-ink-2">Book a free walkthrough and we’ll set a product up around your workflow.</p>
+                <KeyButton href="#contact-form" size="sm" className="mt-5">
+                  Book a demo
+                </KeyButton>
+              </div>
+            </div>
+            {/* min-w-0: the row of product tabs scrolls sideways rather than widening the page */}
+            <div className="min-w-0 lg:col-span-7 lg:col-start-6">
+              <ProductFaq />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <ConsultCTA />
     </>

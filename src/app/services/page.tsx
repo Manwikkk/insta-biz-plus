@@ -44,17 +44,20 @@ export default function ServicesPage() {
         wide
       />
 
-      <SectionIndexNav id="services-grid" label="Services" items={services.map((s) => ({ id: s.id, n: s.n, label: s.label }))} />
+      {/* the index stays docked only while the services it lists are on screen */}
+      <div>
+        <SectionIndexNav id="services-grid" label="Services" items={services.map((s) => ({ id: s.id, n: s.n, label: s.label }))} />
 
-      <div className="rails border-b border-line">
-        <div className="shell py-16 lg:py-20">
-          <SectionHead eyebrow={servicesPage.gridEyebrow} title={servicesPage.gridTitle} intro={servicesPage.gridIntro} align="split" />
+        <div className="rails border-b border-line">
+          <div className="shell py-16 lg:py-20">
+            <SectionHead eyebrow={servicesPage.gridEyebrow} title={servicesPage.gridTitle} intro={servicesPage.gridIntro} align="split" />
+          </div>
         </div>
-      </div>
 
-      {services.map((s, i) => (
-        <ServiceSpec key={s.id} s={s} flip={i % 2 === 1} />
-      ))}
+        {services.map((s, i) => (
+          <ServiceSpec key={s.id} s={s} flip={i % 2 === 1} />
+        ))}
+      </div>
 
       {/* AI agents + Ahmedabad pages: deeper reads for specific needs */}
       <section className="rails border-b border-line">

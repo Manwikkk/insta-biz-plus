@@ -39,7 +39,8 @@ export function ModuleBoard({ modules, product }: { modules: string[]; product: 
                 aria-pressed={active}
                 onClick={() => toggle(m)}
                 className={cn(
-                  'group flex h-full w-full items-center gap-3 px-4 py-4 text-left transition-colors duration-300',
+                  // narrow phones: the switch sits above its name, so the longest name fits a half-width cell
+                  'group flex h-full w-full items-center gap-3 px-4 py-4 text-left transition-colors duration-300 max-[419px]:flex-col max-[419px]:items-start max-[419px]:gap-2.5 max-[419px]:px-3',
                   active ? 'bg-ink text-bg' : 'hover:bg-bg',
                 )}
               >
@@ -56,7 +57,7 @@ export function ModuleBoard({ modules, product }: { modules: string[]; product: 
                     )}
                   />
                 </span>
-                <span className="text-[0.92rem] font-medium leading-tight">{m}</span>
+                <span className="min-w-0 text-[0.92rem] font-medium leading-tight [overflow-wrap:break-word]">{m}</span>
               </button>
             </li>
           )
