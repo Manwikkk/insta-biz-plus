@@ -27,12 +27,19 @@ export function RevealObserver() {
       },
       { rootMargin: '0px 0px -8% 0px', threshold: 0.12 },
     )
-    const scan = () => document.querySelectorAll('[data-reveal]:not(.is-in)').forEach((el) => io.observe(el))
+    let queued = 0
+    const scan = () => {
+      queued = 0
+      document.querySelectorAll('[data-reveal]:not(.is-in)').forEach((el) => io.observe(el))
+    }
     scan()
-    // Content streamed or toggled in later (filters, tabs) gets observed too.
-    const mo = new MutationObserver(() => scan())
+    // Content streamed or toggled in later (filters, tabs) gets observed too, once a frame at most.
+    const mo = new MutationObserver(() => {
+      if (!queued) queued = requestAnimationFrame(scan)
+    })
     mo.observe(document.body, { childList: true, subtree: true })
     return () => {
+      cancelAnimationFrame(queued)
       io.disconnect()
       mo.disconnect()
     }

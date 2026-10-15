@@ -1,9 +1,9 @@
 'use client'
 
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { Environment, Lightformer, Line } from '@react-three/drei'
+import { Environment, Lightformer, Line, PerformanceMonitor } from '@react-three/drei'
 import * as THREE from 'three'
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { MARK_PIECES, HEX, centroid, type MarkPiece } from '@/components/brand/markGeometry'
 import { engine } from './engineState'
 import { useTheme, type Theme } from '@/lib/theme'
@@ -463,13 +463,15 @@ function EngineCallouts() {
 export default function EngineCanvas({ active = true, callouts = false, theme: ground }: { active?: boolean; callouts?: boolean; theme?: Theme }) {
   const page = useTheme()
   const theme = ground ?? page
+  // a device that cannot keep the engine at full frame rate draws it at 1x rather than the screen's density
+  const [sharp, setSharp] = useState(true)
   return (
     <>
       <Canvas
         className="!absolute inset-0"
         style={{ pointerEvents: 'none' }}
         frameloop={active ? 'always' : 'never'}
-        dpr={[1, 1.75]}
+        dpr={[1, sharp ? 1.75 : 1]}
         gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
         camera={{ fov: 22, position: [0, 0, 10], near: 0.1, far: 60 }}
         onCreated={({ gl }) => {
@@ -479,6 +481,7 @@ export default function EngineCanvas({ active = true, callouts = false, theme: g
         }}
         aria-hidden
       >
+        <PerformanceMonitor onDecline={() => setSharp(false)} onIncline={() => setSharp(true)} flipflops={3} onFallback={() => setSharp(false)} />
         <Lights theme={theme} />
         <Engine theme={theme} />
       </Canvas>

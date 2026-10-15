@@ -57,15 +57,11 @@ export function Header() {
   const closeMobile = useCallback(() => setMobileOpen(false), [])
 
   useEffect(() => {
-    const onScroll = () => {
-      const y = window.scrollY
-      setScrolled(y > 24)
-      const dy = y - lastY.current
-      if (Math.abs(dy) > 6) {
-        setHidden(dy > 0 && y > 480)
-        lastY.current = y
-      }
-      // Adaptive glass: over a dark section the bar takes the dark palette.
+    // Adaptive glass: over a dark section the bar takes the dark palette. Read once a frame, just
+    // after it has been painted, when layout is already settled, so scrolling never waits on it.
+    let queued = 0
+    const probe = () => {
+      queued = 0
       let dark = false
       for (const el of document.querySelectorAll<HTMLElement>('[data-nav-tone="dark"]')) {
         const r = el.getBoundingClientRect()
@@ -76,6 +72,16 @@ export function Header() {
       }
       setOverDark(dark)
     }
+    const onScroll = () => {
+      const y = window.scrollY
+      setScrolled(y > 24)
+      const dy = y - lastY.current
+      if (Math.abs(dy) > 6) {
+        setHidden(dy > 0 && y > 480)
+        lastY.current = y
+      }
+      if (!queued) queued = requestAnimationFrame(() => window.setTimeout(probe, 0))
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     window.addEventListener('resize', onScroll)
@@ -85,6 +91,7 @@ export function Header() {
       window.removeEventListener('scroll', onScroll)
       window.removeEventListener('resize', onScroll)
       window.clearTimeout(t)
+      cancelAnimationFrame(queued)
     }
   }, [pathname])
 
