@@ -25,8 +25,9 @@ function toHash(lenis: Lenis | null, hash: string, immediate: boolean) {
 }
 
 /**
- * Lenis drives the scroll; GSAP's ticker drives Lenis so ScrollTrigger scrubs stay
- * frame-locked with the smoothed position. On touch devices it drives the touch scroll too, slowed.
+ * Lenis smooths the wheel; GSAP's ticker drives Lenis so ScrollTrigger scrubs stay
+ * frame-locked with the smoothed position. Touch is left to the browser's own scrolling,
+ * which runs off the main thread and stays smooth on any phone.
  *
  * Links to a section (`/products#ping`, `#contact-form`) are taken here rather than left to
  * the browser: on this page they glide there; from another page they land on it, and land
@@ -39,15 +40,12 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
-    // A heavier glide: lower lerp and a softer wheel step, so scroll-driven scenes unfold at a calmer pace.
-    // Phones and tablets: Lenis takes the touch scroll as well, 10% slower than the finger, so every
-    // scroll-driven scene there plays 10% slower; rows that scroll sideways keep their own swipe.
-    const touch = matchMedia('(pointer: coarse)').matches
+    // A quick, light glide on the wheel. Touch stays native (syncTouch off): the finger moves the page
+    // 1:1 with the platform's own momentum, and the compositor keeps it smooth on low-end phones.
     const instance = new Lenis({
-      lerp: 0.07,
-      wheelMultiplier: 0.8,
-      syncTouch: touch,
-      touchMultiplier: touch ? 0.9 : 1,
+      lerp: 0.1,
+      wheelMultiplier: 1.15,
+      syncTouch: false,
       allowNestedScroll: true,
       smoothWheel: true,
       stopInertiaOnNavigate: true,
