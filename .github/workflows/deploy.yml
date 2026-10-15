@@ -12,8 +12,9 @@
 #   secrets    DEPLOY_SSH_KEY    private key whose public half is in the user's ~/.ssh/authorized_keys
 #              DEPLOY_KNOWN_HOSTS  optional, output of `ssh-keyscan <host>` (pins the server's key)
 # On the server: Node 20.9+ and PM2 (`npm i -g pm2`, `pm2 startup`); runtime settings such as
-# CONTACT_WEBHOOK_URL go in $DEPLOY_PATH/shared/.env. If the site already runs under PM2 with the
-# same name but another setup, run `pm2 delete <name>` once before the first deploy.
+# CONTACT_WEBHOOK_URL go in $DEPLOY_PATH/shared/.env. The site listens on 127.0.0.1:$APP_PORT, so
+# nginx proxies to `http://127.0.0.1:<APP_PORT>`. If the site already runs under PM2 with the same
+# name but another setup, run `pm2 delete <name>` once before the first deploy.
 name: CI / Deploy
 
 on:
