@@ -7169,17 +7169,18 @@ html[data-header='hidden'] {
     width: 26px;
     height: 26px;
   }
-  /* the label beside it, for a mouse or keyboard: what it does and how soon the team replies */
+  /* the label beside it, for a mouse or keyboard: what it does */
   .wa-tip {
     position: absolute;
     top: 50%;
     right: calc(100% + 12px);
-    display: grid;
-    gap: 3px;
-    padding: 10px 16px 10px 14px;
-    border-radius: 14px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    color: var(--ink);
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     white-space: nowrap;
-    text-align: left;
     background-color: color-mix(in oklab, var(--raise) 92%, transparent);
     backdrop-filter: blur(16px) saturate(170%);
     -webkit-backdrop-filter: blur(16px) saturate(170%);
@@ -7194,40 +7195,13 @@ html[data-header='hidden'] {
       opacity 0.18s var(--ease-out),
       visibility 0.18s;
   }
-  .wa-tip-title {
-    color: var(--ink);
-    font-size: 0.88rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-  }
-  .wa-tip-note {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: var(--ink-3);
-    font-size: 0.74rem;
-  }
-  /* a steady green dot: someone is there */
-  .wa-tip-note::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    flex: none;
-    border-radius: 999px;
-    background: #25d366;
-  }
   .wa-fab[data-over='dark'] .wa-tip,
   [data-theme='dark'] .wa-tip {
+    color: var(--stage-ink);
     background-color: rgb(20 26 35 / 0.92);
     box-shadow:
       inset 0 0 0 1px rgb(255 255 255 / 0.14),
       0 14px 30px -14px rgb(0 0 0 / 0.85);
-  }
-  .wa-fab[data-over='dark'] .wa-tip-title {
-    color: var(--stage-ink);
-  }
-  .wa-fab[data-over='dark'] .wa-tip-note {
-    color: var(--stage-ink-2);
   }
   @media (hover: hover) and (pointer: fine) {
     .wa-fab:hover .wa-tip {
