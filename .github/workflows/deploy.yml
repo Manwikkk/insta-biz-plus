@@ -1,0 +1,96 @@
+# Every push and pull request is built (the build also type-checks). A push to the repository's
+# default branch is then shipped to the server: the self-contained release is copied over SSH,
+# switched in, reloaded under PM2 and checked; a release that does not answer is rolled back.
+#
+# One-time setup (repository Settings → Secrets and variables → Actions):
+#   variables  DEPLOY_HOST       server address (deploys stay off until this is set)
+#              DEPLOY_USER       SSH user that runs the site
+#              DEPLOY_PATH       where releases live, e.g. /var/www/instabizweb
+#              DEPLOY_SSH_PORT   optional, default 22
+#              APP_NAME          optional PM2 process name, default instabizweb
+#              APP_PORT          optional port nginx proxies to, default 3000
+#   secrets    DEPLOY_SSH_KEY    private key whose public half is in the user's ~/.ssh/authorized_keys
+#              DEPLOY_KNOWN_HOSTS  optional, output of `ssh-keyscan <host>` (pins the server's key)
+# On the server: Node 20.9+ and PM2 (`npm i -g pm2`, `pm2 startup`); runtime settings such as
+# CONTACT_WEBHOOK_URL go in $DEPLOY_PATH/shared/.env. If the site already runs under PM2 with the
+# same name but another setup, run `pm2 delete <name>` once before the first deploy.
+name: CI / Deploy
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      # pictures made ahead of time (scripts/optimize-images.mjs) carry over between runs
+      - uses: actions/cache@v4
+        with:
+          path: public/_img
+          key: img-${{ hashFiles('public/work/**', 'public/products/**', 'public/clients/**', 'public/brand/**', 'src/lib/imageWidths.json', 'scripts/optimize-images.mjs') }}
+          restore-keys: img-
+      - run: npm ci
+      - run: npm run build
+      - name: Package the release
+        if: github.event_name != 'pull_request'
+        run: |
+          cp -r public .next/standalone/
+          cp -r .next/static .next/standalone/.next/
+          cp deploy/ecosystem.config.cjs .next/standalone/
+          tar -czf release.tgz -C .next/standalone .
+      - uses: actions/upload-artifact@v4
+        if: github.event_name != 'pull_request'
+        with:
+          name: release
+          path: release.tgz
+          retention-days: 7
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch && vars.DEPLOY_HOST != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: production
+      url: https://www.instabizweb.com
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: deploy
+      - uses: actions/download-artifact@v4
+        with:
+          name: release
+      - name: Ship and switch
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+          HOST: ${{ vars.DEPLOY_HOST }}
+          USER: ${{ vars.DEPLOY_USER }}
+          PORT: ${{ vars.DEPLOY_SSH_PORT || '22' }}
+          DIR: ${{ vars.DEPLOY_PATH }}
+          NAME: ${{ vars.APP_NAME || 'instabizweb' }}
+          APP_PORT: ${{ vars.APP_PORT || '3000' }}
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy && chmod 600 ~/.ssh/deploy
+          if [ -n "$KNOWN_HOSTS" ]; then printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts; else ssh-keyscan -p "$PORT" "$HOST" > ~/.ssh/known_hosts; fi
+          SSH="ssh -p $PORT -i $HOME/.ssh/deploy -o BatchMode=yes"
+          ID="$(date -u +%Y%m%d%H%M%S)-${GITHUB_SHA::7}"
+          scp -P "$PORT" -i ~/.ssh/deploy -o BatchMode=yes release.tgz "$USER@$HOST:/tmp/instabizweb-$ID.tgz"
+          $SSH "$USER@$HOST" bash -s -- "$DIR" "$ID" "$NAME" "$APP_PORT" < deploy/release.sh

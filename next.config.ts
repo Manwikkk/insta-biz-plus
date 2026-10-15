@@ -4,6 +4,10 @@ import widths from './src/lib/imageWidths.json'
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // production runs the self-contained server in .next/standalone (deploy/release.sh); pictures are made
+  // ahead of time, so the server never resizes one and needs no image library
+  output: 'standalone',
+  outputFileTracingExcludes: { '*': ['node_modules/sharp/**', 'node_modules/@img/**'] },
   images: {
     // Logos, product and project screens live in public/ and are made ahead of time at these widths
     // (scripts/optimize-images.mjs) rather than on request; blog covers come from Unsplash's CDN.
