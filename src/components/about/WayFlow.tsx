@@ -7,6 +7,7 @@ import { useGSAP } from '@gsap/react'
 import { KeyButton } from '@/components/ui/KeyButton'
 import { Icon } from '@/components/ui/Icon'
 import { useLenis } from '@/components/motion/SmoothScroll'
+import { STEPPED, scrollSteps } from '@/components/motion/scrollSteps'
 import { about } from '@/content/about'
 import { process } from '@/content/home'
 import { cn } from '@/lib/cn'
@@ -137,6 +138,8 @@ export function WayFlow() {
   const steps = process.steps
   const root = useRef<HTMLElement>(null)
   const st = useRef<ScrollTrigger | null>(null)
+  // where in the run (0…1) the rail's step k is in hand
+  const railAt = useRef((k: number) => k / (steps.length - 1))
   const lenis = useLenis()
 
   useGSAP(
@@ -159,31 +162,45 @@ export function WayFlow() {
         rail.style.setProperty('--p', String(Math.max(0, i) / (panels.length - 1)))
       }
       const mm = gsap.matchMedia()
-      mm.add('(prefers-reduced-motion: no-preference)', () => {
+      mm.add({ motion: '(prefers-reduced-motion: no-preference)', stepped: STEPPED }, (ctx) => {
+        const { motion, stepped } = ctx.conditions as { motion: boolean; stepped: boolean }
+        if (!motion) return
         section.dataset.driven = ''
         const distance = () => Math.max(0, track.scrollWidth - section.clientWidth)
         let current = -1
+        // anticipatePin: with native touch scrolling the pin is applied a moment early, so it never jumps
+        const pin = { trigger: section, start: 'top top', end: () => `+=${distance()}`, pin: true, anticipatePin: 1 }
+        const lightAt = (i: number) => i !== current && light((current = i))
         const tween = gsap.to(track, {
           x: () => -distance(),
           ease: 'none',
-          // read on the tween's own frames, so the card in hand follows the track as the scrub settles:
-          // the steps take equal shares of the way across, the first in hand at the start, the last at the end
-          onUpdate() {
-            const i = Math.round(this.progress() * (panels.length - 1))
-            if (i !== current) light((current = i))
-          },
-          scrollTrigger: {
-            trigger: section,
-            start: 'top top',
-            end: () => `+=${distance()}`,
-            pin: true,
-            scrub: 0.6,
-            invalidateOnRefresh: true,
-          },
+          duration: 1,
+          // phones and touch screens: one card at a time, each sliding whole into hand (scrollSteps, below)
+          ...(stepped
+            ? {}
+            : {
+                // read on the tween's own frames, so the card in hand follows the track as the scrub settles:
+                // the steps take equal shares of the way across, the first in hand at the start, the last at the end
+                onUpdate() {
+                  lightAt(Math.round(this.progress() * (panels.length - 1)))
+                },
+                scrollTrigger: { ...pin, scrub: 0.6, invalidateOnRefresh: true },
+              }),
         })
-        st.current = tween.scrollTrigger ?? null
-        light((current = 0))
+        // each card comes to rest where the first one started, then the closing card has the screen
+        const n = panels.length
+        const aligned = () => {
+          const d = distance()
+          return [...panels.map((p, i) => ({ at: i / n, time: d ? Math.min(1, (p.offsetLeft - panels[0].offsetLeft) / d) : 0 })), { at: 1, time: 1 }]
+        }
+        const stepper = stepped ? scrollSteps(tween, aligned, pin, { speed: 4, invalidate: true, onStep: (i) => lightAt(Math.min(i, n - 1)) }) : null
+        if (stepper) railAt.current = (k) => k / n
+        st.current = stepper ? stepper.st : (tween.scrollTrigger ?? null)
+        // (the steps may already have lit the card the page opened on)
+        if (current < 0) light((current = 0))
         return () => {
+          stepper?.kill()
+          railAt.current = (k) => k / (n - 1)
           st.current = null
           delete section.dataset.driven
           light(-1)
@@ -211,7 +228,7 @@ export function WayFlow() {
   const go = (i: number) => {
     const t = st.current
     if (!t) return
-    const y = t.start + (t.end - t.start) * (i / (process.steps.length - 1))
+    const y = t.start + (t.end - t.start) * railAt.current(i)
     if (lenis) lenis.scrollTo(y, { duration: 1.1 })
     else window.scrollTo({ top: y, behavior: 'smooth' })
   }

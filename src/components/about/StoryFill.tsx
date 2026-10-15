@@ -8,6 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { Icon } from '@/components/ui/Icon'
 import { useLenis } from '@/components/motion/SmoothScroll'
+import { STEPPED } from '@/components/motion/scrollSteps'
 import { about } from '@/content/about'
 
 gsap.registerPlugin(SplitText, ScrollTrigger, useGSAP)
@@ -43,11 +44,12 @@ export function StoryFill() {
       const text = root.current?.querySelector<HTMLElement>('[data-fill]')
       if (!text || document.documentElement.classList.contains('reveal-off')) return
       const split = SplitText.create(text, { type: 'words', wordsClass: 'sf-word' })
-      gsap.fromTo(
-        split.words,
-        { opacity: 0.16 },
-        { opacity: 1, ease: 'none', stagger: 0.1, scrollTrigger: { trigger: text, start: 'top 78%', end: 'bottom 52%', scrub: 0.4 } },
-      )
+      // phones and touch screens: the words fill in one after another on their own clock once the
+      // statement is in view, rather than each waiting on the finger
+      const fill = matchMedia(STEPPED).matches
+        ? { duration: 0.5, stagger: 0.035, scrollTrigger: { trigger: text, start: 'top 75%', toggleActions: 'play none none reverse' } }
+        : { stagger: 0.1, scrollTrigger: { trigger: text, start: 'top 78%', end: 'bottom 52%', scrub: 0.4 } }
+      gsap.fromTo(split.words, { opacity: 0.16 }, { opacity: 1, ease: 'none', ...fill })
       return () => split.revert()
     },
     { scope: root },

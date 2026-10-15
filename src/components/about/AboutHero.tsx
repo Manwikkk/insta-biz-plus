@@ -8,6 +8,7 @@ import { useGSAP } from '@gsap/react'
 import { Breadcrumbs } from '@/components/sections/PageHero'
 import { KeyButton } from '@/components/ui/KeyButton'
 import { CharRise } from '@/components/motion/CharRise'
+import { STEPPED, scrollSteps, stopsAt } from '@/components/motion/scrollSteps'
 import { HEX, MARK_PIECES, centroid, svgPath } from '@/components/brand/markGeometry'
 import { engine } from '@/components/three/engineState'
 import { useMedia } from '@/lib/useMedia'
@@ -130,7 +131,9 @@ export function AboutHero() {
       // the engine's state is shared with the homepage: keep it as found, put it back on the way out
       const saved = { ...engine, pointer: { ...engine.pointer } }
       const mm = gsap.matchMedia()
-      mm.add('(prefers-reduced-motion: no-preference)', () => {
+      mm.add({ motion: '(prefers-reduced-motion: no-preference)', stepped: STEPPED }, (ctx) => {
+        const { motion, stepped } = ctx.conditions as { motion: boolean; stepped: boolean }
+        if (!motion) return
         section.dataset.driven = ''
         const q = gsap.utils.selector(section)
         const gap = q('[data-gap]')[0] as HTMLElement
@@ -229,26 +232,36 @@ export function AboutHero() {
           rest = window.setTimeout(() => delete section.dataset.moving, 450)
         }
         const caret = q('.ah-gap .ah-caret')[0] as HTMLElement
-        ScrollTrigger.create({
+        const range = {
           trigger: section,
           start: 'top top',
           end: 'bottom bottom',
-          animation: tl,
-          scrub: 0.6,
-          invalidateOnRefresh: true,
           // the window's caret matches the line's, whatever the type size
           onRefresh: () => win.style.setProperty('--cw', `${caret.offsetWidth}px`),
-          // the bar takes the dark palette once the window has the top of the screen
-          onUpdate: (self) => {
-            moving()
-            if (self.progress > 0.55) stage.dataset.navTone = 'dark'
-            else delete stage.dataset.navTone
-          },
-        })
+        }
+        // the bar takes the dark palette once the window has the top of the screen
+        const tone = (dark: boolean) => (dark ? (stage.dataset.navTone = 'dark') : delete stage.dataset.navTone)
+        // Phones and touch screens: the caret opens into its window in one step, the window fills the
+        // screen in the next, each played whole (scrollSteps) rather than following the finger.
+        const steps = stepped
+          ? scrollSteps(tl, stopsAt(tl, [0, 0.3, tl.duration()]), { ...range, onUpdate: moving }, { speed: 2, ease: 'power1.inOut', invalidate: true, onStep: (i) => tone(i === 2) })
+          : null
+        if (!steps)
+          ScrollTrigger.create({
+            ...range,
+            animation: tl,
+            scrub: 0.6,
+            invalidateOnRefresh: true,
+            onUpdate: (self) => {
+              moving()
+              tone(self.progress > 0.55)
+            },
+          })
         // the hero just took its scroll length: re-measure everything after it
         ScrollTrigger.refresh()
 
         return () => {
+          steps?.kill()
           window.clearTimeout(rest)
           delete section.dataset.driven
           delete section.dataset.moving

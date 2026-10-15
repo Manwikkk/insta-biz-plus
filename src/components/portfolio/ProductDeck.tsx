@@ -11,6 +11,7 @@ import { ProductScreens } from '@/components/products/ProductScreens'
 import { KeyButton } from '@/components/ui/KeyButton'
 import { Icon } from '@/components/ui/Icon'
 import { useLenis } from '@/components/motion/SmoothScroll'
+import { STEPPED, scrollSteps } from '@/components/motion/scrollSteps'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
@@ -140,7 +141,9 @@ export function ProductDeck() {
     () => {
       const section = root.current!
       const mm = gsap.matchMedia()
-      mm.add('(prefers-reduced-motion: no-preference)', () => {
+      mm.add({ motion: '(prefers-reduced-motion: no-preference)', stepped: STEPPED }, (ctx) => {
+        const { motion, stepped } = ctx.conditions as { motion: boolean; stepped: boolean }
+        if (!motion) return
         // set before the trigger measures: the frame pins and the scroll runs the timeline
         section.dataset.driven = ''
         section.style.height = `${100 + LENGTH * UNIT}vh`
@@ -155,8 +158,12 @@ export function ProductDeck() {
 
         // Arrivals are fromTo, so a refresh (resize) re-reads their start rather than wherever the
         // scroll left them; departures pick up from the arrival before them, in timeline order.
+        // Played in steps (phones, touch screens) the rests are the scroll's, not the timeline's.
+        const hold = stepped ? 0 : HOLD
         const tl = gsap.timeline({ defaults: { ease: 'none' } })
-        tl.to({}, { duration: HOLD })
+        tl.to({}, { duration: hold })
+        // where each product is fully in place on the timeline
+        const placed = [0]
         for (let k = 1; k < N; k++) {
           const at = tl.duration()
           tl.fromTo(
@@ -172,7 +179,27 @@ export function ProductDeck() {
             .to(metas[k - 1], { autoAlpha: 0, y: -14, duration: 0.32 }, at + 0.06)
             .fromTo(metas[k], { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 0.4 }, at + 0.62)
             .to(frame.current, { backgroundColor: TONE[products[k].id].ground, duration: 1 }, at)
-            .to({}, { duration: HOLD }, at + 1)
+            .to({}, { duration: hold }, at + 1)
+          placed.push(tl.duration())
+        }
+
+        // Phones and touch screens: each product arrives whole, in its own time, once the scroll is a
+        // third of the way to it; the scroll itself is never moved for you.
+        if (stepped) {
+          const steps = scrollSteps(
+            tl,
+            placed.map((time, k) => ({ at: restAt(k) / LENGTH, time })),
+            { trigger: section, start: 'top top', end: 'bottom bottom' },
+            { speed: 0.9, invalidate: true, ease: 'none', onStep: setActive },
+          )
+          ScrollTrigger.refresh()
+          return () => {
+            steps.kill()
+            delete section.dataset.driven
+            section.style.height = ''
+            setDriven(false)
+            setActive(0)
+          }
         }
 
         // Left mid change-over, the deck glides on to whichever product is nearer, so every

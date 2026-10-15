@@ -7,6 +7,7 @@ import { useGSAP } from '@gsap/react'
 import { problem } from '@/content/home'
 import { cn } from '@/lib/cn'
 import { hexClip, hexClipAt } from '@/lib/hex'
+import { scrollSteps, stopsAt } from '@/components/motion/scrollSteps'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
@@ -51,8 +52,13 @@ export function Problem() {
       const mm = gsap.matchMedia()
       const ground = q('[data-ground]')[0] as HTMLElement
       const paper = q('[data-paper]')[0] as HTMLElement
+      // Played in steps, the paper is back as soon as its step plays: the bar takes the light palette with it.
+      const tone = q('[data-tone]')[0] as HTMLElement
+      const toneFor = (last: number) => (i: number) => (tone.dataset.navTone = i === last ? 'light' : 'dark')
 
-      mm.add('(min-width: 1024px) and (prefers-reduced-motion: no-preference)', () => {
+      mm.add({ desk: '(min-width: 1024px) and (prefers-reduced-motion: no-preference)', touch: '(pointer: coarse)' }, (ctx) => {
+        const { desk, touch } = ctx.conditions as { desk: boolean; touch: boolean }
+        if (!desk) return
         gsap.set(ground, { '--r': '0vmax' })
         gsap.set(paper, { '--r': '0vmax' })
         // Entry: the dark stage opens from the engine's silhouette.
@@ -61,10 +67,9 @@ export function Problem() {
           ease: 'power2.in',
           scrollTrigger: { trigger: el, start: 'top 90%', end: 'top 20%', scrub: true },
         })
-        const tl = gsap.timeline({
-          defaults: { ease: 'none' },
-          scrollTrigger: { trigger: el, start: 'top 35%', end: 'bottom bottom', scrub: 0.6 },
-        })
+        // The copy follows the scroll; on a touch screen it plays in whole steps instead (scrollSteps).
+        const range = { trigger: el, start: 'top 35%', end: 'bottom bottom' }
+        const tl = gsap.timeline({ defaults: { ease: 'none' }, ...(touch ? {} : { scrollTrigger: { ...range, scrub: 0.6 } }) })
         // Every entrance states both ends (fromTo), so rebuilding the timeline — after a resize or a
         // hot reload — always lands on the same frame, whatever state the elements were left in.
         tl.fromTo(q('[data-p="eyebrow"]'), { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.06 }, 0.02)
@@ -98,11 +103,14 @@ export function Problem() {
           .to(q('[data-p="turn"], [data-p="resolve"]'), { autoAlpha: 0, y: -30, duration: 0.07 }, 0.86)
           // Exit: paper opens back from the assembled engine.
           .to(paper, { '--r': '120vmax', duration: 0.12, ease: 'power2.in' }, 0.88)
+        // at rest: the headline and its symptoms · the turn · the paper back
+        if (touch) return scrollSteps(tl, stopsAt(tl, [0, 0.54, 0.82, 1]), range, { onStep: toneFor(3) }).kill
       })
 
       // Phones and tablets: the same story in one column, set high on the screen above the engine
       // that has floated down beneath it. The headline lands, then the symptoms arrive three or
-      // four at a time instead of all at once, then the turn.
+      // four at a time instead of all at once, then the turn. Each of those plays whole, in its own
+      // time, as the scroll reaches it (scrollSteps), so nothing is ever left half on screen.
       mm.add('(max-width: 1023px) and (prefers-reduced-motion: no-preference)', () => {
         // The stage opens round the engine as it floats down (EngineStage's curtain); this chapter's
         // own ground takes over only once it has the whole screen, so no straight edge rises first.
@@ -116,10 +124,7 @@ export function Problem() {
           onLeaveBack: () => gsap.set(ground, { '--r': '0vmax' }),
         })
         const frags = q('[data-frag]')
-        const tl = gsap.timeline({
-          defaults: { ease: 'none' },
-          scrollTrigger: { trigger: el, start: 'top 30%', end: 'bottom bottom', scrub: 0.6, invalidateOnRefresh: true },
-        })
+        const tl = gsap.timeline({ defaults: { ease: 'none' } })
         tl.fromTo(q('[data-p="eyebrow"]'), { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.05 }, 0.02)
           .fromTo(q('[data-p="title"] .ln'), { yPercent: 110, autoAlpha: 0 }, { yPercent: 0, autoAlpha: 1, stagger: 0.03, duration: 0.1 }, 0.04)
           .fromTo(q('[data-p="body"]'), { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.06 }, 0.12)
@@ -142,9 +147,14 @@ export function Problem() {
           .fromTo(q('[data-p="resolve"]'), { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.07 }, 0.74)
           .to(q('[data-p="turn"], [data-p="resolve"]'), { autoAlpha: 0, y: -30, duration: 0.06 }, 0.86)
           .to(paper, { '--r': '120vmax', duration: 0.12, ease: 'power2.in' }, 0.88)
+        // at rest: the headline · each group of symptoms · the turn · the paper back
+        return scrollSteps(tl, stopsAt(tl, [0, 0.2, 0.345, 0.445, 0.558, 0.82, 1]), { trigger: el, start: 'top 30%', end: 'bottom bottom' }, { onStep: toneFor(6) }).kill
       })
 
-      return () => mm.revert()
+      return () => {
+        mm.revert()
+        tone.dataset.navTone = 'dark'
+      }
     },
     { scope: root },
   )
@@ -154,7 +164,7 @@ export function Problem() {
     <section ref={root} id="problem" data-stage="problem" className="relative h-[480vh] motion-reduce:h-auto">
       {/* Where this chapter is dark under the navbar: until the returning paper has covered the top
           of the screen (about 1.14 screens before the end), or all of it for reduced motion. */}
-      <div aria-hidden data-nav-tone="dark" className="pointer-events-none absolute inset-x-0 top-0 bottom-[114vh] motion-reduce:bottom-0" />
+      <div aria-hidden data-tone data-nav-tone="dark" className="pointer-events-none absolute inset-x-0 top-0 bottom-[114vh] motion-reduce:bottom-0" />
       {/* reduced-motion ground */}
       <div aria-hidden className="absolute inset-0 z-0 hidden bg-stage motion-reduce:block" />
 

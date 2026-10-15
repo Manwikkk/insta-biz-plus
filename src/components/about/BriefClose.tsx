@@ -8,6 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { Icon } from '@/components/ui/Icon'
 import { products, screensOf } from '@/content/products'
+import { STEPPED } from '@/components/motion/scrollSteps'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
@@ -25,11 +26,17 @@ export function BriefClose() {
   useGSAP(
     () => {
       const mm = gsap.matchMedia()
-      mm.add('(min-width: 768px) and (prefers-reduced-motion: no-preference)', () => {
-        const st = { trigger: root.current, start: 'top 85%', end: 'center 55%', scrub: 0.6 }
-        gsap.fromTo('[data-side="l"]', { xPercent: -45, opacity: 0 }, { xPercent: 0, opacity: 1, ease: 'power2.out', scrollTrigger: st })
-        gsap.fromTo('[data-side="r"]', { xPercent: 45, opacity: 0 }, { xPercent: 0, opacity: 1, ease: 'power2.out', scrollTrigger: { ...st } })
-        gsap.fromTo('[data-reel]', { scale: 0.55, rotate: -4 }, { scale: 1, rotate: 0, ease: 'power2.out', scrollTrigger: { ...st } })
+      mm.add({ wide: '(min-width: 768px) and (prefers-reduced-motion: no-preference)', stepped: STEPPED }, (ctx) => {
+        const { wide, stepped } = ctx.conditions as { wide: boolean; stepped: boolean }
+        if (!wide) return
+        // touch screens: the halves slide in whole, on their own clock, as the line comes into view
+        const st = stepped
+          ? { trigger: root.current, start: 'top 70%', toggleActions: 'play none none reverse' }
+          : { trigger: root.current, start: 'top 85%', end: 'center 55%', scrub: 0.6 }
+        const d = stepped ? { duration: 1.1 } : {}
+        gsap.fromTo('[data-side="l"]', { xPercent: -45, opacity: 0 }, { xPercent: 0, opacity: 1, ease: 'power2.out', ...d, scrollTrigger: st })
+        gsap.fromTo('[data-side="r"]', { xPercent: 45, opacity: 0 }, { xPercent: 0, opacity: 1, ease: 'power2.out', ...d, scrollTrigger: { ...st } })
+        gsap.fromTo('[data-reel]', { scale: 0.55, rotate: -4 }, { scale: 1, rotate: 0, ease: 'power2.out', ...d, scrollTrigger: { ...st } })
       })
       return () => mm.revert()
     },

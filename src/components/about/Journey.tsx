@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { about } from '@/content/about'
 import { WhatsNext } from './WhatsNext'
+import { STEPPED, scrollSteps } from '@/components/motion/scrollSteps'
 import { cn } from '@/lib/cn'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
@@ -133,36 +134,55 @@ export function Journey() {
     () => {
       const wrap = expand.current!
       const mm = gsap.matchMedia()
-      mm.add('(prefers-reduced-motion: no-preference)', () => {
+      mm.add({ motion: '(prefers-reduced-motion: no-preference)', stepped: STEPPED }, (ctx) => {
+        const { motion, stepped } = ctx.conditions as { motion: boolean; stepped: boolean }
+        if (!motion) return
         wrap.dataset.driven = ''
         const frameEl = wrap.firstElementChild as HTMLElement
         let shown = from
-        ScrollTrigger.create({
-          trigger: wrap,
-          start: 'top top',
-          end: 'bottom bottom',
-          onUpdate: (self) => {
-            const n = Math.min(1, self.progress / 0.6)
-            const c = n < 0.5 ? 2 * n * n : 1 - (-2 * n + 2) ** 2 / 2
-            // the circle opens from the line's end node, wherever the layout puts it
-            const f = frameEl.getBoundingClientRect()
-            const d = dot.current!.getBoundingClientRect()
-            const cx = d.left + d.width / 2 - f.left
-            const cy = d.top + d.height / 2 - f.top
-            const r = c * Math.hypot(Math.max(cx, f.width - cx), Math.max(cy, f.height - cy))
-            disc.current!.style.clipPath = `circle(${r.toFixed(1)}px at ${cx.toFixed(1)}px ${cy.toFixed(1)}px)`
-            wrap.classList.toggle('is-full', n >= 1)
-            if (c > 0.5) delete frameEl.dataset.navTone
-            else frameEl.dataset.navTone = 'dark'
-            const yr = Math.min(to, Math.round(from + c * (to - from)))
-            if (yr !== shown && year.current) {
-              shown = yr
-              year.current.textContent = String(yr)
-            }
-          },
-        })
+        // c: how far the circle is open, 0…1 (eased)
+        const paint = (c: number) => {
+          // the circle opens from the line's end node, wherever the layout puts it
+          const f = frameEl.getBoundingClientRect()
+          const d = dot.current!.getBoundingClientRect()
+          const cx = d.left + d.width / 2 - f.left
+          const cy = d.top + d.height / 2 - f.top
+          const r = c * Math.hypot(Math.max(cx, f.width - cx), Math.max(cy, f.height - cy))
+          disc.current!.style.clipPath = `circle(${r.toFixed(1)}px at ${cx.toFixed(1)}px ${cy.toFixed(1)}px)`
+          wrap.classList.toggle('is-full', c >= 1)
+          if (c > 0.5) delete frameEl.dataset.navTone
+          else frameEl.dataset.navTone = 'dark'
+          const yr = Math.min(to, Math.round(from + c * (to - from)))
+          if (yr !== shown && year.current) {
+            shown = yr
+            year.current.textContent = String(yr)
+          }
+        }
+        const range = { trigger: wrap, start: 'top top', end: 'bottom bottom' }
+        // phones and touch screens: once the scroll is into it, the circle opens (or closes) whole, on its own clock
+        const open = { c: 0 }
+        const stepper = stepped
+          ? scrollSteps(
+              gsap.timeline().to(open, { c: 1, duration: 1, ease: 'power1.inOut', onUpdate: () => paint(open.c) }),
+              [
+                { at: 0, time: 0 },
+                { at: 0.6, time: 1 },
+              ],
+              range,
+              { speed: 1.3, ease: 'none' },
+            )
+          : null
+        if (!stepper)
+          ScrollTrigger.create({
+            ...range,
+            onUpdate: (self) => {
+              const n = Math.min(1, self.progress / 0.6)
+              paint(n < 0.5 ? 2 * n * n : 1 - (-2 * n + 2) ** 2 / 2)
+            },
+          })
         ScrollTrigger.refresh()
         return () => {
+          stepper?.kill()
           delete wrap.dataset.driven
           wrap.classList.remove('is-full')
           if (disc.current) disc.current.style.clipPath = ''
