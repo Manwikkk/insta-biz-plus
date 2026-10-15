@@ -179,7 +179,7 @@ export function ContactConsole() {
                 <motion.fieldset key={step} custom={dir} variants={slide} initial="enter" animate="center" exit="exit" className="min-w-0">
                   <legend className="ct-q">{STEPS[step]}</legend>
                   {step === 0 ? (
-                    <div className="mt-6 grid grid-cols-2 gap-2.5 sm:grid-cols-3">
+                    <div className="ct-opts mt-6 grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
                       {needOptions.map((n) => {
                         const on = needs.includes(n)
                         return (
@@ -196,7 +196,7 @@ export function ContactConsole() {
                             <span className="ct-opt-icon">
                               <Icon name={NEED_ICON[n] ?? 'plus'} size={17} />
                             </span>
-                            <span className="text-left leading-tight">{n}</span>
+                            <span className="min-w-0 text-left leading-tight [overflow-wrap:break-word]">{n}</span>
                             <span className="ct-opt-tick" aria-hidden>
                               <Icon name="check" size={11} strokeWidth={3} />
                             </span>
@@ -221,7 +221,7 @@ export function ContactConsole() {
                           <span className="ct-opt-icon">
                             <Icon name={(['spark', 'calendar', 'clock', 'globe'] as IconName[])[k]} size={17} />
                           </span>
-                          <span>{t}</span>
+                          <span className="min-w-0 text-left leading-tight [overflow-wrap:break-word]">{t}</span>
                           <span className="ct-opt-tick" aria-hidden>
                             <Icon name="check" size={11} strokeWidth={3} />
                           </span>
@@ -276,11 +276,11 @@ export function ContactConsole() {
                 Press <kbd className="ct-kbd">Enter ↵</kbd>
               </p>
               {step < 3 ? (
-                <KeyAction type="button" onClick={() => go(step + 1)} className="ml-auto">
+                <KeyAction key="next" type="button" onClick={() => go(step + 1)} className="ml-auto">
                   {step === 1 && !timeline ? 'Skip' : 'Next'}
                 </KeyAction>
               ) : (
-                <KeyAction type="submit" disabled={state === 'sending'} className="ml-auto disabled:opacity-70" icon="send">
+                <KeyAction key="send" type="submit" disabled={state === 'sending'} className="ml-auto disabled:opacity-70" icon="send">
                   {state === 'sending' ? 'Sending…' : 'Send my message'}
                 </KeyAction>
               )}

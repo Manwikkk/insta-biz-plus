@@ -6877,6 +6877,16 @@ html[data-header='hidden'] {
     opacity: 1;
     transform: none;
   }
+  /* phones: each need is a tile, its icon above its name, so the longest name fits a half-width cell */
+  @media (max-width: 639px) {
+    .ct-opts .ct-opt {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding-inline: 12px;
+      font-size: 0.9rem;
+    }
+  }
   .ct-input {
     width: 100%;
     padding-inline: 16px;
